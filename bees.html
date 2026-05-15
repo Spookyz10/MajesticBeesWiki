@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bees</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="images/ui/fav-icon.png">
+
+<script defer src="js/bees.js"></script>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="sidebar-logo">
+        <img src="images/ui/site-logo.png" alt="">
+    </div>
+
+    <a href="index.html">Home</a>
+    <a href="bees.html">Bees</a>
+    <a href="codes.html">Codes</a>
+    <a href="store.html">Store</a>
+
+</div>
+
+<div class="main">
+
+<div class="content mw-parser-output">
+
+<div style="text-align:center; padding: 30px 0 10px;">
+    <div class="hero-title">Bees</div>
+</div>
+
+<div class="hero-description" style="max-width:740px; margin: 6px auto 28px; padding: 0 20px; font-size: 1.05em;">
+    Bees are the core of your hive in <b>The Majestic Bees</b>. Each bee has a unique rarity, color type, and pollen preference. Collect them through eggs, level them up with items, and unlock more hive slots as you progress.
+</div>
+
+<hr>
+
+<h2>Hive Slots</h2>
+<div style="max-width:680px; margin:0 auto 32px; background:#241900; border:1px solid #3a2800; border-radius:12px; padding:20px 24px; color:#c8a84e; line-height:1.8;">
+    You start the game with <b>10 hive slots</b>. Every <b>5 player levels</b> you gain <b>1 additional slot</b>, up to a maximum of <b>50 slots</b>. XP to level up is earned purely through progression.
+
+    <table class="wikitable" style="width:100%; margin-top:12px;">
+        <tr>
+            <th>Level</th>
+            <th>Slots Unlocked</th>
+            <th>Total Slots</th>
+        </tr>
+        <tr>
+            <td>Start</td>
+            <td>—</td>
+            <td>10</td>
+        </tr>
+        <tr><td>5</td><td>+1</td><td>11</td></tr>
+        <tr><td>10</td><td>+1</td><td>12</td></tr>
+        <tr><td>15</td><td>+1</td><td>13</td></tr>
+        <tr><td>20</td><td>+1</td><td>14</td></tr>
+        <tr><td><i>...</i></td><td><i>...</i></td><td><i>...</i></td></tr>
+        <tr>
+            <td>200</td>
+            <td>+1</td>
+            <td>50 (max)</td>
+        </tr>
+    </table>
+</div>
+
+<hr>
+
+<h2>Obtaining Bees</h2>
+<div style="max-width:680px; margin:0 auto 32px; background:#241900; border:1px solid #3a2800; border-radius:12px; padding:20px 24px; color:#c8a84e; line-height:1.8;">
+    Bees are obtained by hatching eggs. Each egg type hatches a specific set of rarities.
+
+    <table class="wikitable" style="width:100%; margin-top:12px;">
+        <tr>
+            <th>Egg</th>
+            <th>Rarity Pool</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td><b>Basic Egg</b></td>
+            <td>Common only</td>
+            <td>Always hatches a Basic Bee</td>
+        </tr>
+        <tr>
+            <td><b>Silver Egg</b></td>
+            <td>Rare, Epic, Legendary</td>
+            <td>No Common bees</td>
+        </tr>
+        <tr>
+            <td><b>Golden Egg</b></td>
+            <td>Epic, Legendary</td>
+            <td>No Common or Rare bees</td>
+        </tr>
+        <tr>
+            <td><b>Diamond Egg</b></td>
+            <td>Legendary only</td>
+            <td>Always hatches a Legendary bee</td>
+        </tr>
+    </table>
+</div>
+
+<hr>
+
+<h2>Bee Levels</h2>
+<div style="max-width:680px; margin:0 auto 32px; background:#241900; border:1px solid #3a2800; border-radius:12px; padding:20px 24px; color:#c8a84e; line-height:1.8;">
+    Each bee has its own level that can be raised by feeding it <b>Treats</b> or <b>Fruits</b>. Leveling up a bee increases its pollen collection rate, conversion speed, and the level of enemies it can attack.
+
+    <table class="wikitable" style="width:100%; margin-top:12px;">
+        <tr>
+            <th>Item</th>
+            <th>XP Given</th>
+        </tr>
+        <tr>
+            <td>Treat</td>
+            <td>20 XP</td>
+        </tr>
+        <tr>
+            <td>Fruit</td>
+            <td>50 XP</td>
+        </tr>
+    </table>
+
+    <p>The exact XP formula required per level is currently <b>unknown</b>.</p>
+</div>
+
+<hr>
+
+<h2>Bee Colors</h2>
+<div style="max-width:680px; margin:0 auto 32px; background:#241900; border:1px solid #3a2800; border-radius:12px; padding:20px 24px; color:#c8a84e; line-height:1.8;">
+    Every bee belongs to one of three color types. Color affects which flowers a bee is most efficient with, as well as the nature of its special abilities.
+
+    <table class="wikitable" style="width:100%; margin-top:12px;">
+        <tr>
+            <th>Color</th>
+            <th>Best Flower</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><span class="bee-common" style="color:#e8e8e8;border-color:rgba(232,232,232,0.35);background:rgba(232,232,232,0.1);">Colorless</span></td>
+            <td>White flowers</td>
+            <td>Performs best on white flowers.</td>
+        </tr>
+        <tr>
+            <td><span class="bee-boss" style="color:#e07070;border-color:rgba(224,112,112,0.35);background:rgba(224,112,112,0.1);">Red</span></td>
+            <td>Red flowers</td>
+            <td>Specialized in red flowers.</td>
+        </tr>
+        <tr>
+            <td><span class="bee-rare" style="color:#82b8e8;border-color:rgba(130,184,232,0.35);background:rgba(130,184,232,0.1);">Blue</span></td>
+            <td>Blue flowers</td>
+            <td>Specialized in blue flowers.</td>
+        </tr>
+    </table>
+
+    <p>All bees can visit flowers of any color with equal frequency. However, when a bee collects from a flower <b>matching its own color</b>, it gathers significantly more pollen per visit. A bee's special abilities also synergize with its color type, such as area boosts and pollen bombs that exclusively benefit their matching flower type.</p>
+</div>
+
+<hr>
+
+<h2>Items</h2>
+<div style="max-width:680px; margin:0 auto 32px; background:#241900; border:1px solid #3a2800; border-radius:12px; padding:20px 24px;">
+    <table class="wikitable" style="width:100%;">
+        <tr>
+            <th>Item</th>
+            <th>Use</th>
+        </tr>
+        <tr><td><b>Treat</b></td><td>Gives 20 XP to a bee</td></tr>
+        <tr><td><b>Fruit</b></td><td>Gives 50 XP to a bee</td></tr>
+        <tr><td><b>Royal Jelly</b></td><td>Transforms a bee into a random non-exclusive bee.</td></tr>
+        <tr><td><b>Basic Egg</b></td><td>Hatches a Common bee</td></tr>
+        <tr><td><b>Silver Egg</b></td><td>Hatches a Rare, Epic, or Legendary bee</td></tr>
+        <tr><td><b>Golden Egg</b></td><td>Hatches an Epic or Legendary bee</td></tr>
+        <tr><td><b>Diamond Egg</b></td><td>Hatches a Legendary bee</td></tr>
+    </table>
+</div>
+
+<hr>
+
+<h2>Bees</h2>
+
+<div style="text-align:center; color:#a88c3a; font-size:0.93em; margin-bottom:18px;">Click a bee's image or name to visit its page.</div>
+
+<div class="bee-rarity-tabs">
+
+    <div class="bee-tab-buttons">
+        <button class="bee-tab-btn active" data-tab="common">Common</button>
+        <button class="bee-tab-btn" data-tab="rare">Rare</button>
+        <button class="bee-tab-btn" data-tab="epic">Epic</button>
+        <button class="bee-tab-btn" data-tab="legendary">Legendary</button>
+    </div>
+
+    <div id="common" class="bee-tab-content"></div>
+    <div id="rare" class="bee-tab-content" style="display:none"></div>
+    <div id="epic" class="bee-tab-content" style="display:none"></div>
+    <div id="legendary" class="bee-tab-content" style="display:none"></div>
+
+    <div class="bee-desc-panel empty">
+        Hover over a bee to see its description.
+    </div>
+
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

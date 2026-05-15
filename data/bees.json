@@ -1,0 +1,34 @@
+{
+  "common": [
+    {
+      "name": "Basic Bee",
+      "image": "images/bees/Icon-Bees.png",
+      "desc": "A simple and reliable bee with balanced abilities. It gathers pollen steadily, converts resources efficiently, and supports your hive with consistent performance. Perfect for beginners building a strong and dependable foundation.",
+      "color": "colorless"
+    }
+  ],
+  "rare": [
+    {
+      "name": "Azure Bee",
+      "image": "images/bees/Bee-Azure.png",
+      "desc": "A calm bee infused with cool energy, boosting blue pollen collection and refreshing nearby flowers. Its soothing aura increases efficiency and supports allies, making it essential for steady resource gathering and growth.",
+      "color": "blue"
+    }
+  ],
+  "epic": [
+    {
+      "name": "Coal Bee",
+      "image": "images/bees/Bee-Coal.png",
+      "desc": "A smoldering bee forged from deep earth pressure. It scorches nearby flowers, hardening their cores and boosting red pollen collection while radiating raw heat that fuels efficiency and ensures relentless, unyielding resource extraction.",
+      "color": "red"
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Cloud Bee",
+      "image": "images/bees/Bee-Cloud.png",
+      "desc": "A celestial bee adrift in an endless sky, its body woven from billowing cumulus clouds. It summons gusts of swirling wind to scatter pollen far across the field, enveloping nearby flowers in a soft, misty vapor that magnifies pollen yield.",
+      "color": "colorless"
+    }
+  ]
+}
