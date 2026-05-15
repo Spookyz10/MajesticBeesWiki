@@ -3,9 +3,23 @@ async function loadBees() {
     const res = await fetch("data/bees.json");
     const data = await res.json();
 
-    ["common", "rare", "epic", "legendary"].forEach(rarity => {
+    ["common", "rare", "epic", "legendary", "special"].forEach(rarity => {
         renderTab(rarity, data[rarity] || []);
     });
+
+}
+
+function getBeeGlow(color) {
+
+    const glows = {
+        blue: "rgba(100, 181, 246, 0.95)",
+        red: "rgba(212, 96, 96, 0.95)",
+        green: "rgba(122, 184, 96, 0.95)",
+        purple: "rgba(206, 147, 216, 0.95)",
+        colorless: "rgba(232, 192, 64, 0.95)"
+    };
+
+    return glows[color] || glows.colorless;
 
 }
 
@@ -22,6 +36,8 @@ function renderTab(id, bees) {
         return;
     }
 
+    const hoverCapable = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
     bees.forEach(bee => {
 
         const card = document.createElement("button");
@@ -32,6 +48,7 @@ function renderTab(id, bees) {
         card.dataset.desc = bee.desc;
         card.dataset.color = bee.color || "";
         card.setAttribute("aria-label", bee.name);
+        card.style.setProperty("--bee-glow", getBeeGlow(bee.color));
 
         card.innerHTML = `
             <img src="${bee.image}" alt="${bee.name}" loading="lazy">
@@ -83,11 +100,24 @@ function renderTab(id, bees) {
             }
         };
 
-        card.addEventListener("mouseenter", showDescription);
         card.addEventListener("focus", showDescription);
-        card.addEventListener("click", showDescription);
-        card.addEventListener("mouseleave", clearDescription);
-        card.addEventListener("blur", clearDescription);
+        if (hoverCapable) {
+            card.addEventListener("mouseenter", showDescription);
+            card.addEventListener("mouseleave", clearDescription);
+            card.addEventListener("blur", clearDescription);
+            card.addEventListener("click", showDescription);
+        } else {
+            card.addEventListener("click", () => {
+                const isSelected = card.classList.contains("selected");
+
+                if (isSelected) {
+                    clearDescription();
+                    return;
+                }
+
+                showDescription();
+            });
+        }
 
         tab.appendChild(card);
 

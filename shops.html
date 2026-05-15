@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shops</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/shops.css" />
+    <link rel="stylesheet" href="pagefind/pagefind-ui.css" />
+    <script defer src="pagefind/pagefind-ui.js"></script>
+    <script defer src="js/search.js"></script>
+    <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <a class="sidebar-logo" href="index.html">
+        <img src="images/ui/site-logo.png" alt="" />
+      </a>
+
+      <div id="search"></div>
+
+      <a href="index.html">Home</a>
+      <a href="bees.html">Bees</a>
+      <a href="codes.html">Codes</a>
+      <a href="store.html">Store</a>
+      <a href="shops.html">Shops</a>
+    </div>
+
+    <div class="main">
+      <div class="content mw-parser-output">
+        <div style="text-align: center; padding: 30px 0 10px">
+          <div class="hero-title">Shops</div>
+        </div>
+
+        <div
+          class="hero-description"
+          style="
+            max-width: 740px;
+            margin: 6px auto 28px;
+            padding: 0 20px;
+            font-size: 1.05em;
+          "
+        >
+          Shops are in-game buildings where you can buy <b>Tools</b>,
+          <b>Bags</b>, and <b>Gear</b> using Honey and Materials. Each shop is
+          located in a different area of the map and carries its own set of
+          items.
+        </div>
+
+        <hr />
+
+        <h2 style="text-align: center; padding-left: 0">All Shops</h2>
+
+        <div style="max-width: 860px; margin: 0 auto 12px; padding: 0 20px">
+          <a
+            href="starter-shop.html"
+            style="text-decoration: none; display: block"
+          >
+            <div class="shop-card">
+              <div class="shop-card-img">
+                <img
+                  src="images/gear/starterShop/Shop.png"
+                  alt="Starter Shop"
+                  onerror="
+                    this.onerror = null;
+                    this.src = 'images/ui/site-logo.png';
+                  "
+                />
+              </div>
+
+              <div class="shop-card-body">
+                <div class="shop-card-header">
+                  <div class="shop-card-name">Starter Shop</div>
+                  <div class="shop-card-location">Near Black Bear</div>
+                </div>
+
+                <p class="shop-card-desc">
+                  The first shop you'll encounter. A cozy wooden building
+                  surrounded by trees and bushes, offering the essential tools
+                  and gear for new beekeepers. Carries <b>5 tools</b>,
+                  <b>4 bags</b>, and <b>6 gear pieces</b> purchasable with
+                  Honey.
+                </p>
+
+                <div class="shop-card-tags">
+                  <span class="shop-tag">Tools</span>
+                  <span class="shop-tag">Bags</span>
+                  <span class="shop-tag">Gear</span>
+                </div>
+
+                <div class="shop-card-link">View full details →</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

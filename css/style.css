@@ -348,17 +348,20 @@ h1.page-header__title,
     border-bottom: 2px solid var(--line);
     letter-spacing: 0.02em;
     padding-bottom: 0.2em;
+    padding-left: 18px;
 }
 
 .mw-parser-output h3 {
     font-family: 'Fredoka One', Georgia, sans-serif;
     color: #d4aa30;
+    padding-left: 16px;
 }
 
 .mw-parser-output h4 {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
     color: var(--gold-soft);
+    padding-left: 14px;
 }
 
 .mw-parser-output a,
@@ -629,12 +632,19 @@ h1.page-header__title,
     font: inherit;
     appearance: none;
     -webkit-appearance: none;
+    touch-action: manipulation;
+    --bee-glow: rgba(232, 192, 64, 0.95);
 }
 
 .bee-card:hover,
 .bee-card.selected {
     transform: translateY(-6px);
-    filter: drop-shadow(0 0 10px rgba(232, 192, 64, 0.8));
+    filter: drop-shadow(0 0 10px var(--bee-glow)) drop-shadow(0 0 22px var(--bee-glow));
+}
+
+.bee-card:focus-visible {
+    outline: 2px solid var(--bee-glow);
+    outline-offset: 4px;
 }
 
 .bee-card img {

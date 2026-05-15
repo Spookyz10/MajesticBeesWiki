@@ -1,100 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>The Majestic Bees Wiki</title>
 
-    <link rel="stylesheet" href="pagefind/pagefind-ui.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="images/ui/fav-icon.png">
+    <link rel="stylesheet" href="pagefind/pagefind-ui.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
 
     <script defer src="js/main.js"></script>
     <script defer src="pagefind/pagefind-ui.js"></script>
     <script defer src="js/search.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <div class="sidebar">
+      <a class="sidebar-logo" href="index.html">
+        <img src="images/ui/site-logo.png" alt="" />
+      </a>
 
-<div class="sidebar">
-
-    <a class="sidebar-logo" href="index.html">
-        <img src="images/ui/site-logo.png" alt="">
-    </a>
-
-    <a href="index.html">Home</a>
-    <a href="bees.html">Bees</a>
-    <a href="codes.html">Codes</a>
-    <a href="store.html">Store</a>
-
-</div>
-
-<div class="main">
-
-    <div class="topbar">
-
-        <div id="search"></div>
-
+      <a href="index.html">Home</a>
+      <a href="bees.html">Bees</a>
+      <a href="codes.html">Codes</a>
+      <a href="store.html">Store</a>
+      <a href="shops.html">Shops</a>
     </div>
 
-    <div class="content">
+    <div class="main">
+      <div class="topbar">
+        <div id="search"></div>
+      </div>
 
-        <div class="hero-title">
-            Welcome to the Majestic Bees Wiki!
-        </div>
+      <div class="content">
+        <div class="hero-title">Welcome to the Majestic Bees Wiki!</div>
 
         <div class="hero-logo">
-            <img src="images/ui/site-logo.png">
+          <img src="images/ui/site-logo.png" />
         </div>
 
         <div class="hero-description">
-            This is the official wiki for the Roblox game
-            <b>The Majestic Bees</b>,
-            a bee collecting and management game similar to Bee Swarm Simulator!
-            Here you can find information about bees, gears, mobs, and much more.
+          This is the official wiki for the Roblox game
+          <b>The Majestic Bees</b>, a bee collecting and management game similar
+          to Bee Swarm Simulator! Here you can find information about bees,
+          gears, mobs, and much more.
         </div>
 
         <div class="wiki-panel">
+          <div class="wiki-panel-header">Wiki Articles</div>
 
-            <div class="wiki-panel-header">
-                Wiki Articles
-            </div>
+          <div class="article-grid">
+            <a class="wiki-article-card" href="bees.html">
+              <img
+                src="images/icons/Icon-Bees.png"
+                alt="Bees"
+                onerror="
+                  this.onerror = null;
+                  this.src = 'images/ui/site-logo.png';
+                "
+              />
+              <div>Bees</div>
+            </a>
 
-            <div class="article-grid">
+            <a class="wiki-article-card placeholder" href="gear.html">
+              <img
+                src="images/icons/Icon-Gear.png"
+                alt="Gear"
+                onerror="
+                  this.onerror = null;
+                  this.src = 'images/ui/site-logo.png';
+                "
+              />
+              <div>Gear</div>
+            </a>
 
-                <a class="wiki-article-card" href="bees.html">
-                    <img src="images/icons/Icon-Bees.png" alt="Bees" onerror="this.onerror=null;this.src='images/ui/site-logo.png'">
-                    <div>Bees</div>
-                </a>
+            <a class="wiki-article-card placeholder" href="mobs.html">
+              <img
+                src="images/icons/Icon-Mobs.png"
+                alt="Mobs"
+                onerror="
+                  this.onerror = null;
+                  this.src = 'images/ui/site-logo.png';
+                "
+              />
+              <div>Mobs</div>
+            </a>
 
-                <a class="wiki-article-card placeholder" href="gear.html">
-                    <img src="images/icons/Icon-Gear.png" alt="Gear" onerror="this.onerror=null;this.src='images/ui/site-logo.png'">
-                    <div>Gear</div>
-                </a>
+            <a class="wiki-article-card placeholder" href="codes.html">
+              <img
+                src="images/icons/Icon-Codes.png"
+                alt="Codes"
+                onerror="
+                  this.onerror = null;
+                  this.src = 'images/ui/site-logo.png';
+                "
+              />
+              <div>Codes</div>
+            </a>
 
-                <a class="wiki-article-card placeholder" href="mobs.html">
-                    <img src="images/icons/Icon-Mobs.png" alt="Mobs" onerror="this.onerror=null;this.src='images/ui/site-logo.png'">
-                    <div>Mobs</div>
-                </a>
+            <a class="wiki-article-card placeholder" href="store.html">
+              <img
+                src="images/icons/Icon-Store.png"
+                alt="Store"
+                onerror="
+                  this.onerror = null;
+                  this.src = 'images/ui/site-logo.png';
+                "
+              />
+              <div>Store</div>
+            </a>
 
-                <a class="wiki-article-card placeholder" href="codes.html">
-                    <img src="images/icons/Icon-Codes.png" alt="Codes" onerror="this.onerror=null;this.src='images/ui/site-logo.png'">
-                    <div>Codes</div>
-                </a>
-
-                <a class="wiki-article-card placeholder" href="store.html">
-                    <img src="images/icons/Icon-Store.png" alt="Store" onerror="this.onerror=null;this.src='images/ui/site-logo.png'">
-                    <div>Store</div>
-                </a>
-
-            </div>
-
+            <a class="wiki-article-card placeholder" href="shops.html">
+              <img
+                src="images/icons/Icon-Shops.png"
+                alt="Shops"
+                onerror="
+                  this.onerror = null;
+                  this.src = 'images/ui/site-logo.png';
+                "
+              />
+              <div>Shops</div>
+            </a>
+          </div>
         </div>
-
+      </div>
     </div>
-
-</div>
-
-</body>
+  </body>
 </html>

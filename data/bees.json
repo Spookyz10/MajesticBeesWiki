@@ -2,7 +2,7 @@
   "common": [
     {
       "name": "Basic Bee",
-      "image": "images/bees/Icon-Bees.png",
+      "image": "images/bees/Basic-Bee.png",
       "desc": "A simple and reliable bee with balanced abilities. It gathers pollen steadily, converts resources efficiently, and supports your hive with consistent performance. Perfect for beginners building a strong and dependable foundation.",
       "color": "colorless"
     }
@@ -10,24 +10,122 @@
   "rare": [
     {
       "name": "Azure Bee",
-      "image": "images/bees/Bee-Azure.png",
+      "image": "images/bees/Azure-Bee.png",
       "desc": "A calm bee infused with cool energy, boosting blue pollen collection and refreshing nearby flowers. Its soothing aura increases efficiency and supports allies, making it essential for steady resource gathering and growth.",
       "color": "blue"
+    },
+    {
+      "name": "Magnet Bee",
+      "image": "images/bees/Magnet-Bee.png",
+      "desc": "A magnetic bee that attracts nearby tokens and resources directly to the magnet. Its powerful pull draws in collectibles from a wider radius, reducing travel time and maximizing haul efficiency during every gathering run.",
+      "color": "colorless"
+    },
+    {
+      "name": "Hasty Bee",
+      "image": "images/bees/Hasty-Bee.png",
+      "desc": "An energetic bee that increases movement speed and attack rate for the hive. Its rapid actions help collect pollen faster, dodge threats, and improve overall efficiency during intense gathering sessions.",
+      "color": "colorless"
+    },
+    {
+      "name": "Bomber Bee",
+      "image": "images/bees/Bomber-Bee.png",
+      "desc": "A destructive bee that drops explosive bombs, instantly collecting pollen from surrounding flowers. Its powerful blasts clear large areas quickly, making it perfect for fast farming and overwhelming field coverage.",
+      "color": "colorless"
+    },
+    {
+      "name": "Crimson Bee",
+      "image": "images/bees/Crimson-Bee.png",
+      "desc": "A fierce bee filled with blazing power, specializing in red pollen collection and aggressive boosts. It enhances attack strength and burns through fields quickly, helping your hive dominate and collect resources faster.",
+      "color": "red"
     }
   ],
   "epic": [
     {
       "name": "Coal Bee",
-      "image": "images/bees/Bee-Coal.png",
+      "image": "images/bees/Coal-Bee.png",
       "desc": "A smoldering bee forged from deep earth pressure. It scorches nearby flowers, hardening their cores and boosting red pollen collection while radiating raw heat that fuels efficiency and ensures relentless, unyielding resource extraction.",
       "color": "red"
+    },
+    {
+      "name": "Water Bee",
+      "image": "images/bees/Water-Bee.png",
+      "desc": "A fluid bee coursing with tidal energy. It hydrates nearby flowers, accelerating growth and boosting aqua pollen collection while generating gentle currents that enhance efficiency and help sustain a steady, flowing resource output.",
+      "color": "blue"
+    },
+    {
+      "name": "Sound Bee",
+      "image": "images/bees/Sound-Bee.png",
+      "desc": "A resonant bee vibrating with sonic frequency. It reverberates through nearby flowers, amplifying their bloom and boosting echo pollen collection while emitting harmonic waves that sharpen efficiency and sustain a rhythmic, uninterrupted resource flow.",
+      "color": "colorless"
+    },
+    {
+      "name": "Cold Bee",
+      "image": "images/bees/Cold-Bee.png",
+      "desc": "A chilling bee infused with icy power. It freezes nearby flowers, slowing decay and boosting blue pollen collection while providing cooling effects that improve efficiency and help maintain stable resource gathering performance.",
+      "color": "blue"
+    },
+    {
+      "name": "Fire Bee",
+      "image": "images/bees/Fire-Bee.png",
+      "desc": "A fiery bee radiating intense heat and energy. It scorches flowers to boost red pollen collection, increases attack power, and spreads burning effects that rapidly enhance harvesting speed and field productivity.",
+      "color": "red"
+    },
+    {
+      "name": "Flower Bee",
+      "image": "images/bees/Flower-Bee.png",
+      "desc": "A gentle bee devoted to nurturing flowers. It enhances bloom speed, increases pollen yield from blossoms, and spreads growth energy across fields, making nearby plants more rewarding and efficient to harvest.",
+      "color": "colorless"
     }
   ],
   "legendary": [
     {
       "name": "Cloud Bee",
-      "image": "images/bees/Bee-Cloud.png",
+      "image": "images/bees/Cloud-Bee.png",
       "desc": "A celestial bee adrift in an endless sky, its body woven from billowing cumulus clouds. It summons gusts of swirling wind to scatter pollen far across the field, enveloping nearby flowers in a soft, misty vapor that magnifies pollen yield.",
+      "color": "colorless"
+    },
+    {
+      "name": "Icicle Bee",
+      "image": "images/bees/Icicle-Bee.png",
+      "desc": "A frigid bee encased in piercing ice. It launches razor-sharp icicles across the field, freezing nearby flowers in a crystalline frost that slows decay and amplifies pollen yield while its glacial aura blankets the area in a relentless, bone-chilling surge of frozen energy.",
+      "color": "blue"
+    },
+    {
+      "name": "Oil Bee",
+      "image": "images/bees/Oil-Bee.png",
+      "desc": "A viscous bee gleaming with dark iridescence, its form composed of flowing obsidian streams that ripple with rainbow sheens. It releases thick, amber droplets that coat the field in protective resin, encasing nearby flowers in a preserving glaze that extends their lifespan and intensifies their essence while its slick aura spreads through the area in slow, deliberate waves of liquid preservation and ancient earthbound energy.",
+      "color": "red"
+    },
+    {
+      "name": "Wave Bee",
+      "image": "images/bees/Wave-Bee.png",
+      "desc": "An oceanic bee flowing like liquid starlight, its body formed from cascading tidal currents that shimmer with deep blue luminescence. It conjures rhythmic pulses of crystalline water that wash over the field in gentle, nourishing waves, bathing nearby flowers in healing moisture that enhances their vitality while its fluid aura ebbs and flows through the area in endless, hypnotic cycles of aquatic serenity.",
+      "color": "blue"
+    },
+    {
+      "name": "Thunder Bee",
+      "image": "images/bees/Thunder-Bee.png",
+      "desc": "A tempestuous bee crackling with electric fury, its form wreathed in storm clouds that pulse with veins of lightning. It calls forth thunderous roars that shake the earth and ignite the air with cascading bolts, charging nearby flowers with raw electrical energy that accelerates their growth while its crackling aura surges through the area in violent, electrifying waves of pure storm-born power.",
+      "color": "colorless"
+    },
+    {
+      "name": "Firework Bee",
+      "image": "images/bees/Firework-Bee.png",
+      "desc": "A radiant bee crackling with festive power. It detonates cascading bursts across the field, showering flowers in luminous sparks and amplifying pollen yield while its brilliant explosions ripple outward, fueling a dazzling and relentless surge of collection.",
+      "color": "red"
+    }
+  ],
+  "special": [
+    {
+      "name": "Lucky Bee",
+      "image": "images/bees/Lucky-Bee.png",
+      "desc": "A shimmering bee radiating with golden fortune. It dances unpredictably across the field, scattering bursts of lucky clover and glittering tokens wherever it roams while its warm, glowing aura pulses with a magnetic charm that draws in rare treasures and multiplies the rewards of every flower it traces.",
+      "color": "colorless"
+    },
+    {
+      "name": "Pixel Bee",
+      "image": "images/bees/Pixel Bee.png",
+      "desc": "A retro-inspired bee built from blocks of pure nostalgia. Its pixelated form may look simple, but don't be fooled - beneath those sharp edges lies a surprisingly capable worker. A charming collectible for those who appreciate the classics.",
       "color": "colorless"
     }
   ]
