@@ -12,11 +12,10 @@
     <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
   </head>
   <body>
-    <div class="sidebar">
+    <div class="sidebar" data-pagefind-ignore>
       <a class="sidebar-logo" href="index.html">
         <img src="images/ui/site-logo.png" alt="" />
       </a>
-      <div id="search"></div>
       <a href="index.html">Home</a>
       <a href="bees.html">Bees</a>
       <a href="codes.html">Codes</a>
@@ -24,7 +23,11 @@
       <a href="shops.html">Shops</a>
     </div>
 
-    <div class="main">
+    <div class="main" data-pagefind-body>
+      <div class="topbar">
+        <div id="search"></div>
+      </div>
+
       <div class="content mw-parser-output">
         <div style="text-align: center; padding: 30px 0 10px">
           <div class="hero-title">Starter Shop</div>

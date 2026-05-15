@@ -1,0 +1,56 @@
+.bees-page-title {
+  text-align: center;
+  padding: 30px 0 10px;
+}
+
+.bees-hero-description {
+  max-width: 740px;
+  margin: 6px auto 28px;
+  padding: 0 20px;
+  font-size: 1.05em;
+}
+
+.bees-info-box {
+  max-width: 680px;
+  margin: 0 auto 32px;
+  background: #241900;
+  border: 1px solid #3a2800;
+  border-radius: 12px;
+  padding: 20px 24px;
+  color: #c8a84e;
+  line-height: 1.8;
+}
+
+.bees-info-box--plain {
+  color: inherit;
+}
+
+.bees-table {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.bee-color-colorless {
+  color: #e8e8e8;
+  border-color: rgba(232, 232, 232, 0.35);
+  background: rgba(232, 232, 232, 0.1);
+}
+
+.bee-color-red {
+  color: #e07070;
+  border-color: rgba(224, 112, 112, 0.35);
+  background: rgba(224, 112, 112, 0.1);
+}
+
+.bee-color-blue {
+  color: #82b8e8;
+  border-color: rgba(130, 184, 232, 0.35);
+  background: rgba(130, 184, 232, 0.1);
+}
+
+.bees-tab-hint {
+  text-align: center;
+  color: #a88c3a;
+  font-size: 0.93em;
+  margin-bottom: 18px;
+}
