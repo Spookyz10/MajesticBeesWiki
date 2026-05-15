@@ -19,6 +19,7 @@
     --shadow: rgba(0, 0, 0, 0.45);
     --sidebar-width: 240px;
     --content-width: 1120px;
+    --bg-image: ../images/backgrounds/bg.jpg;
 }
 
 html {
@@ -38,11 +39,10 @@ body::before {
     position: fixed;
     inset: 0;
     background:
-        radial-gradient(circle at top, rgba(232, 192, 64, 0.12), transparent 32%),
-        linear-gradient(rgba(12, 8, 0, 0.72), rgba(12, 8, 0, 0.78)),
-        linear-gradient(135deg, rgba(46, 33, 0, 0.18), rgba(26, 18, 0, 0.18));
-    background-size: cover;
-    background-position: center;
+        url("../images/backgrounds/bg.jpg") center/cover no-repeat,
+        radial-gradient(circle at top, rgba(232, 192, 64, 0.08), transparent 32%),
+        linear-gradient(rgba(12, 8, 0, 0.50), rgba(12, 8, 0, 0.60)),
+        linear-gradient(135deg, rgba(46, 33, 0, 0.12), rgba(26, 18, 0, 0.10));
     background-attachment: fixed;
     z-index: -1;
 }
@@ -74,7 +74,7 @@ body,
     top: 0;
     width: var(--sidebar-width);
     height: 100vh;
-    background: rgba(18, 12, 0, 0.94);
+    background: rgba(36, 26, 10, 0.92);
     border-right: 1px solid var(--line);
     box-shadow: 12px 0 40px rgba(0, 0, 0, 0.28);
     display: flex;
@@ -124,7 +124,7 @@ body,
     z-index: 999;
     padding: 14px 30px;
     backdrop-filter: blur(12px);
-    background: rgba(20, 10, 0, 0.82);
+    background: rgba(36, 26, 10, 0.72);
     border-bottom: 1px solid var(--line);
 }
 
@@ -137,7 +137,7 @@ body,
     --pagefind-ui-scale: 0.82;
     --pagefind-ui-primary: var(--gold);
     --pagefind-ui-text: var(--gold-soft);
-    --pagefind-ui-background: rgba(18, 12, 0, 0.94);
+    --pagefind-ui-background: rgba(36, 26, 10, 0.90);
     --pagefind-ui-border: var(--line);
     --pagefind-ui-tag: rgba(212, 170, 48, 0.12);
     --pagefind-ui-border-radius: 14px;
@@ -155,9 +155,9 @@ body,
 }
 
 #search .pagefind-ui__search-input {
-    background: linear-gradient(180deg, rgba(28, 20, 0, 0.98), rgba(18, 12, 0, 0.98));
-    border: 1px solid rgba(232, 192, 64, 0.28);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 10px 24px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(180deg, rgba(36, 26, 10, 0.92), rgba(36, 26, 10, 0.88));
+    border: 1px solid rgba(232, 192, 64, 0.22);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03), 0 8px 20px rgba(0, 0, 0, 0.18);
     color: var(--gold);
     border-radius: 16px;
 }
@@ -211,7 +211,7 @@ body,
 }
 
 #search .pagefind-ui__button {
-    background: rgba(36, 25, 0, 0.96);
+    background: rgba(36, 26, 10, 0.92);
     color: var(--gold);
     border-color: var(--line);
 }
@@ -230,7 +230,10 @@ hr {
 .content {
     width: min(calc(100% - 80px), var(--content-width));
     margin: 0 auto;
-    padding: 40px 0 56px;
+    padding: 44px 0 64px;
+    background: rgba(36, 26, 10, 0.95); /* marrom levemente transparente */
+    border-radius: 14px;
+    backdrop-filter: blur(4px) saturate(1.02);
 }
 
 .hero-title,
@@ -270,7 +273,7 @@ h1.page-header__title,
 .mw-body,
 .mw-body-content,
 .page__main {
-    background: linear-gradient(135deg, #1a1200 0%, #241900 50%, #1e1500 100%);
+    background: linear-gradient(135deg, rgba(26,18,0,0.28) 0%, rgba(36,26,0,0.22) 50%, rgba(30,21,0,0.24) 100%);
 }
 
 .wiki-panel {
