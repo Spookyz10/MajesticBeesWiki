@@ -3,7 +3,22 @@
  * Works for files at root level and nested directories
  */
 function getBasePath() {
-  return new URL(".", window.location.href).pathname;
+  const { pathname } = window.location;
+
+  if (pathname.endsWith("/")) {
+    return pathname;
+  }
+
+  const lastSegment = pathname.split("/").pop() || "";
+
+  // If the last segment is a file (e.g. store.html), use its parent directory.
+  if (lastSegment.includes(".")) {
+    return pathname.slice(0, pathname.lastIndexOf("/") + 1);
+  }
+
+  // If the path is a directory without a trailing slash (e.g. /MajesticBeesWiki),
+  // normalize it so generated links stay within that directory.
+  return `${pathname}/`;
 }
 
 /**
