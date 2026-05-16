@@ -11,8 +11,8 @@ function getBasePath() {
 
   const lastSegment = pathname.split("/").pop();
 
-  // If the last segment is a file (e.g. store.html), use its parent directory.
-  if (lastSegment.includes(".")) {
+  // If the last segment is an HTML file (e.g. store.html), use its parent directory.
+  if (lastSegment.endsWith(".html") || lastSegment.endsWith(".htm")) {
     return pathname.slice(0, pathname.lastIndexOf("/") + 1);
   }
 
