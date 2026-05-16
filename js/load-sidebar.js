@@ -9,7 +9,7 @@ function getBasePath() {
     return pathname;
   }
 
-  const lastSegment = pathname.split("/").pop() || "";
+  const lastSegment = pathname.split("/").pop();
 
   // If the last segment is a file (e.g. store.html), use its parent directory.
   if (lastSegment.includes(".")) {
