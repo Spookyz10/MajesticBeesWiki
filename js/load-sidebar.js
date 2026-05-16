@@ -38,7 +38,7 @@ function loadSidebar() {
       <a href="${basePath}index.html">Home</a>
       <a href="${basePath}bees.html">Bees</a>
       <a href="${basePath}codes.html">Codes</a>
-      <a href="${basePath}store/index.html">Store</a>
+      <a href="${basePath}store.html">Store</a>
       <a href="${basePath}shops.html">Shops</a>
     </div>
   `;
