@@ -3,22 +3,7 @@
  * Works for files at root level and nested directories
  */
 function getBasePath() {
-  const path = window.location.pathname;
-  // Count how many directory levels deep we are
-  const parts = path.split("/").filter((p) => p && p !== "index.html");
-
-  // The last part might be an .html file, so we exclude it from count
-  let depth = 0;
-  for (let i = 0; i < parts.length; i++) {
-    if (parts[i].includes(".html")) {
-      depth = i;
-      break;
-    }
-    depth = i + 1;
-  }
-
-  // Root level files have depth 0, files in store/ have depth 1
-  return depth > 0 ? "../".repeat(depth) : "";
+  return new URL(".", window.location.href).pathname;
 }
 
 /**
