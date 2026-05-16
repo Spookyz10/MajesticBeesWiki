@@ -11,23 +11,14 @@
     <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
 
     <script defer src="js/bees.js"></script>
+    <script defer src="js/load-sidebar.js"></script>
     <link rel="stylesheet" href="pagefind/pagefind-ui.css" />
     <script defer src="pagefind/pagefind-ui.js"></script>
     <script defer src="js/search.js"></script>
   </head>
 
   <body>
-    <div class="sidebar" data-pagefind-ignore>
-      <a class="sidebar-logo" href="index.html">
-        <img src="images/ui/site-logo.png" alt="" />
-      </a>
-
-      <a href="index.html">Home</a>
-      <a href="bees.html">Bees</a>
-      <a href="codes.html">Codes</a>
-      <a href="store.html">Store</a>
-      <a href="shops.html">Shops</a>
-    </div>
+    <div id="sidebar-container"></div>
 
     <div class="main" data-pagefind-body>
       <div class="topbar">
@@ -50,7 +41,7 @@
 
         <h2>Hive Slots</h2>
         <div class="bees-info-box">
-          You start the game with <b>10 hive slots</b>. Every
+          You start the game with <b>5 hive slots</b>. Every
           <b>5 player levels</b> you gain <b>1 additional slot</b>, up to a
           maximum of <b>50 slots</b>. XP to level up is earned purely through
           progression.
@@ -64,27 +55,27 @@
             <tr>
               <td>Start</td>
               <td>—</td>
-              <td>10</td>
+              <td>5</td>
             </tr>
             <tr>
               <td>5</td>
               <td>+1</td>
-              <td>11</td>
+              <td>6</td>
             </tr>
             <tr>
               <td>10</td>
               <td>+1</td>
-              <td>12</td>
+              <td>7</td>
             </tr>
             <tr>
               <td>15</td>
               <td>+1</td>
-              <td>13</td>
+              <td>8</td>
             </tr>
             <tr>
               <td>20</td>
               <td>+1</td>
-              <td>14</td>
+              <td>9</td>
             </tr>
             <tr>
               <td><i>...</i></td>
@@ -92,7 +83,7 @@
               <td><i>...</i></td>
             </tr>
             <tr>
-              <td>200</td>
+              <td>250</td>
               <td>+1</td>
               <td>50 (max)</td>
             </tr>

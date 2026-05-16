@@ -1,64 +1,64 @@
-.starter-shop-shell {
+.shop-shell {
   max-width: 1120px;
   margin: 0 auto;
 }
-.starter-shop-hero {
+.shop-hero {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   gap: 24px;
   align-items: center;
   padding: 0 20px;
 }
-.starter-shop-photo {
+.shop-photo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.starter-shop-photo img {
+.shop-photo img {
   width: min(100%, 520px);
   height: auto;
   display: block;
   filter: drop-shadow(0 16px 28px rgba(0, 0, 0, 0.28));
   border-radius: 14px;
 }
-.starter-shop-summary {
+.shop-summary {
   padding: 20px 22px;
   border: 1px solid var(--line);
   border-radius: 14px;
   background: rgba(36, 26, 10, 0.62);
 }
-.starter-shop-summary h2 {
+.shop-summary h2 {
   text-align: left;
   padding-left: 0;
   margin-top: 0;
 }
-.starter-shop-summary p {
+.shop-summary p {
   margin: 0;
   line-height: 1.85;
   color: var(--gold-soft);
 }
-.starter-shop-section {
+.shop-section {
   margin-top: 30px;
   padding: 0 20px;
 }
-.starter-shop-section h2 {
+.shop-section h2 {
   text-align: center;
   margin-bottom: 10px;
 }
-.starter-shop-section-desc {
+.shop-section-desc {
   text-align: center;
   color: #c8a84e;
   margin: 0 auto 18px;
   max-width: 780px;
   line-height: 1.7;
 }
-.starter-shop-grid {
+.shop-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
 }
-.starter-shop-item {
+.shop-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,12 +70,12 @@
   background: rgba(36, 26, 10, 0.74);
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.15);
 }
-.starter-shop-item-top {
+.shop-item-top {
   display: flex;
   align-items: center;
   gap: 14px;
 }
-.starter-shop-item-icon {
+.shop-item-icon {
   width: 88px;
   height: 88px;
   flex: 0 0 88px;
@@ -87,20 +87,20 @@
   border: 1px solid rgba(232, 192, 64, 0.18);
   padding: 6px;
 }
-.starter-shop-item-icon img {
+.shop-item-icon img {
   width: 68px;
   height: 68px;
   object-fit: contain;
   image-rendering: pixelated;
 }
-.starter-shop-item-name {
+.shop-item-name {
   font-family: "Fredoka One", Georgia, sans-serif;
   font-size: 1.05rem;
   color: var(--gold);
   line-height: 1.15;
   text-align: center;
 }
-.starter-shop-item-type {
+.shop-item-type {
   margin-top: 4px;
   color: #c8a84e;
   font-size: 0.84rem;
@@ -108,12 +108,12 @@
   text-transform: uppercase;
   text-align: center;
 }
-.starter-shop-item-panels {
+.shop-item-panels {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
-.starter-shop-item-panel {
+.shop-item-panel {
   min-height: 112px;
   padding: 12px;
   border-radius: 12px;
@@ -125,7 +125,7 @@
   align-items: center;
   text-align: center;
 }
-.starter-shop-item-panel.image-panel {
+.shop-item-panel.image-panel {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,7 +135,7 @@
   max-height: 200px;
   overflow: hidden;
 }
-.starter-shop-item-panel.image-panel img {
+.shop-item-panel.image-panel img {
   max-height: 100%;
   max-width: 100%;
   width: auto;
@@ -143,7 +143,7 @@
   display: block;
   object-fit: contain;
 }
-.starter-shop-item-panel h4 {
+.shop-item-panel h4 {
   margin: 0 0 10px;
   padding: 0;
   color: var(--gold);
@@ -151,7 +151,7 @@
   font-size: 0.88rem;
   letter-spacing: 0.04em;
 }
-.starter-shop-item-panel p {
+.shop-item-panel p {
   margin: 0;
   min-height: 70px;
   color: var(--gold-soft);
@@ -159,7 +159,7 @@
   font-size: 0.9rem;
   text-align: center;
 }
-.starter-shop-item-panel.cost-panel {
+.shop-item-panel.cost-panel {
   min-height: 112px;
   width: 100%;
   padding: 12px;
@@ -167,7 +167,7 @@
   border: 1px solid rgba(58, 40, 0, 0.9);
   background: rgba(18, 12, 0, 0.58);
 }
-.starter-shop-cost-list {
+.shop-cost-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -175,7 +175,7 @@
   flex-direction: column;
   gap: 6px;
 }
-.starter-shop-cost-list li {
+.shop-cost-list li {
   color: var(--gold-soft);
 }
 .honey-word {
@@ -199,10 +199,10 @@
     0 0 18px rgba(255, 200, 0, 0.4);
 }
 @media (max-width: 760px) {
-  .starter-shop-hero {
+  .shop-hero {
     grid-template-columns: 1fr;
   }
-  .starter-shop-item-panels {
+  .shop-item-panels {
     grid-template-columns: 1fr;
   }
 }

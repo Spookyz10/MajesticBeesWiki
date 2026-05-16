@@ -1,0 +1,337 @@
+{
+  "shops": [
+    {
+      "id": "starter-shop",
+      "name": "Starter Shop",
+      "title": "Starter Shop",
+      "location": "Near Black Bear",
+      "path": "starter-shop.html?shop=starter-shop",
+      "image": "images/gear/starterShop/Shop.png",
+      "description": "The first shop you'll encounter. A cozy wooden building surrounded by trees and bushes, offering the essential tools and gear for new beekeepers. Carries 5 tools, 4 bags, and 6 gear pieces purchasable with Honey.",
+      "tags": ["Tools", "Bags", "Gear"],
+      "about": "The Shop is a wooden building located near Black Bear. It has one door at the front and two large windows. It is surrounded by trees and bushes, giving it a cozy and welcoming look. The outside has a few wall lights that keep the area bright. Inside you can find 5 tools, 4 bags, and 1 of each type of gear.",
+      "sections": [
+        {
+          "title": "Tools",
+          "description": "Five tools are sold here. Below are the photos, names, and details for each tool.",
+          "items": [
+            {
+              "name": "Shovel",
+              "type": "",
+              "image": "images/gear/starterShop/Shovel.png",
+              "description": "A basic shovel. Is something wrong?",
+              "info": "Gathers 2 pollen from 2 flowers in front of you in 0.8 seconds.",
+              "cost": "Free",
+              "costType": "plain"
+            },
+            {
+              "name": "Rake",
+              "type": "",
+              "image": "images/gear/starterShop/Rake.png",
+              "description": "Be careful, you might stab yourself.",
+              "info": "Gathers 1 pollen from 6 flowers in front of you in 0.9 seconds.",
+              "cost": "750 Honey",
+              "costType": "honey"
+            },
+            {
+              "name": "Hammer",
+              "type": "",
+              "image": "images/gear/starterShop/Hammer.png",
+              "description": "Careful, dont smash anything with this.",
+              "info": "Gathers 2 pollen from 5 flowers in front of you in 0.9 seconds.",
+              "cost": "3.4k Honey",
+              "costType": "honey"
+            },
+            {
+              "name": "Magnet",
+              "type": "",
+              "image": "images/gear/starterShop/Magnet.png",
+              "description": "You might find something you did not expect to find while collecting with this...",
+              "info": "Gathers 3 pollen from 7 flowers in front of you in 0.8 seconds.",
+              "cost": "11k Honey",
+              "costType": "honey"
+            },
+            {
+              "name": "Scissors",
+              "type": "",
+              "image": "images/gear/starterShop/Scissors.png",
+              "description": "Cut flowers with it!",
+              "info": "Gathers 20 pollen from 1 flower in front of you in 0.6 seconds.",
+              "cost": "27.5k Honey",
+              "costType": "honey"
+            }
+          ]
+        },
+        {
+          "title": "Bags",
+          "description": "4 bags are sold here. These cards are ready for the item image, price, and extra notes.",
+          "items": [
+            {
+              "name": "Satchel",
+              "type": "",
+              "image": "images/gear/starterShop/Satchel.png",
+              "description": "Starter bag, anyone starts with it.",
+              "info": "+250 Capacity",
+              "cost": "Free",
+              "costType": "plain"
+            },
+            {
+              "name": "Jar",
+              "type": "",
+              "image": "images/gear/starterShop/Jar.png",
+              "description": "Honey Jar, best decision for converting.",
+              "info": "+850 Capacity",
+              "cost": "1.4k Honey",
+              "costType": "honey"
+            },
+            {
+              "name": "Flask",
+              "type": "",
+              "image": "images/gear/starterShop/Flask.png",
+              "description": "Best container for honey convertation.",
+              "info": "+2.2k Capacity",
+              "cost": "4.5k Honey",
+              "costType": "honey"
+            },
+            {
+              "name": "Backpack",
+              "type": "",
+              "image": "images/gear/starterShop/Backpack.png",
+              "description": "Classical backpack that used for camps, made out of leather.",
+              "info": "+8k Capacity\n+25% Convert Rate",
+              "cost": "18k Honey",
+              "costType": "honey"
+            }
+          ]
+        },
+        {
+          "title": "Gear",
+          "description": "1 of each gear is sold here. The shop has left shoulder, right shoulder guard, boots, helmet, belt and gloves.",
+          "items": [
+            {
+              "name": "Left Worker's Guard",
+              "type": "",
+              "image": "images/gear/starterShop/Left%20Worker's%20Guard.png",
+              "description": "Space for the item description.",
+              "info": "Space for the item notes and details.",
+              "cost": "Space for the item cost.",
+              "costType": "plain"
+            },
+            {
+              "name": "Right Worker's Guard",
+              "type": "",
+              "image": "images/gear/starterShop/Right%20Worker's%20Guard.png",
+              "description": "Space for the item description.",
+              "info": "Space for the item notes and details.",
+              "cost": "Space for the item cost.",
+              "costType": "plain"
+            },
+            {
+              "name": "Worker's Boots",
+              "type": "",
+              "image": "images/gear/starterShop/Worker's%20Boots.png",
+              "description": "Space for the item description.",
+              "info": "Space for the item notes and details.",
+              "cost": "Space for the item cost.",
+              "costType": "plain"
+            },
+            {
+              "name": "Worker's Helmet",
+              "type": "",
+              "image": "images/gear/starterShop/Worker's%20Helmet.png",
+              "description": "Space for the item description.",
+              "info": "Space for the item notes and details.",
+              "cost": "Space for the item cost.",
+              "costType": "plain"
+            },
+            {
+              "name": "Worker's Belt",
+              "type": "",
+              "image": "images/gear/starterShop/Worker's%20Belt.png",
+              "description": "Space for the item description.",
+              "info": "Space for the item notes and details.",
+              "cost": "Space for the item cost.",
+              "costType": "plain"
+            },
+            {
+              "name": "Worker's Gloves",
+              "type": "",
+              "image": "images/gear/starterShop/Worker's%20Gloves.png",
+              "description": "Space for the item description.",
+              "info": "Space for the item notes and details.",
+              "cost": "Space for the item cost.",
+              "costType": "plain"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "advanced-shop",
+      "name": "Advanced Shop",
+      "title": "Advanced Shop",
+      "location": "15 Bee Zone, near Spider Field",
+      "path": "advanced-shop.html?shop=advanced-shop",
+      "image": "images/gear/advancedShop/AdvancedShop.png",
+      "description": "A mid-tier shop for experienced beekeepers, located in the 15 Bee Zone near the Spider Field. Carries 5 tools, 4 bags, and 6 gear pieces purchasable with Honey, Pine Cones, and Treats.",
+      "tags": ["Tools", "Bags", "Gear"],
+      "about": "The Advanced Shop is a wooden building located in the 15 Bee Zone, near the Spider Field. It has one door at the front and two large windows. The surrounding area is filled with dense trees and tall bushes, making it feel more secluded than the basic Shop. Wall lights on the outside keep the area lit despite the darker atmosphere of the zone. Inside, you can find mid-tier equipment suited for more experienced beekeepers.",
+      "sections": [
+        {
+          "title": "tools",
+          "description": "Five tools are sold here. Below are the photos, names, and details for each collector.",
+          "items": [
+            {
+              "name": "Scythe",
+              "type": "",
+              "image": "images/gear/advancedShop/Scythe.png",
+              "description": "Be careful, you might stab yourself.",
+              "info": "Gathers 4 pollen from 8 flowers in front of you in 0.66 seconds.",
+              "cost": "35k Honey",
+              "costType": "honey"
+            },
+            {
+              "name": "Axe",
+              "type": "",
+              "image": "images/gear/advancedShop/Axe.png",
+              "description": "Lumberjack axe, gather some wood with it!",
+              "info": "Gathers 5 pollen from 9 flowers in front of you in 0.8 seconds.",
+              "cost": "125k Honey",
+              "costType": "honey"
+            },
+            {
+              "name": "Pickaxe",
+              "type": "",
+              "image": "images/gear/advancedShop/Pickaxe.png",
+              "description": "Silver Pickaxe, mine diamonds with it!",
+              "info": "Gathers 6 pollen from 12 flowers in front of you in 0.8 seconds.",
+              "cost": "450k Honey",
+              "costType": "honey"
+            },
+            {
+              "name": "Gold Magnet",
+              "type": "",
+              "image": "images/gear/advancedShop/GoldMagnet.png",
+              "description": "You might find something you didn't expect to find while collecting with this.",
+              "info": "Gathers 9 pollen from 7 flowers in front of you in 0.8 seconds.",
+              "cost": "900k Honey",
+              "costType": "honey"
+            },
+            {
+              "name": "Honey Dipper",
+              "type": "",
+              "image": "images/gear/advancedShop/HoneyDipper.png",
+              "description": "Very sticky and yummy spoon filled with honey.",
+              "info": "Gathers 5 pollen from 29 flowers in front of you in 0.8 seconds.",
+              "cost": "1.9m Honey + 50 Pine Cone + 125 Treat",
+              "costType": "honey"
+            }
+          ]
+        },
+        {
+          "title": "Bags",
+          "description": "5 bags are sold here. Below are the photos, names, and details for each bag.",
+          "items": [
+            {
+              "name": "Flower Pot",
+              "type": "",
+              "image": "images/gear/advancedShop/FlowerPot.png",
+              "description": "Pot made of clay, with a red flower taken from the red flowers field.",
+              "info": "+25k Capacity\n+60% Convert Rate",
+              "cost": "45k Honey",
+              "costType": "honey"
+            },
+            {
+              "name": "Bouquet Of Flowers",
+              "type": "",
+              "image": "images/gear/advancedShop/BouquetOfFlowers.png",
+              "description": "Beautiful flowers bouquet — who knows how it appears here.",
+              "info": "+65k Capacity\n+100% Convert Rate\n+5 Convert Amount",
+              "cost": "150k Honey",
+              "costType": "honey"
+            },
+            {
+              "name": "Cauldron",
+              "type": "",
+              "image": "images/gear/advancedShop/Cauldron.png",
+              "description": "Mystical metallic cauldron, who knows how much honey could it fit.",
+              "info": "+150k Capacity\n+150% Convert Rate\n+10 Convert Amount",
+              "cost": "750k Honey",
+              "costType": "honey"
+            },
+            {
+              "name": "Hive",
+              "type": "",
+              "image": "images/gear/advancedShop/Hive.png",
+              "description": "Strange yellow hive that doesn't look like the player's hive.",
+              "info": "+300k Capacity\n+200% Convert Rate\n+15 Convert Amount\n+15% Pollen",
+              "cost": "1.6m Honey + 50 Pine Cone + 100 Treat",
+              "costType": "honey"
+            }
+          ]
+        },
+        {
+          "title": "Gear",
+          "description": "1 of each gear is sold here. The shop has left shoulder, right shoulder guard, boots, helmet, belt and gloves.",
+          "items": [
+            {
+              "name": "Left Wasp Guard",
+              "type": "",
+              "image": "images/gear/advancedShop/LeftWaspGuard.png",
+              "description": "Left Wasp Guard made of defeated wasps.",
+              "info": "+5k Capacity\n+35% Convert Rate\n+15 Capacity Bonus\n+10% Defense\n+15% Pollen",
+              "cost": "600k Honey + 25 Pine Cone",
+              "costType": "honey"
+            },
+            {
+              "name": "Right Wasp Guard",
+              "type": "",
+              "image": "images/gear/advancedShop/RightWaspGuard.png",
+              "description": "Right Wasp Guard made of defeated wasps.",
+              "info": "+5k Capacity\n+35% Convert Rate\n+15% Capacity Bonus\n+10% Defense\n+15% Pollen",
+              "cost": "600k Honey + 25 Pine Cone",
+              "costType": "honey"
+            },
+            {
+              "name": "Wasp Boots",
+              "type": "",
+              "image": "images/gear/advancedShop/WaspBoots.png",
+              "description": "The real Wasp boots!",
+              "info": "+5 Movement Collection\n+8% Movespeed",
+              "cost": "750k Honey + 35 Pine Cone",
+              "costType": "honey"
+            },
+            {
+              "name": "Wasp Helmet",
+              "type": "",
+              "image": "images/gear/advancedShop/WaspHelmet.png",
+              "description": "Wasp is a dangerous insect that hates bees!",
+              "info": "+45% Convert Rate\n+25% Loot Luck\nx1.25 Capacity Bonus\n+20% Pollen\n+5% Bee Ability Rate",
+              "cost": "600k Honey + 25 Pine Cone",
+              "costType": "honey"
+            },
+            {
+              "name": "Wasp Belt",
+              "type": "",
+              "image": "images/gear/advancedShop/WaspBelt.png",
+              "description": "A real wasp belt, its very rare fabric.",
+              "info": "+25k Capacity\nx1.15 Capacity Bonus\nx1.15 Convert Rate",
+              "cost": "500k Honey + 25 Pine Cone",
+              "costType": "honey"
+            },
+            {
+              "name": "Wasp Gloves",
+              "type": "",
+              "image": "images/gear/advancedShop/WaspGloves.png",
+              "description": "How do they get wasp equipment?",
+              "info": "+10% Tool Speed\n+15% Tool Pollen\n+15% Pollen\n+10% Bee Pollen",
+              "cost": "600k Honey + 25 Pine Cone",
+              "costType": "honey"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

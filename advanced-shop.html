@@ -3,19 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Shops</title>
-
+    <title>Advanced Shop</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/shops.css" />
+    <link rel="stylesheet" href="css/general-shop.css" />
     <link rel="stylesheet" href="pagefind/pagefind-ui.css" />
     <script defer src="pagefind/pagefind-ui.js"></script>
     <script defer src="js/search.js"></script>
-    <script defer src="js/shops.js"></script>
+    <script defer src="js/shop-detail.js"></script>
     <script defer src="js/load-sidebar.js"></script>
     <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
   </head>
-
   <body>
     <div id="sidebar-container"></div>
 
@@ -26,29 +23,26 @@
 
       <div class="content mw-parser-output">
         <div style="text-align: center; padding: 30px 0 10px">
-          <div class="hero-title">Shops</div>
+          <div id="shop-title" class="hero-title">Advanced Shop</div>
         </div>
 
-        <div
-          class="hero-description"
-          style="
-            max-width: 740px;
-            margin: 6px auto 28px;
-            padding: 0 20px;
-            font-size: 1.05em;
-          "
-        >
-          Shops are in-game buildings where you can buy <b>Tools</b>,
-          <b>Bags</b>, and <b>Gear</b> using Honey and Materials. Each shop is
-          located in a different area of the map and carries its own set of
-          items.
+        <div class="shop-shell">
+          <div class="shop-hero">
+            <div class="shop-summary">
+              <h2>About the Shop</h2>
+              <p id="shop-about">Loading shop description...</p>
+            </div>
+            <div class="shop-photo">
+              <img
+                id="shop-image"
+                src="images/gear/advancedShop/Shop.png"
+                alt="Advanced Shop"
+              />
+            </div>
+          </div>
+
+          <div id="shop-sections"></div>
         </div>
-
-        <hr />
-
-        <h2 style="text-align: center; padding-left: 0">All Shops</h2>
-
-        <div id="shops-list" class="shops-list"></div>
       </div>
     </div>
   </body>
