@@ -1,5 +1,16 @@
 [
 	{
+		"code": "LuckyDays2",
+		"expires": "Unknown",
+		"note": "200 ccu special",
+		"items": [],
+		"skins": [],
+		"stickers": [],
+		"boosts": [
+			"Lucky Days x3"
+		]
+	},
+	{
 		"code": "SorryForRemoval",
 		"expires": "Unknown",
 		"note": "Levels System is gone.",
@@ -166,7 +177,7 @@
 		"skins": [],
 		"stickers": [],
 		"boosts": [
-			"Lucky Days 4x"
+			"Lucky Days x4"
 		]
 	},
 	{
@@ -264,7 +275,7 @@
 	{
 		"code": "HDRace",
 		"expires": "2026-05-12",
-		"note": "Second ever honeyday event.",
+		"note": "First ever honeyday event.",
 		"items": [
 			"Starflowers x5",
 			"Mythic Starflower x1"
@@ -272,7 +283,7 @@
 		"skins": [],
 		"stickers": [],
 		"boosts": [
-			"Lucky Days 2x"
+			"Honey Day 2x"
 		]
 	},
 	{
@@ -395,12 +406,12 @@
 	{
 		"code": "HDRaceDay2",
 		"expires": "2026-05-11",
-		"note": "Third ever honeyday event.",
+		"note": "Second ever honeyday event.",
 		"items": [],
 		"skins": [],
 		"stickers": [],
 		"boosts": [
-			"Lucky Days 2x"
+			"Honey Day 2x"
 		]
 	},
 	{
