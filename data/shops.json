@@ -332,6 +332,100 @@
           ]
         }
       ]
+    },
+    {
+      "id": "ticket-shop",
+      "name": "Ticket Shop",
+      "title": "Ticket Shop",
+      "location": "5 Bee Zone, near Royal Jelly Dispenser",
+      "path": "ticket-shop.html?shop=ticket-shop",
+      "image": "images/gear/ticketShop/TicketShop.png",
+      "description": "A special shop found in the 5 Bee Zone where all items are purchased exclusively with Tickets. Carries 3 bees and 3 eggs.",
+      "tags": ["Bees", "Eggs"],
+      "about": "The Ticket Shop is a golden building found in the 5 Bee Zone, close to the Royal Jelly Dispenser. Its warm yellow exterior stands out against the cool blue tones of the surrounding environment, and it features a large decorative sign with a rabbit-like mascot face on top. It has one entrance at the front and a wide circular window on the side. Bushes flank the building on either side, giving it a welcoming look. Inside, the shelves are stocked with special items that can only be purchased using Tickets, a currency earned through gameplay.",
+      "sections": [
+        {
+          "title": "Bees",
+          "description": "Three bees are sold here. Below are the photos, names, and details for each bee.",
+          "items": [
+            {
+              "name": "Pixel Bee",
+              "type": "",
+              "image": "images/gear/ticketShop/PixelBee.png",
+              "description": "Gives you a Pixel Bee.",
+              "info": "Adds a Pixel Bee to your hive.",
+              "cost": "250 Tickets",
+              "costType": "ticket"
+            },
+            {
+              "name": "Lucky Bee",
+              "type": "",
+              "image": "images/gear/ticketShop/LuckyBee.png",
+              "description": "Gives you a Lucky Bee.",
+              "info": "Adds a Lucky Bee to your hive.",
+              "cost": "500 Tickets",
+              "costType": "ticket"
+            },
+            {
+              "name": "Exp Bee",
+              "type": "",
+              "image": "images/gear/ticketShop/ExpBee.png",
+              "description": "Space for the item description.",
+              "info": "Space for the item notes and details.",
+              "cost": "750 Tickets",
+              "costType": "ticket"
+            }
+          ]
+        },
+        {
+          "title": "Eggs",
+          "description": "Three eggs are sold here. Below are the photos, names, and details for each egg.",
+          "items": [
+            {
+              "name": "Silver Egg",
+              "type": "",
+              "image": "images/gear/ticketShop/SilverEgg.png",
+              "description": "A silver egg with a guaranteed quality hatch.",
+              "info": "Always hatches into a Rare or Epic bee.",
+              "cost": "50 Tickets",
+              "costType": "ticket"
+            },
+            {
+              "name": "Gold Egg",
+              "type": "",
+              "image": "images/gear/ticketShop/GoldEgg.png",
+              "description": "A golden egg with an even better guaranteed hatch.",
+              "info": "Always hatches into an Epic or Legendary bee.",
+              "cost": "100 Tickets",
+              "costType": "ticket"
+            },
+            {
+              "name": "Diamond Egg",
+              "type": "",
+              "image": "images/gear/ticketShop/DiamondEgg.png",
+              "description": "The rarest egg available in the shop.",
+              "info": "Always hatches into a Legendary bee.",
+              "cost": "250 Tickets",
+              "costType": "ticket"
+            }
+          ]
+        },
+        {
+          "title": "Removed",
+          "description": "Items that were once sold here but have since been removed from the shop.",
+          "items": [
+            {
+              "name": "Level Pass",
+              "type": "",
+              "image": "images/gear/ticketShop/LevelPass.png",
+              "description": "Unlocked the premium path in the Level Pass.",
+              "info": "When purchased, unlocked the premium path in the level pass. The levels system has since been removed, so this item is no longer available in the shop.",
+              "cost": "Removed",
+              "costType": "plain"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
