@@ -28,6 +28,19 @@ async function loadShops() {
   }
 }
 
+function normalizeShopHref(path, id) {
+  try {
+    if (!path) return `shop.html?shop=${encodeURIComponent(id || "")}`;
+    const parts = path.split("?");
+    const query = parts[1]
+      ? "?" + parts[1]
+      : `?shop=${encodeURIComponent(id || "")}`;
+    return `shop.html${query}`;
+  } catch {
+    return `shop.html?shop=${encodeURIComponent(id || "")}`;
+  }
+}
+
 function escapeHtml(value) {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -48,8 +61,7 @@ function renderTags(tags) {
 }
 
 function renderShopCard(shop) {
-  const href =
-    shop.path || `starter-shop.html?shop=${encodeURIComponent(shop.id || "")}`;
+  const href = normalizeShopHref(shop.path, shop.id);
   const tags = renderTags(shop.tags);
   const image = escapeHtml(shop.image || "images/ui/site-logo.png");
   const name = escapeHtml(shop.name || "Unknown Shop");

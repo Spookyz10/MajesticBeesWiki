@@ -112,6 +112,27 @@ function renderShop(shop) {
   sectionsRoot.innerHTML = sections.map(renderSection).join("");
 }
 
+function renderOtherShopsList(allShops, currentId) {
+  const container = document.getElementById("other-shops-list");
+  if (!container) return;
+
+  const shops = Array.isArray(allShops) ? allShops : [];
+  const others = shops.filter((s) => s.id !== currentId);
+
+  if (!others.length) {
+    container.textContent = "No other shops.";
+    return;
+  }
+
+  container.innerHTML = others
+    .map((s) => {
+      const name = escapeHtml(s.name || s.title || s.id);
+      const href = `shop.html?shop=${encodeURIComponent(s.id)}`;
+      return `<a href="${href}" style="color:inherit;text-decoration:underline;">${name}</a>`;
+    })
+    .join(" · ");
+}
+
 async function loadShopDetail() {
   const params = new URLSearchParams(window.location.search);
   const shopId = params.get("shop") || "starter-shop";
@@ -136,6 +157,8 @@ async function loadShopDetail() {
     }
 
     renderShop(shop);
+    // populate simple list of other shops (text links)
+    renderOtherShopsList(shops, shopId);
   } catch (error) {
     console.error(error);
     if (state) {
