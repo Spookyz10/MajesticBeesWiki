@@ -101,10 +101,10 @@ function renderTab(id, bees) {
         };
 
         card.addEventListener("focus", showDescription);
+        card.addEventListener("blur", clearDescription);
         if (hoverCapable) {
             card.addEventListener("mouseenter", showDescription);
             card.addEventListener("mouseleave", clearDescription);
-            card.addEventListener("blur", clearDescription);
         }
 
         tab.appendChild(card);
