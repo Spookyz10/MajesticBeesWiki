@@ -1,0 +1,623 @@
+/* ── bee.css ── Bee detail page styles ── */
+
+/* ─────────────────────────────────────────
+   Page shell
+───────────────────────────────────────── */
+.bee-detail-shell {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px 64px;
+}
+
+/* ─────────────────────────────────────────
+   Hero section (top layout)
+───────────────────────────────────────── */
+.bee-detail-hero {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 28px;
+  align-items: start;
+  margin-bottom: 36px;
+}
+
+/* Left: description + obtain */
+.bee-detail-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bee-detail-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.bee-detail-name {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  color: var(--gold);
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.bee-detail-rarity {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.bee-detail-desc {
+  color: var(--gold-soft);
+  line-height: 1.85;
+  font-size: 0.97rem;
+}
+
+/* Obtain section */
+.bee-obtain-box {
+  background: #1e1400;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px 22px;
+}
+
+.bee-obtain-title {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 0.88rem;
+  color: var(--gold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.bee-obtain-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bee-obtain-item {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.bee-obtain-method {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 0.88rem;
+  color: var(--gold);
+  white-space: nowrap;
+  min-width: 110px;
+}
+
+.bee-obtain-detail {
+  color: var(--gold-soft);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+/* ─────────────────────────────────────────
+   Infobox (top right)
+───────────────────────────────────────── */
+.bee-infobox {
+  background: #1e1400;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  position: sticky;
+  top: 80px;
+}
+
+.bee-infobox-header {
+  background: var(--panel-2);
+  border-bottom: 1px solid var(--line);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.bee-infobox-label {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 0.9rem;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+}
+
+/* Toggle switch */
+.bee-view-toggle {
+  display: flex;
+  background: rgba(18, 12, 0, 0.7);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bee-view-btn {
+  background: none;
+  border: none;
+  color: var(--gold-dim);
+  font-family: "Nunito", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+}
+
+.bee-view-btn.active {
+  background: rgba(232, 192, 64, 0.15);
+  color: var(--gold);
+}
+
+.bee-view-btn:hover:not(.active) {
+  color: var(--gold-soft);
+}
+
+/* Image display area */
+.bee-infobox-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  min-height: 220px;
+  background: radial-gradient(circle at center, rgba(232, 192, 64, 0.05) 0%, transparent 70%);
+}
+
+.bee-infobox-image img {
+  max-width: 180px;
+  max-height: 180px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.5));
+  transition: opacity 0.2s ease;
+}
+
+.bee-infobox-image img.hidden {
+  display: none;
+}
+
+/* Stats rows */
+.bee-infobox-stats {
+  border-top: 1px solid var(--line);
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bee-infobox-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.bee-infobox-stat-label {
+  color: var(--gold-dim);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.bee-infobox-stat-value {
+  color: var(--gold-soft);
+}
+
+/* ─────────────────────────────────────────
+   Section headings
+───────────────────────────────────────── */
+.bee-section {
+  margin-top: 36px;
+}
+
+.bee-section-heading {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  color: var(--gold);
+  border-bottom: 2px solid var(--line);
+  letter-spacing: 0.02em;
+  padding-bottom: 0.2em;
+  padding-left: 4px;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+/* ─────────────────────────────────────────
+   Abilities
+───────────────────────────────────────── */
+.bee-abilities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bee-ability-card {
+  display: flex;
+  gap: 18px;
+  align-items: stretch;
+  background: rgba(36, 26, 10, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px 20px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.bee-ability-card:hover {
+  border-color: rgba(232, 192, 64, 0.3);
+  box-shadow: 0 0 20px rgba(212, 170, 48, 0.08);
+}
+
+.bee-ability-icon-wrap {
+  flex: 0 0 56px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(18, 12, 0, 0.7);
+  border: 1px solid rgba(58, 40, 0, 0.9);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.bee-ability-icon-wrap img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.bee-ability-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.bee-ability-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.bee-ability-name {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 1.05rem;
+  color: var(--gold);
+  letter-spacing: 0.02em;
+}
+
+.bee-ability-type {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.bee-ability-type.passive {
+  color: var(--green);
+  background: rgba(122, 184, 96, 0.1);
+  border: 1px solid rgba(122, 184, 96, 0.3);
+}
+
+.bee-ability-type.active {
+  color: var(--blue);
+  background: rgba(100, 181, 246, 0.1);
+  border: 1px solid rgba(100, 181, 246, 0.3);
+}
+
+.bee-ability-unlock {
+  font-size: 0.75rem;
+  color: var(--gold-dim);
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.bee-ability-unlock.locked {
+  color: var(--red);
+  opacity: 0.8;
+}
+
+.bee-ability-desc {
+  color: var(--gold-soft);
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+/* Tokens inside abilities */
+.bee-ability-tokens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+/* ─────────────────────────────────────────
+   Token cards
+───────────────────────────────────────── */
+.token-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(18, 12, 0, 0.6);
+  border: 1px solid rgba(58, 40, 0, 0.9);
+  border-radius: 8px;
+  padding: 6px 10px 6px 6px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  user-select: none;
+}
+
+.token-card:hover {
+  border-color: rgba(232, 192, 64, 0.35);
+  background: rgba(36, 26, 10, 0.8);
+}
+
+.token-card-icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(36, 26, 10, 0.8);
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.token-card-icon img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.token-card-name {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 0.8rem;
+  color: var(--gold);
+  letter-spacing: 0.02em;
+}
+
+/* Token modal overlay */
+.token-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.token-modal-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.token-modal {
+  background: #1e1400;
+  border: 1px solid rgba(232, 192, 64, 0.3);
+  border-radius: 16px;
+  max-width: 460px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
+  transform: scale(0.95);
+  transition: transform 0.2s;
+}
+
+.token-modal-overlay.open .token-modal {
+  transform: scale(1);
+}
+
+.token-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: var(--panel-2);
+  border-bottom: 1px solid var(--line);
+}
+
+.token-modal-title {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 1.15rem;
+  color: var(--gold);
+}
+
+.token-modal-close {
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--gold-dim);
+  font-size: 1rem;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.token-modal-close:hover {
+  color: var(--gold);
+  border-color: rgba(232, 192, 64, 0.4);
+}
+
+.token-modal-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.token-modal-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(18, 12, 0, 0.6);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  min-height: 140px;
+  overflow: hidden;
+}
+
+.token-modal-visual img {
+  max-height: 130px;
+  max-width: 100%;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.token-modal-visual .token-no-gif {
+  color: var(--gold-dim);
+  font-size: 0.82rem;
+  font-style: italic;
+}
+
+.token-modal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.token-modal-desc {
+  color: var(--gold-soft);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.token-modal-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: rgba(18, 12, 0, 0.5);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 16px;
+}
+
+.token-modal-stat {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.token-modal-stat-label {
+  color: var(--gold-dim);
+  font-weight: 700;
+}
+
+.token-modal-stat-value {
+  color: var(--gold-soft);
+}
+
+/* ─────────────────────────────────────────
+   Trivia
+───────────────────────────────────────── */
+.bee-trivia-list {
+  background: #1e1400;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 6px 0;
+}
+
+.bee-trivia-item {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 12px 22px;
+  border-bottom: 1px solid rgba(58, 40, 0, 0.5);
+  color: var(--gold-soft);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.bee-trivia-item:last-child {
+  border-bottom: none;
+}
+
+.bee-trivia-item::before {
+  content: "✦";
+  color: var(--gold-dim);
+  font-size: 0.6rem;
+  flex-shrink: 0;
+  position: relative;
+  top: -1px;
+}
+
+/* ─────────────────────────────────────────
+   Loading / error states
+───────────────────────────────────────── */
+.bee-detail-loading {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--gold-dim);
+  font-size: 0.95rem;
+}
+
+.bee-detail-error {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--red);
+  font-size: 0.95rem;
+}
+
+/* ─────────────────────────────────────────
+   Responsive
+───────────────────────────────────────── */
+@media (max-width: 860px) {
+  .bee-detail-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .bee-infobox {
+    position: static;
+    max-width: 340px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .bee-detail-shell {
+    padding: 0 12px 48px;
+  }
+
+  .bee-ability-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bee-ability-unlock {
+    margin-left: 0;
+  }
+
+  .bee-infobox {
+    max-width: 100%;
+  }
+
+  .bee-obtain-item {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .bee-obtain-method {
+    min-width: unset;
+  }
+                        }
