@@ -240,9 +240,13 @@ async function loadBeeDetail() {
 
   try {
     const [beeRes, tokenRes] = await Promise.all([
-      fetch("data/bee-detail.json"),
-      fetch("data/tokens.json"),
+      fetch("data/bee-details.json"),
+      fetch("data/ability-tokens.json"),
     ]);
+
+    if (!beeRes.ok || !tokenRes.ok) {
+      throw new Error("Failed to load data files.");
+    }
 
     const beeData = await beeRes.json();
     const tokenData = await tokenRes.json();

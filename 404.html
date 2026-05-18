@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oops! Page not found</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/404.css" />
+    <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
+  </head>
+  <body>
+    <div id="sidebar-container"></div>
+    <div class="main">
+      <div class="content">
+        <div class="not-found-wrap">
+          <div class="not-found-title">🐝 Oops! This page does not exist.</div>
+          <div class="not-found-subtitle">
+            Looks like this bee flew to another field.
+          </div>
+          <div class="not-found-path" id="missing-path"></div>
+          <button class="not-found-back" id="go-back-btn">Go Back</button>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="js/load-sidebar.js"></script>
+    <script>
+      document.getElementById("missing-path").textContent = window.location.pathname;
+
+      document.getElementById("go-back-btn").addEventListener("click", () => {
+        if (window.history.length > 1) {
+          window.history.back();
+          return;
+        }
+
+        window.location.href = "index.html";
+      });
+    </script>
+  </body>
+</html>
