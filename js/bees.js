@@ -40,9 +40,9 @@ function renderTab(id, bees) {
 
     bees.forEach(bee => {
 
-        const card = document.createElement("button");
+        const card = document.createElement("a");
 
-        card.type = "button";
+        card.href = `bee.html?bee=${encodeURIComponent(bee.name)}`;
         card.className = "bee-card";
         card.dataset.name = bee.name;
         card.dataset.desc = bee.desc;
@@ -101,22 +101,10 @@ function renderTab(id, bees) {
         };
 
         card.addEventListener("focus", showDescription);
+        card.addEventListener("blur", clearDescription);
         if (hoverCapable) {
             card.addEventListener("mouseenter", showDescription);
             card.addEventListener("mouseleave", clearDescription);
-            card.addEventListener("blur", clearDescription);
-            card.addEventListener("click", showDescription);
-        } else {
-            card.addEventListener("click", () => {
-                const isSelected = card.classList.contains("selected");
-
-                if (isSelected) {
-                    clearDescription();
-                    return;
-                }
-
-                showDescription();
-            });
         }
 
         tab.appendChild(card);
