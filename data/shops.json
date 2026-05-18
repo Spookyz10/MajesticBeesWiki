@@ -72,6 +72,8 @@
               "image": "images/gear/starterShop/Satchel.png",
               "description": "Starter bag, anyone starts with it.",
               "info": "+250 Capacity",
+              "capacity": 250,
+              "buffs": [],
               "cost": "Free",
               "costType": "plain"
             },
@@ -81,6 +83,8 @@
               "image": "images/gear/starterShop/Jar.png",
               "description": "Honey Jar, best decision for converting.",
               "info": "+850 Capacity",
+              "capacity": 850,
+              "buffs": [],
               "cost": "1.4k Honey",
               "costType": "honey"
             },
@@ -90,6 +94,8 @@
               "image": "images/gear/starterShop/Flask.png",
               "description": "Best container for honey convertation.",
               "info": "+2.2k Capacity",
+              "capacity": 2200,
+              "buffs": [],
               "cost": "4.5k Honey",
               "costType": "honey"
             },
@@ -99,6 +105,8 @@
               "image": "images/gear/starterShop/Backpack.png",
               "description": "Classical backpack that used for camps, made out of leather.",
               "info": "+8k Capacity\n+25% Convert Rate",
+              "capacity": 8000,
+              "buffs": ["+25% Convert Rate"],
               "cost": "18k Honey",
               "costType": "honey"
             }
@@ -266,12 +274,12 @@
       "id": "advanced-shop",
       "name": "Advanced Shop",
       "title": "Advanced Shop",
-      "location": "15 Bee Zone, near Spider Field",
+      "location": "10 Bee Zone, near Spider Field",
       "path": "advanced-shop.html?shop=advanced-shop",
       "image": "images/gear/advancedShop/AdvancedShop.png",
-      "description": "A mid-tier shop for experienced beekeepers, located in the 15 Bee Zone near the Spider Field. Carries 5 tools, 4 bags, and 6 gear pieces purchasable with Honey, Pine Cones, and Treats.",
+      "description": "A mid-tier shop for experienced beekeepers, located in the 10 Bee Zone near the Spider Field. Carries 5 tools, 4 bags, and 6 gear pieces purchasable with Honey, Pine Cones, and Treats.",
       "tags": ["Tools", "Bags", "Gear"],
-      "about": "The Advanced Shop is a wooden building located in the 15 Bee Zone, near the Spider Field. It has one door at the front and two large windows. The surrounding area is filled with dense trees and tall bushes, making it feel more secluded than the basic Shop. Wall lights on the outside keep the area lit despite the darker atmosphere of the zone. Inside, you can find mid-tier equipment suited for more experienced beekeepers.",
+      "about": "The Advanced Shop is a wooden building located in the 10 Bee Zone, near the Spider Field. It has one door at the front and two large windows. The surrounding area is filled with dense trees and tall bushes, making it feel more secluded than the basic Shop. Wall lights on the outside keep the area lit despite the darker atmosphere of the zone. Inside, you can find mid-tier equipment suited for more experienced beekeepers.",
       "sections": [
         {
           "title": "Tools",
@@ -334,6 +342,8 @@
               "image": "images/gear/advancedShop/FlowerPot.png",
               "description": "Pot made of clay, with a red flower taken from the red flowers field.",
               "info": "+25k Capacity\n+60% Convert Rate",
+              "capacity": 25000,
+              "buffs": ["+60% Convert Rate"],
               "cost": "45k Honey",
               "costType": "honey"
             },
@@ -343,6 +353,8 @@
               "image": "images/gear/advancedShop/BouquetOfFlowers.png",
               "description": "Beautiful flowers bouquet — who knows how it appears here.",
               "info": "+65k Capacity\n+100% Convert Rate\n+5 Convert Amount",
+              "capacity": 65000,
+              "buffs": ["+100% Convert Rate", "+5 Convert Amount"],
               "cost": "150k Honey",
               "costType": "honey"
             },
@@ -352,6 +364,8 @@
               "image": "images/gear/advancedShop/Cauldron.png",
               "description": "Mystical metallic cauldron, who knows how much honey could it fit.",
               "info": "+150k Capacity\n+150% Convert Rate\n+10 Convert Amount",
+              "capacity": 150000,
+              "buffs": ["+150% Convert Rate", "+10 Convert Amount"],
               "cost": "750k Honey",
               "costType": "honey"
             },
@@ -361,6 +375,8 @@
               "image": "images/gear/advancedShop/Hive.png",
               "description": "Strange yellow hive that doesn't look like the player's hive.",
               "info": "+300k Capacity\n+200% Convert Rate\n+15 Convert Amount\n+15% Pollen",
+              "capacity": 300000,
+              "buffs": ["+200% Convert Rate", "+15 Convert Amount", "+15% Pollen"],
               "cost": "1.6m Honey + 50 Pine Cone + 100 Treat",
               "costType": "honey"
             }
@@ -375,7 +391,9 @@
               "type": "",
               "image": "images/gear/advancedShop/LeftWaspGuard.png",
               "description": "Left Wasp Guard made of defeated wasps.",
-              "info": "+5k Capacity\n+35% Convert Rate\n+15 Capacity Bonus\n+10% Defense\n+15% Pollen",
+              "info": "+5k Capacity\n+35% Convert Rate\n+15% Capacity Bonus\n+10% Defense\n+15% Pollen",
+              "capacity": 5000,
+              "buffs": ["+35% Convert Rate", "+15% Capacity Bonus", "+10% Defense", "+15% Pollen"],
               "cost": "600k Honey + 25 Pine Cone",
               "costType": "honey"
             },
@@ -385,6 +403,8 @@
               "image": "images/gear/advancedShop/RightWaspGuard.png",
               "description": "Right Wasp Guard made of defeated wasps.",
               "info": "+5k Capacity\n+35% Convert Rate\n+15% Capacity Bonus\n+10% Defense\n+15% Pollen",
+              "capacity": 5000,
+              "buffs": ["+35% Convert Rate", "+15% Capacity Bonus", "+10% Defense", "+15% Pollen"],
               "cost": "600k Honey + 25 Pine Cone",
               "costType": "honey"
             },
@@ -394,6 +414,8 @@
               "image": "images/gear/advancedShop/WaspBoots.png",
               "description": "The real Wasp boots!",
               "info": "+5 Movement Collection\n+8% Movespeed",
+              "capacity": 0,
+              "buffs": ["+5 Movement Collection", "+8% Movespeed"],
               "cost": "750k Honey + 35 Pine Cone",
               "costType": "honey"
             },
@@ -403,6 +425,8 @@
               "image": "images/gear/advancedShop/WaspHelmet.png",
               "description": "Wasp is a dangerous insect that hates bees!",
               "info": "+45% Convert Rate\n+25% Loot Luck\nx1.25 Capacity Bonus\n+20% Pollen\n+5% Bee Ability Rate",
+              "capacity": 0,
+              "buffs": ["+45% Convert Rate", "+25% Loot Luck", "x1.25 Capacity Bonus", "+20% Pollen", "+5% Bee Ability Rate"],
               "cost": "600k Honey + 25 Pine Cone",
               "costType": "honey"
             },
@@ -412,6 +436,8 @@
               "image": "images/gear/advancedShop/WaspBelt.png",
               "description": "A real wasp belt, its very rare fabric.",
               "info": "+25k Capacity\nx1.15 Capacity Bonus\nx1.15 Convert Rate",
+              "capacity": 25000,
+              "buffs": ["x1.15 Capacity Bonus", "x1.15 Convert Rate"],
               "cost": "500k Honey + 25 Pine Cone",
               "costType": "honey"
             },
@@ -421,6 +447,8 @@
               "image": "images/gear/advancedShop/WaspGloves.png",
               "description": "How do they get wasp equipment?",
               "info": "+10% Tool Speed\n+15% Tool Pollen\n+15% Pollen\n+10% Bee Pollen",
+              "capacity": 0,
+              "buffs": ["+10% Tool Speed", "+15% Tool Pollen", "+15% Pollen", "+10% Bee Pollen"],
               "cost": "600k Honey + 25 Pine Cone",
               "costType": "honey"
             }
@@ -433,7 +461,7 @@
       "id": "red-shop",
       "name": "Red Shop",
       "title": "Red Shop",
-      "location": "Space for the location.",
+      "location": "15 Bee Zone",
       "path": "red-shop.html?shop=red-shop",
       "image": "images/gear/redShop/Shop.png",
       "description": "A fiery shop stocked with flame-themed equipment for experienced beekeepers. Carries 1 collector, 2 bags, 4 gear pieces, and 3 special items purchasable with Honey, Strawberries, Fire Essence, and other rare materials.",
@@ -464,7 +492,9 @@
               "type": "",
               "image": "images/gear/redShop/Furnace.png",
               "description": "Hot and burning furnace, spreads fire into honey.",
-              "info": "+600k Capacity",
+              "info": "+600k Capacity\n+300% Convert Rate\n+30 Convert Amount\n+50% Red Pollen\n+10% Bee Ability Rate",
+              "capacity": 600000,
+              "buffs": ["+300% Convert Rate", "+30 Convert Amount", "+50% Red Pollen", "+10% Bee Ability Rate"],
               "cost": "8m Honey + 75 Strawberry + 35 Fire Essence",
               "costType": "honey"
             },
@@ -473,7 +503,9 @@
               "type": "",
               "image": "images/gear/redShop/CoalBasket.png",
               "description": "Keep honey inside coal parts inside this basket.",
-              "info": "+1m Capacity",
+              "info": "+1m Capacity\n+450% Convert Rate\nx1.1 Capacity Bonus\n+45 Convert Amount\n+75% Red Pollen\n+25% Fire Pollen\n+15% Bee Ability Rate",
+              "capacity": 1000000,
+              "buffs": ["+450% Convert Rate", "x1.1 Capacity Bonus", "+45 Convert Amount", "+75% Red Pollen", "+25% Fire Pollen", "+15% Bee Ability Rate"],
               "cost": "75m Honey + 250 Strawberry + 150 Royal Jelly + 125 Fire Essence",
               "costType": "honey"
             }
@@ -488,7 +520,9 @@
               "type": "",
               "image": "images/gear/redShop/FireBoots.png",
               "description": "Unique boots made of real burning material, leaves a Fire Trail when you walk!",
-              "info": "Space for the item notes and details.",
+              "info": "+7 Movement Collection\n+9% Movespeed\nx1.5 Fire Pollen",
+              "capacity": 0,
+              "buffs": ["+7 Movement Collection", "+9% Movespeed", "x1.5 Fire Pollen"],
               "cost": "25m Honey + 100 Strawberry + 50 Fire Essence",
               "costType": "honey"
             },
@@ -497,7 +531,9 @@
               "type": "",
               "image": "images/gear/redShop/FireGuard.png",
               "description": "Right Fire Guard. Legends say it's the best red starter gear.",
-              "info": "+25k Capacity",
+              "info": "+25k Capacity\n+50% Convert Rate\n+25% Fire Pollen\n+25% Capacity Bonus\n+15% Defense\n+15% Red Pollen",
+              "capacity": 25000,
+              "buffs": ["+50% Convert Rate", "+25% Fire Pollen", "+25% Capacity Bonus", "+15% Defense", "+15% Red Pollen"],
               "cost": "15m Honey + 90 Strawberry + 45 Fire Essence",
               "costType": "honey"
             },
@@ -506,7 +542,9 @@
               "type": "",
               "image": "images/gear/redShop/FlameGuard.png",
               "description": "Right Flame Guard. Legends say it's the best red mid gear.",
-              "info": "+50k Capacity",
+              "info": "+50k Capacity\n+75% Convert Rate\n+40% Fire Pollen\n+50% Capacity Bonus\n+25% Defense\n+30% Red Pollen",
+              "capacity": 50000,
+              "buffs": ["+75% Convert Rate", "+40% Fire Pollen", "+50% Capacity Bonus", "+25% Defense", "+30% Red Pollen"],
               "cost": "30m Honey + 125 Strawberry + 50 Fire Essence + 5 Strawberry Extract",
               "costType": "honey"
             },
@@ -515,7 +553,9 @@
               "type": "",
               "image": "images/gear/redShop/BurningGuard.png",
               "description": "Right Burning Guard. Legends say it's the best red gear.",
-              "info": "+100k Capacity",
+              "info": "+100k Capacity\n+100% Convert Rate\n+75% Fire Pollen\n+75% Capacity Bonus\n+35% Defense\n+50% Red Pollen",
+              "capacity": 100000,
+              "buffs": ["+100% Convert Rate", "+75% Fire Pollen", "+75% Capacity Bonus", "+35% Defense", "+50% Red Pollen"],
               "cost": "75m Honey + 250 Strawberry + 100 Fire Essence + 15 Strawberry Extract",
               "costType": "honey"
             },
@@ -524,7 +564,9 @@
               "type": "",
               "image": "images/gear/redShop/FireAntHelmet.png",
               "description": "Firefly ant made helmet!",
-              "info": "+750k Capacity",
+              "info": "+750k Capacity\n+125% Convert Rate\n+50% Pollen\n+75% Loot Luck\nx1.5 Capacity Bonus\nx3 Fire Pollen\nx1.5 Red Pollen\n+15% Bee Ability Rate",
+              "capacity": 750000,
+              "buffs": ["+125% Convert Rate", "+50% Pollen", "+75% Loot Luck", "x1.5 Capacity Bonus", "x3 Fire Pollen", "x1.5 Red Pollen", "+15% Bee Ability Rate"],
               "cost": "300m Honey + 200 Fire Essence + 25 Strawberry Extract + 3 Diamond Egg",
               "costType": "honey"
             }
@@ -561,7 +603,7 @@
       "id": "blue-shop",
       "name": "Blue Shop",
       "title": "Blue Shop",
-      "location": "Space for the location.",
+      "location": "15 Bee Zone",
       "path": "blue-shop.html?shop=blue-shop",
       "image": "images/gear/blueShop/Shop.png",
       "description": "A frosty shop stocked with ice-themed equipment for experienced beekeepers. Carries 1 collector, 2 bags, 4 gear pieces, and 2 special items purchasable with Honey, Blueberries, Water Essence, and other rare materials.",
@@ -592,7 +634,9 @@
               "type": "",
               "image": "images/gear/blueShop/Fridge.png",
               "description": "Freezer and fridge, help save your honey tasty.",
-              "info": "+600k Capacity",
+              "info": "+600k Capacity\n+300% Convert Rate\n+30 Convert Amount\n+50% Blue Pollen\n+10% Bee Ability Rate",
+              "capacity": 600000,
+              "buffs": ["+300% Convert Rate", "+30 Convert Amount", "+50% Blue Pollen", "+10% Bee Ability Rate"],
               "cost": "8m Honey + 75 Blueberry + 35 Water Essence",
               "costType": "honey"
             },
@@ -601,7 +645,9 @@
               "type": "",
               "image": "images/gear/blueShop/IceBasket.png",
               "description": "Keep honey inside ice balls inside this basket.",
-              "info": "+1m Capacity",
+              "info": "+1m Capacity\n+450% Convert Rate\nx1.1 Capacity Bonus\n+45 Convert Amount\n+75% Blue Pollen\n+10% Ice Pollen\n+15% Bee Ability Rate",
+              "capacity": 1000000,
+              "buffs": ["+450% Convert Rate", "x1.1 Capacity Bonus", "+45 Convert Amount", "+75% Blue Pollen", "+10% Ice Pollen", "+15% Bee Ability Rate"],
               "cost": "75m Honey + 250 Blueberry + 150 Royal Jelly + 125 Water Essence",
               "costType": "honey"
             }
@@ -616,7 +662,9 @@
               "type": "",
               "image": "images/gear/blueShop/IceBoots.png",
               "description": "Unique boots made of real ice, leaves an Ice Trail when you walk!",
-              "info": "Space for the item notes and details.",
+              "info": "+7 Movement Collection\n+9% Movespeed\nx1.15 Ice Pollen",
+              "capacity": 0,
+              "buffs": ["+7 Movement Collection", "+9% Movespeed", "x1.15 Ice Pollen"],
               "cost": "25m Honey + 100 Blueberry + 50 Water Essence",
               "costType": "honey"
             },
@@ -625,7 +673,9 @@
               "type": "",
               "image": "images/gear/blueShop/SnowflakeGuard.png",
               "description": "Left Snowflake Guard. Legends say it's the best blue starter gear.",
-              "info": "+25k Capacity",
+              "info": "+25k Capacity\n+50% Convert Rate\n+10% Ice Pollen\n+25% Capacity Bonus\n+5% Movespeed\n+15% Blue Pollen",
+              "capacity": 25000,
+              "buffs": ["+50% Convert Rate", "+10% Ice Pollen", "+25% Capacity Bonus", "+5% Movespeed", "+15% Blue Pollen"],
               "cost": "15m Honey + 90 Blueberry + 45 Water Essence",
               "costType": "honey"
             },
@@ -634,7 +684,9 @@
               "type": "",
               "image": "images/gear/blueShop/SnowyGuard.png",
               "description": "Left Snowy Guard. Legends say it's the best blue mid gear.",
-              "info": "+50k Capacity",
+              "info": "+50k Capacity\n+75% Convert Rate\n+15% Ice Pollen\n+50% Capacity Bonus\n+7% Movespeed\n+30% Blue Pollen",
+              "capacity": 50000,
+              "buffs": ["+75% Convert Rate", "+15% Ice Pollen", "+50% Capacity Bonus", "+7% Movespeed", "+30% Blue Pollen"],
               "cost": "30m Honey + 125 Blueberry + 50 Water Essence + 5 Blueberry Extract",
               "costType": "honey"
             },
@@ -643,7 +695,9 @@
               "type": "",
               "image": "images/gear/blueShop/IcicleGuard.png",
               "description": "Left Icicle Guard. Legends say it's the best blue gear.",
-              "info": "+100k Capacity",
+              "info": "+100k Capacity\n+100% Convert Rate\n+25% Ice Pollen\n+75% Capacity Bonus\n+10% Movespeed\n+50% Blue Pollen",
+              "capacity": 100000,
+              "buffs": ["+100% Convert Rate", "+25% Ice Pollen", "+75% Capacity Bonus", "+10% Movespeed", "+50% Blue Pollen"],
               "cost": "75m Honey + 250 Blueberry + 100 Water Essence + 15 Blueberry Extract",
               "costType": "honey"
             },
@@ -652,7 +706,9 @@
               "type": "",
               "image": "images/gear/blueShop/IceAntHelmet.png",
               "description": "Icefully ant made helmet!",
-              "info": "+750k Capacity",
+              "info": "+750k Capacity\n+125% Convert Rate\n+50% Pollen\n+75% Loot Luck\nx2.5 Capacity Bonus\nx1.25 Ice Pollen\nx1.25 Blue Pollen\n+15% Bee Ability Rate",
+              "capacity": 750000,
+              "buffs": ["+125% Convert Rate", "+50% Pollen", "+75% Loot Luck", "x2.5 Capacity Bonus", "x1.25 Ice Pollen", "x1.25 Blue Pollen", "+15% Bee Ability Rate"],
               "cost": "300m Honey + 200 Water Essence + 25 Blueberry Extract + 3 Diamond Egg",
               "costType": "honey"
             }
@@ -689,12 +745,12 @@
       "id": "white-shop",
       "name": "White Shop",
       "title": "White Shop",
-      "location": "Space for the location.",
+      "location": "15 Bee Zone",
       "path": "white-shop.html?shop=white-shop",
       "image": "images/gear/whiteShop/Shop.png",
       "description": "A breezy shop stocked with wind-themed equipment for experienced beekeepers. Carries 1 collector, 2 gear pieces, and 1 special item purchasable with Honey, Pine Cones, Wind Essence, and other rare materials.",
       "tags": ["Collectors", "Gear", "Items"],
-      "about": "Space for the about description.",
+      "about": "A breezy shop stocked with wind-themed equipment for experienced beekeepers. Carries 1 collector, 2 gear pieces, and 1 special item purchasable with Honey, Pine Cones, Wind Essence, and other rare materials.",
       "sections": [
         {
           "title": "Collectors",
@@ -720,7 +776,9 @@
               "type": "",
               "image": "images/gear/whiteShop/WindyBelt.png",
               "description": "Whooshy Whooshy belt, whooshes player around winds.",
-              "info": "+150k Capacity",
+              "info": "+150k Capacity\nx2 Capacity Bonus\nx2 Convert Rate\nx1.25 White Pollen\n+75% Loot Luck",
+              "capacity": 150000,
+              "buffs": ["x2 Capacity Bonus", "x2 Convert Rate", "x1.25 White Pollen", "+75% Loot Luck"],
               "cost": "750m Honey + 250 Pine Cone + 25 Cone Extract + 500 Wind Essence",
               "costType": "honey"
             },
@@ -729,7 +787,9 @@
               "type": "",
               "image": "images/gear/whiteShop/WindyHelmet.png",
               "description": "Windy wosh wosh wosh helmet!",
-              "info": "+750k Capacity",
+              "info": "+750k Capacity\n+175% Convert Rate\n+50% Pollen\n+75% Loot Luck\nx1.5 Capacity Bonus\nx1.5 Cloud Pollen\nx1.25 Obsidian Pollen\nx1.25 White Pollen\n+15% Bee Ability Rate",
+              "capacity": 750000,
+              "buffs": ["+175% Convert Rate", "+50% Pollen", "+75% Loot Luck", "x1.5 Capacity Bonus", "x1.5 Cloud Pollen", "x1.25 Obsidian Pollen", "x1.25 White Pollen", "+15% Bee Ability Rate"],
               "cost": "300m Honey + 200 Wind Essence + 25 Cone Extract + 3 Diamond Egg",
               "costType": "honey"
             }
@@ -744,24 +804,25 @@
               "type": "",
               "image": "images/gear/whiteShop/WindyBee.png",
               "description": "A translucent spirit of the atmosphere, composed of swirling zephyrs and captured starlight. It moves with a restless, unpredictable elegance, leaving behind spiraling slipstreams of inspiration and echoing whispers of ancient secrets; its breezy resonance lifts the spirit, accelerating the pace of discovery and carrying the pollen of innovation across vast distances with a single, effortless gust.",
-              "info": "Requires 10 Thunder Bee + 10 Cloud Bee to craft.",
-              "cost": "2.500 Wind Essence",
+              "info": "Gives you a Windy Bee.",
+              "cost": "2.500 Wind Essence + 10 Thunder Bee + 10 Cloud Bee",
               "costType": "windEssence"
             }
           ]
         }
       ]
     },
+
     {
       "id": "hydrant-shop",
       "name": "Hydrant Shop",
       "title": "Hydrant Shop",
-      "location": "Space for the location.",
+      "location": "20 Bee Zone",
       "path": "hydrant-shop.html?shop=hydrant-shop",
       "image": "images/gear/hydrantShop/Shop.png",
       "description": "A shop carrying hydrants of increasing rarity and power, all purchasable with Honey.",
       "tags": ["Hydrants"],
-      "about": "Space for the about description.",
+      "about": "A shop carrying hydrants of increasing rarity and power, all purchasable with Honey.",
       "sections": [
         {
           "title": "Hydrants",
@@ -816,16 +877,17 @@
         }
       ]
     },
+
     {
       "id": "bamboo-shop",
       "name": "Bamboo Shop",
       "title": "Bamboo Shop",
-      "location": "Space for the location.",
+      "location": "20 Bee Zone",
       "path": "bamboo-shop.html?shop=bamboo-shop",
       "image": "images/gear/bambooShop/Shop.png",
       "description": "A nature-themed shop stocked with bamboo equipment for experienced beekeepers. Carries 3 collectors, 1 bag, and 3 gear pieces purchasable with Honey, Bamboo, Bamboo Flasks, and Wind Essence.",
       "tags": ["Collectors", "Bags", "Gear"],
-      "about": "Space for the about description.",
+      "about": "A nature-themed shop stocked with bamboo equipment for experienced beekeepers. Carries 3 collectors, 1 bag, and 3 gear pieces purchasable with Honey, Bamboo, Bamboo Flasks, and Wind Essence.",
       "sections": [
         {
           "title": "Collectors",
@@ -869,7 +931,9 @@
               "type": "",
               "image": "images/gear/bambooShop/SheafOfBamboo.png",
               "description": "Keep honey inside bamboo parts inside this sheaf.",
-              "info": "+1.5m Capacity",
+              "info": "+1.5m Capacity\n+600% Convert Rate\nx1.25 Capacity Bonus\n+60 Convert Amount\n+50% White Pollen\n+25% Cloud Pollen\n+15% Bee Ability Rate",
+              "capacity": 1500000,
+              "buffs": ["+600% Convert Rate", "x1.25 Capacity Bonus", "+60 Convert Amount", "+50% White Pollen", "+25% Cloud Pollen", "+15% Bee Ability Rate"],
               "cost": "200m Honey + 150 Bamboo + 3 Bamboo Flask + 75 Wind Essence",
               "costType": "honey"
             }
@@ -884,7 +948,9 @@
               "type": "",
               "image": "images/gear/bambooShop/BambooGloves.png",
               "description": "Natural and soft bamboo gloves.",
-              "info": "Space for the item notes and details.",
+              "info": "+15% Tool Speed\n+25% Tool Pollen\n+25% Pollen\n+10% White Pollen\n+15% Bee Pollen",
+              "capacity": 0,
+              "buffs": ["+15% Tool Speed", "+25% Tool Pollen", "+25% Pollen", "+10% White Pollen", "+15% Bee Pollen"],
               "cost": "100m Honey + 100 Bamboo + 2 Bamboo Flask + 50 Wind Essence",
               "costType": "honey"
             },
@@ -893,7 +959,9 @@
               "type": "",
               "image": "images/gear/bambooShop/BambooBelt.png",
               "description": "Made of nature, soft and light bamboo fabric.",
-              "info": "+100k Capacity",
+              "info": "+100k Capacity\nx1.5 Capacity Bonus\nx1.5 Convert Rate\n+50% Loot Luck",
+              "capacity": 100000,
+              "buffs": ["x1.5 Capacity Bonus", "x1.5 Convert Rate", "+50% Loot Luck"],
               "cost": "150m Honey + 125 Bamboo + 2 Bamboo Flask + 50 Wind Essence",
               "costType": "honey"
             },
@@ -902,7 +970,9 @@
               "type": "",
               "image": "images/gear/bambooShop/AphidHelmet.png",
               "description": "Aphid Helmet that made of aphids...?",
-              "info": "Space for the item notes and details.",
+              "info": "+100% Convert Rate\n+50% Loot Luck\nx1.5 Capacity Bonus\n+40% Pollen\n+10% Bee Ability Rate",
+              "capacity": 0,
+              "buffs": ["+100% Convert Rate", "+50% Loot Luck", "x1.5 Capacity Bonus", "+40% Pollen", "+10% Bee Ability Rate"],
               "cost": "250m Honey + 125 Bamboo + 2 Bamboo Flask + 50 Wind Essence",
               "costType": "honey"
             }

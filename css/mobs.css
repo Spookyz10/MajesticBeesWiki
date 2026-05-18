@@ -1,0 +1,177 @@
+.mobs-page-title {
+  text-align: center;
+  padding: 30px 0 10px;
+}
+
+.mobs-hero-description {
+  max-width: 740px;
+  margin: 6px auto 28px;
+  padding: 0 20px;
+  font-size: 1.05em;
+}
+
+.mobs-info-box {
+  max-width: 680px;
+  margin: 0 auto 32px;
+  background: #241900;
+  border: 1px solid #3a2800;
+  border-radius: 12px;
+  padding: 20px 28px;
+  color: var(--gold-soft);
+  line-height: 1.85;
+}
+
+.mobs-info-box p {
+  margin: 0 0 12px;
+}
+
+.mobs-info-box p:last-child {
+  margin-bottom: 0;
+}
+
+.mobs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: min(900px, 92%);
+  margin: 0 auto 12px;
+}
+
+.mob-card {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+  background: rgba(36, 26, 10, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.mob-card:hover {
+  border-color: rgba(232, 192, 64, 0.35);
+  box-shadow: 0 0 24px rgba(212, 170, 48, 0.1);
+}
+
+.mob-card-left {
+  flex: 0 0 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mob-image-wrap {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(18, 12, 0, 0.62);
+  border: 1px solid rgba(58, 40, 0, 0.8);
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.mob-image-wrap img {
+  width: 116px;
+  height: 116px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4));
+}
+
+.mob-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mob-card-header {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.mob-name {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 1.45rem;
+  color: var(--gold);
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+
+.mob-location {
+  font-size: 0.82em;
+  color: var(--gold-dim);
+  letter-spacing: 0.02em;
+}
+
+.mob-desc {
+  margin: 0;
+  color: var(--gold-soft);
+  line-height: 1.75;
+  font-size: 0.94em;
+}
+
+.mob-drops {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.mob-drops-label {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 0.82em;
+  color: var(--gold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.mob-drops-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.mob-drop-tag {
+  background: rgba(232, 192, 64, 0.08);
+  border: 1px solid rgba(232, 192, 64, 0.22);
+  border-radius: 6px;
+  color: var(--gold-soft);
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 3px 10px;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 640px) {
+  .mob-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mob-card-left {
+    flex: none;
+  }
+
+  .mob-card-header {
+    justify-content: center;
+  }
+
+  .mob-drops-list {
+    justify-content: center;
+  }
+
+  .mob-drops {
+    text-align: center;
+  }
+}
