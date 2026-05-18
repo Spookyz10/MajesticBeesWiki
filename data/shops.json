@@ -168,6 +168,101 @@
     },
 
     {
+      "id": "ticket-shop",
+      "name": "Ticket Shop",
+      "title": "Ticket Shop",
+      "location": "5 Bee Zone, near Royal Jelly Dispenser",
+      "path": "ticket-shop.html?shop=ticket-shop",
+      "image": "images/gear/ticketShop/TicketShop.png",
+      "description": "A special shop found in the 5 Bee Zone where all items are purchased exclusively with Tickets. Carries 3 bees and 3 eggs.",
+      "tags": ["Bees", "Eggs"],
+      "about": "The Ticket Shop is a golden building found in the 5 Bee Zone, close to the Royal Jelly Dispenser. Its warm yellow exterior stands out against the green tones of the surrounding environment. It has one entrance at the front and a wide circular window on the side.",
+      "sections": [
+        {
+          "title": "Bees",
+          "description": "Three bees are sold here. Below are the photos, names, and details for each bee.",
+          "items": [
+            {
+              "name": "Pixel Bee",
+              "type": "",
+              "image": "images/gear/ticketShop/PixelBee.png",
+              "description": "Gives you a Pixel Bee.",
+              "info": "Adds a Pixel Bee to your hive.",
+              "cost": "250 Tickets",
+              "costType": "ticket"
+            },
+            {
+              "name": "Lucky Bee",
+              "type": "",
+              "image": "images/gear/ticketShop/LuckyBee.png",
+              "description": "Gives you a Lucky Bee.",
+              "info": "Adds a Lucky Bee to your hive.",
+              "cost": "500 Tickets",
+              "costType": "ticket"
+            },
+            {
+              "name": "Exp Bee",
+              "type": "",
+              "image": "images/gear/ticketShop/ExpBee.png",
+              "description": "Space for the item description.",
+              "info": "Space for the item notes and details.",
+              "cost": "750 Tickets",
+              "costType": "ticket"
+            }
+          ]
+        },
+        {
+          "title": "Eggs",
+          "description": "Three eggs are sold here. Below are the photos, names, and details for each egg.",
+          "items": [
+            {
+              "name": "Silver Egg",
+              "type": "",
+              "image": "images/gear/ticketShop/SilverEgg.png",
+              "description": "A silver egg with a guaranteed quality hatch.",
+              "info": "Always hatches into a Rare or Epic bee.",
+              "cost": "50 Tickets",
+              "costType": "ticket"
+            },
+            {
+              "name": "Gold Egg",
+              "type": "",
+              "image": "images/gear/ticketShop/GoldEgg.png",
+              "description": "A golden egg with an even better guaranteed hatch.",
+              "info": "Always hatches into an Epic or Legendary bee.",
+              "cost": "100 Tickets",
+              "costType": "ticket"
+            },
+            {
+              "name": "Diamond Egg",
+              "type": "",
+              "image": "images/gear/ticketShop/DiamondEgg.png",
+              "description": "The rarest egg available in the shop.",
+              "info": "Always hatches into a Legendary bee.",
+              "cost": "250 Tickets",
+              "costType": "ticket"
+            }
+          ]
+        },
+        {
+          "title": "Removed",
+          "description": "Items that were once sold here but have since been removed from the shop.",
+          "items": [
+            {
+              "name": "Level Pass",
+              "type": "",
+              "image": "images/gear/ticketShop/LevelPass.png",
+              "description": "Unlocked the premium path in the Level Pass.",
+              "info": "When purchased, unlocked the premium path in the level pass. The levels system has since been removed, so this item is no longer available in the shop.",
+              "cost": "Removed",
+              "costType": "plain"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
       "id": "advanced-shop",
       "name": "Advanced Shop",
       "title": "Advanced Shop",
@@ -333,95 +428,483 @@
         }
       ]
     },
+
     {
-      "id": "ticket-shop",
-      "name": "Ticket Shop",
-      "title": "Ticket Shop",
-      "location": "5 Bee Zone, near Royal Jelly Dispenser",
-      "path": "ticket-shop.html?shop=ticket-shop",
-      "image": "images/gear/ticketShop/TicketShop.png",
-      "description": "A special shop found in the 5 Bee Zone where all items are purchased exclusively with Tickets. Carries 3 bees and 3 eggs.",
-      "tags": ["Bees", "Eggs"],
-      "about": "The Ticket Shop is a golden building found in the 5 Bee Zone, close to the Royal Jelly Dispenser. Its warm yellow exterior stands out against the cool blue tones of the surrounding environment, and it features a large decorative sign with a rabbit-like mascot face on top. It has one entrance at the front and a wide circular window on the side. Bushes flank the building on either side, giving it a welcoming look. Inside, the shelves are stocked with special items that can only be purchased using Tickets, a currency earned through gameplay.",
+      "id": "red-shop",
+      "name": "Red Shop",
+      "title": "Red Shop",
+      "location": "Space for the location.",
+      "path": "red-shop.html?shop=red-shop",
+      "image": "images/gear/redShop/Shop.png",
+      "description": "A fiery shop stocked with flame-themed equipment for experienced beekeepers. Carries 1 collector, 2 bags, 4 gear pieces, and 3 special items purchasable with Honey, Strawberries, Fire Essence, and other rare materials.",
+      "tags": ["Collectors", "Bags", "Gear", "Items"],
+      "about": "Space for the about description.",
       "sections": [
         {
-          "title": "Bees",
-          "description": "Three bees are sold here. Below are the photos, names, and details for each bee.",
+          "title": "Collectors",
+          "description": "One collector is sold here. Below are the photos, names, and details for each collector.",
           "items": [
             {
-              "name": "Pixel Bee",
+              "name": "Fire Scythe",
               "type": "",
-              "image": "images/gear/ticketShop/PixelBee.png",
-              "description": "Gives you a Pixel Bee.",
-              "info": "Adds a Pixel Bee to your hive.",
-              "cost": "250 Tickets",
-              "costType": "ticket"
+              "image": "images/gear/redShop/FireScythe.png",
+              "description": "Flaming and hot scythe, cut fire and spread it on fields.",
+              "info": "Gathers 8 pollen from 14 flowers in front of you in 0.7 seconds, 1.5x red pollen.\n[Fire Spreads Passive]: Covers Stamp in Fire every 5 clicks.",
+              "cost": "8m Honey + 50 Strawberry + 25 Fire Essence",
+              "costType": "honey"
+            }
+          ]
+        },
+        {
+          "title": "Bags",
+          "description": "Two bags are sold here. Below are the photos, names, and details for each bag.",
+          "items": [
+            {
+              "name": "Furnace",
+              "type": "",
+              "image": "images/gear/redShop/Furnace.png",
+              "description": "Hot and burning furnace, spreads fire into honey.",
+              "info": "+600k Capacity",
+              "cost": "8m Honey + 75 Strawberry + 35 Fire Essence",
+              "costType": "honey"
             },
             {
-              "name": "Lucky Bee",
+              "name": "Coal Basket",
               "type": "",
-              "image": "images/gear/ticketShop/LuckyBee.png",
-              "description": "Gives you a Lucky Bee.",
-              "info": "Adds a Lucky Bee to your hive.",
-              "cost": "500 Tickets",
-              "costType": "ticket"
-            },
+              "image": "images/gear/redShop/CoalBasket.png",
+              "description": "Keep honey inside coal parts inside this basket.",
+              "info": "+1m Capacity",
+              "cost": "75m Honey + 250 Strawberry + 150 Royal Jelly + 125 Fire Essence",
+              "costType": "honey"
+            }
+          ]
+        },
+        {
+          "title": "Gear",
+          "description": "4 gear pieces are sold here. The shop has boots, three right guards, and a helmet.",
+          "items": [
             {
-              "name": "Exp Bee",
+              "name": "Fire Boots",
               "type": "",
-              "image": "images/gear/ticketShop/ExpBee.png",
-              "description": "Space for the item description.",
+              "image": "images/gear/redShop/FireBoots.png",
+              "description": "Unique boots made of real burning material, leaves a Fire Trail when you walk!",
               "info": "Space for the item notes and details.",
-              "cost": "750 Tickets",
-              "costType": "ticket"
+              "cost": "25m Honey + 100 Strawberry + 50 Fire Essence",
+              "costType": "honey"
+            },
+            {
+              "name": "Fire Guard",
+              "type": "",
+              "image": "images/gear/redShop/FireGuard.png",
+              "description": "Right Fire Guard. Legends say it's the best red starter gear.",
+              "info": "+25k Capacity",
+              "cost": "15m Honey + 90 Strawberry + 45 Fire Essence",
+              "costType": "honey"
+            },
+            {
+              "name": "Flame Guard",
+              "type": "",
+              "image": "images/gear/redShop/FlameGuard.png",
+              "description": "Right Flame Guard. Legends say it's the best red mid gear.",
+              "info": "+50k Capacity",
+              "cost": "30m Honey + 125 Strawberry + 50 Fire Essence + 5 Strawberry Extract",
+              "costType": "honey"
+            },
+            {
+              "name": "Burning Guard",
+              "type": "",
+              "image": "images/gear/redShop/BurningGuard.png",
+              "description": "Right Burning Guard. Legends say it's the best red gear.",
+              "info": "+100k Capacity",
+              "cost": "75m Honey + 250 Strawberry + 100 Fire Essence + 15 Strawberry Extract",
+              "costType": "honey"
+            },
+            {
+              "name": "Fire Ant Helmet",
+              "type": "",
+              "image": "images/gear/redShop/FireAntHelmet.png",
+              "description": "Firefly ant made helmet!",
+              "info": "+750k Capacity",
+              "cost": "300m Honey + 200 Fire Essence + 25 Strawberry Extract + 3 Diamond Egg",
+              "costType": "honey"
             }
           ]
         },
         {
-          "title": "Eggs",
-          "description": "Three eggs are sold here. Below are the photos, names, and details for each egg.",
+          "title": "Items",
+          "description": "Two special items are sold here. Below are the photos, names, and details for each item.",
           "items": [
             {
-              "name": "Silver Egg",
+              "name": "Fire Planter",
               "type": "",
-              "image": "images/gear/ticketShop/SilverEgg.png",
-              "description": "A silver egg with a guaranteed quality hatch.",
-              "info": "Always hatches into a Rare or Epic bee.",
-              "cost": "50 Tickets",
-              "costType": "ticket"
+              "image": "images/gear/redShop/FirePlanter.png",
+              "description": "A fiery planter crackling with intense heat, said to have been forged in the heart of a volcano. Plants grown here are infused with the scorching power of flames, boosting their yield with every harvest.",
+              "info": "Grows in 3 Hours.\nGives 25 Tokens.",
+              "cost": "25m Honey + 100 Fire Essence + 50 Ticket",
+              "costType": "honey"
             },
             {
-              "name": "Gold Egg",
+              "name": "Magma Bee",
               "type": "",
-              "image": "images/gear/ticketShop/GoldEgg.png",
-              "description": "A golden egg with an even better guaranteed hatch.",
-              "info": "Always hatches into an Epic or Legendary bee.",
-              "cost": "100 Tickets",
-              "costType": "ticket"
-            },
+              "image": "images/gear/redShop/MagmaBee.png",
+              "description": "A core-heated sentinel forged from molten stone and pulsing obsidian. As it drones through the hive, it leaves a scorching trail of liquid fire and crystalline embers; its very presence radiates an intense, transformative heat that tempers raw potential into hardened skill, refining the essence of every flower it visits into a potent, concentrated nectar of power.",
+              "info": "Gives you a magma bee.",
+              "cost": "2.500 Fire Essence + 10 Oil Bees + 10 Firework Bees",
+              "costType": "fireEssence"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "blue-shop",
+      "name": "Blue Shop",
+      "title": "Blue Shop",
+      "location": "Space for the location.",
+      "path": "blue-shop.html?shop=blue-shop",
+      "image": "images/gear/blueShop/Shop.png",
+      "description": "A frosty shop stocked with ice-themed equipment for experienced beekeepers. Carries 1 collector, 2 bags, 4 gear pieces, and 2 special items purchasable with Honey, Blueberries, Water Essence, and other rare materials.",
+      "tags": ["Collectors", "Bags", "Gear", "Items"],
+      "about": "Space for the about description.",
+      "sections": [
+        {
+          "title": "Collectors",
+          "description": "One collector is sold here. Below are the photos, names, and details for each collector.",
+          "items": [
             {
-              "name": "Diamond Egg",
+              "name": "Snow Shovel",
               "type": "",
-              "image": "images/gear/ticketShop/DiamondEgg.png",
-              "description": "The rarest egg available in the shop.",
-              "info": "Always hatches into a Legendary bee.",
-              "cost": "250 Tickets",
-              "costType": "ticket"
+              "image": "images/gear/blueShop/SnowShovel.png",
+              "description": "Clean snow with it, might be better than normal shovel.",
+              "info": "Gathers 8 pollen from 29 flowers in front of you in 0.7 seconds, 1.5x blue pollen.\n[Ice Spreads Passive]: Covers Stamp in Ice every 5 clicks.",
+              "cost": "8m Honey + 50 Blueberry + 25 Water Essence",
+              "costType": "honey"
             }
           ]
         },
         {
-          "title": "Removed",
-          "description": "Items that were once sold here but have since been removed from the shop.",
+          "title": "Bags",
+          "description": "Two bags are sold here. Below are the photos, names, and details for each bag.",
           "items": [
             {
-              "name": "Level Pass",
+              "name": "Fridge",
               "type": "",
-              "image": "images/gear/ticketShop/LevelPass.png",
-              "description": "Unlocked the premium path in the Level Pass.",
-              "info": "When purchased, unlocked the premium path in the level pass. The levels system has since been removed, so this item is no longer available in the shop.",
-              "cost": "Removed",
-              "costType": "plain"
+              "image": "images/gear/blueShop/Fridge.png",
+              "description": "Freezer and fridge, help save your honey tasty.",
+              "info": "+600k Capacity",
+              "cost": "8m Honey + 75 Blueberry + 35 Water Essence",
+              "costType": "honey"
+            },
+            {
+              "name": "Ice Basket",
+              "type": "",
+              "image": "images/gear/blueShop/IceBasket.png",
+              "description": "Keep honey inside ice balls inside this basket.",
+              "info": "+1m Capacity",
+              "cost": "75m Honey + 250 Blueberry + 150 Royal Jelly + 125 Water Essence",
+              "costType": "honey"
+            }
+          ]
+        },
+        {
+          "title": "Gear",
+          "description": "4 gear pieces are sold here. The shop has boots, three left guards, and a helmet.",
+          "items": [
+            {
+              "name": "Ice Boots",
+              "type": "",
+              "image": "images/gear/blueShop/IceBoots.png",
+              "description": "Unique boots made of real ice, leaves an Ice Trail when you walk!",
+              "info": "Space for the item notes and details.",
+              "cost": "25m Honey + 100 Blueberry + 50 Water Essence",
+              "costType": "honey"
+            },
+            {
+              "name": "Snowflake Guard",
+              "type": "",
+              "image": "images/gear/blueShop/SnowflakeGuard.png",
+              "description": "Left Snowflake Guard. Legends say it's the best blue starter gear.",
+              "info": "+25k Capacity",
+              "cost": "15m Honey + 90 Blueberry + 45 Water Essence",
+              "costType": "honey"
+            },
+            {
+              "name": "Snowy Guard",
+              "type": "",
+              "image": "images/gear/blueShop/SnowyGuard.png",
+              "description": "Left Snowy Guard. Legends say it's the best blue mid gear.",
+              "info": "+50k Capacity",
+              "cost": "30m Honey + 125 Blueberry + 50 Water Essence + 5 Blueberry Extract",
+              "costType": "honey"
+            },
+            {
+              "name": "Icicle Guard",
+              "type": "",
+              "image": "images/gear/blueShop/IcicleGuard.png",
+              "description": "Left Icicle Guard. Legends say it's the best blue gear.",
+              "info": "+100k Capacity",
+              "cost": "75m Honey + 250 Blueberry + 100 Water Essence + 15 Blueberry Extract",
+              "costType": "honey"
+            },
+            {
+              "name": "Ice Ant Helmet",
+              "type": "",
+              "image": "images/gear/blueShop/IceAntHelmet.png",
+              "description": "Icefully ant made helmet!",
+              "info": "+750k Capacity",
+              "cost": "300m Honey + 200 Water Essence + 25 Blueberry Extract + 3 Diamond Egg",
+              "costType": "honey"
+            }
+          ]
+        },
+        {
+          "title": "Items",
+          "description": "Two special items are sold here. Below are the photos, names, and details for each item.",
+          "items": [
+            {
+              "name": "Ice Planter",
+              "type": "",
+              "image": "images/gear/blueShop/IcePlanter.png",
+              "description": "A frosty planter encased in a layer of shimmering ice, rumored to have been carved from the peak of an eternal glacier. Plants grown here are kissed by the cold, their nectar crystallized into something far sweeter than nature intended.",
+              "info": "Grows in 3 Hours.\nGives 25 Tokens.",
+              "cost": "25m Honey + 100 Water Essence + 50 Ticket",
+              "costType": "honey"
+            },
+            {
+              "name": "Ice Bee",
+              "type": "",
+              "image": "images/gear/blueShop/IceBee.png",
+              "description": "Space for the item description.",
+              "info": "Gives you an ice bee.",
+              "cost": "2.500 Water Essence + 10 Wave Bees + 10 Icicle Bees",
+              "costType": "waterEssence"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "white-shop",
+      "name": "White Shop",
+      "title": "White Shop",
+      "location": "Space for the location.",
+      "path": "white-shop.html?shop=white-shop",
+      "image": "images/gear/whiteShop/Shop.png",
+      "description": "A breezy shop stocked with wind-themed equipment for experienced beekeepers. Carries 1 collector, 2 gear pieces, and 1 special item purchasable with Honey, Pine Cones, Wind Essence, and other rare materials.",
+      "tags": ["Collectors", "Gear", "Items"],
+      "about": "Space for the about description.",
+      "sections": [
+        {
+          "title": "Collectors",
+          "description": "One collector is sold here. Below are the photos, names, and details for each collector.",
+          "items": [
+            {
+              "name": "Windy Staff",
+              "type": "",
+              "image": "images/gear/whiteShop/WindyStaff.png",
+              "description": "Whooshy Whooshy Staff, spreads winds in fields.",
+              "info": "Gathers 6 pollen from 29 flowers in front of you in 0.9 seconds, 1.5x white pollen.\n[Cloud Storm Passive]: Spawns 1 Cloud every 5 clicks.",
+              "cost": "8m Honey + 50 Pine Cone + 25 Wind Essence",
+              "costType": "honey"
+            }
+          ]
+        },
+        {
+          "title": "Gear",
+          "description": "2 gear pieces are sold here. The shop has a belt and a helmet.",
+          "items": [
+            {
+              "name": "Windy Belt",
+              "type": "",
+              "image": "images/gear/whiteShop/WindyBelt.png",
+              "description": "Whooshy Whooshy belt, whooshes player around winds.",
+              "info": "+150k Capacity",
+              "cost": "750m Honey + 250 Pine Cone + 25 Cone Extract + 500 Wind Essence",
+              "costType": "honey"
+            },
+            {
+              "name": "Windy Helmet",
+              "type": "",
+              "image": "images/gear/whiteShop/WindyHelmet.png",
+              "description": "Windy wosh wosh wosh helmet!",
+              "info": "+750k Capacity",
+              "cost": "300m Honey + 200 Wind Essence + 25 Cone Extract + 3 Diamond Egg",
+              "costType": "honey"
+            }
+          ]
+        },
+        {
+          "title": "Items",
+          "description": "One special item is sold here. Below are the photos, names, and details for each item.",
+          "items": [
+            {
+              "name": "Windy Bee",
+              "type": "",
+              "image": "images/gear/whiteShop/WindyBee.png",
+              "description": "A translucent spirit of the atmosphere, composed of swirling zephyrs and captured starlight. It moves with a restless, unpredictable elegance, leaving behind spiraling slipstreams of inspiration and echoing whispers of ancient secrets; its breezy resonance lifts the spirit, accelerating the pace of discovery and carrying the pollen of innovation across vast distances with a single, effortless gust.",
+              "info": "Requires 10 Thunder Bee + 10 Cloud Bee to craft.",
+              "cost": "2.500 Wind Essence",
+              "costType": "windEssence"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hydrant-shop",
+      "name": "Hydrant Shop",
+      "title": "Hydrant Shop",
+      "location": "Space for the location.",
+      "path": "hydrant-shop.html?shop=hydrant-shop",
+      "image": "images/gear/hydrantShop/Shop.png",
+      "description": "A shop carrying hydrants of increasing rarity and power, all purchasable with Honey.",
+      "tags": ["Hydrants"],
+      "about": "Space for the about description.",
+      "sections": [
+        {
+          "title": "Hydrants",
+          "description": "Five hydrants are sold here. Below are the photos, names, and details for each hydrant.",
+          "items": [
+            {
+              "name": "Bronze Hydrant",
+              "type": "",
+              "image": "images/gear/hydrantShop/BronzeHydrant.png",
+              "description": "Forged from the fires of dedication, worn with pride.",
+              "info": "Amount: 1 | Radius: 7 | Rate: 5s | Power: 2",
+              "cost": "10m Honey",
+              "costType": "honey"
+            },
+            {
+              "name": "Silver Hydrant",
+              "type": "",
+              "image": "images/gear/hydrantShop/SilverHydrant.png",
+              "description": "A gleaming relic of urban infrastructure, reforged in pure silver.",
+              "info": "Amount: 1 | Radius: 10 | Rate: 4s | Power: 2",
+              "cost": "100m Honey",
+              "costType": "honey"
+            },
+            {
+              "name": "Golden Hydrant",
+              "type": "",
+              "image": "images/gear/hydrantShop/GoldenHydrant.png",
+              "description": "Drenched in pure gold from top to bottom, the Golden Hydrant is the ultimate symbol of status and success.",
+              "info": "Amount: 2 | Radius: 11 | Rate: 3.5s | Power: 3",
+              "cost": "1b Honey",
+              "costType": "honey"
+            },
+            {
+              "name": "Diamond Hydrant",
+              "type": "",
+              "image": "images/gear/hydrantShop/DiamondHydrant.png",
+              "description": "Forged under unimaginable pressure, the Diamond Hydrant is the pinnacle of rarity and elegance.",
+              "info": "Amount: 2 | Radius: 13 | Rate: 3s | Power: 4",
+              "cost": "10b Honey",
+              "costType": "honey"
+            },
+            {
+              "name": "Emerald Hydrant",
+              "type": "",
+              "image": "images/gear/hydrantShop/EmeraldHydrant.png",
+              "description": "Deep green and mesmerizing, the Emerald Hydrant pulses with a rich, otherworldly glow.",
+              "info": "Amount: 3 | Radius: 15 | Rate: 3s | Power: 5",
+              "cost": "100b Honey",
+              "costType": "honey"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bamboo-shop",
+      "name": "Bamboo Shop",
+      "title": "Bamboo Shop",
+      "location": "Space for the location.",
+      "path": "bamboo-shop.html?shop=bamboo-shop",
+      "image": "images/gear/bambooShop/Shop.png",
+      "description": "A nature-themed shop stocked with bamboo equipment for experienced beekeepers. Carries 3 collectors, 1 bag, and 3 gear pieces purchasable with Honey, Bamboo, Bamboo Flasks, and Wind Essence.",
+      "tags": ["Collectors", "Bags", "Gear"],
+      "about": "Space for the about description.",
+      "sections": [
+        {
+          "title": "Collectors",
+          "description": "Three collectors are sold here. Below are the photos, names, and details for each collector.",
+          "items": [
+            {
+              "name": "Bamboo Spear",
+              "type": "",
+              "image": "images/gear/bambooShop/BambooSpear.png",
+              "description": "Be careful, you might stab yourself.",
+              "info": "Gathers 26 pollen from 8 flowers in front of you in 0.66 seconds.",
+              "cost": "20m Honey + 25 Bamboo + 25 Wind Essence",
+              "costType": "honey"
+            },
+            {
+              "name": "Bamboo Rake",
+              "type": "",
+              "image": "images/gear/bambooShop/BambooRake.png",
+              "description": "Be careful, you might stab yourself.",
+              "info": "Gathers 45 pollen from 6 flowers in front of you in 0.9 seconds.",
+              "cost": "75m Honey + 50 Bamboo + 1 Bamboo Flask + 25 Wind Essence",
+              "costType": "honey"
+            },
+            {
+              "name": "Bamboo Staff",
+              "type": "",
+              "image": "images/gear/bambooShop/BambooStaff.png",
+              "description": "Be careful, you might enchant someone.",
+              "info": "Gathers 13 pollen from 29 flowers in front of you in 0.8 seconds.",
+              "cost": "200m Honey + 125 Bamboo + 3 Bamboo Flask + 50 Wind Essence",
+              "costType": "honey"
+            }
+          ]
+        },
+        {
+          "title": "Bags",
+          "description": "One bag is sold here. Below are the photos, names, and details for each bag.",
+          "items": [
+            {
+              "name": "Sheaf of Bamboo",
+              "type": "",
+              "image": "images/gear/bambooShop/SheafOfBamboo.png",
+              "description": "Keep honey inside bamboo parts inside this sheaf.",
+              "info": "+1.5m Capacity",
+              "cost": "200m Honey + 150 Bamboo + 3 Bamboo Flask + 75 Wind Essence",
+              "costType": "honey"
+            }
+          ]
+        },
+        {
+          "title": "Gear",
+          "description": "3 gear pieces are sold here. The shop has gloves, a belt, and a helmet.",
+          "items": [
+            {
+              "name": "Bamboo Gloves",
+              "type": "",
+              "image": "images/gear/bambooShop/BambooGloves.png",
+              "description": "Natural and soft bamboo gloves.",
+              "info": "Space for the item notes and details.",
+              "cost": "100m Honey + 100 Bamboo + 2 Bamboo Flask + 50 Wind Essence",
+              "costType": "honey"
+            },
+            {
+              "name": "Bamboo Belt",
+              "type": "",
+              "image": "images/gear/bambooShop/BambooBelt.png",
+              "description": "Made of nature, soft and light bamboo fabric.",
+              "info": "+100k Capacity",
+              "cost": "150m Honey + 125 Bamboo + 2 Bamboo Flask + 50 Wind Essence",
+              "costType": "honey"
+            },
+            {
+              "name": "Aphid Helmet",
+              "type": "",
+              "image": "images/gear/bambooShop/AphidHelmet.png",
+              "description": "Aphid Helmet that made of aphids...?",
+              "info": "Space for the item notes and details.",
+              "cost": "250m Honey + 125 Bamboo + 2 Bamboo Flask + 50 Wind Essence",
+              "costType": "honey"
             }
           ]
         }
