@@ -1,0 +1,94 @@
+{
+  "tokens": [
+    {
+      "id": "pollen-burst",
+      "name": "Pollen Burst",
+      "icon": "images/tokens/pollen-burst-icon.png",
+      "gif": "images/tokens/pollen-burst.gif",
+      "description": "Releases a burst of pollen in a wide radius, instantly collecting from all nearby flowers.",
+      "effect": "Collects pollen from up to 12 flowers around the bee at once.",
+      "cooldown": "8s"
+    },
+    {
+      "id": "honey-shield",
+      "name": "Honey Shield",
+      "icon": "images/tokens/honey-shield-icon.png",
+      "gif": "images/tokens/honey-shield.gif",
+      "description": "Coats the bee in a protective layer of hardened honey, absorbing incoming damage.",
+      "effect": "Blocks the next 3 hits from enemies. Lasts 12 seconds.",
+      "cooldown": "20s"
+    },
+    {
+      "id": "nectar-trail",
+      "name": "Nectar Trail",
+      "icon": "images/tokens/nectar-trail-icon.png",
+      "gif": "images/tokens/nectar-trail.gif",
+      "description": "Leaves a glowing nectar trail that boosts pollen collection for all bees passing through it.",
+      "effect": "+30% pollen collection for bees in trail. Trail lasts 6 seconds.",
+      "cooldown": "15s"
+    },
+    {
+      "id": "swarm-call",
+      "name": "Swarm Call",
+      "icon": "images/tokens/swarm-call-icon.png",
+      "gif": "images/tokens/swarm-call.gif",
+      "description": "Summons a small swarm of helper bees to attack nearby enemies and collect stray pollen.",
+      "effect": "Spawns 3 helper bees for 10 seconds. Each collects 5 pollen per second.",
+      "cooldown": "30s"
+    },
+    {
+      "id": "flower-bloom",
+      "name": "Flower Bloom",
+      "icon": "images/tokens/flower-bloom-icon.png",
+      "gif": "images/tokens/flower-bloom.gif",
+      "description": "Forces all flowers in range to bloom simultaneously, dramatically increasing their pollen yield.",
+      "effect": "All flowers within 10 tiles bloom instantly and yield 2x pollen for 8 seconds.",
+      "cooldown": "25s"
+    },
+    {
+      "id": "speed-surge",
+      "name": "Speed Surge",
+      "icon": "images/tokens/speed-surge-icon.png",
+      "gif": "images/tokens/speed-surge.gif",
+      "description": "Overcharges the bee's wings for a brief burst of incredible speed.",
+      "effect": "+75% movement speed and +50% collection speed for 6 seconds.",
+      "cooldown": "18s"
+    },
+    {
+      "id": "thunder-strike",
+      "name": "Thunder Strike",
+      "icon": "images/tokens/thunder-strike-icon.png",
+      "gif": "images/tokens/thunder-strike.gif",
+      "description": "Calls down a bolt of lightning that electrifies flowers and stuns enemies in the area.",
+      "effect": "Deals 25 damage to all enemies in a 7-tile radius and stuns them for 3 seconds. Electrified flowers yield +40% pollen.",
+      "cooldown": "22s"
+    },
+    {
+      "id": "ice-crystal",
+      "name": "Ice Crystal",
+      "icon": "images/tokens/ice-crystal-icon.png",
+      "gif": "images/tokens/ice-crystal.gif",
+      "description": "Fires a shard of ice that freezes everything in its path solid.",
+      "effect": "Freezes all enemies in a line for 5 seconds. Frozen flowers yield double pollen when collected.",
+      "cooldown": "16s"
+    },
+    {
+      "id": "ember-aura",
+      "name": "Ember Aura",
+      "icon": "images/tokens/ember-aura-icon.png",
+      "gif": "images/tokens/ember-aura.gif",
+      "description": "Surrounds the bee in a swirling ring of embers that passively scorches nearby enemies and red flowers.",
+      "effect": "Burns enemies for 5 damage/s. Red flowers within 5 tiles yield +25% pollen. Lasts 10 seconds.",
+      "cooldown": "20s"
+    },
+    {
+      "id": "wind-gust",
+      "name": "Wind Gust",
+      "icon": "images/tokens/wind-gust-icon.png",
+      "gif": "images/tokens/wind-gust.gif",
+      "description": "Unleashes a powerful gust of wind that sweeps pollen tokens toward the hive automatically.",
+      "effect": "All loose pollen tokens within 15 tiles are pulled toward the hive. Lasts 5 seconds.",
+      "cooldown": "14s"
+    }
+  ]
+}
