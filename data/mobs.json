@@ -23,7 +23,7 @@
     "name": "Ladybug",
     "image": "images/mobs/Ladybug.png",
     "location": "5 Bee Zone",
-    "desc": "A large, blocky ladybug with a dark navy blue body and bright red wings with black spots. It has six sturdy legs and two short antennae sticking out from its head.",
+    "desc": "A large, blocky ladybug with a dark navy blue body and bright red wings with black spots. It has four sturdy legs and two short antennae sticking out from its head.",
     "drops": [
       "Strawberry",
       "Honey",
@@ -39,7 +39,7 @@
     "name": "Rhino Beetle",
     "image": "images/mobs/RhinoBeetle.png",
     "location": "5 Bee Zone",
-    "desc": "A big, dark blue beetle with two large horn-like spikes on its head. It has a heavy, angular shell on its back and six thick legs.",
+    "desc": "A big, dark blue beetle with two large horn-like spikes on its head. It has a heavy, angular shell on its back and four thick legs.",
     "drops": [
       "Blueberry",
       "Honey",
@@ -55,7 +55,7 @@
     "name": "Spider",
     "image": "images/mobs/Spider.png",
     "location": "10 Bee Zone",
-    "desc": "A massive dark blue spider with eight long, sharp legs spread wide. It has a large triangular body and four big black eyes on the front of its face.",
+    "desc": "A massive dark blue spider with six long, sharp legs spread wide. It has a large triangular body and four big black eyes on the front of its face.",
     "drops": [
       "Seed",
       "Pine Cone",
