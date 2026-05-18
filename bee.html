@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bee</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bee.css" />
+    <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
+    <script defer src="js/bee.js"></script>
+    <script defer src="js/load-sidebar.js"></script>
+    <script defer src="js/wiki-search.js"></script>
+    <script defer src="js/search.js"></script>
+  </head>
+  <body>
+    <div id="sidebar-container"></div>
+    <div class="main" data-pagefind-body>
+      <div class="topbar">
+        <div id="search"></div>
+      </div>
+      <div class="content mw-parser-output">
+        <div class="bee-detail-shell" id="bee-detail-root">
+          <div class="bee-detail-loading">Loading bee data…</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="token-modal-overlay" id="token-modal-overlay">
+      <div class="token-modal" id="token-modal">
+        <div class="token-modal-header">
+          <div class="token-modal-title" id="token-modal-title"></div>
+          <button class="token-modal-close" id="token-modal-close" aria-label="Close">✕</button>
+        </div>
+        <div class="token-modal-body">
+          <div class="token-modal-visual" id="token-modal-visual"></div>
+          <div class="token-modal-info">
+            <div class="token-modal-desc" id="token-modal-desc"></div>
+            <div class="token-modal-stats" id="token-modal-stats"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
