@@ -1,132 +1,608 @@
 {
-  "common": [
-    {
-      "name": "Basic Bee",
-      "image": "images/bees/Basic-Bee.png",
-      "desc": "A simple and reliable bee with balanced abilities. It gathers pollen steadily, converts resources efficiently, and supports your hive with consistent performance. Perfect for beginners building a strong and dependable foundation.",
-      "color": "colorless"
-    }
-  ],
-  "rare": [
-    {
-      "name": "Azure Bee",
-      "image": "images/bees/Azure-Bee.png",
-      "desc": "A calm bee infused with cool energy, boosting blue pollen collection and refreshing nearby flowers. Its soothing aura increases efficiency and supports allies, making it essential for steady resource gathering and growth.",
-      "color": "blue"
-    },
-    {
-      "name": "Magnet Bee",
-      "image": "images/bees/Magnet-Bee.png",
-      "desc": "A magnetic bee that attracts nearby tokens and resources directly to the magnet. Its powerful pull draws in collectibles from a wider radius, reducing travel time and maximizing haul efficiency during every gathering run.",
-      "color": "colorless"
-    },
-    {
-      "name": "Hasty Bee",
-      "image": "images/bees/Hasty-Bee.png",
-      "desc": "An energetic bee that increases movement speed and attack rate for the hive. Its rapid actions help collect pollen faster, dodge threats, and improve overall efficiency during intense gathering sessions.",
-      "color": "colorless"
-    },
-    {
-      "name": "Bomber Bee",
-      "image": "images/bees/Bomber-Bee.png",
-      "desc": "A destructive bee that drops explosive bombs, instantly collecting pollen from surrounding flowers. Its powerful blasts clear large areas quickly, making it perfect for fast farming and overwhelming field coverage.",
-      "color": "colorless"
-    },
-    {
-      "name": "Crimson Bee",
-      "image": "images/bees/Crimson-Bee.png",
-      "desc": "A fierce bee filled with blazing power, specializing in red pollen collection and aggressive boosts. It enhances attack strength and burns through fields quickly, helping your hive dominate and collect resources faster.",
-      "color": "red"
-    }
-  ],
-  "epic": [
-    {
-      "name": "Coal Bee",
-      "image": "images/bees/Coal-Bee.png",
-      "desc": "A smoldering bee forged from deep earth pressure. It scorches nearby flowers, hardening their cores and boosting red pollen collection while radiating raw heat that fuels efficiency and ensures relentless, unyielding resource extraction.",
-      "color": "red"
-    },
-    {
-      "name": "Water Bee",
-      "image": "images/bees/Water-Bee.png",
-      "desc": "A fluid bee coursing with tidal energy. It hydrates nearby flowers, accelerating growth and boosting aqua pollen collection while generating gentle currents that enhance efficiency and help sustain a steady, flowing resource output.",
-      "color": "blue"
-    },
-    {
-      "name": "Sound Bee",
-      "image": "images/bees/Sound-Bee.png",
-      "desc": "A resonant bee vibrating with sonic frequency. It reverberates through nearby flowers, amplifying their bloom and boosting echo pollen collection while emitting harmonic waves that sharpen efficiency and sustain a rhythmic, uninterrupted resource flow.",
-      "color": "colorless"
-    },
-    {
-      "name": "Cold Bee",
-      "image": "images/bees/Cold-Bee.png",
-      "desc": "A chilling bee infused with icy power. It freezes nearby flowers, slowing decay and boosting blue pollen collection while providing cooling effects that improve efficiency and help maintain stable resource gathering performance.",
-      "color": "blue"
-    },
-    {
-      "name": "Fire Bee",
-      "image": "images/bees/Fire-Bee.png",
-      "desc": "A fiery bee radiating intense heat and energy. It scorches flowers to boost red pollen collection, increases attack power, and spreads burning effects that rapidly enhance harvesting speed and field productivity.",
-      "color": "red"
-    },
-    {
-      "name": "Flower Bee",
-      "image": "images/bees/Flower-Bee.png",
-      "desc": "A gentle bee devoted to nurturing flowers. It enhances bloom speed, increases pollen yield from blossoms, and spreads growth energy across fields, making nearby plants more rewarding and efficient to harvest.",
-      "color": "colorless"
-    }
-  ],
-  "legendary": [
-    {
-      "name": "Cloud Bee",
-      "image": "images/bees/Cloud-Bee.png",
-      "desc": "A celestial bee adrift in an endless sky, its body woven from billowing cumulus clouds. It summons gusts of swirling wind to scatter pollen far across the field, enveloping nearby flowers in a soft, misty vapor that magnifies pollen yield.",
-      "color": "colorless"
-    },
-    {
-      "name": "Icicle Bee",
-      "image": "images/bees/Icicle-Bee.png",
-      "desc": "A frigid bee encased in piercing ice. It launches razor-sharp icicles across the field, freezing nearby flowers in a crystalline frost that slows decay and amplifies pollen yield while its glacial aura blankets the area in a relentless, bone-chilling surge of frozen energy.",
-      "color": "blue"
-    },
-    {
-      "name": "Oil Bee",
-      "image": "images/bees/Oil-Bee.png",
-      "desc": "A viscous bee gleaming with dark iridescence, its form composed of flowing obsidian streams that ripple with rainbow sheens. It releases thick, amber droplets that coat the field in protective resin, encasing nearby flowers in a preserving glaze that extends their lifespan and intensifies their essence while its slick aura spreads through the area in slow, deliberate waves of liquid preservation and ancient earthbound energy.",
-      "color": "red"
-    },
-    {
-      "name": "Wave Bee",
-      "image": "images/bees/Wave-Bee.png",
-      "desc": "An oceanic bee flowing like liquid starlight, its body formed from cascading tidal currents that shimmer with deep blue luminescence. It conjures rhythmic pulses of crystalline water that wash over the field in gentle, nourishing waves, bathing nearby flowers in healing moisture that enhances their vitality while its fluid aura ebbs and flows through the area in endless, hypnotic cycles of aquatic serenity.",
-      "color": "blue"
-    },
-    {
-      "name": "Thunder Bee",
-      "image": "images/bees/Thunder-Bee.png",
-      "desc": "A tempestuous bee crackling with electric fury, its form wreathed in storm clouds that pulse with veins of lightning. It calls forth thunderous roars that shake the earth and ignite the air with cascading bolts, charging nearby flowers with raw electrical energy that accelerates their growth while its crackling aura surges through the area in violent, electrifying waves of pure storm-born power.",
-      "color": "colorless"
-    },
-    {
-      "name": "Firework Bee",
-      "image": "images/bees/Firework-Bee.png",
-      "desc": "A radiant bee crackling with festive power. It detonates cascading bursts across the field, showering flowers in luminous sparks and amplifying pollen yield while its brilliant explosions ripple outward, fueling a dazzling and relentless surge of collection.",
-      "color": "red"
-    }
-  ],
-  "special": [
-    {
-      "name": "Lucky Bee",
-      "image": "images/bees/Lucky-Bee.png",
-      "desc": "A shimmering bee radiating with golden fortune. It dances unpredictably across the field, scattering bursts of lucky clover and glittering tokens wherever it roams while its warm, glowing aura pulses with a magnetic charm that draws in rare treasures and multiplies the rewards of every flower it traces.",
-      "color": "colorless"
-    },
-    {
-      "name": "Pixel Bee",
-      "image": "images/bees/Pixel Bee.png",
-      "desc": "A retro-inspired bee built from blocks of pure nostalgia. Its pixelated form may look simple, but don't be fooled - beneath those sharp edges lies a surprisingly capable worker. A charming collectible for those who appreciate the classics.",
-      "color": "colorless"
-    }
-  ]
+  "Azure Bee": {
+    "name": "Azure Bee",
+    "rarity": "Rare",
+    "color": "Blue",
+    "icon": "images/bees/Azure-Bee.png",
+    "model": "images/bees/models/Azure-Bee-model.png",
+    "description": "A calm bee infused with cool energy, boosting blue pollen collection and refreshing nearby flowers. Its soothing aura increases efficiency and supports allies, making it essential for steady resource gathering and growth.",
+    "obtain": [
+      {
+        "method": "Royal Jelly",
+        "detail": "Random chance to get it"
+      },
+      {
+        "method": "Silver Egg",
+        "detail": "Silver Egg can hatch a Rare or Epic Bee."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Blue Pollen Boost",
+        "unlock_level": 1,
+        "tokens": ["blue-pollen-boost"]
+      },
+      {
+        "name": "Blue Bomb",
+        "unlock_level": 3,
+        "tokens": ["blue-bomb"]
+      }
+    ]
+  },
+  "Basic Bee": {
+    "name": "Basic Bee",
+    "rarity": "Common",
+    "color": "Colorless",
+    "icon": "images/bees/Basic-Bee.png",
+    "model": "images/bees/models/Basic-Bee-model.png",
+    "description": "A simple and reliable bee with balanced abilities. It gathers pollen steadily, converts resources efficiently, and supports your hive with consistent performance. Perfect for beginners building a strong and dependable foundation.",
+    "obtain": [
+      {
+        "method": "Basic Egg",
+        "detail": "Basic Egg can hatch Basic Bee."
+      }
+    ],
+    "abilities": []
+  },
+  "Bomber Bee": {
+    "name": "Bomber Bee",
+    "rarity": "Rare",
+    "color": "Colorless",
+    "icon": "images/bees/Bomber-Bee.png",
+    "model": "images/bees/models/Bomber-Bee-model.png",
+    "description": "A destructive bee that drops explosive bombs, instantly collecting pollen from surrounding flowers. Its powerful blasts clear large areas quickly, making it perfect for fast farming and overwhelming field coverage.",
+    "obtain": [
+      {
+        "method": "Royal Jelly",
+        "detail": "Random chance to get it"
+      },
+      {
+        "method": "Silver Egg",
+        "detail": "Silver Egg can hatch a Rare or Epic Bee."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Bomb",
+        "unlock_level": 1,
+        "tokens": ["bomb"]
+      },
+      {
+        "name": "Bomb+",
+        "unlock_level": 4,
+        "tokens": ["bomb-plus"]
+      }
+    ]
+  },
+  "Cloud Bee": {
+    "name": "Cloud Bee",
+    "rarity": "Legendary",
+    "color": "Colorless",
+    "icon": "images/bees/Cloud-Bee.png",
+    "model": "images/bees/models/Cloud-Bee-model.png",
+    "description": "A celestial bee adrift in an endless sky, its body woven from billowing cumulus clouds. It summons gusts of swirling wind to scatter pollen far across the field, enveloping nearby flowers in a soft, misty vapor that suspends decay and magnifies pollen yield while its airy aura drifts through the area in a sweeping, ever-shifting current of boundless atmospheric energy.",
+    "obtain": [
+      {
+        "method": "Royal Jelly",
+        "detail": "Random chance to get it"
+      },
+      {
+        "method": "Diamond Egg",
+        "detail": "Diamond Egg can hatch a Legendary Bee."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Clouds",
+        "unlock_level": 1,
+        "tokens": ["clouds"]
+      },
+      {
+        "name": "Cloud Boost",
+        "unlock_level": 10,
+        "tokens": ["cloud-boost"]
+      }
+    ]
+  },
+  "Coal Bee": {
+    "name": "Coal Bee",
+    "rarity": "Epic",
+    "color": "Red",
+    "icon": "images/bees/Coal-Bee.png",
+    "model": "images/bees/models/Coal-Bee-model.png",
+    "description": "A smoldering bee forged from deep earth pressure. It scorches nearby flowers, hardening their cores and boosting red pollen collection while radiating raw heat that fuels efficiency and ensures relentless, unyielding resource extraction.",
+    "obtain": [
+      {
+        "method": "Royal Jelly",
+        "detail": "Random chance to get it"
+      },
+      {
+        "method": "Gold Egg",
+        "detail": "Gold Egg can hatch an Epic or Legendary Bee."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Red Pollen Boost",
+        "unlock_level": 1,
+        "tokens": ["red-pollen-boost"]
+      },
+      {
+        "name": "Coal Boost",
+        "unlock_level": 4,
+        "tokens": ["coal-boost"]
+      }
+    ]
+  },
+  "Cold Bee": {
+    "name": "Cold Bee",
+    "rarity": "Epic",
+    "color": "Blue",
+    "icon": "images/bees/Cold-Bee.png",
+    "model": "images/bees/models/Cold-Bee-model.png",
+    "description": "A chilling bee infused with icy power. It freezes nearby flowers, slowing decay and boosting blue pollen collection while providing cooling effects that improve efficiency and help maintain stable resource gathering performance.",
+    "obtain": [
+      {
+        "method": "Royal Jelly",
+        "detail": "Random chance to get it"
+      },
+      {
+        "method": "Gold Egg",
+        "detail": "Gold Egg can hatch an Epic or Legendary Bee."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Blue Pollen Boost",
+        "unlock_level": 1,
+        "tokens": ["blue-pollen-boost"]
+      },
+      {
+        "name": "Ice Bomb",
+        "unlock_level": 4,
+        "tokens": ["ice-bomb"]
+      }
+    ]
+  },
+  "Crimson Bee": {
+    "name": "Crimson Bee",
+    "rarity": "Rare",
+    "color": "Red",
+    "icon": "images/bees/Crimson-Bee.png",
+    "model": "images/bees/models/Crimson-Bee-model.png",
+    "description": "A fierce bee filled with blazing power, specializing in red pollen collection and aggressive boosts. It enhances attack strength and burns through fields quickly, helping your hive dominate and collect resources faster.",
+    "obtain": [
+      {
+        "method": "Royal Jelly",
+        "detail": "Random chance to get it"
+      },
+      {
+        "method": "Silver Egg",
+        "detail": "Silver Egg can hatch a Rare or Epic Bee."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Red Pollen Boost",
+        "unlock_level": 1,
+        "tokens": ["red-pollen-boost"]
+      },
+      {
+        "name": "Red Bomb",
+        "unlock_level": 3,
+        "tokens": ["red-bomb"]
+      }
+    ]
+  },
+  "Exp Bee": {
+    "name": "Exp Bee",
+    "rarity": "Special",
+    "color": "Colorless",
+    "icon": "images/bees/Exp-Bee.png",
+    "model": "images/bees/models/Exp-Bee-model.png",
+    "description": "A luminous bee glowing with concentrated knowledge and energy. It flits purposefully through the field, leaving trails of sparkling wisdom and radiant experience orbs in its wake while its brilliant aura resonates with an empowering frequency that accelerates growth and amplifies the learning gained from every blossom it touches.",
+    "obtain": [
+      {
+        "method": "Royal Jelly",
+        "detail": "Random chance to get it"
+      },
+      {
+        "method": "750 Tickets",
+        "detail": "Obtained via 750 Tickets."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Exp Boost",
+        "unlock_level": 1,
+        "tokens": ["exp-boost"]
+      },
+      {
+        "name": "Exp Orbs",
+        "unlock_level": 8,
+        "tokens": ["exp-orbs"]
+      },
+      {
+        "name": "Exp Bomb",
+        "unlock_level": 14,
+        "tokens": ["exp-bomb"]
+      }
+    ]
+  },
+  "Firework Bee": {
+    "name": "Firework Bee",
+    "rarity": "Legendary",
+    "color": "Red",
+    "icon": "images/bees/Firework-Bee.png",
+    "model": "images/bees/models/Firework-Bee-model.png",
+    "description": "A radiant bee crackling with festive power. It detonates cascading bursts across the field, showering flowers in luminous sparks and amplifying pollen yield while its brilliant explosions ripple outward, fueling a dazzling and relentless surge of collection.",
+    "obtain": [
+      {
+        "method": "Royal Jelly",
+        "detail": "Random chance to get it"
+      },
+      {
+        "method": "Diamond Egg",
+        "detail": "Diamond Egg can hatch a Legendary Bee."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Fireworks",
+        "unlock_level": 1,
+        "tokens": ["fireworks"]
+      },
+      {
+        "name": "Fire Bomb",
+        "unlock_level": 7,
+        "tokens": ["fire-bomb"]
+      }
+    ]
+  },
+  "Flower Bee": {
+    "name": "Flower Bee",
+    "rarity": "Epic",
+    "color": "Colorless",
+    "icon": "images/bees/Flower-Bee.png",
+    "model": "images/bees/models/Flower-Bee-model.png",
+    "description": "A gentle bee devoted to nurturing flowers. It enhances bloom speed, increases pollen yield from blossoms, and spreads growth energy across fields, making nearby plants more rewarding and efficient to harvest.",
+    "obtain": [
+      {
+        "method": "Royal Jelly",
+        "detail": "Random chance to get it"
+      },
+      {
+        "method": "Gold Egg",
+        "detail": "Gold Egg can hatch an Epic or Legendary Bee."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "White Pollen Boost",
+        "unlock_level": 1,
+        "tokens": ["white-pollen-boost"]
+      }
+    ]
+  },
+  "Hasty Bee": {
+    "name": "Hasty Bee",
+    "rarity": "Rare",
+    "color": "Colorless",
+    "icon": "images/bees/Hasty-Bee.png",
+    "model": "images/bees/models/Hasty-Bee-model.png",
+    "description": "An energetic bee that increases movement speed and attack rate for the hive. Its rapid actions help collect pollen faster, dodge threats, and improve overall efficiency during intense gathering sessions.",
+    "obtain": [
+      {
+        "method": "Royal Jelly",
+        "detail": "Random chance to get it"
+      },
+      {
+        "method": "Silver Egg",
+        "detail": "Silver Egg can hatch a Rare or Epic Bee."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Haste Boost",
+        "unlock_level": 1,
+        "tokens": ["haste-boost"]
+      }
+    ]
+  },
+  "Icicle Bee": {
+    "name": "Icicle Bee",
+    "rarity": "Legendary",
+    "color": "Blue",
+    "icon": "images/bees/Icicle-Bee.png",
+    "model": "images/bees/models/Icicle-Bee-model.png",
+    "description": "A frigid bee encased in piercing ice. It launches razor-sharp icicles across the field, freezing nearby flowers in a crystalline frost that slows decay and amplifies pollen yield while its glacial aura blankets the area in a relentless, bone-chilling surge of frozen energy.",
+    "obtain": [
+      {
+        "method": "Royal Jelly",
+        "detail": "Random chance to get it"
+      },
+      {
+        "method": "Diamond Egg",
+        "detail": "Diamond Egg can hatch a Legendary Bee."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Icicles",
+        "unlock_level": 1,
+        "tokens": ["icicles"]
+      },
+      {
+        "name": "Ice Bomb",
+        "unlock_level": 7,
+        "tokens": ["ice-bomb"]
+      }
+    ]
+  },
+  "Lucky Bee": {
+    "name": "Lucky Bee",
+    "rarity": "Special",
+    "color": "Colorless",
+    "icon": "images/bees/Lucky-Bee.png",
+    "model": "images/bees/models/Lucky-Bee-model.png",
+    "description": "A shimmering bee radiating with golden fortune. It dances unpredictably across the field, scattering bursts of lucky clover and glittering tokens wherever it roams while its warm, glowing aura pulses with a magnetic charm that draws in rare treasures and multiplies the rewards of every flower it graces.",
+    "obtain": [
+      {
+        "method": "500 Tickets",
+        "detail": "Obtained via 500 Tickets."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "3 Leaf Clover Boost",
+        "unlock_level": 1,
+        "tokens": ["3-leaf-clover-boost"]
+      },
+      {
+        "name": "4 Leaf Clover Boost",
+        "unlock_level": 7,
+        "tokens": ["4-leaf-clover-boost"]
+      },
+      {
+        "name": "Pot O Gold",
+        "unlock_level": 13,
+        "tokens": ["pot-o-gold"]
+      }
+    ]
+  },
+  "Magma Bee": {
+    "name": "Magma Bee",
+    "rarity": "Special",
+    "color": "Red",
+    "icon": "images/bees/Magma-Bee.png",
+    "model": "images/bees/models/Magma-Bee-model.png",
+    "description": "A core-heated sentinel forged from molten stone and pulsing obsidian. As it drones through the hive, it leaves a scorching trail of liquid fire and crystalline embers; its very presence radiates an intense, transformative heat that tempers raw potential into hardened skill, refining the essence of every flower it visits into a potent, concentrated nectar of power.",
+    "obtain": [
+      {
+        "method": "Royal Jelly",
+        "detail": "Random chance to get it"
+      },
+      {
+        "method": "Crafting",
+        "detail": "Obtained via Crafting."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Red Pollen Boost",
+        "unlock_level": 1,
+        "tokens": ["red-pollen-boost"]
+      },
+      {
+        "name": "Fire Crystal",
+        "unlock_level": 14,
+        "tokens": ["fire-crystal"]
+      }
+    ]
+  },
+  "Oil Bee": {
+    "name": "Oil Bee",
+    "rarity": "Legendary",
+    "color": "Red",
+    "icon": "images/bees/Oil-Bee.png",
+    "model": "images/bees/models/Oil-Bee-model.png",
+    "description": "A viscous bee gleaming with dark iridescence, its form composed of flowing obsidian streams that ripple with rainbow sheens. It releases thick, amber droplets that coat the field in protective resin, encasing nearby flowers in a preserving glaze that extends their lifespan and intensifies their essence while its slick aura spreads through the area in slow, deliberate waves of liquid preservation and ancient, earthbound energy.",
+    "obtain": [
+      {
+        "method": "Royal Jelly",
+        "detail": "Random chance to get it"
+      },
+      {
+        "method": "Diamond Egg",
+        "detail": "Diamond Egg can hatch a Legendary Bee."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Oil Boost",
+        "unlock_level": 1,
+        "tokens": ["oil-boost"]
+      },
+      {
+        "name": "Fire Bomb",
+        "unlock_level": 9,
+        "tokens": ["fire-bomb"]
+      }
+    ]
+  },
+  "Pixel Bee": {
+    "name": "Pixel Bee",
+    "rarity": "Special",
+    "color": "Colorless",
+    "icon": "images/bees/Pixel-Bee.png",
+    "model": "images/bees/models/Pixel-Bee-model.png",
+    "description": "A retro-inspired bee built from blocks of pure nostalgia. Its pixelated form may look simple, but don't be fooled — beneath those sharp edges lies a surprisingly capable worker. A charming collectible for those who appreciate the classics.",
+    "obtain": [
+      {
+        "method": "Royal Jelly",
+        "detail": "Random chance to get it"
+      },
+      {
+        "method": "250 Tickets",
+        "detail": "Obtained via 250 Tickets."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Pixel Boost",
+        "unlock_level": 1,
+        "tokens": ["pixel-boost"]
+      }
+    ]
+  },
+  "Sound Bee": {
+    "name": "Sound Bee",
+    "rarity": "Epic",
+    "color": "Colorless",
+    "icon": "images/bees/Sound-Bee.png",
+    "model": "images/bees/models/Sound-Bee-model.png",
+    "description": "A resonant bee vibrating with sonic frequency. It reverberates through nearby flowers, amplifying their bloom and boosting echo pollen collection while emitting harmonic waves that sharpen efficiency and sustain a rhythmic, uninterrupted resource flow.",
+    "obtain": [
+      {
+        "method": "Royal Jelly",
+        "detail": "Random chance to get it"
+      },
+      {
+        "method": "Gold Egg",
+        "detail": "Gold Egg can hatch an Epic or Legendary Bee."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Sound Boost",
+        "unlock_level": 1,
+        "tokens": ["sound-boost"]
+      },
+      {
+        "name": "Bomb+",
+        "unlock_level": 7,
+        "tokens": ["bomb-plus"]
+      }
+    ]
+  },
+  "Thunder Bee": {
+    "name": "Thunder Bee",
+    "rarity": "Legendary",
+    "color": "Colorless",
+    "icon": "images/bees/Thunder-Bee.png",
+    "model": "images/bees/models/Thunder-Bee-model.png",
+    "description": "A tempestuous bee crackling with electric fury, its form wreathed in storm clouds that pulse with veins of lightning. It calls forth thunderous roars that shake the earth and ignite the air with cascading bolts, charging nearby flowers with raw electrical energy that accelerates their growth while its crackling aura surges through the area in violent, electrifying waves of pure storm-born power.",
+    "obtain": [
+      {
+        "method": "Royal Jelly",
+        "detail": "Random chance to get it"
+      },
+      {
+        "method": "Diamond Egg",
+        "detail": "Diamond Egg can hatch a Legendary Bee."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Thunder Boost",
+        "unlock_level": 1,
+        "tokens": ["thunder-boost"]
+      },
+      {
+        "name": "Bomb+",
+        "unlock_level": 9,
+        "tokens": ["bomb-plus"]
+      }
+    ]
+  },
+  "Water Bee": {
+    "name": "Water Bee",
+    "rarity": "Epic",
+    "color": "Blue",
+    "icon": "images/bees/Water-Bee.png",
+    "model": "images/bees/models/Water-Bee-model.png",
+    "description": "A fluid bee coursing with tidal energy. It hydrates nearby flowers, accelerating growth and boosting aqua pollen collection while generating gentle currents that enhance efficiency and help sustain a steady, flowing resource output.",
+    "obtain": [
+      {
+        "method": "Royal Jelly",
+        "detail": "Random chance to get it"
+      },
+      {
+        "method": "Gold Egg",
+        "detail": "Gold Egg can hatch an Epic or Legendary Bee."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Blue Pollen Boost",
+        "unlock_level": 1,
+        "tokens": ["blue-pollen-boost"]
+      },
+      {
+        "name": "Water Boost",
+        "unlock_level": 4,
+        "tokens": ["water-boost"]
+      }
+    ]
+  },
+  "Wave Bee": {
+    "name": "Wave Bee",
+    "rarity": "Legendary",
+    "color": "Blue",
+    "icon": "images/bees/Wave-Bee.png",
+    "model": "images/bees/models/Wave-Bee-model.png",
+    "description": "An oceanic bee flowing like liquid starlight, its body formed from cascading tidal currents that shimmer with deep blue luminescence. It conjures rhythmic pulses of crystalline water that wash over the field in gentle, nourishing waves, bathing nearby flowers in healing moisture that enhances their vitality while its fluid aura ebbs and flows through the area in endless, hypnotic cycles of aquatic serenity.",
+    "obtain": [
+      {
+        "method": "Royal Jelly",
+        "detail": "Random chance to get it"
+      },
+      {
+        "method": "Diamond Egg",
+        "detail": "Diamond Egg can hatch a Legendary Bee."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Wave Boost",
+        "unlock_level": 1,
+        "tokens": ["wave-boost"]
+      },
+      {
+        "name": "Ice Bomb",
+        "unlock_level": 9,
+        "tokens": ["ice-bomb"]
+      }
+    ]
+  },
+  "Windy Bee": {
+    "name": "Windy Bee",
+    "rarity": "Special",
+    "color": "Colorless",
+    "icon": "images/bees/Windy-Bee.png",
+    "model": "images/bees/models/Windy-Bee-model.png",
+    "description": "A translucent spirit of the atmosphere, composed of swirling zephyrs and captured starlight. It moves with a restless, unpredictable elegance, leaving behind spiraling slipstreams of inspiration and echoing whispers of ancient secrets; its breezy resonance lifts the spirit, accelerating the pace of discovery and carrying the pollen of innovation across vast distances with a single, effortless gust.",
+    "obtain": [
+      {
+        "method": "Royal Jelly",
+        "detail": "Random chance to get it"
+      },
+      {
+        "method": "Crafting",
+        "detail": "Obtained via Crafting."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "White Pollen Boost",
+        "unlock_level": 1,
+        "tokens": ["white-pollen-boost"]
+      },
+      {
+        "name": "Windy Crystal",
+        "unlock_level": 14,
+        "tokens": ["windy-crystal"]
+      }
+    ]
+  }
 }
