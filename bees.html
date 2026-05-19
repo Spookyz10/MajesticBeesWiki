@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/bees.css" />
+    <link rel="stylesheet" href="css/bee-levels.css" />
     <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
 
     <script defer src="js/bees.js"></script>
@@ -303,10 +304,111 @@
             </tr>
           </table>
 
-          <p>
-            The exact XP formula required per level is currently <b>unknown</b>.
-          </p>
+          <div class="slot-table" id="bee-levels-table">
+            <table class="wikitable bees-table bee-levels-table">
+              <thead>
+                <tr>
+                  <th>Level</th>
+                  <th>XP to next</th>
+                  <th>Treats (this level)</th>
+                  <th>Fruits (this level)</th>
+                  <th>Total XP (from Lv. 1)</th>
+                </tr>
+              </thead>
+              <tbody id="bee-levels-tbody"></tbody>
+            </table>
+            <div class="slot-table-actions">
+              <button
+                class="slot-table-toggle"
+                id="bee-levels-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Show all levels
+              </button>
+            </div>
+          </div>
         </div>
+
+        <script>
+          (function () {
+            var XP = [
+              10, 25, 50, 100, 250, 500, 1000, 2500, 5000, 10000, 25000, 75000,
+              150000, 500000, 2000000, 10000000, 50000000, 150000000, 500000000,
+              2000000000, 5000000000,
+            ];
+
+            function fmt(n) {
+              if (n >= 1e12)
+                return (n / 1e12).toFixed(2).replace(/\.?0+$/, "") + "T";
+              if (n >= 1e9)
+                return (n / 1e9).toFixed(2).replace(/\.?0+$/, "") + "B";
+              if (n >= 1e6)
+                return (n / 1e6).toFixed(2).replace(/\.?0+$/, "") + "M";
+              if (n >= 1e3)
+                return (n / 1e3).toFixed(1).replace(/\.?0+$/, "") + "k";
+              return n.toLocaleString("en");
+            }
+
+            var tbody = document.getElementById("bee-levels-tbody");
+            var cumXP = 0;
+
+            for (var lvl = 1; lvl <= 21; lvl++) {
+              var tr = document.createElement("tr");
+              var isMax = lvl === 21;
+
+              if (lvl > 5) tr.classList.add("level-row--extra");
+
+              if (isMax) {
+                tr.innerHTML =
+                  "<td><b>" +
+                  lvl +
+                  " \u2605</b></td>" +
+                  "<td>\u2014</td>" +
+                  "<td>\u2014</td>" +
+                  "<td>\u2014</td>" +
+                  "<td>" +
+                  fmt(cumXP) +
+                  "</td>";
+                tbody.appendChild(tr);
+                break;
+              }
+
+              var xpNeeded = XP[lvl - 1];
+              var treats = Math.ceil(xpNeeded / 20);
+              var fruits = Math.ceil(xpNeeded / 50);
+              cumXP += xpNeeded;
+
+              tr.innerHTML =
+                "<td>" +
+                lvl +
+                "</td>" +
+                "<td>" +
+                fmt(xpNeeded) +
+                "</td>" +
+                "<td>" +
+                fmt(treats) +
+                "</td>" +
+                "<td>" +
+                fmt(fruits) +
+                "</td>" +
+                "<td>" +
+                fmt(cumXP) +
+                "</td>";
+              tbody.appendChild(tr);
+            }
+
+            var table = document.getElementById("bee-levels-table");
+            var toggle = document.getElementById("bee-levels-toggle");
+            toggle.addEventListener("click", function () {
+              var expanded = table.classList.toggle("is-expanded");
+              toggle.setAttribute("aria-expanded", expanded ? "true" : "false");
+              toggle.textContent = expanded
+                ? "Show fewer levels"
+                : "Show all levels";
+            });
+          })();
+        </script>
 
         <hr />
 

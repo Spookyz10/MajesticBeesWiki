@@ -1,0 +1,158 @@
+.bee-levels-section {
+  max-width: 720px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+}
+
+.bee-levels-intro {
+  background: #241900;
+  border: 1px solid #3a2800;
+  border-radius: 12px;
+  padding: 16px 22px;
+  color: #c8a84e;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.bee-levels-intro .xp-pill {
+  display: inline-block;
+  background: rgba(232, 192, 64, 0.12);
+  border: 1px solid rgba(232, 192, 64, 0.3);
+  border-radius: 6px;
+  color: #e8c040;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 1px 8px;
+  margin: 0 2px;
+}
+
+.bee-levels-table-wrap {
+  background: #241900;
+  border: 1px solid #3a2800;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.bee-levels-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.bee-levels-table thead tr {
+  background: #2e2100;
+}
+
+.bee-levels-table th {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  color: #e8c040;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 10px 14px;
+  border-bottom: 2px solid #3a2800;
+  text-align: right;
+}
+
+.bee-levels-table th:first-child {
+  text-align: center;
+}
+
+.bee-levels-table td {
+  padding: 8px 14px;
+  border-bottom: 1px solid rgba(58, 40, 0, 0.5);
+  color: #c8a84e;
+  text-align: right;
+}
+
+.bee-levels-table td:first-child {
+  text-align: center;
+}
+
+.bee-levels-table tr:last-child td {
+  border-bottom: none;
+}
+
+.bee-levels-table tbody tr:hover {
+  background: rgba(232, 192, 64, 0.04);
+}
+
+.level-badge {
+  display: inline-block;
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 0.9rem;
+  color: #e8c040;
+  background: rgba(232, 192, 64, 0.1);
+  border: 1px solid rgba(232, 192, 64, 0.25);
+  border-radius: 6px;
+  padding: 1px 10px;
+  min-width: 36px;
+}
+
+.level-badge--max {
+  color: #ce93d8;
+  background: rgba(206, 147, 216, 0.1);
+  border-color: rgba(206, 147, 216, 0.3);
+}
+
+.treat-count {
+  font-weight: 700;
+  color: #e8c040;
+}
+
+.fruit-count {
+  font-weight: 700;
+  color: #82b8e8;
+}
+
+.xp-needed {
+  color: #a88c3a;
+}
+
+.xp-total {
+  color: #7ab860;
+  font-weight: 700;
+}
+
+.unlock-hint {
+  font-size: 0.78rem;
+  color: #7ab860;
+  font-style: italic;
+  padding: 0 6px;
+}
+
+.bee-levels-legend {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  font-size: 0.82rem;
+  color: #a88c3a;
+}
+
+.bee-levels-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.bee-levels-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.bee-levels-table .level-row--extra {
+  display: none;
+}
+
+#bee-levels-table.is-expanded .level-row--extra {
+  display: table-row;
+}
+
+.bee-levels-table th:not(:first-child),
+.bee-levels-table td:not(:first-child) {
+  text-align: right;
+}
