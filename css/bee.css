@@ -115,8 +115,6 @@
   padding: 10px 16px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 10px;
 }
 
 .bee-infobox-label {
@@ -124,39 +122,6 @@
   font-size: 0.9rem;
   color: var(--gold);
   letter-spacing: 0.04em;
-}
-
-.bee-view-toggle {
-  display: flex;
-  background: rgba(18, 12, 0, 0.7);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.bee-view-btn {
-  background: none;
-  border: none;
-  color: var(--gold-dim);
-  font-family: "Nunito", sans-serif;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  padding: 5px 12px;
-  cursor: pointer;
-  transition:
-    color 0.2s,
-    background 0.2s;
-}
-
-.bee-view-btn.active {
-  background: rgba(232, 192, 64, 0.15);
-  color: var(--gold);
-}
-
-.bee-view-btn:hover:not(.active) {
-  color: var(--gold-soft);
 }
 
 .bee-infobox-image {
@@ -178,11 +143,6 @@
   object-fit: contain;
   image-rendering: pixelated;
   filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.5));
-  transition: opacity 0.2s ease;
-}
-
-.bee-infobox-image img.hidden {
-  display: none;
 }
 
 .bee-infobox-stats {
@@ -315,8 +275,6 @@
   gap: 14px;
 }
 
-/* bees-all-list and bee-mini styles removed: reverted to previous layout */
-
 .bee-section-heading-deco {
   flex: 1;
   height: 1px;
@@ -397,10 +355,6 @@
   justify-content: center;
 }
 
-.ab-media-layer.hidden {
-  display: none;
-}
-
 .ab-media-layer--icon img {
   width: 80%;
   height: 80%;
@@ -410,56 +364,6 @@
 
 .ab-media-layer--icon svg {
   color: rgba(232, 192, 64, 0.35);
-}
-
-.ab-media-layer--gif {
-  background: rgba(18, 12, 0, 0.18);
-}
-
-.ab-media-layer--gif img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  image-rendering: pixelated;
-}
-
-/* Icon/GIF toggle inside the card */
-.ab-toggle {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  z-index: 2;
-  display: flex;
-  background: rgba(10, 7, 0, 0.75);
-  border: 1px solid rgba(90, 62, 0, 0.7);
-  border-radius: 8px;
-  overflow: hidden;
-  backdrop-filter: blur(4px);
-}
-
-.ab-toggle-btn {
-  background: none;
-  border: none;
-  color: var(--gold-dim);
-  font-family: "Nunito", sans-serif;
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  padding: 4px 10px;
-  cursor: pointer;
-  transition:
-    color 0.15s,
-    background 0.15s;
-}
-
-.ab-toggle-btn.active {
-  background: rgba(232, 192, 64, 0.18);
-  color: var(--gold);
-}
-
-.ab-toggle-btn:hover:not(.active) {
-  color: var(--gold-soft);
 }
 
 /* Body area below the image */
@@ -712,10 +616,6 @@
   color: var(--gold-soft);
 }
 
-/* ─────────────────────────────────────────
-   Trivia
-───────────────────────────────────────── */
-
 .bee-trivia-list {
   background: #1e1400;
   border: 1px solid var(--line);
@@ -747,10 +647,6 @@
   top: -1px;
 }
 
-/* ─────────────────────────────────────────
-   States
-───────────────────────────────────────── */
-
 .bee-detail-loading {
   text-align: center;
   padding: 80px 20px;
@@ -764,10 +660,6 @@
   color: var(--red);
   font-size: 0.95rem;
 }
-
-/* ─────────────────────────────────────────
-   Responsive
-───────────────────────────────────────── */
 
 @media (max-width: 860px) {
   .bee-detail-hero {

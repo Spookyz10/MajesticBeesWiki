@@ -131,7 +131,7 @@
       "name": "Cloud Boost",
       "icon": "images/tokens/CloudBoost.png",
       "gif": "images/tokens/CloudBoost.png",
-      "description": "Boosts cloud-related effects and pollen collection."
+      "description": "Grants Cloud Boost that gives +4% Cloud Pollen, +2% White Pollen and 2% Capacity Bonus for 60s, stacks upto 50x"
     },
     {
       "id": "red-pollen-boost",
@@ -145,21 +145,21 @@
       "name": "Coal Boost",
       "icon": "images/tokens/CoalBoost.png",
       "gif": "images/tokens/CoalBoost.png",
-      "description": "Enhances coal-related effects and red pollen efficiency."
+      "description": "Grants Coal Boost that gives +2% Fire Pollen for 90 Seconds and Stacks up to 100."
     },
     {
       "id": "exp-boost",
       "name": "Exp Boost",
       "icon": "images/tokens/ExpBoost.png",
       "gif": "images/tokens/ExpBoost.png",
-      "description": "Boosts experience gained from collecting pollen."
+      "description": "Grants Exp Boost that gives x1.15 Capacity Bonus & x1.05 Obsidian Pollen for 90 Seconds and Stacks up to 5."
     },
     {
       "id": "white-pollen-boost",
       "name": "White Pollen Boost",
       "icon": "images/tokens/WhitePollenBoost.png",
       "gif": "images/tokens/WhitePollenBoost.png",
-      "description": "Boosts white pollen collection."
+      "description": "Grants White Pollen Boost that gives +15% White Pollen for 60 Seconds and Stacks up to 10."
     },
     {
       "id": "haste-boost",
@@ -173,21 +173,21 @@
       "name": "3 Leaf Clover Boost",
       "icon": "images/tokens/3LeafCloverBoost.png",
       "gif": "images/tokens/3LeafCloverBoost.png",
-      "description": "Boosts luck and token drop rates."
+      "description": "Grants 3 Leaf Clover Boost that gives +25% Pollen & +25% Loot Luck for 30 Seconds and Stacks up to 2"
     },
     {
       "id": "4-leaf-clover-boost",
       "name": "4 Leaf Clover Boost",
       "icon": "images/tokens/4LeafCloverBoost.png",
       "gif": "images/tokens/4LeafCloverBoost.png",
-      "description": "Further boosts luck and rare token drop rates."
+      "description": "Grants 4 Leaf Clover Boost that gives +100% Pollen & +100% Loot Luck & +100% Capacity Bonus for 30 Seconds (Spawns Insane Rare)."
     },
     {
       "id": "oil-boost",
       "name": "Oil Boost",
       "icon": "images/tokens/OilBoost.png",
       "gif": "images/tokens/OilBoost.png",
-      "description": "Boosts oil-related effects and pollen preservation."
+      "description": "Grants Oil Boost that gives +0.1% Fire Pollen Forever and Stacks up to 5000."
     },
     {
       "id": "pixel-boost",
@@ -201,28 +201,34 @@
       "name": "Sound Boost",
       "icon": "images/tokens/SoundBoost.png",
       "gif": "images/tokens/SoundBoost.png",
-      "description": "Boosts sound-related effects and pollen amplification."
+      "description": "Grants Sound Boost that gives +5% Capacity for 30 Seconds and Stacks up to 10."
     },
     {
       "id": "thunder-boost",
       "name": "Thunder Boost",
       "icon": "images/tokens/ThunderBoost.png",
       "gif": "images/tokens/ThunderBoost.png",
-      "description": "Boosts thunder-related effects and electrical energy."
+      "description": "Grants Thunder Boost that gives +0.1% Cloud Pollen Forever and Stacks up to 5000."
     },
     {
       "id": "water-boost",
       "name": "Water Boost",
       "icon": "images/tokens/WaterBoost.png",
       "gif": "images/tokens/WaterBoost.png",
-      "description": "Boosts water-related effects and aqua pollen efficiency."
+      "description": "Grants Water Boost that gives +2% Ice Pollen for 90 Seconds and Stacks up to 100."
     },
     {
       "id": "wave-boost",
       "name": "Wave Boost",
       "icon": "images/tokens/WaveBoost.png",
       "gif": "images/tokens/WaveBoost.png",
-      "description": "Boosts wave-related effects and tidal pollen collection."
+      "description": "Grants Wave Boost that gives +0.1% Ice Pollen Forever and Stacks up to 5000."
+    },
+    {
+      "id": "science-boost",
+      "name": "Science Boost",
+      "icon": "images/tokens/ScienceBoost.png",
+      "description": "Grants Science Boost that gives 10% Energy Bonus for 60s. Stacks upto 10x."
     }
   ]
 }
