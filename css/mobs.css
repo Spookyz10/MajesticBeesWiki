@@ -150,8 +150,6 @@
   padding: 3px 10px;
 }
 
-/* ── Responsive ── */
-
 @media (max-width: 640px) {
   .mob-card {
     flex-direction: column;

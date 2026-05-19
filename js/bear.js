@@ -103,7 +103,6 @@ function buildQuestCard(quest, index) {
 function buildIntobox(bear) {
   const questCount = Array.isArray(bear.quests) ? bear.quests.length : 0;
   const image = escHtml(bear.image || "images/ui/site-logo.png");
-  const aura = escHtml(bear.aura || "None");
   const location = escHtml(bear.location || "Unknown");
 
   return `
@@ -123,10 +122,7 @@ function buildIntobox(bear) {
           <span class="bear-infobox-stat-label">Quests</span>
           <span class="bear-infobox-stat-value">${questCount}</span>
         </div>
-        <div class="bear-infobox-stat">
-          <span class="bear-infobox-stat-label">Aura</span>
-          <span class="bear-infobox-stat-value">${aura}</span>
-        </div>
+        
       </div>
     </div>
   `;
@@ -199,7 +195,6 @@ function buildPage(bear, allBears) {
         <div class="bear-detail-left">
           <div class="bear-detail-title">
             <div class="bear-detail-name">${escHtml(bear.name)}</div>
-            <span class="bear-detail-zone">${escHtml(bear.location || "Unknown Zone")}</span>
           </div>
           <div class="bear-detail-desc">${escHtml(bear.description || "")}</div>
           ${buildAuraInline(bear)}
