@@ -2,11 +2,6 @@ async function loadBees() {
   const res = await fetch("data/bees.json");
   const data = await res.json();
 
-  // Support multiple data shapes:
-  // - { common: [...], rare: [...] }
-  // - { "Bee Name": { ... }, ... }
-  // - [ { ... }, ... ]
-
   let beesArray = [];
 
   if (Array.isArray(data)) {
@@ -21,8 +16,7 @@ async function loadBees() {
       categories.forEach((rarity) => renderTab(rarity, data[rarity] || []));
       return;
     }
-
-    // assume object keyed by bee name
+    
     beesArray = Object.values(data);
   }
 
