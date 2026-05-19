@@ -52,7 +52,7 @@ function getBeeGlow(color) {
     red: "rgba(212, 96, 96, 0.95)",
     green: "rgba(122, 184, 96, 0.95)",
     purple: "rgba(206, 147, 216, 0.95)",
-    colorless: "rgba(232, 192, 64, 0.95)",
+    colorless: "rgba(255, 255, 255, 0.95)",
   };
 
   const key = (color || "").toString().toLowerCase();
