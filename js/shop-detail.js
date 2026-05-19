@@ -157,7 +157,7 @@ async function loadShopDetail() {
     }
 
     renderShop(shop);
-    // populate simple list of other shops (text links)
+
     renderOtherShopsList(shops, shopId);
   } catch (error) {
     console.error(error);
