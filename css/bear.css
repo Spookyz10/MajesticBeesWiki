@@ -1,0 +1,413 @@
+.bear-detail-loading {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--gold-dim);
+  font-size: 0.95rem;
+}
+
+.bear-detail-error {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--red);
+  font-size: 0.95rem;
+}
+
+.bear-detail-shell {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px 64px;
+}
+
+.bear-detail-hero {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 28px;
+  align-items: start;
+  margin-bottom: 40px;
+}
+
+.bear-detail-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bear-detail-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.bear-detail-name {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  color: var(--gold);
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.bear-detail-zone {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 3px 12px;
+  border-radius: 6px;
+  background: rgba(232, 192, 64, 0.1);
+  border: 1px solid rgba(232, 192, 64, 0.3);
+  color: var(--gold);
+}
+
+.bear-detail-desc {
+  color: var(--gold-soft);
+  line-height: 1.85;
+  font-size: 0.97rem;
+}
+
+.bear-infobox {
+  background: #1e1400;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  position: sticky;
+  top: 80px;
+}
+
+.bear-infobox-header {
+  background: var(--panel-2);
+  border-bottom: 1px solid var(--line);
+  padding: 10px 16px;
+}
+
+.bear-infobox-label {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 0.9rem;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+}
+
+.bear-infobox-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  min-height: 220px;
+  background: radial-gradient(
+    circle at center,
+    rgba(232, 192, 64, 0.05) 0%,
+    transparent 70%
+  );
+}
+
+.bear-infobox-image img {
+  max-width: 176px;
+  max-height: 176px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.55));
+}
+
+.bear-infobox-stats {
+  border-top: 1px solid var(--line);
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bear-infobox-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.bear-infobox-stat-label {
+  color: var(--gold-dim);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.bear-infobox-stat-value {
+  color: var(--gold-soft);
+}
+
+.bear-section {
+  margin-top: 8px;
+}
+
+.bear-section-heading {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  color: var(--gold);
+  font-size: 1.35rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.bear-section-deco {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(232, 192, 64, 0.25), transparent);
+}
+
+.bear-section-deco:first-child {
+  background: linear-gradient(270deg, rgba(232, 192, 64, 0.25), transparent);
+  max-width: 36px;
+}
+
+.bear-quest-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bear-quest-card {
+  background: rgba(30, 20, 0, 0.75);
+  border: 1px solid rgba(90, 62, 0, 0.5);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.18s ease;
+}
+
+.bear-quest-card:hover {
+  border-color: rgba(232, 192, 64, 0.3);
+}
+
+.bear-quest-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.bear-quest-num {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 0.8rem;
+  color: var(--gold-dim);
+  background: rgba(232, 192, 64, 0.1);
+  border: 1px solid rgba(232, 192, 64, 0.2);
+  border-radius: 6px;
+  padding: 2px 9px;
+  flex-shrink: 0;
+  min-width: 34px;
+  text-align: center;
+}
+
+.bear-quest-name {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 1rem;
+  color: var(--gold);
+  flex: 1;
+  letter-spacing: 0.02em;
+}
+
+.bear-quest-chevron {
+  color: var(--gold-dim);
+  font-size: 0.75rem;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.bear-quest-card.open .bear-quest-chevron {
+  transform: rotate(180deg);
+}
+
+.bear-quest-body {
+  display: none;
+  padding: 0 18px 16px;
+  border-top: 1px solid rgba(58, 40, 0, 0.5);
+}
+
+.bear-quest-card.open .bear-quest-body {
+  display: block;
+}
+
+.bear-quest-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.bear-quest-col-title {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 0.78rem;
+  color: var(--gold);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.bear-req-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 7px;
+  font-size: 0.86rem;
+  color: var(--gold-soft);
+  line-height: 1.5;
+}
+
+.bear-req-row:last-child {
+  margin-bottom: 0;
+}
+
+.bear-req-icon {
+  font-size: 0.75rem;
+  color: var(--gold-dim);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.bear-reward-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 7px;
+  font-size: 0.86rem;
+  color: var(--gold-soft);
+}
+
+.bear-reward-row:last-child {
+  margin-bottom: 0;
+}
+
+.bear-reward-amt {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 0.78rem;
+  color: var(--gold);
+  background: rgba(232, 192, 64, 0.1);
+  border: 1px solid rgba(232, 192, 64, 0.2);
+  border-radius: 5px;
+  padding: 1px 7px;
+  flex-shrink: 0;
+}
+
+.bear-reward-name {
+  color: var(--gold-soft);
+}
+
+.bear-reward-row--special .bear-reward-name {
+  color: #ce93d8;
+  font-weight: 700;
+}
+
+.bear-reward-row--special .bear-reward-amt {
+  border-color: rgba(206, 147, 216, 0.35);
+  color: #ce93d8;
+  background: rgba(206, 147, 216, 0.08);
+}
+
+.bear-all-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.bear-mini-link {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}
+
+.bear-mini-card {
+  background: rgba(30, 20, 0, 0.75);
+  border: 1px solid rgba(90, 62, 0, 0.45);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.bear-mini-card--current {
+  border-color: rgba(232, 192, 64, 0.5);
+  box-shadow: 0 0 18px rgba(232, 192, 64, 0.08);
+}
+
+.bear-mini-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: rgba(18, 12, 0, 0.6);
+  border: 1px solid rgba(58, 40, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bear-mini-img img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.bear-mini-name {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 0.82rem;
+  color: var(--gold-soft);
+  letter-spacing: 0.02em;
+}
+
+.bear-mini-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(232, 192, 64, 0.35);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.45),
+    0 0 18px rgba(232, 192, 64, 0.06);
+}
+
+.bear-mini-card:hover .bear-mini-name {
+  color: var(--gold);
+}
+
+.bear-aura-inline {
+  margin: 0;
+  color: var(--gold-soft);
+  line-height: 1.8;
+  font-size: 0.93rem;
+}
+
+.bear-aura-inline b {
+  color: var(--gold);
+}
+
+@media (max-width: 860px) {
+  .bear-detail-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .bear-infobox {
+    position: static;
+    max-width: 320px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .bear-detail-shell {
+    padding: 0 12px 48px;
+  }
+
+  .bear-quest-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .bear-infobox {
+    max-width: 100%;
+  }
+}

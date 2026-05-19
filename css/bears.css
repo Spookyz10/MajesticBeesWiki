@@ -1,0 +1,187 @@
+.bears-page-title {
+  text-align: center;
+  padding: 30px 0 10px;
+}
+
+.bears-hero-description {
+  max-width: 740px;
+  margin: 6px auto 28px;
+  padding: 0 20px;
+  font-size: 1.05em;
+  text-align: center;
+}
+
+.bears-info-box {
+  max-width: 680px;
+  margin: 0 auto 36px;
+  background: #241900;
+  border: 1px solid #3a2800;
+  border-radius: 12px;
+  padding: 20px 28px;
+  color: var(--gold-soft);
+  line-height: 1.85;
+}
+
+.bears-info-box p {
+  margin: 0;
+}
+
+.bears-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: min(960px, 92%);
+  margin: 0 auto 48px;
+}
+
+.bears-loading {
+  text-align: center;
+  color: var(--gold-dim);
+  font-style: italic;
+  padding: 40px 0;
+}
+
+.bear-card {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+  background: rgba(36, 26, 10, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.18s ease;
+}
+
+.bear-card:hover {
+  border-color: rgba(232, 192, 64, 0.45);
+  box-shadow: 0 0 28px rgba(212, 170, 48, 0.14);
+  transform: translateY(-3px);
+}
+
+/* Bear image */
+.bear-card-img {
+  flex: 0 0 160px;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(18, 12, 0, 0.62);
+  border: 1px solid rgba(58, 40, 0, 0.8);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.bear-card-img img {
+  width: 138px;
+  height: 138px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.36));
+}
+
+.bear-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bear-card-header {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.bear-card-name {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 1.45rem;
+  color: var(--gold);
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+
+.bear-card-location {
+  font-size: 0.83em;
+  color: var(--gold-dim);
+  letter-spacing: 0.02em;
+}
+
+.bear-card-desc {
+  margin: 0;
+  color: var(--gold-soft);
+  line-height: 1.75;
+  font-size: 0.94em;
+}
+
+.bear-card-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.bear-meta-tag {
+  background: rgba(232, 192, 64, 0.08);
+  border: 1px solid rgba(232, 192, 64, 0.22);
+  border-radius: 6px;
+  color: var(--gold-soft);
+  font-size: 0.78em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 3px 10px;
+}
+
+.bear-meta-tag--quests {
+  border-color: rgba(122, 184, 96, 0.35);
+  color: #7ab860;
+  background: rgba(122, 184, 96, 0.08);
+}
+
+.bear-card-link {
+  margin-top: auto;
+  color: var(--green);
+  font-size: 0.88em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.bear-card:hover .bear-card-link {
+  color: var(--green-hover);
+}
+
+@media (max-width: 640px) {
+  .bear-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bears-list {
+    width: min(960px, 96%);
+  }
+
+  .bear-card-img {
+    width: 120px;
+    height: 120px;
+    flex: 0 0 120px;
+  }
+
+  .bear-card-img img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .bear-card-meta,
+  .bear-card-header {
+    justify-content: center;
+  }
+}
