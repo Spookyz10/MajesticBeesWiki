@@ -32,61 +32,215 @@
         <div class="hero-description bees-hero-description">
           Bees are the core of your hive in <b>The Majestic Bees</b>. Each bee
           has a unique rarity, color type, and pollen preference. Collect them
-          through eggs, level them up with items, and unlock more hive slots as
-          you progress.
+          through eggs, power them up with items, and expand your hive by
+          purchasing more slots.
         </div>
 
         <hr />
 
         <h2>Hive Slots</h2>
         <div class="bees-info-box">
-          You start the game with <b>5 hive slots</b>. Every
-          <b>5 player levels</b> you gain <b>1 additional slot</b>, up to a
-          maximum of <b>50 slots</b>. XP to level up is earned purely through
-          progression.
+          You start the game with <b>5 hive slots</b>. More slots are purchased
+          with honey, up to a maximum of <b>50 slots</b>.
 
-          <table class="wikitable bees-table">
-            <tr>
-              <th>Level</th>
-              <th>Slots Unlocked</th>
-              <th>Total Slots</th>
-            </tr>
-            <tr>
-              <td>Start</td>
-              <td>—</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>+1</td>
-              <td>6</td>
-            </tr>
-            <tr>
-              <td>10</td>
-              <td>+1</td>
-              <td>7</td>
-            </tr>
-            <tr>
-              <td>15</td>
-              <td>+1</td>
-              <td>8</td>
-            </tr>
-            <tr>
-              <td>20</td>
-              <td>+1</td>
-              <td>9</td>
-            </tr>
-            <tr>
-              <td><i>...</i></td>
-              <td><i>...</i></td>
-              <td><i>...</i></td>
-            </tr>
-            <tr>
-              <td>250</td>
-              <td>+1</td>
-              <td>50 (max)</td>
-            </tr>
-          </table>
+          <div class="slot-table" id="slot-table">
+            <table class="wikitable bees-table bees-slots-table">
+              <tr>
+                <th>Slot</th>
+                <th>Cost</th>
+              </tr>
+              <tr class="slot-row">
+                <td>6</td>
+                <td>1.25k</td>
+              </tr>
+              <tr class="slot-row">
+                <td>7</td>
+                <td>4.8k</td>
+              </tr>
+              <tr class="slot-row">
+                <td>8</td>
+                <td>9.6k</td>
+              </tr>
+              <tr class="slot-row">
+                <td>9</td>
+                <td>23.5k</td>
+              </tr>
+              <tr class="slot-row">
+                <td>10</td>
+                <td>51.2k</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>11</td>
+                <td>108.4k</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>12</td>
+                <td>245.6k</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>13</td>
+                <td>492k</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>14</td>
+                <td>785.4k</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>15</td>
+                <td>1.12m</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>16</td>
+                <td>2.24m</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>17</td>
+                <td>4.18m</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>18</td>
+                <td>7.34m</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>19</td>
+                <td>10.65m</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>20</td>
+                <td>15.42m</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>21</td>
+                <td>22.18m</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>22</td>
+                <td>31.45m</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>23</td>
+                <td>46.8m</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>24</td>
+                <td>62.15m</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>25</td>
+                <td>84.6m</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>26</td>
+                <td>104.4m</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>27</td>
+                <td>142.7m</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>28</td>
+                <td>195.5m</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>29</td>
+                <td>268.8m</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>30</td>
+                <td>365.2m</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>31</td>
+                <td>498.4m</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>32</td>
+                <td>662.1m</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>33</td>
+                <td>874.5m</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>34</td>
+                <td>1.16b</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>35</td>
+                <td>1.62b</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>36</td>
+                <td>2.38b</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>37</td>
+                <td>3.64b</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>38</td>
+                <td>5.81b</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>39</td>
+                <td>9.24b</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>40</td>
+                <td>14.45b</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>41</td>
+                <td>24.84b</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>42</td>
+                <td>46.35b</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>43</td>
+                <td>82.12b</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>44</td>
+                <td>148.45b</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>45</td>
+                <td>264.2b</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>46</td>
+                <td>422.45b</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>47</td>
+                <td>614.6b</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>48</td>
+                <td>821.8b</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>49</td>
+                <td>985.4b</td>
+              </tr>
+              <tr class="slot-row slot-row--extra">
+                <td>50</td>
+                <td>1.25t</td>
+              </tr>
+            </table>
+            <div class="slot-table-actions">
+              <button
+                class="slot-table-toggle"
+                id="slot-table-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Show all slot prices
+              </button>
+            </div>
+          </div>
         </div>
 
         <hr />

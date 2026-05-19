@@ -50,6 +50,10 @@
   font-size: 0.97rem;
 }
 
+/* ─────────────────────────────────────────
+   Obtain
+───────────────────────────────────────── */
+
 .bee-obtain-box {
   background: #1e1400;
   border: 1px solid var(--line);
@@ -91,6 +95,10 @@
   font-size: 0.86rem;
   line-height: 1.55;
 }
+
+/* ─────────────────────────────────────────
+   Infobox
+───────────────────────────────────────── */
 
 .bee-infobox {
   background: #1e1400;
@@ -137,7 +145,9 @@
   text-transform: uppercase;
   padding: 5px 12px;
   cursor: pointer;
-  transition: color 0.2s, background 0.2s;
+  transition:
+    color 0.2s,
+    background 0.2s;
 }
 
 .bee-view-btn.active {
@@ -155,7 +165,11 @@
   justify-content: center;
   padding: 28px;
   min-height: 220px;
-  background: radial-gradient(circle at center, rgba(232, 192, 64, 0.05) 0%, transparent 70%);
+  background: radial-gradient(
+    circle at center,
+    rgba(232, 192, 64, 0.05) 0%,
+    transparent 70%
+  );
 }
 
 .bee-infobox-image img {
@@ -196,129 +210,317 @@
   color: var(--gold-soft);
 }
 
+/* ─────────────────────────────────────────
+   Sections
+───────────────────────────────────────── */
+
 .bee-section {
-  margin-top: 36px;
+  margin-top: 16px;
+}
+
+.bee-mini-card {
+  background: rgba(30, 20, 0, 0.75);
+  border: 1px solid rgba(90, 62, 0, 0.45);
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.bee-all-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.bee-mini-link {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}
+
+.bee-mini-card--current {
+  border-color: rgba(232, 192, 64, 0.5);
+  box-shadow: 0 0 18px rgba(232, 192, 64, 0.08);
+}
+
+.bee-mini-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: rgba(18, 12, 0, 0.6);
+  border: 1px solid rgba(58, 40, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bee-mini-img img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.bee-mini-body {
+  display: flex;
+  align-items: center;
+}
+
+.bee-mini-name {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 0.82rem;
+  color: var(--gold-soft);
+  letter-spacing: 0.02em;
+}
+
+.bee-mini-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(232, 192, 64, 0.35);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.45),
+    0 0 18px rgba(232, 192, 64, 0.06);
+}
+
+.bee-mini-card:hover .bee-mini-name {
+  color: var(--gold);
+}
+
+.wip-banner {
+  background: rgba(232, 192, 64, 0.08);
+  border: 1px solid rgba(232, 192, 64, 0.12);
+  color: var(--gold);
+  font-weight: 700;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 14px;
 }
 
 .bee-section-heading {
   font-family: "Fredoka One", Georgia, sans-serif;
   color: var(--gold);
-  border-bottom: 2px solid var(--line);
-  letter-spacing: 0.02em;
-  padding-bottom: 0.2em;
-  padding-left: 4px;
-  margin-bottom: 20px;
   font-size: 1.4rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
-.bee-abilities-list {
-  display: flex;
-  flex-direction: column;
+/* bees-all-list and bee-mini styles removed: reverted to previous layout */
+
+.bee-section-heading-deco {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(232, 192, 64, 0.25), transparent);
+}
+
+.bee-section-heading-deco:first-child {
+  background: linear-gradient(270deg, rgba(232, 192, 64, 0.25), transparent);
+  max-width: 36px;
+}
+
+/* ─────────────────────────────────────────
+   Abilities — square card grid
+───────────────────────────────────────── */
+
+.ab-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 16px;
 }
 
-.bee-ability-card {
+.ab-card {
+  background: rgba(30, 20, 0, 0.75);
+  border: 1px solid rgba(90, 62, 0, 0.55);
+  border-radius: 14px;
+  overflow: hidden;
   display: flex;
-  gap: 18px;
-  align-items: stretch;
-  background: rgba(36, 26, 10, 0.72);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 18px 20px;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  flex-direction: column;
+  animation: ab-fadein 0.35s ease both;
 }
 
-.bee-ability-card:hover {
+@keyframes ab-fadein {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ab-card:hover {
   border-color: rgba(232, 192, 64, 0.3);
-  box-shadow: 0 0 20px rgba(212, 170, 48, 0.08);
 }
 
-.bee-ability-icon-wrap {
-  flex: 0 0 56px;
-  width: 56px;
-  height: 56px;
+/* Media top area — square */
+.ab-media-top {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #130e00;
+  border-bottom: 1px solid rgba(90, 62, 0, 0.45);
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(18, 12, 0, 0.7);
-  border: 1px solid rgba(58, 40, 0, 0.9);
-  border-radius: 10px;
-  flex-shrink: 0;
 }
 
-.bee-ability-icon-wrap img {
-  width: 40px;
-  height: 40px;
+.ab-media-frame {
+  width: 74%;
+  height: 74%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(36, 26, 10, 0.85);
+  border: 1px solid rgba(232, 192, 64, 0.18);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ab-media-layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ab-media-layer.hidden {
+  display: none;
+}
+
+.ab-media-layer--icon img {
+  width: 80%;
+  height: 80%;
   object-fit: contain;
   image-rendering: pixelated;
 }
 
-.bee-ability-body {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+.ab-media-layer--icon svg {
+  color: rgba(232, 192, 64, 0.35);
 }
 
-.bee-ability-header {
+.ab-media-layer--gif {
+  background: rgba(18, 12, 0, 0.18);
+}
+
+.ab-media-layer--gif img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  image-rendering: pixelated;
+}
+
+/* Icon/GIF toggle inside the card */
+.ab-toggle {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
   display: flex;
-  align-items: center;
-  gap: 10px;
+  background: rgba(10, 7, 0, 0.75);
+  border: 1px solid rgba(90, 62, 0, 0.7);
+  border-radius: 8px;
+  overflow: hidden;
+  backdrop-filter: blur(4px);
+}
+
+.ab-toggle-btn {
+  background: none;
+  border: none;
+  color: var(--gold-dim);
+  font-family: "Nunito", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition:
+    color 0.15s,
+    background 0.15s;
+}
+
+.ab-toggle-btn.active {
+  background: rgba(232, 192, 64, 0.18);
+  color: var(--gold);
+}
+
+.ab-toggle-btn:hover:not(.active) {
+  color: var(--gold-soft);
+}
+
+/* Body area below the image */
+.ab-body {
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.ab-top-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
   flex-wrap: wrap;
 }
 
-.bee-ability-name {
+.ab-name {
   font-family: "Fredoka One", Georgia, sans-serif;
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: var(--gold);
   letter-spacing: 0.02em;
 }
 
-.bee-ability-type {
-  font-size: 0.72rem;
+.ab-badge {
+  font-size: 0.65rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   padding: 2px 8px;
-  border-radius: 4px;
-}
-
-.bee-ability-type.passive {
-  color: var(--green);
-  background: rgba(122, 184, 96, 0.1);
-  border: 1px solid rgba(122, 184, 96, 0.3);
-}
-
-.bee-ability-type.active {
-  color: var(--blue);
-  background: rgba(100, 181, 246, 0.1);
-  border: 1px solid rgba(100, 181, 246, 0.3);
-}
-
-.bee-ability-unlock {
-  font-size: 0.75rem;
-  color: var(--gold-dim);
-  margin-left: auto;
+  border-radius: 20px;
+  border: 1px solid rgba(232, 192, 64, 0.35);
+  color: var(--gold);
+  background: rgba(232, 192, 64, 0.08);
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
-.bee-ability-unlock.locked {
-  color: var(--red);
-  opacity: 0.8;
+.ab-badge--locked {
+  border-color: rgba(160, 149, 106, 0.35);
+  color: var(--gold-dim);
+  background: rgba(160, 149, 106, 0.07);
 }
 
-.bee-ability-desc {
+.ab-separator {
+  height: 1px;
+  background: rgba(90, 62, 0, 0.45);
+  border-radius: 1px;
+}
+
+.ab-desc {
   color: var(--gold-soft);
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 
-.bee-ability-tokens {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 4px;
-}
+/* ─────────────────────────────────────────
+   Token cards
+───────────────────────────────────────── */
 
 .token-card {
   display: flex;
@@ -329,7 +531,9 @@
   border-radius: 8px;
   padding: 6px 10px 6px 6px;
   cursor: pointer;
-  transition: border-color 0.2s, background 0.2s;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
   user-select: none;
 }
 
@@ -362,6 +566,10 @@
   color: var(--gold);
   letter-spacing: 0.02em;
 }
+
+/* ─────────────────────────────────────────
+   Token modal
+───────────────────────────────────────── */
 
 .token-modal-overlay {
   position: fixed;
@@ -426,7 +634,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: color 0.2s, border-color 0.2s;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
 }
 
 .token-modal-close:hover {
@@ -502,99 +712,10 @@
   color: var(--gold-soft);
 }
 
-.bee-trivia-list {
-  background: #1e1400;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 6px 0;
-}
-
-.bee-trivia-item {
-  display: flex;
-  align-items: baseline;
-  gap: 12px;
-  padding: 12px 22px;
-  border-bottom: 1px solid rgba(58, 40, 0, 0.5);
-  color: var(--gold-soft);
-  font-size: 0.9rem;
-  line-height: 1.7;
-}
-
-.bee-trivia-item:last-child {
-  border-bottom: none;
-}
-
-.bee-trivia-item::before {
-  content: "✦";
-  color: var(--gold-dim);
-  font-size: 0.6rem;
-  flex-shrink: 0;
-  position: relative;
-  top: -1px;
-}
-
-.bee-detail-loading {
-  text-align: center;
-  padding: 80px 20px;
-  color: var(--gold-dim);
-  font-size: 0.95rem;
-}
-
-.bee-detail-error {
-  text-align: center;
-  padding: 80px 20px;
-  color: var(--red);
-  font-size: 0.95rem;
-}
-
-@media (max-width: 860px) {
-  .bee-detail-hero {
-    grid-template-columns: 1fr;
-  }
-
-  .bee-infobox {
-    position: static;
-    max-width: 340px;
-    margin: 0 auto;
-    width: 100%;
-  }
-}
-
-@media (max-width: 640px) {
-  .bee-detail-shell {
-    padding: 0 12px 48px;
-  }
-
-  .bee-ability-card {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .bee-ability-unlock {
-    margin-left: 0;
-  }
-
-  .bee-infobox {
-    max-width: 100%;
-  }
-
-  .bee-obtain-item {
-    flex-direction: column;
-    gap: 2px;
-  }
-
-  .bee-obtain-method {
-    min-width: unset;
-  }
-}}
-
-.token-modal-stat-value {
-  color: var(--gold-soft);
-}
-
 /* ─────────────────────────────────────────
    Trivia
 ───────────────────────────────────────── */
+
 .bee-trivia-list {
   background: #1e1400;
   border: 1px solid var(--line);
@@ -627,8 +748,9 @@
 }
 
 /* ─────────────────────────────────────────
-   Loading / error states
+   States
 ───────────────────────────────────────── */
+
 .bee-detail-loading {
   text-align: center;
   padding: 80px 20px;
@@ -646,6 +768,7 @@
 /* ─────────────────────────────────────────
    Responsive
 ───────────────────────────────────────── */
+
 @media (max-width: 860px) {
   .bee-detail-hero {
     grid-template-columns: 1fr;
@@ -664,13 +787,8 @@
     padding: 0 12px 48px;
   }
 
-  .bee-ability-card {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .bee-ability-unlock {
-    margin-left: 0;
+  .ab-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 
   .bee-infobox {
@@ -685,4 +803,4 @@
   .bee-obtain-method {
     min-width: unset;
   }
-                        }
+}
