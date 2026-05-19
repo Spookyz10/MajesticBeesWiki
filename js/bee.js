@@ -22,15 +22,12 @@ function buildInfobox(bee) {
   const rarityKey = (bee.rarity || "").toLowerCase();
   const rarityClass = RARITY_CLASS[rarityKey] || "bee-common";
   const icon = bee.icon || "images/ui/site-logo.png";
-  const model = bee.model || bee.icon || "images/ui/site-logo.png";
   const abilityCount = Array.isArray(bee.abilities) ? bee.abilities.length : 0;
 
   const rows = [
     {
       label: "Rarity",
-      value: `<span class="${rarityClass}">${escHtml(
-        bee.rarity || "Unknown",
-      )}</span>`,
+      value: `<span class="${rarityClass}">${escHtml(bee.rarity || "Unknown")}</span>`,
     },
     { label: "Color", value: escHtml(bee.color || "Unknown") },
     { label: "Abilities", value: escHtml(String(abilityCount)) },
@@ -51,20 +48,9 @@ function buildInfobox(bee) {
     <div class="bee-infobox">
       <div class="bee-infobox-header">
         <div class="bee-infobox-label">Bee Info</div>
-        <div class="bee-view-toggle">
-          <button class="bee-view-btn active" data-view="icon">Icon</button>
-          <button class="bee-view-btn" data-view="model">Model</button>
-        </div>
       </div>
       <div class="bee-infobox-image">
-        <img id="infobox-img-icon" src="${escHtml(icon)}" alt="${escHtml(
-          bee.name,
-        )} icon" onerror="this.onerror=null;this.src='images/ui/site-logo.png';" />
-        <img id="infobox-img-model" class="hidden" src="${escHtml(
-          model,
-        )}" alt="${escHtml(bee.name)} model" onerror="this.onerror=null;this.src='${escHtml(
-          icon,
-        )}';" />
+        <img src="${escHtml(icon)}" alt="${escHtml(bee.name)} icon" onerror="this.onerror=null;this.src='images/ui/site-logo.png';" />
       </div>
       <div class="bee-infobox-stats">${rowsHtml}</div>
     </div>
@@ -101,24 +87,6 @@ function buildObtain(bee) {
   `;
 }
 
-function buildTokenCard(tokenId) {
-  const token = TOKEN_MAP[tokenId];
-  if (!token) return "";
-
-  const icon = token.icon
-    ? `<img src="${escHtml(token.icon)}" alt="${escHtml(
-        token.name,
-      )}" onerror="this.onerror=null;this.src='images/ui/site-logo.png';" />`
-    : "";
-
-  return `
-    <div class="token-card" data-token-id="${escHtml(tokenId)}">
-      <div class="token-card-icon">${icon}</div>
-      <div class="token-card-name">${escHtml(token.name)}</div>
-    </div>
-  `;
-}
-
 function buildAbilities(abilities) {
   if (!abilities || !abilities.length) return "";
 
@@ -135,58 +103,27 @@ function buildAbilities(abilities) {
       const token = tokenId && TOKEN_MAP[tokenId] ? TOKEN_MAP[tokenId] : null;
 
       const iconSrc = token && token.icon ? token.icon : "";
-      const gifSrc = token && token.gif ? token.gif : "";
       const desc =
         token && token.description ? token.description : ab.description || "";
-      const hasGif = !!gifSrc;
-      const cardId = `ab-card-${index}`;
 
       const iconInner = iconSrc
-        ? `<img src="${escHtml(iconSrc)}" alt="${escHtml(
-            ab.name,
-          )}" onerror="this.onerror=null;this.src='images/ui/site-logo.png';" />`
+        ? `<img src="${escHtml(iconSrc)}" alt="${escHtml(ab.name)}" onerror="this.onerror=null;this.src='images/ui/site-logo.png';" />`
         : `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40" height="40">
              <circle cx="12" cy="12" r="10"/>
              <path d="M12 8v4l3 3"/>
            </svg>`;
 
-      const gifInner = gifSrc
-        ? `<img src="${escHtml(gifSrc)}" alt="${escHtml(
-            ab.name,
-          )} gif" onerror="this.onerror=null;this.src='${escHtml(
-            iconSrc || "images/ui/site-logo.png",
-          )}';" />`
-        : "";
-
-      const toggleHtml = hasGif
-        ? `
-        <div class="ab-toggle">
-          <button class="ab-toggle-btn active" data-card="${escHtml(
-            cardId,
-          )}" data-view="icon">Icon</button>
-          <button class="ab-toggle-btn" data-card="${escHtml(
-            cardId,
-          )}" data-view="gif">GIF</button>
-        </div>`
-        : "";
-
       return `
-        <div class="ab-card" id="${escHtml(
-          cardId,
-        )}" style="animation-delay:${index * 0.07}s">
+        <div class="ab-card" style="animation-delay:${index * 0.07}s">
           <div class="ab-media-top">
-            ${toggleHtml}
             <div class="ab-media-frame">
               <div class="ab-media-layer ab-media-layer--icon">${iconInner}</div>
-              ${hasGif ? `<div class="ab-media-layer ab-media-layer--gif hidden">${gifInner}</div>` : ""}
             </div>
           </div>
           <div class="ab-body">
             <div class="ab-top-row">
               <span class="ab-name">${escHtml(ab.name)}</span>
-              <span class="ab-badge ${isLocked ? "ab-badge--locked" : ""}">${escHtml(
-                unlockLabel,
-              )}</span>
+              <span class="ab-badge ${isLocked ? "ab-badge--locked" : ""}">${escHtml(unlockLabel)}</span>
             </div>
             <div class="ab-separator"></div>
             <div class="ab-desc">${escHtml(desc)}</div>
@@ -240,9 +177,7 @@ function buildPage(bee) {
       <div class="bee-detail-left">
         <div class="bee-detail-title">
           <div class="bee-detail-name">${escHtml(bee.name)}</div>
-          <span class="bee-detail-rarity ${rarityClass}">${escHtml(
-            bee.rarity,
-          )}</span>
+          <span class="bee-detail-rarity ${rarityClass}">${escHtml(bee.rarity)}</span>
         </div>
         <div class="bee-detail-desc">${escHtml(bee.description)}</div>
         ${buildObtain(bee)}
@@ -275,14 +210,8 @@ function openTokenModal(tokenId) {
   document.getElementById("token-modal-title").textContent = token.name;
 
   const visual = document.getElementById("token-modal-visual");
-  if (token.gif) {
-    visual.innerHTML = `<img src="${escHtml(token.gif)}" alt="${escHtml(
-      token.name,
-    )}" onerror="this.onerror=null;this.src='images/ui/site-logo.png';" />`;
-  } else if (token.icon) {
-    visual.innerHTML = `<img src="${escHtml(token.icon)}" alt="${escHtml(
-      token.name,
-    )}" onerror="this.onerror=null;this.src='images/ui/site-logo.png';" />`;
+  if (token.icon) {
+    visual.innerHTML = `<img src="${escHtml(token.icon)}" alt="${escHtml(token.name)}" onerror="this.onerror=null;this.src='images/ui/site-logo.png';" />`;
   } else {
     visual.innerHTML = `<span class="token-no-gif">No preview available.</span>`;
   }
@@ -318,53 +247,6 @@ function bindTokenEvents(root) {
     card.addEventListener("click", () => {
       const id = card.dataset.tokenId;
       if (id) openTokenModal(id);
-    });
-  });
-}
-
-function bindAbilityToggles(root) {
-  root.querySelectorAll(".ab-toggle-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const cardId = btn.dataset.card;
-      const view = btn.dataset.view;
-      const card = document.getElementById(cardId);
-      if (!card) return;
-
-      card
-        .querySelectorAll(".ab-toggle-btn")
-        .forEach((b) => b.classList.remove("active"));
-      btn.classList.add("active");
-
-      card
-        .querySelector(".ab-media-layer--icon")
-        .classList.toggle("hidden", view !== "icon");
-      card
-        .querySelector(".ab-media-layer--gif")
-        .classList.toggle("hidden", view !== "gif");
-    });
-  });
-}
-
-function bindInforboxToggle(root) {
-  root.querySelectorAll(".bee-view-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      root
-        .querySelectorAll(".bee-view-btn")
-        .forEach((b) => b.classList.remove("active"));
-      btn.classList.add("active");
-
-      const view = btn.dataset.view;
-      const iconImg = document.getElementById("infobox-img-icon");
-      const modelImg = document.getElementById("infobox-img-model");
-      if (!iconImg || !modelImg) return;
-
-      if (view === "icon") {
-        iconImg.classList.remove("hidden");
-        modelImg.classList.add("hidden");
-      } else {
-        iconImg.classList.add("hidden");
-        modelImg.classList.remove("hidden");
-      }
     });
   });
 }
@@ -414,18 +296,14 @@ async function loadBeeDetail() {
     }
 
     if (!bee) {
-      root.innerHTML = `<div class="bee-detail-error">Bee "${escHtml(
-        beeName,
-      )}" not found.</div>`;
+      root.innerHTML = `<div class="bee-detail-error">Bee "${escHtml(beeName)}" not found.</div>`;
       return;
     }
 
     document.title = `${bee.name} - The Majestic Bees`;
     root.innerHTML = `<div class="bee-detail-shell">${buildPage(bee)}</div>`;
 
-    bindInforboxToggle(root);
     bindTokenEvents(root);
-    bindAbilityToggles(root);
 
     renderAllBeesList(beeData, bee.name);
   } catch (err) {

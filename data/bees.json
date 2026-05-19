@@ -203,10 +203,6 @@
     "description": "A luminous bee glowing with concentrated knowledge and energy. It flits purposefully through the field, leaving trails of sparkling wisdom and radiant experience orbs in its wake while its brilliant aura resonates with an empowering frequency that accelerates growth and amplifies the learning gained from every blossom it touches.",
     "obtain": [
       {
-        "method": "Royal Jelly",
-        "detail": "Random chance to get it"
-      },
-      {
         "method": "750 Tickets",
         "detail": "Obtained via 750 Tickets."
       }
@@ -309,6 +305,32 @@
       }
     ]
   },
+  "Ice Bee": {
+    "name": "Ice Bee",
+    "rarity": "Special",
+    "color": "Blue",
+    "icon": "images/bees/Ice-Bee.png",
+    "model": "images/bees/models/Ice-Bee-model.png",
+    "description": "A crystalline architect carved from eternal permafrost, shimmering with a frigid, silent grace. It glides through the air on wings of sheer frost, trailing a mist of absolute zero and delicate snowflakes that freeze moments of insight into permanent memory; its chilling aura stills the chaos of the mind, allowing for a focused, rhythmic harvest of clarity from the petals of the frozen field.",
+    "obtain": [
+      {
+        "method": "Crafting",
+        "detail": "Obtained via Crafting."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Blue Pollen Boost",
+        "unlock_level": 1,
+        "tokens": ["blue-pollen-boost"]
+      },
+      {
+        "name": "Ice Crystal",
+        "unlock_level": 14,
+        "tokens": ["ice-crystal"]
+      }
+    ]
+  },
   "Icicle Bee": {
     "name": "Icicle Bee",
     "rarity": "Legendary",
@@ -379,10 +401,6 @@
     "description": "A core-heated sentinel forged from molten stone and pulsing obsidian. As it drones through the hive, it leaves a scorching trail of liquid fire and crystalline embers; its very presence radiates an intense, transformative heat that tempers raw potential into hardened skill, refining the essence of every flower it visits into a potent, concentrated nectar of power.",
     "obtain": [
       {
-        "method": "Royal Jelly",
-        "detail": "Random chance to get it"
-      },
-      {
         "method": "Crafting",
         "detail": "Obtained via Crafting."
       }
@@ -439,10 +457,6 @@
     "description": "A retro-inspired bee built from blocks of pure nostalgia. Its pixelated form may look simple, but don't be fooled — beneath those sharp edges lies a surprisingly capable worker. A charming collectible for those who appreciate the classics.",
     "obtain": [
       {
-        "method": "Royal Jelly",
-        "detail": "Random chance to get it"
-      },
-      {
         "method": "250 Tickets",
         "detail": "Obtained via 250 Tickets."
       }
@@ -452,6 +466,31 @@
         "name": "Pixel Boost",
         "unlock_level": 1,
         "tokens": ["pixel-boost"]
+      }
+    ]
+  },
+  "Science Bee": {
+    "name": "Science Bee",
+    "rarity": "Rare",
+    "color": "Colorless",
+    "icon": "images/bees/Science-Bee.png",
+    "model": "images/bees/models/Science-Bee-model.png",
+    "description": "An analytical bee equipped with experimental apparatus that converts collected resources into research data. Its methodical approach increases token quality through systematic observation, occasionally discovering rare specimens and bonus materials that other bees would overlook during standard gathering operations.",
+    "obtain": [
+      {
+        "method": "Royal Jelly",
+        "detail": "Random chance to get it"
+      },
+      {
+        "method": "Silver Egg",
+        "detail": "Silver Egg can hatch an Rare or Epic Bee."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Science Boost",
+        "unlock_level": 1,
+        "tokens": ["science-boost"]
       }
     ]
   },
@@ -583,10 +622,6 @@
     "model": "images/bees/models/Windy-Bee-model.png",
     "description": "A translucent spirit of the atmosphere, composed of swirling zephyrs and captured starlight. It moves with a restless, unpredictable elegance, leaving behind spiraling slipstreams of inspiration and echoing whispers of ancient secrets; its breezy resonance lifts the spirit, accelerating the pace of discovery and carrying the pollen of innovation across vast distances with a single, effortless gust.",
     "obtain": [
-      {
-        "method": "Royal Jelly",
-        "detail": "Random chance to get it"
-      },
       {
         "method": "Crafting",
         "detail": "Obtained via Crafting."
