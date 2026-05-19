@@ -1,5 +1,19 @@
 [
 	{
+		"code": "Update6",
+		"expires": "Unknown",
+		"note": "Update6!",
+		"items": [
+			"Blueberry Extract x3",
+			"Cone Extract x3",
+			"Stawberry Extract x3",
+			"Seed Oil x3"
+		],
+		"skins": [],
+		"stickers": [],
+		"boosts": []
+	},
+	{
 		"code": "LuckyDays2",
 		"expires": "2026-05-24",
 		"note": "200 ccu special",
