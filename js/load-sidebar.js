@@ -30,16 +30,87 @@ function loadSidebar() {
       <a href="${basePath}bees.html">Bees</a>
       <a href="${basePath}bears.html">Bears</a>
       <a href="${basePath}codes.html">Codes</a>
+      <a href="${basePath}hive.html">Hive</a>
       <a href="${basePath}store.html">Store</a>
       <a href="${basePath}shops.html">Shops</a>
     </div>
   `;
 
   container.innerHTML = sidebarHTML;
+  createMobileSheet && createMobileSheet(basePath);
 }
 
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", loadSidebar);
 } else {
   loadSidebar();
+}
+
+function createMobileSheet(basePath) {
+  if (document.getElementById("mobile-bottom-sheet")) return;
+
+  const linksHtml = `
+    <div class="mobile-sheet-inner">
+      <a class="sidebar-logo" href="${basePath}index.html">
+        <img src="${basePath}images/ui/site-logo.png" alt="" decoding="async" />
+      </a>
+      <a href="${basePath}index.html">Home</a>
+      <a href="${basePath}badges.html">Badges</a>
+      <a href="${basePath}bees.html">Bees</a>
+      <a href="${basePath}bears.html">Bears</a>
+      <a href="${basePath}codes.html">Codes</a>
+      <a href="${basePath}hive.html">Hive</a>
+      <a href="${basePath}store.html">Store</a>
+      <a href="${basePath}shops.html">Shops</a>
+    </div>
+  `;
+
+  const button = document.createElement("button");
+  button.id = "mobile-sidebar-button";
+  button.className = "mobile-sidebar-button";
+  button.setAttribute("aria-expanded", "false");
+  button.setAttribute("aria-label", "Open menu");
+  button.innerHTML = "&#9776;";
+  document.body.appendChild(button);
+
+  const backdrop = document.createElement("div");
+  backdrop.id = "mobile-sheet-backdrop";
+  backdrop.className = "mobile-sheet-backdrop";
+  document.body.appendChild(backdrop);
+
+  const sheet = document.createElement("div");
+  sheet.id = "mobile-bottom-sheet";
+  sheet.className = "mobile-bottom-sheet";
+  sheet.innerHTML =
+    '<div class="mobile-sheet-handle" aria-hidden="true"></div>' + linksHtml;
+  document.body.appendChild(sheet);
+
+  function openSheet() {
+    sheet.classList.add("open");
+    backdrop.classList.add("show");
+    button.setAttribute("aria-expanded", "true");
+    document.documentElement.style.overflow = "hidden";
+  }
+
+  function closeSheet() {
+    sheet.classList.remove("open");
+    backdrop.classList.remove("show");
+    button.setAttribute("aria-expanded", "false");
+    document.documentElement.style.overflow = "";
+  }
+
+  button.addEventListener("click", function () {
+    if (sheet.classList.contains("open")) closeSheet();
+    else openSheet();
+  });
+
+  backdrop.addEventListener("click", closeSheet);
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeSheet();
+  });
+
+  sheet.addEventListener("click", function (e) {
+    e.stopPropagation();
+  });
 }

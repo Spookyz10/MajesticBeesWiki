@@ -1,0 +1,463 @@
+{
+  "skins": [
+    {
+      "name": "Normal Hive",
+      "image": "images/hive/skins/Normal Skin.png",
+      "rarity": "Common",
+      "order": 999,
+      "desc": "Original Colour of hives.",
+      "buffs": []
+    },
+    {
+      "name": "Red Hive",
+      "image": "images/hive/skins/Red Skin.png",
+      "rarity": "Rare",
+      "order": 990,
+      "desc": "Red and strawberry style hive.",
+      "buffs": [{ "stat": "Red Pollen", "type": "Perc", "value": 25 }]
+    },
+    {
+      "name": "Blue Hive",
+      "image": "images/hive/skins/Blue Skin.png",
+      "rarity": "Rare",
+      "order": 990,
+      "desc": "Blue and blueberry style hive.",
+      "buffs": [{ "stat": "Blue Pollen", "type": "Perc", "value": 25 }]
+    },
+    {
+      "name": "Green Hive",
+      "image": "images/hive/skins/Green Skin.png",
+      "rarity": "Rare",
+      "order": 990,
+      "desc": "Green and lucky hive.",
+      "buffs": [{ "stat": "Loot Luck", "type": "Perc", "value": 25 }]
+    },
+    {
+      "name": "Orange Hive",
+      "image": "images/hive/skins/Orange Skin.png",
+      "rarity": "Rare",
+      "order": 990,
+      "desc": "Orange and honeyfull hive.",
+      "buffs": [
+        { "stat": "Convert Rate", "type": "Perc", "value": 25 },
+        { "stat": "Honey Bonus", "type": "Perc", "value": 5 }
+      ]
+    },
+    {
+      "name": "Pink Hive",
+      "image": "images/hive/skins/Pink Skin.png",
+      "rarity": "Epic",
+      "order": 980,
+      "desc": "Pink and sweety flavour hive.",
+      "buffs": [
+        { "stat": "Red Pollen", "type": "Perc", "value": 35 },
+        { "stat": "Capacity Bonus", "type": "Perc", "value": 25 }
+      ]
+    },
+    {
+      "name": "Purple Hive",
+      "image": "images/hive/skins/Purple Skin.png",
+      "rarity": "Epic",
+      "order": 980,
+      "desc": "Purple and mix of blue & red hive.",
+      "buffs": [
+        { "stat": "Red Pollen", "type": "Perc", "value": 35 },
+        { "stat": "Blue Pollen", "type": "Perc", "value": 35 }
+      ]
+    },
+    {
+      "name": "Light Blue Hive",
+      "image": "images/hive/skins/Light Blue Skin.png",
+      "rarity": "Epic",
+      "order": 980,
+      "desc": "Light blue and sky color hive.",
+      "buffs": [
+        { "stat": "White Pollen", "type": "Perc", "value": 35 },
+        { "stat": "Cloud Pollen", "type": "Perc", "value": 25 }
+      ]
+    },
+    {
+      "name": "Black Hive",
+      "image": "images/hive/skins/Black Skin.png",
+      "rarity": "Epic",
+      "order": 980,
+      "desc": "Black and classic style hive.",
+      "buffs": [{ "stat": "Obsidian Pollen", "type": "Perc", "value": 25 }]
+    },
+    {
+      "name": "White Hive",
+      "image": "images/hive/skins/White Skin.png",
+      "rarity": "Epic",
+      "order": 980,
+      "desc": "White and classic style hive.",
+      "buffs": [
+        { "stat": "Cloud Pollen", "type": "Perc", "value": 100 },
+        { "stat": "Movespeed", "type": "Perc", "value": 25 }
+      ]
+    },
+    {
+      "name": "Chromatic Hive",
+      "image": "images/hive/skins/Chromatic Skin.png",
+      "rarity": "Legendary",
+      "order": 970,
+      "desc": "Mix of all colors hive.",
+      "buffs": [
+        { "stat": "Honey Bonus", "type": "Perc", "value": 10 },
+        { "stat": "Pollen", "type": "Perc", "value": 50 },
+        { "stat": "Capacity Bonus", "type": "Perc", "value": 50 },
+        { "stat": "Movespeed", "type": "Perc", "value": 25 }
+      ]
+    }
+  ],
+  "stickers": [
+    {
+      "name": "Booster Sticker",
+      "image": "images/hive/stickers/Booster Sticker.png",
+      "rarity": "Special",
+      "order": 10,
+      "desc": "Obtainable through boosting the server 2 times.",
+      "buffs": [{ "stat": "Pollen", "type": "Mult", "value": 1.1 }]
+    },
+    {
+      "name": "Azataz Sticker",
+      "image": "images/hive/stickers/Azataz Sticker.png",
+      "rarity": "Special",
+      "order": 15,
+      "desc": "Special sticker, obtainable through codes/events.",
+      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+    },
+    {
+      "name": "Sanju Sticker",
+      "image": "images/hive/stickers/Sanju Sticker.png",
+      "rarity": "Special",
+      "order": 16,
+      "desc": "Special sticker, obtainable through Sanju.",
+      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+    },
+    {
+      "name": "Deox Sticker",
+      "image": "images/hive/stickers/Deox Sticker.png",
+      "rarity": "Special",
+      "order": 17,
+      "desc": "Special sticker, obtainable through codes/events.",
+      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+    },
+    {
+      "name": "Teapot Sticker",
+      "image": "images/hive/stickers/Teapot Sticker.png",
+      "rarity": "Special",
+      "order": 18,
+      "desc": "Special sticker, obtainable through codes/events.",
+      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+    },
+    {
+      "name": "Remlik Sticker",
+      "image": "images/hive/stickers/Remlik Sticker.png",
+      "rarity": "Special",
+      "order": 19,
+      "desc": "Special sticker, obtainable through codes/events.",
+      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+    },
+    {
+      "name": "Zevmu Sticker",
+      "image": "images/hive/stickers/Zevmu Sticker.png",
+      "rarity": "Special",
+      "order": 20,
+      "desc": "Special sticker, obtainable through codes/events.",
+      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+    },
+    {
+      "name": "Lugia Sticker",
+      "image": "images/hive/stickers/Lugia Sticker.png",
+      "rarity": "Special",
+      "order": 21,
+      "desc": "Special sticker, obtainable through codes/events.",
+      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+    },
+    {
+      "name": "Theo Sticker",
+      "image": "images/hive/stickers/Theo Sticker.png",
+      "rarity": "Special",
+      "order": 22,
+      "desc": "Special sticker, obtainable through codes/events.",
+      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+    },
+    {
+      "name": "Starflower Sticker",
+      "image": "images/hive/stickers/Starflower Sticker.png",
+      "rarity": "Legendary",
+      "order": 848,
+      "desc": "1 in 10k chance from a Starflower! Higher Starflowers do not increase the chances of obtaining this sticker.",
+      "buffs": [{ "stat": "Loot Luck", "type": "Mult", "value": 1.1 }]
+    },
+    {
+      "name": "Firework Bee Sticker",
+      "image": "images/hive/stickers/Firework Bee Sticker.png",
+      "rarity": "Legendary",
+      "order": 849,
+      "desc": "Random chance to obtain from the Firework Bee",
+      "buffs": [{ "stat": "Firework Pollen", "type": "Mult", "value": 1.1 }]
+    },
+    {
+      "name": "Bamboo Spear Sticker",
+      "image": "images/hive/stickers/Bamboo Spear Sticker.png",
+      "rarity": "Legendary",
+      "order": 899,
+      "desc": "Obtainable randomly while gathering!",
+      "buffs": [{ "stat": "Cloud Pollen", "type": "Mult", "value": 1.05 }]
+    },
+    {
+      "name": "Snow Shovel Sticker",
+      "image": "images/hive/stickers/Snow Shovel Sticker.png",
+      "rarity": "Epic",
+      "order": 997,
+      "desc": "Obtainable randomly while gathering!",
+      "buffs": [{ "stat": "Ice Pollen", "type": "Mult", "value": 1.05 }]
+    },
+    {
+      "name": "Fire Scythe Sticker",
+      "image": "images/hive/stickers/Fire Scythe Sticker.png",
+      "rarity": "Epic",
+      "order": 998,
+      "desc": "Obtainable randomly while gathering!",
+      "buffs": [{ "stat": "Fire Pollen", "type": "Mult", "value": 1.05 }]
+    },
+    {
+      "name": "Honey Dipper Sticker",
+      "image": "images/hive/stickers/Honey Dipper Sticker.png",
+      "rarity": "Epic",
+      "order": 999,
+      "desc": "Obtainable randomly while gathering!",
+      "buffs": [
+        { "stat": "Pollen", "type": "Perc", "value": 21 },
+        { "stat": "Capacity Bonus", "type": "Perc", "value": 17 }
+      ]
+    },
+    {
+      "name": "Gold Magnet Sticker",
+      "image": "images/hive/stickers/Gold Magnet Sticker.png",
+      "rarity": "Rare",
+      "order": 1997,
+      "desc": "Obtainable randomly while gathering!",
+      "buffs": [{ "stat": "Loot Luck", "type": "Perc", "value": 14 }]
+    },
+    {
+      "name": "Pickaxe Sticker",
+      "image": "images/hive/stickers/Pickaxe Sticker.png",
+      "rarity": "Rare",
+      "order": 1998,
+      "desc": "Obtainable randomly while gathering!",
+      "buffs": [{ "stat": "Defense", "type": "Perc", "value": 12 }]
+    },
+    {
+      "name": "Axe Sticker",
+      "image": "images/hive/stickers/Axe Sticker.png",
+      "rarity": "Rare",
+      "order": 1999,
+      "desc": "Obtainable randomly while gathering!",
+      "buffs": [
+        { "stat": "Capacity Bonus", "type": "Perc", "value": 12 },
+        { "stat": "Convert Rate", "type": "Perc", "value": 7 }
+      ]
+    },
+    {
+      "name": "Scythe Sticker",
+      "image": "images/hive/stickers/Scythe Sticker.png",
+      "rarity": "Rare",
+      "order": 2000,
+      "desc": "Obtainable randomly while gathering!",
+      "buffs": [{ "stat": "Honey Bonus", "type": "Perc", "value": 4 }]
+    },
+    {
+      "name": "Scissors Sticker",
+      "image": "images/hive/stickers/Scissors Sticker.png",
+      "rarity": "Common",
+      "order": 7996,
+      "desc": "Obtainable randomly while gathering!",
+      "buffs": [{ "stat": "Convert Amount", "type": "Add", "value": 4 }]
+    },
+    {
+      "name": "Magnet Sticker",
+      "image": "images/hive/stickers/Magnet Sticker.png",
+      "rarity": "Common",
+      "order": 7997,
+      "desc": "Obtainable randomly while gathering!",
+      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 7 }]
+    },
+    {
+      "name": "Hammer Sticker",
+      "image": "images/hive/stickers/Hammer Sticker.png",
+      "rarity": "Common",
+      "order": 7998,
+      "desc": "Obtainable randomly while gathering!",
+      "buffs": [{ "stat": "Capacity Bonus", "type": "Perc", "value": 7 }]
+    },
+    {
+      "name": "Rake Sticker",
+      "image": "images/hive/stickers/Rake Sticker.png",
+      "rarity": "Common",
+      "order": 7999,
+      "desc": "Obtainable randomly while gathering!",
+      "buffs": [{ "stat": "Convert Rate", "type": "Perc", "value": 7 }]
+    },
+    {
+      "name": "Shovel Sticker",
+      "image": "images/hive/stickers/Shovel Sticker.png",
+      "rarity": "Common",
+      "order": 8000,
+      "desc": "Obtainable randomly while gathering!",
+      "buffs": [
+        { "stat": "Pollen", "type": "Perc", "value": 3 },
+        { "stat": "Capacity Bonus", "type": "Perc", "value": 2 }
+      ]
+    },
+    {
+      "name": "Raspberry Field Sticker",
+      "image": "images/hive/stickers/Raspberry Field Sticker.png",
+      "rarity": "Common",
+      "order": 9985,
+      "desc": "Obtainable on Raspberry Field!",
+      "buffs": [
+        { "stat": "Raspberry Field Pollen", "type": "Perc", "value": 25 }
+      ]
+    },
+    {
+      "name": "Banana Field Sticker",
+      "image": "images/hive/stickers/Banana Field Sticker.png",
+      "rarity": "Common",
+      "order": 9986,
+      "desc": "Obtainable on Banana Field!",
+      "buffs": [{ "stat": "Banana Field Pollen", "type": "Perc", "value": 25 }]
+    },
+    {
+      "name": "Bamboo Field Sticker",
+      "image": "images/hive/stickers/Bamboo Field Sticker.png",
+      "rarity": "Common",
+      "order": 9987,
+      "desc": "Obtainable on Bamboo Field!",
+      "buffs": [{ "stat": "Bamboo Field Pollen", "type": "Perc", "value": 25 }]
+    },
+    {
+      "name": "Snowdrops Field Sticker",
+      "image": "images/hive/stickers/Snowdrops Field Sticker.png",
+      "rarity": "Common",
+      "order": 9988,
+      "desc": "Obtainable on Snowdrops Field!",
+      "buffs": [
+        { "stat": "Snowdrops Field Pollen", "type": "Perc", "value": 25 }
+      ]
+    },
+    {
+      "name": "Pine Cone Field Sticker",
+      "image": "images/hive/stickers/Pine Cone Field Sticker.png",
+      "rarity": "Common",
+      "order": 9989,
+      "desc": "Obtainable on Pine Cone Field!",
+      "buffs": [
+        { "stat": "Pine Cone Field Pollen", "type": "Perc", "value": 25 }
+      ]
+    },
+    {
+      "name": "Rose Field Sticker",
+      "image": "images/hive/stickers/Rose Field Sticker.png",
+      "rarity": "Common",
+      "order": 9990,
+      "desc": "Obtainable on Rose Field!",
+      "buffs": [{ "stat": "Rose Field Pollen", "type": "Perc", "value": 25 }]
+    },
+    {
+      "name": "Spider Field Sticker",
+      "image": "images/hive/stickers/Spider Field Sticker.png",
+      "rarity": "Common",
+      "order": 9991,
+      "desc": "Obtainable on Spider Field!",
+      "buffs": [{ "stat": "Spider Field Pollen", "type": "Perc", "value": 25 }]
+    },
+    {
+      "name": "Strawberry Field Sticker",
+      "image": "images/hive/stickers/Strawberry Field Sticker.png",
+      "rarity": "Common",
+      "order": 9992,
+      "desc": "Obtainable on Strawberry Field!",
+      "buffs": [
+        { "stat": "Strawberry Field Pollen", "type": "Perc", "value": 25 }
+      ]
+    },
+    {
+      "name": "Bellflower Field Sticker",
+      "image": "images/hive/stickers/Bellflower Field Sticker.png",
+      "rarity": "Common",
+      "order": 9993,
+      "desc": "Obtainable on Bellflower Field!",
+      "buffs": [
+        { "stat": "Bellflower Field Pollen", "type": "Perc", "value": 25 }
+      ]
+    },
+    {
+      "name": "Blue Flowers Field Sticker",
+      "image": "images/hive/stickers/Blue Flowers Field Sticker.png",
+      "rarity": "Common",
+      "order": 9994,
+      "desc": "Obtainable on Blue Flowers Field!",
+      "buffs": [
+        { "stat": "Blue Flowers Field Pollen", "type": "Perc", "value": 25 }
+      ]
+    },
+    {
+      "name": "Red Flowers Field Sticker",
+      "image": "images/hive/stickers/Red Flowers Field Sticker.png",
+      "rarity": "Common",
+      "order": 9995,
+      "desc": "Obtainable on Red Flowers Field!",
+      "buffs": [
+        { "stat": "Red Flowers Field Pollen", "type": "Perc", "value": 25 }
+      ]
+    },
+    {
+      "name": "Sunflower Field Sticker",
+      "image": "images/hive/stickers/Sunflower Field Sticker.png",
+      "rarity": "Common",
+      "order": 9996,
+      "desc": "Obtainable on Sunflower Field!",
+      "buffs": [
+        { "stat": "Sunflower Field Pollen", "type": "Perc", "value": 25 }
+      ]
+    },
+    {
+      "name": "Blackberry Field Sticker",
+      "image": "images/hive/stickers/Blackberry Field Sticker.png",
+      "rarity": "Common",
+      "order": 9997,
+      "desc": "Obtainable on Blackberry Field!",
+      "buffs": [
+        { "stat": "Blackberry Field Pollen", "type": "Perc", "value": 25 }
+      ]
+    },
+    {
+      "name": "Clover Field Sticker",
+      "image": "images/hive/stickers/Clover Field Sticker.png",
+      "rarity": "Common",
+      "order": 9998,
+      "desc": "Obtainable on Clover Field!",
+      "buffs": [{ "stat": "Clover Field Pollen", "type": "Perc", "value": 25 }]
+    },
+    {
+      "name": "Daisy Field Sticker",
+      "image": "images/hive/stickers/Daisy Field Sticker.png",
+      "rarity": "Common",
+      "order": 9999,
+      "desc": "Obtainable on Daisy Field!",
+      "buffs": [{ "stat": "Daisy Field Pollen", "type": "Perc", "value": 25 }]
+    },
+    {
+      "name": "Mushroom Field Sticker",
+      "image": "images/hive/stickers/Mushroom Field Sticker.png",
+      "rarity": "Common",
+      "order": 10000,
+      "desc": "Obtainable on Mushroom Field!",
+      "buffs": [
+        { "stat": "Mushroom Field Pollen", "type": "Perc", "value": 25 }
+      ]
+    }
+  ]
+}
