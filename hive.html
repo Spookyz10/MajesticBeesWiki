@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hive</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/hive.css" />
+    <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
+
+    <script defer src="js/load-sidebar.js"></script>
+    <script defer src="js/wiki-search.js"></script>
+    <script defer src="js/search.js"></script>
+    <script defer src="js/hive.js"></script>
+  </head>
+
+  <body>
+    <div id="sidebar-container"></div>
+
+    <div class="main" data-pagefind-body>
+      <div class="topbar">
+        <div id="search"></div>
+      </div>
+
+      <div class="content mw-parser-output">
+        <div class="hive-page-title">
+          <div class="hero-title">Hive</div>
+        </div>
+
+        <div class="hero-description hive-hero-description">
+          Your hive is the heart of your colony in <b>The Majestic Bees</b>.
+          Customize it with <b>Skins</b> and <b>Stickers</b> to change its
+          appearance and gain permanent stat bonuses. Expand it by purchasing
+          more slots with honey.
+        </div>
+
+        <hr />
+
+        <h2>Hive Slots</h2>
+        <div class="hive-info-box">
+          You start the game with <b>5 hive slots</b>. More slots are purchased
+          with honey, up to a maximum of <b>50 slots</b>.
+
+          <div class="hive-slot-table" id="hive-slot-table">
+            <table class="wikitable bees-table bees-slots-table">
+              <tr>
+                <th>Slot</th>
+                <th>Cost</th>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>1.25k</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>4.8k</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>9.6k</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>23.5k</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>51.2k</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>11</td>
+                <td>108.4k</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>12</td>
+                <td>245.6k</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>13</td>
+                <td>492k</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>14</td>
+                <td>785.4k</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>15</td>
+                <td>1.12m</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>16</td>
+                <td>2.24m</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>17</td>
+                <td>4.18m</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>18</td>
+                <td>7.34m</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>19</td>
+                <td>10.65m</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>20</td>
+                <td>15.42m</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>21</td>
+                <td>22.18m</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>22</td>
+                <td>31.45m</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>23</td>
+                <td>46.8m</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>24</td>
+                <td>62.15m</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>25</td>
+                <td>84.6m</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>26</td>
+                <td>104.4m</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>27</td>
+                <td>142.7m</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>28</td>
+                <td>195.5m</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>29</td>
+                <td>268.8m</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>30</td>
+                <td>365.2m</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>31</td>
+                <td>498.4m</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>32</td>
+                <td>662.1m</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>33</td>
+                <td>874.5m</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>34</td>
+                <td>1.16b</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>35</td>
+                <td>1.62b</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>36</td>
+                <td>2.38b</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>37</td>
+                <td>3.64b</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>38</td>
+                <td>5.81b</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>39</td>
+                <td>9.24b</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>40</td>
+                <td>14.45b</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>41</td>
+                <td>24.84b</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>42</td>
+                <td>46.35b</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>43</td>
+                <td>82.12b</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>44</td>
+                <td>148.45b</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>45</td>
+                <td>264.2b</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>46</td>
+                <td>422.45b</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>47</td>
+                <td>614.6b</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>48</td>
+                <td>821.8b</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>49</td>
+                <td>985.4b</td>
+              </tr>
+              <tr class="hive-slot-row--extra">
+                <td>50</td>
+                <td>1.25t</td>
+              </tr>
+            </table>
+            <div class="hive-slot-table-actions">
+              <button
+                class="hive-slot-toggle"
+                id="hive-slot-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Show all slot prices
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <h2>Skins</h2>
+        <p class="hive-section-desc">
+          Skins change the appearance of your hive and grant passive bonuses.
+          Each skin belongs to a rarity tier.
+        </p>
+
+        <div class="hive-tab-buttons">
+          <button class="hive-tab-btn active" data-hive-tab="skins-common">
+            Common
+          </button>
+          <button class="hive-tab-btn" data-hive-tab="skins-rare">Rare</button>
+          <button class="hive-tab-btn" data-hive-tab="skins-epic">Epic</button>
+          <button class="hive-tab-btn" data-hive-tab="skins-legendary">
+            Legendary
+          </button>
+        </div>
+
+        <div
+          id="skins-common"
+          class="hive-grid"
+          data-hive-panel="skins-common"
+        ></div>
+        <div
+          id="skins-rare"
+          class="hive-grid"
+          data-hive-panel="skins-rare"
+          style="display: none"
+        ></div>
+        <div
+          id="skins-epic"
+          class="hive-grid"
+          data-hive-panel="skins-epic"
+          style="display: none"
+        ></div>
+        <div
+          id="skins-legendary"
+          class="hive-grid"
+          data-hive-panel="skins-legendary"
+          style="display: none"
+        ></div>
+        <div
+          id="skins-special"
+          class="hive-grid"
+          data-hive-panel="skins-special"
+          style="display: none"
+        ></div>
+
+        <hr />
+
+        <h2>Stickers</h2>
+        <p class="hive-section-desc">
+          Stickers are cosmetic decorations that also provide stat bonuses. Most
+          are obtained randomly while gathering or through special events.
+        </p>
+
+        <div class="hive-tab-buttons">
+          <button class="hive-tab-btn active" data-hive-tab="stickers-common">
+            Common
+          </button>
+          <button class="hive-tab-btn" data-hive-tab="stickers-rare">
+            Rare
+          </button>
+          <button class="hive-tab-btn" data-hive-tab="stickers-epic">
+            Epic
+          </button>
+          <button class="hive-tab-btn" data-hive-tab="stickers-legendary">
+            Legendary
+          </button>
+          <button class="hive-tab-btn" data-hive-tab="stickers-special">
+            Special
+          </button>
+        </div>
+
+        <div
+          id="stickers-common"
+          class="hive-grid"
+          data-hive-panel="stickers-common"
+        ></div>
+        <div
+          id="stickers-rare"
+          class="hive-grid"
+          data-hive-panel="stickers-rare"
+          style="display: none"
+        ></div>
+        <div
+          id="stickers-epic"
+          class="hive-grid"
+          data-hive-panel="stickers-epic"
+          style="display: none"
+        ></div>
+        <div
+          id="stickers-legendary"
+          class="hive-grid"
+          data-hive-panel="stickers-legendary"
+          style="display: none"
+        ></div>
+        <div
+          id="stickers-special"
+          class="hive-grid"
+          data-hive-panel="stickers-special"
+          style="display: none"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>
