@@ -5,17 +5,20 @@
     "image": "images/mobs/Caterpillar.png",
     "location": "Starter Zone",
     "desc": "A small, chubby green caterpillar with two big black eyes and tiny antennae. It curls up low to the ground and has a round, segmented body.",
+    "respawn": "3–4 min",
+    "tokens": "4–5",
     "drops": [
-      "Seed",
-      "Strawberry",
-      "Blueberry",
-      "Pine Cone",
-      "Honey",
-      "Treat",
-      "Fire Essence",
-      "Water Essence",
-      "Wind Essence",
-      "Ticket"
+      { "name": "Caterpillar Amulet", "chance": 2, "qty": 1, "lootLuck": true },
+      { "name": "Seed", "chance": 15, "qty": 1 },
+      { "name": "Strawberry", "chance": 15, "qty": 1 },
+      { "name": "Blueberry", "chance": 15, "qty": 1 },
+      { "name": "Pine Cone", "chance": 15, "qty": 1 },
+      { "name": "Honey", "chance": 15, "qty": 100 },
+      { "name": "Treat", "chance": 10, "qty": 1 },
+      { "name": "Fire Essence", "chance": 5, "qty": 3 },
+      { "name": "Water Essence", "chance": 5, "qty": 3 },
+      { "name": "Wind Essence", "chance": 5, "qty": 3 },
+      { "name": "Ticket", "chance": 1, "qty": 1, "lootLuck": true }
     ]
   },
   {
@@ -24,14 +27,17 @@
     "image": "images/mobs/Ladybug.png",
     "location": "5 Bee Zone",
     "desc": "A large, blocky ladybug with a dark navy blue body and bright red wings with black spots. It has four sturdy legs and two short antennae sticking out from its head.",
+    "respawn": "6–10 min",
+    "tokens": "5–7",
     "drops": [
-      "Strawberry",
-      "Honey",
-      "Treat",
-      "Royal Jelly",
-      "Fire Essence",
-      "Ticket",
-      "Strawberry Extract"
+      { "name": "Ladybug Amulet", "chance": 1, "qty": 1, "lootLuck": true },
+      { "name": "Strawberry", "chance": 15, "qty": 3 },
+      { "name": "Honey", "chance": 15, "qty": 255 },
+      { "name": "Treat", "chance": 10, "qty": 5 },
+      { "name": "Royal Jelly", "chance": 5, "qty": 1 },
+      { "name": "Fire Essence", "chance": 5, "qty": 3 },
+      { "name": "Ticket", "chance": 1, "qty": 1, "lootLuck": true },
+      { "name": "Strawberry Extract", "chance": 1, "qty": 1, "lootLuck": true }
     ]
   },
   {
@@ -40,14 +46,22 @@
     "image": "images/mobs/RhinoBeetle.png",
     "location": "5 Bee Zone",
     "desc": "A big, dark blue beetle with two large horn-like spikes on its head. It has a heavy, angular shell on its back and four thick legs.",
+    "respawn": "6–10 min",
+    "tokens": "6–7",
     "drops": [
-      "Blueberry",
-      "Honey",
-      "Treat",
-      "Royal Jelly",
-      "Water Essence",
-      "Ticket",
-      "Blueberry Extract"
+      {
+        "name": "Rhino Beetle Amulet",
+        "chance": 1,
+        "qty": 1,
+        "lootLuck": true
+      },
+      { "name": "Blueberry", "chance": 15, "qty": 3 },
+      { "name": "Honey", "chance": 15, "qty": 255 },
+      { "name": "Treat", "chance": 10, "qty": 5 },
+      { "name": "Royal Jelly", "chance": 5, "qty": 1 },
+      { "name": "Water Essence", "chance": 5, "qty": 3 },
+      { "name": "Ticket", "chance": 1, "qty": 1, "lootLuck": true },
+      { "name": "Blueberry Extract", "chance": 1, "qty": 1, "lootLuck": true }
     ]
   },
   {
@@ -56,16 +70,19 @@
     "image": "images/mobs/Spider.png",
     "location": "10 Bee Zone",
     "desc": "A massive dark blue spider with six long, sharp legs spread wide. It has a large triangular body and four big black eyes on the front of its face.",
+    "respawn": "~10 min",
+    "tokens": "4–5",
     "drops": [
-      "Seed",
-      "Pine Cone",
-      "Honey",
-      "Treat",
-      "Wind Essence",
-      "Royal Jelly",
-      "Ticket",
-      "Silver Egg",
-      "Cone Extract"
+      { "name": "Spider Amulet", "chance": 1, "qty": 1, "lootLuck": true },
+      { "name": "Seed", "chance": 15, "qty": 3 },
+      { "name": "Pine Cone", "chance": 15, "qty": 3 },
+      { "name": "Honey", "chance": 15, "qty": 755 },
+      { "name": "Treat", "chance": 10, "qty": 5 },
+      { "name": "Wind Essence", "chance": 10, "qty": 3 },
+      { "name": "Royal Jelly", "chance": 5, "qty": 1 },
+      { "name": "Ticket", "chance": 1, "qty": 1, "lootLuck": true },
+      { "name": "Silver Egg", "chance": 1, "qty": 1, "lootLuck": true },
+      { "name": "Cone Extract", "chance": 1, "qty": 1, "lootLuck": true }
     ]
   }
 ]

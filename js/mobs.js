@@ -17,7 +17,26 @@ async function loadMobs() {
 
 function buildMobCard(mob) {
   const drops = mob.drops
-    .map((drop) => `<span class="mob-drop-tag">${drop}</span>`)
+    .map((drop) => {
+      const luckBadge = drop.lootLuck
+        ? `<span class="mob-drop-luck" title="Boosted by Loot Luck">✦</span>`
+        : "";
+      const qty =
+        drop.qty > 1 ? `<span class="mob-drop-qty">×${drop.qty}</span>` : "";
+      const tierClass =
+        drop.chance >= 10
+          ? "mob-drop-tag--common"
+          : drop.chance >= 5
+            ? "mob-drop-tag--uncommon"
+            : drop.chance >= 2
+              ? "mob-drop-tag--rare"
+              : "mob-drop-tag--very-rare";
+      return `<div class="mob-drop-tag ${tierClass}">
+        <span class="mob-drop-name">${drop.name}</span>
+        ${qty}
+        <span class="mob-drop-chance">${drop.chance}%${luckBadge}</span>
+      </div>`;
+    })
     .join("");
 
   return `
@@ -37,6 +56,16 @@ function buildMobCard(mob) {
           <span class="mob-location">${mob.location}</span>
         </div>
         <p class="mob-desc">${mob.desc}</p>
+        <div class="mob-stats-row">
+          <div class="mob-stat">
+            <span class="mob-stat-label">Respawn</span>
+            <span class="mob-stat-value">${mob.respawn}</span>
+          </div>
+          <div class="mob-stat">
+            <span class="mob-stat-label">Tokens</span>
+            <span class="mob-stat-value">${mob.tokens}</span>
+          </div>
+        </div>
         <div class="mob-drops">
           <div class="mob-drops-label">Possible Drops</div>
           <div class="mob-drops-list">${drops}</div>
