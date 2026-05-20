@@ -1,0 +1,326 @@
+.badges-page-title {
+  text-align: center;
+  padding: 30px 0 10px;
+}
+
+.badges-hero-description {
+  max-width: 740px;
+  margin: 6px auto 28px;
+  padding: 0 20px;
+  font-size: 1.05em;
+}
+
+.badges-tier-note {
+  max-width: 900px;
+  width: min(900px, 92%);
+  margin: 0 auto 24px;
+  background: rgba(36, 26, 10, 0.6);
+  border: 1px solid rgba(232, 192, 64, 0.18);
+  border-radius: 10px;
+  padding: 14px 18px;
+  font-size: 0.88em;
+  color: var(--gold-dim);
+  line-height: 1.7;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.badges-tier-note-icon {
+  font-size: 1.15em;
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: var(--gold);
+}
+
+.badges-tier-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.badges-tier-swatch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 0.82em;
+  font-weight: 700;
+  border: 1px solid;
+}
+
+.swatch-bronze {
+  color: #ffa962;
+  border-color: rgba(255, 169, 98, 0.45);
+  background: rgba(255, 169, 98, 0.1);
+}
+.swatch-silver {
+  color: #dcdcdc;
+  border-color: rgba(220, 220, 220, 0.4);
+  background: rgba(220, 220, 220, 0.08);
+}
+.swatch-gold {
+  color: #ffdc13;
+  border-color: rgba(255, 220, 19, 0.45);
+  background: rgba(255, 220, 19, 0.1);
+}
+.swatch-diamond {
+  color: #37daff;
+  border-color: rgba(55, 218, 255, 0.45);
+  background: rgba(55, 218, 255, 0.1);
+}
+.swatch-emerald {
+  color: #29ff82;
+  border-color: rgba(41, 255, 130, 0.45);
+  background: rgba(41, 255, 130, 0.1);
+}
+
+.badges-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: min(900px, 92%);
+  margin: 0 auto 12px;
+}
+
+.badge-card {
+  display: flex;
+  gap: 0;
+  align-items: stretch;
+  background: rgba(36, 26, 10, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.badge-card:hover {
+  border-color: rgba(232, 192, 64, 0.35);
+  box-shadow: 0 0 24px rgba(212, 170, 48, 0.1);
+}
+
+.badge-card-left {
+  flex: 0 0 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 16px;
+  background: rgba(18, 12, 0, 0.38);
+  border-right: 1px solid var(--line);
+}
+
+.badge-image-wrap {
+  width: 88px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(18, 12, 0, 0.62);
+  border: 1px solid rgba(58, 40, 0, 0.8);
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.badge-image-wrap img {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.4));
+}
+
+.badge-card-name {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 1.05rem;
+  color: var(--gold);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.badge-card-task {
+  font-size: 0.8em;
+  color: var(--gold-dim);
+  text-align: center;
+  line-height: 1.55;
+}
+
+.badge-card-right {
+  flex: 1;
+  padding: 16px 18px;
+  overflow-x: auto;
+}
+
+.badge-tier-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.87em;
+}
+
+.badge-tier-table thead tr th {
+  text-align: left;
+  color: var(--gold-dim);
+  font-size: 0.78em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0 10px 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+.badge-tier-table thead tr th:nth-child(2) {
+  text-align: center;
+}
+
+.badge-tier-table thead tr th:nth-child(3) {
+  text-align: right;
+}
+
+.badge-tier-row td {
+  padding: 5px 10px;
+  border-bottom: 1px solid rgba(58, 40, 0, 0.5);
+  vertical-align: middle;
+}
+
+.badge-tier-row:last-child td {
+  border-bottom: none;
+}
+
+.badge-tier-row td:first-child {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.badge-tier-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 5px;
+  border: 1px solid;
+  font-weight: 800;
+  font-size: 0.82em;
+  letter-spacing: 0.04em;
+  min-width: 24px;
+  text-align: center;
+}
+
+.badge-tier-grade {
+  font-size: 0.82em;
+  font-weight: 700;
+  opacity: 0.85;
+}
+
+.badge-tier-req {
+  text-align: center;
+  color: var(--gold-soft);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.badge-tier-buff {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.badge-buff-value {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.badge-no-buff {
+  color: var(--gold-dim);
+  opacity: 0.5;
+}
+
+@media (max-width: 680px) {
+  .badge-card {
+    flex-direction: column;
+  }
+
+  .badge-card-left {
+    flex: none;
+    flex-direction: row;
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+    justify-content: flex-start;
+    padding: 14px 16px;
+    gap: 14px;
+  }
+
+  .badge-card-name {
+    text-align: left;
+  }
+
+  .badge-card-task {
+    text-align: left;
+  }
+
+  .badge-tier-table thead tr th:nth-child(3),
+  .badge-tier-buff {
+    text-align: left;
+  }
+
+  .badges-list {
+    width: min(900px, 96%);
+  }
+
+  .badges-tier-note {
+    width: min(900px, 96%);
+  }
+}
+
+.badges-tier-note > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.badges-search-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.badge-search-input {
+  width: min(720px, 92%);
+  max-width: 640px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(232, 192, 64, 0.12);
+  background: rgba(18, 12, 0, 0.36);
+  color: var(--gold);
+  font-size: 0.95rem;
+}
+
+.badge-search-input::placeholder {
+  color: var(--gold-dim);
+  opacity: 0.95;
+}
+
+.badges-controls {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.load-more-btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: rgba(232, 192, 64, 0.08);
+  border: 1px solid rgba(232, 192, 64, 0.18);
+  color: var(--gold);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.load-more-btn:hover {
+  background: rgba(232, 192, 64, 0.12);
+}
