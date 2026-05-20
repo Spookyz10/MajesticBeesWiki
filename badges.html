@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Badges</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/badges.css" />
+    <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
+
+    <script defer src="js/load-sidebar.js"></script>
+    <script defer src="js/wiki-search.js"></script>
+    <script defer src="js/search.js"></script>
+    <script defer src="js/badges.js"></script>
+  </head>
+
+  <body>
+    <div id="sidebar-container"></div>
+
+    <div class="main" data-pagefind-body>
+      <div class="topbar">
+        <div id="search"></div>
+      </div>
+
+      <div class="content mw-parser-output">
+        <div class="badges-page-title">
+          <div class="hero-title">Badges</div>
+        </div>
+
+        <div class="hero-description badges-hero-description">
+          Badges are earned by completing tasks in <b>The Majestic Bees</b>.
+          Each badge has up to 10 tiers, the higher the tier, the stronger the
+          permanent bonus it grants. Bonuses stack with every tier unlocked.
+        </div>
+
+        <h2>Badge List</h2>
+
+        <div class="badges-tier-note">
+          <div>
+            <div class="badges-search-wrap">
+              <input
+                id="badge-search"
+                class="badge-search-input"
+                type="search"
+                placeholder="Search badges..."
+                aria-label="Search badges"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div id="badges-list" class="badges-list"></div>
+        <div id="badges-controls" class="badges-controls"></div>
+      </div>
+    </div>
+  </body>
+</html>

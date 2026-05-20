@@ -23,9 +23,10 @@ function loadSidebar() {
   const sidebarHTML = `
     <div class="sidebar" data-pagefind-ignore>
       <a class="sidebar-logo" href="${basePath}index.html">
-        <img src="${basePath}images/ui/site-logo.png" alt="" />
+        <img src="${basePath}images/ui/site-logo.png" alt="" decoding="async" />
       </a>
       <a href="${basePath}index.html">Home</a>
+      <a href="${basePath}badges.html">Badges</a>
       <a href="${basePath}bees.html">Bees</a>
       <a href="${basePath}bears.html">Bears</a>
       <a href="${basePath}codes.html">Codes</a>
