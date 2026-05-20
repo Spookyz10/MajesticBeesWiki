@@ -1098,6 +1098,13 @@ a[href$="/Azvaro"]:hover {
   }
 }
 
+/* Hide mobile sheet elements by default; shown only on small screens */
+.mobile-sidebar-button,
+.mobile-sheet-backdrop,
+.mobile-bottom-sheet {
+  display: none;
+}
+
 @media (max-width: 640px) {
   .sidebar {
     display: none;

@@ -26,6 +26,7 @@ function loadSidebar() {
         <img src="${basePath}images/ui/site-logo.png" alt="" decoding="async" />
       </a>
       <a href="${basePath}index.html">Home</a>
+      <a href="${basePath}amulets.html">Amulets</a>
       <a href="${basePath}badges.html">Badges</a>
       <a href="${basePath}bees.html">Bees</a>
       <a href="${basePath}bears.html">Bears</a>
@@ -55,6 +56,7 @@ function createMobileSheet(basePath) {
         <img src="${basePath}images/ui/site-logo.png" alt="" decoding="async" />
       </a>
       <a href="${basePath}index.html">Home</a>
+      <a href="${basePath}amulets.html">Amulets</a>
       <a href="${basePath}badges.html">Badges</a>
       <a href="${basePath}bees.html">Bees</a>
       <a href="${basePath}bears.html">Bears</a>

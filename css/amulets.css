@@ -1,0 +1,229 @@
+amulets-page-title {
+  text-align: center;
+  padding: 30px 0 10px;
+}
+
+.amulets-hero-description {
+  max-width: 740px;
+  margin: 6px auto 28px;
+  padding: 0 20px;
+  font-size: 1.05em;
+}
+
+.amulets-info-note {
+  max-width: 860px;
+  width: min(860px, 92%);
+  margin: 0 auto 24px;
+  background: rgba(36, 26, 10, 0.6);
+  border: 1px solid rgba(232, 192, 64, 0.18);
+  border-radius: 10px;
+  padding: 13px 18px;
+  font-size: 0.88em;
+  color: var(--gold-dim);
+  line-height: 1.7;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.amulets-info-note-icon {
+  font-size: 1.1em;
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: var(--gold);
+}
+
+.amulets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: min(860px, 92%);
+  margin: 0 auto 12px;
+}
+
+.amulet-card {
+  background: rgba(36, 26, 10, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.amulet-card:hover {
+  border-color: rgba(232, 192, 64, 0.35);
+  box-shadow: 0 0 24px rgba(212, 170, 48, 0.1);
+}
+
+.amulet-card-header {
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(18, 12, 0, 0.3);
+}
+
+.amulet-card-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.amulet-image-wrap {
+  flex: 0 0 80px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(18, 12, 0, 0.62);
+  border: 1px solid rgba(58, 40, 0, 0.8);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.amulet-image-wrap img {
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.5));
+}
+
+.amulet-card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.amulet-card-name {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 1.25rem;
+  color: var(--gold);
+  line-height: 1.15;
+}
+
+.amulet-card-desc {
+  font-size: 0.86em;
+  color: var(--gold-dim);
+}
+
+.amulet-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 2px;
+}
+
+.amulet-rarity-badge {
+  font-size: 0.74em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 6px;
+  border: 1px solid;
+}
+
+.amulet-rolls-badge {
+  font-size: 0.78em;
+  color: var(--gold-soft);
+  background: rgba(232, 192, 64, 0.08);
+  border: 1px solid rgba(232, 192, 64, 0.2);
+  border-radius: 6px;
+  padding: 3px 10px;
+}
+
+.amulet-rolls-badge b {
+  color: var(--gold);
+}
+
+.amulet-card-body {
+  padding: 0 20px 16px;
+  overflow-x: auto;
+}
+
+.amulet-buff-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.87em;
+  margin-top: 4px;
+}
+
+.amulet-card-body .amulet-buff-table {
+  width: 100%;
+  margin: 0 -20px 4px;
+}
+
+.amulet-buff-table thead tr th {
+  text-align: left;
+  color: var(--gold-dim);
+  font-size: 0.78em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 10px 10px 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+.amulet-buff-table thead tr th:nth-child(2) {
+  text-align: center;
+}
+
+.amulet-buff-table thead tr th:nth-child(3) {
+  text-align: right;
+  padding-right: 4px;
+}
+
+.amulet-buff-row td {
+  padding: 7px 10px;
+  border-bottom: 1px solid rgba(58, 40, 0, 0.4);
+  vertical-align: middle;
+}
+
+.amulet-buff-row:last-child td {
+  border-bottom: none;
+}
+
+.amulet-buff-stat {
+  color: var(--gold-soft);
+  white-space: nowrap;
+}
+
+.amulet-stat-name {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.amulet-buff-range {
+  text-align: center;
+  color: #8ecf6a;
+  font-weight: 700;
+  white-space: nowrap;
+  font-size: 0.9em;
+}
+
+.amulet-buff-chance {
+  text-align: right;
+  min-width: 100px;
+}
+
+.amulet-chance-label {
+  color: var(--gold-soft);
+  font-size: 0.88em;
+  font-weight: 700;
+  white-space: nowrap;
+  text-align: right;
+}
+
+@media (max-width: 560px) {
+  .amulets-list {
+    width: min(860px, 96%);
+  }
+
+  .amulets-info-note {
+    width: min(860px, 96%);
+  }
+
+  .amulet-buff-chance {
+    min-width: 80px;
+  }
+}
