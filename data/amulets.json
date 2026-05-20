@@ -1,0 +1,196 @@
+[
+  {
+    "id": "caterpillar",
+    "name": "Caterpillar Amulet",
+    "image": "images/amulets/Caterpillar Amulet.png",
+    "rarity": "Rare",
+    "desc": "Drops from Caterpillars.",
+    "buffsAmount": 2,
+    "buffs": [
+      {
+        "stat": "Capacity Bonus",
+        "type": "Mult",
+        "min": 1.01,
+        "max": 1.1,
+        "chance": 45
+      },
+      {
+        "stat": "Clover Field Pollen",
+        "type": "Perc",
+        "min": 1,
+        "max": 25,
+        "chance": 35
+      },
+      {
+        "stat": "Cloud Pollen",
+        "type": "Perc",
+        "min": 1,
+        "max": 7,
+        "chance": 30
+      },
+      {
+        "stat": "Sunflower Field Pollen",
+        "type": "Perc",
+        "min": 1,
+        "max": 25,
+        "chance": 25
+      },
+      {
+        "stat": "Pine Cone Field Pollen",
+        "type": "Perc",
+        "min": 1,
+        "max": 25,
+        "chance": 10
+      },
+      {
+        "stat": "Loot Luck",
+        "type": "Mult",
+        "min": 1.01,
+        "max": 1.1,
+        "chance": 7
+      }
+    ]
+  },
+  {
+    "id": "ladybug",
+    "name": "Ladybug Amulet",
+    "image": "images/amulets/Ladybug Amulet.png",
+    "rarity": "Epic",
+    "desc": "Drops from Ladybugs.",
+    "buffsAmount": 2,
+    "buffs": [
+      {
+        "stat": "Red Pollen",
+        "type": "Perc",
+        "min": 1,
+        "max": 25,
+        "chance": 45
+      },
+      {
+        "stat": "Mushroom Field Pollen",
+        "type": "Perc",
+        "min": 1,
+        "max": 25,
+        "chance": 35
+      },
+      {
+        "stat": "Fire Pollen",
+        "type": "Perc",
+        "min": 1,
+        "max": 27,
+        "chance": 30
+      },
+      {
+        "stat": "Rose Field Pollen",
+        "type": "Perc",
+        "min": 1,
+        "max": 25,
+        "chance": 25
+      },
+      {
+        "stat": "Raspberry Field Pollen",
+        "type": "Perc",
+        "min": 1,
+        "max": 25,
+        "chance": 10
+      }
+    ]
+  },
+  {
+    "id": "rhino-beetle",
+    "name": "Rhino Beetle Amulet",
+    "image": "images/amulets/Rhino Beetle Amulet.png",
+    "rarity": "Epic",
+    "desc": "Drops from Rhino Beetles.",
+    "buffsAmount": 2,
+    "buffs": [
+      {
+        "stat": "Blue Pollen",
+        "type": "Perc",
+        "min": 1,
+        "max": 25,
+        "chance": 45
+      },
+      {
+        "stat": "Blackberry Field Pollen",
+        "type": "Perc",
+        "min": 1,
+        "max": 25,
+        "chance": 35
+      },
+      {
+        "stat": "Ice Pollen",
+        "type": "Perc",
+        "min": 1,
+        "max": 7,
+        "chance": 30
+      },
+      {
+        "stat": "Snowdrops Field Pollen",
+        "type": "Perc",
+        "min": 1,
+        "max": 25,
+        "chance": 25
+      },
+      {
+        "stat": "Bamboo Field Pollen",
+        "type": "Perc",
+        "min": 1,
+        "max": 25,
+        "chance": 10
+      }
+    ]
+  },
+  {
+    "id": "spider",
+    "name": "Spider Amulet",
+    "image": "images/amulets/Spider Amulet.png",
+    "rarity": "Legendary",
+    "desc": "Drops from Spiders.",
+    "buffsAmount": 3,
+    "buffs": [
+      {
+        "stat": "White Pollen",
+        "type": "Perc",
+        "min": 1,
+        "max": 25,
+        "chance": 45
+      },
+      {
+        "stat": "Bomb Pollen",
+        "type": "Perc",
+        "min": 1,
+        "max": 30,
+        "chance": 35
+      },
+      {
+        "stat": "Bellflower Field Pollen",
+        "type": "Perc",
+        "min": 1,
+        "max": 25,
+        "chance": 35
+      },
+      {
+        "stat": "Strawberry Field Pollen",
+        "type": "Perc",
+        "min": 1,
+        "max": 25,
+        "chance": 25
+      },
+      {
+        "stat": "Spider Field Pollen",
+        "type": "Perc",
+        "min": 1,
+        "max": 25,
+        "chance": 10
+      },
+      {
+        "stat": "Obsidian Pollen",
+        "type": "Mult",
+        "min": 1.01,
+        "max": 1.1,
+        "chance": 3
+      }
+    ]
+  }
+]

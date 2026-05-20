@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Amulets</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/amulets.css" />
+    <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
+
+    <script defer src="js/load-sidebar.js"></script>
+    <script defer src="js/wiki-search.js"></script>
+    <script defer src="js/search.js"></script>
+    <script defer src="js/amulets.js"></script>
+  </head>
+
+  <body>
+    <div id="sidebar-container"></div>
+
+    <div class="main" data-pagefind-body>
+      <div class="topbar">
+        <div id="search"></div>
+      </div>
+
+      <div class="content mw-parser-output">
+        <div class="amulets-page-title">
+          <div class="hero-title">Amulets</div>
+        </div>
+
+        <div class="hero-description amulets-hero-description">
+          Amulets are equippable items dropped by mobs in
+          <b>The Majestic Bees</b>. Each amulet rolls a random set of buffs when
+          it drops, the stat, value, and number of rolls depend on which mob
+          dropped it.
+        </div>
+
+        <h2>Amulet List</h2>
+
+        <div class="amulets-info-note">
+          <span>
+            When an amulet drops, it randomly selects a number of buffs from its
+            pool based on its <strong>Rolls</strong> count. Each buff is chosen
+            independently using its <strong>Roll Chance</strong>, and its value
+            is a random number within the listed <strong>Range</strong>. Higher
+            chance means that buff is more likely to be selected in each roll.
+          </span>
+        </div>
+
+        <div id="amulets-list" class="amulets-list"></div>
+      </div>
+    </div>
+  </body>
+</html>
