@@ -29,6 +29,29 @@
   margin-bottom: 0;
 }
 
+.mobs-loot-note {
+  max-width: 900px;
+  width: min(900px, 92%);
+  margin: 0 auto 20px;
+  background: rgba(36, 26, 10, 0.6);
+  border: 1px solid rgba(232, 192, 64, 0.18);
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-size: 0.88em;
+  color: var(--gold-dim);
+  line-height: 1.65;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.mobs-loot-note-icon {
+  font-size: 1.1em;
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: var(--gold);
+}
+
 .mobs-list {
   display: flex;
   flex-direction: column;
@@ -118,6 +141,36 @@
   font-size: 0.94em;
 }
 
+.mob-stats-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.mob-stat {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(18, 12, 0, 0.5);
+  border: 1px solid rgba(58, 40, 0, 0.9);
+  border-radius: 8px;
+  padding: 5px 12px;
+}
+
+.mob-stat-label {
+  font-size: 0.75em;
+  color: var(--gold-dim);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.mob-stat-value {
+  font-size: 0.88em;
+  color: var(--gold);
+  font-weight: 700;
+}
+
 .mob-drops {
   margin-top: auto;
   padding-top: 10px;
@@ -140,14 +193,63 @@
 }
 
 .mob-drop-tag {
-  background: rgba(232, 192, 64, 0.08);
-  border: 1px solid rgba(232, 192, 64, 0.22);
-  border-radius: 6px;
-  color: var(--gold-soft);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 7px;
   font-size: 0.8em;
   font-weight: 700;
-  letter-spacing: 0.03em;
-  padding: 3px 10px;
+  letter-spacing: 0.02em;
+  padding: 4px 10px;
+  border: 1px solid;
+}
+
+.mob-drop-tag--common {
+  background: rgba(232, 192, 64, 0.1);
+  border-color: rgba(232, 192, 64, 0.28);
+  color: var(--gold-soft);
+}
+
+.mob-drop-tag--uncommon {
+  background: rgba(122, 184, 96, 0.1);
+  border-color: rgba(122, 184, 96, 0.3);
+  color: #8ecf6a;
+}
+
+.mob-drop-tag--rare {
+  background: rgba(100, 181, 246, 0.1);
+  border-color: rgba(100, 181, 246, 0.3);
+  color: #82c8f0;
+}
+
+.mob-drop-tag--very-rare {
+  background: rgba(206, 147, 216, 0.1);
+  border-color: rgba(206, 147, 216, 0.3);
+  color: #ce93d8;
+}
+
+.mob-drop-name {
+  color: inherit;
+}
+
+.mob-drop-qty {
+  color: inherit;
+  opacity: 0.75;
+  font-size: 0.9em;
+}
+
+.mob-drop-chance {
+  opacity: 0.9;
+  font-size: 0.88em;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.mob-drop-luck {
+  color: #ffe84d;
+  font-size: 0.8em;
+  text-shadow: 0 0 6px rgba(255, 220, 40, 0.6);
 }
 
 @media (max-width: 640px) {
@@ -171,5 +273,13 @@
 
   .mob-drops {
     text-align: center;
+  }
+
+  .mob-stats-row {
+    justify-content: center;
+  }
+
+  .mobs-loot-note {
+    width: min(900px, 96%);
   }
 }
