@@ -1,3 +1,13 @@
+const escHtml =
+  window.escHtml ||
+  ((v) =>
+    String(v ?? "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#39;"));
+
 async function loadBears() {
   const container = document.getElementById("bears-list");
   if (!container) return;
