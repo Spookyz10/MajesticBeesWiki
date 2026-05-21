@@ -30,10 +30,13 @@ function loadSidebar() {
       <a href="${basePath}badges.html">Badges</a>
       <a href="${basePath}bees.html">Bees</a>
       <a href="${basePath}bears.html">Bears</a>
+      <a href="${basePath}items.html">Items</a>
       <a href="${basePath}codes.html">Codes</a>
       <a href="${basePath}hive.html">Hive</a>
       <a href="${basePath}store.html">Store</a>
+      <a href="${basePath}starflowers.html">Starflowers</a>
       <a href="${basePath}shops.html">Shops</a>
+      <a href="${basePath}world.html">World</a>
     </div>
   `;
 
@@ -60,10 +63,13 @@ function createMobileSheet(basePath) {
       <a href="${basePath}badges.html">Badges</a>
       <a href="${basePath}bees.html">Bees</a>
       <a href="${basePath}bears.html">Bears</a>
+      <a href="${basePath}items.html">Items</a>
       <a href="${basePath}codes.html">Codes</a>
       <a href="${basePath}hive.html">Hive</a>
       <a href="${basePath}store.html">Store</a>
+      <a href="${basePath}starflowers.html">Starflowers</a>
       <a href="${basePath}shops.html">Shops</a>
+      <a href="${basePath}world.html">World</a>
     </div>
   `;
 

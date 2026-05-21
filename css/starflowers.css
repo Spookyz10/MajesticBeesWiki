@@ -1,0 +1,346 @@
+.sf-page-title {
+  text-align: center;
+  padding: 30px 0 10px;
+}
+
+.sf-hero-description {
+  max-width: 740px;
+  margin: 6px auto 36px;
+  padding: 0 20px;
+  font-size: 1.05em;
+  line-height: 1.7;
+}
+
+.sf-root {
+  width: min(900px, 92%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding-bottom: 32px;
+}
+
+.sf-section-heading {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 1.35rem;
+  color: var(--gold);
+  border-bottom: 2px solid var(--line);
+  padding-bottom: 0.2em;
+  padding-left: 18px;
+  margin-bottom: 20px;
+  letter-spacing: 0.02em;
+}
+
+.sf-section-desc {
+  font-size: 0.88em;
+  color: var(--gold-dim);
+  padding: 0 2px 16px;
+  line-height: 1.65;
+}
+
+.sf-chances-table {
+  width: min(520px, 100%);
+  border-collapse: collapse;
+  font-size: 0.88em;
+  margin: 0 auto;
+  background: rgba(18, 12, 0, 0.42);
+  border: 1px solid rgba(58, 40, 0, 0.6);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 14px 30px rgba(12, 8, 0, 0.16);
+}
+
+.sf-chances-table thead tr {
+  border-bottom: 1px solid rgba(58, 40, 0, 0.6);
+}
+
+.sf-chances-table th {
+  text-align: center;
+  padding: 7px 14px;
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 0.9rem;
+  color: var(--gold);
+  letter-spacing: 0.03em;
+  font-weight: 400;
+}
+
+.sf-chances-table td {
+  padding: 8px 14px;
+  color: var(--gold-soft);
+  border-bottom: 1px solid rgba(58, 40, 0, 0.5);
+  text-align: center;
+}
+
+.sf-chances-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.sf-chances-table tbody tr:hover td {
+  background: rgba(232, 192, 64, 0.08);
+}
+
+.sf-tiers {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sf-tier-card {
+  background: rgba(36, 26, 10, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(12, 8, 0, 0.14);
+}
+
+.sf-tier-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(18, 12, 0, 0.18);
+}
+
+.sf-tier-img {
+  width: 88px;
+  height: 88px;
+  background: rgba(18, 12, 0, 0.55);
+  border: 1px solid rgba(58, 40, 0, 0.8);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sf-tier-img img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.sf-tier-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sf-tier-name {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.1;
+}
+
+.sf-tier-health {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sf-health-val {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 0.92rem;
+}
+
+.sf-tier-body {
+  padding: 18px 20px 20px;
+}
+
+.sf-pools {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sf-pool {
+  background: rgba(14, 9, 0, 0.28);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(58, 40, 0, 0.38);
+}
+
+/* Pool header base */
+.sf-pool-header {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 9px 14px 9px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+  border-left: 3px solid transparent;
+}
+
+/* Field-specific: background tint + left accent border */
+.sf-pool[data-pool="White Field"] {
+  border-color: rgba(185, 205, 220, 0.3);
+}
+.sf-pool[data-pool="Blue Field"] {
+  border-color: rgba(80, 130, 175, 0.32);
+}
+.sf-pool[data-pool="Red Field"] {
+  border-color: rgba(165, 65, 55, 0.34);
+}
+.sf-pool[data-pool="Bamboo Field"] {
+  border-color: rgba(65, 130, 75, 0.32);
+}
+.sf-pool[data-pool="All Fields"] {
+  border-color: rgba(165, 125, 30, 0.34);
+}
+
+.sf-pool[data-pool="White Field"] .sf-pool-header {
+  background: rgba(185, 205, 220, 0.14);
+  border-bottom-color: rgba(185, 205, 220, 0.18);
+  border-left-color: #8aaec2;
+}
+.sf-pool[data-pool="Blue Field"] .sf-pool-header {
+  background: rgba(60, 110, 165, 0.22);
+  border-bottom-color: rgba(80, 130, 175, 0.28);
+  border-left-color: #5f9ec0;
+}
+.sf-pool[data-pool="Red Field"] .sf-pool-header {
+  background: rgba(140, 50, 45, 0.26);
+  border-bottom-color: rgba(165, 65, 55, 0.32);
+  border-left-color: #b05450;
+}
+.sf-pool[data-pool="Bamboo Field"] .sf-pool-header {
+  background: rgba(50, 110, 60, 0.22);
+  border-bottom-color: rgba(65, 130, 75, 0.28);
+  border-left-color: #52a060;
+}
+.sf-pool[data-pool="All Fields"] .sf-pool-header {
+  background: rgba(140, 100, 20, 0.24);
+  border-bottom-color: rgba(165, 125, 30, 0.3);
+  border-left-color: #b8922a;
+}
+
+/* Pool name text */
+.sf-pool[data-pool="White Field"] .sf-pool-name {
+  color: #c8dce8;
+}
+.sf-pool[data-pool="Blue Field"] .sf-pool-name {
+  color: #88bedd;
+}
+.sf-pool[data-pool="Red Field"] .sf-pool-name {
+  color: #d48880;
+}
+.sf-pool[data-pool="Bamboo Field"] .sf-pool-name {
+  color: #78c882;
+}
+.sf-pool[data-pool="All Fields"] .sf-pool-name {
+  color: #d4b054;
+}
+
+/* Note text: same hue as name, readable but softer */
+.sf-pool[data-pool="White Field"] .sf-pool-note {
+  color: #96b0be;
+}
+.sf-pool[data-pool="Blue Field"] .sf-pool-note {
+  color: #6898b4;
+}
+.sf-pool[data-pool="Red Field"] .sf-pool-note {
+  color: #b07068;
+}
+.sf-pool[data-pool="Bamboo Field"] .sf-pool-note {
+  color: #5a9862;
+}
+.sf-pool[data-pool="All Fields"] .sf-pool-note {
+  color: #a88a3c;
+}
+
+.sf-pool-note {
+  font-size: 0.74em;
+}
+
+.sf-drop-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84em;
+}
+
+/* Table body tint per field — softer/darker than the header, clearly distinct */
+.sf-pool[data-pool="White Field"] .sf-drop-table tbody {
+  background: rgba(160, 185, 200, 0.07);
+}
+.sf-pool[data-pool="Blue Field"] .sf-drop-table tbody {
+  background: rgba(40, 90, 145, 0.14);
+}
+.sf-pool[data-pool="Red Field"] .sf-drop-table tbody {
+  background: rgba(110, 30, 25, 0.18);
+}
+.sf-pool[data-pool="Bamboo Field"] .sf-drop-table tbody {
+  background: rgba(30, 90, 40, 0.16);
+}
+.sf-pool[data-pool="All Fields"] .sf-drop-table tbody {
+  background: rgba(100, 70, 5, 0.2);
+}
+
+.sf-drop-table th {
+  text-align: left;
+  padding: 6px 12px;
+  color: var(--gold-dim);
+  font-weight: 700;
+  font-size: 0.78em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(58, 40, 0, 0.5);
+}
+
+.sf-drop-table td {
+  padding: 7px 12px;
+  color: var(--gold-soft);
+  border-bottom: 1px solid rgba(58, 40, 0, 0.3);
+  vertical-align: middle;
+}
+
+.sf-drop-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.sf-drop-table tbody tr:hover td {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.sf-drop-item-cell {
+  width: 55%;
+}
+
+.sf-drop-item-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sf-drop-item-wrap img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  flex-shrink: 0;
+}
+
+.sf-drop-amount {
+  color: var(--gold);
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.sf-drop-chance-cell {
+  color: var(--gold-dim);
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .sf-root {
+    width: min(900px, 96%);
+  }
+
+  .sf-tier-header {
+    padding: 14px 16px;
+  }
+
+  .sf-pool-note {
+    display: none;
+  }
+}

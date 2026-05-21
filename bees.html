@@ -285,9 +285,9 @@
         <h2>Bee Levels</h2>
         <div class="bees-info-box">
           Each bee has its own level that can be raised by feeding it
-          <b>Treats</b> or <b>Fruits</b>. Leveling up a bee increases its pollen
-          collection rate, conversion speed, and the level of enemies it can
-          attack.
+          <b>Treats</b>, <b>Fruits</b>, or <b>Bamboo</b>. Leveling up a bee
+          increases its pollen collection rate, conversion speed, and the level
+          of enemies it can attack.
 
           <table class="wikitable bees-table">
             <tr>
@@ -302,6 +302,10 @@
               <td>Fruit</td>
               <td>50 XP</td>
             </tr>
+            <tr>
+              <td>Bamboo</td>
+              <td>150 XP</td>
+            </tr>
           </table>
 
           <div class="slot-table" id="bee-levels-table">
@@ -312,7 +316,7 @@
                   <th>XP to next</th>
                   <th>Treats (this level)</th>
                   <th>Fruits (this level)</th>
-                  <th>Total XP (from Lv. 1)</th>
+                  <th>Bamboo (this level)</th>
                 </tr>
               </thead>
               <tbody id="bee-levels-tbody"></tbody>
@@ -351,7 +355,6 @@
             }
 
             var tbody = document.getElementById("bee-levels-tbody");
-            var cumXP = 0;
 
             for (var lvl = 1; lvl <= 21; lvl++) {
               var tr = document.createElement("tr");
@@ -367,9 +370,7 @@
                   "<td>\u2014</td>" +
                   "<td>\u2014</td>" +
                   "<td>\u2014</td>" +
-                  "<td>" +
-                  fmt(cumXP) +
-                  "</td>";
+                  "<td>\u2014</td>";
                 tbody.appendChild(tr);
                 break;
               }
@@ -377,7 +378,7 @@
               var xpNeeded = XP[lvl - 1];
               var treats = Math.ceil(xpNeeded / 20);
               var fruits = Math.ceil(xpNeeded / 50);
-              cumXP += xpNeeded;
+              var bamboo = Math.ceil(xpNeeded / 150);
 
               tr.innerHTML =
                 "<td>" +
@@ -393,7 +394,7 @@
                 fmt(fruits) +
                 "</td>" +
                 "<td>" +
-                fmt(cumXP) +
+                fmt(bamboo) +
                 "</td>";
               tbody.appendChild(tr);
             }
@@ -473,6 +474,10 @@
             <tr>
               <td><b>Fruit</b></td>
               <td>Gives 50 XP to a bee</td>
+            </tr>
+            <tr>
+              <td><b>Bamboo</b></td>
+              <td>Gives 150 XP to a bee</td>
             </tr>
             <tr>
               <td><b>Royal Jelly</b></td>

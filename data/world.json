@@ -1,0 +1,399 @@
+{
+  "pipes": [
+    {
+      "id": "honey-pipe",
+      "name": "Honey Pipe",
+      "destination": "10 Bee Zone",
+      "image": "images/pipes/Honey Pipe.png",
+      "color": "#e8c040",
+      "colorBg": "rgba(232,192,64,0.12)",
+      "colorBorder": "rgba(232,192,64,0.35)"
+    },
+    {
+      "id": "ice-pipe",
+      "name": "Ice Pipe",
+      "destination": "15 Bee Zone",
+      "image": "images/pipes/Ice Pipe.png",
+      "color": "#64b5f6",
+      "colorBg": "rgba(100,181,246,0.12)",
+      "colorBorder": "rgba(100,181,246,0.35)"
+    },
+    {
+      "id": "fire-pipe",
+      "name": "Fire Pipe",
+      "destination": "20 Bee Zone",
+      "image": "images/pipes/Fire Pipe.png",
+      "color": "#ff7043",
+      "colorBg": "rgba(255,112,67,0.12)",
+      "colorBorder": "rgba(255,112,67,0.35)"
+    }
+  ],
+  "freeDispensers": [
+    {
+      "id": "honey-dispenser",
+      "name": "Honey Dispenser",
+      "zone": "Starter Zone",
+      "desc": "Gives Honey to the player. 4 hour cooldown.",
+      "image": "images/dispensers/Honey Dispenser.png"
+    },
+    {
+      "id": "blueberry-dispenser",
+      "name": "Blueberry Dispenser",
+      "zone": "15 Bee Zone",
+      "desc": "Gives Blueberries to the player. 4 hour cooldown.",
+      "image": "images/dispensers/Blueberry Dispenser.png"
+    },
+    {
+      "id": "strawberry-dispenser",
+      "name": "Strawberry Dispenser",
+      "zone": "15 Bee Zone",
+      "desc": "Gives Strawberries to the player. 4 hour cooldown.",
+      "image": "images/dispensers/Strawberry Dispenser.png"
+    },
+    {
+      "id": "pine-cone-dispenser",
+      "name": "Pine Cone Dispenser",
+      "zone": "15 Bee Zone",
+      "desc": "Gives Pine Cones to the player. 4 hour cooldown.",
+      "image": "images/dispensers/Pine Cone Dispenser.png"
+    },
+    {
+      "id": "bamboo-dispenser",
+      "name": "Bamboo Dispenser",
+      "zone": "15 Bee Zone",
+      "desc": "Gives Bamboo to the player. 8 hour cooldown.",
+      "image": "images/dispensers/Bamboo Dispenser.png"
+    }
+  ],
+  "paidDispensers": [
+    {
+      "id": "royal-jelly-dispenser",
+      "name": "Royal Jelly Dispenser",
+      "zone": "5 Bee Zone",
+      "costType": "Honey",
+      "costImage": "images/currencies/Honey.png",
+      "itemImage": "images/dispensers/Royal Jelly Dispenser.png",
+      "itemName": "Royal Jelly",
+      "desc": "Allows the player to buy Royal Jelly. It when used turns on a bee turns it into a random bee. 1 in 2,000 chance to hatch a Shiny Bee.",
+      "scaleNote": "Price starts at 10,000 Honey and multiplies by 1.1 with each purchase, capping at 100,000 Honey.",
+      "offers": [
+        { "label": "x1", "amount": 1 },
+        { "label": "x10", "amount": 10 },
+        { "label": "x100", "amount": 100 },
+        { "label": "x1K", "amount": 1000 }
+      ],
+      "slotTable": false
+    },
+    {
+      "id": "ticket-dispenser",
+      "name": "Ticket Dispenser",
+      "zone": "10 Bee Zone",
+      "costType": "Honey",
+      "costImage": "images/currencies/Honey.png",
+      "itemImage": "images/dispensers/Ticket Dispenser.png",
+      "itemName": "Ticket",
+      "desc": "Allows the player to buy Tickets. Tickers are used to purchase exclusive items and game-passes.",
+      "scaleNote": "Price starts at 10,000 Honey and grows by 1.6% with each purchase (formula: 1.016^purchases × 10,000). No cap.",
+      "offers": [
+        { "label": "x1", "amount": 1 },
+        { "label": "x10", "amount": 10 },
+        { "label": "x100", "amount": 100 }
+      ],
+      "slotTable": false
+    },
+    {
+      "id": "starflower-dispenser",
+      "name": "Starflower Dispenser",
+      "zone": "5 Bee Zone",
+      "costType": "Ticket",
+      "costImage": "images/currencies/Ticket.png",
+      "itemImage": "images/dispensers/Starflower Dispenser.png",
+      "itemName": "Starflower",
+      "desc": "Allows the player to buy a normal Starflower. It can be used to spawn a Basic Starflower on the field that lasts 5 minutes.",
+      "scaleNote": null,
+      "offers": [
+        { "label": "x1", "amount": 1, "fixedCost": "20 Tickets" },
+        { "label": "x10", "amount": 10, "fixedCost": "200 Tickets" }
+      ],
+      "slotTable": false
+    },
+    {
+      "id": "basic-egg-dispenser",
+      "name": "Basic Egg Dispenser",
+      "zone": "Starter Zone",
+      "costType": "Honey",
+      "costImage": "images/currencies/Honey.png",
+      "itemImage": "images/dispensers/Basic Egg Dispenser.png",
+      "itemName": "Basic Egg",
+      "desc": " Allows the player to buy Basic Eggs. These always hatch into a Common Bee.",
+      "scaleNote": "Price starts at 1,000 Honey and multiplies by 1.5 with each purchase, capping at 5,000,000 Honey.",
+      "offers": [{ "label": "x1", "amount": 1 }],
+      "slotTable": false
+    },
+    {
+      "id": "slot-dispenser",
+      "name": "Hive Slot Dispenser",
+      "zone": "Starter Zone",
+      "costType": "Honey",
+      "costImage": "images/currencies/Honey.png",
+      "itemImage": "images/dispensers/Hive Slot Dispenser.png",
+      "itemName": "Hive Slot",
+      "desc": "Expands your hive capacity. You start with 5 slots and can buy up to 50.",
+      "scaleNote": null,
+      "offers": [],
+      "slotTable": true
+    }
+  ],
+  "mixer": [
+    {
+      "id": "treat",
+      "name": "Treat",
+      "image": "images/items/Treat.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 10000,
+          "image": "images/currencies/Honey.png"
+        }
+      ]
+    },
+    {
+      "id": "strawberry-extract",
+      "name": "Strawberry Extract",
+      "image": "images/items/Strawberry Extract.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 25000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Strawberry",
+          "amount": 25,
+          "image": "images/items/Strawberry.png"
+        },
+        {
+          "item": "Fire Essence",
+          "amount": 15,
+          "image": "images/items/Fire Essence.png"
+        },
+        {
+          "item": "Royal Jelly",
+          "amount": 5,
+          "image": "images/items/Royal Jelly.png"
+        }
+      ]
+    },
+    {
+      "id": "blueberry-extract",
+      "name": "Blueberry Extract",
+      "image": "images/items/Blueberry Extract.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 25000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Blueberry",
+          "amount": 25,
+          "image": "images/items/Blueberry.png"
+        },
+        {
+          "item": "Water Essence",
+          "amount": 15,
+          "image": "images/items/Water Essence.png"
+        },
+        {
+          "item": "Royal Jelly",
+          "amount": 5,
+          "image": "images/items/Royal Jelly.png"
+        }
+      ]
+    },
+    {
+      "id": "cone-extract",
+      "name": "Cone Extract",
+      "image": "images/items/Cone Extract.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 25000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Pine Cone",
+          "amount": 25,
+          "image": "images/items/Pine Cone.png"
+        },
+        {
+          "item": "Wind Essence",
+          "amount": 15,
+          "image": "images/items/Wind Essence.png"
+        },
+        {
+          "item": "Royal Jelly",
+          "amount": 5,
+          "image": "images/items/Royal Jelly.png"
+        }
+      ]
+    },
+    {
+      "id": "seed-oil",
+      "name": "Seed Oil",
+      "image": "images/items/Seed Oil.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 50000,
+          "image": "images/currencies/Honey.png"
+        },
+        { "item": "Seed", "amount": 25, "image": "images/items/Seed.png" },
+        {
+          "item": "Royal Jelly",
+          "amount": 5,
+          "image": "images/items/Royal Jelly.png"
+        }
+      ]
+    },
+    {
+      "id": "bamboo-flask",
+      "name": "Bamboo Flask",
+      "image": "images/items/Bamboo Flask.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 250000,
+          "image": "images/currencies/Honey.png"
+        },
+        { "item": "Bamboo", "amount": 50, "image": "images/items/Bamboo.png" },
+        {
+          "item": "Royal Jelly",
+          "amount": 10,
+          "image": "images/items/Royal Jelly.png"
+        }
+      ]
+    },
+    {
+      "id": "rare-starflower",
+      "name": "Rare Starflower",
+      "image": "images/items/Rare Starflower.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 500000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Starflower",
+          "amount": 2,
+          "image": "images/items/Starflower.png"
+        },
+        {
+          "item": "Royal Jelly",
+          "amount": 10,
+          "image": "images/items/Royal Jelly.png"
+        }
+      ]
+    },
+    {
+      "id": "epic-starflower",
+      "name": "Epic Starflower",
+      "image": "images/items/Epic Starflower.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 1000000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Rare Starflower",
+          "amount": 3,
+          "image": "images/items/Rare Starflower.png"
+        },
+        {
+          "item": "Royal Jelly",
+          "amount": 20,
+          "image": "images/items/Royal Jelly.png"
+        }
+      ]
+    },
+    {
+      "id": "legendary-starflower",
+      "name": "Legendary Starflower",
+      "image": "images/items/Legendary Starflower.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 2500000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Epic Starflower",
+          "amount": 4,
+          "image": "images/items/Epic Starflower.png"
+        },
+        {
+          "item": "Royal Jelly",
+          "amount": 50,
+          "image": "images/items/Royal Jelly.png"
+        }
+      ]
+    },
+    {
+      "id": "mythic-starflower",
+      "name": "Mythic Starflower",
+      "image": "images/items/Mythic Starflower.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 10000000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Legendary Starflower",
+          "amount": 5,
+          "image": "images/items/Legendary Starflower.png"
+        },
+        {
+          "item": "Royal Jelly",
+          "amount": 250,
+          "image": "images/items/Royal Jelly.png"
+        }
+      ]
+    },
+    {
+      "id": "converter",
+      "name": "Converter",
+      "image": "images/items/Converter.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 500000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Royal Jelly",
+          "amount": 25,
+          "image": "images/items/Royal Jelly.png"
+        },
+        {
+          "item": "Strawberry",
+          "amount": 50,
+          "image": "images/items/Strawberry.png"
+        },
+        {
+          "item": "Blueberry",
+          "amount": 50,
+          "image": "images/items/Blueberry.png"
+        },
+        { "item": "Seed", "amount": 50, "image": "images/items/Seed.png" },
+        {
+          "item": "Pine Cone",
+          "amount": 50,
+          "image": "images/items/Pine Cone.png"
+        }
+      ]
+    }
+  ]
+}
