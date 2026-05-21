@@ -1,3 +1,13 @@
+const escHtml =
+  window.escHtml ||
+  ((v) =>
+    String(v ?? "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#39;"));
+
 function fmt(n) {
   return Number(n).toLocaleString("en-US");
 }
