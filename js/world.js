@@ -220,7 +220,7 @@ function buildMixer(recipes) {
       <div class="mixer-intro">
         <div class="world-section-desc mixer-intro-text">The Mixer lets you craft items by combining ingredients. Each recipe produces one of the listed output items. You can find the Mixer in the Hydrant Shop.</div>
         <div class="mixer-intro-image">
-          <img src="images/dispensers/mixer.png" alt="Mixer" width="120" height="120" loading="lazy" onerror="this.style.opacity='0.25';" />
+          <img src="images/dispensers/Mixer.png" alt="Mixer" width="120" height="120" loading="lazy" onerror="this.style.opacity='0.25';" />
         </div>
       </div>
       <div class="mixer-grid">${cards}</div>
