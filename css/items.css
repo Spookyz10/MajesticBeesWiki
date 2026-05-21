@@ -1,0 +1,233 @@
+.items-page-title {
+  text-align: center;
+  padding: 30px 0 10px;
+}
+
+.items-hero-description {
+  max-width: 740px;
+  margin: 6px auto 28px;
+  padding: 0 20px;
+  font-size: 1.05em;
+}
+
+.items-controls {
+  max-width: 900px;
+  width: min(900px, 92%);
+  margin: 0 auto 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.items-search-wrap {
+  width: 100%;
+}
+
+.item-search-input {
+  width: 100%;
+  background: rgba(36, 26, 10, 0.88);
+  border: 1px solid rgba(232, 192, 64, 0.22);
+  border-radius: 12px;
+  color: var(--gold);
+  font-family: "Nunito", Georgia, sans-serif;
+  font-size: 0.95em;
+  font-weight: 600;
+  padding: 10px 16px;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.item-search-input::placeholder {
+  color: rgba(200, 168, 78, 0.45);
+}
+
+.item-search-input:focus {
+  border-color: rgba(232, 192, 64, 0.55);
+  box-shadow: 0 0 0 3px rgba(232, 192, 64, 0.1);
+}
+
+.items-filter-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.items-filter-btn {
+  background: rgba(36, 26, 10, 0.7);
+  border: 1px solid rgba(58, 40, 0, 0.9);
+  border-radius: 8px;
+  color: var(--gold-dim);
+  cursor: pointer;
+  font-family: "Nunito", Georgia, sans-serif;
+  font-size: 0.76em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 5px 13px;
+  text-transform: uppercase;
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease;
+}
+
+.items-filter-btn:hover {
+  border-color: rgba(232, 192, 64, 0.35);
+  color: var(--gold-soft);
+}
+
+.items-filter-btn.active {
+  background: rgba(232, 192, 64, 0.14);
+  border-color: rgba(232, 192, 64, 0.5);
+  color: var(--gold);
+}
+
+.items-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 14px;
+  width: min(900px, 92%);
+  margin: 0 auto 24px;
+}
+
+.item-card {
+  background: rgba(36, 26, 10, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 14px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.18s ease;
+}
+
+.item-card:hover {
+  border-color: rgba(232, 192, 64, 0.35);
+  box-shadow: 0 0 20px rgba(212, 170, 48, 0.1);
+  transform: translateY(-2px);
+}
+
+.item-card-img {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(18, 12, 0, 0.55);
+  border: 1px solid rgba(58, 40, 0, 0.8);
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.item-card-img img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.item-card-name {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 1.05rem;
+  color: var(--gold);
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+.item-card-desc {
+  font-size: 0.82em;
+  color: var(--gold-soft);
+  line-height: 1.65;
+  flex: 1;
+}
+
+.item-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-rarity-tag {
+  border-radius: 6px;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 2px 9px;
+  border: 1px solid;
+  text-transform: uppercase;
+}
+
+.item-rarity-tag--Common {
+  background: rgba(232, 192, 64, 0.1);
+  border-color: rgba(232, 192, 64, 0.28);
+  color: var(--gold-soft);
+}
+
+.item-rarity-tag--Rare {
+  background: rgba(100, 181, 246, 0.1);
+  border-color: rgba(100, 181, 246, 0.3);
+  color: #82c8f0;
+}
+
+.item-rarity-tag--Epic {
+  background: rgba(206, 147, 216, 0.1);
+  border-color: rgba(206, 147, 216, 0.3);
+  color: #ce93d8;
+}
+
+.item-rarity-tag--Legendary {
+  background: rgba(255, 200, 40, 0.12);
+  border-color: rgba(255, 200, 40, 0.4);
+  color: #ffc828;
+}
+
+.item-rarity-tag--Mythic {
+  background: rgba(255, 100, 100, 0.12);
+  border-color: rgba(255, 100, 100, 0.38);
+  color: #ff7070;
+}
+
+.item-rarity-tag--Special {
+  background: rgba(41, 255, 130, 0.1);
+  border-color: rgba(41, 255, 130, 0.35);
+  color: #29ff82;
+}
+
+.item-category-tag {
+  background: rgba(18, 12, 0, 0.5);
+  border: 1px solid rgba(58, 40, 0, 0.9);
+  border-radius: 6px;
+  color: var(--gold-dim);
+  font-size: 0.7em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 2px 8px;
+  text-transform: uppercase;
+}
+
+.items-empty {
+  text-align: center;
+  color: var(--gold-dim);
+  padding: 30px 0;
+  font-size: 0.95em;
+}
+
+@media (max-width: 640px) {
+  .items-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    width: min(900px, 96%);
+  }
+
+  .items-controls {
+    width: min(900px, 96%);
+  }
+}

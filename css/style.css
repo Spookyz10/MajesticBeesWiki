@@ -80,6 +80,10 @@ body,
   flex-direction: column;
   padding: 20px;
   gap: 6px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
   backdrop-filter: blur(10px);
 }
 

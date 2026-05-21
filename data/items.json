@@ -1,0 +1,281 @@
+[
+  {
+    "id": "Ticket",
+    "name": "Ticket",
+    "category": "Values",
+    "rarity": "Common",
+    "desc": "Used to purchase exclusive items and game-passes. Obtained by random gathering, found on the map, and from mobs.",
+    "image": "images/items/Ticket.png",
+    "order": 1
+  },
+  {
+    "id": "Wind Essence",
+    "name": "Wind Essence",
+    "category": "Ingredients",
+    "rarity": "Common",
+    "desc": "Used to craft variable white hive equipment and other things. Obtained from gathering and mobs.",
+    "image": "images/items/Wind Essence.png",
+    "order": 2
+  },
+  {
+    "id": "Fire Essence",
+    "name": "Fire Essence",
+    "category": "Ingredients",
+    "rarity": "Common",
+    "desc": "Used to craft variable red hive equipment and other things. Obtained from gathering and mobs.",
+    "image": "images/items/Fire Essence.png",
+    "order": 3
+  },
+  {
+    "id": "Water Essence",
+    "name": "Water Essence",
+    "category": "Ingredients",
+    "rarity": "Common",
+    "desc": "Used to craft variable blue hive equipment and other things. Obtained from gathering and mobs.",
+    "image": "images/items/Water Essence.png",
+    "order": 4
+  },
+  {
+    "id": "Basic Egg",
+    "name": "Basic Egg",
+    "category": "Eggs",
+    "rarity": "Common",
+    "desc": "Always turns into a common bee. Only obtained from the Basic Egg Dispenser.",
+    "image": "images/items/Basic Egg.png",
+    "order": 5
+  },
+  {
+    "id": "Silver Egg",
+    "name": "Silver Egg",
+    "category": "Eggs",
+    "rarity": "Rare",
+    "desc": "Always turns into a rare or epic bee. Obtained from quests or the Ticket Shop.",
+    "image": "images/items/Silver Egg.png",
+    "order": 6
+  },
+  {
+    "id": "Gold Egg",
+    "name": "Gold Egg",
+    "category": "Eggs",
+    "rarity": "Epic",
+    "desc": "Always turns into an epic or legendary bee. Obtained from quests or the Ticket Shop.",
+    "image": "images/items/Gold Egg.png",
+    "order": 7
+  },
+  {
+    "id": "Diamond Egg",
+    "name": "Diamond Egg",
+    "category": "Eggs",
+    "rarity": "Legendary",
+    "desc": "Always turns into a legendary bee. Obtained from quests or the Ticket Shop.",
+    "image": "images/items/Diamond Egg.png",
+    "order": 8
+  },
+  {
+    "id": "Royal Jelly",
+    "name": "Royal Jelly",
+    "category": "Jellies",
+    "rarity": "Common",
+    "desc": "Always turns into a random bee. Obtained from mobs, found on the map, or bought in the Royal Jelly Dispenser.",
+    "image": "images/items/Royal Jelly.png",
+    "order": 9
+  },
+  {
+    "id": "Starflower",
+    "name": "Starflower",
+    "category": "Starflowers",
+    "rarity": "Common",
+    "desc": "Creates a Basic Starflower on the field that lasts 3 minutes. Obtained by crafting.",
+    "image": "images/items/Starflower.png",
+    "order": 10
+  },
+  {
+    "id": "Rare Starflower",
+    "name": "Rare Starflower",
+    "category": "Starflowers",
+    "rarity": "Rare",
+    "desc": "Creates a Rare Starflower on the field that lasts 4 minutes. Obtained by crafting.",
+    "image": "images/items/Rare Starflower.png",
+    "order": 11
+  },
+  {
+    "id": "Epic Starflower",
+    "name": "Epic Starflower",
+    "category": "Starflowers",
+    "rarity": "Epic",
+    "desc": "Creates an Epic Starflower on the field that lasts 5 minutes. Obtained by crafting.",
+    "image": "images/items/Epic Starflower.png",
+    "order": 12
+  },
+  {
+    "id": "Legendary Starflower",
+    "name": "Legendary Starflower",
+    "category": "Starflowers",
+    "rarity": "Legendary",
+    "desc": "Creates a Legendary Starflower on the field that lasts 7 minutes. Obtained by crafting.",
+    "image": "images/items/Legendary Starflower.png",
+    "order": 13
+  },
+  {
+    "id": "Mythic Starflower",
+    "name": "Mythic Starflower",
+    "category": "Starflowers",
+    "rarity": "Mythic",
+    "desc": "Creates a Mythic Starflower on the field that lasts 8 minutes. Obtained by crafting.",
+    "image": "images/items/Mythic Starflower.png",
+    "order": 14
+  },
+  {
+    "id": "Treat",
+    "name": "Treat",
+    "category": "Food",
+    "rarity": "Common",
+    "desc": "Feeding to a bee gives it 20 XP. Obtained from mobs, dispensers, random gathering, or crafting.",
+    "image": "images/items/Treat.png",
+    "order": 15
+  },
+  {
+    "id": "Blueberry",
+    "name": "Blueberry",
+    "category": "Food",
+    "rarity": "Rare",
+    "desc": "Feeding to a bee gives it 50 XP. Obtained from mobs, dispensers, and random gathering.",
+    "image": "images/items/Blueberry.png",
+    "order": 16
+  },
+  {
+    "id": "Strawberry",
+    "name": "Strawberry",
+    "category": "Food",
+    "rarity": "Rare",
+    "desc": "Feeding to a bee gives it 50 XP. Obtained from mobs, dispensers, and random gathering.",
+    "image": "images/items/Strawberry.png",
+    "order": 17
+  },
+  {
+    "id": "Seed",
+    "name": "Seed",
+    "category": "Food",
+    "rarity": "Rare",
+    "desc": "Feeding to a bee gives it 50 XP. Obtained from mobs, dispensers, and random gathering.",
+    "image": "images/items/Seed.png",
+    "order": 18
+  },
+  {
+    "id": "Pine Cone",
+    "name": "Pine Cone",
+    "category": "Food",
+    "rarity": "Rare",
+    "desc": "Feeding to a bee gives it 50 XP. Obtained from mobs, dispensers, and random gathering.",
+    "image": "images/items/Pine Cone.png",
+    "order": 19
+  },
+  {
+    "id": "Bamboo",
+    "name": "Bamboo",
+    "category": "Food",
+    "rarity": "Epic",
+    "desc": "Feeding to a bee gives it 150 XP. Obtained from mobs, dispensers, and random gathering.",
+    "image": "images/items/Bamboo.png",
+    "order": 20
+  },
+  {
+    "id": "Exp Orb",
+    "name": "Exp Orb",
+    "category": "Food",
+    "rarity": "Epic",
+    "desc": "Feeding to a bee gives it 100 XP. Obtained from Artist Bear.",
+    "image": "images/items/Exp Orb.png",
+    "order": 21
+  },
+  {
+    "id": "Bee Net",
+    "name": "Bee Net",
+    "category": "Misc",
+    "rarity": "Rare",
+    "desc": "Use this item to catch bees into your inventory. Obtained from random gathering.",
+    "image": "images/items/Bee Net.png",
+    "order": 22
+  },
+  {
+    "id": "Converter",
+    "name": "Converter",
+    "category": "Misc",
+    "rarity": "Epic",
+    "desc": "Converts all your pollen into honey. Obtained by crafting.",
+    "image": "images/items/Converter.png",
+    "order": 23
+  },
+  {
+    "id": "Bamboo Flask",
+    "name": "Bamboo Flask",
+    "category": "Consumables",
+    "rarity": "Epic",
+    "desc": "Grants ×1.1 Honey Bonus and ×1.5 Convert Rate. Obtained by crafting.",
+    "image": "images/items/Bamboo Flask.png",
+    "order": 24
+  },
+  {
+    "id": "Cone Extract",
+    "name": "Cone Extract",
+    "category": "Consumables",
+    "rarity": "Rare",
+    "desc": "Grants ×1.5 White Pollen for 30 minutes. Obtained by crafting.",
+    "image": "images/items/Cone Extract.png",
+    "order": 25
+  },
+  {
+    "id": "Strawberry Extract",
+    "name": "Strawberry Extract",
+    "category": "Consumables",
+    "rarity": "Rare",
+    "desc": "Grants ×1.5 Red Pollen for 30 minutes. Obtained by crafting.",
+    "image": "images/items/Strawberry Extract.png",
+    "order": 26
+  },
+  {
+    "id": "Blueberry Extract",
+    "name": "Blueberry Extract",
+    "category": "Consumables",
+    "rarity": "Rare",
+    "desc": "Grants ×1.5 Blue Pollen for 30 minutes. Obtained by crafting.",
+    "image": "images/items/Blueberry Extract.png",
+    "order": 27
+  },
+  {
+    "id": "Seed Oil",
+    "name": "Seed Oil",
+    "category": "Consumables",
+    "rarity": "Rare",
+    "desc": "Grants ×1.25 Move Speed for 30 minutes. Obtained by crafting.",
+    "image": "images/items/Seed Oil.png",
+    "order": 28
+  },
+  {
+    "id": "Hydrant Installer",
+    "name": "Hydrant Installer",
+    "category": "Installers",
+    "rarity": "Special",
+    "desc": "Used to place hydrants in the field. Obtained from buying any Hydrant in the Hydrant Shop.",
+    "image": "images/items/Hydrant Installer.png",
+    "order": 29
+  },
+  {
+    "id": "Fire Planter",
+    "name": "Fire Planter",
+    "category": "Planters",
+    "rarity": "Epic",
+    "desc": "Places a Fire Planter in the field. Obtained by crafting.",
+    "image": "images/items/Fire Planter.png",
+    "order": 30
+  },
+  {
+    "id": "Ice Planter",
+    "name": "Ice Planter",
+    "category": "Planters",
+    "rarity": "Epic",
+    "desc": "Places an Ice Planter in the field. Obtained by crafting.",
+    "image": "images/items/Ice Planter.png",
+    "order": 31
+  }
+]

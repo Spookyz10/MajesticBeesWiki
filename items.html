@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Items - The Majestic Bees Wiki</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/items.css" />
+    <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
+    <script defer src="js/load-sidebar.js"></script>
+    <script defer src="js/wiki-search.js"></script>
+    <script defer src="js/search.js"></script>
+    <script defer src="js/items.js"></script>
+  </head>
+  <body>
+    <div id="sidebar-container"></div>
+
+    <div class="main" data-pagefind-body>
+      <div class="topbar">
+        <div id="search"></div>
+      </div>
+
+      <div class="content mw-parser-output">
+        <div class="items-page-title">
+          <div class="hero-title">Items</div>
+        </div>
+
+        <div class="hero-description items-hero-description">
+          Items are objects you can collect and use in <b>The Majestic Bees</b>.
+          They range from consumables and food to eggs, essences, and special
+          tools — each with its own rarity and purpose.
+        </div>
+
+        <h2>Item List</h2>
+
+        <div class="items-controls">
+          <div class="items-search-wrap">
+            <input
+              id="item-search"
+              class="item-search-input"
+              type="search"
+              placeholder="Search items..."
+              aria-label="Search items"
+            />
+          </div>
+          <div class="items-filter-wrap" id="items-category-filters"></div>
+        </div>
+
+        <div id="items-list" class="items-list"></div>
+        <p id="items-empty" class="items-empty" style="display: none">
+          No items found.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
