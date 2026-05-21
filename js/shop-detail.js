@@ -1,16 +1,3 @@
-function escapeHtml(value) {
-  return String(value)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#39;");
-}
-
-function textToHtml(value) {
-  return escapeHtml(value || "").replaceAll("\n", "<br />");
-}
-
 function highlightHoney(text) {
   return textToHtml(text).replace(
     /Honey/gi,

@@ -2,15 +2,6 @@ let ALL_ITEMS = [];
 let activeCategory = "All";
 let searchQuery = "";
 
-function escHtml(v) {
-  return String(v ?? "")
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#39;");
-}
-
 function buildItemCard(item) {
   const rarityCls = "item-rarity-tag--" + item.rarity.replace(/\s+/g, "-");
   return `

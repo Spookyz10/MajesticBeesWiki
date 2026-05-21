@@ -139,9 +139,20 @@
   gap: 8px;
 }
 
+.sf-tier-duration {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .sf-health-val {
   font-family: "Fredoka One", Georgia, sans-serif;
   font-size: 0.92rem;
+}
+
+.sf-duration-val {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 0.84rem;
 }
 
 .sf-tier-body {
@@ -161,7 +172,6 @@
   border: 1px solid rgba(58, 40, 0, 0.38);
 }
 
-/* Pool header base */
 .sf-pool-header {
   display: flex;
   align-items: baseline;
@@ -171,7 +181,6 @@
   border-left: 3px solid transparent;
 }
 
-/* Field-specific: background tint + left accent border */
 .sf-pool[data-pool="White Field"] {
   border-color: rgba(185, 205, 220, 0.3);
 }
@@ -214,7 +223,6 @@
   border-left-color: #b8922a;
 }
 
-/* Pool name text */
 .sf-pool[data-pool="White Field"] .sf-pool-name {
   color: #c8dce8;
 }
@@ -231,7 +239,6 @@
   color: #d4b054;
 }
 
-/* Note text: same hue as name, readable but softer */
 .sf-pool[data-pool="White Field"] .sf-pool-note {
   color: #96b0be;
 }
@@ -258,7 +265,6 @@
   font-size: 0.84em;
 }
 
-/* Table body tint per field — softer/darker than the header, clearly distinct */
 .sf-pool[data-pool="White Field"] .sf-drop-table tbody {
   background: rgba(160, 185, 200, 0.07);
 }
