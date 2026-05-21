@@ -41,15 +41,6 @@ function normalizeShopHref(path, id) {
   }
 }
 
-function escapeHtml(value) {
-  return String(value)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#39;");
-}
-
 function renderTags(tags) {
   if (!Array.isArray(tags) || !tags.length) {
     return "";

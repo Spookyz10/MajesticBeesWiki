@@ -43,18 +43,12 @@ const TIER_COLORS = [
   },
 ];
 
-function getTierColor(tier) {
-  const idx = Math.ceil(tier / 2) - 1;
-  return TIER_COLORS[Math.min(idx, TIER_COLORS.length - 1)];
-}
-
 let ALL_BADGES = [];
 const DISPLAY_LIMIT = 3;
 let BADGES_EXPANDED = false;
 
-function getReq(badge, tier) {
-  if (tier <= 1) return badge.start;
-  return badge.start * Math.pow(badge.mult, tier - 1);
+function getTierColor(tier) {
+  return TIER_COLORS[Math.min(Math.ceil(tier / 2) - 1, TIER_COLORS.length - 1)];
 }
 
 function formatNum(n) {
@@ -68,28 +62,22 @@ function formatNum(n) {
 function buffText(buff, tier) {
   if (!buff || tier < 2) return null;
   const steps = tier - 1;
-  if (buff.type === "Perc") {
-    return `+${buff.value * steps}% ${buff.stat}`;
-  } else if (buff.type === "Mult") {
+  if (buff.type === "Perc") return `+${buff.value * steps}% ${buff.stat}`;
+  if (buff.type === "Mult")
     return `x${(1 + buff.value * steps).toFixed(1)} ${buff.stat}`;
-  } else {
-    return `+${buff.value * steps} ${buff.stat}`;
-  }
+  return `+${buff.value * steps} ${buff.stat}`;
 }
 
 function buildTierRows(badge) {
-  const MAX = 10;
-  return Array.from({ length: MAX }, (_, i) => {
+  return Array.from({ length: 10 }, (_, i) => {
     const tier = i + 1;
     const color = getTierColor(tier);
-    const req = getReq(badge, tier);
+    const req = badge.start * Math.pow(badge.mult, tier - 1);
     const buff = buffText(badge.buff, tier);
     return `
       <tr class="badge-tier-row">
         <td>
-          <span class="badge-tier-pill" style="color:${color.text};border-color:${color.border};background:${color.bg}">
-            ${TIER_LABELS[i]}
-          </span>
+          <span class="badge-tier-pill" style="color:${color.text};border-color:${color.border};background:${color.bg}">${TIER_LABELS[i]}</span>
           <span class="badge-tier-grade" style="color:${color.text}">${color.label}</span>
         </td>
         <td class="badge-tier-req">${formatNum(req)}</td>
@@ -102,22 +90,13 @@ function buildBadgeCard(badge) {
   return `
     <div class="badge-card">
       <div class="badge-card-left">
-        
         <div class="badge-card-name">${badge.name}</div>
         <div class="badge-card-task">${badge.desc}</div>
       </div>
       <div class="badge-card-right">
         <table class="badge-tier-table">
-          <thead>
-            <tr>
-              <th>Tier</th>
-              <th>Required</th>
-              <th>Bonus (stacks per tier)</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${buildTierRows(badge)}
-          </tbody>
+          <thead><tr><th>Tier</th><th>Required</th><th>Bonus (stacks per tier)</th></tr></thead>
+          <tbody>${buildTierRows(badge)}</tbody>
         </table>
       </div>
     </div>`;
@@ -127,32 +106,29 @@ function renderBadges(query) {
   const container = document.getElementById("badges-list");
   const controls = document.getElementById("badges-controls");
   if (!container || !controls) return;
+
   const q = (query || "").trim().toLowerCase();
-  const list = ALL_BADGES.filter((b) => {
-    if (!q) return true;
-    return (
-      (b.name && b.name.toLowerCase().includes(q)) ||
-      (b.id && b.id.toLowerCase().includes(q)) ||
-      (b.desc && b.desc.toLowerCase().includes(q))
-    );
-  });
+  const list = q
+    ? ALL_BADGES.filter((b) =>
+        (b.name + b.id + b.desc).toLowerCase().includes(q),
+      )
+    : ALL_BADGES;
 
   if (q) {
-    container.innerHTML =
-      list.length > 0
-        ? list.map(buildBadgeCard).join("")
-        : '<p style="text-align:center;color:var(--gold-dim);">No badges found.</p>';
+    container.innerHTML = list.length
+      ? list.map(buildBadgeCard).join("")
+      : '<p style="text-align:center;color:var(--gold-dim);">No badges found.</p>';
     controls.innerHTML = "";
     return;
   }
 
-  const shouldLimit = !BADGES_EXPANDED && list.length > DISPLAY_LIMIT;
-  const toRender = shouldLimit ? list.slice(0, DISPLAY_LIMIT) : list;
-
-  container.innerHTML =
-    toRender.length > 0
-      ? toRender.map(buildBadgeCard).join("")
-      : '<p style="text-align:center;color:var(--gold-dim);">No badges found.</p>';
+  const toRender =
+    !BADGES_EXPANDED && list.length > DISPLAY_LIMIT
+      ? list.slice(0, DISPLAY_LIMIT)
+      : list;
+  container.innerHTML = toRender.length
+    ? toRender.map(buildBadgeCard).join("")
+    : '<p style="text-align:center;color:var(--gold-dim);">No badges found.</p>';
 
   if (list.length > DISPLAY_LIMIT) {
     let btn = controls.querySelector(".load-more-btn");
@@ -175,30 +151,26 @@ function renderBadges(query) {
 async function loadBadges() {
   const container = document.getElementById("badges-list");
   if (!container) return;
-
-  let badges;
   try {
     const res = await fetch("data/badges.json");
-    badges = await res.json();
-  } catch (err) {
+    const badges = await res.json();
+    ALL_BADGES = [...badges].sort((a, b) => a.order - b.order);
+    renderBadges("");
+    const searchInput = document.getElementById("badge-search");
+    if (searchInput) {
+      searchInput.addEventListener("input", (e) =>
+        renderBadges(e.target.value),
+      );
+      searchInput.addEventListener("keyup", (e) => {
+        if (e.key === "Escape") {
+          e.target.value = "";
+          renderBadges("");
+        }
+      });
+    }
+  } catch {
     container.innerHTML =
       '<p style="text-align:center;color:var(--gold-dim);">Failed to load badge data.</p>';
-    return;
-  }
-
-  badges.sort((a, b) => a.order - b.order);
-  ALL_BADGES = badges;
-  renderBadges("");
-
-  const searchInput = document.getElementById("badge-search");
-  if (searchInput) {
-    searchInput.addEventListener("input", (e) => renderBadges(e.target.value));
-    searchInput.addEventListener("keyup", (e) => {
-      if (e.key === "Escape") {
-        e.target.value = "";
-        renderBadges("");
-      }
-    });
   }
 }
 

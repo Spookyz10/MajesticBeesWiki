@@ -1,81 +1,289 @@
 (function () {
   "use strict";
 
+  const STATIC_PAGES = [
+    {
+      title: "Bees",
+      desc: "All bees, rarities, colors, hive slots, leveling and eggs.",
+      tags: ["bees", "bee", "hive", "egg", "rarity"],
+      href: "bees.html",
+      icon: "images/icons/Icon-Bees.png",
+      type: "page",
+    },
+    {
+      title: "Shops",
+      desc: "All in-game shops - tools, bags, gear, starter, advanced, red, blue.",
+      tags: ["shop", "shops", "tools", "gear", "bags"],
+      href: "shops.html",
+      icon: "images/icons/Icon-Shops.png",
+      type: "page",
+    },
+    {
+      title: "Codes",
+      desc: "Active and expired redeem codes for free rewards.",
+      tags: ["codes", "code", "redeem"],
+      href: "codes.html",
+      icon: "images/icons/Icon-Codes.png",
+      type: "page",
+    },
+    {
+      title: "Store",
+      desc: "Robux store - gamepasses, developer products, tickets, eggs.",
+      tags: ["store", "robux", "gamepass", "tickets"],
+      href: "store.html",
+      icon: "images/icons/Icon-Store.png",
+      type: "page",
+    },
+    {
+      title: "Mobs",
+      desc: "Hostile creatures: Caterpillar, Ladybug, Rhino Beetle, Spider.",
+      tags: ["mobs", "mob", "enemy", "combat", "drops"],
+      href: "mobs.html",
+      icon: "images/icons/Icon-Mobs.png",
+      type: "page",
+    },
+    {
+      title: "Bears",
+      desc: "NPC quest-givers - Black Bear, Brown Bear, Polar Bear and more.",
+      tags: ["bears", "bear", "quests", "npc"],
+      href: "bears.html",
+      icon: "images/icons/Icon-Bears.png",
+      type: "page",
+    },
+    {
+      title: "Badges",
+      desc: "Permanent bonuses earned by completing tasks in the game.",
+      tags: ["badges", "badge", "bonus", "tier"],
+      href: "badges.html",
+      icon: "images/icons/Icon-Badges.png",
+      type: "page",
+    },
+    {
+      title: "Amulets",
+      desc: "Equippable items with random buffs dropped by mobs.",
+      tags: ["amulets", "amulet", "equip", "buff", "drop"],
+      href: "amulets.html",
+      icon: "images/icons/Icon-Amulets.png",
+      type: "page",
+    },
+    {
+      title: "Hive",
+      desc: "Hive skins and stickers - cosmetics with stat bonuses.",
+      tags: ["hive", "skin", "sticker", "cosmetic"],
+      href: "hive.html",
+      icon: "images/icons/Icon-Hive.png",
+      type: "page",
+    },
+    {
+      title: "Items",
+      desc: "All collectible items: eggs, food, consumables, essences and more.",
+      tags: ["items", "item", "consumable", "egg", "essence"],
+      href: "items.html",
+      icon: "images/icons/Icon-Items.png",
+      type: "page",
+    },
+    {
+      title: "Starflowers",
+      desc: "Placeable field objects with tiered drops and spawn chances.",
+      tags: ["starflowers", "starflower", "field", "drop"],
+      href: "starflowers.html",
+      icon: "images/icons/Icon-Starflowers.png",
+      type: "page",
+    },
+    {
+      title: "World",
+      desc: "Pipes, free dispensers, paid dispensers, mixer recipes.",
+      tags: ["world", "pipe", "dispenser", "mixer", "travel"],
+      href: "world.html",
+      icon: "images/icons/Icon-World.png",
+      type: "page",
+    },
+  ];
+
   const DATA_FILES = [
     { url: "data/bees.json", type: "bees" },
     { url: "data/shops.json", type: "shops" },
-    { url: "data/codes.json", type: "codes" },
+    { url: "data/mobs.json", type: "mobs" },
+    { url: "data/bears.json", type: "bears" },
+    { url: "data/badges.json", type: "badges" },
+    { url: "data/amulets.json", type: "amulets" },
+    { url: "data/items.json", type: "items" },
   ];
 
-  let INDEX = [];
+  let INDEX = [...STATIC_PAGES];
   let indexed = false;
+  let indexing = null;
 
   async function buildIndex() {
     if (indexed) return;
-    indexed = true;
+    if (indexing) return indexing;
 
-    const fetches = DATA_FILES.map((f) =>
-      fetch(f.url)
-        .then((r) => (r.ok ? r.json() : null))
-        .then((data) => ({ data, type: f.type }))
-        .catch(() => null),
-    );
+    indexing = (async () => {
+      const fetches = DATA_FILES.map((f) =>
+        fetch(f.url)
+          .then((r) => (r.ok ? r.json() : null))
+          .then((data) => ({ data, type: f.type }))
+          .catch(() => null),
+      );
 
-    const results = await Promise.all(fetches);
+      const results = await Promise.all(fetches);
 
-    for (const result of results) {
-      if (!result || !result.data) continue;
-      const { data, type } = result;
+      for (const result of results) {
+        if (!result || !result.data) continue;
+        const { data, type } = result;
 
-      if (type === "shops") {
-        const shops = Array.isArray(data) ? data : data.shops || [];
-        for (const shop of shops) {
-          INDEX.push({
-            title: shop.name || shop.title,
-            desc: shop.about || shop.description || "",
-            tags: ["shop", ...(shop.tags || [])],
-            href: `shop.html?shop=${encodeURIComponent(shop.id)}`,
-            type: "shop",
-            icon: shop.image || null,
-          });
+        if (type === "bees") {
+          const beesObj = Array.isArray(data) ? null : data;
+          const entries = beesObj ? Object.values(beesObj) : data;
+          for (const bee of entries) {
+            if (!bee || !bee.name) continue;
+            INDEX.push({
+              title: bee.name,
+              desc: bee.description ? bee.description.slice(0, 120) : "",
+              tags: [
+                "bee",
+                (bee.rarity || "").toLowerCase(),
+                (bee.color || "").toLowerCase(),
+              ],
+              href: `bee.html?bee=${encodeURIComponent(bee.name)}`,
+              type: "bee",
+              icon: bee.icon || bee.image || null,
+            });
+          }
+        }
+
+        if (type === "shops") {
+          const shops = Array.isArray(data) ? data : data.shops || [];
+          for (const shop of shops) {
+            INDEX.push({
+              title: shop.name || shop.title,
+              desc: shop.about || shop.description || "",
+              tags: ["shop", ...(shop.tags || [])],
+              href: `shop.html?shop=${encodeURIComponent(shop.id)}`,
+              type: "shop",
+              icon: shop.image || null,
+            });
+            for (const section of shop.sections || []) {
+              for (const item of section.items || []) {
+                if (!item.name) continue;
+                INDEX.push({
+                  title: item.name,
+                  desc: item.description || item.info || "",
+                  tags: ["shop-item", (shop.name || "").toLowerCase()],
+                  href: `shop.html?shop=${encodeURIComponent(shop.id)}`,
+                  type: "item",
+                  icon: item.image || null,
+                  parent: shop.name,
+                });
+              }
+            }
+          }
+        }
+
+        if (type === "mobs") {
+          for (const mob of data) {
+            INDEX.push({
+              title: mob.name,
+              desc: mob.desc || "",
+              tags: ["mob", "enemy", (mob.location || "").toLowerCase()],
+              href: "mobs.html",
+              type: "mob",
+              icon: mob.image || null,
+            });
+          }
+        }
+
+        if (type === "bears") {
+          for (const bear of data) {
+            INDEX.push({
+              title: bear.name,
+              desc: bear.description || "",
+              tags: [
+                "bear",
+                "quest",
+                "npc",
+                (bear.location || "").toLowerCase(),
+              ],
+              href: `bear.html?bear=${encodeURIComponent(bear.id)}`,
+              type: "bear",
+              icon: bear.image || null,
+            });
+            for (const quest of bear.quests || []) {
+              if (!quest.name) continue;
+              INDEX.push({
+                title: quest.name,
+                desc: `Quest #${quest.number} from ${bear.name}`,
+                tags: ["quest", bear.id],
+                href: `bear.html?bear=${encodeURIComponent(bear.id)}#quest-${quest.number}`,
+                type: "quest",
+                icon: bear.image || null,
+                parent: bear.name,
+              });
+            }
+          }
+        }
+
+        if (type === "badges") {
+          for (const badge of data) {
+            INDEX.push({
+              title: badge.name + " Badge",
+              desc: badge.desc || "",
+              tags: ["badge", "bonus"],
+              href: "badges.html",
+              type: "badge",
+              icon: null,
+            });
+          }
+        }
+
+        if (type === "amulets") {
+          for (const amulet of data) {
+            INDEX.push({
+              title: amulet.name,
+              desc: amulet.desc || "",
+              tags: [
+                "amulet",
+                (amulet.rarity || "").toLowerCase(),
+                "equip",
+                "drop",
+              ],
+              href: "amulets.html",
+              type: "amulet",
+              icon: amulet.image || null,
+            });
+          }
+        }
+
+        if (type === "items") {
+          for (const item of data) {
+            INDEX.push({
+              title: item.name,
+              desc: item.desc || "",
+              tags: [
+                "item",
+                (item.category || "").toLowerCase(),
+                (item.rarity || "").toLowerCase(),
+              ],
+              href: "items.html",
+              type: "item",
+              icon: item.image || null,
+            });
+          }
         }
       }
-    }
 
-    INDEX.push(
-      {
-        title: "Bees",
-        desc: "All bees, rarities, hive slots, leveling.",
-        tags: ["bees"],
-        href: "bees.html",
-        type: "page",
-        icon: "images/icons/Icon-Bees.png",
-      },
-      {
-        title: "Shops",
-        desc: "All in-game shops, items, tools, bags, gear.",
-        tags: ["shops"],
-        href: "shops.html",
-        type: "page",
-        icon: "images/icons/Icon-Shops.png",
-      },
-      {
-        title: "Codes",
-        desc: "Active and expired codes.",
-        tags: ["codes"],
-        href: "codes.html",
-        type: "page",
-        icon: "images/icons/Icon-Codes.png",
-      },
-      {
-        title: "Store",
-        desc: "Robux store, find gamepasses and developer products here.",
-        tags: ["store"],
-        href: "store.html",
-        type: "page",
-        icon: "images/icons/Icon-Store.png",
-      },
-    );
+      const seen = new Set();
+      INDEX = INDEX.filter((e) => {
+        const key = e.href + "||" + e.title;
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      });
+
+      indexed = true;
+    })();
+
+    return indexing;
   }
 
   function tokenize(str) {
@@ -87,18 +295,21 @@
   }
 
   function score(entry, tokens) {
+    const titleLower = (entry.title || "").toLowerCase();
     const haystack = [entry.title, entry.desc, ...(entry.tags || [])]
       .join(" ")
       .toLowerCase();
     let s = 0;
     for (const tok of tokens) {
-      if (entry.title.toLowerCase().includes(tok)) s += 3;
+      if (titleLower === tok) s += 10;
+      else if (titleLower.startsWith(tok)) s += 6;
+      else if (titleLower.includes(tok)) s += 4;
       else if (haystack.includes(tok)) s += 1;
     }
     return s;
   }
 
-  function search(query, limit = 8) {
+  function search(query, limit = 10) {
     const tokens = tokenize(query);
     if (!tokens.length) return [];
     return INDEX.map((e) => ({ entry: e, score: score(e, tokens) }))
@@ -112,14 +323,23 @@
     bee: "#a78bfa",
     shop: "#e8c040",
     item: "#7ab860",
-    code: "#64b5f6",
+    mob: "#e07070",
+    bear: "#c8a84e",
+    badge: "#37daff",
+    amulet: "#ce93d8",
+    quest: "#82b8e8",
     page: "#c8a84e",
+    bear: "#ffcf5b",
   };
   const TYPE_LABEL = {
     bee: "Bee",
     shop: "Shop",
     item: "Item",
-    code: "Code",
+    mob: "Mob",
+    bear: "Bear",
+    badge: "Badge",
+    amulet: "Amulet",
+    quest: "Quest",
     page: "Page",
   };
 
@@ -161,7 +381,7 @@
       z-index: 9999;
       overflow: hidden;
       display: none;
-      max-height: 420px;
+      max-height: 460px;
       overflow-y: auto;
     }
     .wsr-results::-webkit-scrollbar { width: 5px; }
@@ -177,19 +397,14 @@
       transition: background .15s;
     }
     .wsr-result:last-child { border-bottom: none; }
-    .wsr-result:hover, .wsr-result.active {
-      background: rgba(232,192,64,.08);
-    }
+    .wsr-result:hover, .wsr-result.active { background: rgba(232,192,64,.08); }
     .wsr-result-icon {
       width: 36px; height: 36px; flex-shrink: 0;
       display: flex; align-items: center; justify-content: center;
-      background: rgba(18,12,0,.7); border-radius: 8px;
-      overflow: hidden;
+      background: rgba(18,12,0,.7); border-radius: 8px; overflow: hidden;
     }
     .wsr-result-icon img { width: 28px; height: 28px; object-fit: contain; image-rendering: pixelated; }
-    .wsr-result-icon-placeholder {
-      font-size: .95rem; color: rgba(200,168,78,.4);
-    }
+    .wsr-result-icon-placeholder { font-size: .95rem; color: rgba(200,168,78,.4); }
     .wsr-result-body { flex: 1; min-width: 0; }
     .wsr-result-title {
       font-family: "Fredoka One", Georgia, sans-serif;
@@ -204,8 +419,7 @@
     .wsr-badge {
       font-size: .68rem; font-weight: 700; letter-spacing: .05em;
       text-transform: uppercase; padding: 2px 7px;
-      border-radius: 4px; flex-shrink: 0;
-      border: 1px solid;
+      border-radius: 4px; flex-shrink: 0; border: 1px solid;
     }
     .wsr-parent { font-size: .7rem; color: #5a4820; margin-top: 1px; }
     .wsr-empty {
@@ -226,34 +440,6 @@
     document.head.appendChild(s);
   }
 
-  function buildResultHTML(entry) {
-    const color = TYPE_COLOR[entry.type] || "#c8a84e";
-    const label = TYPE_LABEL[entry.type] || entry.type;
-
-    const iconHTML = entry.icon
-      ? `<img src="${entry.icon}" alt="" onerror="this.style.display='none'">`
-      : `<span class="wsr-result-icon-placeholder">🐝</span>`;
-
-    const parentHTML = entry.parent
-      ? `<div class="wsr-parent">in ${entry.parent}</div>`
-      : "";
-
-    const shortDesc =
-      (entry.desc || "").slice(0, 90) + (entry.desc?.length > 90 ? "…" : "");
-
-    return `
-      <a class="wsr-result" href="${entry.href}">
-        <div class="wsr-result-icon">${iconHTML}</div>
-        <div class="wsr-result-body">
-          <div class="wsr-result-title">${escHtml(entry.title)}</div>
-          ${shortDesc ? `<div class="wsr-result-desc">${escHtml(shortDesc)}</div>` : ""}
-          ${parentHTML}
-        </div>
-        <span class="wsr-badge" style="color:${color};border-color:${color}44;background:${color}18">${label}</span>
-      </a>
-    `;
-  }
-
   function escHtml(s) {
     return String(s).replace(
       /[&<>"']/g,
@@ -268,13 +454,40 @@
     );
   }
 
+  function buildResultHTML(entry) {
+    const color = TYPE_COLOR[entry.type] || "#c8a84e";
+    const label = TYPE_LABEL[entry.type] || entry.type;
+    const iconHTML = entry.icon
+      ? `<img src="${entry.icon}" alt="" loading="lazy" onerror="this.style.display='none'">`
+      : `<span class="wsr-result-icon-placeholder">🐝</span>`;
+    const parentHTML = entry.parent
+      ? `<div class="wsr-parent">in ${escHtml(entry.parent)}</div>`
+      : "";
+    const shortDesc =
+      (entry.desc || "").slice(0, 90) +
+      ((entry.desc || "").length > 90 ? "…" : "");
+
+    return `
+      <a class="wsr-result" href="${entry.href}">
+        <div class="wsr-result-icon">${iconHTML}</div>
+        <div class="wsr-result-body">
+          <div class="wsr-result-title">${escHtml(entry.title || "")}</div>
+          ${shortDesc ? `<div class="wsr-result-desc">${escHtml(shortDesc)}</div>` : ""}
+          ${parentHTML}
+        </div>
+        <span class="wsr-badge" style="color:${color};border-color:${color}44;background:${color}18">${escHtml(label)}</span>
+      </a>
+    `;
+  }
+
   function mount(container) {
     injectStyle();
 
     container.innerHTML = `
       <div class="wsr-wrap">
-        <div class="wsr-input-row">
-          <input class="wsr-input" type="search" placeholder="Search the wiki…" autocomplete="off" spellcheck="false" />
+        <div class="wsr-input-row" style="position:relative;">
+          <input class="wsr-input" type="search" placeholder="Search the wiki…"
+            autocomplete="off" spellcheck="false" aria-label="Search wiki" />
           <button class="wsr-clear" aria-label="Clear search">✕</button>
         </div>
         <div class="wsr-results" role="listbox" aria-label="Search results"></div>
@@ -309,12 +522,18 @@
         return;
       }
       clearBtn.style.display = "block";
-      results.innerHTML = `<div class="wsr-loading">Searching…</div>`;
-      results.classList.add("open");
       activeIdx = -1;
 
-      if (!indexed) {
+      const quickHits = search(q);
+      if (quickHits.length) {
+        results.innerHTML = quickHits.map(buildResultHTML).join("");
+        results.classList.add("open");
+      } else {
         results.innerHTML = `<div class="wsr-loading">Loading index…</div>`;
+        results.classList.add("open");
+      }
+
+      if (!indexed) {
         await buildIndex();
       }
 
@@ -328,7 +547,7 @@
 
     input.addEventListener("input", (e) => {
       clearTimeout(debounce);
-      debounce = setTimeout(() => runSearch(e.target.value), 180);
+      debounce = setTimeout(() => runSearch(e.target.value), 150);
     });
 
     input.addEventListener("keydown", (e) => {
@@ -339,10 +558,8 @@
       } else if (e.key === "ArrowUp") {
         e.preventDefault();
         setActive(Math.max(activeIdx - 1, 0));
-      } else if (e.key === "Enter") {
-        if (activeIdx >= 0 && links[activeIdx]) {
-          links[activeIdx].click();
-        }
+      } else if (e.key === "Enter" && activeIdx >= 0 && links[activeIdx]) {
+        links[activeIdx].click();
       } else if (e.key === "Escape") {
         results.classList.remove("open");
         input.blur();
@@ -357,9 +574,7 @@
     });
 
     document.addEventListener("click", (e) => {
-      if (!container.contains(e.target)) {
-        results.classList.remove("open");
-      }
+      if (!container.contains(e.target)) results.classList.remove("open");
     });
 
     input.addEventListener("focus", () => {

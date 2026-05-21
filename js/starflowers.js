@@ -6,6 +6,14 @@ const FIELD_NOTE = {
   "All Fields": "Applies on every field type",
 };
 
+const STARFLOWER_DURATION = {
+  Basic: "3 minutes",
+  Rare: "4 minutes",
+  Epic: "5 minutes",
+  Legendary: "7 minutes",
+  Mythic: "8 minutes",
+};
+
 function localImg(src, size, alt) {
   return `<img src="${src}" alt="${alt}" width="${size}" height="${size}" loading="lazy" onerror="this.style.opacity='0.25';" />`;
 }
@@ -87,6 +95,7 @@ function buildTierCard(tier) {
   const pools = Object.entries(tier.drops)
     .map(([k, v]) => buildDropPool(k, v))
     .join("");
+  const duration = STARFLOWER_DURATION[tier.name] || "Unknown duration";
 
   return `
     <div class="sf-tier-card" style="border-color:${tier.colorBorder};background:${tier.colorBg}">
@@ -98,6 +107,9 @@ function buildTierCard(tier) {
           <div class="sf-tier-name" style="color:${tier.color}">${tier.name} Starflower</div>
           <div class="sf-tier-health">
             <span class="sf-health-val" style="color:${tier.color}">${tier.healthLabel} pollen to destroy</span>
+          </div>
+          <div class="sf-tier-duration">
+            <span class="sf-duration-val" style="color:${tier.color}">Lasts ${duration}</span>
           </div>
         </div>
       </div>
@@ -114,7 +126,7 @@ function buildTiers(tiers) {
     <div class="sf-section">
       <div class="sf-section-heading">Tiers and Drops</div>
       <div class="sf-section-desc">
-        Each tier has a different health pool and its own drop table.
+        Each tier has a different health pool, duration, and its own drop table.
        
       </div>
       <div class="sf-tiers">${cards}</div>
