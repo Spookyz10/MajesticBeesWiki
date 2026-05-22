@@ -1,7 +1,18 @@
 [
 	{
+		"code": "adfasfd123123",
+		"expires": "2099-99-99",
+		"note": "LMAOOOOO",
+		"items": [],
+		"skins": [],
+		"stickers": [
+			"Deox Sticker x1"
+		],
+		"boosts": []
+	},
+	{
 		"code": "Update6",
-		"expires": "Unknown",
+		"expires": "2026-05-27",
 		"note": "Update6!",
 		"items": [
 			"Blueberry Extract x3",
@@ -26,7 +37,7 @@
 	},
 	{
 		"code": "SorryForRemoval",
-		"expires": "Unknown",
+		"expires": "2026-05-25",
 		"note": "Levels System is gone.",
 		"items": [
 			"Diamond Egg x1"
@@ -37,7 +48,7 @@
 	},
 	{
 		"code": "Sorrymyfellowbluehivesgg",
-		"expires": "Unknown",
+		"expires": "2026-05-25",
 		"note": "He forgot water essence",
 		"items": [
 			"Water Essence x200"
@@ -48,7 +59,7 @@
 	},
 	{
 		"code": "150CCUYAYYTYGG",
-		"expires": "Unknown",
+		"expires": "2026-05-25",
 		"note": "150 CCU",
 		"items": [
 			"Bamboo Flask x1",
