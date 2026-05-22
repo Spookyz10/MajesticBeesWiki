@@ -35,7 +35,6 @@ function buildChances(chances) {
       <div class="sf-section-heading">Spawn Chances</div>
       <div class="sf-section-desc">
         When any Starflower is placed, the game rolls to decide which tier spawns.
-        The numbers below are approximate. 
       </div>
       <table class="sf-chances-table">
         <thead>

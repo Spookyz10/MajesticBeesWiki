@@ -33,7 +33,7 @@
       "id": "honey-dispenser",
       "name": "Honey Dispenser",
       "zone": "Starter Zone",
-      "desc": "Gives Honey to the player. 4 hour cooldown.",
+      "desc": "Gives Honey to the player. 2 hour cooldown.",
       "image": "images/dispensers/Honey Dispenser.png"
     },
     {
