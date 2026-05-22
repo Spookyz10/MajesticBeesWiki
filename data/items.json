@@ -49,7 +49,7 @@
     "name": "Silver Egg",
     "category": "Eggs",
     "rarity": "Rare",
-    "desc": "Always turns into a rare or epic bee. Obtained from quests or the Ticket Shop.",
+    "desc": "Rares: 70%, Epics: 30%. Obtained from quests or the Ticket Shop.",
     "image": "images/items/Silver Egg.png",
     "order": 6
   },
@@ -58,7 +58,7 @@
     "name": "Gold Egg",
     "category": "Eggs",
     "rarity": "Epic",
-    "desc": "Always turns into an epic or legendary bee. Obtained from quests or the Ticket Shop.",
+    "desc": "Epics: 90%, Legendaries: 10%. Obtained from quests or the Ticket Shop.",
     "image": "images/items/Gold Egg.png",
     "order": 7
   },
@@ -67,7 +67,7 @@
     "name": "Diamond Egg",
     "category": "Eggs",
     "rarity": "Legendary",
-    "desc": "Always turns into a legendary bee. Obtained from quests or the Ticket Shop.",
+    "desc": "Legendaries: 100%. Obtained from quests or the Ticket Shop.",
     "image": "images/items/Diamond Egg.png",
     "order": 8
   },
@@ -76,7 +76,7 @@
     "name": "Royal Jelly",
     "category": "Jellies",
     "rarity": "Common",
-    "desc": "Always turns into a random bee. Obtained from mobs, found on the map, or bought in the Royal Jelly Dispenser.",
+    "desc": "Rares: 85.23%, Epics: 14.20%, Legendaries: 0.57%",
     "image": "images/items/Royal Jelly.png",
     "order": 9
   },

@@ -30,6 +30,7 @@ function loadSidebar() {
       <a href="${basePath}badges.html">Badges</a>
       <a href="${basePath}bees.html">Bees</a>
       <a href="${basePath}bears.html">Bears</a>
+      <a href="${basePath}mobs.html">Mobs</a>
       <a href="${basePath}items.html">Items</a>
       <a href="${basePath}codes.html">Codes</a>
       <a href="${basePath}hive.html">Hive</a>
@@ -63,6 +64,7 @@ function createMobileSheet(basePath) {
       <a href="${basePath}badges.html">Badges</a>
       <a href="${basePath}bees.html">Bees</a>
       <a href="${basePath}bears.html">Bears</a>
+      <a href="${basePath}mobs.html">Mobs</a>
       <a href="${basePath}items.html">Items</a>
       <a href="${basePath}codes.html">Codes</a>
       <a href="${basePath}hive.html">Hive</a>

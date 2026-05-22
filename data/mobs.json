@@ -70,7 +70,7 @@
     "image": "images/mobs/Spider.png",
     "location": "10 Bee Zone",
     "desc": "A massive dark blue spider with six long, sharp legs spread wide. It has a large triangular body and four big black eyes on the front of its face.",
-    "respawn": "~10 min",
+    "respawn": "~20 min",
     "tokens": "4–5",
     "drops": [
       { "name": "Spider Amulet", "chance": 1, "qty": 1, "lootLuck": true },
