@@ -242,7 +242,7 @@
             {
               "name": "Silver Egg",
               "type": "",
-              "image": "images/itens/Silver Egg.png",
+              "image": "images/items/Silver Egg.png",
               "description": "A silver egg with a guaranteed quality hatch.",
               "info": "Always hatches into a Rare or Epic bee.",
               "cost": "50 Tickets",
@@ -251,7 +251,7 @@
             {
               "name": "Gold Egg",
               "type": "",
-              "image": "images/itens/Gold Egg.png",
+              "image": "images/items/Gold Egg.png",
               "description": "A golden egg with an even better guaranteed hatch.",
               "info": "Always hatches into an Epic or Legendary bee.",
               "cost": "100 Tickets",
@@ -260,7 +260,7 @@
             {
               "name": "Diamond Egg",
               "type": "",
-              "image": "images/itens/Diamond Egg.png",
+              "image": "images/items/Diamond Egg.png",
               "description": "The rarest egg available in the shop.",
               "info": "Always hatches into a Legendary bee.",
               "cost": "250 Tickets",
@@ -278,8 +278,8 @@
               "image": "images/gear/ticketShop/LevelPass.png",
               "description": "Unlocked the premium path in the Level Pass.",
               "info": "When purchased, unlocked the premium path in the level pass. The levels system has since been removed, so this item is no longer available in the shop.",
-              "cost": "Removed",
-              "costType": "plain"
+              "cost": "1,000 Tickets",
+              "costType": "ticket"
             }
           ]
         }
