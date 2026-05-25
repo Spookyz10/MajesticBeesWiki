@@ -1,5 +1,39 @@
 [
 	{
+		"code": "HoneyBreakers",
+		"expires": "2026-06-01",
+		"note": "Honeday event!",
+		"items": [],
+		"skins": [],
+		"stickers": [],
+		"boosts": [
+			"Honey Days x1"
+		]
+	},
+	{
+		"code": "TYNewMilestonesSoon",
+		"expires": "2026-05-31",
+		"note": "The game has broken every milestone!",
+		"items": [
+			"Bamboo Flask X3",
+			"Seed Oil x3",
+			"Blueberry Extract X3",
+			"Strawberry Extract x3",
+			"Come Extract x3",
+			"Starflower X3",
+			"Ticket x50"
+		],
+		"skins": [],
+		"stickers": [],
+		"boosts": [
+			"Bamboo Flask Boost x1",
+			"Seed Oil Boost x1",
+			"Blueberry Extract Boost x1",
+			"Strawberry Extract Boost x1",
+			"Cone Extract Boost x1"
+		]
+	},
+	{
 		"code": "StarflowerLove",
 		"expires": "2026-05-25",
 		"note": "Deox loves to do starflower parties!",
