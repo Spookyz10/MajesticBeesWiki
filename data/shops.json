@@ -142,10 +142,10 @@
               "name": "Worker's Boots",
               "type": "Boots",
               "image": "images/equipment/Worker's Boots.png",
-              "description": "Space for the item description.",
-              "info": "Space for the item notes and details.",
+              "description": "The Boots of a hard worker!",
+              "info": "+3 Movement Collection\n+5% Movespeed",
               "capacity": 0,
-              "buffs": [],
+              "buffs": ["+3 Movement Collection", "+5% Movespeed"],
               "cost": "18k Honey",
               "costType": "honey"
             },

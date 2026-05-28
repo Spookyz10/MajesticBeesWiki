@@ -34,6 +34,28 @@ function buffText(buff) {
   return `+${buff.value} ${buff.stat}`;
 }
 
+function formatPerFlower(n) {
+  if (n >= 1_000_000)
+    return `1 in ${(n / 1_000_000).toFixed(n % 1_000_000 === 0 ? 0 : 1)}M`;
+  if (n >= 1_000) return `1 in ${n.toLocaleString()}`;
+  return `1 in ${n}`;
+}
+
+function buildDropChanceHtml(dc) {
+  if (!dc) return "";
+  const inPool =
+    dc.inPool < 0.1 ? dc.inPool.toFixed(4) + "%" : dc.inPool.toFixed(2) + "%";
+  return `
+    <div class="hive-card-drop">
+      <span class="hive-drop-tag hive-drop-tag--pool" title="Chance within the Sticker Token pool">
+        ${inPool} in pool
+      </span>
+      <span class="hive-drop-tag hive-drop-tag--flower" title="Overall chance per flower collected">
+        ${formatPerFlower(dc.perFlower)} per flower
+      </span>
+    </div>`;
+}
+
 function buildHiveCard(item) {
   const rKey = item.rarity.toLowerCase();
   const col = RARITY_COLORS[rKey] || RARITY_COLORS.common;
@@ -42,6 +64,7 @@ function buildHiveCard(item) {
         .map((b) => `<span class="hive-buff-tag">${buffText(b)}</span>`)
         .join("")
     : `<span class="hive-buff-none">No bonus</span>`;
+  const dropHtml = buildDropChanceHtml(item.dropChance);
 
   return `
     <div class="hive-card">
@@ -53,6 +76,7 @@ function buildHiveCard(item) {
         <div class="hive-card-name">${item.name}</div>
         <div class="hive-card-desc">${item.desc}</div>
         <div class="hive-card-buffs">${buffsHtml}</div>
+        ${dropHtml}
       </div>
     </div>`;
 }
