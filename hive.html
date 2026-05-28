@@ -60,6 +60,72 @@
 
         <hr />
 
+        <h2>How Drops Work</h2>
+        <p class="hive-section-desc">
+          Every flower you collect triggers two independent rolls.
+        </p>
+
+        <div class="drop-flow-wrap">
+          <div class="drop-flow">
+            <div class="drop-flow-node drop-flow-node--start">
+              Flower collected
+            </div>
+            <div class="drop-flow-arrow">▼</div>
+
+            <div class="drop-flow-split">
+              <div class="drop-flow-branch">
+                <div class="drop-flow-node drop-flow-node--roll">
+                  Roll&nbsp;<strong>1 in 500</strong>
+                </div>
+                <div class="drop-flow-arrow">▼</div>
+                <div class="drop-flow-outcome-row">
+                  <div class="drop-flow-outcome drop-flow-outcome--hit">
+                    <span class="drop-outcome-label">✓ Hit</span>
+                    Normal Token spawns<br />
+                    <span class="drop-outcome-sub"
+                      >weighted by field + Any pool</span
+                    >
+                  </div>
+                  <div class="drop-flow-outcome drop-flow-outcome--miss">
+                    <span class="drop-outcome-label">✗ Miss</span>
+                    Falls through to<br />Sticker roll ↓
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="drop-flow-connector"></div>
+
+            <div class="drop-flow-split">
+              <div class="drop-flow-branch">
+                <div
+                  class="drop-flow-node drop-flow-node--roll drop-flow-node--sticker"
+                >
+                  Roll&nbsp;<strong>1 in 12,000</strong>
+                </div>
+                <div class="drop-flow-arrow">▼</div>
+                <div class="drop-flow-outcome-row">
+                  <div
+                    class="drop-flow-outcome drop-flow-outcome--hit drop-flow-outcome--sticker"
+                  >
+                    <span class="drop-outcome-label">✓ Hit</span>
+                    Sticker Token spawns<br />
+                    <span class="drop-outcome-sub"
+                      >weighted by Stickers pool</span
+                    >
+                  </div>
+                  <div class="drop-flow-outcome drop-flow-outcome--nothing">
+                    <span class="drop-outcome-label">✗ Miss</span>
+                    Nothing
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
         <h2>Hive Slots</h2>
         <div class="hive-info-box">
           You start the game with <b>5 hive slots</b>. More slots are purchased

@@ -14,7 +14,18 @@
       "rarity": "Rare",
       "order": 990,
       "desc": "Red and strawberry style hive.",
-      "buffs": [{ "stat": "Red Pollen", "type": "Perc", "value": 25 }]
+      "buffs": [
+        {
+          "stat": "Red Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 3000,
+        "inPool": 3.4471,
+        "perFlower": 348120
+      }
     },
     {
       "name": "Blue Hive",
@@ -22,7 +33,18 @@
       "rarity": "Rare",
       "order": 990,
       "desc": "Blue and blueberry style hive.",
-      "buffs": [{ "stat": "Blue Pollen", "type": "Perc", "value": 25 }]
+      "buffs": [
+        {
+          "stat": "Blue Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 3000,
+        "inPool": 3.4471,
+        "perFlower": 348120
+      }
     },
     {
       "name": "Green Hive",
@@ -30,7 +52,18 @@
       "rarity": "Rare",
       "order": 990,
       "desc": "Green and lucky hive.",
-      "buffs": [{ "stat": "Loot Luck", "type": "Perc", "value": 25 }]
+      "buffs": [
+        {
+          "stat": "Loot Luck",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 3000,
+        "inPool": 3.4471,
+        "perFlower": 348120
+      }
     },
     {
       "name": "Orange Hive",
@@ -39,9 +72,22 @@
       "order": 990,
       "desc": "Orange and honeyfull hive.",
       "buffs": [
-        { "stat": "Convert Rate", "type": "Perc", "value": 25 },
-        { "stat": "Honey Bonus", "type": "Perc", "value": 5 }
-      ]
+        {
+          "stat": "Convert Rate",
+          "type": "Perc",
+          "value": 25
+        },
+        {
+          "stat": "Honey Bonus",
+          "type": "Perc",
+          "value": 5
+        }
+      ],
+      "dropChance": {
+        "weight": 3000,
+        "inPool": 3.4471,
+        "perFlower": 348120
+      }
     },
     {
       "name": "Pink Hive",
@@ -50,9 +96,22 @@
       "order": 980,
       "desc": "Pink and sweety flavour hive.",
       "buffs": [
-        { "stat": "Red Pollen", "type": "Perc", "value": 35 },
-        { "stat": "Capacity Bonus", "type": "Perc", "value": 25 }
-      ]
+        {
+          "stat": "Red Pollen",
+          "type": "Perc",
+          "value": 35
+        },
+        {
+          "stat": "Capacity Bonus",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 300,
+        "inPool": 0.3447,
+        "perFlower": 3481200
+      }
     },
     {
       "name": "Purple Hive",
@@ -61,9 +120,22 @@
       "order": 980,
       "desc": "Purple and mix of blue & red hive.",
       "buffs": [
-        { "stat": "Red Pollen", "type": "Perc", "value": 35 },
-        { "stat": "Blue Pollen", "type": "Perc", "value": 35 }
-      ]
+        {
+          "stat": "Red Pollen",
+          "type": "Perc",
+          "value": 35
+        },
+        {
+          "stat": "Blue Pollen",
+          "type": "Perc",
+          "value": 35
+        }
+      ],
+      "dropChance": {
+        "weight": 300,
+        "inPool": 0.3447,
+        "perFlower": 3481200
+      }
     },
     {
       "name": "Light Blue Hive",
@@ -72,9 +144,22 @@
       "order": 980,
       "desc": "Light blue and sky color hive.",
       "buffs": [
-        { "stat": "White Pollen", "type": "Perc", "value": 35 },
-        { "stat": "Cloud Pollen", "type": "Perc", "value": 25 }
-      ]
+        {
+          "stat": "White Pollen",
+          "type": "Perc",
+          "value": 35
+        },
+        {
+          "stat": "Cloud Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 300,
+        "inPool": 0.3447,
+        "perFlower": 3481200
+      }
     },
     {
       "name": "Black Hive",
@@ -82,7 +167,18 @@
       "rarity": "Epic",
       "order": 980,
       "desc": "Black and classic style hive.",
-      "buffs": [{ "stat": "Obsidian Pollen", "type": "Perc", "value": 25 }]
+      "buffs": [
+        {
+          "stat": "Obsidian Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 300,
+        "inPool": 0.3447,
+        "perFlower": 3481200
+      }
     },
     {
       "name": "White Hive",
@@ -91,9 +187,22 @@
       "order": 980,
       "desc": "White and classic style hive.",
       "buffs": [
-        { "stat": "Cloud Pollen", "type": "Perc", "value": 100 },
-        { "stat": "Movespeed", "type": "Perc", "value": 25 }
-      ]
+        {
+          "stat": "Cloud Pollen",
+          "type": "Perc",
+          "value": 100
+        },
+        {
+          "stat": "Movespeed",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 300,
+        "inPool": 0.3447,
+        "perFlower": 3481200
+      }
     },
     {
       "name": "Chromatic Hive",
@@ -102,11 +211,32 @@
       "order": 970,
       "desc": "Mix of all colors hive.",
       "buffs": [
-        { "stat": "Honey Bonus", "type": "Perc", "value": 10 },
-        { "stat": "Pollen", "type": "Perc", "value": 50 },
-        { "stat": "Capacity Bonus", "type": "Perc", "value": 50 },
-        { "stat": "Movespeed", "type": "Perc", "value": 25 }
-      ]
+        {
+          "stat": "Honey Bonus",
+          "type": "Perc",
+          "value": 10
+        },
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 50
+        },
+        {
+          "stat": "Capacity Bonus",
+          "type": "Perc",
+          "value": 50
+        },
+        {
+          "stat": "Movespeed",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 15,
+        "inPool": 0.0172,
+        "perFlower": 69624000
+      }
     }
   ],
   "stickers": [
@@ -116,7 +246,13 @@
       "rarity": "Special",
       "order": 10,
       "desc": "Obtainable through boosting the server 2 times.",
-      "buffs": [{ "stat": "Pollen", "type": "Mult", "value": 1.1 }]
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Mult",
+          "value": 1.1
+        }
+      ]
     },
     {
       "name": "Azataz Sticker",
@@ -124,7 +260,13 @@
       "rarity": "Special",
       "order": 15,
       "desc": "Special sticker, obtainable through codes/events.",
-      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Sanju Sticker",
@@ -132,7 +274,13 @@
       "rarity": "Special",
       "order": 16,
       "desc": "Special sticker, obtainable through Sanju.",
-      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Deox Sticker",
@@ -140,7 +288,13 @@
       "rarity": "Special",
       "order": 17,
       "desc": "Special sticker, obtainable through codes/events.",
-      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Teapot Sticker",
@@ -148,7 +302,13 @@
       "rarity": "Special",
       "order": 18,
       "desc": "Special sticker, obtainable through codes/events.",
-      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Remlik Sticker",
@@ -156,7 +316,13 @@
       "rarity": "Special",
       "order": 19,
       "desc": "Special sticker, obtainable through codes/events.",
-      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Zevmu Sticker",
@@ -164,7 +330,13 @@
       "rarity": "Special",
       "order": 20,
       "desc": "Special sticker, obtainable through codes/events.",
-      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Lugia Sticker",
@@ -172,7 +344,13 @@
       "rarity": "Special",
       "order": 21,
       "desc": "Special sticker, obtainable through codes/events.",
-      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Theo Sticker",
@@ -180,7 +358,13 @@
       "rarity": "Special",
       "order": 22,
       "desc": "Special sticker, obtainable through codes/events.",
-      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Starflower Sticker",
@@ -188,7 +372,13 @@
       "rarity": "Legendary",
       "order": 848,
       "desc": "1 in 10k chance from a Starflower! Higher Starflowers do not increase the chances of obtaining this sticker.",
-      "buffs": [{ "stat": "Loot Luck", "type": "Mult", "value": 1.1 }]
+      "buffs": [
+        {
+          "stat": "Loot Luck",
+          "type": "Mult",
+          "value": 1.1
+        }
+      ]
     },
     {
       "name": "Firework Bee Sticker",
@@ -196,7 +386,13 @@
       "rarity": "Legendary",
       "order": 849,
       "desc": "Random chance to obtain from the Firework Bee",
-      "buffs": [{ "stat": "Firework Pollen", "type": "Mult", "value": 1.1 }]
+      "buffs": [
+        {
+          "stat": "Firework Pollen",
+          "type": "Mult",
+          "value": 1.1
+        }
+      ]
     },
     {
       "name": "Bamboo Spear Sticker",
@@ -204,7 +400,18 @@
       "rarity": "Legendary",
       "order": 899,
       "desc": "Obtainable randomly while gathering!",
-      "buffs": [{ "stat": "Cloud Pollen", "type": "Mult", "value": 1.05 }]
+      "buffs": [
+        {
+          "stat": "Cloud Pollen",
+          "type": "Mult",
+          "value": 1.05
+        }
+      ],
+      "dropChance": {
+        "weight": 15,
+        "inPool": 0.0172,
+        "perFlower": 69624000
+      }
     },
     {
       "name": "Snow Shovel Sticker",
@@ -212,7 +419,18 @@
       "rarity": "Epic",
       "order": 997,
       "desc": "Obtainable randomly while gathering!",
-      "buffs": [{ "stat": "Ice Pollen", "type": "Mult", "value": 1.05 }]
+      "buffs": [
+        {
+          "stat": "Ice Pollen",
+          "type": "Mult",
+          "value": 1.05
+        }
+      ],
+      "dropChance": {
+        "weight": 500,
+        "inPool": 0.5745,
+        "perFlower": 2088720
+      }
     },
     {
       "name": "Fire Scythe Sticker",
@@ -220,7 +438,18 @@
       "rarity": "Epic",
       "order": 998,
       "desc": "Obtainable randomly while gathering!",
-      "buffs": [{ "stat": "Fire Pollen", "type": "Mult", "value": 1.05 }]
+      "buffs": [
+        {
+          "stat": "Fire Pollen",
+          "type": "Mult",
+          "value": 1.05
+        }
+      ],
+      "dropChance": {
+        "weight": 500,
+        "inPool": 0.5745,
+        "perFlower": 2088720
+      }
     },
     {
       "name": "Honey Dipper Sticker",
@@ -229,9 +458,22 @@
       "order": 999,
       "desc": "Obtainable randomly while gathering!",
       "buffs": [
-        { "stat": "Pollen", "type": "Perc", "value": 21 },
-        { "stat": "Capacity Bonus", "type": "Perc", "value": 17 }
-      ]
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 21
+        },
+        {
+          "stat": "Capacity Bonus",
+          "type": "Perc",
+          "value": 17
+        }
+      ],
+      "dropChance": {
+        "weight": 500,
+        "inPool": 0.5745,
+        "perFlower": 2088720
+      }
     },
     {
       "name": "Gold Magnet Sticker",
@@ -239,7 +481,18 @@
       "rarity": "Rare",
       "order": 1997,
       "desc": "Obtainable randomly while gathering!",
-      "buffs": [{ "stat": "Loot Luck", "type": "Perc", "value": 14 }]
+      "buffs": [
+        {
+          "stat": "Loot Luck",
+          "type": "Perc",
+          "value": 14
+        }
+      ],
+      "dropChance": {
+        "weight": 3000,
+        "inPool": 3.4471,
+        "perFlower": 348120
+      }
     },
     {
       "name": "Pickaxe Sticker",
@@ -247,7 +500,18 @@
       "rarity": "Rare",
       "order": 1998,
       "desc": "Obtainable randomly while gathering!",
-      "buffs": [{ "stat": "Defense", "type": "Perc", "value": 12 }]
+      "buffs": [
+        {
+          "stat": "Defense",
+          "type": "Perc",
+          "value": 12
+        }
+      ],
+      "dropChance": {
+        "weight": 3000,
+        "inPool": 3.4471,
+        "perFlower": 348120
+      }
     },
     {
       "name": "Axe Sticker",
@@ -256,9 +520,22 @@
       "order": 1999,
       "desc": "Obtainable randomly while gathering!",
       "buffs": [
-        { "stat": "Capacity Bonus", "type": "Perc", "value": 12 },
-        { "stat": "Convert Rate", "type": "Perc", "value": 7 }
-      ]
+        {
+          "stat": "Capacity Bonus",
+          "type": "Perc",
+          "value": 12
+        },
+        {
+          "stat": "Convert Rate",
+          "type": "Perc",
+          "value": 7
+        }
+      ],
+      "dropChance": {
+        "weight": 3000,
+        "inPool": 3.4471,
+        "perFlower": 348120
+      }
     },
     {
       "name": "Scythe Sticker",
@@ -266,7 +543,18 @@
       "rarity": "Rare",
       "order": 2000,
       "desc": "Obtainable randomly while gathering!",
-      "buffs": [{ "stat": "Honey Bonus", "type": "Perc", "value": 4 }]
+      "buffs": [
+        {
+          "stat": "Honey Bonus",
+          "type": "Perc",
+          "value": 4
+        }
+      ],
+      "dropChance": {
+        "weight": 3000,
+        "inPool": 3.4471,
+        "perFlower": 348120
+      }
     },
     {
       "name": "Scissors Sticker",
@@ -274,7 +562,18 @@
       "rarity": "Common",
       "order": 7996,
       "desc": "Obtainable randomly while gathering!",
-      "buffs": [{ "stat": "Convert Amount", "type": "Add", "value": 4 }]
+      "buffs": [
+        {
+          "stat": "Convert Amount",
+          "type": "Add",
+          "value": 4
+        }
+      ],
+      "dropChance": {
+        "weight": 10000,
+        "inPool": 11.4903,
+        "perFlower": 104436
+      }
     },
     {
       "name": "Magnet Sticker",
@@ -282,7 +581,18 @@
       "rarity": "Common",
       "order": 7997,
       "desc": "Obtainable randomly while gathering!",
-      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 7 }]
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 7
+        }
+      ],
+      "dropChance": {
+        "weight": 10000,
+        "inPool": 11.4903,
+        "perFlower": 104436
+      }
     },
     {
       "name": "Hammer Sticker",
@@ -290,7 +600,18 @@
       "rarity": "Common",
       "order": 7998,
       "desc": "Obtainable randomly while gathering!",
-      "buffs": [{ "stat": "Capacity Bonus", "type": "Perc", "value": 7 }]
+      "buffs": [
+        {
+          "stat": "Capacity Bonus",
+          "type": "Perc",
+          "value": 7
+        }
+      ],
+      "dropChance": {
+        "weight": 10000,
+        "inPool": 11.4903,
+        "perFlower": 104436
+      }
     },
     {
       "name": "Rake Sticker",
@@ -298,7 +619,18 @@
       "rarity": "Common",
       "order": 7999,
       "desc": "Obtainable randomly while gathering!",
-      "buffs": [{ "stat": "Convert Rate", "type": "Perc", "value": 7 }]
+      "buffs": [
+        {
+          "stat": "Convert Rate",
+          "type": "Perc",
+          "value": 7
+        }
+      ],
+      "dropChance": {
+        "weight": 10000,
+        "inPool": 11.4903,
+        "perFlower": 104436
+      }
     },
     {
       "name": "Shovel Sticker",
@@ -307,9 +639,22 @@
       "order": 8000,
       "desc": "Obtainable randomly while gathering!",
       "buffs": [
-        { "stat": "Pollen", "type": "Perc", "value": 3 },
-        { "stat": "Capacity Bonus", "type": "Perc", "value": 2 }
-      ]
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 3
+        },
+        {
+          "stat": "Capacity Bonus",
+          "type": "Perc",
+          "value": 2
+        }
+      ],
+      "dropChance": {
+        "weight": 10000,
+        "inPool": 11.4903,
+        "perFlower": 104436
+      }
     },
     {
       "name": "Raspberry Field Sticker",
@@ -318,8 +663,17 @@
       "order": 9985,
       "desc": "Obtainable on Raspberry Field!",
       "buffs": [
-        { "stat": "Raspberry Field Pollen", "type": "Perc", "value": 25 }
-      ]
+        {
+          "stat": "Raspberry Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 10000,
+        "inPool": 11.4903,
+        "perFlower": 104436
+      }
     },
     {
       "name": "Banana Field Sticker",
@@ -327,7 +681,18 @@
       "rarity": "Common",
       "order": 9986,
       "desc": "Obtainable on Banana Field!",
-      "buffs": [{ "stat": "Banana Field Pollen", "type": "Perc", "value": 25 }]
+      "buffs": [
+        {
+          "stat": "Banana Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 10000,
+        "inPool": 11.4903,
+        "perFlower": 104436
+      }
     },
     {
       "name": "Bamboo Field Sticker",
@@ -335,7 +700,18 @@
       "rarity": "Common",
       "order": 9987,
       "desc": "Obtainable on Bamboo Field!",
-      "buffs": [{ "stat": "Bamboo Field Pollen", "type": "Perc", "value": 25 }]
+      "buffs": [
+        {
+          "stat": "Bamboo Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 10000,
+        "inPool": 11.4903,
+        "perFlower": 104436
+      }
     },
     {
       "name": "Snowdrops Field Sticker",
@@ -344,8 +720,17 @@
       "order": 9988,
       "desc": "Obtainable on Snowdrops Field!",
       "buffs": [
-        { "stat": "Snowdrops Field Pollen", "type": "Perc", "value": 25 }
-      ]
+        {
+          "stat": "Snowdrops Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 10000,
+        "inPool": 11.4903,
+        "perFlower": 104436
+      }
     },
     {
       "name": "Pine Cone Field Sticker",
@@ -354,8 +739,17 @@
       "order": 9989,
       "desc": "Obtainable on Pine Cone Field!",
       "buffs": [
-        { "stat": "Pine Cone Field Pollen", "type": "Perc", "value": 25 }
-      ]
+        {
+          "stat": "Pine Cone Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 10000,
+        "inPool": 11.4903,
+        "perFlower": 104436
+      }
     },
     {
       "name": "Rose Field Sticker",
@@ -363,7 +757,18 @@
       "rarity": "Common",
       "order": 9990,
       "desc": "Obtainable on Rose Field!",
-      "buffs": [{ "stat": "Rose Field Pollen", "type": "Perc", "value": 25 }]
+      "buffs": [
+        {
+          "stat": "Rose Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 10000,
+        "inPool": 11.4903,
+        "perFlower": 104436
+      }
     },
     {
       "name": "Spider Field Sticker",
@@ -371,7 +776,18 @@
       "rarity": "Common",
       "order": 9991,
       "desc": "Obtainable on Spider Field!",
-      "buffs": [{ "stat": "Spider Field Pollen", "type": "Perc", "value": 25 }]
+      "buffs": [
+        {
+          "stat": "Spider Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 10000,
+        "inPool": 11.4903,
+        "perFlower": 104436
+      }
     },
     {
       "name": "Strawberry Field Sticker",
@@ -380,8 +796,17 @@
       "order": 9992,
       "desc": "Obtainable on Strawberry Field!",
       "buffs": [
-        { "stat": "Strawberry Field Pollen", "type": "Perc", "value": 25 }
-      ]
+        {
+          "stat": "Strawberry Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 10000,
+        "inPool": 11.4903,
+        "perFlower": 104436
+      }
     },
     {
       "name": "Bellflower Field Sticker",
@@ -390,8 +815,17 @@
       "order": 9993,
       "desc": "Obtainable on Bellflower Field!",
       "buffs": [
-        { "stat": "Bellflower Field Pollen", "type": "Perc", "value": 25 }
-      ]
+        {
+          "stat": "Bellflower Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 10000,
+        "inPool": 11.4903,
+        "perFlower": 104436
+      }
     },
     {
       "name": "Blue Flowers Field Sticker",
@@ -400,8 +834,17 @@
       "order": 9994,
       "desc": "Obtainable on Blue Flowers Field!",
       "buffs": [
-        { "stat": "Blue Flowers Field Pollen", "type": "Perc", "value": 25 }
-      ]
+        {
+          "stat": "Blue Flowers Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 10000,
+        "inPool": 11.4903,
+        "perFlower": 104436
+      }
     },
     {
       "name": "Red Flowers Field Sticker",
@@ -410,8 +853,17 @@
       "order": 9995,
       "desc": "Obtainable on Red Flowers Field!",
       "buffs": [
-        { "stat": "Red Flowers Field Pollen", "type": "Perc", "value": 25 }
-      ]
+        {
+          "stat": "Red Flowers Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 10000,
+        "inPool": 11.4903,
+        "perFlower": 104436
+      }
     },
     {
       "name": "Sunflower Field Sticker",
@@ -420,8 +872,17 @@
       "order": 9996,
       "desc": "Obtainable on Sunflower Field!",
       "buffs": [
-        { "stat": "Sunflower Field Pollen", "type": "Perc", "value": 25 }
-      ]
+        {
+          "stat": "Sunflower Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 10000,
+        "inPool": 11.4903,
+        "perFlower": 104436
+      }
     },
     {
       "name": "Blackberry Field Sticker",
@@ -430,8 +891,17 @@
       "order": 9997,
       "desc": "Obtainable on Blackberry Field!",
       "buffs": [
-        { "stat": "Blackberry Field Pollen", "type": "Perc", "value": 25 }
-      ]
+        {
+          "stat": "Blackberry Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 10000,
+        "inPool": 11.4903,
+        "perFlower": 104436
+      }
     },
     {
       "name": "Clover Field Sticker",
@@ -439,7 +909,18 @@
       "rarity": "Common",
       "order": 9998,
       "desc": "Obtainable on Clover Field!",
-      "buffs": [{ "stat": "Clover Field Pollen", "type": "Perc", "value": 25 }]
+      "buffs": [
+        {
+          "stat": "Clover Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 10000,
+        "inPool": 11.4903,
+        "perFlower": 104436
+      }
     },
     {
       "name": "Daisy Field Sticker",
@@ -447,7 +928,18 @@
       "rarity": "Common",
       "order": 9999,
       "desc": "Obtainable on Daisy Field!",
-      "buffs": [{ "stat": "Daisy Field Pollen", "type": "Perc", "value": 25 }]
+      "buffs": [
+        {
+          "stat": "Daisy Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 10000,
+        "inPool": 11.4903,
+        "perFlower": 104436
+      }
     },
     {
       "name": "Mushroom Field Sticker",
@@ -456,8 +948,17 @@
       "order": 10000,
       "desc": "Obtainable on Mushroom Field!",
       "buffs": [
-        { "stat": "Mushroom Field Pollen", "type": "Perc", "value": 25 }
-      ]
+        {
+          "stat": "Mushroom Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
+      "dropChance": {
+        "weight": 10000,
+        "inPool": 11.4903,
+        "perFlower": 104436
+      }
     }
   ]
 }

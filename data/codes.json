@@ -1,521 +1,427 @@
 [
-	{
-		"code": "HoneyBreakers",
-		"expires": "2026-06-01",
-		"note": "Honeday event!",
-		"items": [],
-		"skins": [],
-		"stickers": [],
-		"boosts": [
-			"Honey Days x1"
-		]
-	},
-	{
-		"code": "TYNewMilestonesSOON",
-		"expires": "2026-05-31",
-		"note": "The game has broken every milestone!",
-		"items": [
-			"Bamboo Flask X3",
-			"Seed Oil x3",
-			"Blueberry Extract X3",
-			"Strawberry Extract x3",
-			"Come Extract x3",
-			"Starflower X3",
-			"Ticket x50"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": [
-			"Bamboo Flask Boost x1",
-			"Seed Oil Boost x1",
-			"Blueberry Extract Boost x1",
-			"Strawberry Extract Boost x1",
-			"Cone Extract Boost x1"
-		]
-	},
-	{
-		"code": "StarflowerLove",
-		"expires": "2026-05-25",
-		"note": "Deox loves to do starflower parties!",
-		"items": [
-			"Seed Oil x1",
-			"Bamboo Flask x1",
-			"Starflower x1",
-			"Tickets x15"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": []
-	},
-	{
-		"code": "Update6",
-		"expires": "2026-05-27",
-		"note": "Update6!",
-		"items": [
-			"Blueberry Extract x3",
-			"Cone Extract x3",
-			"Stawberry Extract x3",
-			"Seed Oil x3"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": []
-	},
-	{
-		"code": "LuckyDays2",
-		"expires": "2026-05-24",
-		"note": "200 ccu special",
-		"items": [],
-		"skins": [],
-		"stickers": [],
-		"boosts": [
-			"Lucky Days x3"
-		]
-	},
-	{
-		"code": "SorryForRemoval",
-		"expires": "2026-05-25",
-		"note": "Levels System is gone.",
-		"items": [
-			"Diamond Egg x1"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": []
-	},
-	{
-		"code": "Sorrymyfellowbluehivesgg",
-		"expires": "2026-05-25",
-		"note": "He forgot water essence",
-		"items": [
-			"Water Essence x200"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": []
-	},
-	{
-		"code": "150CCUYAYYTYGG",
-		"expires": "2026-05-25",
-		"note": "150 CCU",
-		"items": [
-			"Bamboo Flask x1",
-			"Strawberry Extract x1",
-			"Blueberry Extract x1",
-			"Cone Extract x1",
-			"Ticket x100",
-			"Wind Essence x200",
-			"Fire Essence x200"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": []
-	},
-	{
-		"code": "HUGEUPDATEWOO",
-		"expires": "2026-05-23",
-		"note": "Update 5",
-		"items": [
-			"Starflower x1",
-			"Bamboo Flask x1"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": [
-			"Bamboo Flask Boost x1",
-			"Seed Oil Boost x1"
-		]
-	},
-	{
-		"code": "LateNightZzz",
-		"expires": "Unknown",
-		"note": "Lat Night code, you just had to be there!",
-		"items": [],
-		"skins": [],
-		"stickers": [
-			"Deox Sticker x1"
-		],
-		"boosts": [],
-		"limited_uses": "20"
-	},
-	{
-		"code": "300LikesLETSGO",
-		"expires": "2026-05-19",
-		"note": "Thank you for 300 likes!",
-		"items": [
-			"Starflower x2",
-			"Honey x10000",
-			"Bamboo Flask x1"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": [
-			"Bamboo Flask Boost x1",
-			"Seed Oil Boost x1"
-		]
-	},
-	{
-		"code": "updateprepeventdelay",
-		"expires": "2026-05-07",
-		"note": "Sorry about the event delay!",
-		"items": [
-			"Starflower x3",
-			"Blueberry Extract x1",
-			"Strawberry Extract x1",
-			"Bamboo Flask x1",
-			"Seed Oil x1"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": [
-			"Bamboo Flask Boost x1",
-			"Seed Oil Boost x1",
-			"Blueberry Extract Boost x1",
-			"Strawberry Extract Boost x1"
-		]
-	},
-	{
-		"code": "ughExams",
-		"expires": "2026-05-03",
-		"note": "Deox has exams!",
-		"items": [
-			"Starflower x2",
-			"Bamboo Flask x1",
-			"Seed Oil x1"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": [
-			"Cloud Boost 10x",
-			"Seed Oil Boost x1",
-			"Bamboo Flask Boost x1"
-		]
-	},
-	{
-		"code": "sorrywhitehives",
-		"expires": "Unknown",
-		"note": "White Hive was not properly buffed.",
-		"items": [
-			"Cone Extract x1"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": [
-			"Cloud Boost 20x",
-			"Cone Extract Boost x1"
-		]
-	},
-	{
-		"code": "Update1",
-		"expires": "Unknown",
-		"note": "Update 1.",
-		"items": [
-			"Unknown rewards."
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": []
-	},
-	{
-		"code": "Update1",
-		"expires": "2026-04-24",
-		"note": "Update 1.",
-		"items": [
-			"Epic Starflower x1"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": [
-			"Pixel Boost x1"
-		]
-	},
-	{
-		"code": "HDTYAza",
-		"expires": "Unknown",
-		"note": "?",
-		"items": [
-			"Converter x3"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": [
-			"Lucky Days x4"
-		]
-	},
-	{
-		"code": "Update4",
-		"expires": "Unknown",
-		"note": "Update 4.",
-		"items": [
-			"Cone Extract x1"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": [
-			"Cloud Boost 20x",
-			"Cone Extract Boost x1"
-		]
-	},
-	{
-		"code": "AzatazBG",
-		"expires": "Unknown",
-		"limited_uses": "50",
-		"note": "?",
-		"items": [
-			"Silver Egg x1",
-			"Honey x5000"
-		],
-		"skins": [],
-		"stickers": [
-			"Azataz Sticker x1"
-		],
-		"boosts": [
-			"Cloud Boost 20x",
-			"Cone Extract Boost x1"
-		]
-	},
-	{
-		"code": "50CCUTHANKYOUGUYS",
-		"expires": "Unknown",
-		"note": "The game just hit 50 CCU!",
-		"items": [
-			"Cone Extract x1",
-			"Blueberry Extract x1",
-			"Strawberry Extract x1",
-			"Bamboo Flask x1",
-			"Seed Oil x1",
-			"Converter x2"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": [
-			"Cone Extract Boost x1",
-			"Blueberry Extract Boost x1",
-			"Strawberry Extract Boost x1",
-			"Bamboo Flask Boost x1",
-			"Seed Oil Boost x1"
-		]
-	},
-	{
-		"code": "UpdateHYPE!",
-		"expires": "Unknown",
-		"note": "The game just hit 50 CCU!",
-		"limited_uses": "30",
-		"items": [
-			"Royal Jelly x5",
-			"Honey x5000"
-		],
-		"skins": [],
-		"stickers": [
-			"Deox Sticker x1"
-		],
-		"boosts": []
-	},
-	{
-		"code": "ThatOneLeggedBird",
-		"expires": "Unknown",
-		"note": "These devs are weird.",
-		"items": [],
-		"skins": [],
-		"stickers": [
-			"That One Legged Bird Sticker x1"
-		],
-		"boosts": []
-	},
-	{
-		"code": "Moony",
-		"expires": "Unknown",
-		"note": "moony Sticker",
-		"limited_uses": "50",
-		"items": [],
-		"skins": [],
-		"stickers": [
-			"Moony Sticker x1"
-		],
-		"boosts": []
-	},
-	{
-		"code": "HDRace",
-		"expires": "2026-05-12",
-		"note": "First ever honeyday event.",
-		"items": [
-			"Starflowers x5",
-			"Mythic Starflower x1"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": [
-			"Honey Day 2x"
-		]
-	},
-	{
-		"code": "TeapotSTICKER",
-		"expires": "Unknown",
-		"note": "Teapot Sticker",
-		"limited_uses": "30",
-		"items": [],
-		"skins": [],
-		"stickers": [
-			"Teapot Sticker x1"
-		],
-		"boosts": []
-	},
-	{
-		"code": "80CCUCODE",
-		"expires": "2026-05-16",
-		"note": "The game just hit 80 CCU!",
-		"items": [
-			"Starflower x5",
-			"Honey x8000",
-			"Silver Egg x3",
-			"Royal Jelly x10"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": []
-	},
-	{
-		"code": "100CCUCODE",
-		"expires": "2026-05-16",
-		"note": "The game just hit 100 CCU!",
-		"items": [
-			"Starflower x5",
-			"Honey x10000",
-			"Gold Egg x1",
-			"Nets x10"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": []
-	},
-	{
-		"code": "Limited1",
-		"expires": "Unknown",
-		"limited_uses": "20",
-		"note": "Random Limited Code",
-		"items": [],
-		"skins": [
-			"Unknown Sticker x1"
-		],
-		"stickers": [],
-		"boosts": []
-	},
-	{
-		"code": "Limited2x",
-		"expires": "Unknown",
-		"limited_uses": "20",
-		"note": "Random Limited Code",
-		"items": [],
-		"skins": [
-			"Unknown Sticker x1"
-		],
-		"stickers": [],
-		"boosts": []
-	},
-	{
-		"code": "THANKYOUAZA",
-		"expires": "Unknown",
-		"limited_uses": "20",
-		"note": "Random Limited Code",
-		"items": [
-			"Unknown Rewards"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": []
-	},
-	{
-		"code": "25kVisitsCode",
-		"expires": "Unknown",
-		"note": "25k Visits",
-		"items": [
-			"Starflower x3",
-			"Honey x5000",
-			"Nets x5"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": []
-	},
-	{
-		"code": "200Likes",
-		"expires": "2026-05-16",
-		"note": "200 Likes",
-		"items": [
-			"10 Tickets"
-		],
-		"skins": [],
-		"stickers": [
-			"Banana Sticker x1"
-		],
-		"boosts": [
-			"Coal Boost x100"
-		]
-	},
-	{
-		"code": "80%CODE",
-		"expires": "Unknown",
-		"note": "no idea what this code is for",
-		"items": [
-			"Starflower x3",
-			"Honey x8000",
-			"Silver Egg x3"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": []
-	},
-	{
-		"code": "HDRaceDay2",
-		"expires": "2026-05-11",
-		"note": "Second ever honeyday event.",
-		"items": [],
-		"skins": [],
-		"stickers": [],
-		"boosts": [
-			"Honey Day 2x"
-		]
-	},
-	{
-		"code": "250LikesWOW",
-		"expires": "2026-05-15",
-		"note": "250 Likes!",
-		"items": [
-			"Starflower x3",
-			"Honey x10000",
-			"Gold Egg x1"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": [
-			"Bamboo Flask Boost x1",
-			"Seed Oil Boost x1"
-		]
-	},
-	{
-		"code": "500FavCodeOMG",
-		"expires": "2026-05-17",
-		"note": "500 Favorites!",
-		"items": [
-			"Starflower x2",
-			"Honey x5000",
-			"Silver Egg x2",
-			"Nets x3"
-		],
-		"skins": [],
-		"stickers": [],
-		"boosts": []
-	},
-	{
-		"code": "MSXPBoost<3For500FAVS",
-		"expires": "2026-05-17",
-		"note": "5PSSSSSTTTT THOSE BOOSTS DIDNT WORK THE FIRST TIME ENJOY!",
-		"items": [],
-		"skins": [],
-		"stickers": [],
-		"boosts": [
-			"Bamboo Flask Boost x1",
-			"Seed Oil Boost x1"
-		]
-	}
+  {
+    "code": "AzaGG",
+    "expires": "Unknown",
+    "note": "Aza!",
+    "items": [],
+    "skins": [],
+    "stickers": ["Azataz Sticker x1"],
+    "boosts": [],
+    "limited_uses": "40"
+  },
+  {
+    "code": "SorryForRestarts",
+    "expires": "2026-06-26",
+    "note": "Sorry for the restarts!",
+    "items": ["Ticket x100"],
+    "skins": [],
+    "stickers": [],
+    "boosts": []
+  },
+  {
+    "code": "EpicCode250",
+    "expires": "2026-06-28",
+    "note": "Lucky Days event!",
+    "items": [],
+    "skins": [],
+    "stickers": [],
+    "boosts": ["Lucky Days x1"]
+  },
+  {
+    "code": "HoneyBreakers",
+    "expires": "2026-06-28",
+    "note": "Honeday event!",
+    "items": [],
+    "skins": [],
+    "stickers": [],
+    "boosts": ["Honey Days x1"]
+  },
+  {
+    "code": "TYNewMilestonesSOON",
+    "expires": "2026-05-31",
+    "note": "The game has broken every milestone!",
+    "items": [
+      "Bamboo Flask X3",
+      "Seed Oil x3",
+      "Blueberry Extract X3",
+      "Strawberry Extract x3",
+      "Come Extract x3",
+      "Starflower X3",
+      "Ticket x50"
+    ],
+    "skins": [],
+    "stickers": [],
+    "boosts": [
+      "Bamboo Flask Boost x1",
+      "Seed Oil Boost x1",
+      "Blueberry Extract Boost x1",
+      "Strawberry Extract Boost x1",
+      "Cone Extract Boost x1"
+    ]
+  },
+  {
+    "code": "StarflowerLove",
+    "expires": "2026-05-25",
+    "note": "Deox loves to do starflower parties!",
+    "items": ["Seed Oil x1", "Bamboo Flask x1", "Starflower x1", "Tickets x15"],
+    "skins": [],
+    "stickers": [],
+    "boosts": []
+  },
+  {
+    "code": "Update6",
+    "expires": "2026-05-27",
+    "note": "Update6!",
+    "items": [
+      "Blueberry Extract x3",
+      "Cone Extract x3",
+      "Stawberry Extract x3",
+      "Seed Oil x3"
+    ],
+    "skins": [],
+    "stickers": [],
+    "boosts": []
+  },
+  {
+    "code": "LuckyDays2",
+    "expires": "2026-05-24",
+    "note": "200 ccu special",
+    "items": [],
+    "skins": [],
+    "stickers": [],
+    "boosts": ["Lucky Days x3"]
+  },
+  {
+    "code": "SorryForRemoval",
+    "expires": "2026-05-25",
+    "note": "Levels System is gone.",
+    "items": ["Diamond Egg x1"],
+    "skins": [],
+    "stickers": [],
+    "boosts": []
+  },
+  {
+    "code": "Sorrymyfellowbluehivesgg",
+    "expires": "2026-05-25",
+    "note": "He forgot water essence",
+    "items": ["Water Essence x200"],
+    "skins": [],
+    "stickers": [],
+    "boosts": []
+  },
+  {
+    "code": "150CCUYAYYTYGG",
+    "expires": "2026-05-25",
+    "note": "150 CCU",
+    "items": [
+      "Bamboo Flask x1",
+      "Strawberry Extract x1",
+      "Blueberry Extract x1",
+      "Cone Extract x1",
+      "Ticket x100",
+      "Wind Essence x200",
+      "Fire Essence x200"
+    ],
+    "skins": [],
+    "stickers": [],
+    "boosts": []
+  },
+  {
+    "code": "HUGEUPDATEWOO",
+    "expires": "2026-05-23",
+    "note": "Update 5",
+    "items": ["Starflower x1", "Bamboo Flask x1"],
+    "skins": [],
+    "stickers": [],
+    "boosts": ["Bamboo Flask Boost x1", "Seed Oil Boost x1"]
+  },
+  {
+    "code": "LateNightZzz",
+    "expires": "Unknown",
+    "note": "Lat Night code, you just had to be there!",
+    "items": [],
+    "skins": [],
+    "stickers": ["Deox Sticker x1"],
+    "boosts": [],
+    "limited_uses": "20"
+  },
+  {
+    "code": "300LikesLETSGO",
+    "expires": "2026-05-19",
+    "note": "Thank you for 300 likes!",
+    "items": ["Starflower x2", "Honey x10000", "Bamboo Flask x1"],
+    "skins": [],
+    "stickers": [],
+    "boosts": ["Bamboo Flask Boost x1", "Seed Oil Boost x1"]
+  },
+  {
+    "code": "updateprepeventdelay",
+    "expires": "2026-05-07",
+    "note": "Sorry about the event delay!",
+    "items": [
+      "Starflower x3",
+      "Blueberry Extract x1",
+      "Strawberry Extract x1",
+      "Bamboo Flask x1",
+      "Seed Oil x1"
+    ],
+    "skins": [],
+    "stickers": [],
+    "boosts": [
+      "Bamboo Flask Boost x1",
+      "Seed Oil Boost x1",
+      "Blueberry Extract Boost x1",
+      "Strawberry Extract Boost x1"
+    ]
+  },
+  {
+    "code": "ughExams",
+    "expires": "2026-05-03",
+    "note": "Deox has exams!",
+    "items": ["Starflower x2", "Bamboo Flask x1", "Seed Oil x1"],
+    "skins": [],
+    "stickers": [],
+    "boosts": ["Cloud Boost 10x", "Seed Oil Boost x1", "Bamboo Flask Boost x1"]
+  },
+  {
+    "code": "sorrywhitehives",
+    "expires": "Unknown",
+    "note": "White Hive was not properly buffed.",
+    "items": ["Cone Extract x1"],
+    "skins": [],
+    "stickers": [],
+    "boosts": ["Cloud Boost 20x", "Cone Extract Boost x1"]
+  },
+  {
+    "code": "Update1",
+    "expires": "Unknown",
+    "note": "Update 1.",
+    "items": ["Unknown rewards."],
+    "skins": [],
+    "stickers": [],
+    "boosts": []
+  },
+  {
+    "code": "Update1",
+    "expires": "2026-04-24",
+    "note": "Update 1.",
+    "items": ["Epic Starflower x1"],
+    "skins": [],
+    "stickers": [],
+    "boosts": ["Pixel Boost x1"]
+  },
+  {
+    "code": "HDTYAza",
+    "expires": "Unknown",
+    "note": "?",
+    "items": ["Converter x3"],
+    "skins": [],
+    "stickers": [],
+    "boosts": ["Lucky Days x4"]
+  },
+  {
+    "code": "Update4",
+    "expires": "Unknown",
+    "note": "Update 4.",
+    "items": ["Cone Extract x1"],
+    "skins": [],
+    "stickers": [],
+    "boosts": ["Cloud Boost 20x", "Cone Extract Boost x1"]
+  },
+  {
+    "code": "AzatazBG",
+    "expires": "Unknown",
+    "limited_uses": "50",
+    "note": "?",
+    "items": ["Silver Egg x1", "Honey x5000"],
+    "skins": [],
+    "stickers": ["Azataz Sticker x1"],
+    "boosts": ["Cloud Boost 20x", "Cone Extract Boost x1"]
+  },
+  {
+    "code": "50CCUTHANKYOUGUYS",
+    "expires": "Unknown",
+    "note": "The game just hit 50 CCU!",
+    "items": [
+      "Cone Extract x1",
+      "Blueberry Extract x1",
+      "Strawberry Extract x1",
+      "Bamboo Flask x1",
+      "Seed Oil x1",
+      "Converter x2"
+    ],
+    "skins": [],
+    "stickers": [],
+    "boosts": [
+      "Cone Extract Boost x1",
+      "Blueberry Extract Boost x1",
+      "Strawberry Extract Boost x1",
+      "Bamboo Flask Boost x1",
+      "Seed Oil Boost x1"
+    ]
+  },
+  {
+    "code": "UpdateHYPE!",
+    "expires": "Unknown",
+    "note": "The game just hit 50 CCU!",
+    "limited_uses": "30",
+    "items": ["Royal Jelly x5", "Honey x5000"],
+    "skins": [],
+    "stickers": ["Deox Sticker x1"],
+    "boosts": []
+  },
+  {
+    "code": "ThatOneLeggedBird",
+    "expires": "Unknown",
+    "note": "These devs are weird.",
+    "items": [],
+    "skins": [],
+    "stickers": ["That One Legged Bird Sticker x1"],
+    "boosts": []
+  },
+  {
+    "code": "Moony",
+    "expires": "Unknown",
+    "note": "moony Sticker",
+    "limited_uses": "50",
+    "items": [],
+    "skins": [],
+    "stickers": ["Moony Sticker x1"],
+    "boosts": []
+  },
+  {
+    "code": "HDRace",
+    "expires": "2026-05-12",
+    "note": "First ever honeyday event.",
+    "items": ["Starflowers x5", "Mythic Starflower x1"],
+    "skins": [],
+    "stickers": [],
+    "boosts": ["Honey Day 2x"]
+  },
+  {
+    "code": "TeapotSTICKER",
+    "expires": "Unknown",
+    "note": "Teapot Sticker",
+    "limited_uses": "30",
+    "items": [],
+    "skins": [],
+    "stickers": ["Teapot Sticker x1"],
+    "boosts": []
+  },
+  {
+    "code": "80CCUCODE",
+    "expires": "2026-05-16",
+    "note": "The game just hit 80 CCU!",
+    "items": [
+      "Starflower x5",
+      "Honey x8000",
+      "Silver Egg x3",
+      "Royal Jelly x10"
+    ],
+    "skins": [],
+    "stickers": [],
+    "boosts": []
+  },
+  {
+    "code": "100CCUCODE",
+    "expires": "2026-05-16",
+    "note": "The game just hit 100 CCU!",
+    "items": ["Starflower x5", "Honey x10000", "Gold Egg x1", "Nets x10"],
+    "skins": [],
+    "stickers": [],
+    "boosts": []
+  },
+  {
+    "code": "Limited1",
+    "expires": "Unknown",
+    "limited_uses": "20",
+    "note": "Random Limited Code",
+    "items": [],
+    "skins": ["Unknown Sticker x1"],
+    "stickers": [],
+    "boosts": []
+  },
+  {
+    "code": "Limited2x",
+    "expires": "Unknown",
+    "limited_uses": "20",
+    "note": "Random Limited Code",
+    "items": [],
+    "skins": ["Unknown Sticker x1"],
+    "stickers": [],
+    "boosts": []
+  },
+  {
+    "code": "THANKYOUAZA",
+    "expires": "Unknown",
+    "limited_uses": "20",
+    "note": "Random Limited Code",
+    "items": ["Unknown Rewards"],
+    "skins": [],
+    "stickers": [],
+    "boosts": []
+  },
+  {
+    "code": "25kVisitsCode",
+    "expires": "Unknown",
+    "note": "25k Visits",
+    "items": ["Starflower x3", "Honey x5000", "Nets x5"],
+    "skins": [],
+    "stickers": [],
+    "boosts": []
+  },
+  {
+    "code": "200Likes",
+    "expires": "2026-05-16",
+    "note": "200 Likes",
+    "items": ["10 Tickets"],
+    "skins": [],
+    "stickers": ["Banana Sticker x1"],
+    "boosts": ["Coal Boost x100"]
+  },
+  {
+    "code": "80%CODE",
+    "expires": "Unknown",
+    "note": "no idea what this code is for",
+    "items": ["Starflower x3", "Honey x8000", "Silver Egg x3"],
+    "skins": [],
+    "stickers": [],
+    "boosts": []
+  },
+  {
+    "code": "HDRaceDay2",
+    "expires": "2026-05-11",
+    "note": "Second ever honeyday event.",
+    "items": [],
+    "skins": [],
+    "stickers": [],
+    "boosts": ["Honey Day 2x"]
+  },
+  {
+    "code": "250LikesWOW",
+    "expires": "2026-05-15",
+    "note": "250 Likes!",
+    "items": ["Starflower x3", "Honey x10000", "Gold Egg x1"],
+    "skins": [],
+    "stickers": [],
+    "boosts": ["Bamboo Flask Boost x1", "Seed Oil Boost x1"]
+  },
+  {
+    "code": "500FavCodeOMG",
+    "expires": "2026-05-17",
+    "note": "500 Favorites!",
+    "items": ["Starflower x2", "Honey x5000", "Silver Egg x2", "Nets x3"],
+    "skins": [],
+    "stickers": [],
+    "boosts": []
+  },
+  {
+    "code": "MSXPBoost<3For500FAVS",
+    "expires": "2026-05-17",
+    "note": "5PSSSSSTTTT THOSE BOOSTS DIDNT WORK THE FIRST TIME ENJOY!",
+    "items": [],
+    "skins": [],
+    "stickers": [],
+    "boosts": ["Bamboo Flask Boost x1", "Seed Oil Boost x1"]
+  }
 ]
