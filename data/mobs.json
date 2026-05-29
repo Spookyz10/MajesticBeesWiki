@@ -7,7 +7,12 @@
     "desc": "A small, chubby green caterpillar with two big black eyes and tiny antennae. It curls up low to the ground and has a round, segmented body.",
     "respawn": "3–4 min",
     "drops": [
-      { "name": "Caterpillar Amulet", "chance": 2, "qty": 1, "lootLuck": true },
+      {
+        "name": "Caterpillar Amulet",
+        "chance": 0.5,
+        "qty": 1,
+        "lootLuck": true
+      },
       { "name": "Seed", "chance": 15, "qty": 1 },
       { "name": "Strawberry", "chance": 15, "qty": 1 },
       { "name": "Blueberry", "chance": 15, "qty": 1 },
@@ -28,7 +33,7 @@
     "desc": "A large, blocky ladybug with a dark navy blue body and bright red wings with black spots. It has four sturdy legs and two short antennae sticking out from its head.",
     "respawn": "6–10 min",
     "drops": [
-      { "name": "Ladybug Amulet", "chance": 1, "qty": 1, "lootLuck": true },
+      { "name": "Ladybug Amulet", "chance": 0.25, "qty": 1, "lootLuck": true },
       { "name": "Strawberry", "chance": 15, "qty": 3 },
       { "name": "Honey", "chance": 15, "qty": 255 },
       { "name": "Treat", "chance": 10, "qty": 5 },
@@ -48,7 +53,7 @@
     "drops": [
       {
         "name": "Rhino Beetle Amulet",
-        "chance": 1,
+        "chance": 0.25,
         "qty": 1,
         "lootLuck": true
       },
@@ -69,7 +74,7 @@
     "desc": "A massive dark blue spider with six long, sharp legs spread wide. It has a large triangular body and four big black eyes on the front of its face.",
     "respawn": "~20 min",
     "drops": [
-      { "name": "Spider Amulet", "chance": 1, "qty": 1, "lootLuck": true },
+      { "name": "Spider Amulet", "chance": 0.25, "qty": 1, "lootLuck": true },
       { "name": "Seed", "chance": 15, "qty": 3 },
       { "name": "Pine Cone", "chance": 15, "qty": 3 },
       { "name": "Honey", "chance": 15, "qty": 755 },
