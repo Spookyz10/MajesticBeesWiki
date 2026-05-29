@@ -1135,6 +1135,97 @@
           ]
         }
       ]
+    },
+    {
+      "id": "beach-shop",
+      "name": "Beach Shop",
+      "title": "Beach Shop",
+      "location": "Beach Zone",
+      "path": "beach-shop.html?shop=beach-shop",
+      "image": "images/items/Coconut.png",
+      "description": "A tropical shop stocked with coconut and sunny equipment for beekeepers exploring the beach. Carries 1 collector, 1 bag, 3 gear pieces, and 1 hydrant purchasable with Honey and coastal materials.",
+      "tags": ["Tools", "Bags", "Gear", "Hydrants"],
+      "about": "A tropical shop stocked with coconut and sunny equipment for beekeepers exploring the beach. It is built around coastal materials, coconuts, and sunny upgrades for harvesting in the Beach Zone.",
+      "sections": [
+        {
+          "title": "Tools",
+          "description": "One collector is sold here. Below are the photos, names, and details for each collector.",
+          "items": [
+            {
+              "name": "Coconut Smash",
+              "type": "Collector",
+              "image": "images/equipment/Coconut Smash.png",
+              "description": "This hammer smashes anything on its way!",
+              "info": "Gathers 75 pollen from 5 flowers in front of you in 0.6 seconds.\nPower: 10",
+              "cost": "50b Honey + 2 Majestic Cocktail + 5 Summer Cocktail + 15 Coconut Drink + 25 Lemonade + 350 Coconut + 350 Wind Essence + 25 Bamboo Flask + 300 Bamboo",
+              "costType": "honey"
+            }
+          ]
+        },
+        {
+          "title": "Bags",
+          "description": "One bag is sold here. Below are the photos, names, and details for each bag.",
+          "items": [
+            {
+              "name": "Coconut Bag",
+              "type": "Bag",
+              "image": "images/items/Coconut.png",
+              "description": "Official item of coconut fashion, known as Tropical Bestie.",
+              "info": "+3,500,000 Capacity\n+750% Convert Rate\n+45 Convert Amount\n+40% Red Pollen\n+40% Blue Pollen\n+20% Bee Ability Rate",
+              "cost": "100b Honey + 3 Majestic Cocktail + 10 Summer Cocktail + 30 Coconut Drink + 50 Lemonade + 500 Coconut + 350 Wind Essence + 25 Bamboo Flask + 500 Bamboo",
+              "costType": "honey"
+            }
+          ]
+        },
+        {
+          "title": "Gear",
+          "description": "Three gear pieces are sold here. Below are the photos, names, and details for each gear piece.",
+          "items": [
+            {
+              "name": "Coconut Belt",
+              "type": "Belt",
+              "image": "images/equipment/Coconut Belt.png",
+              "description": "Essential item of coconut set and new coconut fashion.",
+              "info": "+400,000 Capacity\nx1.75 Capacity Bonus\nx2.25 Convert Rate\nx1.15 Pollen\n+15% Bee Ability Rate\n+100% Loot Luck",
+              "cost": "120b Honey + 2 Majestic Cocktail + 10 Summer Cocktail + 15 Coconut Drink + 30 Lemonade + 450 Coconut + 150 Wind Essence + 20 Cone Extract + 400 Pine Cone",
+              "costType": "honey"
+            },
+            {
+              "name": "Coconut Boots",
+              "type": "Boots",
+              "image": "images/equipment/Coconut Boots.png",
+              "description": "Tropical boots made out of coconuts that were near and true obsidian power.",
+              "info": "+9 Movement Collection\n+8% Player Movespeed\n+10 Jump Power\nx1.15 Obsidian Pollen",
+              "cost": "10b Honey + 3 Summer Cocktail + 10 Coconut Drink + 35 Lemonade + 150 Coconut + 100 Water Essence + 100 Fire Essence + 200 Blueberry + 200 Strawberry",
+              "costType": "honey"
+            },
+            {
+              "name": "Sunny Helmet",
+              "type": "Helmet",
+              "image": "images/equipment/Sunny Helmet.png",
+              "description": "The true sun god helmet.",
+              "info": "+100% Convert Rate\n+50% Loot Luck\nx1.5 Capacity Bonus\n+40% Pollen\n+10% Bee Ability Rate",
+              "cost": "10b Honey + 5 Summer Cocktail + 50 Lemonade + 500 Lemon + 100 Water Essence + 100 Fire Essence + 20 Blueberry Extract + 20 Strawberry Extract + 20 Seed Oil",
+              "costType": "honey"
+            }
+          ]
+        },
+        {
+          "title": "Hydrants",
+          "description": "One hydrant is sold here. Below are the photos, names, and details for each hydrant.",
+          "items": [
+            {
+              "name": "Sunny Hydrant",
+              "type": "Hydrant",
+              "image": "images/equipment/Sunny Hydrant.png",
+              "description": "Yellow and bright sunny themed hydrant.",
+              "info": "Amount: 2\nRadius: 22\nRate: 4s\nPower: 7",
+              "cost": "50b Honey + 2 Majestic Cocktail + 5 Summer Cocktail + 25 Lemonade + 750 Lemon + 250 Wind Essence + 25 Cone Extract + 500 Pine Cone + 25 Seed Oil",
+              "costType": "honey"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

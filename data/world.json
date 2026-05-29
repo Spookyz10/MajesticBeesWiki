@@ -394,6 +394,189 @@
           "image": "images/items/Pine Cone.png"
         }
       ]
+    },
+    {
+      "id": "moon-extract",
+      "name": "Moon Extract",
+      "image": "images/items/Moon Extract.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 1000000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Lunar Treat",
+          "amount": 50,
+          "image": "images/items/Lunar Treat.png"
+        },
+        {
+          "item": "Royal Jelly",
+          "amount": 50,
+          "image": "images/items/Royal Jelly.png"
+        }
+      ]
+    },
+    {
+      "id": "majestic-cocktail",
+      "name": "Majestic Cocktail",
+      "image": "images/items/Majestic Cocktail.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 25000000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Moon Extract",
+          "amount": 3,
+          "image": "images/items/Moon Extract.png"
+        },
+        {
+          "item": "Bamboo Flask",
+          "amount": 5,
+          "image": "images/items/Bamboo Flask.png"
+        },
+        {
+          "item": "Strawberry Extract",
+          "amount": 10,
+          "image": "images/items/Strawberry Extract.png"
+        },
+        {
+          "item": "Blueberry Extract",
+          "amount": 10,
+          "image": "images/items/Blueberry Extract.png"
+        },
+        {
+          "item": "Cone Extract",
+          "amount": 10,
+          "image": "images/items/Cone Extract.png"
+        },
+        {
+          "item": "Seed Oil",
+          "amount": 10,
+          "image": "images/items/Seed Oil.png"
+        },
+        {
+          "item": "Shiny Jelly",
+          "amount": 3,
+          "image": "images/items/Shiny Jelly.png"
+        }
+      ]
+    },
+    {
+      "id": "shiny-jelly",
+      "name": "Shiny Jelly",
+      "image": "images/items/Shiny Jelly.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 5000000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Lunar Treat",
+          "amount": 25,
+          "image": "images/items/Lunar Treat.png"
+        },
+        {
+          "item": "Royal Jelly",
+          "amount": 500,
+          "image": "images/items/Royal Jelly.png"
+        }
+      ]
+    },
+    {
+      "id": "night-bell",
+      "name": "Night Bell",
+      "image": "images/items/Night Bell.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 5000000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Lunar Treat",
+          "amount": 250,
+          "image": "images/items/Lunar Treat.png"
+        },
+        {
+          "item": "Shiny Jelly",
+          "amount": 3,
+          "image": "images/items/Shiny Jelly.png"
+        }
+      ]
+    },
+    {
+      "id": "coconut-drink",
+      "name": "Coconut Drink",
+      "image": "images/items/Coconut Drink.png",
+      "event": "summer",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 500000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Coconut",
+          "amount": 25,
+          "image": "images/items/Coconut.png"
+        },
+        {
+          "item": "Shiny Jelly",
+          "amount": 1,
+          "image": "images/items/Shiny Jelly.png"
+        }
+      ]
+    },
+    {
+      "id": "lemonade",
+      "name": "Lemonade",
+      "image": "images/items/Lemonade.png",
+      "event": "summer",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 500000,
+          "image": "images/currencies/Honey.png"
+        },
+        { "item": "Lemon", "amount": 25, "image": "images/items/Lemon.png" },
+        {
+          "item": "Shiny Jelly",
+          "amount": 1,
+          "image": "images/items/Shiny Jelly.png"
+        }
+      ]
+    },
+    {
+      "id": "summer-cocktail",
+      "name": "Summer Cocktail",
+      "image": "images/items/Summer Cocktail.png",
+      "event": "summer",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 5000000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Coconut Drink",
+          "amount": 5,
+          "image": "images/items/Coconut Drink.png"
+        },
+        {
+          "item": "Lemonade",
+          "amount": 5,
+          "image": "images/items/Lemonade.png"
+        },
+        {
+          "item": "Shiny Jelly",
+          "amount": 3,
+          "image": "images/items/Shiny Jelly.png"
+        }
+      ]
     }
   ]
 }

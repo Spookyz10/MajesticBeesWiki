@@ -61,10 +61,6 @@ function buildMobCard(mob) {
             <span class="mob-stat-label">Respawn</span>
             <span class="mob-stat-value">${mob.respawn}</span>
           </div>
-          <div class="mob-stat">
-            <span class="mob-stat-label">Tokens</span>
-            <span class="mob-stat-value">${mob.tokens}</span>
-          </div>
         </div>
         <div class="mob-drops">
           <div class="mob-drops-label">Possible Drops</div>

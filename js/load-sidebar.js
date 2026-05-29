@@ -34,6 +34,7 @@ function loadSidebar() {
       <a href="${basePath}hive.html">Hive</a>
       <a href="${basePath}items.html">Items</a>
       <a href="${basePath}mobs.html">Mobs</a>
+      <a href="${basePath}planters.html">Planters</a>
       <a href="${basePath}shops.html">Shops</a>
       <a href="${basePath}starflowers.html">Starflowers</a>
       <a href="${basePath}store.html">Store</a>
@@ -69,6 +70,7 @@ function createMobileSheet(basePath) {
       <a href="${basePath}hive.html">Hive</a>
       <a href="${basePath}items.html">Items</a>
       <a href="${basePath}mobs.html">Mobs</a>
+      <a href="${basePath}planters.html">Planters</a>
       <a href="${basePath}shops.html">Shops</a>
       <a href="${basePath}starflowers.html">Starflowers</a>
       <a href="${basePath}store.html">Store</a>

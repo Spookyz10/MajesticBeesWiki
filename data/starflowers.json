@@ -24,6 +24,11 @@
       "tier": "Mythic",
       "weight": 2,
       "approxPct": "0.17"
+    },
+    {
+      "tier": "Lunar",
+      "weight": 0,
+      "approxPct": "TBD"
     }
   ],
   "tiers": [
@@ -93,6 +98,12 @@
             "chance": 15,
             "amount": 1,
             "image": "images/items/Seed.png"
+          },
+          {
+            "item": "Star Amulet",
+            "chance": 0.1,
+            "amount": 1,
+            "image": "images/amulets/Star Amulet.png"
           },
           {
             "item": "Starflower Sticker",
@@ -194,6 +205,12 @@
             "chance": 15,
             "amount": 2,
             "image": "images/items/Seed.png"
+          },
+          {
+            "item": "Rare Star Amulet",
+            "chance": 0.1,
+            "amount": 1,
+            "image": "images/amulets/Rare Star Amulet.png"
           },
           {
             "item": "Starflower Sticker",
@@ -303,6 +320,12 @@
             "image": "images/items/Seed.png"
           },
           {
+            "item": "Epic Star Amulet",
+            "chance": 0.1,
+            "amount": 1,
+            "image": "images/amulets/Epic Star Amulet.png"
+          },
+          {
             "item": "Starflower Sticker",
             "chance": 0.01,
             "amount": 1,
@@ -408,6 +431,12 @@
             "chance": 15,
             "amount": 3,
             "image": "images/items/Seed.png"
+          },
+          {
+            "item": "Legendary Star Amulet",
+            "chance": 0.1,
+            "amount": 1,
+            "image": "images/amulets/Legendary Star Amulet.png"
           },
           {
             "item": "Starflower Sticker",
@@ -523,6 +552,12 @@
             "image": "images/items/Seed.png"
           },
           {
+            "item": "Mythic Star Amulet",
+            "chance": 0.1,
+            "amount": 1,
+            "image": "images/amulets/Mythic star Amulet.png"
+          },
+          {
             "item": "Starflower Sticker",
             "chance": 0.01,
             "amount": 1,
@@ -597,6 +632,95 @@
         ]
       },
       "colorBgHeader": "rgba(115,90,162,0.18)"
+    },
+    {
+      "id": "lunar",
+      "name": "Lunar",
+      "image": "images/starflowers/Starflower.png",
+      "health": 50000,
+      "healthLabel": "50,000",
+      "color": "#d7ddff",
+      "colorBg": "rgba(162,170,240,0.08)",
+      "colorBorder": "rgba(176,184,245,0.26)",
+      "drops": {
+        "White Field": [
+          {
+            "item": "Pine Cone",
+            "chance": 15,
+            "amount": 1,
+            "image": "images/items/Pine Cone.png"
+          },
+          {
+            "item": "Wind Essence",
+            "chance": 5,
+            "amount": 1,
+            "image": "images/items/Wind Essence.png"
+          }
+        ],
+        "Blue Field": [
+          {
+            "item": "Blueberry",
+            "chance": 15,
+            "amount": 1,
+            "image": "images/items/Blueberry.png"
+          },
+          {
+            "item": "Water Essence",
+            "chance": 5,
+            "amount": 1,
+            "image": "images/items/Water Essence.png"
+          }
+        ],
+        "Red Field": [
+          {
+            "item": "Strawberry",
+            "chance": 15,
+            "amount": 1,
+            "image": "images/items/Strawberry.png"
+          },
+          {
+            "item": "Fire Essence",
+            "chance": 5,
+            "amount": 1,
+            "image": "images/items/Fire Essence.png"
+          }
+        ],
+        "Bamboo Field": [
+          {
+            "item": "Bamboo",
+            "chance": 15,
+            "amount": 1,
+            "image": "images/items/Bamboo.png"
+          }
+        ],
+        "All Fields": [
+          {
+            "item": "Lunar Amulet",
+            "chance": 0.1,
+            "amount": 1,
+            "image": "images/amulets/Lunar Amulet.png"
+          },
+          {
+            "item": "Lunar Treat",
+            "chance": 35,
+            "amount": 1,
+            "image": "images/items/Lunar Treat.png"
+          },
+          {
+            "item": "Starflower Sticker",
+            "chance": 0.01,
+            "amount": 1,
+            "image": "images/hive/stickers/Starflower Sticker.png"
+          },
+          {
+            "item": "Honey",
+            "chance": 15,
+            "amount": 100,
+            "image": "images/currencies/Honey.png"
+          }
+        ]
+      },
+      "colorBgHeader": "rgba(162,170,240,0.16)"
     }
   ]
 }

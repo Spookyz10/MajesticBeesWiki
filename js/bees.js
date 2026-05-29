@@ -8,6 +8,7 @@ async function loadBees() {
     epic: [],
     legendary: [],
     special: [],
+    limited: [],
   };
 
   const beesArray = Array.isArray(data) ? data : Object.values(data);
