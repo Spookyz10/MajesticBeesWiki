@@ -11,68 +11,140 @@
         "number": 1,
         "name": "Bee Journey",
         "requirements": [
-          { "type": "gather_field", "amount": 250, "field": "Mushroom Field" }
+          {
+            "type": "gather_field",
+            "amount": 250,
+            "field": "Mushroom Field"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 250 },
-          { "item": "Treat", "amount": 1 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 250
+          },
+          {
+            "item": "Treat",
+            "amount": 1
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 2,
         "name": "The Art of Conversion",
         "requirements": [
-          { "type": "convert", "amount": 500, "resource": "Honey" }
+          {
+            "type": "convert",
+            "amount": 500
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 300 },
-          { "item": "Treat", "amount": 1 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 300
+          },
+          {
+            "item": "Treat",
+            "amount": 1
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 3,
         "name": "Daisy's Call",
         "requirements": [
-          { "type": "gather_field", "amount": 800, "field": "Daisy Field" }
+          {
+            "type": "gather_field",
+            "amount": 800,
+            "field": "Daisy Field"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 750 },
-          { "item": "Royal Jelly", "amount": 1 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 750
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 1
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 4,
         "name": "Clover Conquest",
         "requirements": [
-          { "type": "gather_field", "amount": 1500, "field": "Clover Field" }
+          {
+            "type": "gather_field",
+            "amount": 1500,
+            "field": "Clover Field"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 900 },
-          { "item": "Treat", "amount": 2 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 900
+          },
+          {
+            "item": "Treat",
+            "amount": 2
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 5,
         "name": "Colors of the Wild",
         "requirements": [
-          { "type": "gather_pollen", "amount": 2500, "color": "White" },
-          { "type": "gather_pollen", "amount": 2500, "color": "Red" }
+          {
+            "type": "gather_pollen",
+            "amount": 2500,
+            "color": "White"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 2500,
+            "color": "Red"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 2000 },
-          { "item": "Treat", "amount": 3 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 2000
+          },
+          {
+            "item": "Treat",
+            "amount": 3
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 6,
         "name": "Blue Thorns and Blackberries",
         "requirements": [
-          { "type": "gather_pollen", "amount": 5000, "color": "Blue" },
+          {
+            "type": "gather_pollen",
+            "amount": 5000,
+            "color": "Blue"
+          },
           {
             "type": "gather_field",
             "amount": 4000,
@@ -80,75 +152,183 @@
           }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 4000 },
-          { "item": "Royal Jelly", "amount": 1 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 4000
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 1
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 7,
         "name": "The Bear's Grand Trial",
         "requirements": [
-          { "type": "gather_pollen", "amount": 10000 },
-          { "type": "convert", "amount": 10000, "resource": "Honey" }
+          {
+            "type": "gather_pollen",
+            "amount": 10000
+          },
+          {
+            "type": "convert",
+            "amount": 10000
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 12000 },
-          { "item": "Treat", "amount": 5 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 12000
+          },
+          {
+            "item": "Treat",
+            "amount": 5
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 8,
         "name": "The Tricolor Ultimatum",
         "requirements": [
-          { "type": "gather_pollen", "amount": 10000, "color": "Red" },
-          { "type": "gather_pollen", "amount": 10000, "color": "White" },
-          { "type": "gather_pollen", "amount": 10000, "color": "Blue" }
+          {
+            "type": "gather_pollen",
+            "amount": 10000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 10000,
+            "color": "White"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 10000,
+            "color": "Blue"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 20000 },
-          { "item": "Treat", "amount": 10 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 20000
+          },
+          {
+            "item": "Treat",
+            "amount": 10
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 9,
         "name": "Fields of Fury",
         "requirements": [
-          { "type": "gather_pollen", "amount": 12000, "color": "Red" },
-          { "type": "gather_field", "amount": 15000, "field": "Clover Field" },
-          { "type": "gather_field", "amount": 15000, "field": "Daisy Field" }
+          {
+            "type": "gather_pollen",
+            "amount": 12000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_field",
+            "amount": 15000,
+            "field": "Clover Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 15000,
+            "field": "Daisy Field"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 25000 },
-          { "item": "Royal Jelly", "amount": 1 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 25000
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 1
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 10,
         "name": "The Legend of the Silver Hive",
         "requirements": [
-          { "type": "gather_field", "amount": 5000, "field": "Mushroom Field" },
-          { "type": "gather_field", "amount": 10000, "field": "Daisy Field" },
-          { "type": "gather_field", "amount": 10000, "field": "Clover Field" },
+          {
+            "type": "gather_field",
+            "amount": 5000,
+            "field": "Mushroom Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 10000,
+            "field": "Daisy Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 10000,
+            "field": "Clover Field"
+          },
           {
             "type": "gather_field",
             "amount": 12000,
             "field": "Blackberry Field"
           },
-          { "type": "gather_pollen", "amount": 15000, "color": "Red" },
-          { "type": "gather_pollen", "amount": 15000, "color": "White" },
-          { "type": "gather_pollen", "amount": 15000, "color": "Blue" },
-          { "type": "convert", "amount": 20000, "resource": "Honey" }
+          {
+            "type": "gather_pollen",
+            "amount": 15000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 15000,
+            "color": "White"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 15000,
+            "color": "Blue"
+          },
+          {
+            "type": "convert",
+            "amount": 20000
+          }
         ],
         "rewards": [
-          { "item": "Silver Egg", "amount": 1 },
-          { "item": "Honey", "amount": 50000 },
-          { "item": "Royal Jelly", "amount": 3 },
-          { "item": "Treat", "amount": 15 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Silver Egg",
+            "amount": 1
+          },
+          {
+            "item": "Honey",
+            "amount": 50000
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 3
+          },
+          {
+            "item": "Treat",
+            "amount": 15
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
@@ -162,9 +342,18 @@
           }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 30000 },
-          { "item": "Treat", "amount": 10 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 30000
+          },
+          {
+            "item": "Treat",
+            "amount": 10
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
@@ -178,16 +367,29 @@
           }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 50000 },
-          { "item": "Treat", "amount": 10 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 50000
+          },
+          {
+            "item": "Treat",
+            "amount": 10
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 13,
         "name": "Petals and Sunbeams",
         "requirements": [
-          { "type": "gather_field", "amount": 50000, "field": "Daisy Field" },
+          {
+            "type": "gather_field",
+            "amount": 50000,
+            "field": "Daisy Field"
+          },
           {
             "type": "gather_field",
             "amount": 100000,
@@ -195,9 +397,18 @@
           }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 90000 },
-          { "item": "Royal Jelly", "amount": 2 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 90000
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 2
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
@@ -216,16 +427,29 @@
           }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 110000 },
-          { "item": "Treat", "amount": 10 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 110000
+          },
+          {
+            "item": "Treat",
+            "amount": 10
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 15,
         "name": "Blaze of Red",
         "requirements": [
-          { "type": "gather_pollen", "amount": 100000, "color": "Red" },
+          {
+            "type": "gather_pollen",
+            "amount": 100000,
+            "color": "Red"
+          },
           {
             "type": "gather_field",
             "amount": 150000,
@@ -233,9 +457,18 @@
           }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 125000 },
-          { "item": "Treat", "amount": 10 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 125000
+          },
+          {
+            "item": "Treat",
+            "amount": 10
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
@@ -247,7 +480,11 @@
             "amount": 200000,
             "field": "Red Flowers Field"
           },
-          { "type": "gather_pollen", "amount": 150000, "color": "Red" },
+          {
+            "type": "gather_pollen",
+            "amount": 150000,
+            "color": "Red"
+          },
           {
             "type": "gather_field",
             "amount": 75000,
@@ -255,9 +492,18 @@
           }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 150000 },
-          { "item": "Royal Jelly", "amount": 3 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 150000
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 3
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
@@ -269,18 +515,34 @@
             "amount": 250000,
             "field": "Red Flowers Field"
           },
-          { "type": "gather_pollen", "amount": 200000, "color": "Red" },
+          {
+            "type": "gather_pollen",
+            "amount": 200000,
+            "color": "Red"
+          },
           {
             "type": "gather_field",
             "amount": 100000,
             "field": "Blackberry Field"
           },
-          { "type": "convert", "amount": 150000, "resource": "Honey" }
+          {
+            "type": "convert",
+            "amount": 150000
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 200000 },
-          { "item": "Royal Jelly", "amount": 3 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 200000
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 3
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
@@ -297,66 +559,151 @@
             "amount": 250000,
             "field": "Blue Flowers Field"
           },
-          { "type": "gather_field", "amount": 200000, "field": "Daisy Field" },
-          { "type": "gather_field", "amount": 150000, "field": "Clover Field" },
-          { "type": "convert", "amount": 200000, "resource": "Honey" }
+          {
+            "type": "gather_field",
+            "amount": 200000,
+            "field": "Daisy Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 150000,
+            "field": "Clover Field"
+          },
+          {
+            "type": "convert",
+            "amount": 200000
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 250000 },
-          { "item": "Royal Jelly", "amount": 3 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 250000
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 3
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 19,
         "name": "The Great Conversion",
         "requirements": [
-          { "type": "convert", "amount": 500000, "resource": "Honey" }
+          {
+            "type": "convert",
+            "amount": 500000
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 300000 },
-          { "item": "Royal Jelly", "amount": 3 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 300000
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 3
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 20,
         "name": "Red Without End",
         "requirements": [
-          { "type": "gather_pollen", "amount": 700000, "color": "Red" }
+          {
+            "type": "gather_pollen",
+            "amount": 700000,
+            "color": "Red"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 350000 },
-          { "item": "Royal Jelly", "amount": 3 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 350000
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 3
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 21,
         "name": "The Tricolor Apex",
         "requirements": [
-          { "type": "gather_pollen", "amount": 500000, "color": "Red" },
-          { "type": "gather_pollen", "amount": 500000, "color": "White" },
-          { "type": "gather_pollen", "amount": 500000, "color": "Blue" }
+          {
+            "type": "gather_pollen",
+            "amount": 500000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 500000,
+            "color": "White"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 500000,
+            "color": "Blue"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 600000 },
-          { "item": "Strawberry Extract", "amount": 1 },
-          { "item": "Blueberry Extract", "amount": 1 },
-          { "item": "Cone Extract", "amount": 1 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 600000
+          },
+          {
+            "item": "Strawberry Extract",
+            "amount": 1
+          },
+          {
+            "item": "Blueberry Extract",
+            "amount": 1
+          },
+          {
+            "item": "Cone Extract",
+            "amount": 1
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 22,
         "name": "Web of the Forgotten",
         "requirements": [
-          { "type": "gather_field", "amount": 750000, "field": "Spider Field" }
+          {
+            "type": "gather_field",
+            "amount": 750000,
+            "field": "Spider Field"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 650000 },
-          { "item": "Seed Oil", "amount": 1 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 650000
+          },
+          {
+            "item": "Seed Oil",
+            "amount": 1
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
@@ -370,9 +717,18 @@
           }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 700000 },
-          { "item": "Treat", "amount": 25 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 700000
+          },
+          {
+            "item": "Treat",
+            "amount": 25
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
@@ -386,9 +742,18 @@
           }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 800000 },
-          { "item": "Royal Jelly", "amount": 10 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 800000
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 10
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
@@ -400,8 +765,16 @@
             "amount": 500000,
             "field": "Mushroom Field"
           },
-          { "type": "gather_field", "amount": 750000, "field": "Daisy Field" },
-          { "type": "gather_field", "amount": 750000, "field": "Clover Field" },
+          {
+            "type": "gather_field",
+            "amount": 750000,
+            "field": "Daisy Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 750000,
+            "field": "Clover Field"
+          },
           {
             "type": "gather_field",
             "amount": 1000000,
@@ -427,53 +800,133 @@
             "amount": 750000,
             "field": "Blackberry Field"
           },
-          { "type": "gather_field", "amount": 750000, "field": "Spider Field" },
+          {
+            "type": "gather_field",
+            "amount": 750000,
+            "field": "Spider Field"
+          },
           {
             "type": "gather_field",
             "amount": 1000000,
             "field": "Red Flowers Field"
           },
-          { "type": "gather_pollen", "amount": 500000, "color": "Red" },
-          { "type": "gather_pollen", "amount": 500000, "color": "White" },
-          { "type": "gather_pollen", "amount": 500000, "color": "Blue" },
-          { "type": "convert", "amount": 1000000, "resource": "Honey" }
+          {
+            "type": "gather_pollen",
+            "amount": 500000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 500000,
+            "color": "White"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 500000,
+            "color": "Blue"
+          },
+          {
+            "type": "convert",
+            "amount": 1000000
+          }
         ],
         "rewards": [
-          { "item": "Gold Egg", "amount": 1 },
-          { "item": "Honey", "amount": 5000000 },
-          { "item": "Royal Jelly", "amount": 25 },
-          { "item": "Treat", "amount": 50 },
-          { "item": "Strawberry Extract", "amount": 3 },
-          { "item": "Blueberry Extract", "amount": 3 },
-          { "item": "Cone Extract", "amount": 3 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Gold Egg",
+            "amount": 1
+          },
+          {
+            "item": "Honey",
+            "amount": 5000000
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 25
+          },
+          {
+            "item": "Treat",
+            "amount": 50
+          },
+          {
+            "item": "Strawberry Extract",
+            "amount": 3
+          },
+          {
+            "item": "Blueberry Extract",
+            "amount": 3
+          },
+          {
+            "item": "Cone Extract",
+            "amount": 3
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 26,
         "name": "The Crimson Convergence",
         "requirements": [
-          { "type": "gather_pollen", "amount": 5000000, "color": "Red" },
-          { "type": "gather_pollen", "amount": 5000000, "color": "White" },
-          { "type": "gather_pollen", "amount": 5000000, "color": "Blue" }
+          {
+            "type": "gather_pollen",
+            "amount": 5000000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 5000000,
+            "color": "White"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 5000000,
+            "color": "Blue"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 6000000 },
-          { "item": "Royal Jelly", "amount": 5 },
-          { "item": "Starflower", "amount": 1 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 6000000
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 5
+          },
+          {
+            "item": "Starflower",
+            "amount": 1
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 27,
         "name": "The Rose Garden Requiem",
         "requirements": [
-          { "type": "gather_field", "amount": 10000000, "field": "Rose Field" }
+          {
+            "type": "gather_field",
+            "amount": 10000000,
+            "field": "Rose Field"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 8000000 },
-          { "item": "Royal Jelly", "amount": 5 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 8000000
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 5
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
@@ -487,9 +940,18 @@
           }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 12000000 },
-          { "item": "Royal Jelly", "amount": 5 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 12000000
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 5
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
@@ -503,9 +965,18 @@
           }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 15000000 },
-          { "item": "Royal Jelly", "amount": 5 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 15000000
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 5
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
@@ -517,7 +988,11 @@
             "amount": 15000000,
             "field": "Snowdrops Field"
           },
-          { "type": "gather_field", "amount": 15000000, "field": "Rose Field" },
+          {
+            "type": "gather_field",
+            "amount": 15000000,
+            "field": "Rose Field"
+          },
           {
             "type": "gather_field",
             "amount": 15000000,
@@ -525,10 +1000,518 @@
           }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 25000000 },
-          { "item": "Royal Jelly", "amount": 5 },
-          { "item": "Starflower", "amount": 1 },
-          { "item": "Black Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 25000000
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 5
+          },
+          {
+            "item": "Starflower",
+            "amount": 1
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 31,
+        "name": "Field of the Forgotten",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 20000000,
+            "field": "Bamboo Field"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 5000000,
+            "color": "Red"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 15000000
+          },
+          {
+            "item": "Treat",
+            "amount": 10
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 3
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 32,
+        "name": "Yellow and Blue",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 25000000,
+            "field": "Banana Field"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 8000000,
+            "color": "Blue"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 20000000
+          },
+          {
+            "item": "Treat",
+            "amount": 12
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 4
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 33,
+        "name": "Crimson Harvest",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 30000000,
+            "field": "Raspberry Field"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 10000000,
+            "color": "Red"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 25000000
+          },
+          {
+            "item": "Treat",
+            "amount": 15
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 5
+          },
+          {
+            "item": "Starflower",
+            "amount": 1
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 34,
+        "name": "The White Walk",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 20000000,
+            "field": "Clover Field"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 15000000,
+            "color": "White"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 22000000
+          },
+          {
+            "item": "Treat",
+            "amount": 12
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 4
+          },
+          {
+            "item": "Moon Extract",
+            "amount": 2
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 35,
+        "name": "The Jelly Throne",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 20000000,
+            "field": "Strawberry Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 20000000,
+            "field": "Mushroom Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 20000000,
+            "field": "Blackberry Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 15000000,
+            "field": "Daisy Field"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 10000000,
+            "color": "Blue"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Shiny Jelly",
+            "amount": 1
+          },
+          {
+            "item": "Honey",
+            "amount": 40000000
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 8
+          },
+          {
+            "item": "Treat",
+            "amount": 20
+          },
+          {
+            "item": "Starflower",
+            "amount": 2
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 36,
+        "name": "Silk and Thorns",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 25000000,
+            "field": "Spider Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 20000000,
+            "field": "Bamboo Field"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 30000000
+          },
+          {
+            "item": "Treat",
+            "amount": 15
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 5
+          },
+          {
+            "item": "Moon Extract",
+            "amount": 3
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 37,
+        "name": "The Bell and the Moon",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 30000000,
+            "field": "Bellflower Field"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 12000000,
+            "color": "White"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 35000000
+          },
+          {
+            "item": "Moon Extract",
+            "amount": 5
+          },
+          {
+            "item": "Treat",
+            "amount": 18
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 6
+          },
+          {
+            "item": "Starflower",
+            "amount": 2
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 38,
+        "name": "Five Faces of the Forest",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 25000000,
+            "field": "Banana Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 25000000,
+            "field": "Raspberry Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 25000000,
+            "field": "Clover Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 25000000,
+            "field": "Mushroom Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 25000000,
+            "field": "Rose Field"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 15000000,
+            "color": "Red"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 60000000
+          },
+          {
+            "item": "Treat",
+            "amount": 25
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 8
+          },
+          {
+            "item": "Moon Extract",
+            "amount": 4
+          },
+          {
+            "item": "Starflower",
+            "amount": 2
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 39,
+        "name": "The Long Shadow",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 40000000,
+            "field": "Spider Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 40000000,
+            "field": "Blackberry Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 35000000,
+            "field": "Bellflower Field"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 20000000,
+            "color": "Blue"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 80000000
+          },
+          {
+            "item": "Moon Extract",
+            "amount": 7
+          },
+          {
+            "item": "Treat",
+            "amount": 30
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 10
+          },
+          {
+            "item": "Starflower",
+            "amount": 3
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 40,
+        "name": "The Final Awakening",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 30000000,
+            "field": "Bamboo Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 30000000,
+            "field": "Banana Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 30000000,
+            "field": "Raspberry Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 35000000,
+            "field": "Rose Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 35000000,
+            "field": "Pine Cone Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 30000000,
+            "field": "Snowdrops Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 30000000,
+            "field": "Spider Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 30000000,
+            "field": "Bellflower Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 25000000,
+            "field": "Mushroom Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 25000000,
+            "field": "Daisy Field"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 20000000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 20000000,
+            "color": "Blue"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 15000000,
+            "color": "White"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Diamond Egg",
+            "amount": 1
+          },
+          {
+            "item": "Honey",
+            "amount": 200000000
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 20
+          },
+          {
+            "item": "Treat",
+            "amount": 50
+          },
+          {
+            "item": "Starflower",
+            "amount": 5
+          },
+          {
+            "item": "Moon Extract",
+            "amount": 10
+          },
+          {
+            "item": "Black Bear Aura",
+            "amount": 1
+          }
         ]
       }
     ],
@@ -549,88 +1532,193 @@
         "number": 1,
         "name": "Red Clover",
         "requirements": [
-          { "type": "gather_pollen", "amount": 500, "color": "Red" },
-          { "type": "gather_field", "amount": 500, "field": "Clover Field" }
+          {
+            "type": "gather_pollen",
+            "amount": 500,
+            "color": "Red"
+          },
+          {
+            "type": "gather_field",
+            "amount": 500,
+            "field": "Clover Field"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 500 },
-          { "item": "Treat", "amount": 3 },
-          { "item": "Brown Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 500
+          },
+          {
+            "item": "Treat",
+            "amount": 3
+          },
+          {
+            "item": "Brown Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 2,
         "name": "Token of Trust",
         "requirements": [
-          { "type": "collect_token", "amount": 10, "token": "Honey" }
+          {
+            "type": "collect_token",
+            "amount": 10,
+            "token": "Honey"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 900 },
-          { "item": "Treat", "amount": 3 },
-          { "item": "Brown Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 900
+          },
+          {
+            "item": "Treat",
+            "amount": 3
+          },
+          {
+            "item": "Brown Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 3,
         "name": "Berry Good Deal",
         "requirements": [
-          { "type": "collect_token", "amount": 5, "token": "Strawberry" }
+          {
+            "type": "collect_token",
+            "amount": 5,
+            "token": "Strawberry"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 1100 },
-          { "item": "Treat", "amount": 3 },
-          { "item": "Brown Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 1100
+          },
+          {
+            "item": "Treat",
+            "amount": 3
+          },
+          {
+            "item": "Brown Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 4,
         "name": "Berries and Cones",
         "requirements": [
-          { "type": "collect_token", "amount": 5, "token": "Blueberry" },
-          { "type": "collect_token", "amount": 5, "token": "Pine Cone" }
+          {
+            "type": "collect_token",
+            "amount": 5,
+            "token": "Blueberry"
+          },
+          {
+            "type": "collect_token",
+            "amount": 5,
+            "token": "Pine Cone"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 1500 },
-          { "item": "Royal Jelly", "amount": 1 },
-          { "item": "Brown Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 1500
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 1
+          },
+          {
+            "item": "Brown Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 5,
         "name": "The Treat Trade",
         "requirements": [
-          { "type": "collect_token", "amount": 10, "token": "Treat" }
+          {
+            "type": "collect_token",
+            "amount": 10,
+            "token": "Treat"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 1500 },
-          { "item": "Royal Jelly", "amount": 1 },
-          { "item": "Brown Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 1500
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 1
+          },
+          {
+            "item": "Brown Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 6,
         "name": "Sweet and Sweeter",
         "requirements": [
-          { "type": "collect_token", "amount": 25, "token": "Honey" },
-          { "type": "collect_token", "amount": 5, "token": "Treat" }
+          {
+            "type": "collect_token",
+            "amount": 25,
+            "token": "Honey"
+          },
+          {
+            "type": "collect_token",
+            "amount": 5,
+            "token": "Treat"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 2500 },
-          { "item": "Royal Jelly", "amount": 1 },
-          { "item": "Brown Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 2500
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 1
+          },
+          {
+            "item": "Brown Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 7,
         "name": "Boost of Both Worlds",
         "requirements": [
-          { "type": "use_ability", "amount": 5, "ability": "Red Pollen Boost" },
-          { "type": "use_ability", "amount": 5, "ability": "Blue Pollen Boost" }
+          {
+            "type": "use_ability",
+            "amount": 5
+          },
+          {
+            "type": "use_ability",
+            "amount": 5
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 4000 },
-          { "item": "Royal Jelly", "amount": 1 },
-          { "item": "Brown Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 4000
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 1
+          },
+          {
+            "item": "Brown Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
@@ -639,41 +1727,83 @@
         "requirements": [
           {
             "type": "use_ability",
-            "amount": 10,
-            "ability": "White Pollen Boost"
+            "amount": 10
           },
-          { "type": "use_ability", "amount": 5, "ability": "Bomb" }
+          {
+            "type": "use_ability",
+            "amount": 5
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 10000 },
-          { "item": "Royal Jelly", "amount": 1 },
-          { "item": "Brown Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 10000
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 1
+          },
+          {
+            "item": "Brown Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 9,
         "name": "Beyond the Blast",
         "requirements": [
-          { "type": "use_ability", "amount": 10, "ability": "Bomb+" }
+          {
+            "type": "use_ability",
+            "amount": 10
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 15000 },
-          { "item": "Royal Jelly", "amount": 1 },
-          { "item": "Brown Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 15000
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 1
+          },
+          {
+            "item": "Brown Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 10,
         "name": "The Silver Detonation",
         "requirements": [
-          { "type": "collect_token", "amount": 50, "token": "Honey" },
-          { "type": "use_ability", "amount": 15, "ability": "Bomb" },
-          { "type": "use_ability", "amount": 10, "ability": "Bomb+" }
+          {
+            "type": "collect_token",
+            "amount": 50,
+            "token": "Honey"
+          },
+          {
+            "type": "use_ability",
+            "amount": 15
+          },
+          {
+            "type": "use_ability",
+            "amount": 10
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 20000 },
-          { "item": "Silver Egg", "amount": 1 },
-          { "item": "Brown Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 20000
+          },
+          {
+            "item": "Silver Egg",
+            "amount": 1
+          },
+          {
+            "item": "Brown Bear Aura",
+            "amount": 1
+          }
         ]
       }
     ],
@@ -694,106 +1824,289 @@
         "number": 1,
         "name": "Chill Starter",
         "requirements": [
-          { "type": "gather_pollen", "amount": 250 },
-          { "type": "gather_pollen", "amount": 250, "color": "Red" },
-          { "type": "gather_pollen", "amount": 250, "color": "Blue" },
-          { "type": "gather_pollen", "amount": 250, "color": "White" },
-          { "type": "gather_field", "amount": 250, "field": "Mushroom Field" }
+          {
+            "type": "gather_pollen",
+            "amount": 250
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 250,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 250,
+            "color": "Blue"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 250,
+            "color": "White"
+          },
+          {
+            "type": "gather_field",
+            "amount": 250,
+            "field": "Mushroom Field"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 100 },
-          { "item": "Basic Egg", "amount": 1 },
-          { "item": "Polar Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 100
+          },
+          {
+            "item": "Basic Egg",
+            "amount": 1
+          },
+          {
+            "item": "Polar Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 2,
         "name": "Frosty Flowers",
         "requirements": [
-          { "type": "gather_pollen", "amount": 1000 },
-          { "type": "gather_pollen", "amount": 1000, "color": "Red" },
-          { "type": "gather_pollen", "amount": 1000, "color": "Blue" },
-          { "type": "gather_pollen", "amount": 1000, "color": "White" },
-          { "type": "gather_field", "amount": 1000, "field": "Clover Field" }
+          {
+            "type": "gather_pollen",
+            "amount": 1000
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 1000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 1000,
+            "color": "Blue"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 1000,
+            "color": "White"
+          },
+          {
+            "type": "gather_field",
+            "amount": 1000,
+            "field": "Clover Field"
+          }
         ],
         "rewards": [
-          { "item": "Seed", "amount": 25 },
-          { "item": "Royal Jelly", "amount": 5 },
-          { "item": "Polar Bear Aura ", "amount": 1 }
+          {
+            "item": "Seed",
+            "amount": 25
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 5
+          },
+          {
+            "item": "Polar Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 3,
         "name": "Chill Style",
         "requirements": [
-          { "type": "gather_pollen", "amount": 2500 },
-          { "type": "gather_pollen", "amount": 2500, "color": "Red" },
-          { "type": "gather_pollen", "amount": 2500, "color": "Blue" },
-          { "type": "gather_pollen", "amount": 2500, "color": "White" },
-          { "type": "gather_field", "amount": 2500, "field": "Clover Field" }
+          {
+            "type": "gather_pollen",
+            "amount": 2500
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 2500,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 2500,
+            "color": "Blue"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 2500,
+            "color": "White"
+          },
+          {
+            "type": "gather_field",
+            "amount": 2500,
+            "field": "Clover Field"
+          }
         ],
         "rewards": [
-          { "item": "Seed", "amount": 50 },
-          { "item": "Converter", "amount": 1 },
-          { "item": "Polar Bear Aura ", "amount": 1 }
+          {
+            "item": "Seed",
+            "amount": 50
+          },
+          {
+            "item": "Converter",
+            "amount": 1
+          },
+          {
+            "item": "Polar Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 4,
         "name": "The Chilly Path",
         "requirements": [
-          { "type": "gather_pollen", "amount": 4500 },
-          { "type": "gather_pollen", "amount": 4500, "color": "Red" },
-          { "type": "gather_pollen", "amount": 4500, "color": "Blue" },
-          { "type": "gather_pollen", "amount": 4500, "color": "White" },
-          { "type": "gather_field", "amount": 4500, "field": "Snowdrops Field" }
+          {
+            "type": "gather_pollen",
+            "amount": 4500
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 4500,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 4500,
+            "color": "Blue"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 4500,
+            "color": "White"
+          },
+          {
+            "type": "gather_field",
+            "amount": 4500,
+            "field": "Snowdrops Field"
+          }
         ],
         "rewards": [
-          { "item": "Seed", "amount": 100 },
-          { "item": "Royal Jelly", "amount": 20 },
-          { "item": "Polar Bear Aura ", "amount": 1 }
+          {
+            "item": "Seed",
+            "amount": 100
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 20
+          },
+          {
+            "item": "Polar Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 5,
         "name": "Chill Bamboo Breeze",
         "requirements": [
-          { "type": "gather_pollen", "amount": 15000 },
-          { "type": "gather_pollen", "amount": 15000, "color": "Red" },
-          { "type": "gather_pollen", "amount": 15000, "color": "Blue" },
-          { "type": "gather_pollen", "amount": 15000, "color": "White" },
-          { "type": "gather_field", "amount": 15000, "field": "Clover Field" }
+          {
+            "type": "gather_pollen",
+            "amount": 15000
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 15000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 15000,
+            "color": "Blue"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 15000,
+            "color": "White"
+          },
+          {
+            "type": "gather_field",
+            "amount": 15000,
+            "field": "Clover Field"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 50000 },
-          { "item": "Gold Egg", "amount": 1 },
-          { "item": "Polar Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 50000
+          },
+          {
+            "item": "Gold Egg",
+            "amount": 1
+          },
+          {
+            "item": "Polar Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 6,
         "name": "Peeling Good Vibes",
         "requirements": [
-          { "type": "gather_pollen", "amount": 50000 },
-          { "type": "gather_pollen", "amount": 50000, "color": "Red" },
-          { "type": "gather_pollen", "amount": 50000, "color": "Blue" },
-          { "type": "gather_pollen", "amount": 50000, "color": "White" },
-          { "type": "gather_field", "amount": 50000, "field": "Banana Field" }
+          {
+            "type": "gather_pollen",
+            "amount": 50000
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 50000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 50000,
+            "color": "Blue"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 50000,
+            "color": "White"
+          },
+          {
+            "type": "gather_field",
+            "amount": 50000,
+            "field": "Banana Field"
+          }
         ],
         "rewards": [
-          { "item": "Seed", "amount": 100 },
-          { "item": "Ticket", "amount": 10 },
-          { "item": "Polar Bear Aura ", "amount": 1 }
+          {
+            "item": "Seed",
+            "amount": 100
+          },
+          {
+            "item": "Ticket",
+            "amount": 10
+          },
+          {
+            "item": "Polar Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 7,
         "name": "Berry Chill Times",
         "requirements": [
-          { "type": "gather_pollen", "amount": 150000 },
-          { "type": "gather_pollen", "amount": 150000, "color": "Red" },
-          { "type": "gather_pollen", "amount": 150000, "color": "Blue" },
-          { "type": "gather_pollen", "amount": 150000, "color": "White" },
+          {
+            "type": "gather_pollen",
+            "amount": 150000
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 150000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 150000,
+            "color": "Blue"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 150000,
+            "color": "White"
+          },
           {
             "type": "gather_field",
             "amount": 150000,
@@ -801,19 +2114,43 @@
           }
         ],
         "rewards": [
-          { "item": "Seed", "amount": 150 },
-          { "item": "Strawberry Extract", "amount": 5 },
-          { "item": "Polar Bear Aura ", "amount": 1 }
+          {
+            "item": "Seed",
+            "amount": 150
+          },
+          {
+            "item": "Strawberry Extract",
+            "amount": 5
+          },
+          {
+            "item": "Polar Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 8,
         "name": "Pinecone Pondering",
         "requirements": [
-          { "type": "gather_pollen", "amount": 500000 },
-          { "type": "gather_pollen", "amount": 500000, "color": "Red" },
-          { "type": "gather_pollen", "amount": 500000, "color": "Blue" },
-          { "type": "gather_pollen", "amount": 500000, "color": "White" },
+          {
+            "type": "gather_pollen",
+            "amount": 500000
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 500000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 500000,
+            "color": "Blue"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 500000,
+            "color": "White"
+          },
           {
             "type": "gather_field",
             "amount": 500000,
@@ -821,19 +2158,43 @@
           }
         ],
         "rewards": [
-          { "item": "Seed", "amount": 150 },
-          { "item": "Cone Extract", "amount": 5 },
-          { "item": "Polar Bear Aura ", "amount": 1 }
+          {
+            "item": "Seed",
+            "amount": 150
+          },
+          {
+            "item": "Cone Extract",
+            "amount": 5
+          },
+          {
+            "item": "Polar Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 9,
         "name": "Snowy Snacking",
         "requirements": [
-          { "type": "gather_pollen", "amount": 1250000 },
-          { "type": "gather_pollen", "amount": 1250000, "color": "Red" },
-          { "type": "gather_pollen", "amount": 1250000, "color": "Blue" },
-          { "type": "gather_pollen", "amount": 1250000, "color": "White" },
+          {
+            "type": "gather_pollen",
+            "amount": 1250000
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 1250000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 1250000,
+            "color": "Blue"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 1250000,
+            "color": "White"
+          },
           {
             "type": "gather_field",
             "amount": 1250000,
@@ -841,51 +2202,131 @@
           }
         ],
         "rewards": [
-          { "item": "Seed", "amount": 200 },
-          { "item": "Blueberry Extract", "amount": 10 },
-          { "item": "Polar Bear Aura ", "amount": 1 }
+          {
+            "item": "Seed",
+            "amount": 200
+          },
+          {
+            "item": "Blueberry Extract",
+            "amount": 10
+          },
+          {
+            "item": "Polar Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 10,
         "name": "Rad Rose Petals",
         "requirements": [
-          { "type": "gather_pollen", "amount": 3000000 },
-          { "type": "gather_pollen", "amount": 3000000, "color": "Red" },
-          { "type": "gather_pollen", "amount": 3000000, "color": "Blue" },
-          { "type": "gather_pollen", "amount": 3000000, "color": "White" },
-          { "type": "gather_field", "amount": 3000000, "field": "Rose Field" }
+          {
+            "type": "gather_pollen",
+            "amount": 3000000
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 3000000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 3000000,
+            "color": "Blue"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 3000000,
+            "color": "White"
+          },
+          {
+            "type": "gather_field",
+            "amount": 3000000,
+            "field": "Rose Field"
+          }
         ],
         "rewards": [
-          { "item": "Seed", "amount": 200 },
-          { "item": "Treat", "amount": 1000 },
-          { "item": "Polar Bear Aura ", "amount": 1 }
+          {
+            "item": "Seed",
+            "amount": 200
+          },
+          {
+            "item": "Treat",
+            "amount": 1000
+          },
+          {
+            "item": "Polar Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 11,
         "name": "Back to Bamboo",
         "requirements": [
-          { "type": "gather_pollen", "amount": 7500000 },
-          { "type": "gather_pollen", "amount": 7500000, "color": "Red" },
-          { "type": "gather_pollen", "amount": 7500000, "color": "Blue" },
-          { "type": "gather_pollen", "amount": 7500000, "color": "White" },
-          { "type": "gather_field", "amount": 7500000, "field": "Bamboo Field" }
+          {
+            "type": "gather_pollen",
+            "amount": 7500000
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 7500000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 7500000,
+            "color": "Blue"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 7500000,
+            "color": "White"
+          },
+          {
+            "type": "gather_field",
+            "amount": 7500000,
+            "field": "Bamboo Field"
+          }
         ],
         "rewards": [
-          { "item": "Seed", "amount": 300 },
-          { "item": "Converter", "amount": 5 },
-          { "item": "Polar Bear Aura ", "amount": 1 }
+          {
+            "item": "Seed",
+            "amount": 300
+          },
+          {
+            "item": "Converter",
+            "amount": 5
+          },
+          {
+            "item": "Polar Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 12,
         "name": "Going Bananas",
         "requirements": [
-          { "type": "gather_pollen", "amount": 15000000 },
-          { "type": "gather_pollen", "amount": 15000000, "color": "Red" },
-          { "type": "gather_pollen", "amount": 15000000, "color": "Blue" },
-          { "type": "gather_pollen", "amount": 15000000, "color": "White" },
+          {
+            "type": "gather_pollen",
+            "amount": 15000000
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 15000000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 15000000,
+            "color": "Blue"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 15000000,
+            "color": "White"
+          },
           {
             "type": "gather_field",
             "amount": 15000000,
@@ -893,19 +2334,43 @@
           }
         ],
         "rewards": [
-          { "item": "Seed", "amount": 300 },
-          { "item": "Ticket", "amount": 100 },
-          { "item": "Polar Bear Aura ", "amount": 1 }
+          {
+            "item": "Seed",
+            "amount": 300
+          },
+          {
+            "item": "Ticket",
+            "amount": 100
+          },
+          {
+            "item": "Polar Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 13,
         "name": "Frosty Pines",
         "requirements": [
-          { "type": "gather_pollen", "amount": 30000000 },
-          { "type": "gather_pollen", "amount": 30000000, "color": "Red" },
-          { "type": "gather_pollen", "amount": 30000000, "color": "Blue" },
-          { "type": "gather_pollen", "amount": 30000000, "color": "White" },
+          {
+            "type": "gather_pollen",
+            "amount": 30000000
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 30000000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 30000000,
+            "color": "Blue"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 30000000,
+            "color": "White"
+          },
           {
             "type": "gather_field",
             "amount": 30000000,
@@ -913,19 +2378,43 @@
           }
         ],
         "rewards": [
-          { "item": "Seed", "amount": 300 },
-          { "item": "Royal Jelly", "amount": 367 },
-          { "item": "Polar Bear Aura ", "amount": 1 }
+          {
+            "item": "Seed",
+            "amount": 300
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 367
+          },
+          {
+            "item": "Polar Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 14,
         "name": "The Big Chill",
         "requirements": [
-          { "type": "gather_pollen", "amount": 50000000 },
-          { "type": "gather_pollen", "amount": 50000000, "color": "Red" },
-          { "type": "gather_pollen", "amount": 50000000, "color": "Blue" },
-          { "type": "gather_pollen", "amount": 50000000, "color": "White" },
+          {
+            "type": "gather_pollen",
+            "amount": 50000000
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 50000000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 50000000,
+            "color": "Blue"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 50000000,
+            "color": "White"
+          },
           {
             "type": "gather_field",
             "amount": 50000000,
@@ -933,25 +2422,62 @@
           }
         ],
         "rewards": [
-          { "item": "Seed", "amount": 500 },
-          { "item": "Diamond Egg", "amount": 1 },
-          { "item": "Polar Bear Aura ", "amount": 1 }
+          {
+            "item": "Seed",
+            "amount": 500
+          },
+          {
+            "item": "Diamond Egg",
+            "amount": 1
+          },
+          {
+            "item": "Polar Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 15,
         "name": "Absolute Zero",
         "requirements": [
-          { "type": "gather_pollen", "amount": 100000000 },
-          { "type": "gather_pollen", "amount": 100000000, "color": "Red" },
-          { "type": "gather_pollen", "amount": 100000000, "color": "Blue" },
-          { "type": "gather_pollen", "amount": 100000000, "color": "White" },
-          { "type": "gather_field", "amount": 100000000, "field": "Rose Field" }
+          {
+            "type": "gather_pollen",
+            "amount": 100000000
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 100000000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 100000000,
+            "color": "Blue"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 100000000,
+            "color": "White"
+          },
+          {
+            "type": "gather_field",
+            "amount": 100000000,
+            "field": "Rose Field"
+          }
         ],
         "rewards": [
-          { "item": "Seed", "amount": 400 },
-          { "item": "Ticket", "amount": 250 },
-          { "item": "Polar Bear Aura ", "amount": 1 }
+          {
+            "item": "Seed",
+            "amount": 400
+          },
+          {
+            "item": "Ticket",
+            "amount": 250
+          },
+          {
+            "item": "Polar Bear Aura",
+            "amount": 1
+          }
         ]
       }
     ],
@@ -973,32 +2499,48 @@
         "name": "A Colorful Introduction",
         "requirements": [
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Shovel Sticker"
-          },
-          { "type": "collect_sticker", "amount": 1, "sticker": "Rake Sticker" },
-          {
-            "type": "collect_sticker",
-            "amount": 1,
-            "sticker": "Hammer Sticker"
+            "token": "Shovel Sticker"
           },
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Magnet Sticker"
+            "token": "Rake Sticker"
           },
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Scissors Sticker"
+            "token": "Hammer Sticker"
+          },
+          {
+            "type": "collect_token",
+            "amount": 1,
+            "token": "Magnet Sticker"
+          },
+          {
+            "type": "collect_token",
+            "amount": 1,
+            "token": "Scissors Sticker"
           }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 25000 },
-          { "item": "Exp Orb", "amount": 10 },
-          { "item": "Royal Jelly", "amount": 10 },
-          { "item": "Painter Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 25000
+          },
+          {
+            "item": "Exp Orb",
+            "amount": 10
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 10
+          },
+          {
+            "item": "Painter Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
@@ -1006,59 +2548,87 @@
         "name": "Fields of Inspiration",
         "requirements": [
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Daisy Field Sticker"
+            "token": "Daisy Field Sticker"
           },
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Clover Field Sticker"
+            "token": "Clover Field Sticker"
           },
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Mushroom Field Sticker"
+            "token": "Mushroom Field Sticker"
           },
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Blackberry Field Sticker"
+            "token": "Blackberry Field Sticker"
           }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 50000 },
-          { "item": "Exp Orb", "amount": 15 },
-          { "item": "Royal Jelly", "amount": 10 },
-          { "item": "Painter Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 50000
+          },
+          {
+            "item": "Exp Orb",
+            "amount": 15
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 10
+          },
+          {
+            "item": "Painter Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 3,
         "name": "Tools of the Trade",
         "requirements": [
-          { "type": "collect_sticker", "amount": 1, "sticker": "Axe Sticker" },
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Pickaxe Sticker"
+            "token": "Axe Sticker"
           },
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Scythe Sticker"
+            "token": "Pickaxe Sticker"
           },
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Gold Magnet Sticker"
+            "token": "Scythe Sticker"
+          },
+          {
+            "type": "collect_token",
+            "amount": 1,
+            "token": "Gold Magnet Sticker"
           }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 100000 },
-          { "item": "Exp Orb", "amount": 25 },
-          { "item": "Royal Jelly", "amount": 25 },
-          { "item": "Painter Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 100000
+          },
+          {
+            "item": "Exp Orb",
+            "amount": 25
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 25
+          },
+          {
+            "item": "Painter Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
@@ -1066,41 +2636,53 @@
         "name": "A Vibrant Palette",
         "requirements": [
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Red Flowers Field Sticker"
+            "token": "Red Flowers Field Sticker"
           },
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Blue Flowers Field Sticker"
+            "token": "Blue Flowers Field Sticker"
           },
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Sunflower Field Sticker"
+            "token": "Sunflower Field Sticker"
           },
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Bellflower Field Sticker"
+            "token": "Bellflower Field Sticker"
           },
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Spider Field Sticker"
+            "token": "Spider Field Sticker"
           },
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Strawberry Field Sticker"
+            "token": "Strawberry Field Sticker"
           }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 250000 },
-          { "item": "Exp Orb", "amount": 40 },
-          { "item": "Royal Jelly", "amount": 40 },
-          { "item": "Painter Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 250000
+          },
+          {
+            "item": "Exp Orb",
+            "amount": 40
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 40
+          },
+          {
+            "item": "Painter Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
@@ -1108,43 +2690,61 @@
         "name": "The Master's Collection",
         "requirements": [
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Bamboo Field Sticker"
+            "token": "Bamboo Field Sticker"
           },
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Banana Field Sticker"
+            "token": "Banana Field Sticker"
           },
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Raspberry Field Sticker"
+            "token": "Raspberry Field Sticker"
           },
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Snowdrops Field Sticker"
+            "token": "Snowdrops Field Sticker"
           },
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Pine Cone Field Sticker"
+            "token": "Pine Cone Field Sticker"
           },
           {
-            "type": "collect_sticker",
+            "type": "collect_token",
             "amount": 1,
-            "sticker": "Rose Field Sticker"
+            "token": "Rose Field Sticker"
           }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 500000 },
-          { "item": "Exp Orb", "amount": 50 },
-          { "item": "Royal Jelly", "amount": 50 },
-          { "item": "Ticket", "amount": 50 },
-          { "item": "Diamond Egg", "amount": 1 },
-          { "item": "Painter Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 500000
+          },
+          {
+            "item": "Exp Orb",
+            "amount": 50
+          },
+          {
+            "item": "Royal Jelly",
+            "amount": 50
+          },
+          {
+            "item": "Ticket",
+            "amount": 50
+          },
+          {
+            "item": "Diamond Egg",
+            "amount": 1
+          },
+          {
+            "item": "Painter Bear Aura",
+            "amount": 1
+          }
         ]
       }
     ],
@@ -1165,132 +2765,306 @@
         "number": 1,
         "name": "Red Clover",
         "requirements": [
-          { "type": "defeat_mob", "amount": 2, "mob": "Caterpillar" }
+          {
+            "type": "defeat",
+            "amount": 2,
+            "mob": "Caterpillar"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 5000 },
-          { "item": "Bamboo", "amount": 5 },
-          { "item": "Panda Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 5000
+          },
+          {
+            "item": "Bamboo",
+            "amount": 5
+          },
+          {
+            "item": "Panda Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 2,
         "name": "Caterpillar Chaos",
         "requirements": [
-          { "type": "defeat_mob", "amount": 4, "mob": "Caterpillar" }
+          {
+            "type": "defeat",
+            "amount": 4,
+            "mob": "Caterpillar"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 8000 },
-          { "item": "Bamboo", "amount": 5 },
-          { "item": "Panda Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 8000
+          },
+          {
+            "item": "Bamboo",
+            "amount": 5
+          },
+          {
+            "item": "Panda Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 3,
         "name": "Grove Invaders",
         "requirements": [
-          { "type": "defeat_mob", "amount": 5, "mob": "Caterpillar" },
-          { "type": "defeat_mob", "amount": 1, "mob": "Ladybug" }
+          {
+            "type": "defeat",
+            "amount": 5,
+            "mob": "Caterpillar"
+          },
+          {
+            "type": "defeat",
+            "amount": 1,
+            "mob": "Ladybug"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 15000 },
-          { "item": "Bamboo", "amount": 10 },
-          { "item": "Panda Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 15000
+          },
+          {
+            "item": "Bamboo",
+            "amount": 10
+          },
+          {
+            "item": "Panda Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 4,
         "name": "The Big Bugs",
         "requirements": [
-          { "type": "defeat_mob", "amount": 2, "mob": "Rhino Beetle" },
-          { "type": "defeat_mob", "amount": 2, "mob": "Ladybug" }
+          {
+            "type": "defeat",
+            "amount": 2,
+            "mob": "Rhino Beetle"
+          },
+          {
+            "type": "defeat",
+            "amount": 2,
+            "mob": "Ladybug"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 15000 },
-          { "item": "Bamboo", "amount": 10 },
-          { "item": "Panda Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 15000
+          },
+          {
+            "item": "Bamboo",
+            "amount": 10
+          },
+          {
+            "item": "Panda Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 5,
         "name": "All Out War",
         "requirements": [
-          { "type": "defeat_mob", "amount": 4, "mob": "Rhino Beetle" },
-          { "type": "defeat_mob", "amount": 4, "mob": "Ladybug" },
-          { "type": "defeat_mob", "amount": 10, "mob": "Caterpillar" }
+          {
+            "type": "defeat",
+            "amount": 4,
+            "mob": "Rhino Beetle"
+          },
+          {
+            "type": "defeat",
+            "amount": 4,
+            "mob": "Ladybug"
+          },
+          {
+            "type": "defeat",
+            "amount": 10,
+            "mob": "Caterpillar"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 50000 },
-          { "item": "Bamboo", "amount": 25 },
-          { "item": "Bamboo Flask", "amount": 1 },
-          { "item": "Starflower", "amount": 1 },
-          { "item": "Panda Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 50000
+          },
+          {
+            "item": "Bamboo",
+            "amount": 25
+          },
+          {
+            "item": "Bamboo Flask",
+            "amount": 1
+          },
+          {
+            "item": "Starflower",
+            "amount": 1
+          },
+          {
+            "item": "Panda Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 6,
         "name": "Ladybug Legion",
         "requirements": [
-          { "type": "defeat_mob", "amount": 10, "mob": "Ladybug" }
+          {
+            "type": "defeat",
+            "amount": 10,
+            "mob": "Ladybug"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 75000 },
-          { "item": "Bamboo", "amount": 15 },
-          { "item": "Panda Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 75000
+          },
+          {
+            "item": "Bamboo",
+            "amount": 15
+          },
+          {
+            "item": "Panda Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 7,
         "name": "Rhino Beetle Legion",
         "requirements": [
-          { "type": "defeat_mob", "amount": 10, "mob": "Rhino Beetle" }
+          {
+            "type": "defeat",
+            "amount": 10,
+            "mob": "Rhino Beetle"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 75000 },
-          { "item": "Bamboo", "amount": 15 },
-          { "item": "Panda Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 75000
+          },
+          {
+            "item": "Bamboo",
+            "amount": 15
+          },
+          {
+            "item": "Panda Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 8,
         "name": "Eight Legged Nightmare",
         "requirements": [
-          { "type": "defeat_mob", "amount": 1, "mob": "Spider" }
+          {
+            "type": "defeat",
+            "amount": 1,
+            "mob": "Spider"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 150000 },
-          { "item": "Bamboo", "amount": 25 },
-          { "item": "Panda Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 150000
+          },
+          {
+            "item": "Bamboo",
+            "amount": 25
+          },
+          {
+            "item": "Panda Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 9,
         "name": "Crawling Catastrophe",
         "requirements": [
-          { "type": "defeat_mob", "amount": 2, "mob": "Spider" },
-          { "type": "defeat_mob", "amount": 20, "mob": "Caterpillar" }
+          {
+            "type": "defeat",
+            "amount": 2,
+            "mob": "Spider"
+          },
+          {
+            "type": "defeat",
+            "amount": 20,
+            "mob": "Caterpillar"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 250000 },
-          { "item": "Bamboo", "amount": 25 },
-          { "item": "Panda Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 250000
+          },
+          {
+            "item": "Bamboo",
+            "amount": 25
+          },
+          {
+            "item": "Panda Bear Aura",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 10,
         "name": "Panda's Final Trial",
         "requirements": [
-          { "type": "defeat_mob", "amount": 30, "mob": "Caterpillar" },
-          { "type": "defeat_mob", "amount": 15, "mob": "Ladybug" },
-          { "type": "defeat_mob", "amount": 15, "mob": "Rhino Beetle" },
-          { "type": "defeat_mob", "amount": 5, "mob": "Spider" }
+          {
+            "type": "defeat",
+            "amount": 30,
+            "mob": "Caterpillar"
+          },
+          {
+            "type": "defeat",
+            "amount": 15,
+            "mob": "Ladybug"
+          },
+          {
+            "type": "defeat",
+            "amount": 15,
+            "mob": "Rhino Beetle"
+          },
+          {
+            "type": "defeat",
+            "amount": 5,
+            "mob": "Spider"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 500000 },
-          { "item": "Bamboo", "amount": 50 },
-          { "item": "Bamboo Flask", "amount": 3 },
-          { "item": "Silver Egg", "amount": 1 },
-          { "item": "Panda Bear Aura ", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 500000
+          },
+          {
+            "item": "Bamboo",
+            "amount": 50
+          },
+          {
+            "item": "Bamboo Flask",
+            "amount": 3
+          },
+          {
+            "item": "Silver Egg",
+            "amount": 1
+          },
+          {
+            "item": "Panda Bear Aura",
+            "amount": 1
+          }
         ]
       }
     ],
@@ -1310,57 +3084,121 @@
         "number": 1,
         "name": "Sandy Bear!",
         "requirements": [
-          { "type": "gather_field", "amount": 2500, "field": "Shell Field" }
+          {
+            "type": "gather_field",
+            "amount": 2500,
+            "field": "Shell Field"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 1000 },
-          { "item": "Coconut Drink", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 1000
+          },
+          {
+            "item": "Coconut Drink",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 2,
         "name": "Coconuts Time?",
         "requirements": [
-          { "type": "gather_field", "amount": 10000, "field": "Coconut Field" }
+          {
+            "type": "gather_field",
+            "amount": 10000,
+            "field": "Coconut Field"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 5000 },
-          { "item": "Coconut Drink", "amount": 1 },
-          { "item": "Lemonade", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 5000
+          },
+          {
+            "item": "Coconut Drink",
+            "amount": 1
+          },
+          {
+            "item": "Lemonade",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 3,
         "name": "Lemonade!!!",
         "requirements": [
-          { "type": "gather_field", "amount": 50000, "field": "Lemon Field" }
+          {
+            "type": "gather_field",
+            "amount": 50000,
+            "field": "Lemon Field"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 15000 },
-          { "item": "Lemonade", "amount": 1 },
-          { "item": "Converter", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 15000
+          },
+          {
+            "item": "Lemonade",
+            "amount": 1
+          },
+          {
+            "item": "Converter",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 4,
         "name": "Rainbow Harvest",
         "requirements": [
-          { "type": "gather_pollen", "amount": 150000, "color": "Red" },
-          { "type": "gather_pollen", "amount": 150000, "color": "Blue" },
-          { "type": "gather_pollen", "amount": 150000, "color": "White" }
+          {
+            "type": "gather_pollen",
+            "amount": 150000,
+            "color": "Blue"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 150000,
+            "color": "White"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 150000,
+            "color": "Red"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 100000 },
-          { "item": "Summer Cocktail", "amount": 1 },
-          { "item": "Converter", "amount": 1 },
-          { "item": "Rare Starflower", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 100000
+          },
+          {
+            "item": "Summer Cocktail",
+            "amount": 1
+          },
+          {
+            "item": "Converter",
+            "amount": 1
+          },
+          {
+            "item": "Rare Starflower",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 5,
         "name": "Coconut Craze",
         "requirements": [
-          { "type": "collect_token", "amount": 50, "token": "Coconut" },
+          {
+            "type": "collect_token",
+            "amount": 50,
+            "token": "Coconut"
+          },
           {
             "type": "gather_field",
             "amount": 1000000,
@@ -1368,129 +3206,305 @@
           }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 500000 },
-          { "item": "Summer Cocktail", "amount": 1 },
-          { "item": "Legendary Starflower", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 500000
+          },
+          {
+            "item": "Summer Cocktail",
+            "amount": 1
+          },
+          {
+            "item": "Legendary Starflower",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 6,
         "name": "Lemon Frenzy",
         "requirements": [
-          { "type": "collect_token", "amount": 50, "token": "Lemon" },
-          { "type": "gather_field", "amount": 2500000, "field": "Lemon Field" }
+          {
+            "type": "collect_token",
+            "amount": 50,
+            "token": "Lemon"
+          },
+          {
+            "type": "gather_field",
+            "amount": 2500000,
+            "field": "Lemon Field"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 1000000 },
-          { "item": "Summer Cocktail", "amount": 1 },
-          { "item": "Majestic Cocktail", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 1000000
+          },
+          {
+            "item": "Summer Cocktail",
+            "amount": 1
+          },
+          {
+            "item": "Majestic Cocktail",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 7,
         "name": "The Tropical Blend",
         "requirements": [
-          { "type": "craft", "amount": 3, "item": "Lemonade" },
-          { "type": "craft", "amount": 3, "item": "Coconut Drink" }
+          {
+            "type": "craft",
+            "amount": 3,
+            "item": "Lemonade"
+          },
+          {
+            "type": "craft",
+            "amount": 3,
+            "item": "Coconut Drink"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 5000000 },
-          { "item": "Ticket", "amount": 50 }
+          {
+            "item": "Honey",
+            "amount": 5000000
+          },
+          {
+            "item": "Ticket",
+            "amount": 50
+          }
         ]
       },
       {
         "number": 8,
         "name": "The Ultimate Summer Cocktail",
         "requirements": [
-          { "type": "craft", "amount": 1, "item": "Summer Cocktail" }
+          {
+            "type": "craft",
+            "amount": 1,
+            "item": "Summer Cocktail"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 10000000 },
-          { "item": "Legendary Starflower", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 10000000
+          },
+          {
+            "item": "Legendary Starflower",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 9,
         "name": "The Grand Beach Party",
         "requirements": [
-          { "type": "craft", "amount": 1, "item": "Summer Cocktail" },
-          { "type": "craft", "amount": 3, "item": "Lemonade" },
-          { "type": "craft", "amount": 3, "item": "Coconut Drink" }
+          {
+            "type": "craft",
+            "amount": 1,
+            "item": "Summer Cocktail"
+          },
+          {
+            "type": "craft",
+            "amount": 3,
+            "item": "Lemonade"
+          },
+          {
+            "type": "craft",
+            "amount": 3,
+            "item": "Coconut Drink"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 25000000 },
-          { "item": "Mythic Starflower", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 25000000
+          },
+          {
+            "item": "Mythic Starflower",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 10,
         "name": "The Coco-Chug Challenge",
         "requirements": [
-          { "type": "consume", "amount": 3, "item": "Coconut Drink" }
+          {
+            "type": "consume",
+            "amount": 3,
+            "item": "Coconut Drink"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 5000000 },
-          { "item": "Coconut Drink", "amount": 2 },
-          { "item": "Lemonade", "amount": 2 }
+          {
+            "item": "Honey",
+            "amount": 5000000
+          },
+          {
+            "item": "Coconut Drink",
+            "amount": 2
+          },
+          {
+            "item": "Lemonade",
+            "amount": 2
+          }
         ]
       },
       {
         "number": 11,
         "name": "The Sour Pucker Challenge",
         "requirements": [
-          { "type": "consume", "amount": 3, "item": "Lemonade" }
+          {
+            "type": "consume",
+            "amount": 3,
+            "item": "Lemonade"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 5000000 },
-          { "item": "Lemonade", "amount": 2 },
-          { "item": "Coconut Drink", "amount": 2 }
+          {
+            "item": "Honey",
+            "amount": 5000000
+          },
+          {
+            "item": "Lemonade",
+            "amount": 2
+          },
+          {
+            "item": "Coconut Drink",
+            "amount": 2
+          }
         ]
       },
       {
         "number": 12,
         "name": "The VIP Afterparty",
         "requirements": [
-          { "type": "consume", "amount": 2, "item": "Summer Cocktail" }
+          {
+            "type": "consume",
+            "amount": 2,
+            "item": "Summer Cocktail"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 15000000 },
-          { "item": "Shiny Silver Egg", "amount": 1 },
-          { "item": "Ticket", "amount": 25 }
+          {
+            "item": "Honey",
+            "amount": 15000000
+          },
+          {
+            "item": "Shiny Silver Egg",
+            "amount": 1
+          },
+          {
+            "item": "Ticket",
+            "amount": 25
+          }
         ]
       },
       {
         "number": 13,
         "name": "Celestial Fruit Salad",
         "requirements": [
-          { "type": "consume", "amount": 5, "item": "Starflower" },
-          { "type": "consume", "amount": 2, "item": "Rare Starflower" },
-          { "type": "consume", "amount": 1, "item": "Epic Starflower" },
-          { "type": "collect_token", "amount": 100, "token": "Coconut" },
-          { "type": "collect_token", "amount": 100, "token": "Lemon" }
+          {
+            "type": "consume",
+            "amount": 5,
+            "item": "Starflower"
+          },
+          {
+            "type": "consume",
+            "amount": 2,
+            "item": "Rare Starflower"
+          },
+          {
+            "type": "consume",
+            "amount": 1,
+            "item": "Epic Starflower"
+          },
+          {
+            "type": "collect_token",
+            "amount": 100,
+            "token": "Coconut"
+          },
+          {
+            "type": "collect_token",
+            "amount": 100,
+            "token": "Lemon"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 25000000 },
-          { "item": "Legendary Starflower", "amount": 1 },
-          { "item": "Ticket", "amount": 25 }
+          {
+            "item": "Honey",
+            "amount": 25000000
+          },
+          {
+            "item": "Legendary Starflower",
+            "amount": 1
+          },
+          {
+            "item": "Ticket",
+            "amount": 25
+          }
         ]
       },
       {
         "number": 14,
         "name": "Midnight Mixology",
         "requirements": [
-          { "type": "consume", "amount": 1, "item": "Majestic Cocktail" },
-          { "type": "craft", "amount": 1, "item": "Majestic Cocktail" },
-          { "type": "craft", "amount": 3, "item": "Moon Extract" },
-          { "type": "consume", "amount": 3, "item": "Moon Extract" },
-          { "type": "collect_token", "amount": 100, "token": "Strawberry" },
-          { "type": "collect_token", "amount": 100, "token": "Blueberry" },
-          { "type": "collect_token", "amount": 100, "token": "Pine Cone" }
+          {
+            "type": "consume",
+            "amount": 1,
+            "item": "Majestic Cocktail"
+          },
+          {
+            "type": "craft",
+            "amount": 1,
+            "item": "Majestic Cocktail"
+          },
+          {
+            "type": "craft",
+            "amount": 3,
+            "item": "Moon Extract"
+          },
+          {
+            "type": "consume",
+            "amount": 3,
+            "item": "Moon Extract"
+          },
+          {
+            "type": "collect_token",
+            "amount": 100,
+            "token": "Strawberry"
+          },
+          {
+            "type": "collect_token",
+            "amount": 100,
+            "token": "Blueberry"
+          },
+          {
+            "type": "collect_token",
+            "amount": 100,
+            "token": "Pine Cone"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 50000000 },
-          { "item": "Mythic Starflower", "amount": 1 },
-          { "item": "Shiny Gold Egg", "amount": 1 },
-          { "item": "Ticket", "amount": 25 }
+          {
+            "item": "Honey",
+            "amount": 50000000
+          },
+          {
+            "item": "Mythic Starflower",
+            "amount": 1
+          },
+          {
+            "item": "Shiny Gold Egg",
+            "amount": 1
+          },
+          {
+            "item": "Ticket",
+            "amount": 25
+          }
         ]
       },
       {
@@ -1514,9 +3528,18 @@
           }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 75000000 },
-          { "item": "Summer Cocktail", "amount": 1 },
-          { "item": "John The Seal Sticker", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 75000000
+          },
+          {
+            "item": "Summer Cocktail",
+            "amount": 1
+          },
+          {
+            "item": "",
+            "amount": 1
+          }
         ]
       },
       {
@@ -1538,14 +3561,34 @@
             "amount": 500000000,
             "field": "Lemon Field"
           },
-          { "type": "craft", "amount": 5, "item": "Lemonade" },
-          { "type": "craft", "amount": 5, "item": "Coconut Drink" }
+          {
+            "type": "craft",
+            "amount": 5,
+            "item": "Lemonade"
+          },
+          {
+            "type": "craft",
+            "amount": 5,
+            "item": "Coconut Drink"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 250000000 },
-          { "item": "Summer Cocktail", "amount": 1 },
-          { "item": "Silver Egg", "amount": 1 },
-          { "item": "Converter", "amount": 2 }
+          {
+            "item": "Honey",
+            "amount": 250000000
+          },
+          {
+            "item": "Summer Cocktail",
+            "amount": 1
+          },
+          {
+            "item": "Silver Egg",
+            "amount": 1
+          },
+          {
+            "item": "Converter",
+            "amount": 2
+          }
         ]
       },
       {
@@ -1557,15 +3600,39 @@
             "amount": 5000000000,
             "field": "Coconut Field"
           },
-          { "type": "collect_token", "amount": 250, "token": "Coconut" },
-          { "type": "craft", "amount": 15, "item": "Coconut Drink" },
-          { "type": "consume", "amount": 15, "item": "Coconut Drink" }
+          {
+            "type": "collect_token",
+            "amount": 250,
+            "token": "Coconut"
+          },
+          {
+            "type": "craft",
+            "amount": 15,
+            "item": "Coconut Drink"
+          },
+          {
+            "type": "consume",
+            "amount": 15,
+            "item": "Coconut Drink"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 1000000000 },
-          { "item": "Summer Cocktail", "amount": 2 },
-          { "item": "Diamond Egg", "amount": 1 },
-          { "item": "Converter", "amount": 3 }
+          {
+            "item": "Honey",
+            "amount": 1000000000
+          },
+          {
+            "item": "Summer Cocktail",
+            "amount": 2
+          },
+          {
+            "item": "Diamond Egg",
+            "amount": 1
+          },
+          {
+            "item": "Converter",
+            "amount": 3
+          }
         ]
       },
       {
@@ -1577,15 +3644,39 @@
             "amount": 5000000000,
             "field": "Lemon Field"
           },
-          { "type": "collect_token", "amount": 250, "token": "Lemon" },
-          { "type": "craft", "amount": 15, "item": "Lemonade" },
-          { "type": "consume", "amount": 15, "item": "Lemonade" }
+          {
+            "type": "collect_token",
+            "amount": 250,
+            "token": "Lemon"
+          },
+          {
+            "type": "craft",
+            "amount": 15,
+            "item": "Lemonade"
+          },
+          {
+            "type": "consume",
+            "amount": 15,
+            "item": "Lemonade"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 1000000000 },
-          { "item": "Summer Cocktail", "amount": 2 },
-          { "item": "Shiny Jelly", "amount": 5 },
-          { "item": "Converter", "amount": 3 }
+          {
+            "item": "Honey",
+            "amount": 1000000000
+          },
+          {
+            "item": "Summer Cocktail",
+            "amount": 2
+          },
+          {
+            "item": "Shiny Jelly",
+            "amount": 5
+          },
+          {
+            "item": "Converter",
+            "amount": 3
+          }
         ]
       },
       {
@@ -1602,14 +3693,34 @@
             "amount": 10000000000,
             "field": "Coconut Field"
           },
-          { "type": "craft", "amount": 25, "item": "Lemonade" },
-          { "type": "craft", "amount": 25, "item": "Coconut Drink" }
+          {
+            "type": "craft",
+            "amount": 25,
+            "item": "Lemonade"
+          },
+          {
+            "type": "craft",
+            "amount": 25,
+            "item": "Coconut Drink"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 5000000000 },
-          { "item": "Majestic Cocktail", "amount": 3 },
-          { "item": "Shiny Egg", "amount": 1 },
-          { "item": "Converter", "amount": 5 }
+          {
+            "item": "Honey",
+            "amount": 5000000000
+          },
+          {
+            "item": "Majestic Cocktail",
+            "amount": 3
+          },
+          {
+            "item": "Shiny Egg",
+            "amount": 1
+          },
+          {
+            "item": "Converter",
+            "amount": 5
+          }
         ]
       },
       {
@@ -1631,16 +3742,44 @@
             "amount": 25000000000,
             "field": "Lemon Field"
           },
-          { "type": "collect_token", "amount": 500, "token": "Coconut" },
-          { "type": "collect_token", "amount": 500, "token": "Lemon" },
-          { "type": "craft", "amount": 5, "item": "Majestic Cocktail" },
-          { "type": "consume", "amount": 5, "item": "Majestic Cocktail" }
+          {
+            "type": "collect_token",
+            "amount": 500,
+            "token": "Coconut"
+          },
+          {
+            "type": "collect_token",
+            "amount": 500,
+            "token": "Lemon"
+          },
+          {
+            "type": "craft",
+            "amount": 2,
+            "item": "Majestic Cocktail"
+          },
+          {
+            "type": "consume",
+            "amount": 2,
+            "item": "Majestic Cocktail"
+          }
         ],
         "rewards": [
-          { "item": "Shark Bee", "amount": 1 },
-          { "item": "Honey", "amount": 25000000000 },
-          { "item": "Mythic Starflower", "amount": 3 },
-          { "item": "Converter", "amount": 10 }
+          {
+            "item": "Shark Bee",
+            "amount": 1
+          },
+          {
+            "item": "Honey",
+            "amount": 25000000000
+          },
+          {
+            "item": "Mythic Starflower",
+            "amount": 3
+          },
+          {
+            "item": "Converter",
+            "amount": 10
+          }
         ]
       }
     ],
@@ -1660,69 +3799,180 @@
         "number": 1,
         "name": "Zesty Sunlight",
         "requirements": [
-          { "type": "gather_field", "amount": 2500, "field": "Lemon Field" }
+          {
+            "type": "gather_field",
+            "amount": 2500,
+            "field": "Lemon Field"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 2500,
+            "color": "White"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 2500 },
-          { "item": "Starflower", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 2500
+          },
+          {
+            "item": "Starflower",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 2,
         "name": "The Midday Zenith",
-        "requirements": [{ "type": "use_ability", "amount": 50 }],
+        "requirements": [
+          {
+            "type": "use_ability",
+            "amount": 50
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 10000,
+            "color": "White"
+          }
+        ],
         "rewards": [
-          { "item": "Honey", "amount": 5000 },
-          { "item": "Rare Starflower", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 5000
+          },
+          {
+            "item": "Rare Starflower",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 3,
         "name": "The Mighty Dawn",
         "requirements": [
-          { "type": "collect_token", "amount": 250, "token": "Honey" },
-          { "type": "consume", "amount": 10, "item": "Seed Oil" }
+          {
+            "type": "collect_token",
+            "amount": 250,
+            "token": "Honey"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 100000,
+            "color": "White"
+          },
+          {
+            "type": "consume",
+            "amount": 10,
+            "item": "Seed Oil"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 250000 },
-          { "item": "Epic Starflower", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 250000
+          },
+          {
+            "item": "Epic Starflower",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 4,
         "name": "The Divine Spear",
         "requirements": [
-          { "type": "gather_field", "amount": 2500000, "field": "Lemon Field" },
-          { "type": "collect_token", "amount": 300, "token": "Honey" }
+          {
+            "type": "gather_pollen",
+            "amount": 5000000,
+            "color": "White"
+          },
+          {
+            "type": "gather_field",
+            "amount": 2500000,
+            "field": "Lemon Field"
+          },
+          {
+            "type": "collect_token",
+            "amount": 300,
+            "token": "Honey"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 1000000 },
-          { "item": "Ticket", "amount": 50 }
+          {
+            "item": "Honey",
+            "amount": 1000000
+          },
+          {
+            "item": "Ticket",
+            "amount": 50
+          }
         ]
       },
       {
         "number": 5,
         "name": "Prideful Radiance",
         "requirements": [
-          { "type": "consume", "amount": 15, "item": "Seed Oil" },
-          { "type": "craft", "amount": 3, "item": "Lemonade" },
-          { "type": "consume", "amount": 3, "item": "Lemonade" }
+          {
+            "type": "gather_pollen",
+            "amount": 25000000,
+            "color": "White"
+          },
+          {
+            "type": "consume",
+            "amount": 15,
+            "item": "Seed Oil"
+          },
+          {
+            "type": "craft",
+            "amount": 3,
+            "item": "Lemonade"
+          },
+          {
+            "type": "consume",
+            "amount": 3,
+            "item": "Lemonade"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 10000000 },
-          { "item": "Legendary Starflower", "amount": 1 }
+          {
+            "item": "Honey",
+            "amount": 10000000
+          },
+          {
+            "item": "Legendary Starflower",
+            "amount": 1
+          }
         ]
       },
       {
         "number": 6,
         "name": "Preaching to the Sun",
         "requirements": [
-          { "type": "collect_token", "amount": 500, "token": "Honey" },
-          { "type": "collect_token", "amount": 150, "token": "Lemon" }
+          {
+            "type": "gather_pollen",
+            "amount": 100000000,
+            "color": "White"
+          },
+          {
+            "type": "collect_token",
+            "amount": 500,
+            "token": "Honey"
+          },
+          {
+            "type": "collect_token",
+            "amount": 150,
+            "token": "Lemon"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 50000000 },
-          { "item": "Converter", "amount": 3 }
+          {
+            "item": "Honey",
+            "amount": 50000000
+          },
+          {
+            "item": "Converter",
+            "amount": 3
+          }
         ]
       },
       {
@@ -1730,17 +3980,39 @@
         "name": "Blazing Judgment",
         "requirements": [
           {
+            "type": "gather_pollen",
+            "amount": 250000000,
+            "color": "White"
+          },
+          {
             "type": "gather_field",
             "amount": 100000000,
             "field": "Lemon Field"
           },
-          { "type": "craft", "amount": 2, "item": "Summer Cocktail" },
-          { "type": "consume", "amount": 2, "item": "Summer Cocktail" }
+          {
+            "type": "craft",
+            "amount": 2,
+            "item": "Summer Cocktail"
+          },
+          {
+            "type": "consume",
+            "amount": 2,
+            "item": "Summer Cocktail"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 150000000 },
-          { "item": "Gold Egg", "amount": 1 },
-          { "item": "Ticket", "amount": 50 }
+          {
+            "item": "Honey",
+            "amount": 150000000
+          },
+          {
+            "item": "Gold Egg",
+            "amount": 1
+          },
+          {
+            "item": "Ticket",
+            "amount": 50
+          }
         ]
       },
       {
@@ -1748,17 +4020,39 @@
         "name": "The One Below None",
         "requirements": [
           {
+            "type": "gather_pollen",
+            "amount": 500000000,
+            "color": "White"
+          },
+          {
             "type": "gather_field",
             "amount": 250000000,
             "field": "Lemon Field"
           },
-          { "type": "collect_token", "amount": 1000, "token": "Honey" },
-          { "type": "craft", "amount": 2, "item": "Majestic Cocktail" }
+          {
+            "type": "collect_token",
+            "amount": 1000,
+            "token": "Honey"
+          },
+          {
+            "type": "craft",
+            "amount": 2,
+            "item": "Majestic Cocktail"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 500000000 },
-          { "item": "Diamond Egg", "amount": 1 },
-          { "item": "Converter", "amount": 5 }
+          {
+            "item": "Honey",
+            "amount": 500000000
+          },
+          {
+            "item": "Diamond Egg",
+            "amount": 1
+          },
+          {
+            "item": "Converter",
+            "amount": 5
+          }
         ]
       },
       {
@@ -1766,32 +4060,83 @@
         "name": "The Noon-Day Shadow",
         "requirements": [
           {
+            "type": "gather_pollen",
+            "amount": 750000000,
+            "color": "White"
+          },
+          {
             "type": "gather_field",
             "amount": 250000000,
             "field": "Lemon Field"
           },
-          { "type": "collect_token", "amount": 1000, "token": "Honey" },
-          { "type": "craft", "amount": 3, "item": "Majestic Cocktail" }
+          {
+            "type": "collect_token",
+            "amount": 1000,
+            "token": "Honey"
+          },
+          {
+            "type": "craft",
+            "amount": 3,
+            "item": "Majestic Cocktail"
+          }
         ],
         "rewards": [
-          { "item": "Honey", "amount": 750000000 },
-          { "item": "Diamond Egg", "amount": 1 },
-          { "item": "Converter", "amount": 5 }
+          {
+            "item": "Honey",
+            "amount": 750000000
+          },
+          {
+            "item": "Diamond Egg",
+            "amount": 1
+          },
+          {
+            "item": "Converter",
+            "amount": 5
+          }
         ]
       },
       {
         "number": 10,
         "name": "The Midday Sovereign",
         "requirements": [
-          { "type": "collect_token", "amount": 500, "token": "Lemon" },
-          { "type": "craft", "amount": 5, "item": "Majestic Cocktail" },
-          { "type": "consume", "amount": 5, "item": "Majestic Cocktail" }
+          {
+            "type": "gather_pollen",
+            "amount": 1000000000,
+            "color": "White"
+          },
+          {
+            "type": "collect_token",
+            "amount": 500,
+            "token": "Lemon"
+          },
+          {
+            "type": "craft",
+            "amount": 1,
+            "item": "Majestic Cocktail"
+          },
+          {
+            "type": "consume",
+            "amount": 1,
+            "item": "Majestic Cocktail"
+          }
         ],
         "rewards": [
-          { "item": "Sunny Bee", "amount": 1 },
-          { "item": "Honey", "amount": 2000000000 },
-          { "item": "Mythic Starflower", "amount": 2 },
-          { "item": "Converter", "amount": 10 }
+          {
+            "item": "Sunny Bee",
+            "amount": 1
+          },
+          {
+            "item": "Honey",
+            "amount": 2000000000
+          },
+          {
+            "item": "Mythic Starflower",
+            "amount": 2
+          },
+          {
+            "item": "Converter",
+            "amount": 10
+          }
         ]
       }
     ]
