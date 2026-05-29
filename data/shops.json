@@ -1142,7 +1142,7 @@
       "title": "Beach Shop",
       "location": "Beach Zone",
       "path": "beach-shop.html?shop=beach-shop",
-      "image": "images/items/Coconut.png",
+      "image": "images/gear/beachShop/Shop.png",
       "description": "A tropical shop stocked with coconut and sunny equipment for beekeepers exploring the beach. Carries 1 collector, 1 bag, 3 gear pieces, and 1 hydrant purchasable with Honey and coastal materials.",
       "tags": ["Tools", "Bags", "Gear", "Hydrants"],
       "about": "A tropical shop stocked with coconut and sunny equipment for beekeepers exploring the beach. It is built around coastal materials, coconuts, and sunny upgrades for harvesting in the Beach Zone.",
@@ -1169,7 +1169,7 @@
             {
               "name": "Coconut Bag",
               "type": "Bag",
-              "image": "images/items/Coconut.png",
+              "image": "images/equipment/Coconut Bag.png",
               "description": "Official item of coconut fashion, known as Tropical Bestie.",
               "info": "+3,500,000 Capacity\n+750% Convert Rate\n+45 Convert Amount\n+40% Red Pollen\n+40% Blue Pollen\n+20% Bee Ability Rate",
               "cost": "100b Honey + 3 Majestic Cocktail + 10 Summer Cocktail + 30 Coconut Drink + 50 Lemonade + 500 Coconut + 350 Wind Essence + 25 Bamboo Flask + 500 Bamboo",

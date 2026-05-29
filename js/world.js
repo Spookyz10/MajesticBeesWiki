@@ -180,7 +180,13 @@ function buildPaidDispensers(dispensers) {
   `;
 }
 
-function buildMixerSection(recipes, title = "Mixer") {
+function buildMixerSection(
+  recipes,
+  title = "Mixer",
+  introText = "The Mixer lets you craft items by combining ingredients. Each recipe produces one of the listed output items. You can find the Mixer in the Hydrant Shop.",
+  introImage = "images/dispensers/Mixer.png",
+  introAlt = "Mixer",
+) {
   const cards = recipes
     .map((r) => {
       const ingredientList = r.recipe
@@ -218,9 +224,9 @@ function buildMixerSection(recipes, title = "Mixer") {
     <div class="world-section">
       <div class="world-section-heading">${title}</div>
       <div class="mixer-intro">
-        <div class="world-section-desc mixer-intro-text">The Mixer lets you craft items by combining ingredients. Each recipe produces one of the listed output items. You can find the Mixer in the Hydrant Shop.</div>
+        <div class="world-section-desc mixer-intro-text">${introText}</div>
         <div class="mixer-intro-image">
-          <img src="images/dispensers/Mixer.png" alt="Mixer" width="120" height="120" loading="lazy" onerror="this.style.opacity='0.25';" />
+          <img src="${introImage}" alt="${introAlt}" width="120" height="120" loading="lazy" onerror="this.style.opacity='0.25';" />
         </div>
       </div>
       <div class="mixer-grid">${cards}</div>
@@ -265,7 +271,15 @@ async function loadWorld() {
     buildFreeDispensers(data.freeDispensers) +
     buildPaidDispensers(data.paidDispensers) +
     buildMixerSection(normalMixer, "Mixer") +
-    (summerMixer.length ? buildMixerSection(summerMixer, "Summer Mixer") : "");
+    (summerMixer.length
+      ? buildMixerSection(
+          summerMixer,
+          "Summer Mixer",
+          "The Summer Mixer lets you craft summer event items by combining ingredients. You can find the Summer Mixer in the Beach Shop.",
+          "images/dispensers/SummerMixer.png",
+          "Summer Mixer",
+        )
+      : "");
 
   bindSlotToggle();
 }
