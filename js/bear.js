@@ -22,8 +22,13 @@ function formatRequirement(req) {
         : `Gather <b>${fmt(req.amount)}</b> pollen`;
     case "convert":
       return `Convert <b>${fmt(req.amount)}</b> ${escHtml(req.resource || "Honey")}`;
-    case "collect_token":
-      return `Collect <b>${fmt(req.amount)}</b> ${escHtml(req.token || "Token")}`;
+    case "collect_token": {
+      const tokenName = req.token || "Token";
+      const label = tokenName.toLowerCase().endsWith("tokens")
+        ? tokenName
+        : `${tokenName} Tokens`;
+      return `Collect <b>${fmt(req.amount)}</b> ${escHtml(label)}`;
+    }
     case "collect_sticker":
       return `Collect ${escHtml(req.sticker || "Sticker Token")}`;
     case "defeat_mob":

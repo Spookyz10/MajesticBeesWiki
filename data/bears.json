@@ -1344,7 +1344,11 @@
       {
         "number": 4,
         "name": "Rainbow Harvest",
-        "requirements": [],
+        "requirements": [
+          { "type": "gather_pollen", "amount": 150000, "color": "Red" },
+          { "type": "gather_pollen", "amount": 150000, "color": "Blue" },
+          { "type": "gather_pollen", "amount": 150000, "color": "White" }
+        ],
         "rewards": [
           { "item": "Honey", "amount": 100000 },
           { "item": "Summer Cocktail", "amount": 1 },
