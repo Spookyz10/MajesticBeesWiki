@@ -91,6 +91,12 @@
   border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 10px 24px rgba(12, 8, 0, 0.14);
+  .sf-tier-rarity-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    image-rendering: pixelated;
+  }
 }
 
 .sf-tier-header {

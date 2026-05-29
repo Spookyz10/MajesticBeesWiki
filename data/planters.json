@@ -1,0 +1,318 @@
+[
+  {
+    "id": "fire-planter",
+    "name": "Fire Planter",
+    "icon": "images/items/Fire Planter.png",
+    "rarity": "Epic",
+    "desc": "A fiery planter crackling with intense heat, said to have been forged in the heart of a volcano.",
+    "obtain": [
+      {
+        "method": "Red Shop",
+        "detail": "25m Honey + 100 Fire Essence + 50 Tickets"
+      }
+    ],
+    "tokens": 30,
+    "growTime": 10800,
+    "bar": true,
+    "drops": {
+      "Red Field": [
+        { "item": "Strawberry", "chance": 15, "amount": 2 },
+        { "item": "Fire Essence", "chance": 15, "amount": 1 }
+      ],
+      "Blue Field": [
+        { "item": "Blueberry", "chance": 15, "amount": 2 },
+        { "item": "Water Essence", "chance": 15, "amount": 1 }
+      ],
+      "White Field": [
+        { "item": "Pine Cone", "chance": 15, "amount": 2 },
+        { "item": "Wind Essence", "chance": 15, "amount": 1 }
+      ],
+      "Bamboo Field": [{ "item": "Bamboo", "chance": 15, "amount": 2 }],
+      "All Fields": [
+        { "item": "Strawberry", "chance": 15, "amount": 4 },
+        { "item": "Fire Essence", "chance": 15, "amount": 1 },
+        { "item": "Honey", "chance": 10, "amount": 100000, "isHoney": true },
+        { "item": "Treat", "chance": 10, "amount": 2 },
+        { "item": "Ticket", "chance": 1, "amount": 1 }
+      ]
+    }
+  },
+  {
+    "id": "ice-planter",
+    "name": "Ice Planter",
+    "icon": "images/items/Ice Planter.png",
+    "rarity": "Epic",
+    "desc": "A frosty planter encased in a layer of shimmering ice, rumored to have been carved from the peak of an eternal glacier.",
+    "obtain": [
+      {
+        "method": "Blue Shop",
+        "detail": "25m Honey + 100 Water Essence + 50 Tickets"
+      }
+    ],
+    "tokens": 30,
+    "growTime": 10800,
+    "bar": true,
+    "drops": {
+      "Red Field": [
+        { "item": "Strawberry", "chance": 15, "amount": 2 },
+        { "item": "Fire Essence", "chance": 15, "amount": 1 }
+      ],
+      "Blue Field": [
+        { "item": "Blueberry", "chance": 15, "amount": 2 },
+        { "item": "Water Essence", "chance": 15, "amount": 1 }
+      ],
+      "White Field": [
+        { "item": "Pine Cone", "chance": 15, "amount": 2 },
+        { "item": "Wind Essence", "chance": 15, "amount": 1 }
+      ],
+      "Bamboo Field": [{ "item": "Bamboo", "chance": 15, "amount": 2 }],
+      "All Fields": [
+        { "item": "Blueberry", "chance": 15, "amount": 4 },
+        { "item": "Water Essence", "chance": 15, "amount": 1 },
+        { "item": "Honey", "chance": 10, "amount": 100000, "isHoney": true },
+        { "item": "Treat", "chance": 10, "amount": 2 },
+        { "item": "Ticket", "chance": 1, "amount": 1 }
+      ]
+    }
+  },
+  {
+    "id": "sticker-planter",
+    "name": "Sticker Planter",
+    "icon": "images/items/Sticker Planter.png",
+    "rarity": "Epic",
+    "desc": "A mysterious planter decorated with collectible artwork. Tends to bloom with rare stickers and hive cosmetics instead of the usual items.",
+    "obtain": [
+      { "method": "Unknown", "detail": "Obtainment method not yet confirmed." }
+    ],
+    "tokens": 9,
+    "growTime": 3600,
+    "bar": true,
+    "drops": {
+      "Red Field": [],
+      "Blue Field": [],
+      "White Field": [],
+      "Bamboo Field": [],
+      "All Fields": [
+        {
+          "item": "Shovel Sticker",
+          "chance": 10000,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Sticker"
+        },
+        {
+          "item": "Rake Sticker",
+          "chance": 10000,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Sticker"
+        },
+        {
+          "item": "Hammer Sticker",
+          "chance": 10000,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Sticker"
+        },
+        {
+          "item": "Magnet Sticker",
+          "chance": 10000,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Sticker"
+        },
+        {
+          "item": "Scissors Sticker",
+          "chance": 10000,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Sticker"
+        },
+        {
+          "item": "Scythe Sticker",
+          "chance": 3000,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Sticker"
+        },
+        {
+          "item": "Axe Sticker",
+          "chance": 3000,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Sticker"
+        },
+        {
+          "item": "Pickaxe Sticker",
+          "chance": 3000,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Sticker"
+        },
+        {
+          "item": "Gold Magnet Sticker",
+          "chance": 3000,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Sticker"
+        },
+        {
+          "item": "Honey Dipper Sticker",
+          "chance": 500,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Sticker"
+        },
+        {
+          "item": "Snow Shovel Sticker",
+          "chance": 500,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Sticker"
+        },
+        {
+          "item": "Fire Scythe Sticker",
+          "chance": 500,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Sticker"
+        },
+        {
+          "item": "Bamboo Spear Sticker",
+          "chance": 15,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Sticker"
+        },
+        {
+          "item": "Blue Hive",
+          "chance": 3000,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Skin"
+        },
+        {
+          "item": "Red Hive",
+          "chance": 3000,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Skin"
+        },
+        {
+          "item": "Green Hive",
+          "chance": 3000,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Skin"
+        },
+        {
+          "item": "Orange Hive",
+          "chance": 3000,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Skin"
+        },
+        {
+          "item": "Black Hive",
+          "chance": 300,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Skin"
+        },
+        {
+          "item": "White Hive",
+          "chance": 300,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Skin"
+        },
+        {
+          "item": "Light Blue Hive",
+          "chance": 300,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Skin"
+        },
+        {
+          "item": "Purple Hive",
+          "chance": 300,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Skin"
+        },
+        {
+          "item": "Pink Hive",
+          "chance": 300,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Skin"
+        },
+        {
+          "item": "Chromatic Hive",
+          "chance": 15,
+          "amount": 1,
+          "isWeight": true,
+          "type": "Skin"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ticket-planter",
+    "name": "Ticket Planter",
+    "icon": "images/items/Ticket Planter.png",
+    "rarity": "Epic",
+    "desc": "A golden planter shimmering with the promise of rare rewards. Grows slowly but reliably produces Tickets alongside other useful items.",
+    "obtain": [
+      { "method": "Unknown", "detail": "Obtainment method not yet confirmed." }
+    ],
+    "tokens": 22,
+    "growTime": 3600,
+    "bar": true,
+    "drops": {
+      "Red Field": [{ "item": "Strawberry", "chance": 5, "amount": 1 }],
+      "Blue Field": [{ "item": "Blueberry", "chance": 5, "amount": 1 }],
+      "White Field": [{ "item": "Pine Cone", "chance": 5, "amount": 1 }],
+      "Bamboo Field": [{ "item": "Bamboo", "chance": 5, "amount": 1 }],
+      "All Fields": [
+        { "item": "Seed", "chance": 5, "amount": 1 },
+        { "item": "Honey", "chance": 10, "amount": 5000, "isHoney": true },
+        { "item": "Ticket", "chance": 100, "amount": 1, "isPercent": true }
+      ]
+    }
+  },
+  {
+    "id": "cardboard-planter",
+    "name": "Cardboard Planter",
+    "icon": "images/items/Cardboard Planter.png",
+    "rarity": "Rare",
+    "desc": "A humble planter made from repurposed cardboard.",
+    "obtain": [
+      { "method": "Unknown", "detail": "Obtainment method not yet confirmed." }
+    ],
+    "tokens": 17,
+    "growTime": 1800,
+    "bar": true,
+    "drops": {
+      "Red Field": [
+        { "item": "Strawberry", "chance": 15, "amount": 1 },
+        { "item": "Fire Essence", "chance": 15, "amount": 1 }
+      ],
+      "Blue Field": [
+        { "item": "Blueberry", "chance": 15, "amount": 1 },
+        { "item": "Water Essence", "chance": 15, "amount": 1 }
+      ],
+      "White Field": [
+        { "item": "Pine Cone", "chance": 15, "amount": 1 },
+        { "item": "Wind Essence", "chance": 15, "amount": 1 }
+      ],
+      "Bamboo Field": [{ "item": "Bamboo", "chance": 15, "amount": 1 }],
+      "All Fields": [
+        { "item": "Seed", "chance": 15, "amount": 2 },
+        { "item": "Honey", "chance": 10, "amount": 10000, "isHoney": true },
+        { "item": "Treat", "chance": 10, "amount": 2 },
+        { "item": "Ticket", "chance": 0.2, "amount": 1 }
+      ]
+    }
+  }
+]

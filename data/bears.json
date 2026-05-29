@@ -1298,5 +1298,498 @@
       "stat": "Tool Pollen",
       "per_stack": 0.05
     }
+  },
+  {
+    "id": "sandy-bear",
+    "name": "Sandy Bear",
+    "image": "images/bears/Sandy Bear Model.png",
+    "location": "Beach Zone",
+    "description": "Sandy Bear is a laid-back bear found near the beach, offering quests centered around the coastal fields.",
+    "quests": [
+      {
+        "number": 1,
+        "name": "Sandy Bear!",
+        "requirements": [
+          { "type": "gather_field", "amount": 2500, "field": "Shell Field" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 1000 },
+          { "item": "Coconut Drink", "amount": 1 }
+        ]
+      },
+      {
+        "number": 2,
+        "name": "Coconuts Time?",
+        "requirements": [
+          { "type": "gather_field", "amount": 10000, "field": "Coconut Field" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 5000 },
+          { "item": "Coconut Drink", "amount": 1 },
+          { "item": "Lemonade", "amount": 1 }
+        ]
+      },
+      {
+        "number": 3,
+        "name": "Lemonade!!!",
+        "requirements": [
+          { "type": "gather_field", "amount": 50000, "field": "Lemon Field" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 15000 },
+          { "item": "Lemonade", "amount": 1 },
+          { "item": "Converter", "amount": 1 }
+        ]
+      },
+      {
+        "number": 4,
+        "name": "Rainbow Harvest",
+        "requirements": [],
+        "rewards": [
+          { "item": "Honey", "amount": 100000 },
+          { "item": "Summer Cocktail", "amount": 1 },
+          { "item": "Converter", "amount": 1 },
+          { "item": "Rare Starflower", "amount": 1 }
+        ]
+      },
+      {
+        "number": 5,
+        "name": "Coconut Craze",
+        "requirements": [
+          { "type": "collect_token", "amount": 50, "token": "Coconut" },
+          {
+            "type": "gather_field",
+            "amount": 1000000,
+            "field": "Coconut Field"
+          }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 500000 },
+          { "item": "Summer Cocktail", "amount": 1 },
+          { "item": "Legendary Starflower", "amount": 1 }
+        ]
+      },
+      {
+        "number": 6,
+        "name": "Lemon Frenzy",
+        "requirements": [
+          { "type": "collect_token", "amount": 50, "token": "Lemon" },
+          { "type": "gather_field", "amount": 2500000, "field": "Lemon Field" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 1000000 },
+          { "item": "Summer Cocktail", "amount": 1 },
+          { "item": "Majestic Cocktail", "amount": 1 }
+        ]
+      },
+      {
+        "number": 7,
+        "name": "The Tropical Blend",
+        "requirements": [
+          { "type": "craft", "amount": 3, "item": "Lemonade" },
+          { "type": "craft", "amount": 3, "item": "Coconut Drink" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 5000000 },
+          { "item": "Ticket", "amount": 50 }
+        ]
+      },
+      {
+        "number": 8,
+        "name": "The Ultimate Summer Cocktail",
+        "requirements": [
+          { "type": "craft", "amount": 1, "item": "Summer Cocktail" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 10000000 },
+          { "item": "Legendary Starflower", "amount": 1 }
+        ]
+      },
+      {
+        "number": 9,
+        "name": "The Grand Beach Party",
+        "requirements": [
+          { "type": "craft", "amount": 1, "item": "Summer Cocktail" },
+          { "type": "craft", "amount": 3, "item": "Lemonade" },
+          { "type": "craft", "amount": 3, "item": "Coconut Drink" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 25000000 },
+          { "item": "Mythic Starflower", "amount": 1 }
+        ]
+      },
+      {
+        "number": 10,
+        "name": "The Coco-Chug Challenge",
+        "requirements": [
+          { "type": "consume", "amount": 3, "item": "Coconut Drink" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 5000000 },
+          { "item": "Coconut Drink", "amount": 2 },
+          { "item": "Lemonade", "amount": 2 }
+        ]
+      },
+      {
+        "number": 11,
+        "name": "The Sour Pucker Challenge",
+        "requirements": [
+          { "type": "consume", "amount": 3, "item": "Lemonade" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 5000000 },
+          { "item": "Lemonade", "amount": 2 },
+          { "item": "Coconut Drink", "amount": 2 }
+        ]
+      },
+      {
+        "number": 12,
+        "name": "The VIP Afterparty",
+        "requirements": [
+          { "type": "consume", "amount": 2, "item": "Summer Cocktail" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 15000000 },
+          { "item": "Shiny Silver Egg", "amount": 1 },
+          { "item": "Ticket", "amount": 25 }
+        ]
+      },
+      {
+        "number": 13,
+        "name": "Celestial Fruit Salad",
+        "requirements": [
+          { "type": "consume", "amount": 5, "item": "Starflower" },
+          { "type": "consume", "amount": 2, "item": "Rare Starflower" },
+          { "type": "consume", "amount": 1, "item": "Epic Starflower" },
+          { "type": "collect_token", "amount": 100, "token": "Coconut" },
+          { "type": "collect_token", "amount": 100, "token": "Lemon" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 25000000 },
+          { "item": "Legendary Starflower", "amount": 1 },
+          { "item": "Ticket", "amount": 25 }
+        ]
+      },
+      {
+        "number": 14,
+        "name": "Midnight Mixology",
+        "requirements": [
+          { "type": "consume", "amount": 1, "item": "Majestic Cocktail" },
+          { "type": "craft", "amount": 1, "item": "Majestic Cocktail" },
+          { "type": "craft", "amount": 3, "item": "Moon Extract" },
+          { "type": "consume", "amount": 3, "item": "Moon Extract" },
+          { "type": "collect_token", "amount": 100, "token": "Strawberry" },
+          { "type": "collect_token", "amount": 100, "token": "Blueberry" },
+          { "type": "collect_token", "amount": 100, "token": "Pine Cone" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 50000000 },
+          { "item": "Mythic Starflower", "amount": 1 },
+          { "item": "Shiny Gold Egg", "amount": 1 },
+          { "item": "Ticket", "amount": 25 }
+        ]
+      },
+      {
+        "number": 15,
+        "name": "The Coastline Marathon",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 100000000,
+            "field": "Coconut Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 100000000,
+            "field": "Shell Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 100000000,
+            "field": "Lemon Field"
+          }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 75000000 },
+          { "item": "Summer Cocktail", "amount": 1 },
+          { "item": "John The Seal Sticker", "amount": 1 }
+        ]
+      },
+      {
+        "number": 16,
+        "name": "The Coastline Cataclysm",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 500000000,
+            "field": "Coconut Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 500000000,
+            "field": "Shell Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 500000000,
+            "field": "Lemon Field"
+          },
+          { "type": "craft", "amount": 5, "item": "Lemonade" },
+          { "type": "craft", "amount": 5, "item": "Coconut Drink" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 250000000 },
+          { "item": "Summer Cocktail", "amount": 1 },
+          { "item": "Silver Egg", "amount": 1 },
+          { "item": "Converter", "amount": 2 }
+        ]
+      },
+      {
+        "number": 17,
+        "name": "Coconut Overdrive",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 5000000000,
+            "field": "Coconut Field"
+          },
+          { "type": "collect_token", "amount": 250, "token": "Coconut" },
+          { "type": "craft", "amount": 15, "item": "Coconut Drink" },
+          { "type": "consume", "amount": 15, "item": "Coconut Drink" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 1000000000 },
+          { "item": "Summer Cocktail", "amount": 2 },
+          { "item": "Diamond Egg", "amount": 1 },
+          { "item": "Converter", "amount": 3 }
+        ]
+      },
+      {
+        "number": 18,
+        "name": "Lemonade Overvoltage",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 5000000000,
+            "field": "Lemon Field"
+          },
+          { "type": "collect_token", "amount": 250, "token": "Lemon" },
+          { "type": "craft", "amount": 15, "item": "Lemonade" },
+          { "type": "consume", "amount": 15, "item": "Lemonade" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 1000000000 },
+          { "item": "Summer Cocktail", "amount": 2 },
+          { "item": "Shiny Jelly", "amount": 5 },
+          { "item": "Converter", "amount": 3 }
+        ]
+      },
+      {
+        "number": 19,
+        "name": "The Solstice Fusion",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 10000000000,
+            "field": "Lemon Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 10000000000,
+            "field": "Coconut Field"
+          },
+          { "type": "craft", "amount": 25, "item": "Lemonade" },
+          { "type": "craft", "amount": 25, "item": "Coconut Drink" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 5000000000 },
+          { "item": "Majestic Cocktail", "amount": 3 },
+          { "item": "Shiny Egg", "amount": 1 },
+          { "item": "Converter", "amount": 5 }
+        ]
+      },
+      {
+        "number": 20,
+        "name": "Sovereign of the Sea",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 25000000000,
+            "field": "Coconut Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 25000000000,
+            "field": "Shell Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 25000000000,
+            "field": "Lemon Field"
+          },
+          { "type": "collect_token", "amount": 500, "token": "Coconut" },
+          { "type": "collect_token", "amount": 500, "token": "Lemon" },
+          { "type": "craft", "amount": 5, "item": "Majestic Cocktail" },
+          { "type": "consume", "amount": 5, "item": "Majestic Cocktail" }
+        ],
+        "rewards": [
+          { "item": "Shark Bee", "amount": 1 },
+          { "item": "Honey", "amount": 25000000000 },
+          { "item": "Mythic Starflower", "amount": 3 },
+          { "item": "Converter", "amount": 10 }
+        ]
+      }
+    ],
+    "aura_buff": {
+      "stat": "Pollen",
+      "per_stack": 0.01
+    }
+  },
+  {
+    "id": "sun-bear",
+    "name": "Sun Bear",
+    "image": "images/bears/Sun Bear Model.png",
+    "location": "Beach Zone",
+    "description": "Sun Bear basks in the golden light of the Lemon Field, challenging players with increasingly demanding quests centered around honey tokens and tropical crafting.",
+    "quests": [
+      {
+        "number": 1,
+        "name": "Zesty Sunlight",
+        "requirements": [
+          { "type": "gather_field", "amount": 2500, "field": "Lemon Field" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 2500 },
+          { "item": "Starflower", "amount": 1 }
+        ]
+      },
+      {
+        "number": 2,
+        "name": "The Midday Zenith",
+        "requirements": [{ "type": "use_ability", "amount": 50 }],
+        "rewards": [
+          { "item": "Honey", "amount": 5000 },
+          { "item": "Rare Starflower", "amount": 1 }
+        ]
+      },
+      {
+        "number": 3,
+        "name": "The Mighty Dawn",
+        "requirements": [
+          { "type": "collect_token", "amount": 250, "token": "Honey" },
+          { "type": "consume", "amount": 10, "item": "Seed Oil" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 250000 },
+          { "item": "Epic Starflower", "amount": 1 }
+        ]
+      },
+      {
+        "number": 4,
+        "name": "The Divine Spear",
+        "requirements": [
+          { "type": "gather_field", "amount": 2500000, "field": "Lemon Field" },
+          { "type": "collect_token", "amount": 300, "token": "Honey" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 1000000 },
+          { "item": "Ticket", "amount": 50 }
+        ]
+      },
+      {
+        "number": 5,
+        "name": "Prideful Radiance",
+        "requirements": [
+          { "type": "consume", "amount": 15, "item": "Seed Oil" },
+          { "type": "craft", "amount": 3, "item": "Lemonade" },
+          { "type": "consume", "amount": 3, "item": "Lemonade" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 10000000 },
+          { "item": "Legendary Starflower", "amount": 1 }
+        ]
+      },
+      {
+        "number": 6,
+        "name": "Preaching to the Sun",
+        "requirements": [
+          { "type": "collect_token", "amount": 500, "token": "Honey" },
+          { "type": "collect_token", "amount": 150, "token": "Lemon" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 50000000 },
+          { "item": "Converter", "amount": 3 }
+        ]
+      },
+      {
+        "number": 7,
+        "name": "Blazing Judgment",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 100000000,
+            "field": "Lemon Field"
+          },
+          { "type": "craft", "amount": 2, "item": "Summer Cocktail" },
+          { "type": "consume", "amount": 2, "item": "Summer Cocktail" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 150000000 },
+          { "item": "Gold Egg", "amount": 1 },
+          { "item": "Ticket", "amount": 50 }
+        ]
+      },
+      {
+        "number": 8,
+        "name": "The One Below None",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 250000000,
+            "field": "Lemon Field"
+          },
+          { "type": "collect_token", "amount": 1000, "token": "Honey" },
+          { "type": "craft", "amount": 2, "item": "Majestic Cocktail" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 500000000 },
+          { "item": "Diamond Egg", "amount": 1 },
+          { "item": "Converter", "amount": 5 }
+        ]
+      },
+      {
+        "number": 9,
+        "name": "The Noon-Day Shadow",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 250000000,
+            "field": "Lemon Field"
+          },
+          { "type": "collect_token", "amount": 1000, "token": "Honey" },
+          { "type": "craft", "amount": 3, "item": "Majestic Cocktail" }
+        ],
+        "rewards": [
+          { "item": "Honey", "amount": 750000000 },
+          { "item": "Diamond Egg", "amount": 1 },
+          { "item": "Converter", "amount": 5 }
+        ]
+      },
+      {
+        "number": 10,
+        "name": "The Midday Sovereign",
+        "requirements": [
+          { "type": "collect_token", "amount": 500, "token": "Lemon" },
+          { "type": "craft", "amount": 5, "item": "Majestic Cocktail" },
+          { "type": "consume", "amount": 5, "item": "Majestic Cocktail" }
+        ],
+        "rewards": [
+          { "item": "Sunny Bee", "amount": 1 },
+          { "item": "Honey", "amount": 2000000000 },
+          { "item": "Mythic Starflower", "amount": 2 },
+          { "item": "Converter", "amount": 10 }
+        ]
+      }
+    ]
   }
 ]

@@ -7,12 +7,74 @@ const RARITY_CLASS = {
   boss: "bee-boss",
 };
 
-let TOKEN_MAP = {};
+function tokenIcon(tokenName) {
+  // Use the token name directly: images/tokens/NomeDoToken.png
+  return `images/tokens/${tokenName}.png`;
+}
+
+function fmtStat(val) {
+  if (val === undefined || val === null) return "—";
+  return Number(val) % 1 === 0 ? String(Number(val)) : Number(val).toFixed(1);
+}
+
+function buildShinyBonus(shinyBonus) {
+  if (!shinyBonus) return "";
+  let valText = "";
+  if (shinyBonus.type === "Mult") {
+    valText = `x${shinyBonus.value}`;
+  } else if (shinyBonus.type === "Perc") {
+    valText = `+${shinyBonus.value}%`;
+  } else if (shinyBonus.type === "Add") {
+    valText = `+${shinyBonus.value}`;
+  } else {
+    valText = String(shinyBonus.value);
+  }
+  return `
+    <div class="bee-shiny-bonus">
+      <span class="bee-shiny-icon">✦</span>
+      <span class="bee-shiny-label">Shiny:</span>
+      <span class="bee-shiny-stat">${escHtml(shinyBonus.stat)}</span>
+      <span class="bee-shiny-val">${escHtml(valText)}</span>
+    </div>`;
+}
+
+function buildStatsGrid(bee) {
+  const stats = [
+    { label: "Speed", key: "speed", icon: "🏃" },
+    { label: "Attack", key: "attack", icon: "⚔️" },
+    { label: "Energy", key: "energy", icon: "⚡" },
+    { label: "Gather", key: "gather", icon: "🌸" },
+    { label: "Gather Time", key: "gatherTime", icon: "⏱", suffix: "s" },
+    { label: "Convert", key: "convert", icon: "🍯" },
+    { label: "Conv. Time", key: "convertTime", icon: "⏳", suffix: "s" },
+  ];
+
+  const hasStats = stats.some((s) => bee[s.key] !== undefined);
+  if (!hasStats) return "";
+
+  const rows = stats
+    .filter((s) => bee[s.key] !== undefined)
+    .map(
+      (s) => `
+      <div class="bee-stat-row">
+        <span class="bee-stat-icon">${s.icon}</span>
+        <span class="bee-stat-label">${escHtml(s.label)}</span>
+        <span class="bee-stat-value">${fmtStat(bee[s.key])}${s.suffix || ""}</span>
+      </div>`,
+    )
+    .join("");
+
+  return rows;
+}
 
 function buildInfobox(bee) {
   const rarityKey = (bee.rarity || "").toLowerCase();
   const rarityClass = RARITY_CLASS[rarityKey] || "bee-common";
-  const abilityCount = Array.isArray(bee.abilities) ? bee.abilities.length : 0;
+  const abilityCount = Array.isArray(bee.tokens)
+    ? bee.tokens.length
+    : Array.isArray(bee.abilities)
+      ? bee.abilities.length
+      : 0;
 
   const rows = [
     {
@@ -68,41 +130,56 @@ function buildObtain(bee) {
     </div>`;
 }
 
-function buildAbilities(abilities) {
+function buildAbilities(bee) {
+  const abilities = bee.tokens || bee.abilities;
   if (!abilities || !abilities.length) return "";
+
   const cards = abilities
     .map((ab, index) => {
+      const unlockLevel = ab.level || ab.unlock_level || 1;
       const unlockLabel =
-        (ab.unlock_level || 1) <= 1
+        unlockLevel <= 1
           ? "Available at Level 1"
-          : `Unlocks at Level ${ab.unlock_level}`;
-      const isLocked = (ab.unlock_level || 1) > 1;
-      const tokenId = ab.tokens && ab.tokens.length ? ab.tokens[0] : null;
-      const token = tokenId && TOKEN_MAP[tokenId] ? TOKEN_MAP[tokenId] : null;
-      const iconSrc = token && token.icon ? token.icon : "";
-      const desc =
-        token && token.description ? token.description : ab.description || "";
-      const iconInner = iconSrc
-        ? `<img src="${escHtml(iconSrc)}" alt="${escHtml(ab.name)}" onerror="this.onerror=null;this.src='images/ui/site-logo.png';" />`
-        : `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40" height="40"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>`;
+          : `Unlocks at Level ${unlockLevel}`;
+      const isLocked = unlockLevel > 1;
+
+      // Use the token name directly for the token image
+      const abName = ab.token || ab.name || "";
+      const iconSrc = tokenIcon(abName);
+      const desc = ab.desc || ab.description || "";
+
+      const chanceHtml =
+        ab.chance !== undefined
+          ? `<span class="ab-chance">${ab.chance}% chance</span>`
+          : "";
+      const expiresHtml =
+        ab.expires !== undefined
+          ? `<span class="ab-expires">Expires in ${ab.expires}s</span>`
+          : "";
+
       return `
       <div class="ab-card" style="animation-delay:${index * 0.07}s">
         <div class="ab-media-top">
           <div class="ab-media-frame">
-            <div class="ab-media-layer ab-media-layer--icon">${iconInner}</div>
+            <div class="ab-media-layer ab-media-layer--icon">
+              <img src="${escHtml(iconSrc)}" alt="${escHtml(abName)}"
+                onerror="this.onerror=null;this.src='images/ui/site-logo.png';" />
+            </div>
           </div>
         </div>
         <div class="ab-body">
           <div class="ab-top-row">
-            <span class="ab-name">${escHtml(ab.name)}</span>
+            <span class="ab-name">${escHtml(abName)}</span>
             <span class="ab-badge ${isLocked ? "ab-badge--locked" : ""}">${escHtml(unlockLabel)}</span>
           </div>
+          ${chanceHtml || expiresHtml ? `<div class="ab-meta-row">${chanceHtml}${expiresHtml}</div>` : ""}
           <div class="ab-separator"></div>
           <div class="ab-desc">${escHtml(desc)}</div>
         </div>
       </div>`;
     })
     .join("");
+
   return `
     <div class="bee-section bee-section--abilities">
       <div class="bee-section-heading">
@@ -125,6 +202,37 @@ function buildTrivia(trivia) {
     </div>`;
 }
 
+function buildStatsSection(bee) {
+  const stats = [
+    { label: "Speed", key: "speed", icon: "🏃" },
+    { label: "Attack", key: "attack", icon: "⚔️" },
+    { label: "Energy", key: "energy", icon: "⚡" },
+    { label: "Gather", key: "gather", icon: "🌸" },
+    { label: "Gather Time", key: "gatherTime", icon: "⏱", suffix: "s" },
+    { label: "Convert", key: "convert", icon: "🍯" },
+    { label: "Conv. Time", key: "convertTime", icon: "⏳", suffix: "s" },
+  ];
+  const rows = stats.filter((s) => bee[s.key] !== undefined);
+  if (!rows.length) return "";
+  const pills = rows
+    .map(
+      (s) => `
+      <div class="bee-stat-pill">
+        <span class="bee-stat-icon">${s.icon}</span>
+        <span class="bee-stat-label">${escHtml(s.label)}</span>
+        <span class="bee-stat-value">${fmtStat(bee[s.key])}${s.suffix || ""}</span>
+      </div>`,
+    )
+    .join("");
+  return `
+    <div class="bee-section bee-section--stats">
+      <div class="bee-section-heading">
+        <span class="bee-section-heading-deco"></span>Stats<span class="bee-section-heading-deco"></span>
+      </div>
+      <div class="bee-stats-pills">${pills}</div>
+    </div>`;
+}
+
 function buildPage(bee) {
   const rarityClass =
     RARITY_CLASS[(bee.rarity || "").toLowerCase()] || "bee-common";
@@ -135,12 +243,15 @@ function buildPage(bee) {
           <div class="bee-detail-name">${escHtml(bee.name)}</div>
           <span class="bee-detail-rarity ${rarityClass}">${escHtml(bee.rarity)}</span>
         </div>
-        <div class="bee-detail-desc">${escHtml(bee.description)}</div>
+        ${buildShinyBonus(bee.shinyBonus)}
+        <div class="bee-detail-desc">${escHtml(bee.description || bee.desc || "")}</div>
         ${buildObtain(bee)}
+        ${buildStatsSection(bee)}
       </div>
       ${buildInfobox(bee)}
     </div>
-    ${buildAbilities(bee.abilities)}
+    
+    ${buildAbilities(bee)}
     <div class="bee-section bee-section--all">
       <div class="bee-section-heading">
         <span class="bee-section-heading-deco"></span>All Bees<span class="bee-section-heading-deco"></span>
@@ -150,41 +261,10 @@ function buildPage(bee) {
     ${buildTrivia(bee.trivia)}`;
 }
 
-function openTokenModal(tokenId) {
-  const token = TOKEN_MAP[tokenId];
-  if (!token) return;
-  document.getElementById("token-modal-title").textContent = token.name;
-  const visual = document.getElementById("token-modal-visual");
-  visual.innerHTML = token.icon
-    ? `<img src="${escHtml(token.icon)}" alt="${escHtml(token.name)}" onerror="this.onerror=null;this.src='images/ui/site-logo.png';" />`
-    : `<span class="token-no-gif">No preview available.</span>`;
-  document.getElementById("token-modal-desc").textContent =
-    token.description || "";
-  const stats = document.getElementById("token-modal-stats");
-  const rows = [];
-  if (token.effect) rows.push({ label: "Effect", value: token.effect });
-  if (token.cooldown) rows.push({ label: "Cooldown", value: token.cooldown });
-  stats.innerHTML = rows
-    .map(
-      (r) => `
-    <div class="token-modal-stat">
-      <span class="token-modal-stat-label">${escHtml(r.label)}</span>
-      <span class="token-modal-stat-value">${escHtml(r.value)}</span>
-    </div>`,
-    )
-    .join("");
-  document.getElementById("token-modal-overlay").classList.add("open");
-}
-
-function closeTokenModal() {
-  document.getElementById("token-modal-overlay").classList.remove("open");
-}
-
-function bindTokenEvents(root) {
-  root.querySelectorAll(".token-card").forEach((card) => {
-    card.addEventListener("click", () => {
-      if (card.dataset.tokenId) openTokenModal(card.dataset.tokenId);
-    });
+function bindAbilityClicks(root, bee) {
+  // Ability popup removed: keep cards non-interactive (no modal on click)
+  root.querySelectorAll(".ab-card").forEach((card, i) => {
+    card.style.cursor = "default";
   });
 }
 
@@ -199,11 +279,11 @@ function renderAllBeesList(beePayload, currentBeeName) {
     return;
   }
   container.innerHTML = bees
-    .map((bee) => {
-      const name = escHtml(bee.name || "Unknown Bee");
-      const icon = escHtml(bee.icon || "images/ui/site-logo.png");
-      const href = `bee.html?bee=${encodeURIComponent(bee.name || "")}`;
-      const isCurrent = (bee.name || "") === (currentBeeName || "");
+    .map((b) => {
+      const name = escHtml(b.name || "Unknown Bee");
+      const icon = escHtml(b.icon || b.image || "images/ui/site-logo.png");
+      const href = `bee.html?bee=${encodeURIComponent(b.name || "")}`;
+      const isCurrent = (b.name || "") === (currentBeeName || "");
       return `
       <a class="bee-mini-link" href="${href}" aria-label="${name}">
         <div class="bee-mini-card${isCurrent ? " bee-mini-card--current" : ""}">
@@ -224,28 +304,22 @@ async function loadBeeDetail() {
     return;
   }
   try {
-    const [beeRes, tokenRes] = await Promise.all([
-      fetch("data/bees.json"),
-      fetch("data/ability-tokens.json"),
-    ]);
-    if (!beeRes.ok || !tokenRes.ok)
-      throw new Error("Failed to load data files.");
-    const beeData = await beeRes.json();
-    const tokenData = await tokenRes.json();
-    TOKEN_MAP = {};
-    (tokenData.tokens || []).forEach((t) => {
-      TOKEN_MAP[t.id] = t;
-    });
+    const res = await fetch("data/bees.json");
+    if (!res.ok) throw new Error("Failed to load bees.json");
+    const beeData = await res.json();
+
     const bee = Array.isArray(beeData)
       ? beeData.find((b) => b.name === beeName)
       : beeData[beeName];
+
     if (!bee) {
       root.innerHTML = `<div class="bee-detail-error">Bee "${escHtml(beeName)}" not found.</div>`;
       return;
     }
+
     document.title = `${bee.name} - The Majestic Bees`;
     root.innerHTML = `<div class="bee-detail-shell">${buildPage(bee)}</div>`;
-    bindTokenEvents(root);
+    bindAbilityClicks(root, bee);
     renderAllBeesList(beeData, bee.name);
   } catch {
     root.innerHTML =
@@ -255,15 +329,4 @@ async function loadBeeDetail() {
 
 document.addEventListener("DOMContentLoaded", () => {
   loadBeeDetail();
-
-  const tokenClose = document.getElementById("token-modal-close");
-  const tokenOverlay = document.getElementById("token-modal-overlay");
-  if (tokenClose) tokenClose.addEventListener("click", closeTokenModal);
-  if (tokenOverlay)
-    tokenOverlay.addEventListener("click", (e) => {
-      if (e.target === e.currentTarget) closeTokenModal();
-    });
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeTokenModal();
-  });
 });

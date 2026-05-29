@@ -385,7 +385,7 @@
       "image": "images/hive/stickers/Firework Bee Sticker.png",
       "rarity": "Legendary",
       "order": 849,
-      "desc": "Random chance to obtain from the Firework Bee",
+      "desc": "1 in 100k chance to obtain from the Firework Bee",
       "buffs": [
         {
           "stat": "Firework Pollen",

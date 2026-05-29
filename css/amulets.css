@@ -1,4 +1,5 @@
-amulets-page-title {
+/* ── Page layout ─────────────────────────────────────────────────────────────*/
+.amulets-page-title {
   text-align: center;
   padding: 30px 0 10px;
 }
@@ -10,6 +11,7 @@ amulets-page-title {
   font-size: 1.05em;
 }
 
+/* Info note above the list */
 .amulets-info-note {
   max-width: 860px;
   width: min(860px, 92%);
@@ -21,45 +23,37 @@ amulets-page-title {
   font-size: 0.88em;
   color: var(--gold-dim);
   line-height: 1.7;
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
 }
 
-.amulets-info-note-icon {
-  font-size: 1.1em;
-  flex-shrink: 0;
-  margin-top: 1px;
-  color: var(--gold);
-}
-
+/* ── Card list ───────────────────────────────────────────────────────────────*/
 .amulets-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 28px;
   width: min(860px, 92%);
   margin: 0 auto 12px;
 }
 
+/* Each amulet card — border & bg are set inline by JS via rarity theme */
 .amulet-card {
-  background: rgba(36, 26, 10, 0.72);
-  border: 1px solid var(--line);
   border-radius: 14px;
   overflow: hidden;
   transition:
-    border-color 0.2s,
-    box-shadow 0.2s;
+    border-color 0.25s,
+    box-shadow 0.25s;
+  border: 1px solid var(--line); /* fallback, overridden inline */
 }
 
 .amulet-card:hover {
-  border-color: rgba(232, 192, 64, 0.35);
-  box-shadow: 0 0 24px rgba(212, 170, 48, 0.1);
+  box-shadow: 0 0 28px rgba(212, 170, 48, 0.12);
 }
 
+/* ── Card header ─────────────────────────────────────────────────────────────*/
 .amulet-card-header {
   padding: 18px 20px 14px;
-  border-bottom: 1px solid var(--line);
-  background: rgba(18, 12, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  /* bg set inline */
+  transition: background 0.25s;
 }
 
 .amulet-card-left {
@@ -114,6 +108,7 @@ amulets-page-title {
   margin-top: 2px;
 }
 
+/* Header rarity badge — colour set inline */
 .amulet-rarity-badge {
   font-size: 0.74em;
   font-weight: 700;
@@ -122,21 +117,82 @@ amulets-page-title {
   padding: 3px 10px;
   border-radius: 6px;
   border: 1px solid;
+  transition:
+    color 0.2s,
+    border-color 0.2s,
+    background 0.2s;
 }
 
+.amulet-rarity-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  image-rendering: pixelated;
+}
+
+/* Rolls badge — sits inline next to rarity pill in header */
 .amulet-rolls-badge {
   font-size: 0.78em;
-  color: var(--gold-soft);
-  background: rgba(232, 192, 64, 0.08);
-  border: 1px solid rgba(232, 192, 64, 0.2);
-  border-radius: 6px;
+  font-weight: 700;
   padding: 3px 10px;
+  border-radius: 6px;
+  border: 1px solid;
+  white-space: nowrap;
+  transition:
+    color 0.2s,
+    border-color 0.2s,
+    background 0.2s;
 }
 
-.amulet-rolls-badge b {
-  color: var(--gold);
+/* ── Rarity toggle row ───────────────────────────────────────────────────────*/
+.amulet-toggle-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.18);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+/* Each pill button — colours via CSS variables set inline by JS */
+.amulet-rarity-pill {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--pill-border, rgba(232, 192, 64, 0.35));
+  color: var(--pill-text, var(--gold-dim));
+  background: transparent;
+  cursor: pointer;
+  transition:
+    background 0.18s,
+    color 0.18s,
+    border-color 0.18s,
+    transform 0.14s;
+}
+
+.amulet-rarity-pill:hover {
+  background: var(--pill-bg, rgba(232, 192, 64, 0.1));
+  transform: translateY(-1px);
+}
+
+.amulet-rarity-pill.active {
+  background: var(--pill-bg, rgba(232, 192, 64, 0.15));
+  color: var(--pill-text, var(--gold));
+  border-color: var(--pill-border, rgba(232, 192, 64, 0.55));
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+/* ── Variant panel (one per rarity) ─────────────────────────────────────────*/
+.amulet-variant-panel {
+  /* bg and border via CSS vars set inline */
+  transition: background 0.2s;
+}
+
+/* ── Buff table ──────────────────────────────────────────────────────────────*/
 .amulet-card-body {
   padding: 0 20px 16px;
   overflow-x: auto;
@@ -147,11 +203,6 @@ amulets-page-title {
   border-collapse: collapse;
   font-size: 0.87em;
   margin-top: 4px;
-}
-
-.amulet-card-body .amulet-buff-table {
-  width: 100%;
-  margin: 0 -20px 4px;
 }
 
 .amulet-buff-table thead tr th {
@@ -203,7 +254,7 @@ amulets-page-title {
 
 .amulet-buff-chance {
   text-align: right;
-  min-width: 100px;
+  min-width: 80px;
 }
 
 .amulet-chance-label {
@@ -211,9 +262,9 @@ amulets-page-title {
   font-size: 0.88em;
   font-weight: 700;
   white-space: nowrap;
-  text-align: right;
 }
 
+/* ── Responsive ──────────────────────────────────────────────────────────────*/
 @media (max-width: 560px) {
   .amulets-list {
     width: min(860px, 96%);
@@ -223,7 +274,30 @@ amulets-page-title {
     width: min(860px, 96%);
   }
 
+  .amulet-card-left {
+    gap: 12px;
+  }
+
+  .amulet-image-wrap {
+    flex: 0 0 60px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .amulet-image-wrap img {
+    width: 46px;
+    height: 46px;
+  }
+
   .amulet-buff-chance {
-    min-width: 80px;
+    min-width: 60px;
+  }
+
+  .amulet-toggle-row {
+    padding: 8px 14px;
+  }
+
+  .amulet-card-body {
+    padding: 0 12px 14px;
   }
 }

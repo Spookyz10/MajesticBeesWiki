@@ -30,6 +30,10 @@ function formatRequirement(req) {
       return `Defeat <b>${fmt(req.amount)}</b> ${escHtml(req.mob || "mob")}`;
     case "use_ability":
       return `Use <b>${escHtml(req.ability || "Ability")}</b> × ${fmt(req.amount)}`;
+    case "craft":
+      return `Craft <b>${fmt(req.amount)}</b> ${escHtml(req.item || "Item")}`;
+    case "consume":
+      return `Use <b>${fmt(req.amount)}</b> ${escHtml(req.item || "Item")}`;
     default:
       return escHtml(JSON.stringify(req));
   }
@@ -40,7 +44,8 @@ const SPECIAL_ITEMS = new Set([
   "Gold Egg",
   "Diamond Egg",
   "Basic Egg",
-  "Starflower",
+  "Legendary Starflower",
+  "Mythic Starflower",
   "Bamboo Flask",
   "Ticket",
 ]);
@@ -67,9 +72,12 @@ function buildQuestCard(quest, index) {
             ${
               rewards
                 .map((r) => {
+                  const itemName = r.item || "";
                   const special =
-                    SPECIAL_ITEMS.has(r.item || "") ||
-                    /egg/i.test(r.item || "");
+                    SPECIAL_ITEMS.has(itemName) ||
+                    /egg/i.test(itemName) ||
+                    /bee$/i.test(itemName) ||
+                    /(legendary|mythic) starflower/i.test(itemName);
                   return `<div class="bear-reward-row${special ? " bear-reward-row--special" : ""}"><span class="bear-reward-amt">×${fmt(r.amount ?? 1)}</span><span class="bear-reward-name">${escHtml(r.item || "Unknown")}</span></div>`;
                 })
                 .join("") ||

@@ -1,643 +1,1075 @@
-{
-  "Azure Bee": {
+[
+  {
     "name": "Azure Bee",
-    "rarity": "Rare",
+    "id": "azure",
+    "icon": "images/bees/Azure.png",
+    "desc": "A calm bee infused with cool energy, boosting blue pollen collection and refreshing nearby flowers. Its soothing aura increases efficiency and supports allies, making it essential for steady resource gathering and growth.",
     "color": "Blue",
-    "icon": "images/bees/Azure-Bee.png",
-    "model": "images/bees/models/Azure-Bee-model.png",
-    "description": "A calm bee infused with cool energy, boosting blue pollen collection and refreshing nearby flowers. Its soothing aura increases efficiency and supports allies, making it essential for steady resource gathering and growth.",
-    "obtain": [
+    "rarity": "Rare",
+    "speed": 17.0,
+    "attack": 1.0,
+    "energy": 25.0,
+    "gather": 10.0,
+    "gatherTime": 4.0,
+    "convert": 90.0,
+    "convertTime": 4.5,
+    "shinyBonus": {
+      "stat": "Blue Pollen",
+      "type": "Mult",
+      "value": 1.1
+    },
+    "tokens": [
       {
-        "method": "Royal Jelly",
-        "detail": "Random chance to get it"
+        "token": "Blue Pollen Boost",
+        "level": 1,
+        "chance": 9,
+        "expires": 15,
+        "desc": "Grants Blue Pollen Boost that gives +15% Blue Pollen for 60 Seconds and Stacks up to 10."
       },
       {
-        "method": "Silver Egg",
-        "detail": "Silver Egg can hatch a Rare or Epic Bee."
-      }
-    ],
-    "abilities": [
-      {
-        "name": "Blue Pollen Boost",
-        "unlock_level": 1,
-        "tokens": ["blue-pollen-boost"]
-      },
-      {
-        "name": "Blue Bomb",
-        "unlock_level": 3,
-        "tokens": ["blue-bomb"]
+        "token": "Blue Bomb",
+        "level": 3,
+        "chance": 9,
+        "expires": 15,
+        "desc": "Explodes 21 Tile with a power of 7 and gathers 4 Pollen , Doubles Blue Pollen."
       }
     ]
   },
-  "Basic Bee": {
+  {
     "name": "Basic Bee",
+    "id": "basic",
+    "icon": "images/bees/Basic.png",
+    "desc": "A simple and reliable bee with balanced abilities. It gathers pollen steadily, converts resources efficiently, and supports your hive with consistent performance. Perfect for beginners building a strong and dependable foundation.",
+    "color": "Colorless",
     "rarity": "Common",
-    "color": "Colorless",
-    "icon": "images/bees/Basic-Bee.png",
-    "model": "images/bees/models/Basic-Bee-model.png",
-    "description": "A simple and reliable bee with balanced abilities. It gathers pollen steadily, converts resources efficiently, and supports your hive with consistent performance. Perfect for beginners building a strong and dependable foundation.",
-    "obtain": [
-      {
-        "method": "Basic Egg",
-        "detail": "Basic Egg can hatch Basic Bee."
-      }
-    ],
-    "abilities": []
+    "speed": 14.0,
+    "attack": 1.0,
+    "energy": 20.0,
+    "gather": 5.0,
+    "gatherTime": 4.0,
+    "convert": 40.0,
+    "convertTime": 5.0,
+    "shinyBonus": {
+      "stat": "Pollen",
+      "type": "Mult",
+      "value": 1.25
+    },
+    "tokens": []
   },
-  "Bomber Bee": {
+  {
     "name": "Bomber Bee",
-    "rarity": "Rare",
+    "id": "bomber",
+    "icon": "images/bees/Bomber.png",
+    "desc": "A destructive bee that drops explosive bombs, instantly collecting pollen from surrounding flowers. Its powerful blasts clear large areas quickly, making it perfect for fast farming and overwhelming field coverage.",
     "color": "Colorless",
-    "icon": "images/bees/Bomber-Bee.png",
-    "model": "images/bees/models/Bomber-Bee-model.png",
-    "description": "A destructive bee that drops explosive bombs, instantly collecting pollen from surrounding flowers. Its powerful blasts clear large areas quickly, making it perfect for fast farming and overwhelming field coverage.",
-    "obtain": [
+    "rarity": "Rare",
+    "speed": 16.0,
+    "attack": 1.0,
+    "energy": 25.0,
+    "gather": 10.0,
+    "gatherTime": 4.0,
+    "convert": 90.0,
+    "convertTime": 4.5,
+    "shinyBonus": {
+      "stat": "Bomb Pollen",
+      "type": "Mult",
+      "value": 1.1
+    },
+    "tokens": [
       {
-        "method": "Royal Jelly",
-        "detail": "Random chance to get it"
+        "token": "Bomb",
+        "level": 1,
+        "chance": 9,
+        "expires": 15,
+        "desc": "Explodes 21 Tile with a power of 7 and gathers 6 Pollen , Also grants Bomb Combo Boost."
       },
       {
-        "method": "Silver Egg",
-        "detail": "Silver Egg can hatch a Rare or Epic Bee."
-      }
-    ],
-    "abilities": [
-      {
-        "name": "Bomb",
-        "unlock_level": 1,
-        "tokens": ["bomb"]
-      },
-      {
-        "name": "Bomb+",
-        "unlock_level": 4,
-        "tokens": ["bomb-plus"]
+        "token": "Bomb+",
+        "level": 4,
+        "chance": 9,
+        "expires": 15,
+        "desc": "Explodes 37 Tile with a power of 7 and gathers 6 Pollen , Also grants Bomb Combo Boost."
       }
     ]
   },
-  "Cloud Bee": {
+  {
     "name": "Cloud Bee",
-    "rarity": "Legendary",
+    "id": "cloud",
+    "icon": "images/bees/Cloud.png",
+    "desc": "A celestial bee adrift in an endless sky, its body woven from billowing cumulus clouds. It summons gusts of swirling wind to scatter pollen far across the field, enveloping nearby flowers in a soft, misty vapor that suspends decay and magnifies pollen yield while its airy aura drifts through the area in a sweeping, ever-shifting current of boundless atmospheric energy.",
     "color": "Colorless",
-    "icon": "images/bees/Cloud-Bee.png",
-    "model": "images/bees/models/Cloud-Bee-model.png",
-    "description": "A celestial bee adrift in an endless sky, its body woven from billowing cumulus clouds. It summons gusts of swirling wind to scatter pollen far across the field, enveloping nearby flowers in a soft, misty vapor that suspends decay and magnifies pollen yield while its airy aura drifts through the area in a sweeping, ever-shifting current of boundless atmospheric energy.",
-    "obtain": [
+    "rarity": "Legendary",
+    "speed": 19.0,
+    "attack": 1.0,
+    "energy": 35.0,
+    "gather": 10.0,
+    "gatherTime": 4.0,
+    "convert": 720.0,
+    "convertTime": 3.0,
+    "shinyBonus": {
+      "stat": "Cloud Pollen",
+      "type": "Perc",
+      "value": 20.0
+    },
+    "tokens": [
       {
-        "method": "Royal Jelly",
-        "detail": "Random chance to get it"
+        "token": "Clouds",
+        "level": 1,
+        "chance": 8,
+        "expires": 15,
+        "desc": "Create 2 + (1 Per 5 Levels) Clouds (Lasts for 10s + 1 Per Level) that Regenerates Flowers For 30s and collect some flowers on the field (doubles white pollen)."
       },
       {
-        "method": "Diamond Egg",
-        "detail": "Diamond Egg can hatch a Legendary Bee."
-      }
-    ],
-    "abilities": [
-      {
-        "name": "Clouds",
-        "unlock_level": 1,
-        "tokens": ["clouds"]
-      },
-      {
-        "name": "Cloud Boost",
-        "unlock_level": 10,
-        "tokens": ["cloud-boost"]
+        "token": "Cloud Boost",
+        "level": 10,
+        "chance": 9,
+        "expires": 12,
+        "desc": "Grants Cloud Boost that gives +4% Cloud Pollen , +2% White Pollen and 2% Capacity Bonus for 60s , stacks upto 50x."
       }
     ]
   },
-  "Coal Bee": {
+  {
     "name": "Coal Bee",
-    "rarity": "Epic",
+    "id": "coal",
+    "icon": "images/bees/Coal.png",
+    "desc": "A smoldering bee forged from deep earth pressure. It scorches nearby flowers, hardening their cores and boosting red pollen collection while radiating raw heat that fuels efficiency and ensures relentless, unyielding resource extraction.",
     "color": "Red",
-    "icon": "images/bees/Coal-Bee.png",
-    "model": "images/bees/models/Coal-Bee-model.png",
-    "description": "A smoldering bee forged from deep earth pressure. It scorches nearby flowers, hardening their cores and boosting red pollen collection while radiating raw heat that fuels efficiency and ensures relentless, unyielding resource extraction.",
-    "obtain": [
+    "rarity": "Epic",
+    "speed": 15.0,
+    "attack": 4.0,
+    "energy": 45.0,
+    "gather": 17.0,
+    "gatherTime": 6.0,
+    "convert": 135.0,
+    "convertTime": 6.5,
+    "shinyBonus": {
+      "stat": "Fire Pollen",
+      "type": "Mult",
+      "value": 1.1
+    },
+    "tokens": [
       {
-        "method": "Royal Jelly",
-        "detail": "Random chance to get it"
+        "token": "Red Pollen Boost",
+        "level": 1,
+        "chance": 12,
+        "expires": 15,
+        "desc": "Grants Red Pollen Boost that gives +15% Red Pollen for 60 Seconds and Stacks up to 10."
       },
       {
-        "method": "Gold Egg",
-        "detail": "Gold Egg can hatch an Epic or Legendary Bee."
-      }
-    ],
-    "abilities": [
-      {
-        "name": "Red Pollen Boost",
-        "unlock_level": 1,
-        "tokens": ["red-pollen-boost"]
-      },
-      {
-        "name": "Coal Boost",
-        "unlock_level": 4,
-        "tokens": ["coal-boost"]
+        "token": "Coal Boost",
+        "level": 4,
+        "chance": 8,
+        "expires": 15,
+        "desc": "Grants Coal Boost that gives +2% Fire Pollen for 90 Seconds and Stacks up to 100."
       }
     ]
   },
-  "Cold Bee": {
+  {
     "name": "Cold Bee",
-    "rarity": "Epic",
+    "id": "cold",
+    "icon": "images/bees/Cold.png",
+    "desc": "A chilling bee infused with icy power. It freezes nearby flowers, slowing decay and boosting blue pollen collection while providing cooling effects that improve efficiency and help maintain stable resource gathering performance.",
     "color": "Blue",
-    "icon": "images/bees/Cold-Bee.png",
-    "model": "images/bees/models/Cold-Bee-model.png",
-    "description": "A chilling bee infused with icy power. It freezes nearby flowers, slowing decay and boosting blue pollen collection while providing cooling effects that improve efficiency and help maintain stable resource gathering performance.",
-    "obtain": [
+    "rarity": "Epic",
+    "speed": 13.0,
+    "attack": 3.0,
+    "energy": 30.0,
+    "gather": 17.0,
+    "gatherTime": 6.0,
+    "convert": 150.0,
+    "convertTime": 6.5,
+    "shinyBonus": {
+      "stat": "Blue Pollen",
+      "type": "Perc",
+      "value": 20.0
+    },
+    "tokens": [
       {
-        "method": "Royal Jelly",
-        "detail": "Random chance to get it"
+        "token": "Blue Pollen Boost",
+        "level": 1,
+        "chance": 12,
+        "expires": 15,
+        "desc": "Grants Blue Pollen Boost that gives +15% Blue Pollen for 60 Seconds and Stacks up to 10."
       },
       {
-        "method": "Gold Egg",
-        "detail": "Gold Egg can hatch an Epic or Legendary Bee."
-      }
-    ],
-    "abilities": [
-      {
-        "name": "Blue Pollen Boost",
-        "unlock_level": 1,
-        "tokens": ["blue-pollen-boost"]
-      },
-      {
-        "name": "Ice Bomb",
-        "unlock_level": 4,
-        "tokens": ["ice-bomb"]
+        "token": "Ice Bomb",
+        "level": 4,
+        "chance": 9,
+        "expires": 15,
+        "desc": "Explodes 9 Tile with a power of 3 and gathers 8 Pollen , Doubles Blue Pollen and Creates Ice Tiles Arround that lasts for 12 seconds."
       }
     ]
   },
-  "Crimson Bee": {
+  {
     "name": "Crimson Bee",
-    "rarity": "Rare",
+    "id": "crimson",
+    "icon": "images/bees/Crimson.png",
+    "desc": "A fierce bee filled with blazing power, specializing in red pollen collection and aggressive boosts. It enhances attack strength and burns through fields quickly, helping your hive dominate and collect resources faster.",
     "color": "Red",
-    "icon": "images/bees/Crimson-Bee.png",
-    "model": "images/bees/models/Crimson-Bee-model.png",
-    "description": "A fierce bee filled with blazing power, specializing in red pollen collection and aggressive boosts. It enhances attack strength and burns through fields quickly, helping your hive dominate and collect resources faster.",
-    "obtain": [
+    "rarity": "Rare",
+    "speed": 15.0,
+    "attack": 3.0,
+    "energy": 20.0,
+    "gather": 12.0,
+    "gatherTime": 4.0,
+    "convert": 120.0,
+    "convertTime": 4.5,
+    "shinyBonus": {
+      "stat": "Red Pollen",
+      "type": "Mult",
+      "value": 1.1
+    },
+    "tokens": [
       {
-        "method": "Royal Jelly",
-        "detail": "Random chance to get it"
+        "token": "Red Pollen Boost",
+        "level": 1,
+        "chance": 9,
+        "expires": 15,
+        "desc": "Grants Red Pollen Boost that gives +15% Red Pollen for 60 Seconds and Stacks up to 10."
       },
       {
-        "method": "Silver Egg",
-        "detail": "Silver Egg can hatch a Rare or Epic Bee."
-      }
-    ],
-    "abilities": [
-      {
-        "name": "Red Pollen Boost",
-        "unlock_level": 1,
-        "tokens": ["red-pollen-boost"]
-      },
-      {
-        "name": "Red Bomb",
-        "unlock_level": 3,
-        "tokens": ["red-bomb"]
+        "token": "Red Bomb",
+        "level": 3,
+        "chance": 9,
+        "expires": 15,
+        "desc": "Explodes 21 Tile with a power of 7 and gathers 4 Pollen , Doubles Red Pollen."
       }
     ]
   },
-  "Exp Bee": {
+  {
     "name": "Exp Bee",
-    "rarity": "Special",
+    "id": "exp",
+    "icon": "images/bees/Exp.png",
+    "desc": "A luminous bee glowing with concentrated knowledge and energy. It flits purposefully through the field, leaving trails of sparkling wisdom and radiant experience orbs in its wake while its brilliant aura resonates with an empowering frequency that accelerates growth and amplifies the learning gained from every blossom it touches.",
     "color": "Colorless",
-    "icon": "images/bees/Exp-Bee.png",
-    "model": "images/bees/models/Exp-Bee-model.png",
-    "description": "A luminous bee glowing with concentrated knowledge and energy. It flits purposefully through the field, leaving trails of sparkling wisdom and radiant experience orbs in its wake while its brilliant aura resonates with an empowering frequency that accelerates growth and amplifies the learning gained from every blossom it touches.",
-    "obtain": [
+    "rarity": "Special",
+    "speed": 22.0,
+    "attack": 3.0,
+    "energy": 80.0,
+    "gather": 35.0,
+    "gatherTime": 4.0,
+    "convert": 7500.0,
+    "convertTime": 4.0,
+    "shinyBonus": {
+      "stat": "Bee Pollen",
+      "type": "Perc",
+      "value": 20.0
+    },
+    "tokens": [
       {
-        "method": "750 Tickets",
-        "detail": "Obtained via 750 Tickets."
-      }
-    ],
-    "abilities": [
-      {
-        "name": "Exp Boost",
-        "unlock_level": 1,
-        "tokens": ["exp-boost"]
+        "token": "Exp Boost",
+        "level": 1,
+        "chance": 8,
+        "expires": 15,
+        "desc": "Grants Exp Boost that gives x1.15 Capacity Bonus & x1.05 Obsidian Pollen for 90 Seconds and Stacks up to 5."
       },
       {
-        "name": "Exp Orbs",
-        "unlock_level": 8,
-        "tokens": ["exp-orbs"]
+        "token": "Exp Orbs",
+        "level": 8,
+        "chance": 8,
+        "expires": 15,
+        "desc": "Grants 1 + (1 Per 3 Levels) Exp Orbs that gives 100xp when used."
       },
       {
-        "name": "Exp Bomb",
-        "unlock_level": 14,
-        "tokens": ["exp-bomb"]
+        "token": "Exp Bomb",
+        "level": 14,
+        "chance": 14,
+        "expires": 12,
+        "desc": "Explodes 21 Tile with a power of 7 and gathers 4 + (3 Per Bee's Level) Pollen."
       }
     ]
   },
-  "Firework Bee": {
+  {
+    "name": "Fire Bee",
+    "id": "fire",
+    "icon": "images/bees/Fire.png",
+    "desc": "A fiery bee radiating intense heat and energy. It scorches flowers to boost red pollen collection, increases attack power, and spreads burning effects that rapidly enhance harvesting speed and field productivity.",
+    "color": "Red",
+    "rarity": "Epic",
+    "speed": 13.0,
+    "attack": 3.0,
+    "energy": 30.0,
+    "gather": 17.0,
+    "gatherTime": 6.0,
+    "convert": 255.0,
+    "convertTime": 6.5,
+    "shinyBonus": {
+      "stat": "Red Pollen",
+      "type": "Perc",
+      "value": 20.0
+    },
+    "tokens": [
+      {
+        "token": "Red Pollen Boost",
+        "level": 1,
+        "chance": 12,
+        "expires": 15,
+        "desc": "Grants Red Pollen Boost that gives +15% Red Pollen for 60 Seconds and Stacks up to 10."
+      },
+      {
+        "token": "Fire Bomb",
+        "level": 4,
+        "chance": 9,
+        "expires": 15,
+        "desc": "Explodes 9 Tile with a power of 3 and gathers 8 Pollen , Doubles Red Pollen and Creates Fire Tiles Arround that lasts for 6 seconds."
+      }
+    ]
+  },
+  {
     "name": "Firework Bee",
-    "rarity": "Legendary",
+    "id": "firework",
+    "icon": "images/bees/Firework.png",
+    "desc": "A radiant bee crackling with festive power. It detonates cascading bursts across the field, showering flowers in luminous sparks and amplifying pollen yield while its brilliant explosions ripple outward, fueling a dazzling and relentless surge of collection.",
     "color": "Red",
-    "icon": "images/bees/Firework-Bee.png",
-    "model": "images/bees/models/Firework-Bee-model.png",
-    "description": "A radiant bee crackling with festive power. It detonates cascading bursts across the field, showering flowers in luminous sparks and amplifying pollen yield while its brilliant explosions ripple outward, fueling a dazzling and relentless surge of collection.",
-    "obtain": [
+    "rarity": "Legendary",
+    "speed": 18.0,
+    "attack": 4.0,
+    "energy": 45.0,
+    "gather": 24.0,
+    "gatherTime": 5.0,
+    "convert": 865.0,
+    "convertTime": 5.0,
+    "shinyBonus": {
+      "stat": "Firework Pollen",
+      "type": "Perc",
+      "value": 20.0
+    },
+    "tokens": [
       {
-        "method": "Royal Jelly",
-        "detail": "Random chance to get it"
+        "token": "Fireworks",
+        "level": 1,
+        "chance": 8,
+        "expires": 15,
+        "desc": "Creates 2 + (1 Per 5 Levels) Fireworks , which collect 5 patches of flowers + creates fire that lasts for 6 seconds."
       },
       {
-        "method": "Diamond Egg",
-        "detail": "Diamond Egg can hatch a Legendary Bee."
-      }
-    ],
-    "abilities": [
-      {
-        "name": "Fireworks",
-        "unlock_level": 1,
-        "tokens": ["fireworks"]
-      },
-      {
-        "name": "Fire Bomb",
-        "unlock_level": 7,
-        "tokens": ["fire-bomb"]
+        "token": "Fire Bomb",
+        "level": 7,
+        "chance": 9,
+        "expires": 15,
+        "desc": "Explodes 9 Tile with a power of 3 and gathers 8 Pollen , Doubles Red Pollen and Creates Fire Tiles Arround that lasts for 6 seconds."
       }
     ]
   },
-  "Flower Bee": {
+  {
     "name": "Flower Bee",
-    "rarity": "Epic",
+    "id": "flower",
+    "icon": "images/bees/Flower.png",
+    "desc": "A gentle bee devoted to nurturing flowers. It enhances bloom speed, increases pollen yield from blossoms, and spreads growth energy across fields, making nearby plants more rewarding and efficient to harvest.",
     "color": "Colorless",
-    "icon": "images/bees/Flower-Bee.png",
-    "model": "images/bees/models/Flower-Bee-model.png",
-    "description": "A gentle bee devoted to nurturing flowers. It enhances bloom speed, increases pollen yield from blossoms, and spreads growth energy across fields, making nearby plants more rewarding and efficient to harvest.",
-    "obtain": [
+    "rarity": "Epic",
+    "speed": 13.0,
+    "attack": 3.0,
+    "energy": 30.0,
+    "gather": 17.0,
+    "gatherTime": 6.0,
+    "convert": 150.0,
+    "convertTime": 6.5,
+    "shinyBonus": {
+      "stat": "White Pollen",
+      "type": "Mult",
+      "value": 1.1
+    },
+    "tokens": [
       {
-        "method": "Royal Jelly",
-        "detail": "Random chance to get it"
-      },
-      {
-        "method": "Gold Egg",
-        "detail": "Gold Egg can hatch an Epic or Legendary Bee."
-      }
-    ],
-    "abilities": [
-      {
-        "name": "White Pollen Boost",
-        "unlock_level": 1,
-        "tokens": ["white-pollen-boost"]
+        "token": "White Pollen Boost",
+        "level": 1,
+        "chance": 12,
+        "expires": 15,
+        "desc": "Grants White Pollen Boost that gives +15% White Pollen for 60 Seconds and Stacks up to 10."
       }
     ]
   },
-  "Hasty Bee": {
+  {
     "name": "Hasty Bee",
-    "rarity": "Rare",
+    "id": "hasty",
+    "icon": "images/bees/Hasty.png",
+    "desc": "An energetic bee that increases movement speed and attack rate for the hive. Its rapid actions help collect pollen faster, dodge threats, and improve overall efficiency during intense gathering sessions.",
     "color": "Colorless",
-    "icon": "images/bees/Hasty-Bee.png",
-    "model": "images/bees/models/Hasty-Bee-model.png",
-    "description": "An energetic bee that increases movement speed and attack rate for the hive. Its rapid actions help collect pollen faster, dodge threats, and improve overall efficiency during intense gathering sessions.",
-    "obtain": [
+    "rarity": "Rare",
+    "speed": 20.0,
+    "attack": 2.0,
+    "energy": 50.0,
+    "gather": 11.0,
+    "gatherTime": 5.0,
+    "convert": 140.0,
+    "convertTime": 6.0,
+    "shinyBonus": {
+      "stat": "Movespeed",
+      "type": "Mult",
+      "value": 1.1
+    },
+    "tokens": [
       {
-        "method": "Royal Jelly",
-        "detail": "Random chance to get it"
-      },
-      {
-        "method": "Silver Egg",
-        "detail": "Silver Egg can hatch a Rare or Epic Bee."
-      }
-    ],
-    "abilities": [
-      {
-        "name": "Haste Boost",
-        "unlock_level": 1,
-        "tokens": ["haste-boost"]
+        "token": "Haste Boost",
+        "level": 1,
+        "chance": 12,
+        "expires": 15,
+        "desc": "Grants Haste Boost that gives +5% Movespeed for 60 Seconds and Stacks up to 10."
       }
     ]
   },
-  "Ice Bee": {
+  {
+    "name": "Honey Bee",
+    "id": "honey",
+    "icon": "images/bees/Honey.png",
+    "desc": "A pure bee dedicated to the sweet essence of honey production, converting pollen with unmatched efficiency and quality. Its natural affinity for nectar creates premium honey reserves, serving as the foundation for any successful hive.",
+    "color": "Colorless",
+    "rarity": "Epic",
+    "speed": 18.0,
+    "attack": 2.0,
+    "energy": 30.0,
+    "gather": 7.0,
+    "gatherTime": 4.0,
+    "convert": 750.0,
+    "convertTime": 4.5,
+    "shinyBonus": {
+      "stat": "Convert Rate",
+      "type": "Mult",
+      "value": 1.25
+    },
+    "tokens": [
+      {
+        "token": "Honey Gift",
+        "level": 3,
+        "chance": 9,
+        "expires": 15,
+        "desc": "Converts 100 * (Total Conversion) * (Bee's Level) Pollen Into 5 Honey Tokens Arround You."
+      }
+    ]
+  },
+  {
     "name": "Ice Bee",
-    "rarity": "Special",
+    "id": "ice",
+    "icon": "images/bees/Ice.png",
+    "desc": "A crystalline architect carved from eternal permafrost, shimmering with a frigid, silent grace. It glides through the air on wings of sheer frost, trailing a mist of absolute zero and delicate snowflakes that freeze moments of insight into permanent memory; its chilling aura stills the chaos of the mind, allowing for a focused, rhythmic harvest of clarity from the petals of the frozen field.",
     "color": "Blue",
-    "icon": "images/bees/Ice-Bee.png",
-    "model": "images/bees/models/Ice-Bee-model.png",
-    "description": "A crystalline architect carved from eternal permafrost, shimmering with a frigid, silent grace. It glides through the air on wings of sheer frost, trailing a mist of absolute zero and delicate snowflakes that freeze moments of insight into permanent memory; its chilling aura stills the chaos of the mind, allowing for a focused, rhythmic harvest of clarity from the petals of the frozen field.",
-    "obtain": [
+    "rarity": "Special",
+    "speed": 22.0,
+    "attack": 2.0,
+    "energy": 80.0,
+    "gather": 35.0,
+    "gatherTime": 4.0,
+    "convert": 8000.0,
+    "convertTime": 4.0,
+    "shinyBonus": {
+      "stat": "Blue Field Capacity",
+      "type": "Mult",
+      "value": 1.15
+    },
+    "tokens": [
       {
-        "method": "Crafting",
-        "detail": "Obtained via Crafting."
-      }
-    ],
-    "abilities": [
-      {
-        "name": "Blue Pollen Boost",
-        "unlock_level": 1,
-        "tokens": ["blue-pollen-boost"]
+        "token": "Blue Pollen Boost",
+        "level": 1,
+        "chance": 12,
+        "expires": 15,
+        "desc": "Grants Blue Pollen Boost that gives +15% Blue Pollen for 60 Seconds and Stacks up to 10."
       },
       {
-        "name": "Ice Crystal",
-        "unlock_level": 14,
-        "tokens": ["ice-crystal"]
+        "token": "Ice Crystal",
+        "level": 14,
+        "chance": 12,
+        "expires": 15,
+        "desc": "Creates crystal which lasts for 8s + (1s per 3 levels) which randomly collects blue tokens and spawns ice for every blue token."
       }
     ]
   },
-  "Icicle Bee": {
+  {
     "name": "Icicle Bee",
-    "rarity": "Legendary",
+    "id": "icicle",
+    "icon": "images/bees/Icicle.png",
+    "desc": "A frigid bee encased in piercing ice. It launches razor-sharp icicles across the field, freezing nearby flowers in a crystalline frost that slows decay and amplifies pollen yield while its glacial aura blankets the area in a relentless, bone-chilling surge of frozen energy.",
     "color": "Blue",
-    "icon": "images/bees/Icicle-Bee.png",
-    "model": "images/bees/models/Icicle-Bee-model.png",
-    "description": "A frigid bee encased in piercing ice. It launches razor-sharp icicles across the field, freezing nearby flowers in a crystalline frost that slows decay and amplifies pollen yield while its glacial aura blankets the area in a relentless, bone-chilling surge of frozen energy.",
-    "obtain": [
+    "rarity": "Legendary",
+    "speed": 18.0,
+    "attack": 2.0,
+    "energy": 40.0,
+    "gather": 27.0,
+    "gatherTime": 4.0,
+    "convert": 435.0,
+    "convertTime": 4.0,
+    "shinyBonus": {
+      "stat": "Icicle Pollen",
+      "type": "Perc",
+      "value": 20.0
+    },
+    "tokens": [
       {
-        "method": "Royal Jelly",
-        "detail": "Random chance to get it"
+        "token": "Icicles",
+        "level": 1,
+        "chance": 8,
+        "expires": 15,
+        "desc": "Creates 2 + (1 Per 5 Levels) Icicles , which collect 5 patches of flowers + creates Ice that lasts for 15 seconds."
       },
       {
-        "method": "Diamond Egg",
-        "detail": "Diamond Egg can hatch a Legendary Bee."
-      }
-    ],
-    "abilities": [
-      {
-        "name": "Icicles",
-        "unlock_level": 1,
-        "tokens": ["icicles"]
-      },
-      {
-        "name": "Ice Bomb",
-        "unlock_level": 7,
-        "tokens": ["ice-bomb"]
+        "token": "Ice Bomb",
+        "level": 7,
+        "chance": 9,
+        "expires": 15,
+        "desc": "Explodes 9 Tile with a power of 3 and gathers 8 Pollen , Doubles Blue Pollen and Creates Ice Tiles Arround that lasts for 12 seconds."
       }
     ]
   },
-  "Lucky Bee": {
+  {
+    "name": "Lion Bee",
+    "id": "lion",
+    "icon": "images/bees/Lion.png",
+    "desc": "A majestic bee that rules the field with commanding presence, its mighty roar boosting all nearby bees' abilities. Its proud strength and territorial dominance ensure superior pollen collection while protecting its kingdom from threats.",
+    "color": "Colorless",
+    "rarity": "Legendary",
+    "speed": 22.0,
+    "attack": 7.0,
+    "energy": 30.0,
+    "gather": 8.0,
+    "gatherTime": 4.0,
+    "convert": 600.0,
+    "convertTime": 4.5,
+    "shinyBonus": {
+      "stat": "Attack Bonus",
+      "type": "Mult",
+      "value": 1.25
+    },
+    "tokens": [
+      {
+        "token": "Lion Aura Boost",
+        "level": 1,
+        "chance": 9,
+        "expires": 15,
+        "desc": "Grants Lion Aura Boost that gives +25% Attack Bonus for 60 Seconds and Stacks up to 4."
+      },
+      {
+        "token": "Lion Bite",
+        "level": 8,
+        "chance": 9,
+        "expires": 15,
+        "desc": "Attacks all mobs on field by 5 * (Bee's Level)."
+      }
+    ]
+  },
+  {
     "name": "Lucky Bee",
-    "rarity": "Special",
+    "id": "lucky",
+    "icon": "images/bees/Lucky.png",
+    "desc": "A shimmering bee radiating with golden fortune. It dances unpredictably across the field, scattering bursts of lucky clover and glittering tokens wherever it roams while its warm, glowing aura pulses with a magnetic charm that draws in rare treasures and multiplies the rewards of every flower it graces.",
     "color": "Colorless",
-    "icon": "images/bees/Lucky-Bee.png",
-    "model": "images/bees/models/Lucky-Bee-model.png",
-    "description": "A shimmering bee radiating with golden fortune. It dances unpredictably across the field, scattering bursts of lucky clover and glittering tokens wherever it roams while its warm, glowing aura pulses with a magnetic charm that draws in rare treasures and multiplies the rewards of every flower it graces.",
-    "obtain": [
+    "rarity": "Special",
+    "speed": 20.0,
+    "attack": 1.0,
+    "energy": 35.0,
+    "gather": 20.0,
+    "gatherTime": 4.0,
+    "convert": 4500.0,
+    "convertTime": 4.0,
+    "shinyBonus": {
+      "stat": "Loot Luck",
+      "type": "Perc",
+      "value": 20.0
+    },
+    "tokens": [
       {
-        "method": "500 Tickets",
-        "detail": "Obtained via 500 Tickets."
-      }
-    ],
-    "abilities": [
-      {
-        "name": "3 Leaf Clover Boost",
-        "unlock_level": 1,
-        "tokens": ["3-leaf-clover-boost"]
+        "token": "3 Leaf Clover Boost",
+        "level": 1,
+        "chance": 8,
+        "expires": 15,
+        "desc": "Grants 3 Leaf Clover Boost that gives +25% Pollen & +25% Loot Luck for 30 Seconds and Stacks up to 2."
       },
       {
-        "name": "4 Leaf Clover Boost",
-        "unlock_level": 7,
-        "tokens": ["4-leaf-clover-boost"]
+        "token": "4 Leaf Clover Boost",
+        "level": 7,
+        "chance": 40,
+        "expires": 12,
+        "desc": "Grants 4 Leaf Clover Boost that gives +100% Pollen & +100% Loot Luck & +100% Capacity Bonus for 30 Seconds (Spawns Insane Rare)."
       },
       {
-        "name": "Pot O Gold",
-        "unlock_level": 13,
-        "tokens": ["pot-o-gold"]
+        "token": "Pot O Gold",
+        "level": 13,
+        "chance": 17,
+        "expires": 12,
+        "desc": "Summons a Pot O' Gold that fills with pollen over 14 + (1s per 5 lvls) seconds. Once the time is up, everything collected inside is instantly converted into x2 honey tokens!"
       }
     ]
   },
-  "Magma Bee": {
+  {
     "name": "Magma Bee",
-    "rarity": "Special",
+    "id": "magma",
+    "icon": "images/bees/Magma.png",
+    "desc": "A core-heated sentinel forged from molten stone and pulsing obsidian. As it drones through the hive, it leaves a scorching trail of liquid fire and crystalline embers; its very presence radiates an intense, transformative heat that tempers raw potential into hardened skill, refining the essence of every flower it visits into a potent, concentrated nectar of power.",
     "color": "Red",
-    "icon": "images/bees/Magma-Bee.png",
-    "model": "images/bees/models/Magma-Bee-model.png",
-    "description": "A core-heated sentinel forged from molten stone and pulsing obsidian. As it drones through the hive, it leaves a scorching trail of liquid fire and crystalline embers; its very presence radiates an intense, transformative heat that tempers raw potential into hardened skill, refining the essence of every flower it visits into a potent, concentrated nectar of power.",
-    "obtain": [
+    "rarity": "Special",
+    "speed": 22.0,
+    "attack": 2.0,
+    "energy": 80.0,
+    "gather": 35.0,
+    "gatherTime": 4.0,
+    "convert": 8000.0,
+    "convertTime": 4.0,
+    "shinyBonus": {
+      "stat": "Red Field Capacity",
+      "type": "Mult",
+      "value": 1.15
+    },
+    "tokens": [
       {
-        "method": "Crafting",
-        "detail": "Obtained via Crafting."
-      }
-    ],
-    "abilities": [
-      {
-        "name": "Red Pollen Boost",
-        "unlock_level": 1,
-        "tokens": ["red-pollen-boost"]
+        "token": "Red Pollen Boost",
+        "level": 1,
+        "chance": 12,
+        "expires": 15,
+        "desc": "Grants Red Pollen Boost that gives +15% Red Pollen for 60 Seconds and Stacks up to 10."
       },
       {
-        "name": "Fire Crystal",
-        "unlock_level": 14,
-        "tokens": ["fire-crystal"]
+        "token": "Fire Crystal",
+        "level": 14,
+        "chance": 12,
+        "expires": 15,
+        "desc": "Creates crystal which lasts for 8s + (1s per 3 levels) which randomly collects red tokens and spawns powerful fire for every red token."
       }
     ]
   },
-  "Oil Bee": {
-    "name": "Oil Bee",
-    "rarity": "Legendary",
-    "color": "Red",
-    "icon": "images/bees/Oil-Bee.png",
-    "model": "images/bees/models/Oil-Bee-model.png",
-    "description": "A viscous bee gleaming with dark iridescence, its form composed of flowing obsidian streams that ripple with rainbow sheens. It releases thick, amber droplets that coat the field in protective resin, encasing nearby flowers in a preserving glaze that extends their lifespan and intensifies their essence while its slick aura spreads through the area in slow, deliberate waves of liquid preservation and ancient, earthbound energy.",
-    "obtain": [
-      {
-        "method": "Royal Jelly",
-        "detail": "Random chance to get it"
-      },
-      {
-        "method": "Diamond Egg",
-        "detail": "Diamond Egg can hatch a Legendary Bee."
-      }
-    ],
-    "abilities": [
-      {
-        "name": "Oil Boost",
-        "unlock_level": 1,
-        "tokens": ["oil-boost"]
-      },
-      {
-        "name": "Fire Bomb",
-        "unlock_level": 9,
-        "tokens": ["fire-bomb"]
-      }
-    ]
-  },
-  "Pixel Bee": {
-    "name": "Pixel Bee",
-    "rarity": "Special",
+  {
+    "name": "Magnet Bee",
+    "id": "magnet",
+    "icon": "images/bees/Magnet.png",
+    "desc": "A magnetic bee that attracts nearby tokens and resources directly to the magnet. Its powerful pull draws in collectibles from a wide radius, reducing travel time and maximizing haul efficiency during every gathering run.",
     "color": "Colorless",
-    "icon": "images/bees/Pixel-Bee.png",
-    "model": "images/bees/models/Pixel-Bee-model.png",
-    "description": "A retro-inspired bee built from blocks of pure nostalgia. Its pixelated form may look simple, but don't be fooled — beneath those sharp edges lies a surprisingly capable worker. A charming collectible for those who appreciate the classics.",
-    "obtain": [
-      {
-        "method": "250 Tickets",
-        "detail": "Obtained via 250 Tickets."
-      }
-    ],
-    "abilities": [
-      {
-        "name": "Pixel Boost",
-        "unlock_level": 1,
-        "tokens": ["pixel-boost"]
-      }
-    ]
-  },
-  "Science Bee": {
-    "name": "Science Bee",
     "rarity": "Rare",
-    "color": "Colorless",
-    "icon": "images/bees/Science-Bee.png",
-    "model": "images/bees/models/Science-Bee-model.png",
-    "description": "An analytical bee equipped with experimental apparatus that converts collected resources into research data. Its methodical approach increases token quality through systematic observation, occasionally discovering rare specimens and bonus materials that other bees would overlook during standard gathering operations.",
-    "obtain": [
+    "speed": 18.0,
+    "attack": 3.0,
+    "energy": 30.0,
+    "gather": 12.0,
+    "gatherTime": 4.0,
+    "convert": 166.0,
+    "convertTime": 4.0,
+    "shinyBonus": {
+      "stat": "Pollen",
+      "type": "Perc",
+      "value": 10.0
+    },
+    "tokens": [
       {
-        "method": "Royal Jelly",
-        "detail": "Random chance to get it"
-      },
-      {
-        "method": "Silver Egg",
-        "detail": "Silver Egg can hatch an Rare or Epic Bee."
-      }
-    ],
-    "abilities": [
-      {
-        "name": "Science Boost",
-        "unlock_level": 1,
-        "tokens": ["science-boost"]
-      }
-    ]
-  },
-  "Sound Bee": {
-    "name": "Sound Bee",
-    "rarity": "Epic",
-    "color": "Colorless",
-    "icon": "images/bees/Sound-Bee.png",
-    "model": "images/bees/models/Sound-Bee-model.png",
-    "description": "A resonant bee vibrating with sonic frequency. It reverberates through nearby flowers, amplifying their bloom and boosting echo pollen collection while emitting harmonic waves that sharpen efficiency and sustain a rhythmic, uninterrupted resource flow.",
-    "obtain": [
-      {
-        "method": "Royal Jelly",
-        "detail": "Random chance to get it"
-      },
-      {
-        "method": "Gold Egg",
-        "detail": "Gold Egg can hatch an Epic or Legendary Bee."
-      }
-    ],
-    "abilities": [
-      {
-        "name": "Sound Boost",
-        "unlock_level": 1,
-        "tokens": ["sound-boost"]
-      },
-      {
-        "name": "Bomb+",
-        "unlock_level": 7,
-        "tokens": ["bomb-plus"]
+        "token": "Magnet",
+        "level": 1,
+        "chance": 10,
+        "expires": 15,
+        "desc": "Creates magnet that fly up and suck tokens on radius 20x20 that lasts for 9s."
       }
     ]
   },
-  "Thunder Bee": {
-    "name": "Thunder Bee",
+  {
+    "name": "Null Bee",
+    "id": "null",
+    "icon": "images/bees/Null.png",
+    "desc": "A mysterious bee that exists in a void state, erasing flower cooldowns and resetting pollen timers instantly. Its reality-warping emptiness creates opportunities from nothing, making it invaluable for exploiting field mechanics.",
+    "color": "Colorless",
     "rarity": "Legendary",
-    "color": "Colorless",
-    "icon": "images/bees/Thunder-Bee.png",
-    "model": "images/bees/models/Thunder-Bee-model.png",
-    "description": "A tempestuous bee crackling with electric fury, its form wreathed in storm clouds that pulse with veins of lightning. It calls forth thunderous roars that shake the earth and ignite the air with cascading bolts, charging nearby flowers with raw electrical energy that accelerates their growth while its crackling aura surges through the area in violent, electrifying waves of pure storm-born power.",
-    "obtain": [
+    "speed": 16.0,
+    "attack": 1.0,
+    "energy": 25.0,
+    "gather": 10.0,
+    "gatherTime": 4.0,
+    "convert": 90.0,
+    "convertTime": 4.5,
+    "shinyBonus": {
+      "stat": "Bomb Pollen",
+      "type": "Mult",
+      "value": 1.1
+    },
+    "tokens": [
       {
-        "method": "Royal Jelly",
-        "detail": "Random chance to get it"
+        "token": "Bomb+",
+        "level": 1,
+        "chance": 9,
+        "expires": 15,
+        "desc": "Explodes 37 Tile with a power of 7 and gathers 6 Pollen , Also grants Bomb Combo Boost."
       },
       {
-        "method": "Diamond Egg",
-        "detail": "Diamond Egg can hatch a Legendary Bee."
-      }
-    ],
-    "abilities": [
-      {
-        "name": "Thunder Boost",
-        "unlock_level": 1,
-        "tokens": ["thunder-boost"]
-      },
-      {
-        "name": "Bomb+",
-        "unlock_level": 9,
-        "tokens": ["bomb-plus"]
-      }
-    ]
-  },
-  "Water Bee": {
-    "name": "Water Bee",
-    "rarity": "Epic",
-    "color": "Blue",
-    "icon": "images/bees/Water-Bee.png",
-    "model": "images/bees/models/Water-Bee-model.png",
-    "description": "A fluid bee coursing with tidal energy. It hydrates nearby flowers, accelerating growth and boosting aqua pollen collection while generating gentle currents that enhance efficiency and help sustain a steady, flowing resource output.",
-    "obtain": [
-      {
-        "method": "Royal Jelly",
-        "detail": "Random chance to get it"
-      },
-      {
-        "method": "Gold Egg",
-        "detail": "Gold Egg can hatch an Epic or Legendary Bee."
-      }
-    ],
-    "abilities": [
-      {
-        "name": "Blue Pollen Boost",
-        "unlock_level": 1,
-        "tokens": ["blue-pollen-boost"]
-      },
-      {
-        "name": "Water Boost",
-        "unlock_level": 4,
-        "tokens": ["water-boost"]
+        "token": "Prism Beam",
+        "level": 8,
+        "chance": 9,
+        "expires": 15,
+        "desc": "Creates 3 + (1 Per 3 Levels) Prism Beans that Collect 25 Pollen."
       }
     ]
   },
-  "Wave Bee": {
-    "name": "Wave Bee",
+  {
+    "name": "Oil Bee",
+    "id": "oil",
+    "icon": "images/bees/Oil.png",
+    "desc": "A viscous bee gleaming with dark iridescence, its form composed of flowing obsidian streams that ripple with rainbow sheens. It releases thick, amber droplets that coat the field in protective resin, encasing nearby flowers in a preserving glaze that extends their lifespan and intensifies their essence while its slick aura spreads through the area in slow, deliberate waves of liquid preservation and ancient, earthbound energy.",
+    "color": "Red",
     "rarity": "Legendary",
-    "color": "Blue",
-    "icon": "images/bees/Wave-Bee.png",
-    "model": "images/bees/models/Wave-Bee-model.png",
-    "description": "An oceanic bee flowing like liquid starlight, its body formed from cascading tidal currents that shimmer with deep blue luminescence. It conjures rhythmic pulses of crystalline water that wash over the field in gentle, nourishing waves, bathing nearby flowers in healing moisture that enhances their vitality while its fluid aura ebbs and flows through the area in endless, hypnotic cycles of aquatic serenity.",
-    "obtain": [
+    "speed": 22.0,
+    "attack": 7.0,
+    "energy": 35.0,
+    "gather": 10.0,
+    "gatherTime": 4.0,
+    "convert": 1425.0,
+    "convertTime": 3.0,
+    "shinyBonus": {
+      "stat": "Tool Speed",
+      "type": "Perc",
+      "value": 5.0
+    },
+    "tokens": [
       {
-        "method": "Royal Jelly",
-        "detail": "Random chance to get it"
+        "token": "Oil Boost",
+        "level": 1,
+        "chance": 8,
+        "expires": 15,
+        "desc": "Grants Oil Boost that gives +0.1% Fire Pollen Forever and Stacks up to 5000."
       },
       {
-        "method": "Diamond Egg",
-        "detail": "Diamond Egg can hatch a Legendary Bee."
-      }
-    ],
-    "abilities": [
-      {
-        "name": "Wave Boost",
-        "unlock_level": 1,
-        "tokens": ["wave-boost"]
-      },
-      {
-        "name": "Ice Bomb",
-        "unlock_level": 9,
-        "tokens": ["ice-bomb"]
+        "token": "Fire Bomb",
+        "level": 9,
+        "chance": 9,
+        "expires": 12,
+        "desc": "Explodes 9 Tile with a power of 3 and gathers 8 Pollen , Doubles Red Pollen and Creates Fire Tiles Arround that lasts for 6 seconds."
       }
     ]
   },
-  "Windy Bee": {
-    "name": "Windy Bee",
+  {
+    "name": "Pixel Bee",
+    "id": "pixel",
+    "icon": "images/bees/Pixel.png",
+    "desc": "A retro-inspired bee built from blocks of pure nostalgia. Its pixelated form may look simple, but don't be fooled — beneath those sharp edges lies a surprisingly capable worker. A charming collectible for those who appreciate the classics.",
+    "color": "Colorless",
     "rarity": "Special",
-    "color": "Colorless",
-    "icon": "images/bees/Windy-Bee.png",
-    "model": "images/bees/models/Windy-Bee-model.png",
-    "description": "A translucent spirit of the atmosphere, composed of swirling zephyrs and captured starlight. It moves with a restless, unpredictable elegance, leaving behind spiraling slipstreams of inspiration and echoing whispers of ancient secrets; its breezy resonance lifts the spirit, accelerating the pace of discovery and carrying the pollen of innovation across vast distances with a single, effortless gust.",
-    "obtain": [
+    "speed": 21.0,
+    "attack": 2.0,
+    "energy": 45.0,
+    "gather": 25.0,
+    "gatherTime": 4.0,
+    "convert": 2400.0,
+    "convertTime": 5.0,
+    "shinyBonus": {
+      "stat": "Capacity Bonus",
+      "type": "Perc",
+      "value": 25.0
+    },
+    "tokens": [
       {
-        "method": "Crafting",
-        "detail": "Obtained via Crafting."
+        "token": "Pixel Boost",
+        "level": 1,
+        "chance": 9,
+        "expires": 12,
+        "desc": "Grants Pixel Boost that gives x1.2 Pollen and x1.2 Capacity Bonus for 60 Seconds."
       }
-    ],
-    "abilities": [
+    ]
+  },
+  {
+    "name": "Rage Bee",
+    "id": "rage",
+    "icon": "images/bees/Rage.png",
+    "desc": "An furious bee consumed by uncontrollable anger, attacking flowers with violent intensity to extract maximum pollen. Its explosive temper multiplies collection power but burns through stamina, perfect for short bursts of overwhelming production.",
+    "color": "Colorless",
+    "rarity": "Rare",
+    "speed": 16.0,
+    "attack": 1.0,
+    "energy": 25.0,
+    "gather": 10.0,
+    "gatherTime": 4.0,
+    "convert": 90.0,
+    "convertTime": 4.5,
+    "shinyBonus": {
+      "stat": "Bee Attack",
+      "type": "Add",
+      "value": 1.0
+    },
+    "tokens": [
       {
-        "name": "White Pollen Boost",
-        "unlock_level": 1,
-        "tokens": ["white-pollen-boost"]
+        "token": "Rage Boost",
+        "level": 1,
+        "chance": 8,
+        "expires": 15,
+        "desc": "Grants Rage Boost that gives +1 Bee Attack for 60 Seconds and Stacks up to 3."
       },
       {
-        "name": "Windy Crystal",
-        "unlock_level": 14,
-        "tokens": ["windy-crystal"]
+        "token": "Bomb",
+        "level": 4,
+        "chance": 9,
+        "expires": 15,
+        "desc": "Explodes 21 Tile with a power of 7 and gathers 6 Pollen , Also grants Bomb Combo Boost."
+      }
+    ]
+  },
+  {
+    "name": "Science Bee",
+    "id": "science",
+    "icon": "images/bees/Science.png",
+    "desc": "An analytical bee equipped with experimental apparatus that converts collected resources into research data. Its methodical approach increases token quality through systematic observation, occasionally discovering rare specimens and bonus materials that other bees would overlook during standard gathering operations.",
+    "color": "Colorless",
+    "rarity": "Rare",
+    "speed": 21.0,
+    "attack": 2.0,
+    "energy": 45.0,
+    "gather": 7.0,
+    "gatherTime": 6.0,
+    "convert": 166.0,
+    "convertTime": 4.0,
+    "shinyBonus": {
+      "stat": "Energy Bonus",
+      "type": "Mult",
+      "value": 1.25
+    },
+    "tokens": [
+      {
+        "token": "Science Boost",
+        "level": 1,
+        "chance": 10,
+        "expires": 15,
+        "desc": "Grants Science Boost that gives 10% Energy Bonus for 60s. Stacks upto 10x."
+      }
+    ]
+  },
+  {
+    "name": "Shark Bee",
+    "id": "shark",
+    "icon": "images/bees/Shark.png",
+    "desc": "A ferocious bee that hunts through fields with predatory precision, aggressively collecting pollen in devastating sweeps. Its razor-sharp instincts and relentless speed tear through flowers, dominating any territory it claims.",
+    "color": "Colorless",
+    "rarity": "Limited",
+    "speed": 16.0,
+    "attack": 1.0,
+    "energy": 25.0,
+    "gather": 15.0,
+    "gatherTime": 4.0,
+    "convert": 4570.0,
+    "convertTime": 4.5,
+    "shinyBonus": {
+      "stat": "Attack Bonus",
+      "type": "Mult",
+      "value": 1.1
+    },
+    "tokens": [
+      {
+        "token": "Shark Bite",
+        "level": 1,
+        "chance": 9,
+        "expires": 15,
+        "desc": "Attacks all mobs on field by 25 * (Bee's Level)."
+      },
+      {
+        "token": "Shark Waves",
+        "level": 12,
+        "chance": 9,
+        "expires": 15,
+        "desc": "Creates 2 + (1 Per 5 Levels) Waves Arround Token That Collects 21 Flower Patches and collect 6 Pollen every 0.3s for 5s and Collect All Tokens on its way."
+      }
+    ]
+  },
+  {
+    "name": "Sound Bee",
+    "id": "sound",
+    "icon": "images/bees/Sound.png",
+    "desc": "A resonant bee vibrating with sonic frequency. It reverberates through nearby flowers, amplifying their bloom and boosting echo pollen collection while emitting harmonic waves that sharpen efficiency and sustain a rhythmic, uninterrupted resource flow.",
+    "color": "Colorless",
+    "rarity": "Epic",
+    "speed": 20.0,
+    "attack": 1.0,
+    "energy": 27.0,
+    "gather": 14.0,
+    "gatherTime": 5.0,
+    "convert": 125.0,
+    "convertTime": 5.0,
+    "shinyBonus": {
+      "stat": "Capacity Bonus",
+      "type": "Mult",
+      "value": 1.1
+    },
+    "tokens": [
+      {
+        "token": "Sound Boost",
+        "level": 1,
+        "chance": 9,
+        "expires": 15,
+        "desc": "Grants Sound Boost that gives +5% Capacity for 30 Seconds and Stacks up to 10."
+      },
+      {
+        "token": "Bomb+",
+        "level": 7,
+        "chance": 10,
+        "expires": 15,
+        "desc": "Explodes 37 Tile with a power of 7 and gathers 6 Pollen , Also grants Bomb Combo Boost."
+      }
+    ]
+  },
+  {
+    "name": "Sunny Bee",
+    "id": "sunny",
+    "icon": "images/bees/Sunny.png",
+    "desc": "A radiant bee that radiates intense sunlight, warming flowers to boost pollen production. Its brilliant golden glow energizes nearby bees and accelerates honey conversion, making it essential for maximizing field efficiency.",
+    "color": "Colorless",
+    "rarity": "Limited",
+    "speed": 16.0,
+    "attack": 1.0,
+    "energy": 25.0,
+    "gather": 10.0,
+    "gatherTime": 4.0,
+    "convert": 5650.0,
+    "convertTime": 4.5,
+    "shinyBonus": {
+      "stat": "Pollen",
+      "type": "Mult",
+      "value": 1.1
+    },
+    "tokens": [
+      {
+        "token": "Sun Zone",
+        "level": 1,
+        "chance": 9,
+        "expires": 15,
+        "desc": "For 5s + (1 per Level) 1 token [Solar Boost] spawns in field every 1s. That grants +10% Solar Pollen and stacks upto 100."
+      },
+      {
+        "token": "Sun Beam",
+        "level": 4,
+        "chance": 9,
+        "expires": 15,
+        "desc": "Creates 2 + (1 Per 3 Levels) Sun Beams that Collects 3 Pollen from 21 Tiles and multiples by Solar Pollen."
+      }
+    ]
+  },
+  {
+    "name": "Thunder Bee",
+    "id": "thunder",
+    "icon": "images/bees/Thunder.png",
+    "desc": "A tempestuous bee crackling with electric fury, its form wreathed in storm clouds that pulse with veins of lightning. It calls forth thunderous roars that shake the earth and ignite the air with cascading bolts, charging nearby flowers with raw electrical energy that accelerates their growth while its crackling aura surges through the area in violent, electrifying waves of pure storm-born power.",
+    "color": "Colorless",
+    "rarity": "Legendary",
+    "speed": 19.0,
+    "attack": 1.0,
+    "energy": 35.0,
+    "gather": 10.0,
+    "gatherTime": 4.0,
+    "convert": 963.0,
+    "convertTime": 3.0,
+    "shinyBonus": {
+      "stat": "Tool Pollen",
+      "type": "Perc",
+      "value": 15.0
+    },
+    "tokens": [
+      {
+        "token": "Thunder Boost",
+        "level": 1,
+        "chance": 8,
+        "expires": 15,
+        "desc": "Grants Thunder Boost that gives +0.1% Cloud Pollen Forever and Stacks up to 5000."
+      },
+      {
+        "token": "Bomb+",
+        "level": 9,
+        "chance": 9,
+        "expires": 12,
+        "desc": "Explodes 37 Tile with a power of 7 and gathers 6 Pollen , Also grants Bomb Combo Boost."
+      }
+    ]
+  },
+  {
+    "name": "Water Bee",
+    "id": "water",
+    "icon": "images/bees/Water.png",
+    "desc": "A fluid bee coursing with tidal energy. It hydrates nearby flowers, accelerating growth and boosting aqua pollen collection while generating gentle currents that enhance efficiency and help sustain a steady, flowing resource output.",
+    "color": "Blue",
+    "rarity": "Epic",
+    "speed": 17.0,
+    "attack": 1.0,
+    "energy": 35.0,
+    "gather": 17.0,
+    "gatherTime": 6.0,
+    "convert": 150.0,
+    "convertTime": 6.5,
+    "shinyBonus": {
+      "stat": "Ice Pollen",
+      "type": "Mult",
+      "value": 1.1
+    },
+    "tokens": [
+      {
+        "token": "Blue Pollen Boost",
+        "level": 1,
+        "chance": 12,
+        "expires": 15,
+        "desc": "Grants Blue Pollen Boost that gives +15% Blue Pollen for 60 Seconds and Stacks up to 10."
+      },
+      {
+        "token": "Water Boost",
+        "level": 4,
+        "chance": 8,
+        "expires": 15,
+        "desc": "Grants Water Boost that gives +2% Ice Pollen for 90 Seconds and Stacks up to 100."
+      }
+    ]
+  },
+  {
+    "name": "Wave Bee",
+    "id": "wave",
+    "icon": "images/bees/Wave.png",
+    "desc": "An oceanic bee flowing like liquid starlight, its body formed from cascading tidal currents that shimmer with deep blue luminescence. It conjures rhythmic pulses of crystalline water that wash over the field in gentle, nourishing waves, bathing nearby flowers in healing moisture that enhances their vitality while its fluid aura ebbs and flows through the area in endless, hypnotic cycles of aquatic serenity.",
+    "color": "Blue",
+    "rarity": "Legendary",
+    "speed": 19.0,
+    "attack": 2.0,
+    "energy": 45.0,
+    "gather": 27.0,
+    "gatherTime": 4.0,
+    "convert": 1251.0,
+    "convertTime": 3.0,
+    "shinyBonus": {
+      "stat": "Bee Ability Rate",
+      "type": "Perc",
+      "value": 3.0
+    },
+    "tokens": [
+      {
+        "token": "Wave Boost",
+        "level": 1,
+        "chance": 8,
+        "expires": 15,
+        "desc": "Grants Wave Boost that gives +0.1% Ice Pollen Forever and Stacks up to 5000."
+      },
+      {
+        "token": "Ice Bomb",
+        "level": 9,
+        "chance": 9,
+        "expires": 12,
+        "desc": "Explodes 9 Tile with a power of 3 and gathers 8 Pollen , Doubles Blue Pollen and Creates Ice Tiles Arround that lasts for 12 seconds."
+      }
+    ]
+  },
+  {
+    "name": "Windy Bee",
+    "id": "windy",
+    "icon": "images/bees/Windy.png",
+    "desc": "A translucent spirit of the atmosphere, composed of swirling zephyrs and captured starlight. It moves with a restless, unpredictable elegance, leaving behind spiraling slipstreams of inspiration and echoing whispers of ancient secrets; its breezy resonance lifts the spirit, accelerating the pace of discovery and carrying the pollen of innovation across vast distances with a single, effortless gust.",
+    "color": "Colorless",
+    "rarity": "Special",
+    "speed": 22.0,
+    "attack": 3.0,
+    "energy": 30.0,
+    "gather": 17.0,
+    "gatherTime": 6.0,
+    "convert": 8000.0,
+    "convertTime": 4.0,
+    "shinyBonus": {
+      "stat": "White Field Capacity",
+      "type": "Mult",
+      "value": 1.15
+    },
+    "tokens": [
+      {
+        "token": "White Pollen Boost",
+        "level": 1,
+        "chance": 12,
+        "expires": 15,
+        "desc": "Grants White Pollen Boost that gives +15% White Pollen for 60 Seconds and Stacks up to 10."
+      },
+      {
+        "token": "Windy Crystal",
+        "level": 14,
+        "chance": 12,
+        "expires": 15,
+        "desc": "Creates crystal which lasts for 8s + (1s per 3 levels) which randomly collects white tokens and spawns 2 clouds for every white token."
       }
     ]
   }
-}
+]

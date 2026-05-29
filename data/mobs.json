@@ -6,7 +6,6 @@
     "location": "Starter Zone",
     "desc": "A small, chubby green caterpillar with two big black eyes and tiny antennae. It curls up low to the ground and has a round, segmented body.",
     "respawn": "3–4 min",
-    "tokens": "4–5",
     "drops": [
       { "name": "Caterpillar Amulet", "chance": 2, "qty": 1, "lootLuck": true },
       { "name": "Seed", "chance": 15, "qty": 1 },
@@ -28,7 +27,6 @@
     "location": "5 Bee Zone",
     "desc": "A large, blocky ladybug with a dark navy blue body and bright red wings with black spots. It has four sturdy legs and two short antennae sticking out from its head.",
     "respawn": "6–10 min",
-    "tokens": "5–7",
     "drops": [
       { "name": "Ladybug Amulet", "chance": 1, "qty": 1, "lootLuck": true },
       { "name": "Strawberry", "chance": 15, "qty": 3 },
@@ -47,7 +45,6 @@
     "location": "5 Bee Zone",
     "desc": "A big, dark blue beetle with two large horn-like spikes on its head. It has a heavy, angular shell on its back and four thick legs.",
     "respawn": "6–10 min",
-    "tokens": "6–7",
     "drops": [
       {
         "name": "Rhino Beetle Amulet",
@@ -71,7 +68,6 @@
     "location": "10 Bee Zone",
     "desc": "A massive dark blue spider with six long, sharp legs spread wide. It has a large triangular body and four big black eyes on the front of its face.",
     "respawn": "~20 min",
-    "tokens": "4–5",
     "drops": [
       { "name": "Spider Amulet", "chance": 1, "qty": 1, "lootLuck": true },
       { "name": "Seed", "chance": 15, "qty": 3 },

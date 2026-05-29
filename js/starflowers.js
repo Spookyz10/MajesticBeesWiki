@@ -12,10 +12,35 @@ const STARFLOWER_DURATION = {
   Epic: "5 minutes",
   Legendary: "7 minutes",
   Mythic: "8 minutes",
+  Lunar: "4 minutes",
 };
+
+function formatChanceValue(value) {
+  return typeof value === "number" || /^\d+(?:\.\d+)?$/.test(String(value))
+    ? `${value}%`
+    : String(value);
+}
 
 function localImg(src, size, alt) {
   return `<img src="${src}" alt="${alt}" width="${size}" height="${size}" loading="lazy" onerror="this.style.opacity='0.25';" />`;
+}
+
+function sfRarityIconPath(rarity) {
+  if (!rarity) return "images/amulets/Star Amulet.png";
+  const r = String(rarity).toLowerCase();
+  if (r.includes("basic") || r.includes("common"))
+    return "images/amulets/Star Amulet.png";
+  if (r.includes("rare")) return "images/amulets/Rare Star Amulet.png";
+  if (r.includes("epic")) return "images/amulets/Epic Star Amulet.png";
+  if (r.includes("legend")) return "images/amulets/Legendary Star Amulet.png";
+  if (r.includes("myth")) return "images/amulets/Mythic star Amulet.png";
+  if (r.includes("lunar")) return "images/amulets/Lunar Amulet.png";
+  return "images/amulets/Star Amulet.png";
+}
+
+function sfRarityIconTag(rarity, size = 18) {
+  const src = sfRarityIconPath(rarity);
+  return `<img class="sf-tier-rarity-icon" src="${src}" width="${size}" height="${size}" alt="${rarity} icon" loading="lazy" onerror="this.style.opacity='0.25'" />`;
 }
 
 function buildChances(chances) {
@@ -24,7 +49,7 @@ function buildChances(chances) {
       (c) => `
       <tr>
         <td>${c.tier}</td>
-        <td>${c.approxPct}%</td>
+        <td>${formatChanceValue(c.approxPct)}</td>
       </tr>
     `,
     )
@@ -103,7 +128,7 @@ function buildTierCard(tier) {
           ${localImg(tier.image, 72, tier.name)}
         </div>
         <div class="sf-tier-meta">
-          <div class="sf-tier-name" style="color:${tier.color}">${tier.name} Starflower</div>
+          <div class="sf-tier-name" style="color:${tier.color}">${sfRarityIconTag(tier.name)}${tier.name} Starflower</div>
           <div class="sf-tier-health">
             <span class="sf-health-val" style="color:${tier.color}">${tier.healthLabel} pollen to destroy</span>
           </div>

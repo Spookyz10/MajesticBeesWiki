@@ -56,6 +56,95 @@
         </div>
 
         <div class="ul-list">
+          <div class="ul-card" id="update-7">
+            <div class="ul-card-header">
+              <div class="ul-icon-wrap">
+                <img
+                  src="images/updates/update7.png"
+                  alt="Update 7 icon"
+                  onerror="
+                    this.onerror = null;
+                    this.src = 'images/ui/site-logo.png';
+                  "
+                />
+              </div>
+              <div class="ul-card-meta">
+                <div class="ul-card-name">Update 7</div>
+                <div class="ul-card-date">30th May, 2026</div>
+              </div>
+              <button
+                class="ul-toggle"
+                aria-expanded="false"
+                aria-controls="ul-body-7"
+              >
+                ▼
+              </button>
+            </div>
+            <div class="ul-card-body ul-card-body--collapsed" id="ul-body-7">
+              <div class="ul-section">
+                <div class="ul-section-title">⭐ Update 7 x Summerfest</div>
+                <ul>
+                  <li>Travel to the Summerfest World via the new Portal!</li>
+                  <li>3 New Limited Fields with Coconuts &amp; Lemons!</li>
+                  <li>Lunar Event: 10 Min Day / 10 Min Night cycle!</li>
+                  <li>Harvest Lunar Starflowers during the night!</li>
+                </ul>
+              </div>
+              <div class="ul-section">
+                <div class="ul-section-title">🐝 Shiny &amp; New Bees</div>
+                <ul>
+                  <li>SHINY BEES ARE HERE! Reworked Hatch UI!</li>
+                  <li>
+                    New Bees: Sunny, Shark, Lion, Rage, Null, and Honey Bee!
+                  </li>
+                  <li>
+                    New Shiny Eggs (Regular to Diamond) &amp; Shiny Jelly!
+                  </li>
+                </ul>
+              </div>
+              <div class="ul-section">
+                <div class="ul-section-title">🏪 Beach Shop &amp; New Gear</div>
+                <ul>
+                  <li>
+                    Beach Shop Opened! Added Coconut Staff, Belt, &amp; Boots!
+                  </li>
+                  <li>Added Sunny Helmet!</li>
+                  <li>
+                    Craft Lemonade, Coconut Drinks, &amp; Summer/Majestic
+                    Cocktails!
+                  </li>
+                </ul>
+              </div>
+              <div class="ul-section">
+                <div class="ul-section-title">
+                  🏅 Amulets, Buffs &amp; Mechanics
+                </div>
+                <ul>
+                  <li>Added Star Amulets &amp; Lunar Amulet!</li>
+                  <li>New Bee Attack &amp; Attack Bonus Buffs!</li>
+                  <li>Added Lunar Extract, Lunar Treats, and Night Bells!</li>
+                  <li>Added Cardboard, Ticket, and Sticker Planters!</li>
+                  <li>Starflowers loot is now fully Client-Sided!</li>
+                </ul>
+              </div>
+              <div class="ul-section">
+                <div class="ul-section-title">
+                  📜 Quests, Reworks &amp; Extras
+                </div>
+                <ul>
+                  <li>Meet Sun Bear &amp; Sandy Bear! (+30 New Quests)</li>
+                  <li>Track your stats with Honey/Sec &amp; Pollen/Sec!</li>
+                  <li>Reworked Index System &amp; 2 New Dispensers!</li>
+                  <li>
+                    Settings Rework, Codes now show rewards, &amp; Update Logs
+                    option!
+                  </li>
+                  <li>10+ Immersive New Sound Effects!</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           <div class="ul-card" id="update-6">
             <div class="ul-card-header">
               <div class="ul-icon-wrap">
@@ -74,13 +163,13 @@
               </div>
               <button
                 class="ul-toggle"
-                aria-expanded="true"
+                aria-expanded="false"
                 aria-controls="ul-body-6"
               >
-                ▲
+                ▼
               </button>
             </div>
-            <div class="ul-card-body" id="ul-body-6">
+            <div class="ul-card-body ul-card-body--collapsed" id="ul-body-6">
               <div class="ul-section">
                 <div class="ul-section-title">⚙️ Quality of Life Rework</div>
                 <ul>
@@ -457,6 +546,18 @@
           }
         });
       });
+
+      const newestCard = document.querySelector(".ul-list .ul-card");
+      if (newestCard) {
+        const newestBtn = newestCard.querySelector(".ul-toggle");
+        const newestBody = newestCard.querySelector(".ul-card-body");
+
+        if (newestBtn && newestBody) {
+          newestBtn.setAttribute("aria-expanded", "true");
+          newestBtn.textContent = "▲";
+          newestBody.classList.remove("ul-card-body--collapsed");
+        }
+      }
     </script>
   </body>
 </html>

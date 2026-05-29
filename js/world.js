@@ -180,7 +180,7 @@ function buildPaidDispensers(dispensers) {
   `;
 }
 
-function buildMixer(recipes) {
+function buildMixerSection(recipes, title = "Mixer") {
   const cards = recipes
     .map((r) => {
       const ingredientList = r.recipe
@@ -216,7 +216,7 @@ function buildMixer(recipes) {
 
   return `
     <div class="world-section">
-      <div class="world-section-heading">Mixer</div>
+      <div class="world-section-heading">${title}</div>
       <div class="mixer-intro">
         <div class="world-section-desc mixer-intro-text">The Mixer lets you craft items by combining ingredients. Each recipe produces one of the listed output items. You can find the Mixer in the Hydrant Shop.</div>
         <div class="mixer-intro-image">
@@ -257,11 +257,15 @@ async function loadWorld() {
   }
 
   root.className = "world-root";
+  const normalMixer = (data.mixer || []).filter((r) => !r.event);
+  const summerMixer = (data.mixer || []).filter((r) => r.event === "summer");
+
   root.innerHTML =
     buildPipes(data.pipes) +
     buildFreeDispensers(data.freeDispensers) +
     buildPaidDispensers(data.paidDispensers) +
-    buildMixer(data.mixer);
+    buildMixerSection(normalMixer, "Mixer") +
+    (summerMixer.length ? buildMixerSection(summerMixer, "Summer Mixer") : "");
 
   bindSlotToggle();
 }
