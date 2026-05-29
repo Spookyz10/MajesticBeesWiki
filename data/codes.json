@@ -1,5 +1,22 @@
 [
   {
+    "code": "MilestoneBreakersGG",
+    "expires": "2026-06-05",
+    "note": "The game has broken a bunch of milestones!",
+    "items": [
+      "Bamboo Flask x5",
+      "Seed Oil x5",
+      "Blueberry Extract x5",
+      "Strawberry Extract x5",
+      "Cone Extract x5",
+      "Starflower x5",
+      "Honey x10000"
+    ],
+    "boosts": ["Bamboo Flask Boost x1", "Seed Oil Boost x1"],
+    "skins": [],
+    "stickers": []
+  },
+  {
     "code": "Teapot",
     "expires": "2026-05-29",
     "note": "codes didn't work",
