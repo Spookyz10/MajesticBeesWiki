@@ -1,5 +1,34 @@
 [
   {
+    "code": "Teapot",
+    "expires": "2026-05-29",
+    "note": "codes didn't work",
+    "items": [],
+    "skins": [],
+    "stickers": ["Unknown"],
+    "boosts": [],
+    "limited_uses": "40"
+  },
+  {
+    "code": "ForThePings",
+    "expires": "2026-05-29",
+    "note": "A lot of pings happened",
+    "items": [],
+    "skins": [],
+    "stickers": ["Deox Sticker x1"],
+    "boosts": [],
+    "limited_uses": "35"
+  },
+  {
+    "code": "Buzzy Days",
+    "expires": "2026-05-29",
+    "note": "New codes system first code",
+    "items": ["Honey x5000", "Ticket x5"],
+    "skins": [],
+    "stickers": [],
+    "boosts": ["Seed Oil Boost x1"]
+  },
+  {
     "code": "AzaGG",
     "expires": "Unknown",
     "note": "Aza!",
