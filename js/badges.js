@@ -84,8 +84,8 @@ function formatDuration(seconds) {
 }
 
 function buffText(buff, tier) {
-  if (!buff || tier < 2) return null;
-  const steps = tier - 1;
+  if (!buff) return null;
+  const steps = tier;
   if (buff.type === "Perc") return `+${buff.value * steps}% ${buff.stat}`;
   if (buff.type === "Mult")
     return `x${(1 + buff.value * steps).toFixed(1)} ${buff.stat}`;
