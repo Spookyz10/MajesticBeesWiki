@@ -9,6 +9,15 @@
     "desc": "Collect honey."
   },
   {
+    "id": "time",
+    "name": "Time",
+    "order": 2,
+    "start": 3600,
+    "mult": 5,
+    "buff": { "stat": "Honey Bonus", "type": "Perc", "value": 2 },
+    "desc": "Play the game"
+  },
+  {
     "id": "quest",
     "name": "Quest",
     "order": 2,

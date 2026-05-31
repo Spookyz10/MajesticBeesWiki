@@ -59,6 +59,30 @@ function formatNum(n) {
   return String(n);
 }
 
+function formatDuration(seconds) {
+  const units = [
+    { label: "y", size: 31536000 },
+    { label: "mo", size: 2592000 },
+    { label: "d", size: 86400 },
+    { label: "h", size: 3600 },
+    { label: "m", size: 60 },
+    { label: "s", size: 1 },
+  ];
+
+  let remaining = Math.max(0, Math.floor(seconds));
+  const parts = [];
+
+  for (const unit of units) {
+    if (remaining < unit.size) continue;
+    const value = Math.floor(remaining / unit.size);
+    remaining -= value * unit.size;
+    parts.push(`${value}${unit.label}`);
+    if (parts.length === 2) break;
+  }
+
+  return parts.length ? parts.join(" ") : "0s";
+}
+
 function buffText(buff, tier) {
   if (!buff || tier < 2) return null;
   const steps = tier - 1;
@@ -80,7 +104,7 @@ function buildTierRows(badge) {
           <span class="badge-tier-pill" style="color:${color.text};border-color:${color.border};background:${color.bg}">${TIER_LABELS[i]}</span>
           <span class="badge-tier-grade" style="color:${color.text}">${color.label}</span>
         </td>
-        <td class="badge-tier-req">${formatNum(req)}</td>
+        <td class="badge-tier-req">${formatDuration(req)}</td>
         <td class="badge-tier-buff">${buff ? `<span class="badge-buff-value">${buff}</span>` : `<span class="badge-no-buff">—</span>`}</td>
       </tr>`;
   }).join("");
