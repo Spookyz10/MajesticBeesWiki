@@ -1,7 +1,7 @@
 [
   {
     "name": "Azure Bee",
-    "id": "azure",
+    "id": "azure-bee",
     "icon": "images/bees/Azure.png",
     "desc": "A calm bee infused with cool energy, boosting blue pollen collection and refreshing nearby flowers. Its soothing aura increases efficiency and supports allies, making it essential for steady resource gathering and growth.",
     "color": "Blue",
@@ -37,7 +37,7 @@
   },
   {
     "name": "Basic Bee",
-    "id": "basic",
+    "id": "basic-bee",
     "icon": "images/bees/Basic.png",
     "desc": "A simple and reliable bee with balanced abilities. It gathers pollen steadily, converts resources efficiently, and supports your hive with consistent performance. Perfect for beginners building a strong and dependable foundation.",
     "color": "Colorless",
@@ -58,7 +58,7 @@
   },
   {
     "name": "Bomber Bee",
-    "id": "bomber",
+    "id": "bomber-bee",
     "icon": "images/bees/Bomber.png",
     "desc": "A destructive bee that drops explosive bombs, instantly collecting pollen from surrounding flowers. Its powerful blasts clear large areas quickly, making it perfect for fast farming and overwhelming field coverage.",
     "color": "Colorless",
@@ -94,7 +94,7 @@
   },
   {
     "name": "Cloud Bee",
-    "id": "cloud",
+    "id": "cloud-bee",
     "icon": "images/bees/Cloud.png",
     "desc": "A celestial bee adrift in an endless sky, its body woven from billowing cumulus clouds. It summons gusts of swirling wind to scatter pollen far across the field, enveloping nearby flowers in a soft, misty vapor that suspends decay and magnifies pollen yield while its airy aura drifts through the area in a sweeping, ever-shifting current of boundless atmospheric energy.",
     "color": "Colorless",
@@ -130,7 +130,7 @@
   },
   {
     "name": "Coal Bee",
-    "id": "coal",
+    "id": "coal-bee",
     "icon": "images/bees/Coal.png",
     "desc": "A smoldering bee forged from deep earth pressure. It scorches nearby flowers, hardening their cores and boosting red pollen collection while radiating raw heat that fuels efficiency and ensures relentless, unyielding resource extraction.",
     "color": "Red",
@@ -166,7 +166,7 @@
   },
   {
     "name": "Cold Bee",
-    "id": "cold",
+    "id": "cold-bee",
     "icon": "images/bees/Cold.png",
     "desc": "A chilling bee infused with icy power. It freezes nearby flowers, slowing decay and boosting blue pollen collection while providing cooling effects that improve efficiency and help maintain stable resource gathering performance.",
     "color": "Blue",
@@ -202,7 +202,7 @@
   },
   {
     "name": "Crimson Bee",
-    "id": "crimson",
+    "id": "crimson-bee",
     "icon": "images/bees/Crimson.png",
     "desc": "A fierce bee filled with blazing power, specializing in red pollen collection and aggressive boosts. It enhances attack strength and burns through fields quickly, helping your hive dominate and collect resources faster.",
     "color": "Red",
@@ -238,7 +238,7 @@
   },
   {
     "name": "Exp Bee",
-    "id": "exp",
+    "id": "exp-bee",
     "icon": "images/bees/Exp.png",
     "desc": "A luminous bee glowing with concentrated knowledge and energy. It flits purposefully through the field, leaving trails of sparkling wisdom and radiant experience orbs in its wake while its brilliant aura resonates with an empowering frequency that accelerates growth and amplifies the learning gained from every blossom it touches.",
     "color": "Colorless",
@@ -257,11 +257,11 @@
     },
     "tokens": [
       {
-        "token": "Exp Boost",
+        "token": "Exp Bomb",
         "level": 1,
         "chance": 8,
         "expires": 15,
-        "desc": "Grants Exp Boost that gives x1.15 Capacity Bonus & x1.05 Obsidian Pollen for 90 Seconds and Stacks up to 5."
+        "desc": "Explodes 21 Tile with a power of 7 and gathers 4 + (3 Per Bee\\'s Level) Pollen."
       },
       {
         "token": "Exp Orbs",
@@ -271,17 +271,17 @@
         "desc": "Grants 1 + (1 Per 3 Levels) Exp Orbs that gives 100xp when used."
       },
       {
-        "token": "Exp Bomb",
+        "token": "Exp Boost",
         "level": 14,
-        "chance": 14,
+        "chance": 8,
         "expires": 12,
-        "desc": "Explodes 21 Tile with a power of 7 and gathers 4 + (3 Per Bee's Level) Pollen."
+        "desc": "Grants Exp Boost that gives x1.15 Capacity Bonus & x1.05 Obsidian Pollen for 90 Seconds and Stacks up to 5."
       }
     ]
   },
   {
     "name": "Fire Bee",
-    "id": "fire",
+    "id": "fire-bee",
     "icon": "images/bees/Fire.png",
     "desc": "A fiery bee radiating intense heat and energy. It scorches flowers to boost red pollen collection, increases attack power, and spreads burning effects that rapidly enhance harvesting speed and field productivity.",
     "color": "Red",
@@ -317,7 +317,7 @@
   },
   {
     "name": "Firework Bee",
-    "id": "firework",
+    "id": "firework-bee",
     "icon": "images/bees/Firework.png",
     "desc": "A radiant bee crackling with festive power. It detonates cascading bursts across the field, showering flowers in luminous sparks and amplifying pollen yield while its brilliant explosions ripple outward, fueling a dazzling and relentless surge of collection.",
     "color": "Red",
@@ -353,7 +353,7 @@
   },
   {
     "name": "Flower Bee",
-    "id": "flower",
+    "id": "flower-bee",
     "icon": "images/bees/Flower.png",
     "desc": "A gentle bee devoted to nurturing flowers. It enhances bloom speed, increases pollen yield from blossoms, and spreads growth energy across fields, making nearby plants more rewarding and efficient to harvest.",
     "color": "Colorless",
@@ -382,7 +382,7 @@
   },
   {
     "name": "Hasty Bee",
-    "id": "hasty",
+    "id": "hasty-bee",
     "icon": "images/bees/Hasty.png",
     "desc": "An energetic bee that increases movement speed and attack rate for the hive. Its rapid actions help collect pollen faster, dodge threats, and improve overall efficiency during intense gathering sessions.",
     "color": "Colorless",
@@ -411,7 +411,7 @@
   },
   {
     "name": "Honey Bee",
-    "id": "honey",
+    "id": "honey-bee",
     "icon": "images/bees/Honey.png",
     "desc": "A pure bee dedicated to the sweet essence of honey production, converting pollen with unmatched efficiency and quality. Its natural affinity for nectar creates premium honey reserves, serving as the foundation for any successful hive.",
     "color": "Colorless",
@@ -434,13 +434,13 @@
         "level": 3,
         "chance": 9,
         "expires": 15,
-        "desc": "Converts 100 * (Total Conversion) * (Bee's Level) Pollen Into 5 Honey Tokens Arround You."
+        "desc": "Converts 100 * (Total Conversion) * (Bee\\'s Level) Pollen Into 5 Honey Tokens Arround You."
       }
     ]
   },
   {
     "name": "Ice Bee",
-    "id": "ice",
+    "id": "ice-bee",
     "icon": "images/bees/Ice.png",
     "desc": "A crystalline architect carved from eternal permafrost, shimmering with a frigid, silent grace. It glides through the air on wings of sheer frost, trailing a mist of absolute zero and delicate snowflakes that freeze moments of insight into permanent memory; its chilling aura stills the chaos of the mind, allowing for a focused, rhythmic harvest of clarity from the petals of the frozen field.",
     "color": "Blue",
@@ -476,7 +476,7 @@
   },
   {
     "name": "Icicle Bee",
-    "id": "icicle",
+    "id": "icicle-bee",
     "icon": "images/bees/Icicle.png",
     "desc": "A frigid bee encased in piercing ice. It launches razor-sharp icicles across the field, freezing nearby flowers in a crystalline frost that slows decay and amplifies pollen yield while its glacial aura blankets the area in a relentless, bone-chilling surge of frozen energy.",
     "color": "Blue",
@@ -512,9 +512,9 @@
   },
   {
     "name": "Lion Bee",
-    "id": "lion",
+    "id": "lion-bee",
     "icon": "images/bees/Lion.png",
-    "desc": "A majestic bee that rules the field with commanding presence, its mighty roar boosting all nearby bees' abilities. Its proud strength and territorial dominance ensure superior pollen collection while protecting its kingdom from threats.",
+    "desc": "A majestic bee that rules the field with commanding presence, its mighty roar boosting all nearby bees\\' abilities. Its proud strength and territorial dominance ensure superior pollen collection while protecting its kingdom from threats.",
     "color": "Colorless",
     "rarity": "Legendary",
     "speed": 22.0,
@@ -542,13 +542,13 @@
         "level": 8,
         "chance": 9,
         "expires": 15,
-        "desc": "Attacks all mobs on field by 5 * (Bee's Level)."
+        "desc": "Attacks all mobs on field by 5 * (Bee\\'s Level)."
       }
     ]
   },
   {
     "name": "Lucky Bee",
-    "id": "lucky",
+    "id": "lucky-bee",
     "icon": "images/bees/Lucky.png",
     "desc": "A shimmering bee radiating with golden fortune. It dances unpredictably across the field, scattering bursts of lucky clover and glittering tokens wherever it roams while its warm, glowing aura pulses with a magnetic charm that draws in rare treasures and multiplies the rewards of every flower it graces.",
     "color": "Colorless",
@@ -585,13 +585,13 @@
         "level": 13,
         "chance": 17,
         "expires": 12,
-        "desc": "Summons a Pot O' Gold that fills with pollen over 14 + (1s per 5 lvls) seconds. Once the time is up, everything collected inside is instantly converted into x2 honey tokens!"
+        "desc": "Summons a Pot O\\' Gold that fills with pollen over 14 + (1s per 5 lvls) seconds. Once the time is up, everything collected inside is instantly converted into x2 honey tokens!"
       }
     ]
   },
   {
     "name": "Magma Bee",
-    "id": "magma",
+    "id": "magma-bee",
     "icon": "images/bees/Magma.png",
     "desc": "A core-heated sentinel forged from molten stone and pulsing obsidian. As it drones through the hive, it leaves a scorching trail of liquid fire and crystalline embers; its very presence radiates an intense, transformative heat that tempers raw potential into hardened skill, refining the essence of every flower it visits into a potent, concentrated nectar of power.",
     "color": "Red",
@@ -627,7 +627,7 @@
   },
   {
     "name": "Magnet Bee",
-    "id": "magnet",
+    "id": "magnet-bee",
     "icon": "images/bees/Magnet.png",
     "desc": "A magnetic bee that attracts nearby tokens and resources directly to the magnet. Its powerful pull draws in collectibles from a wide radius, reducing travel time and maximizing haul efficiency during every gathering run.",
     "color": "Colorless",
@@ -656,7 +656,7 @@
   },
   {
     "name": "Null Bee",
-    "id": "null",
+    "id": "null-bee",
     "icon": "images/bees/Null.png",
     "desc": "A mysterious bee that exists in a void state, erasing flower cooldowns and resetting pollen timers instantly. Its reality-warping emptiness creates opportunities from nothing, making it invaluable for exploiting field mechanics.",
     "color": "Colorless",
@@ -666,12 +666,12 @@
     "energy": 25.0,
     "gather": 10.0,
     "gatherTime": 4.0,
-    "convert": 90.0,
+    "convert": 950.0,
     "convertTime": 4.5,
     "shinyBonus": {
-      "stat": "Bomb Pollen",
+      "stat": "Prism Pollen",
       "type": "Mult",
-      "value": 1.1
+      "value": 1.5
     },
     "tokens": [
       {
@@ -686,13 +686,13 @@
         "level": 8,
         "chance": 9,
         "expires": 15,
-        "desc": "Creates 3 + (1 Per 3 Levels) Prism Beans that Collect 25 Pollen."
+        "desc": "Creates 3 + (1 Per 3 Levels) Prism Beans that Collect 300 Pollen."
       }
     ]
   },
   {
     "name": "Oil Bee",
-    "id": "oil",
+    "id": "oil-bee",
     "icon": "images/bees/Oil.png",
     "desc": "A viscous bee gleaming with dark iridescence, its form composed of flowing obsidian streams that ripple with rainbow sheens. It releases thick, amber droplets that coat the field in protective resin, encasing nearby flowers in a preserving glaze that extends their lifespan and intensifies their essence while its slick aura spreads through the area in slow, deliberate waves of liquid preservation and ancient, earthbound energy.",
     "color": "Red",
@@ -728,9 +728,9 @@
   },
   {
     "name": "Pixel Bee",
-    "id": "pixel",
+    "id": "pixel-bee",
     "icon": "images/bees/Pixel.png",
-    "desc": "A retro-inspired bee built from blocks of pure nostalgia. Its pixelated form may look simple, but don't be fooled — beneath those sharp edges lies a surprisingly capable worker. A charming collectible for those who appreciate the classics.",
+    "desc": "A retro-inspired bee built from blocks of pure nostalgia. Its pixelated form may look simple, but don\\'t be fooled \\226\\128\\148 beneath those sharp edges lies a surprisingly capable worker. A charming collectible for those who appreciate the classics.",
     "color": "Colorless",
     "rarity": "Special",
     "speed": 21.0,
@@ -757,7 +757,7 @@
   },
   {
     "name": "Rage Bee",
-    "id": "rage",
+    "id": "rage-bee",
     "icon": "images/bees/Rage.png",
     "desc": "An furious bee consumed by uncontrollable anger, attacking flowers with violent intensity to extract maximum pollen. Its explosive temper multiplies collection power but burns through stamina, perfect for short bursts of overwhelming production.",
     "color": "Colorless",
@@ -793,7 +793,7 @@
   },
   {
     "name": "Science Bee",
-    "id": "science",
+    "id": "science-bee",
     "icon": "images/bees/Science.png",
     "desc": "An analytical bee equipped with experimental apparatus that converts collected resources into research data. Its methodical approach increases token quality through systematic observation, occasionally discovering rare specimens and bonus materials that other bees would overlook during standard gathering operations.",
     "color": "Colorless",
@@ -822,7 +822,7 @@
   },
   {
     "name": "Shark Bee",
-    "id": "shark",
+    "id": "shark-bee",
     "icon": "images/bees/Shark.png",
     "desc": "A ferocious bee that hunts through fields with predatory precision, aggressively collecting pollen in devastating sweeps. Its razor-sharp instincts and relentless speed tear through flowers, dominating any territory it claims.",
     "color": "Colorless",
@@ -845,20 +845,20 @@
         "level": 1,
         "chance": 9,
         "expires": 15,
-        "desc": "Attacks all mobs on field by 25 * (Bee's Level)."
+        "desc": "Attacks all mobs on field by 25 * (Bee\\'s Level)."
       },
       {
         "token": "Shark Waves",
         "level": 12,
         "chance": 9,
         "expires": 15,
-        "desc": "Creates 2 + (1 Per 5 Levels) Waves Arround Token That Collects 21 Flower Patches and collect 6 Pollen every 0.3s for 5s and Collect All Tokens on its way."
+        "desc": "Creates 2 + (1 Per 5 Levels) Waves Arround Token That Collects 21 Flower Patches and collect 12 Pollen every 0.3s for 5s and Collect All Tokens on its way."
       }
     ]
   },
   {
     "name": "Sound Bee",
-    "id": "sound",
+    "id": "sound-bee",
     "icon": "images/bees/Sound.png",
     "desc": "A resonant bee vibrating with sonic frequency. It reverberates through nearby flowers, amplifying their bloom and boosting echo pollen collection while emitting harmonic waves that sharpen efficiency and sustain a rhythmic, uninterrupted resource flow.",
     "color": "Colorless",
@@ -894,7 +894,7 @@
   },
   {
     "name": "Sunny Bee",
-    "id": "sunny",
+    "id": "sunny-bee",
     "icon": "images/bees/Sunny.png",
     "desc": "A radiant bee that radiates intense sunlight, warming flowers to boost pollen production. Its brilliant golden glow energizes nearby bees and accelerates honey conversion, making it essential for maximizing field efficiency.",
     "color": "Colorless",
@@ -924,13 +924,13 @@
         "level": 4,
         "chance": 9,
         "expires": 15,
-        "desc": "Creates 2 + (1 Per 3 Levels) Sun Beams that Collects 3 Pollen from 21 Tiles and multiples by Solar Pollen."
+        "desc": "Creates 2 + (1 Per 3 Levels) Sun Beams that Collects 13 Pollen from 21 Tiles and multiples by Solar Pollen."
       }
     ]
   },
   {
     "name": "Thunder Bee",
-    "id": "thunder",
+    "id": "thunder-bee",
     "icon": "images/bees/Thunder.png",
     "desc": "A tempestuous bee crackling with electric fury, its form wreathed in storm clouds that pulse with veins of lightning. It calls forth thunderous roars that shake the earth and ignite the air with cascading bolts, charging nearby flowers with raw electrical energy that accelerates their growth while its crackling aura surges through the area in violent, electrifying waves of pure storm-born power.",
     "color": "Colorless",
@@ -966,7 +966,7 @@
   },
   {
     "name": "Water Bee",
-    "id": "water",
+    "id": "water-bee",
     "icon": "images/bees/Water.png",
     "desc": "A fluid bee coursing with tidal energy. It hydrates nearby flowers, accelerating growth and boosting aqua pollen collection while generating gentle currents that enhance efficiency and help sustain a steady, flowing resource output.",
     "color": "Blue",
@@ -1002,7 +1002,7 @@
   },
   {
     "name": "Wave Bee",
-    "id": "wave",
+    "id": "wave-bee",
     "icon": "images/bees/Wave.png",
     "desc": "An oceanic bee flowing like liquid starlight, its body formed from cascading tidal currents that shimmer with deep blue luminescence. It conjures rhythmic pulses of crystalline water that wash over the field in gentle, nourishing waves, bathing nearby flowers in healing moisture that enhances their vitality while its fluid aura ebbs and flows through the area in endless, hypnotic cycles of aquatic serenity.",
     "color": "Blue",
@@ -1038,7 +1038,7 @@
   },
   {
     "name": "Windy Bee",
-    "id": "windy",
+    "id": "windy-bee",
     "icon": "images/bees/Windy.png",
     "desc": "A translucent spirit of the atmosphere, composed of swirling zephyrs and captured starlight. It moves with a restless, unpredictable elegance, leaving behind spiraling slipstreams of inspiration and echoing whispers of ancient secrets; its breezy resonance lifts the spirit, accelerating the pace of discovery and carrying the pollen of innovation across vast distances with a single, effortless gust.",
     "color": "Colorless",
