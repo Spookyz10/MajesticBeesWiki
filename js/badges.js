@@ -98,13 +98,14 @@ function buildTierRows(badge) {
     const color = getTierColor(tier);
     const req = badge.start * Math.pow(badge.mult, tier - 1);
     const buff = buffText(badge.buff, tier);
+    const reqText = badge.id === "time" ? formatDuration(req) : formatNum(req);
     return `
       <tr class="badge-tier-row">
         <td>
           <span class="badge-tier-pill" style="color:${color.text};border-color:${color.border};background:${color.bg}">${TIER_LABELS[i]}</span>
           <span class="badge-tier-grade" style="color:${color.text}">${color.label}</span>
         </td>
-        <td class="badge-tier-req">${formatDuration(req)}</td>
+        <td class="badge-tier-req">${reqText}</td>
         <td class="badge-tier-buff">${buff ? `<span class="badge-buff-value">${buff}</span>` : `<span class="badge-no-buff">—</span>`}</td>
       </tr>`;
   }).join("");
