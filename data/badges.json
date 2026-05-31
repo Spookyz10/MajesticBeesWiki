@@ -13,7 +13,7 @@
     "name": "Time",
     "order": 2,
     "start": 3600,
-    "mult": 5,
+    "mult": 2,
     "buff": { "stat": "Honey Bonus", "type": "Perc", "value": 2 },
     "desc": "Play the game"
   },
