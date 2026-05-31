@@ -1171,7 +1171,15 @@
               "type": "Bag",
               "image": "images/equipment/Coconut Bag.png",
               "description": "Official item of coconut fashion, known as Tropical Bestie.",
-              "info": "+3,500,000 Capacity\n+750% Convert Rate\n+45 Convert Amount\n+40% Red Pollen\n+40% Blue Pollen\n+20% Bee Ability Rate",
+              "info": "+3,500,000 Capacity\n+750% Convert Rate\n+45 Convert Amount\n+50% Red Pollen\n+50% Blue Pollen\n+20% Bee Ability Rate",
+              "capacity": 3500000,
+              "buffs": [
+                "+750% Convert Rate",
+                "+45 Convert Amount",
+                "+50% Red Pollen",
+                "+50% Blue Pollen",
+                "+20% Bee Ability Rate"
+              ],
               "cost": "100b Honey + 3 Majestic Cocktail + 10 Summer Cocktail + 30 Coconut Drink + 50 Lemonade + 500 Coconut + 350 Wind Essence + 25 Bamboo Flask + 500 Bamboo",
               "costType": "honey"
             }
@@ -1186,7 +1194,15 @@
               "type": "Belt",
               "image": "images/equipment/Coconut Belt.png",
               "description": "Essential item of coconut set and new coconut fashion.",
-              "info": "+400,000 Capacity\nx1.75 Capacity Bonus\nx2.25 Convert Rate\nx1.15 Pollen\n+15% Bee Ability Rate\n+100% Loot Luck",
+              "info": "+400,000 Capacity\nx1.85 Capacity Bonus\nx2.25 Convert Rate\nx1.35 Pollen\n+15% Bee Ability Rate\n+100% Loot Luck",
+              "capacity": 400000,
+              "buffs": [
+                "x1.85 Capacity Bonus",
+                "x2.25 Convert Rate",
+                "x1.35 Pollen",
+                "+15% Bee Ability Rate",
+                "+100% Loot Luck"
+              ],
               "cost": "120b Honey + 2 Majestic Cocktail + 10 Summer Cocktail + 15 Coconut Drink + 30 Lemonade + 450 Coconut + 150 Wind Essence + 20 Cone Extract + 400 Pine Cone",
               "costType": "honey"
             },
@@ -1194,7 +1210,7 @@
               "name": "Coconut Boots",
               "type": "Boots",
               "image": "images/equipment/Coconut Boots.png",
-              "description": "Tropical boots made out of coconuts that were near and true obsidian power.",
+              "description": "Tropical boots, made out of coconuts that were near and true obsidian power.",
               "info": "+9 Movement Collection\n+8% Player Movespeed\n+10 Jump Power\nx1.15 Obsidian Pollen",
               "cost": "10b Honey + 3 Summer Cocktail + 10 Coconut Drink + 35 Lemonade + 150 Coconut + 100 Water Essence + 100 Fire Essence + 200 Blueberry + 200 Strawberry",
               "costType": "honey"
@@ -1204,7 +1220,16 @@
               "type": "Helmet",
               "image": "images/equipment/Sunny Helmet.png",
               "description": "The true sun god helmet.",
-              "info": "+100% Convert Rate\n+50% Loot Luck\nx1.5 Capacity Bonus\n+40% Pollen\n+10% Bee Ability Rate",
+              "info": "+225% Convert Rate\n+75% Loot Luck\nx2.75 Capacity Bonus\nx1.75 Pollen\n+35% Obsidian Pollen\n+15% Bee Ability Rate",
+              "capacity": 750000,
+              "buffs": [
+                "+225% Convert Rate",
+                "+75% Loot Luck",
+                "x2.75 Capacity Bonus",
+                "x1.75 Pollen",
+                "+35% Obsidian Pollen",
+                "+15% Bee Ability Rate"
+              ],
               "cost": "10b Honey + 5 Summer Cocktail + 50 Lemonade + 500 Lemon + 100 Water Essence + 100 Fire Essence + 20 Blueberry Extract + 20 Strawberry Extract + 20 Seed Oil",
               "costType": "honey"
             }

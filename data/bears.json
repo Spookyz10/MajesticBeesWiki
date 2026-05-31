@@ -1699,11 +1699,13 @@
         "requirements": [
           {
             "type": "use_ability",
-            "amount": 5
+            "amount": 5,
+            "ability": "Red Pollen Boost"
           },
           {
             "type": "use_ability",
-            "amount": 5
+            "amount": 5,
+            "ability": "Blue Pollen Boost"
           }
         ],
         "rewards": [
@@ -1727,11 +1729,13 @@
         "requirements": [
           {
             "type": "use_ability",
-            "amount": 10
+            "amount": 10,
+            "ability": "White Pollen Boost"
           },
           {
             "type": "use_ability",
-            "amount": 5
+            "amount": 5,
+            "ability": "Bomb"
           }
         ],
         "rewards": [
@@ -1755,7 +1759,8 @@
         "requirements": [
           {
             "type": "use_ability",
-            "amount": 10
+            "amount": 10,
+            "ability": "Bomb+"
           }
         ],
         "rewards": [
@@ -1784,11 +1789,13 @@
           },
           {
             "type": "use_ability",
-            "amount": 15
+            "amount": 15,
+            "ability": "Bomb"
           },
           {
             "type": "use_ability",
-            "amount": 10
+            "amount": 10,
+            "ability": "Bomb+"
           }
         ],
         "rewards": [
@@ -3827,7 +3834,8 @@
         "requirements": [
           {
             "type": "use_ability",
-            "amount": 50
+            "amount": 50,
+            "ability": "White Pollen Boost"
           },
           {
             "type": "gather_pollen",

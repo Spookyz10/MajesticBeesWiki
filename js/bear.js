@@ -34,7 +34,9 @@ function formatRequirement(req) {
     case "defeat_mob":
       return `Defeat <b>${fmt(req.amount)}</b> ${escHtml(req.mob || "mob")}`;
     case "use_ability":
-      return `Use <b>${escHtml(req.ability || "Ability")}</b> × ${fmt(req.amount)}`;
+      return req.ability
+        ? `Activate <b>${escHtml(req.ability)}</b> <b>${fmt(req.amount)}</b> time${req.amount !== 1 ? "s" : ""}`
+        : `Use an ability <b>${fmt(req.amount)}</b> time${req.amount !== 1 ? "s" : ""}`;
     case "craft":
       return `Craft <b>${fmt(req.amount)}</b> ${escHtml(req.item || "Item")}`;
     case "consume":
