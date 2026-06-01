@@ -21,6 +21,24 @@
   --bg-image: ../images/backgrounds/bg.jpg;
 }
 
+html.pride-mode {
+  --bg: #120816;
+  --bg-deep: #090410;
+  --panel: #231235;
+  --panel-2: #33174d;
+  --line: rgba(255, 255, 255, 0.2);
+  --gold: #fff2c2;
+  --gold-soft: #ffe1ef;
+  --gold-dim: #ffb8da;
+  --green: #82f0ab;
+  --green-hover: #c2ffd9;
+  --red: #ff8da8;
+  --blue: #87d1ff;
+  --purple: #d0a0ff;
+  --divider: rgba(255, 255, 255, 0.28);
+  --shadow: rgba(0, 0, 0, 0.55);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -44,6 +62,24 @@ body::before {
     linear-gradient(135deg, rgba(46, 33, 0, 0.12), rgba(26, 18, 0, 0.1));
   background-attachment: fixed;
   z-index: -1;
+}
+
+html.pride-mode body::before {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 92, 138, 0.22),
+      rgba(255, 161, 74, 0.2),
+      rgba(255, 225, 102, 0.16),
+      rgba(97, 214, 154, 0.18),
+      rgba(80, 173, 232, 0.18),
+      rgba(180, 136, 255, 0.2),
+      rgba(255, 126, 184, 0.2)
+    ),
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.08), transparent 36%),
+    url("../images/backgrounds/bg.jpg") center/cover no-repeat,
+    linear-gradient(rgba(12, 8, 0, 0.5), rgba(12, 8, 0, 0.6)),
+    linear-gradient(135deg, rgba(46, 33, 0, 0.12), rgba(26, 18, 0, 0.1));
 }
 
 body,
@@ -118,6 +154,142 @@ body,
   border-color: rgba(212, 170, 48, 0.2);
   color: var(--gold);
   transform: translateX(3px);
+}
+
+.sidebar-theme-button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: linear-gradient(
+    90deg,
+    #ff6b8b,
+    #ff9f43,
+    #ffd166,
+    #63d19e,
+    #58b6f8,
+    #c089ff,
+    #ff7dc0
+  );
+  color: #1a1022;
+  font: inherit;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.24);
+}
+
+.sidebar-theme-button:hover {
+  color: #1a1022;
+  transform: translateY(-1px);
+}
+
+html.pride-mode .sidebar {
+  background: linear-gradient(
+    180deg,
+    rgba(44, 15, 61, 0.96),
+    rgba(21, 10, 37, 0.96)
+  );
+  border-right-color: rgba(255, 255, 255, 0.18);
+}
+
+html.pride-mode .sidebar a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.24);
+  color: #fffaf3;
+}
+
+html.pride-mode .sidebar-theme-button {
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+html.pride-mode .topbar {
+  background: linear-gradient(
+    90deg,
+    rgba(56, 14, 74, 0.78),
+    rgba(29, 16, 58, 0.78)
+  );
+  border-bottom-color: rgba(255, 255, 255, 0.16);
+}
+
+html.pride-mode .content {
+  background: linear-gradient(
+    180deg,
+    rgba(38, 18, 58, 0.96),
+    rgba(23, 12, 39, 0.96)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+html.pride-mode .wiki-panel,
+html.pride-mode .portable-infobox,
+html.pride-mode #toc,
+html.pride-mode .toc,
+html.pride-mode #catlinks,
+html.pride-mode .code-card,
+html.pride-mode .store-card,
+html.pride-mode .store-item-card,
+html.pride-mode .bee-tab-buttons,
+html.pride-mode .bee-tab-content,
+html.pride-mode .bee-desc-panel,
+html.pride-mode .mw-parser-output table.wikitable {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+html.pride-mode .wiki-panel-header,
+html.pride-mode .mw-parser-output h2,
+html.pride-mode .hero-title,
+html.pride-mode h1.page-header__title,
+html.pride-mode #firstHeading,
+html.pride-mode .mw-parser-output h3,
+html.pride-mode .toctitle h2 {
+  background: linear-gradient(
+    90deg,
+    #ff6b8b,
+    #ff9f43,
+    #ffd166,
+    #63d19e,
+    #58b6f8,
+    #c089ff,
+    #ff7dc0
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+html.pride-mode .wiki-panel-header {
+  border-bottom-color: rgba(255, 255, 255, 0.16);
+}
+
+html.pride-mode .mw-parser-output a,
+html.pride-mode .toc a,
+html.pride-mode #catlinks a {
+  color: #9de7ff;
+}
+
+html.pride-mode .mw-parser-output a:hover,
+html.pride-mode .toc a:hover,
+html.pride-mode #catlinks a:hover {
+  color: #ffd2ea;
+}
+
+html.pride-mode .mobile-sidebar-button {
+  background: linear-gradient(
+    135deg,
+    #ff6b8b,
+    #ff9f43,
+    #ffd166,
+    #63d19e,
+    #58b6f8,
+    #c089ff
+  );
+  color: #1a1022;
 }
 
 .main {
@@ -1163,6 +1335,14 @@ a[href$="/Azvaro"]:hover {
     -webkit-overflow-scrolling: touch;
   }
 
+  html.pride-mode .mobile-bottom-sheet {
+    background: linear-gradient(
+      180deg,
+      rgba(44, 15, 61, 0.98),
+      rgba(21, 10, 37, 0.98)
+    );
+  }
+
   .mobile-bottom-sheet.open {
     transform: translateY(0);
   }
@@ -1195,5 +1375,10 @@ a[href$="/Azvaro"]:hover {
   .mobile-bottom-sheet a:hover {
     background: rgba(212, 170, 48, 0.08);
     color: var(--gold);
+  }
+
+  .sidebar-theme-button--mobile {
+    width: calc(100% - 8px);
+    margin: 10px 4px 4px;
   }
 }
