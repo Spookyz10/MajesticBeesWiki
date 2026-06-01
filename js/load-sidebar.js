@@ -1,3 +1,46 @@
+const PRIDE_MODE_STORAGE_KEY = "majestic-pride-mode";
+
+function readPrideMode() {
+  try {
+    return window.localStorage.getItem(PRIDE_MODE_STORAGE_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
+function writePrideMode(enabled) {
+  try {
+    window.localStorage.setItem(PRIDE_MODE_STORAGE_KEY, enabled ? "1" : "0");
+  } catch {
+    // Ignore storage failures and keep the current session state.
+  }
+}
+
+function updatePrideToggleButtons(enabled) {
+  const label = enabled ? "Pride Mode: On" : "Pride Mode: Off";
+
+  document.querySelectorAll("[data-pride-toggle]").forEach((button) => {
+    button.setAttribute("aria-pressed", enabled ? "true" : "false");
+    button.textContent = label;
+  });
+}
+
+function applyPrideMode(enabled, persist = true) {
+  document.documentElement.classList.toggle("pride-mode", enabled);
+  document.documentElement.dataset.prideMode = enabled ? "on" : "off";
+  updatePrideToggleButtons(enabled);
+
+  if (persist) {
+    writePrideMode(enabled);
+  }
+}
+
+function togglePrideMode() {
+  applyPrideMode(!document.documentElement.classList.contains("pride-mode"));
+}
+
+applyPrideMode(readPrideMode(), false);
+
 function getBasePath() {
   const { pathname } = window.location;
 
@@ -40,11 +83,16 @@ function loadSidebar() {
       <a href="${basePath}store.html">Store</a>
       <a href="${basePath}updates.html">Updates</a>
       <a href="${basePath}world.html">World</a>
+      <button type="button" class="sidebar-theme-button" data-pride-toggle aria-pressed="false">
+        Pride Mode: Off
+      </button>
     </div>
   `;
 
   container.innerHTML = sidebarHTML;
+  bindPrideToggleButtons(container);
   createMobileSheet && createMobileSheet(basePath);
+  updatePrideToggleButtons(readPrideMode());
 }
 
 if (document.readyState === "loading") {
@@ -76,6 +124,9 @@ function createMobileSheet(basePath) {
       <a href="${basePath}store.html">Store</a>
       <a href="${basePath}updates.html">Updates</a>
       <a href="${basePath}world.html">World</a>
+      <button type="button" class="sidebar-theme-button sidebar-theme-button--mobile" data-pride-toggle aria-pressed="false">
+        Pride Mode: Off
+      </button>
     </div>
   `;
 
@@ -126,5 +177,13 @@ function createMobileSheet(basePath) {
 
   sheet.addEventListener("click", function (e) {
     e.stopPropagation();
+  });
+
+  bindPrideToggleButtons(sheet);
+}
+
+function bindPrideToggleButtons(root) {
+  root.querySelectorAll("[data-pride-toggle]").forEach((button) => {
+    button.addEventListener("click", togglePrideMode);
   });
 }
