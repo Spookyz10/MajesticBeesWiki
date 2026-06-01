@@ -9,6 +9,7 @@ const ITEM_IMAGES = {
   Seed: "images/items/Seed.png",
   Treat: "images/items/Treat.png",
   Ticket: "images/items/Ticket.png",
+  Starflower: "images/items/Starflower.png",
   Honey: "images/currencies/Honey.png",
 };
 

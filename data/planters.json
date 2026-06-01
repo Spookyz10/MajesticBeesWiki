@@ -29,6 +29,7 @@
       ],
       "Bamboo Field": [{ "item": "Bamboo", "chance": 15, "amount": 2 }],
       "All Fields": [
+        { "item": "Starflower", "chance": 1, "amount": 1 },
         { "item": "Strawberry", "chance": 15, "amount": 4 },
         { "item": "Fire Essence", "chance": 15, "amount": 1 },
         { "item": "Honey", "chance": 10, "amount": 100000, "isHoney": true },
@@ -67,6 +68,7 @@
       ],
       "Bamboo Field": [{ "item": "Bamboo", "chance": 15, "amount": 2 }],
       "All Fields": [
+        { "item": "Starflower", "chance": 1, "amount": 1 },
         { "item": "Blueberry", "chance": 15, "amount": 4 },
         { "item": "Water Essence", "chance": 15, "amount": 1 },
         { "item": "Honey", "chance": 10, "amount": 100000, "isHoney": true },
@@ -277,7 +279,7 @@
       "All Fields": [
         { "item": "Seed", "chance": 5, "amount": 1 },
         { "item": "Honey", "chance": 10, "amount": 5000, "isHoney": true },
-        { "item": "Ticket", "chance": 100, "amount": 1, "isPercent": true }
+        { "item": "Ticket", "chance": 100, "amount": 1 }
       ]
     }
   },
@@ -308,6 +310,7 @@
       ],
       "Bamboo Field": [{ "item": "Bamboo", "chance": 15, "amount": 1 }],
       "All Fields": [
+        { "item": "Starflower", "chance": 0.2, "amount": 1 },
         { "item": "Seed", "chance": 15, "amount": 2 },
         { "item": "Honey", "chance": 10, "amount": 10000, "isHoney": true },
         { "item": "Treat", "chance": 10, "amount": 2 },
