@@ -11,9 +11,7 @@ function readPrideMode() {
 function writePrideMode(enabled) {
   try {
     window.localStorage.setItem(PRIDE_MODE_STORAGE_KEY, enabled ? "1" : "0");
-  } catch {
-    // Ignore storage failures and keep the current session state.
-  }
+  } catch {}
 }
 
 function updatePrideToggleButtons(enabled) {

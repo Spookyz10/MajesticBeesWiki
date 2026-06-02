@@ -10,7 +10,6 @@
   font-size: 1.05em;
 }
 
-/* ── List page ── */
 .planters-list {
   display: flex;
   flex-direction: column;
@@ -171,7 +170,6 @@
   color: var(--green-hover);
 }
 
-/* ── Detail page ── */
 .planter-detail-shell {
   max-width: 1120px;
   margin: 0 auto;
@@ -255,7 +253,6 @@
   line-height: 1.55;
 }
 
-/* Infobox */
 .planter-infobox {
   background: #1e1400;
   border: 1px solid var(--line);
@@ -325,7 +322,6 @@
   text-align: right;
 }
 
-/* Section headings */
 .planter-section {
   margin-top: 8px;
 }
@@ -353,7 +349,6 @@
   max-width: 36px;
 }
 
-/* Drop tables */
 .planter-drops-note {
   font-size: 0.86em;
   color: var(--gold-dim);
@@ -387,7 +382,6 @@
   border-left: 3px solid transparent;
 }
 
-/* Pool color theming */
 .planter-pool[data-pool="Red Field"] {
   border-color: rgba(165, 65, 55, 0.34);
 }
@@ -561,7 +555,6 @@
   font-style: italic;
 }
 
-/* All planters grid */
 .planter-all-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -645,7 +638,6 @@
   font-size: 0.95rem;
 }
 
-/* Weighted pool note */
 .planter-weight-note {
   font-size: 0.82em;
   color: var(--gold-dim);

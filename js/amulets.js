@@ -1,6 +1,3 @@
-// ── Rarity theme palette ──────────────────────────────────────────────────────
-// Mirrors starflower tier colours: Common = white/grey, Rare = silver,
-// Epic = gold, Legendary = blue, Mythic = purple
 const RARITY = {
   Common: {
     label: "Common",
@@ -87,7 +84,6 @@ function buildBuffRows(buffs) {
     .join("");
 }
 
-// Build a single variant panel (table only — meta moved to header)
 function buildVariantPanel(variant, col, amuletId, variantIdx) {
   const panelId = `av-${amuletId}-${variantIdx}`;
 
@@ -109,7 +105,6 @@ function buildVariantPanel(variant, col, amuletId, variantIdx) {
     </div>`;
 }
 
-// Build the rarity toggle pills for multi-variant amulets
 function buildTogglePills(variants, amuletId) {
   return variants
     .map((v, i) => {
@@ -130,7 +125,6 @@ function buildAmuletCard(amulet) {
   const firstVariant = amulet.variants[0];
   const firstCol = RARITY[firstVariant.rarity] || RARITY.Epic;
 
-  // Header rarity pill + rolls badge (both update when toggling)
   const firstPlural = firstVariant.buffsAmount === 1 ? "buff" : "buffs";
   const headerPill = `
     <span class="amulet-rarity-badge amulet-rarity-active-pill"
@@ -183,20 +177,17 @@ function buildAmuletCard(amulet) {
     </div>`;
 }
 
-// ── Toggle logic ──────────────────────────────────────────────────────────────
 function initToggles() {
   document.querySelectorAll(".amulet-rarity-pill").forEach((btn) => {
     btn.addEventListener("click", () => {
       const amuletId = btn.dataset.amulet;
       const idx = parseInt(btn.dataset.idx, 10);
 
-      // Deactivate siblings
       document
         .querySelectorAll(`.amulet-rarity-pill[data-amulet="${amuletId}"]`)
         .forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
 
-      // Show matching panel, hide others
       const panelsWrap = document.querySelector(
         `[data-amulet-panels="${amuletId}"]`,
       );
@@ -206,7 +197,6 @@ function initToggles() {
           panel.style.display = i === idx ? "" : "none";
         });
 
-      // Update card border/bg and header bg to match new rarity
       const variantRarity = btn.textContent.trim();
       const col = RARITY[variantRarity] || RARITY.Epic;
       const card = document.getElementById(`amulet-${amuletId}`);
@@ -219,7 +209,6 @@ function initToggles() {
       );
       if (header) header.style.background = col.bgHeader;
 
-      // Update the active rarity pill in the header
       const activePill = document.querySelector(
         `[data-amulet-rarity="${amuletId}"]`,
       );
@@ -230,7 +219,6 @@ function initToggles() {
         activePill.style.background = col.pill;
       }
 
-      // Update the main amulet image to reflect selected rarity (use variant image if provided, otherwise use rarity icon)
       try {
         const card = document.getElementById(`amulet-${amuletId}`);
         if (card) {
@@ -245,23 +233,18 @@ function initToggles() {
             imgEl.alt = `${_amuletsData.find((a) => a.id === amuletId)?.name} - ${col.label}`;
           }
         }
-      } catch (e) {
-        // ignore
-      }
+      } catch (e) {}
 
-      // Update the rolls badge in the header
       const rollsBadge = document.querySelector(
         `[data-amulet-rolls="${amuletId}"]`,
       );
       if (rollsBadge) {
-        // find the variant data from the amulets array to get correct buffsAmount
         const variantData = _amuletsData.find((a) => a.id === amuletId)
           ?.variants[idx];
         if (variantData) {
           const plural = variantData.buffsAmount === 1 ? "buff" : "buffs";
           rollsBadge.innerHTML = `Rolls <b>${variantData.buffsAmount}</b> ${plural}`;
 
-          // Update "From:" source text if variant has its own source
           const sourceEl = document.querySelector(
             `[data-amulet-source="${amuletId}"]`,
           );
@@ -278,7 +261,6 @@ function initToggles() {
     });
   });
 
-  // Hide all panels except first for multi-variant amulets
   document.querySelectorAll(".amulet-panels-wrap").forEach((wrap) => {
     wrap.querySelectorAll(".amulet-variant-panel").forEach((panel, i) => {
       if (i !== 0) panel.style.display = "none";
@@ -286,7 +268,6 @@ function initToggles() {
   });
 }
 
-// ── Load ──────────────────────────────────────────────────────────────────────
 let _amuletsData = [];
 
 async function loadAmulets() {
