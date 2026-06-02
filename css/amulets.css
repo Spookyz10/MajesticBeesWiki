@@ -1,4 +1,3 @@
-/* ── Page layout ─────────────────────────────────────────────────────────────*/
 .amulets-page-title {
   text-align: center;
   padding: 30px 0 10px;
@@ -11,7 +10,6 @@
   font-size: 1.05em;
 }
 
-/* Info note above the list */
 .amulets-info-note {
   max-width: 860px;
   width: min(860px, 92%);
@@ -25,7 +23,6 @@
   line-height: 1.7;
 }
 
-/* ── Card list ───────────────────────────────────────────────────────────────*/
 .amulets-list {
   display: flex;
   flex-direction: column;
@@ -34,25 +31,22 @@
   margin: 0 auto 12px;
 }
 
-/* Each amulet card — border & bg are set inline by JS via rarity theme */
 .amulet-card {
   border-radius: 14px;
   overflow: hidden;
   transition:
     border-color 0.25s,
     box-shadow 0.25s;
-  border: 1px solid var(--line); /* fallback, overridden inline */
+  border: 1px solid var(--line);
 }
 
 .amulet-card:hover {
   box-shadow: 0 0 28px rgba(212, 170, 48, 0.12);
 }
 
-/* ── Card header ─────────────────────────────────────────────────────────────*/
 .amulet-card-header {
   padding: 18px 20px 14px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  /* bg set inline */
   transition: background 0.25s;
 }
 
@@ -108,7 +102,6 @@
   margin-top: 2px;
 }
 
-/* Header rarity badge — colour set inline */
 .amulet-rarity-badge {
   font-size: 0.74em;
   font-weight: 700;
@@ -130,7 +123,6 @@
   image-rendering: pixelated;
 }
 
-/* Rolls badge — sits inline next to rarity pill in header */
 .amulet-rolls-badge {
   font-size: 0.78em;
   font-weight: 700;
@@ -144,7 +136,6 @@
     background 0.2s;
 }
 
-/* ── Rarity toggle row ───────────────────────────────────────────────────────*/
 .amulet-toggle-row {
   display: flex;
   flex-wrap: wrap;
@@ -154,7 +145,6 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* Each pill button — colours via CSS variables set inline by JS */
 .amulet-rarity-pill {
   font-family: "Nunito", sans-serif;
   font-size: 0.75rem;
@@ -186,13 +176,10 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
-/* ── Variant panel (one per rarity) ─────────────────────────────────────────*/
 .amulet-variant-panel {
-  /* bg and border via CSS vars set inline */
   transition: background 0.2s;
 }
 
-/* ── Buff table ──────────────────────────────────────────────────────────────*/
 .amulet-card-body {
   padding: 0 20px 16px;
   overflow-x: auto;
@@ -264,7 +251,6 @@
   white-space: nowrap;
 }
 
-/* ── Responsive ──────────────────────────────────────────────────────────────*/
 @media (max-width: 560px) {
   .amulets-list {
     width: min(860px, 96%);

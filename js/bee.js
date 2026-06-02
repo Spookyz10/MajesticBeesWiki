@@ -8,7 +8,6 @@ const RARITY_CLASS = {
 };
 
 function tokenIcon(tokenName) {
-  // Use the token name directly: images/tokens/NomeDoToken.png
   return `images/tokens/${tokenName}.png`;
 }
 
@@ -143,7 +142,6 @@ function buildAbilities(bee) {
           : `Unlocks at Level ${unlockLevel}`;
       const isLocked = unlockLevel > 1;
 
-      // Use the token name directly for the token image
       const abName = ab.token || ab.name || "";
       const iconSrc = tokenIcon(abName);
       const desc = ab.desc || ab.description || "";
@@ -262,7 +260,6 @@ function buildPage(bee) {
 }
 
 function bindAbilityClicks(root, bee) {
-  // Ability popup removed: keep cards non-interactive (no modal on click)
   root.querySelectorAll(".ab-card").forEach((card, i) => {
     card.style.cursor = "default";
   });

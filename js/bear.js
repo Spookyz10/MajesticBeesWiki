@@ -31,6 +31,7 @@ function formatRequirement(req) {
     }
     case "collect_sticker":
       return `Collect ${escHtml(req.sticker || "Sticker Token")}`;
+    case "defeat":
     case "defeat_mob":
       return `Defeat <b>${fmt(req.amount)}</b> ${escHtml(req.mob || "mob")}`;
     case "use_ability":
