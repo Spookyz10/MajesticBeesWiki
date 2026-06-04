@@ -292,7 +292,7 @@
     "name": "Royal Jelly",
     "category": "Jellies",
     "rarity": "Common",
-    "desc": "Transforms a bee into a random new bee. Rares: 85.23%, Epics: 14.20%, Legendaries: 0.57%.",
+    "desc": "Transforms a bee into a random new bee. Rares: 85.23%, Epics: 14.20%, Legendaries: 0.57%. 1 in 200 of a bee coming out shiny.",
     "image": "images/items/Royal Jelly.png",
     "order": 1.0
   },
