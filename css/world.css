@@ -529,9 +529,67 @@
     flex: none;
   }
 
+  .pipe-img-wrap {
+    width: 120px;
+    height: 120px;
+  }
+
+  .pipe-img-wrap img {
+    width: 120px;
+    height: 120px;
+  }
+
   .free-dispensers-grid {
     grid-template-columns: repeat(2, 1fr);
     display: grid;
+  }
+
+  .free-disp-img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .free-disp-img img {
+    width: 80%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .paid-disp-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 18px 16px;
+    gap: 14px;
+  }
+
+  .paid-disp-img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .paid-disp-img img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .paid-disp-img-empty {
+    width: 160px;
+    height: 160px;
+  }
+
+  .paid-disp-cost-type {
+    justify-content: center;
+  }
+
+  .paid-disp-meta {
+    align-items: center;
+  }
+
+  .paid-disp-body {
+    padding: 12px 12px 14px;
   }
 
   .mixer-grid {
@@ -545,5 +603,20 @@
   .mixer-intro-image {
     align-self: center;
     margin-top: 0;
+    width: 150px;
+    height: 150px;
+  }
+
+  .mixer-intro-image img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .mixer-card {
+    padding: 20px 16px;
+  }
+
+  .slot-rows {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
   }
 }
