@@ -650,5 +650,79 @@
       { "type": "drop", "name": "Starflowers" },
       { "type": "drop", "name": "Mobs" }
     ]
+  },
+  {
+    "id": "Dice",
+    "name": "Dice",
+    "category": "Consumables",
+    "rarity": "Epic",
+    "desc": "Grants one random field boost (x1-x4) for 15m.",
+    "image": "images/items/Dice.png",
+    "order": 10.0,
+    "buffs": [],
+    "sources": [{ "type": "mixer" }]
+  },
+  {
+    "id": "Double Dice",
+    "name": "Double Dice",
+    "category": "Consumables",
+    "rarity": "Legendary",
+    "desc": "Grants two random field boost (x3-x7) for 15m.",
+    "image": "images/items/Double Dice.png",
+    "order": 11.0,
+    "buffs": [],
+    "sources": [{ "type": "mixer" }]
+  },
+  {
+    "id": "Triple Dice",
+    "name": "Triple Dice",
+    "category": "Consumables",
+    "rarity": "Mythic",
+    "desc": "Grants three random field boost (x6-x10) for 15m.",
+    "image": "images/items/Triple Dice.png",
+    "order": 12.0,
+    "buffs": [],
+    "sources": [{ "type": "mixer" }]
+  },
+  {
+    "id": "Glitter",
+    "name": "Glitter",
+    "category": "Consumables",
+    "rarity": "Epic",
+    "desc": "Grants field you stand on - (x3) boost for 15m.",
+    "image": "images/items/Glitter.png",
+    "order": 14.0,
+    "buffs": [],
+    "sources": [{ "type": "mixer" }]
+  },
+  {
+    "id": "Sticker Egg",
+    "name": "Sticker Egg",
+    "category": "Eggs",
+    "rarity": "Legendary",
+    "desc": "Always turns into a random sticker bee.",
+    "image": "images/items/Sticker Egg.png",
+    "order": 25.0,
+    "sources": []
+  },
+  {
+    "id": "Lunar Essence",
+    "name": "Lunar Essence",
+    "category": "Ingredients",
+    "rarity": "Epic",
+    "desc": "Used to craft variable things.",
+    "image": "images/items/Lunar Essence.png",
+    "order": 4.0,
+    "sources": [{ "type": "drop", "name": "Lunar Starflower" }]
+  },
+  {
+    "id": "Exp Essence",
+    "name": "Exp Essence",
+    "category": "Ingredients",
+    "rarity": "Epic",
+    "desc": "Used to craft variable things.",
+    "image": "images/items/Exp Essence.png",
+    "order": 5.0,
+    "sources": [{ "type": "mixer" }]
   }
 ]

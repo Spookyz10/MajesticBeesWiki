@@ -206,3 +206,48 @@
     grid-template-columns: 1fr;
   }
 }
+
+.shop-item-panel.passive-panel {
+  min-height: auto;
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(130, 184, 232, 0.35);
+  background: rgba(130, 184, 232, 0.06);
+}
+
+.passive-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.passive-tag {
+  background: rgba(130, 184, 232, 0.1);
+  border: 1px solid rgba(130, 184, 232, 0.3);
+  border-radius: 8px;
+  padding: 10px 12px;
+  text-align: center;
+}
+
+.passive-name {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  color: #a8d0f0;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+}
+
+.passive-type {
+  color: #8ab8d8;
+  font-size: 0.78rem;
+  opacity: 0.8;
+  margin-left: 4px;
+}
+
+.passive-desc {
+  margin: 6px 0 0;
+  color: var(--gold-soft);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}

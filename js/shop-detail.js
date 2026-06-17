@@ -58,6 +58,28 @@ function renderItem(item) {
         <h4>Cost</h4>
         <p>${renderCost(item)}</p>
       </div>
+      ${
+        item.passives && item.passives.length
+          ? `
+      <div class="shop-item-panel passive-panel">
+        <h4>Passive</h4>
+        <div class="passive-list">
+          ${item.passives
+            .map(
+              (p) => `
+            <div class="passive-tag">
+              <span class="passive-name">${escapeHtml(p.name)}</span>
+              <span class="passive-type">(${escapeHtml(p.type)})</span>
+              <p class="passive-desc">${escapeHtml(p.desc)}</p>
+            </div>
+          `,
+            )
+            .join("")}
+        </div>
+      </div>
+      `
+          : ""
+      }
     </div>
   `;
 }

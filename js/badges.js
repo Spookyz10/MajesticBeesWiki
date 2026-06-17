@@ -43,15 +43,29 @@ const TIER_COLORS = [
   },
 ];
 
+const TIER_COLOR_RUBY = {
+  bg: "rgba(255,50,50,0.13)",
+  border: "rgba(255,50,50,0.45)",
+  text: "#FF3232",
+  label: "Ruby",
+};
+
 let ALL_BADGES = [];
 const DISPLAY_LIMIT = 3;
 let BADGES_EXPANDED = false;
 
 function getTierColor(tier) {
-  return TIER_COLORS[Math.min(Math.ceil(tier / 2) - 1, TIER_COLORS.length - 1)];
+  if (tier > 10) return TIER_COLOR_RUBY;
+  return TIER_COLORS[(Math.ceil(tier / 2) - 1) % TIER_COLORS.length];
 }
 
 function formatNum(n) {
+  if (n >= 1e30) return (n / 1e30).toFixed(1).replace(/\.0$/, "") + "N";
+  if (n >= 1e27) return (n / 1e27).toFixed(1).replace(/\.0$/, "") + "Oc";
+  if (n >= 1e24) return (n / 1e24).toFixed(1).replace(/\.0$/, "") + "Sp";
+  if (n >= 1e21) return (n / 1e21).toFixed(1).replace(/\.0$/, "") + "Sx";
+  if (n >= 1e18) return (n / 1e18).toFixed(1).replace(/\.0$/, "") + "Qn";
+  if (n >= 1e15) return (n / 1e15).toFixed(1).replace(/\.0$/, "") + "Qd";
   if (n >= 1e12) return (n / 1e12).toFixed(1).replace(/\.0$/, "") + "T";
   if (n >= 1e9) return (n / 1e9).toFixed(1).replace(/\.0$/, "") + "B";
   if (n >= 1e6) return (n / 1e6).toFixed(1).replace(/\.0$/, "") + "M";
@@ -112,8 +126,9 @@ function buildTierRows(badge) {
 }
 
 function buildBadgeCard(badge) {
+  const escId = CSS.escape(badge.id);
   return `
-    <div class="badge-card">
+    <div class="badge-card" data-badge-id="${badge.id}">
       <div class="badge-card-left">
         <div class="badge-card-name">${badge.name}</div>
         <div class="badge-card-task">${badge.desc}</div>
@@ -123,8 +138,46 @@ function buildBadgeCard(badge) {
           <thead><tr><th>Tier</th><th>Required</th><th>Bonus (stacks per tier)</th></tr></thead>
           <tbody>${buildTierRows(badge)}</tbody>
         </table>
+        <div class="badge-tier-calc">
+          <div class="badge-tier-calc-title">Tier Calculator</div>
+          <div class="badge-tier-calc-row">
+            <label for="calc-input-${escId}">Tier #</label>
+            <input id="calc-input-${escId}" class="calc-input" type="number" min="1" step="1" value="" placeholder="e.g. 50" data-badge-id="${badge.id}" autocomplete="off" />
+          </div>
+          <div class="badge-tier-calc-result" id="calc-result-${escId}"></div>
+        </div>
       </div>
     </div>`;
+}
+
+function updateTierCalc(badge) {
+  const escId = CSS.escape(badge.id);
+  const input = document.getElementById(`calc-input-${escId}`);
+  const result = document.getElementById(`calc-result-${escId}`);
+  if (!input || !result) return;
+
+  const raw = input.value.trim();
+  if (!raw) {
+    result.innerHTML = "";
+    return;
+  }
+
+  const tier = parseInt(raw, 10);
+  if (isNaN(tier) || tier < 1) {
+    result.innerHTML = `<span class="calc-error">Enter a valid tier number (≥1)</span>`;
+    return;
+  }
+
+  const req = badge.start * Math.pow(badge.mult, tier - 1);
+  const buff = buffText(badge.buff, tier);
+  const color = getTierColor(tier);
+  const reqText = badge.id === "time" ? formatDuration(req) : formatNum(req);
+
+  result.innerHTML = `
+    <span class="calc-result-tier" style="color:${color.text}">Tier ${tier} (${color.label})</span>
+    <span class="calc-result-req">Requires: <strong>${reqText}</strong></span>
+    <span class="calc-result-buff">Bonus: <strong style="color:var(--green)">${buff}</strong></span>
+  `;
 }
 
 function renderBadges(query) {
@@ -181,6 +234,15 @@ async function loadBadges() {
     const badges = await res.json();
     ALL_BADGES = [...badges].sort((a, b) => a.order - b.order);
     renderBadges("");
+
+    document.addEventListener("input", (e) => {
+      const input = e.target.closest(".calc-input");
+      if (!input) return;
+      const bid = input.dataset.badgeId;
+      const badge = ALL_BADGES.find((b) => b.id === bid);
+      if (badge) updateTierCalc(badge);
+    });
+
     const searchInput = document.getElementById("badge-search");
     if (searchInput) {
       searchInput.addEventListener("input", (e) =>

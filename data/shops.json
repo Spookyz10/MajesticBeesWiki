@@ -209,7 +209,7 @@
             {
               "name": "Pixel Bee",
               "type": "",
-              "image": "images/bees/Pixel-Bee.png",
+              "image": "images/bees/Pixel.png",
               "description": "Gives you a Pixel Bee.",
               "info": "Adds a Pixel Bee to your hive.",
               "cost": "250 Tickets",
@@ -218,7 +218,7 @@
             {
               "name": "Lucky Bee",
               "type": "",
-              "image": "images/bees/Lucky-Bee.png",
+              "image": "images/bees/Lucky.png",
               "description": "Gives you a Lucky Bee.",
               "info": "Adds a Lucky Bee to your hive.",
               "cost": "500 Tickets",
@@ -227,7 +227,7 @@
             {
               "name": "Exp Bee",
               "type": "",
-              "image": "images/bees/Exp-Bee.png",
+              "image": "images/bees/Exp.png",
               "description": "Space for the item description.",
               "info": "Space for the item notes and details.",
               "cost": "750 Tickets",
@@ -516,9 +516,16 @@
               "type": "",
               "image": "images/equipment/Fire Scythe.png",
               "description": "Flaming and hot scythe, cut fire and spread it on fields.",
-              "info": "Gathers 8 pollen from 14 flowers in front of you in 0.7 seconds, 1.5x red pollen.\n[Fire Spreads Passive]: Covers Stamp in Fire every 5 clicks.",
+              "info": "Gathers 8 pollen from 14 flowers in front of you in 0.7 seconds, 1.5x red pollen.\n[Fire Spreads Passive]: Covers Stamp in Fire every 5 clicks.\n[Fire Aura Passive]: Turns all patches into flaming every 5 swings.",
               "cost": "8m Honey + 50 Strawberry + 25 Fire Essence",
-              "costType": "honey"
+              "costType": "honey",
+              "passives": [
+                {
+                  "name": "Fire Aura",
+                  "type": "Clicks",
+                  "desc": "Turns all patches into flaming every 5 swings."
+                }
+              ]
             }
           ]
         },
@@ -636,15 +643,15 @@
               "name": "Fire Ant Helmet",
               "type": "",
               "image": "images/equipment/Fire Ant Helmet.png",
-              "description": "Firefly ant made helmet!",
-              "info": "+750k Capacity\n+125% Convert Rate\n+50% Pollen\n+75% Loot Luck\nx1.5 Capacity Bonus\nx3 Fire Pollen\nx1.5 Red Pollen\n+15% Bee Ability Rate",
+              "description": "Firefully ant made helmet!",
+              "info": "+750k Capacity\n+125% Convert Rate\n+25% Pollen\n+75% Loot Luck\nx1.5 Capacity Bonus\nx2.25 Fire Pollen\nx1.5 Red Pollen\n+15% Bee Ability Rate",
               "capacity": 750000,
               "buffs": [
                 "+125% Convert Rate",
-                "+50% Pollen",
+                "+25% Pollen",
                 "+75% Loot Luck",
                 "x1.5 Capacity Bonus",
-                "x3 Fire Pollen",
+                "x2.25 Fire Pollen",
                 "x1.5 Red Pollen",
                 "+15% Bee Ability Rate"
               ],
@@ -669,7 +676,7 @@
             {
               "name": "Magma Bee",
               "type": "",
-              "image": "images/bees/Magma-Bee.png",
+              "image": "images/bees/Magma.png",
               "description": "A core-heated sentinel forged from molten stone and pulsing obsidian. As it drones through the hive, it leaves a scorching trail of liquid fire and crystalline embers; its very presence radiates an intense, transformative heat that tempers raw potential into hardened skill, refining the essence of every flower it visits into a potent, concentrated nectar of power.",
               "info": "Gives you a magma bee.",
               "cost": "2.500 Fire Essence + 10 Oil Bees + 10 Firework Bees",
@@ -699,9 +706,16 @@
               "type": "",
               "image": "images/equipment/Snow Shovel.png",
               "description": "Clean snow with it, might be better than normal shovel.",
-              "info": "Gathers 8 pollen from 29 flowers in front of you in 0.7 seconds, 1.5x blue pollen.\n[Ice Spreads Passive]: Covers Stamp in Ice every 5 clicks.",
+              "info": "Gathers 8 pollen from 29 flowers in front of you in 0.7 seconds, 1.5x blue pollen.\n[Ice Spreads Passive]: Covers Stamp in Ice every 5 clicks.\n[Ice Aura Passive]: Turns all patches into ice every 5 swings.",
               "cost": "8m Honey + 50 Blueberry + 25 Water Essence",
-              "costType": "honey"
+              "costType": "honey",
+              "passives": [
+                {
+                  "name": "Ice Aura",
+                  "type": "Clicks",
+                  "desc": "Turns all patches into ice every 5 swings."
+                }
+              ]
             }
           ]
         },
@@ -820,11 +834,11 @@
               "type": "",
               "image": "images/equipment/Ice Ant Helmet.png",
               "description": "Icefully ant made helmet!",
-              "info": "+750k Capacity\n+125% Convert Rate\n+50% Pollen\n+75% Loot Luck\nx2.5 Capacity Bonus\nx1.25 Ice Pollen\nx1.25 Blue Pollen\n+15% Bee Ability Rate",
+              "info": "+750k Capacity\n+125% Convert Rate\n+25% Pollen\n+75% Loot Luck\nx2.5 Capacity Bonus\nx1.25 Ice Pollen\nx1.25 Blue Pollen\n+15% Bee Ability Rate",
               "capacity": 750000,
               "buffs": [
                 "+125% Convert Rate",
-                "+50% Pollen",
+                "+25% Pollen",
                 "+75% Loot Luck",
                 "x2.5 Capacity Bonus",
                 "x1.25 Ice Pollen",
@@ -852,7 +866,7 @@
             {
               "name": "Ice Bee",
               "type": "",
-              "image": "images/bees/Ice-Bee.png",
+              "image": "images/bees/Ice.png",
               "description": "Space for the item description.",
               "info": "Gives you an ice bee.",
               "cost": "2.500 Water Essence + 10 Wave Bees + 10 Icicle Bees",
@@ -882,9 +896,16 @@
               "type": "",
               "image": "images/equipment/Windy Staff.png",
               "description": "Whooshy Whooshy Staff, spreads winds in fields.",
-              "info": "Gathers 6 pollen from 29 flowers in front of you in 0.9 seconds, 1.5x white pollen.\n[Cloud Storm Passive]: Spawns 1 Cloud every 5 clicks.",
+              "info": "Gathers 6 pollen from 29 flowers in front of you in 0.9 seconds, 1.5x white pollen.\n[Wind Aura Passive]: Creates 2 clouds every 5 swings.",
               "cost": "8m Honey + 50 Pine Cone + 25 Wind Essence",
-              "costType": "honey"
+              "costType": "honey",
+              "passives": [
+                {
+                  "name": "Wind Aura",
+                  "type": "Clicks",
+                  "desc": "Creates 2 clouds every 5 swings."
+                }
+              ]
             }
           ]
         },
@@ -937,7 +958,7 @@
             {
               "name": "Windy Bee",
               "type": "",
-              "image": "images/bees/Windy-Bee.png",
+              "image": "images/bees/Windy.png",
               "description": "A translucent spirit of the atmosphere, composed of swirling zephyrs and captured starlight. It moves with a restless, unpredictable elegance, leaving behind spiraling slipstreams of inspiration and echoing whispers of ancient secrets; its breezy resonance lifts the spirit, accelerating the pace of discovery and carrying the pollen of innovation across vast distances with a single, effortless gust.",
               "info": "Gives you a Windy Bee.",
               "cost": "2.500 Wind Essence + 10 Thunder Bee + 10 Cloud Bee",
@@ -1156,9 +1177,16 @@
               "type": "Collector",
               "image": "images/equipment/Coconut Smash.png",
               "description": "This hammer smashes anything on its way!",
-              "info": "Gathers 75 pollen from 5 flowers in front of you in 0.6 seconds.\nPower: 10",
+              "info": "Gathers 85 pollen from 5 flowers in front of you in 0.6 seconds.\nPower: 10\n+Passive: Coconut Storm (Every 15 Clicks)",
               "cost": "50b Honey + 2 Majestic Cocktail + 5 Summer Cocktail + 15 Coconut Drink + 25 Lemonade + 350 Coconut + 350 Wind Essence + 25 Bamboo Flask + 300 Bamboo",
-              "costType": "honey"
+              "costType": "honey",
+              "passives": [
+                {
+                  "name": "Coconut Storm",
+                  "type": "Clicks",
+                  "desc": "Creates 3 Coconuts every 15 swings that fall from sky and gather pollen and turns flowers into obsidian."
+                }
+              ]
             }
           ]
         },
@@ -1171,17 +1199,25 @@
               "type": "Bag",
               "image": "images/equipment/Coconut Bag.png",
               "description": "Official item of coconut fashion, known as Tropical Bestie.",
-              "info": "+3,500,000 Capacity\n+750% Convert Rate\n+45 Convert Amount\n+50% Red Pollen\n+50% Blue Pollen\n+20% Bee Ability Rate",
-              "capacity": 3500000,
+              "info": "+4,250,000 Capacity\n+750% Convert Rate\nx1.35 Capacity Bonus\n+45 Convert Amount\n+50% Red Pollen\n+50% Blue Pollen\n+20% Bee Ability Rate\n+Passive: Coconut Smoothie",
+              "capacity": 4250000,
               "buffs": [
                 "+750% Convert Rate",
+                "x1.35 Capacity Bonus",
                 "+45 Convert Amount",
                 "+50% Red Pollen",
                 "+50% Blue Pollen",
                 "+20% Bee Ability Rate"
               ],
               "cost": "100b Honey + 3 Majestic Cocktail + 10 Summer Cocktail + 30 Coconut Drink + 50 Lemonade + 500 Coconut + 350 Wind Essence + 25 Bamboo Flask + 500 Bamboo",
-              "costType": "honey"
+              "costType": "honey",
+              "passives": [
+                {
+                  "name": "Coconut Smoothie",
+                  "type": "Misc",
+                  "desc": "Activates every 15 fallen coconuts. Umbrella Spins up from ground and drops on field 10 splashes of coconut milk which grants +25% Movespeed, x1.45 Obsidian Pollen and converts 30% of incoming pollen inside."
+                }
+              ]
             }
           ]
         },
@@ -1194,7 +1230,7 @@
               "type": "Belt",
               "image": "images/equipment/Coconut Belt.png",
               "description": "Essential item of coconut set and new coconut fashion.",
-              "info": "+400,000 Capacity\nx1.85 Capacity Bonus\nx2.25 Convert Rate\nx1.35 Pollen\n+15% Bee Ability Rate\n+100% Loot Luck",
+              "info": "+400,000 Capacity\nx1.85 Capacity Bonus\nx2.25 Convert Rate\nx1.35 Pollen\n+15% Bee Ability Rate\n+100% Loot Luck\n+Passive: Coconut Harvest",
               "capacity": 400000,
               "buffs": [
                 "x1.85 Capacity Bonus",
@@ -1204,34 +1240,57 @@
                 "+100% Loot Luck"
               ],
               "cost": "120b Honey + 2 Majestic Cocktail + 10 Summer Cocktail + 15 Coconut Drink + 30 Lemonade + 450 Coconut + 150 Wind Essence + 20 Cone Extract + 400 Pine Cone",
-              "costType": "honey"
+              "costType": "honey",
+              "passives": [
+                {
+                  "name": "Coconut Harvest",
+                  "type": "Time",
+                  "desc": "Creates 3 Coconuts every 20s that fall from sky and gather pollen and turns flowers into milk."
+                }
+              ]
             },
             {
               "name": "Coconut Boots",
               "type": "Boots",
               "image": "images/equipment/Coconut Boots.png",
               "description": "Tropical boots, made out of coconuts that were near and true obsidian power.",
-              "info": "+9 Movement Collection\n+8% Player Movespeed\n+10 Jump Power\nx1.15 Obsidian Pollen",
+              "info": "+9 Movement Collection\n+8% Player Movespeed\n+10 Jump Power\nx1.15 Obsidian Pollen\n[Coconut Walk Passive]: Any flower patch you walk over turns into Obsidian.",
               "cost": "10b Honey + 3 Summer Cocktail + 10 Coconut Drink + 35 Lemonade + 150 Coconut + 100 Water Essence + 100 Fire Essence + 200 Blueberry + 200 Strawberry",
-              "costType": "honey"
+              "costType": "honey",
+              "passives": [
+                {
+                  "name": "Coconut Walk",
+                  "type": "Misc",
+                  "desc": "Any flower patch you walk over turns into Obsidian."
+                }
+              ]
             },
             {
               "name": "Sunny Helmet",
               "type": "Helmet",
               "image": "images/equipment/Sunny Helmet.png",
               "description": "The true sun god helmet.",
-              "info": "+225% Convert Rate\n+75% Loot Luck\nx2.75 Capacity Bonus\nx1.75 Pollen\n+35% Obsidian Pollen\n+15% Bee Ability Rate",
-              "capacity": 750000,
+              "info": "+225% Convert Rate\n+75% Loot Luck\nx2.75 Capacity Bonus\nx1.75 Pollen\n+50% Pollen\nx2 Energy Bonus\n+35% Obsidian Pollen\n+15% Bee Ability Rate\n+Passive: Sun Eclipse",
+              "capacity": 1000000,
               "buffs": [
                 "+225% Convert Rate",
                 "+75% Loot Luck",
                 "x2.75 Capacity Bonus",
                 "x1.75 Pollen",
+                "+50% Pollen",
+                "x2 Energy Bonus",
                 "+35% Obsidian Pollen",
                 "+15% Bee Ability Rate"
               ],
               "cost": "10b Honey + 5 Summer Cocktail + 50 Lemonade + 500 Lemon + 100 Water Essence + 100 Fire Essence + 20 Blueberry Extract + 20 Strawberry Extract + 20 Seed Oil",
-              "costType": "honey"
+              "costType": "honey",
+              "passives": [
+                {
+                  "name": "Sun Eclipse",
+                  "type": "Time",
+                  "desc": "Activates every 60s. Lasts for 20s and creates 4 beams that collect 200 pollen from 21 tiles multiplied by solar pollen and gives Sun Eclipse Boost for 20s."
+                }
+              ]
             }
           ]
         },
@@ -1243,10 +1302,17 @@
               "name": "Sunny Hydrant",
               "type": "Hydrant",
               "image": "images/equipment/Sunny Hydrant.png",
-              "description": "Yellow and bright sunny themed hydrant.",
-              "info": "Amount: 2\nRadius: 22\nRate: 4s\nPower: 7",
+              "description": "Yellow and bright sunny themed hydrant.\n\n Amount: [2] \n Radius: [22] \n Rate: [4s] \n Power: [7]",
+              "info": "Amount: 2\nRadius: 22\nRate: 4s\nPower: 7\n+Passive: Sunny Pulse",
               "cost": "50b Honey + 2 Majestic Cocktail + 5 Summer Cocktail + 25 Lemonade + 750 Lemon + 250 Wind Essence + 25 Cone Extract + 500 Pine Cone + 25 Seed Oil",
-              "costType": "honey"
+              "costType": "honey",
+              "passives": [
+                {
+                  "name": "Sunny Pulse",
+                  "type": "Time",
+                  "desc": "Creates 2 Sunny Beams for each Hydrant every 30s. That collects 13 pollen from 21 tiles multiplied by solar pollen and upgrades flower patches for 12s."
+                }
+              ]
             }
           ]
         }

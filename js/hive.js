@@ -1,4 +1,4 @@
-const RARITIES = ["common", "rare", "epic", "legendary", "special"];
+const RARITIES = ["common", "rare", "epic", "legendary", "special", "limited"];
 
 const RARITY_COLORS = {
   common: {
@@ -26,6 +26,11 @@ const RARITY_COLORS = {
     border: "rgba(41,255,130,0.4)",
     bg: "rgba(41,255,130,0.08)",
   },
+  limited: {
+    text: "#ff6b8a",
+    border: "rgba(255,107,138,0.4)",
+    bg: "rgba(255,107,138,0.08)",
+  },
 };
 
 function buffText(buff) {
@@ -41,19 +46,30 @@ function formatPerFlower(n) {
   return `1 in ${n}`;
 }
 
-function buildDropChanceHtml(dc) {
-  if (!dc) return "";
-  const inPool =
-    dc.inPool < 0.1 ? dc.inPool.toFixed(4) + "%" : dc.inPool.toFixed(2) + "%";
-  return `
-    <div class="hive-card-drop">
+function buildDropChanceHtml(dc, stickerEgg) {
+  const tags = [];
+  if (dc) {
+    const inPool =
+      dc.inPool < 0.1 ? dc.inPool.toFixed(4) + "%" : dc.inPool.toFixed(2) + "%";
+    tags.push(`
       <span class="hive-drop-tag hive-drop-tag--pool" title="Chance within the Sticker Token pool">
         ${inPool} in pool
       </span>
       <span class="hive-drop-tag hive-drop-tag--flower" title="Overall chance per flower collected">
         ${formatPerFlower(dc.perFlower)} per flower
       </span>
-    </div>`;
+    `);
+  }
+  if (stickerEgg) {
+    tags.push(`
+      <span class="hive-drop-tag hive-drop-tag--egg" title="Chance from a Sticker Egg">
+        ${stickerEgg}% from Sticker Egg
+      </span>
+    `);
+  }
+  return tags.length
+    ? `<div class="hive-card-drop">${tags.join("")}</div>`
+    : "";
 }
 
 function buildHiveCard(item) {
@@ -64,7 +80,7 @@ function buildHiveCard(item) {
         .map((b) => `<span class="hive-buff-tag">${buffText(b)}</span>`)
         .join("")
     : `<span class="hive-buff-none">No bonus</span>`;
-  const dropHtml = buildDropChanceHtml(item.dropChance);
+  const dropHtml = buildDropChanceHtml(item.dropChance, item.stickerEgg);
 
   return `
     <div class="hive-card">
@@ -106,6 +122,7 @@ async function loadHive() {
       "stickers-epic",
       "stickers-legendary",
       "stickers-special",
+      "stickers-limited",
     ].forEach((id) => {
       const el = document.getElementById(id);
       if (el) el.innerHTML = `<p class="hive-empty">Failed to load data.</p>`;
@@ -119,6 +136,7 @@ async function loadHive() {
     epic: [],
     legendary: [],
     special: [],
+    limited: [],
   };
   const stickerGroups = {
     common: [],
@@ -126,6 +144,7 @@ async function loadHive() {
     epic: [],
     legendary: [],
     special: [],
+    limited: [],
   };
 
   data.skins.forEach((s) => {

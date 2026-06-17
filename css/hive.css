@@ -264,6 +264,12 @@
   color: #7eb85e;
 }
 
+.hive-drop-tag--egg {
+  background: rgba(130, 184, 232, 0.07);
+  border-color: rgba(130, 184, 232, 0.25);
+  color: #8ab8d8;
+}
+
 .drop-flow-wrap {
   display: flex;
   justify-content: center;

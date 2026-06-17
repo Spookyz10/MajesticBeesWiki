@@ -22,7 +22,8 @@
       { "name": "Fire Essence", "chance": 5, "qty": 3 },
       { "name": "Water Essence", "chance": 5, "qty": 3 },
       { "name": "Wind Essence", "chance": 5, "qty": 3 },
-      { "name": "Ticket", "chance": 1, "qty": 1, "lootLuck": true }
+      { "name": "Ticket", "chance": 1, "qty": 1, "lootLuck": true },
+      { "name": "Sticker Egg", "chance": 0.1, "qty": 1, "lootLuck": true }
     ]
   },
   {
@@ -40,7 +41,8 @@
       { "name": "Royal Jelly", "chance": 5, "qty": 1 },
       { "name": "Fire Essence", "chance": 5, "qty": 3 },
       { "name": "Ticket", "chance": 1, "qty": 1, "lootLuck": true },
-      { "name": "Strawberry Extract", "chance": 1, "qty": 1, "lootLuck": true }
+      { "name": "Strawberry Extract", "chance": 1, "qty": 1, "lootLuck": true },
+      { "name": "Sticker Egg", "chance": 0.1, "qty": 1, "lootLuck": true }
     ]
   },
   {
@@ -63,7 +65,8 @@
       { "name": "Royal Jelly", "chance": 5, "qty": 1 },
       { "name": "Water Essence", "chance": 5, "qty": 3 },
       { "name": "Ticket", "chance": 1, "qty": 1, "lootLuck": true },
-      { "name": "Blueberry Extract", "chance": 1, "qty": 1, "lootLuck": true }
+      { "name": "Blueberry Extract", "chance": 1, "qty": 1, "lootLuck": true },
+      { "name": "Sticker Egg", "chance": 0.1, "qty": 1, "lootLuck": true }
     ]
   },
   {
@@ -83,7 +86,8 @@
       { "name": "Royal Jelly", "chance": 5, "qty": 1 },
       { "name": "Ticket", "chance": 1, "qty": 1, "lootLuck": true },
       { "name": "Silver Egg", "chance": 1, "qty": 1, "lootLuck": true },
-      { "name": "Cone Extract", "chance": 1, "qty": 1, "lootLuck": true }
+      { "name": "Cone Extract", "chance": 1, "qty": 1, "lootLuck": true },
+      { "name": "Sticker Egg", "chance": 0.15, "qty": 1, "lootLuck": true }
     ]
   }
 ]

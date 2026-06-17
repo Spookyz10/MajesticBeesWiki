@@ -144,6 +144,7 @@
       "slotTable": true
     }
   ],
+
   "mixer": [
     {
       "id": "treat",
@@ -154,6 +155,23 @@
           "item": "Honey",
           "amount": 10000,
           "image": "images/currencies/Honey.png"
+        }
+      ]
+    },
+    {
+      "id": "exp-essence",
+      "name": "Exp Essence",
+      "image": "images/items/Exp Essence.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 10000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Exp Orb",
+          "amount": 5,
+          "image": "images/items/Exp Orb.png"
         }
       ]
     },
@@ -248,7 +266,11 @@
           "amount": 50000,
           "image": "images/currencies/Honey.png"
         },
-        { "item": "Seed", "amount": 25, "image": "images/items/Seed.png" },
+        {
+          "item": "Seed",
+          "amount": 25,
+          "image": "images/items/Seed.png"
+        },
         {
           "item": "Royal Jelly",
           "amount": 5,
@@ -266,11 +288,241 @@
           "amount": 250000,
           "image": "images/currencies/Honey.png"
         },
-        { "item": "Bamboo", "amount": 50, "image": "images/items/Bamboo.png" },
+        {
+          "item": "Bamboo",
+          "amount": 50,
+          "image": "images/items/Bamboo.png"
+        },
         {
           "item": "Royal Jelly",
           "amount": 10,
           "image": "images/items/Royal Jelly.png"
+        }
+      ]
+    },
+    {
+      "id": "moon-extract",
+      "name": "Moon Extract",
+      "image": "images/items/Moon Extract.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 1000000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Lunar Treat",
+          "amount": 50,
+          "image": "images/items/Lunar Treat.png"
+        },
+        {
+          "item": "Royal Jelly",
+          "amount": 50,
+          "image": "images/items/Royal Jelly.png"
+        }
+      ]
+    },
+    {
+      "id": "majestic-cocktail",
+      "name": "Majestic Cocktail",
+      "image": "images/items/Majestic Cocktail.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 25000000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Moon Extract",
+          "amount": 2,
+          "image": "images/items/Moon Extract.png"
+        },
+        {
+          "item": "Bamboo Flask",
+          "amount": 3,
+          "image": "images/items/Bamboo Flask.png"
+        },
+        {
+          "item": "Strawberry Extract",
+          "amount": 7,
+          "image": "images/items/Strawberry Extract.png"
+        },
+        {
+          "item": "Blueberry Extract",
+          "amount": 7,
+          "image": "images/items/Blueberry Extract.png"
+        },
+        {
+          "item": "Cone Extract",
+          "amount": 7,
+          "image": "images/items/Cone Extract.png"
+        },
+        {
+          "item": "Seed Oil",
+          "amount": 7,
+          "image": "images/items/Seed Oil.png"
+        },
+        {
+          "item": "Shiny Jelly",
+          "amount": 2,
+          "image": "images/items/Shiny Jelly.png"
+        }
+      ]
+    },
+    {
+      "id": "dice",
+      "name": "Dice",
+      "image": "images/items/Dice.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 5000000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Lunar Essence",
+          "amount": 10,
+          "image": "images/items/Lunar Essence.png"
+        },
+        {
+          "item": "Exp Essence",
+          "amount": 5,
+          "image": "images/items/Exp Essence.png"
+        },
+        {
+          "item": "Royal Jelly",
+          "amount": 5,
+          "image": "images/items/Royal Jelly.png"
+        }
+      ]
+    },
+    {
+      "id": "double-dice",
+      "name": "Double Dice",
+      "image": "images/items/Double Dice.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 15000000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Lunar Essence",
+          "amount": 20,
+          "image": "images/items/Lunar Essence.png"
+        },
+        {
+          "item": "Exp Essence",
+          "amount": 15,
+          "image": "images/items/Exp Essence.png"
+        },
+        {
+          "item": "Dice",
+          "amount": 3,
+          "image": "images/items/Dice.png"
+        }
+      ]
+    },
+    {
+      "id": "triple-dice",
+      "name": "Triple Dice",
+      "image": "images/items/Triple Dice.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 50000000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Lunar Essence",
+          "amount": 40,
+          "image": "images/items/Lunar Essence.png"
+        },
+        {
+          "item": "Exp Essence",
+          "amount": 30,
+          "image": "images/items/Exp Essence.png"
+        },
+        {
+          "item": "Double Dice",
+          "amount": 3,
+          "image": "images/items/Double Dice.png"
+        }
+      ]
+    },
+    {
+      "id": "glitter",
+      "name": "Glitter",
+      "image": "images/items/Glitter.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 10000000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Lunar Essence",
+          "amount": 20,
+          "image": "images/items/Lunar Essence.png"
+        },
+        {
+          "item": "Exp Essence",
+          "amount": 15,
+          "image": "images/items/Exp Essence.png"
+        },
+        {
+          "item": "Dice",
+          "amount": 1,
+          "image": "images/items/Dice.png"
+        },
+        {
+          "item": "Shiny Jelly",
+          "amount": 1,
+          "image": "images/items/Shiny Jelly.png"
+        }
+      ]
+    },
+    {
+      "id": "shiny-jelly",
+      "name": "Shiny Jelly",
+      "image": "images/items/Shiny Jelly.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 5000000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Lunar Treat",
+          "amount": 10,
+          "image": "images/items/Lunar Treat.png"
+        },
+        {
+          "item": "Royal Jelly",
+          "amount": 150,
+          "image": "images/items/Royal Jelly.png"
+        }
+      ]
+    },
+    {
+      "id": "night-bell",
+      "name": "Night Bell",
+      "image": "images/items/Night Bell.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 5000000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Lunar Treat",
+          "amount": 250,
+          "image": "images/items/Lunar Treat.png"
+        },
+        {
+          "item": "Shiny Jelly",
+          "amount": 3,
+          "image": "images/items/Shiny Jelly.png"
         }
       ]
     },
@@ -387,7 +639,11 @@
           "amount": 50,
           "image": "images/items/Blueberry.png"
         },
-        { "item": "Seed", "amount": 50, "image": "images/items/Seed.png" },
+        {
+          "item": "Seed",
+          "amount": 50,
+          "image": "images/items/Seed.png"
+        },
         {
           "item": "Pine Cone",
           "amount": 50,
@@ -396,123 +652,9 @@
       ]
     },
     {
-      "id": "moon-extract",
-      "name": "Moon Extract",
-      "image": "images/items/Moon Extract.png",
-      "recipe": [
-        {
-          "item": "Honey",
-          "amount": 1000000,
-          "image": "images/currencies/Honey.png"
-        },
-        {
-          "item": "Lunar Treat",
-          "amount": 50,
-          "image": "images/items/Lunar Treat.png"
-        },
-        {
-          "item": "Royal Jelly",
-          "amount": 50,
-          "image": "images/items/Royal Jelly.png"
-        }
-      ]
-    },
-    {
-      "id": "majestic-cocktail",
-      "name": "Majestic Cocktail",
-      "image": "images/items/Majestic Cocktail.png",
-      "recipe": [
-        {
-          "item": "Honey",
-          "amount": 25000000,
-          "image": "images/currencies/Honey.png"
-        },
-        {
-          "item": "Moon Extract",
-          "amount": 3,
-          "image": "images/items/Moon Extract.png"
-        },
-        {
-          "item": "Bamboo Flask",
-          "amount": 5,
-          "image": "images/items/Bamboo Flask.png"
-        },
-        {
-          "item": "Strawberry Extract",
-          "amount": 10,
-          "image": "images/items/Strawberry Extract.png"
-        },
-        {
-          "item": "Blueberry Extract",
-          "amount": 10,
-          "image": "images/items/Blueberry Extract.png"
-        },
-        {
-          "item": "Cone Extract",
-          "amount": 10,
-          "image": "images/items/Cone Extract.png"
-        },
-        {
-          "item": "Seed Oil",
-          "amount": 10,
-          "image": "images/items/Seed Oil.png"
-        },
-        {
-          "item": "Shiny Jelly",
-          "amount": 3,
-          "image": "images/items/Shiny Jelly.png"
-        }
-      ]
-    },
-    {
-      "id": "shiny-jelly",
-      "name": "Shiny Jelly",
-      "image": "images/items/Shiny Jelly.png",
-      "recipe": [
-        {
-          "item": "Honey",
-          "amount": 5000000,
-          "image": "images/currencies/Honey.png"
-        },
-        {
-          "item": "Lunar Treat",
-          "amount": 25,
-          "image": "images/items/Lunar Treat.png"
-        },
-        {
-          "item": "Royal Jelly",
-          "amount": 500,
-          "image": "images/items/Royal Jelly.png"
-        }
-      ]
-    },
-    {
-      "id": "night-bell",
-      "name": "Night Bell",
-      "image": "images/items/Night Bell.png",
-      "recipe": [
-        {
-          "item": "Honey",
-          "amount": 5000000,
-          "image": "images/currencies/Honey.png"
-        },
-        {
-          "item": "Lunar Treat",
-          "amount": 250,
-          "image": "images/items/Lunar Treat.png"
-        },
-        {
-          "item": "Shiny Jelly",
-          "amount": 3,
-          "image": "images/items/Shiny Jelly.png"
-        }
-      ]
-    },
-    {
       "id": "coconut-drink",
       "name": "Coconut Drink",
       "image": "images/items/Coconut Drink.png",
-      "event": "summer",
       "recipe": [
         {
           "item": "Honey",
@@ -529,32 +671,36 @@
           "amount": 1,
           "image": "images/items/Shiny Jelly.png"
         }
-      ]
+      ],
+      "event": "summer"
     },
     {
       "id": "lemonade",
       "name": "Lemonade",
       "image": "images/items/Lemonade.png",
-      "event": "summer",
       "recipe": [
         {
           "item": "Honey",
           "amount": 500000,
           "image": "images/currencies/Honey.png"
         },
-        { "item": "Lemon", "amount": 25, "image": "images/items/Lemon.png" },
+        {
+          "item": "Lemon",
+          "amount": 25,
+          "image": "images/items/Lemon.png"
+        },
         {
           "item": "Shiny Jelly",
           "amount": 1,
           "image": "images/items/Shiny Jelly.png"
         }
-      ]
+      ],
+      "event": "summer"
     },
     {
       "id": "summer-cocktail",
       "name": "Summer Cocktail",
       "image": "images/items/Summer Cocktail.png",
-      "event": "summer",
       "recipe": [
         {
           "item": "Honey",
@@ -576,7 +722,8 @@
           "amount": 3,
           "image": "images/items/Shiny Jelly.png"
         }
-      ]
+      ],
+      "event": "summer"
     }
   ]
 }
