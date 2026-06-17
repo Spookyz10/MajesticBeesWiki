@@ -92,6 +92,22 @@
             "image": "images/items/Bamboo.png"
           }
         ],
+        "Coconut Field": [
+          {
+            "item": "Coconut",
+            "chance": 15,
+            "amount": 1,
+            "image": "images/items/Coconut.png"
+          }
+        ],
+        "Lemon Field": [
+          {
+            "item": "Lemon",
+            "chance": 15,
+            "amount": 1,
+            "image": "images/items/Lemon.png"
+          }
+        ],
         "All Fields": [
           {
             "item": "Seed",
@@ -134,6 +150,12 @@
             "chance": 3,
             "amount": 1,
             "image": "images/items/Bee Net.png"
+          },
+          {
+            "item": "Sticker Egg",
+            "chance": 0.1,
+            "amount": 1,
+            "image": "images/items/Sticker Egg.png"
           }
         ]
       },
@@ -199,6 +221,22 @@
             "image": "images/items/Bamboo.png"
           }
         ],
+        "Coconut Field": [
+          {
+            "item": "Coconut",
+            "chance": 15,
+            "amount": 1,
+            "image": "images/items/Coconut.png"
+          }
+        ],
+        "Lemon Field": [
+          {
+            "item": "Lemon",
+            "chance": 15,
+            "amount": 1,
+            "image": "images/items/Lemon.png"
+          }
+        ],
         "All Fields": [
           {
             "item": "Seed",
@@ -247,6 +285,12 @@
             "chance": 3,
             "amount": 1,
             "image": "images/items/Bee Net.png"
+          },
+          {
+            "item": "Sticker Egg",
+            "chance": 0.2,
+            "amount": 1,
+            "image": "images/items/Sticker Egg.png"
           }
         ]
       },
@@ -312,6 +356,22 @@
             "image": "images/items/Bamboo.png"
           }
         ],
+        "Coconut Field": [
+          {
+            "item": "Coconut",
+            "chance": 15,
+            "amount": 2,
+            "image": "images/items/Coconut.png"
+          }
+        ],
+        "Lemon Field": [
+          {
+            "item": "Lemon",
+            "chance": 15,
+            "amount": 2,
+            "image": "images/items/Lemon.png"
+          }
+        ],
         "All Fields": [
           {
             "item": "Seed",
@@ -360,6 +420,12 @@
             "chance": 3,
             "amount": 1,
             "image": "images/items/Bee Net.png"
+          },
+          {
+            "item": "Sticker Egg",
+            "chance": 0.2,
+            "amount": 1,
+            "image": "images/items/Sticker Egg.png"
           }
         ]
       },
@@ -425,6 +491,22 @@
             "image": "images/items/Bamboo.png"
           }
         ],
+        "Coconut Field": [
+          {
+            "item": "Coconut",
+            "chance": 15,
+            "amount": 3,
+            "image": "images/items/Coconut.png"
+          }
+        ],
+        "Lemon Field": [
+          {
+            "item": "Lemon",
+            "chance": 15,
+            "amount": 3,
+            "image": "images/items/Lemon.png"
+          }
+        ],
         "All Fields": [
           {
             "item": "Seed",
@@ -479,6 +561,12 @@
             "chance": 3,
             "amount": 1,
             "image": "images/items/Bee Net.png"
+          },
+          {
+            "item": "Sticker Egg",
+            "chance": 0.4,
+            "amount": 1,
+            "image": "images/items/Sticker Egg.png"
           }
         ]
       },
@@ -542,6 +630,22 @@
             "chance": 15,
             "amount": 2,
             "image": "images/items/Bamboo.png"
+          }
+        ],
+        "Coconut Field": [
+          {
+            "item": "Coconut",
+            "chance": 15,
+            "amount": 3,
+            "image": "images/items/Coconut.png"
+          }
+        ],
+        "Lemon Field": [
+          {
+            "item": "Lemon",
+            "chance": 15,
+            "amount": 3,
+            "image": "images/items/Lemon.png"
           }
         ],
         "All Fields": [
@@ -628,6 +732,12 @@
             "chance": 3,
             "amount": 1,
             "image": "images/items/Bee Net.png"
+          },
+          {
+            "item": "Sticker Egg",
+            "chance": 5,
+            "amount": 1,
+            "image": "images/items/Sticker Egg.png"
           }
         ]
       },
@@ -693,12 +803,34 @@
             "image": "images/items/Bamboo.png"
           }
         ],
+        "Coconut Field": [
+          {
+            "item": "Coconut",
+            "chance": 15,
+            "amount": 3,
+            "image": "images/items/Coconut.png"
+          }
+        ],
+        "Lemon Field": [
+          {
+            "item": "Lemon",
+            "chance": 15,
+            "amount": 3,
+            "image": "images/items/Lemon.png"
+          }
+        ],
         "All Fields": [
           {
             "item": "Lunar Amulet",
             "chance": 0.1,
             "amount": 1,
             "image": "images/amulets/Lunar Amulet.png"
+          },
+          {
+            "item": "Lunar Essence",
+            "chance": 25,
+            "amount": 1,
+            "image": "images/items/Lunar Essence.png"
           },
           {
             "item": "Lunar Treat",

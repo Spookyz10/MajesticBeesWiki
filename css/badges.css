@@ -76,6 +76,11 @@
   border-color: rgba(41, 255, 130, 0.45);
   background: rgba(41, 255, 130, 0.1);
 }
+.swatch-ruby {
+  color: #ff3232;
+  border-color: rgba(255, 50, 50, 0.45);
+  background: rgba(255, 50, 50, 0.1);
+}
 
 .badges-list {
   display: flex;
@@ -323,4 +328,79 @@
 
 .load-more-btn:hover {
   background: rgba(232, 192, 64, 0.12);
+}
+
+/* ------- Tier Calculator ------- */
+.badge-tier-calc {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.badge-tier-calc-title {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gold-dim);
+  margin-bottom: 8px;
+}
+
+.badge-tier-calc-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge-tier-calc-row label {
+  font-size: 0.85em;
+  font-weight: 700;
+  color: var(--gold-soft);
+  white-space: nowrap;
+}
+
+.calc-input {
+  width: 120px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(232, 192, 64, 0.12);
+  background: rgba(18, 12, 0, 0.36);
+  color: var(--gold);
+  font-size: 0.9rem;
+}
+
+.calc-input::placeholder {
+  color: var(--gold-dim);
+  opacity: 0.7;
+}
+
+.badge-tier-calc-result {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.85em;
+  line-height: 1.6;
+}
+
+.badge-tier-calc-result .calc-result-tier {
+  font-weight: 800;
+  font-size: 0.92em;
+}
+
+.badge-tier-calc-result .calc-result-req {
+  color: var(--gold-soft);
+}
+
+.badge-tier-calc-result .calc-result-req strong {
+  color: var(--gold);
+}
+
+.badge-tier-calc-result .calc-result-buff strong {
+  font-weight: 800;
+}
+
+.calc-error {
+  color: #ff6b6b;
+  font-weight: 600;
+  font-size: 0.85em;
 }
