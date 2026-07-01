@@ -14,23 +14,52 @@ function writePrideMode(enabled) {
   } catch {}
 }
 
+function bindLootLuckWhenReady(root) {
+  if (window.MajesticLootLuck) {
+    window.MajesticLootLuck.bind(root);
+    return;
+  }
+  let attempts = 0;
+  const timer = setInterval(() => {
+    attempts++;
+    if (window.MajesticLootLuck) {
+      window.MajesticLootLuck.bind(root);
+      clearInterval(timer);
+    } else if (attempts > 40) {
+      clearInterval(timer);
+    }
+  }, 50);
+}
+
+function isJune() {
+  return new Date().getMonth() === 5;
+}
+
 function updatePrideToggleButtons(enabled) {
+  const june = isJune();
   const label = enabled ? "Pride Mode: On" : "Pride Mode: Off";
 
   document.querySelectorAll("[data-pride-toggle]").forEach((button) => {
+    button.style.display = june ? "" : "none";
     button.setAttribute("aria-pressed", enabled ? "true" : "false");
     button.textContent = label;
   });
 }
 
 function applyPrideMode(enabled, persist = true) {
+  if (!isJune() && enabled) {
+    document.documentElement.classList.remove("pride-mode");
+    document.documentElement.dataset.prideMode = "off";
+    updatePrideToggleButtons(false);
+    if (persist) writePrideMode(false);
+    return;
+  }
+
   document.documentElement.classList.toggle("pride-mode", enabled);
   document.documentElement.dataset.prideMode = enabled ? "on" : "off";
   updatePrideToggleButtons(enabled);
 
-  if (persist) {
-    writePrideMode(enabled);
-  }
+  if (persist) writePrideMode(enabled);
 }
 
 function togglePrideMode() {
@@ -55,6 +84,39 @@ function getBasePath() {
   return `${pathname}/`;
 }
 
+function lootLuckControlHtml(idSuffix) {
+  return `
+    <div class="ll-widget" data-pagefind-ignore>
+      <div class="ll-widget-head">
+        <span class="ll-widget-title"><span class="ll-widget-star">✦</span>Loot Luck</span>
+        <button
+          type="button"
+          class="ll-widget-reset"
+          data-loot-luck-reset
+          title="Reset to 0%"
+          aria-label="Reset Loot Luck"
+        >
+          ↺
+        </button>
+      </div>
+      <div class="ll-widget-controls">
+        <input
+          type="number"
+          id="loot-luck-input-${idSuffix}"
+          class="ll-widget-input"
+          data-loot-luck-input
+          min="0"
+          step="1"
+          inputmode="numeric"
+          aria-label="Loot Luck value in percent"
+        />
+        <span class="ll-widget-suffix">%</span>
+      </div>
+      <div class="ll-widget-note">Increases the chance of drops with a base chance ≤ 5%.</div>
+    </div>
+  `;
+}
+
 function loadSidebar() {
   const container = document.getElementById("sidebar-container");
   if (!container) return;
@@ -66,6 +128,7 @@ function loadSidebar() {
       <a class="sidebar-logo" href="${basePath}index.html">
         <img src="${basePath}images/ui/site-logo.png" alt="" decoding="async" />
       </a>
+      ${lootLuckControlHtml("desktop")}
       <a href="${basePath}index.html">Home</a>
       <a href="${basePath}amulets.html">Amulets</a>
       <a href="${basePath}badges.html">Badges</a>
@@ -80,6 +143,7 @@ function loadSidebar() {
       <a href="${basePath}starflowers.html">Starflowers</a>
       <a href="${basePath}store.html">Store</a>
       <a href="${basePath}updates.html">Updates</a>
+      <a href="${basePath}vines.html">Vines</a>
       <a href="${basePath}world.html">World</a>
       <button type="button" class="sidebar-theme-button" data-pride-toggle aria-pressed="false">
         Pride Mode: Off
@@ -89,6 +153,7 @@ function loadSidebar() {
 
   container.innerHTML = sidebarHTML;
   bindPrideToggleButtons(container);
+  bindLootLuckWhenReady(container);
   createMobileSheet && createMobileSheet(basePath);
   updatePrideToggleButtons(readPrideMode());
 }
@@ -107,6 +172,7 @@ function createMobileSheet(basePath) {
       <a class="sidebar-logo" href="${basePath}index.html">
         <img src="${basePath}images/ui/site-logo.png" alt="" decoding="async" />
       </a>
+      ${lootLuckControlHtml("mobile")}
       <a href="${basePath}index.html">Home</a>
       <a href="${basePath}amulets.html">Amulets</a>
       <a href="${basePath}badges.html">Badges</a>
@@ -121,6 +187,7 @@ function createMobileSheet(basePath) {
       <a href="${basePath}starflowers.html">Starflowers</a>
       <a href="${basePath}store.html">Store</a>
       <a href="${basePath}updates.html">Updates</a>
+      <a href="${basePath}vines.html">Vines</a>
       <a href="${basePath}world.html">World</a>
       <button type="button" class="sidebar-theme-button sidebar-theme-button--mobile" data-pride-toggle aria-pressed="false">
         Pride Mode: Off
@@ -178,6 +245,7 @@ function createMobileSheet(basePath) {
   });
 
   bindPrideToggleButtons(sheet);
+  bindLootLuckWhenReady(sheet);
 }
 
 function bindPrideToggleButtons(root) {

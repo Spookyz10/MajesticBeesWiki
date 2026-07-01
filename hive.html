@@ -28,13 +28,13 @@
       content="https://spookyz10.github.io/MajesticBeesWiki/images/ui/site-logo.png"
     />
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/hive.css" />
+    <link rel="stylesheet" href="css/all.css" />
     <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
 
     <script defer src="js/load-sidebar.js"></script>
     <script defer src="js/wiki-search.js"></script>
     <script defer src="js/search.js"></script>
+    <script defer src="js/loot-luck.js"></script>
     <script defer src="js/hive.js"></script>
   </head>
 
@@ -345,6 +345,7 @@
           </button>
           <button class="hive-tab-btn" data-hive-tab="skins-rare">Rare</button>
           <button class="hive-tab-btn" data-hive-tab="skins-epic">Epic</button>
+
           <button class="hive-tab-btn" data-hive-tab="skins-legendary">
             Legendary
           </button>
@@ -401,6 +402,9 @@
           <button class="hive-tab-btn" data-hive-tab="stickers-legendary">
             Legendary
           </button>
+          <button class="hive-tab-btn" data-hive-tab="stickers-mythic">
+            Mythic
+          </button>
           <button class="hive-tab-btn" data-hive-tab="stickers-special">
             Special
           </button>
@@ -430,6 +434,13 @@
           id="stickers-legendary"
           class="hive-grid"
           data-hive-panel="stickers-legendary"
+          style="display: none"
+        ></div>
+
+        <div
+          id="stickers-mythic"
+          class="hive-grid"
+          data-hive-panel="stickers-mythic"
           style="display: none"
         ></div>
         <div

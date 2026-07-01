@@ -1,5 +1,14 @@
 [
   {
+    "code": "HoneyDayBecauseItsWeekend",
+    "expires": "2026-07-01",
+    "note": "Free honey day",
+    "items": [],
+    "skins": [],
+    "stickers": [],
+    "boosts": ["Honey Days x1"]
+  },
+  {
     "code": "MilestoneBreakersGG",
     "expires": "2026-06-05",
     "note": "The game has broken a bunch of milestones!",

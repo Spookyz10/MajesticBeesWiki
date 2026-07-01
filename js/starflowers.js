@@ -1,11 +1,3 @@
-const FIELD_NOTE = {
-  "White Field": "Only on White fields",
-  "Blue Field": "Only on Blue fields",
-  "Red Field": "Only on Red fields",
-  "Bamboo Field": "Only on Bamboo fields",
-  "All Fields": "Applies on every field type",
-};
-
 const STARFLOWER_DURATION = {
   Basic: "3 minutes",
   Rare: "4 minutes",
@@ -15,10 +7,58 @@ const STARFLOWER_DURATION = {
   Lunar: "4 minutes",
 };
 
-function formatChanceValue(value) {
-  return typeof value === "number" || /^\d+(?:\.\d+)?$/.test(String(value))
-    ? `${value}%`
-    : String(value);
+const FIELD_COLORS = {
+  "White Field": {
+    tab: "#c8dce8",
+    active: "rgba(185,205,220,0.18)",
+    border: "rgba(185,205,220,0.35)",
+    tbody: "rgba(160,185,200,0.07)",
+  },
+  "Blue Field": {
+    tab: "#88bedd",
+    active: "rgba(60,110,165,0.28)",
+    border: "rgba(80,130,175,0.38)",
+    tbody: "rgba(40,90,145,0.14)",
+  },
+  "Red Field": {
+    tab: "#d48880",
+    active: "rgba(140,50,45,0.3)",
+    border: "rgba(165,65,55,0.38)",
+    tbody: "rgba(110,30,25,0.18)",
+  },
+  "Bamboo Field": {
+    tab: "#78c882",
+    active: "rgba(50,110,60,0.26)",
+    border: "rgba(65,130,75,0.36)",
+    tbody: "rgba(30,90,40,0.16)",
+  },
+  "Coconut Field": {
+    tab: "#d4b054",
+    active: "rgba(130,95,15,0.26)",
+    border: "rgba(165,125,30,0.36)",
+    tbody: "rgba(100,70,5,0.18)",
+  },
+  "Lemon Field": {
+    tab: "#e0d060",
+    active: "rgba(140,125,10,0.26)",
+    border: "rgba(175,155,20,0.36)",
+    tbody: "rgba(110,95,5,0.18)",
+  },
+};
+
+const FIELD_ORDER = [
+  "White Field",
+  "Blue Field",
+  "Red Field",
+  "Bamboo Field",
+  "Coconut Field",
+  "Lemon Field",
+];
+
+function formatChance(value) {
+  const n = Number(value);
+  if (isNaN(n)) return value + "%";
+  return parseFloat(n.toFixed(3)) + "%";
 }
 
 function localImg(src, size, alt) {
@@ -49,9 +89,8 @@ function buildChances(chances) {
       (c) => `
       <tr>
         <td>${c.tier}</td>
-        <td>${formatChanceValue(c.approxPct)}</td>
-      </tr>
-    `,
+        <td>${typeof c.approxPct === "number" || /^\d+(?:\.\d+)?$/.test(String(c.approxPct)) ? c.approxPct + "%" : String(c.approxPct)}</td>
+      </tr>`,
     )
     .join("");
 
@@ -62,64 +101,101 @@ function buildChances(chances) {
         When any Starflower is placed, the game rolls to decide which tier spawns.
       </div>
       <table class="sf-chances-table">
-        <thead>
-          <tr>
-            <th>Tier</th>
-            <th>Chance</th>
-          </tr>
-        </thead>
+        <thead><tr><th>Tier</th><th>Chance</th></tr></thead>
         <tbody>${rows}</tbody>
       </table>
-    </div>
-  `;
+    </div>`;
 }
 
-function buildDropPool(poolName, items) {
-  const note = FIELD_NOTE[poolName] || "";
-  const noteHtml = note ? `<span class="sf-pool-note">${note}</span>` : "";
-
-  const rows = items
-    .map(
-      (it) => `
-      <tr>
-        <td class="sf-drop-item-cell">
-          <div class="sf-drop-item-wrap">
-            ${localImg(it.image, 32, it.item)}
-            <span>${it.item}</span>
-          </div>
-        </td>
-        <td class="sf-drop-amount">${it.amount > 1 ? "x" + it.amount : "x1"}</td>
-        <td class="sf-drop-chance-cell">${it.chance}%</td>
-      </tr>
-    `,
-    )
-    .join("");
-
+function buildDropRow(it) {
+  const amountDisplay = it.amount > 1 ? `×${it.amount}` : "×1";
   return `
-    <div class="sf-pool" data-pool="${poolName}">
-      <div class="sf-pool-header">
-        <span class="sf-pool-name">${poolName}</span>
-        ${noteHtml}
-      </div>
-      <table class="sf-drop-table">
-        <thead>
-          <tr>
-            <th>Item</th>
-            <th>Amount</th>
-            <th>Chance per token</th>
-          </tr>
-        </thead>
-        <tbody>${rows}</tbody>
-      </table>
-    </div>
-  `;
+    <tr>
+      <td class="sf-drop-item-cell">
+        <div class="sf-drop-item-wrap">
+          ${localImg(it.image, 32, it.item)}
+          <span>${it.item}</span>
+        </div>
+      </td>
+      <td class="sf-drop-amount">${amountDisplay}</td>
+      <td class="sf-drop-chance-cell">${formatChance(it.chance)}</td>
+    </tr>`;
 }
 
 function buildTierCard(tier) {
-  const pools = Object.entries(tier.drops)
-    .map(([k, v]) => buildDropPool(k, v))
-    .join("");
   const duration = STARFLOWER_DURATION[tier.name] || "Unknown duration";
+
+  const availableFields = FIELD_ORDER.filter(
+    (f) => tier.drops[f] && tier.drops[f].length > 0,
+  );
+
+  const tabButtons = availableFields
+    .map((field, i) => {
+      const col = FIELD_COLORS[field] || {};
+      const label = field.replace(" Field", "");
+      return `<button
+      class="sf-field-tab${i === 0 ? " active" : ""}"
+      data-field="${field}"
+      style="--tab-color:${col.tab || "#c8a84e"};--tab-active-bg:${col.active || "rgba(58,40,0,0.4)"};--tab-border:${col.border || "rgba(58,40,0,0.5)"}"
+    >${label}</button>`;
+    })
+    .join("");
+
+  const tabPanels = availableFields
+    .map((field, i) => {
+      const col = FIELD_COLORS[field] || {};
+      const fieldItems = tier.drops[field] || [];
+      const allItems = tier.drops[`All Fields (${field})`] || [];
+
+      const taggedField = fieldItems.map((it) => ({ ...it, _source: "field" }));
+      const taggedAll = allItems.map((it) => ({ ...it, _source: "all" }));
+      const combined = [...taggedField, ...taggedAll].sort(
+        (a, b) => b.chance - a.chance,
+      );
+
+      const rows = combined
+        .map((it) => {
+          const sourceBadge =
+            it._source === "field"
+              ? `<span class="sf-source-badge sf-source-badge--field">Field</span>`
+              : `<span class="sf-source-badge sf-source-badge--all">All</span>`;
+          const amountDisplay = it.amount > 1 ? `×${it.amount}` : "×1";
+          const { chance, boosted } = window.MajesticLootLuck.apply(it.chance);
+          const luckBadge = window.MajesticLootLuck.badge(boosted);
+          return `
+        <tr>
+          <td class="sf-drop-item-cell">
+            <div class="sf-drop-item-wrap">
+              ${localImg(it.image, 32, it.item)}
+              <span>${it.item}</span>
+              ${sourceBadge}
+            </div>
+          </td>
+          <td class="sf-drop-amount">${amountDisplay}</td>
+          <td class="sf-drop-chance-cell">${window.MajesticLootLuck.formatChance(chance)}${luckBadge}</td>
+        </tr>`;
+        })
+        .join("");
+
+      return `
+      <div
+        class="sf-field-panel${i === 0 ? " active" : ""}"
+        data-field="${field}"
+        style="--panel-tbody:${col.tbody || "rgba(58,40,0,0.12)"};--panel-border:${col.border || "rgba(58,40,0,0.3)"}"
+      >
+        <table class="sf-drop-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th style="text-align:center">Amount</th>
+              <th>Chance</th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>`;
+    })
+    .join("");
 
   return `
     <div class="sf-tier-card" style="border-color:${tier.colorBorder};background:${tier.colorBg}">
@@ -138,10 +214,11 @@ function buildTierCard(tier) {
         </div>
       </div>
       <div class="sf-tier-body">
-        <div class="sf-pools">${pools}</div>
+        <div class="sf-field-tabs-note">Select the field you're placing this Starflower in to see the combined drop chances.</div>
+        <div class="sf-field-tabs" role="tablist">${tabButtons}</div>
+        <div class="sf-field-panels">${tabPanels}</div>
       </div>
-    </div>
-  `;
+    </div>`;
 }
 
 function buildTiers(tiers) {
@@ -151,30 +228,51 @@ function buildTiers(tiers) {
       <div class="sf-section-heading">Tiers and Drops</div>
       <div class="sf-section-desc">
         Each tier has a different health pool, duration, and its own drop table.
-       
+        Chances shown already account for field-specific items competing in the same pool.
       </div>
       <div class="sf-tiers">${cards}</div>
-    </div>
-  `;
+    </div>`;
+}
+
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest(".sf-field-tab");
+  if (!btn) return;
+  const card = btn.closest(".sf-tier-card");
+  const field = btn.dataset.field;
+
+  card
+    .querySelectorAll(".sf-field-tab")
+    .forEach((b) => b.classList.toggle("active", b === btn));
+  card
+    .querySelectorAll(".sf-field-panel")
+    .forEach((p) => p.classList.toggle("active", p.dataset.field === field));
+});
+
+let sfData = null;
+
+function renderStarflowers() {
+  const root = document.getElementById("sf-root");
+  if (!root || !sfData) return;
+  root.className = "sf-root";
+  root.innerHTML = buildChances(sfData.chances) + buildTiers(sfData.tiers);
 }
 
 async function loadStarflowers() {
   const root = document.getElementById("sf-root");
   if (!root) return;
 
-  let data;
   try {
     const res = await fetch("data/starflowers.json");
     if (!res.ok) throw new Error();
-    data = await res.json();
+    sfData = await res.json();
   } catch {
     root.innerHTML =
       '<p style="text-align:center;color:var(--gold-dim)">Failed to load starflower data.</p>';
     return;
   }
 
-  root.className = "sf-root";
-  root.innerHTML = buildChances(data.chances) + buildTiers(data.tiers);
+  renderStarflowers();
 }
 
 document.addEventListener("DOMContentLoaded", loadStarflowers);
+document.addEventListener("majestic-loot-luck-change", renderStarflowers);

@@ -16,25 +16,80 @@
     "bar": true,
     "drops": {
       "Red Field": [
-        { "item": "Strawberry", "chance": 15, "amount": 2 },
-        { "item": "Fire Essence", "chance": 15, "amount": 1 }
+        {
+          "item": "Strawberry",
+          "amount": 2,
+          "chance": 50.0
+        },
+        {
+          "item": "Fire Essence",
+          "amount": 1,
+          "chance": 50.0
+        }
       ],
       "Blue Field": [
-        { "item": "Blueberry", "chance": 15, "amount": 2 },
-        { "item": "Water Essence", "chance": 15, "amount": 1 }
+        {
+          "item": "Blueberry",
+          "amount": 2,
+          "chance": 50.0
+        },
+        {
+          "item": "Water Essence",
+          "amount": 1,
+          "chance": 50.0
+        }
       ],
       "White Field": [
-        { "item": "Pine Cone", "chance": 15, "amount": 2 },
-        { "item": "Wind Essence", "chance": 15, "amount": 1 }
+        {
+          "item": "Pine Cone",
+          "amount": 2,
+          "chance": 50.0
+        },
+        {
+          "item": "Wind Essence",
+          "amount": 1,
+          "chance": 50.0
+        }
       ],
-      "Bamboo Field": [{ "item": "Bamboo", "chance": 15, "amount": 2 }],
+      "Bamboo Field": [
+        {
+          "item": "Bamboo",
+          "amount": 2,
+          "chance": 100.0
+        }
+      ],
       "All Fields": [
-        { "item": "Starflower", "chance": 1, "amount": 1 },
-        { "item": "Strawberry", "chance": 15, "amount": 4 },
-        { "item": "Fire Essence", "chance": 15, "amount": 1 },
-        { "item": "Honey", "chance": 10, "amount": 100000, "isHoney": true },
-        { "item": "Treat", "chance": 10, "amount": 2 },
-        { "item": "Ticket", "chance": 1, "amount": 1 }
+        {
+          "item": "Starflower",
+          "amount": 1,
+          "chance": 1.9231
+        },
+        {
+          "item": "Strawberry",
+          "amount": 4,
+          "chance": 28.8462
+        },
+        {
+          "item": "Fire Essence",
+          "amount": 1,
+          "chance": 28.8462
+        },
+        {
+          "item": "Honey",
+          "amount": 100000,
+          "isHoney": true,
+          "chance": 19.2308
+        },
+        {
+          "item": "Treat",
+          "amount": 2,
+          "chance": 19.2308
+        },
+        {
+          "item": "Ticket",
+          "amount": 1,
+          "chance": 1.9231
+        }
       ]
     }
   },
@@ -55,25 +110,80 @@
     "bar": true,
     "drops": {
       "Red Field": [
-        { "item": "Strawberry", "chance": 15, "amount": 2 },
-        { "item": "Fire Essence", "chance": 15, "amount": 1 }
+        {
+          "item": "Strawberry",
+          "amount": 2,
+          "chance": 50.0
+        },
+        {
+          "item": "Fire Essence",
+          "amount": 1,
+          "chance": 50.0
+        }
       ],
       "Blue Field": [
-        { "item": "Blueberry", "chance": 15, "amount": 2 },
-        { "item": "Water Essence", "chance": 15, "amount": 1 }
+        {
+          "item": "Blueberry",
+          "amount": 2,
+          "chance": 50.0
+        },
+        {
+          "item": "Water Essence",
+          "amount": 1,
+          "chance": 50.0
+        }
       ],
       "White Field": [
-        { "item": "Pine Cone", "chance": 15, "amount": 2 },
-        { "item": "Wind Essence", "chance": 15, "amount": 1 }
+        {
+          "item": "Pine Cone",
+          "amount": 2,
+          "chance": 50.0
+        },
+        {
+          "item": "Wind Essence",
+          "amount": 1,
+          "chance": 50.0
+        }
       ],
-      "Bamboo Field": [{ "item": "Bamboo", "chance": 15, "amount": 2 }],
+      "Bamboo Field": [
+        {
+          "item": "Bamboo",
+          "amount": 2,
+          "chance": 100.0
+        }
+      ],
       "All Fields": [
-        { "item": "Starflower", "chance": 1, "amount": 1 },
-        { "item": "Blueberry", "chance": 15, "amount": 4 },
-        { "item": "Water Essence", "chance": 15, "amount": 1 },
-        { "item": "Honey", "chance": 10, "amount": 100000, "isHoney": true },
-        { "item": "Treat", "chance": 10, "amount": 2 },
-        { "item": "Ticket", "chance": 1, "amount": 1 }
+        {
+          "item": "Starflower",
+          "amount": 1,
+          "chance": 1.9231
+        },
+        {
+          "item": "Blueberry",
+          "amount": 4,
+          "chance": 28.8462
+        },
+        {
+          "item": "Water Essence",
+          "amount": 1,
+          "chance": 28.8462
+        },
+        {
+          "item": "Honey",
+          "amount": 100000,
+          "isHoney": true,
+          "chance": 19.2308
+        },
+        {
+          "item": "Treat",
+          "amount": 2,
+          "chance": 19.2308
+        },
+        {
+          "item": "Ticket",
+          "amount": 1,
+          "chance": 1.9231
+        }
       ]
     }
   },
@@ -82,9 +192,12 @@
     "name": "Sticker Planter",
     "icon": "images/items/Sticker Planter.png",
     "rarity": "Epic",
-    "desc": "A mysterious planter decorated with collectible artwork. Tends to bloom with rare stickers and hive cosmetics instead of the usual items.",
+    "desc": "A fancy sticker planter that mainly gives stickers!",
     "obtain": [
-      { "method": "Unknown", "detail": "Obtainment method not yet confirmed." }
+      {
+        "method": "Greenhouse",
+        "detail": "50 Tickets + 50 Wind Essence + 50 Fire Essence + 50 Water Essence"
+      }
     ],
     "tokens": 9,
     "growTime": 3600,
@@ -97,164 +210,141 @@
       "All Fields": [
         {
           "item": "Shovel Sticker",
-          "chance": 10000,
           "amount": 1,
-          "isWeight": true,
-          "type": "Sticker"
+          "type": "Sticker",
+          "chance": 12.982
         },
         {
           "item": "Rake Sticker",
-          "chance": 10000,
           "amount": 1,
-          "isWeight": true,
-          "type": "Sticker"
+          "type": "Sticker",
+          "chance": 12.982
         },
         {
           "item": "Hammer Sticker",
-          "chance": 10000,
           "amount": 1,
-          "isWeight": true,
-          "type": "Sticker"
+          "type": "Sticker",
+          "chance": 12.982
         },
         {
           "item": "Magnet Sticker",
-          "chance": 10000,
           "amount": 1,
-          "isWeight": true,
-          "type": "Sticker"
+          "type": "Sticker",
+          "chance": 12.982
         },
         {
           "item": "Scissors Sticker",
-          "chance": 10000,
           "amount": 1,
-          "isWeight": true,
-          "type": "Sticker"
+          "type": "Sticker",
+          "chance": 12.982
         },
         {
           "item": "Scythe Sticker",
-          "chance": 3000,
           "amount": 1,
-          "isWeight": true,
-          "type": "Sticker"
+          "type": "Sticker",
+          "chance": 3.8946
         },
         {
           "item": "Axe Sticker",
-          "chance": 3000,
           "amount": 1,
-          "isWeight": true,
-          "type": "Sticker"
+          "type": "Sticker",
+          "chance": 3.8946
         },
         {
           "item": "Pickaxe Sticker",
-          "chance": 3000,
           "amount": 1,
-          "isWeight": true,
-          "type": "Sticker"
+          "type": "Sticker",
+          "chance": 3.8946
         },
         {
           "item": "Gold Magnet Sticker",
-          "chance": 3000,
           "amount": 1,
-          "isWeight": true,
-          "type": "Sticker"
+          "type": "Sticker",
+          "chance": 3.8946
         },
         {
           "item": "Honey Dipper Sticker",
-          "chance": 500,
           "amount": 1,
-          "isWeight": true,
-          "type": "Sticker"
+          "type": "Sticker",
+          "chance": 0.6491
         },
         {
           "item": "Snow Shovel Sticker",
-          "chance": 500,
           "amount": 1,
-          "isWeight": true,
-          "type": "Sticker"
+          "type": "Sticker",
+          "chance": 0.6491
         },
         {
           "item": "Fire Scythe Sticker",
-          "chance": 500,
           "amount": 1,
-          "isWeight": true,
-          "type": "Sticker"
+          "type": "Sticker",
+          "chance": 0.6491
         },
         {
           "item": "Bamboo Spear Sticker",
-          "chance": 15,
           "amount": 1,
-          "isWeight": true,
-          "type": "Sticker"
+          "type": "Sticker",
+          "chance": 0.0195
         },
         {
           "item": "Blue Hive",
-          "chance": 3000,
           "amount": 1,
-          "isWeight": true,
-          "type": "Skin"
+          "type": "Skin",
+          "chance": 3.8946
         },
         {
           "item": "Red Hive",
-          "chance": 3000,
           "amount": 1,
-          "isWeight": true,
-          "type": "Skin"
+          "type": "Skin",
+          "chance": 3.8946
         },
         {
           "item": "Green Hive",
-          "chance": 3000,
           "amount": 1,
-          "isWeight": true,
-          "type": "Skin"
+          "type": "Skin",
+          "chance": 3.8946
         },
         {
           "item": "Orange Hive",
-          "chance": 3000,
           "amount": 1,
-          "isWeight": true,
-          "type": "Skin"
+          "type": "Skin",
+          "chance": 3.8946
         },
         {
           "item": "Black Hive",
-          "chance": 300,
           "amount": 1,
-          "isWeight": true,
-          "type": "Skin"
+          "type": "Skin",
+          "chance": 0.3895
         },
         {
           "item": "White Hive",
-          "chance": 300,
           "amount": 1,
-          "isWeight": true,
-          "type": "Skin"
+          "type": "Skin",
+          "chance": 0.3895
         },
         {
           "item": "Light Blue Hive",
-          "chance": 300,
           "amount": 1,
-          "isWeight": true,
-          "type": "Skin"
+          "type": "Skin",
+          "chance": 0.3895
         },
         {
           "item": "Purple Hive",
-          "chance": 300,
           "amount": 1,
-          "isWeight": true,
-          "type": "Skin"
+          "type": "Skin",
+          "chance": 0.3895
         },
         {
           "item": "Pink Hive",
-          "chance": 300,
           "amount": 1,
-          "isWeight": true,
-          "type": "Skin"
+          "type": "Skin",
+          "chance": 0.3895
         },
         {
           "item": "Chromatic Hive",
-          "chance": 15,
           "amount": 1,
-          "isWeight": true,
-          "type": "Skin"
+          "type": "Skin",
+          "chance": 0.0195
         }
       ]
     }
@@ -266,20 +356,60 @@
     "rarity": "Epic",
     "desc": "A golden planter shimmering with the promise of rare rewards. Grows slowly but reliably produces Tickets alongside other useful items.",
     "obtain": [
-      { "method": "Unknown", "detail": "Obtainment method not yet confirmed." }
+      {
+        "method": "Unknown",
+        "detail": "Obtainment method not yet confirmed."
+      }
     ],
     "tokens": 22,
     "growTime": 3600,
     "bar": true,
     "drops": {
-      "Red Field": [{ "item": "Strawberry", "chance": 5, "amount": 1 }],
-      "Blue Field": [{ "item": "Blueberry", "chance": 5, "amount": 1 }],
-      "White Field": [{ "item": "Pine Cone", "chance": 5, "amount": 1 }],
-      "Bamboo Field": [{ "item": "Bamboo", "chance": 5, "amount": 1 }],
+      "Red Field": [
+        {
+          "item": "Strawberry",
+          "amount": 1,
+          "chance": 100.0
+        }
+      ],
+      "Blue Field": [
+        {
+          "item": "Blueberry",
+          "amount": 1,
+          "chance": 100.0
+        }
+      ],
+      "White Field": [
+        {
+          "item": "Pine Cone",
+          "amount": 1,
+          "chance": 100.0
+        }
+      ],
+      "Bamboo Field": [
+        {
+          "item": "Bamboo",
+          "amount": 1,
+          "chance": 100.0
+        }
+      ],
       "All Fields": [
-        { "item": "Seed", "chance": 5, "amount": 1 },
-        { "item": "Honey", "chance": 10, "amount": 5000, "isHoney": true },
-        { "item": "Ticket", "chance": 100, "amount": 1 }
+        {
+          "item": "Seed",
+          "amount": 1,
+          "chance": 2.9412
+        },
+        {
+          "item": "Honey",
+          "amount": 5000,
+          "isHoney": true,
+          "chance": 5.8824
+        },
+        {
+          "item": "Ticket",
+          "amount": 1,
+          "chance": 91.1765
+        }
       ]
     }
   },
@@ -288,33 +418,112 @@
     "name": "Cardboard Planter",
     "icon": "images/items/Cardboard Planter.png",
     "rarity": "Rare",
-    "desc": "A humble planter made from repurposed cardboard.",
+    "desc": "A cardboard planter that gives fancy loot and vines!",
     "obtain": [
-      { "method": "Unknown", "detail": "Obtainment method not yet confirmed." }
+      {
+        "method": "Greenhouse",
+        "detail": "100m Honey + 15 Wind Essence + 15 Fire Essence + 15 Water Essence"
+      }
     ],
     "tokens": 17,
     "growTime": 1800,
     "bar": true,
     "drops": {
       "Red Field": [
-        { "item": "Strawberry", "chance": 15, "amount": 1 },
-        { "item": "Fire Essence", "chance": 15, "amount": 1 }
+        {
+          "item": "Strawberry",
+          "amount": 1,
+          "chance": 50.0
+        },
+        {
+          "item": "Fire Essence",
+          "amount": 1,
+          "chance": 50.0
+        }
       ],
       "Blue Field": [
-        { "item": "Blueberry", "chance": 15, "amount": 1 },
-        { "item": "Water Essence", "chance": 15, "amount": 1 }
+        {
+          "item": "Blueberry",
+          "amount": 1,
+          "chance": 50.0
+        },
+        {
+          "item": "Water Essence",
+          "amount": 1,
+          "chance": 50.0
+        }
       ],
       "White Field": [
-        { "item": "Pine Cone", "chance": 15, "amount": 1 },
-        { "item": "Wind Essence", "chance": 15, "amount": 1 }
+        {
+          "item": "Pine Cone",
+          "amount": 1,
+          "chance": 50.0
+        },
+        {
+          "item": "Wind Essence",
+          "amount": 1,
+          "chance": 50.0
+        }
       ],
-      "Bamboo Field": [{ "item": "Bamboo", "chance": 15, "amount": 1 }],
+      "Bamboo Field": [
+        {
+          "item": "Bamboo",
+          "amount": 1,
+          "chance": 100.0
+        }
+      ],
       "All Fields": [
-        { "item": "Starflower", "chance": 0.2, "amount": 1 },
-        { "item": "Seed", "chance": 15, "amount": 2 },
-        { "item": "Honey", "chance": 10, "amount": 10000, "isHoney": true },
-        { "item": "Treat", "chance": 10, "amount": 2 },
-        { "item": "Ticket", "chance": 0.2, "amount": 1 }
+        {
+          "item": "Starflower",
+          "amount": 1,
+          "chance": 0.5109
+        },
+        {
+          "item": "Seed",
+          "amount": 2,
+          "chance": 38.3142
+        },
+        {
+          "item": "Honey",
+          "amount": 10000,
+          "isHoney": true,
+          "chance": 25.5428
+        },
+        {
+          "item": "Treat",
+          "amount": 2,
+          "chance": 25.5428
+        },
+        {
+          "item": "Ticket",
+          "amount": 1,
+          "chance": 0.5109
+        },
+        {
+          "item": "Basic Vines",
+          "amount": 1,
+          "chance": 5.1086
+        },
+        {
+          "item": "Rare Vines",
+          "amount": 1,
+          "chance": 2.5543
+        },
+        {
+          "item": "Epic Vines",
+          "amount": 1,
+          "chance": 1.2771
+        },
+        {
+          "item": "Legendary Vines",
+          "amount": 1,
+          "chance": 0.5109
+        },
+        {
+          "item": "Mythic Vines",
+          "amount": 1,
+          "chance": 0.1277
+        }
       ]
     }
   }

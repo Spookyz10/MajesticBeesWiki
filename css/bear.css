@@ -411,3 +411,42 @@
     max-width: 100%;
   }
 }
+
+.bear-infinity-badge {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.bear-infinity-sub {
+  font-size: 0.78em;
+  font-weight: 400;
+  color: var(--gold-dim);
+}
+
+.bear-cycle-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: rgba(232, 192, 64, 0.07);
+  border: 1px solid rgba(232, 192, 64, 0.25);
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  color: var(--gold-soft);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.bear-cycle-note-icon {
+  font-size: 1.1rem;
+  color: var(--gold);
+  flex-shrink: 0;
+  line-height: 1.4;
+}
+
+.bear-cycle-note b {
+  color: var(--gold);
+}

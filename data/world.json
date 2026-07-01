@@ -77,10 +77,22 @@
       "desc": "Allows the player to buy Royal Jelly. It when used turns on a bee turns it into a random bee. 1 in 200 chance to hatch a Shiny Bee.",
       "scaleNote": "Price starts at 10,000 Honey and multiplies by 1.1 with each purchase, capping at 100,000 Honey.",
       "offers": [
-        { "label": "x1", "amount": 1 },
-        { "label": "x10", "amount": 10 },
-        { "label": "x100", "amount": 100 },
-        { "label": "x1K", "amount": 1000 }
+        {
+          "label": "x1",
+          "amount": 1
+        },
+        {
+          "label": "x10",
+          "amount": 10
+        },
+        {
+          "label": "x100",
+          "amount": 100
+        },
+        {
+          "label": "x1K",
+          "amount": 1000
+        }
       ],
       "slotTable": false
     },
@@ -95,9 +107,18 @@
       "desc": "Allows the player to buy Tickets. Tickers are used to purchase exclusive items and game-passes.",
       "scaleNote": "Price starts at 10,000 Honey and grows by 1.6% with each purchase (formula: 1.016^purchases × 10,000). No cap.",
       "offers": [
-        { "label": "x1", "amount": 1 },
-        { "label": "x10", "amount": 10 },
-        { "label": "x100", "amount": 100 }
+        {
+          "label": "x1",
+          "amount": 1
+        },
+        {
+          "label": "x10",
+          "amount": 10
+        },
+        {
+          "label": "x100",
+          "amount": 100
+        }
       ],
       "slotTable": false
     },
@@ -112,8 +133,16 @@
       "desc": "Allows the player to buy a normal Starflower. It can be used to spawn a Basic Starflower on the field that lasts 5 minutes.",
       "scaleNote": null,
       "offers": [
-        { "label": "x1", "amount": 1, "fixedCost": "20 Tickets" },
-        { "label": "x10", "amount": 10, "fixedCost": "200 Tickets" }
+        {
+          "label": "x1",
+          "amount": 1,
+          "fixedCost": "20 Tickets"
+        },
+        {
+          "label": "x10",
+          "amount": 10,
+          "fixedCost": "200 Tickets"
+        }
       ],
       "slotTable": false
     },
@@ -127,7 +156,12 @@
       "itemName": "Basic Egg",
       "desc": " Allows the player to buy Basic Eggs. These always hatch into a Common Bee.",
       "scaleNote": "Price starts at 1,000 Honey and multiplies by 1.5 with each purchase, capping at 5,000,000 Honey.",
-      "offers": [{ "label": "x1", "amount": 1 }],
+      "offers": [
+        {
+          "label": "x1",
+          "amount": 1
+        }
+      ],
       "slotTable": false
     },
     {
@@ -144,7 +178,6 @@
       "slotTable": true
     }
   ],
-
   "mixer": [
     {
       "id": "treat",
@@ -725,5 +758,329 @@
       ],
       "event": "summer"
     }
-  ]
+  ],
+  "wheel": {
+    "id": "lucky-wheel",
+    "name": "Lucky Wheel",
+    "cost": 99,
+    "costType": "Points",
+    "desc": "Earn 99 points to spin the Lucky Wheel for a chance at eggs, tickets, crafting materials, and a special hive skin. After landing on an item, that slot is replaced with a new random item drawn from the same chance pool.",
+    "items": [
+      {
+        "name": "Sticker Egg",
+        "weight": 1,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/items/Sticker Egg.png"
+      },
+      {
+        "name": "Silver Egg",
+        "weight": 1,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/items/Silver Egg.png"
+      },
+      {
+        "name": "Gold Egg",
+        "weight": 0.5,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/items/Gold Egg.png"
+      },
+      {
+        "name": "Diamond Egg",
+        "weight": 0.25,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/items/Diamond Egg.png"
+      },
+      {
+        "name": "Mythic Egg",
+        "weight": 0.1,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/items/Mythic Egg.png"
+      },
+      {
+        "name": "Shiny Egg",
+        "weight": 0.1,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/items/Shiny Egg.png"
+      },
+      {
+        "name": "Ticket",
+        "weight": 10,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/currencies/Ticket.png"
+      },
+      {
+        "name": "Ticket",
+        "weight": 1,
+        "type": "Item",
+        "amount": 10,
+        "image": "images/currencies/Ticket.png"
+      },
+      {
+        "name": "Seed Oil",
+        "weight": 1,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/items/Seed Oil.png"
+      },
+      {
+        "name": "Seed Oil",
+        "weight": 0.1,
+        "type": "Item",
+        "amount": 5,
+        "image": "images/items/Seed Oil.png"
+      },
+      {
+        "name": "Strawberry",
+        "weight": 10,
+        "type": "Item",
+        "amount": 10,
+        "image": "images/items/Strawberry.png"
+      },
+      {
+        "name": "Blueberry",
+        "weight": 10,
+        "type": "Item",
+        "amount": 10,
+        "image": "images/items/Blueberry.png"
+      },
+      {
+        "name": "Pine Cone",
+        "weight": 10,
+        "type": "Item",
+        "amount": 10,
+        "image": "images/items/Pine Cone.png"
+      },
+      {
+        "name": "Seed",
+        "weight": 10,
+        "type": "Item",
+        "amount": 10,
+        "image": "images/items/Seed.png"
+      },
+      {
+        "name": "Strawberry",
+        "weight": 2,
+        "type": "Item",
+        "amount": 50,
+        "image": "images/items/Strawberry.png"
+      },
+      {
+        "name": "Blueberry",
+        "weight": 2,
+        "type": "Item",
+        "amount": 50,
+        "image": "images/items/Blueberry.png"
+      },
+      {
+        "name": "Pine Cone",
+        "weight": 2,
+        "type": "Item",
+        "amount": 50,
+        "image": "images/items/Pine Cone.png"
+      },
+      {
+        "name": "Seed",
+        "weight": 2,
+        "type": "Item",
+        "amount": 50,
+        "image": "images/items/Seed.png"
+      },
+      {
+        "name": "Blueberry Extract",
+        "weight": 1,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/items/Blueberry Extract.png"
+      },
+      {
+        "name": "Strawberry Extract",
+        "weight": 1,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/items/Strawberry Extract.png"
+      },
+      {
+        "name": "Cone Extract",
+        "weight": 1,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/items/Cone Extract.png"
+      },
+      {
+        "name": "Blueberry Extract",
+        "weight": 0.1,
+        "type": "Item",
+        "amount": 5,
+        "image": "images/items/Blueberry Extract.png"
+      },
+      {
+        "name": "Strawberry Extract",
+        "weight": 0.1,
+        "type": "Item",
+        "amount": 5,
+        "image": "images/items/Strawberry Extract.png"
+      },
+      {
+        "name": "Cone Extract",
+        "weight": 0.1,
+        "type": "Item",
+        "amount": 5,
+        "image": "images/items/Cone Extract.png"
+      },
+      {
+        "name": "Majestic Cocktail",
+        "weight": 0.1,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/items/Majestic Cocktail.png"
+      },
+      {
+        "name": "Majestic Cocktail",
+        "weight": 0.03,
+        "type": "Item",
+        "amount": 3,
+        "image": "images/items/Majestic Cocktail.png"
+      },
+      {
+        "name": "Fire Essence",
+        "weight": 10,
+        "type": "Item",
+        "amount": 25,
+        "image": "images/items/Fire Essence.png"
+      },
+      {
+        "name": "Wind Essence",
+        "weight": 10,
+        "type": "Item",
+        "amount": 25,
+        "image": "images/items/Wind Essence.png"
+      },
+      {
+        "name": "Water Essence",
+        "weight": 10,
+        "type": "Item",
+        "amount": 25,
+        "image": "images/items/Water Essence.png"
+      },
+      {
+        "name": "Fire Essence",
+        "weight": 1,
+        "type": "Item",
+        "amount": 50,
+        "image": "images/items/Fire Essence.png"
+      },
+      {
+        "name": "Wind Essence",
+        "weight": 1,
+        "type": "Item",
+        "amount": 50,
+        "image": "images/items/Wind Essence.png"
+      },
+      {
+        "name": "Water Essence",
+        "weight": 1,
+        "type": "Item",
+        "amount": 50,
+        "image": "images/items/Water Essence.png"
+      },
+      {
+        "name": "Basic Vines",
+        "weight": 10,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/items/Basic Vines.png"
+      },
+      {
+        "name": "Rare Vines",
+        "weight": 3,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/items/Rare Vines.png"
+      },
+      {
+        "name": "Epic Vines",
+        "weight": 2,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/items/Epic Vines.png"
+      },
+      {
+        "name": "Legendary Vines",
+        "weight": 1,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/items/Legendary Vines.png"
+      },
+      {
+        "name": "Mythic Vines",
+        "weight": 0.6,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/items/Mythic Vines.png"
+      },
+      {
+        "name": "Mythic Vines",
+        "weight": 0.1,
+        "type": "Item",
+        "amount": 3,
+        "image": "images/items/Mythic Vines.png"
+      },
+      {
+        "name": "Starflower",
+        "weight": 10,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/items/Starflower.png"
+      },
+      {
+        "name": "Rare Starflower",
+        "weight": 3,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/items/Rare Starflower.png"
+      },
+      {
+        "name": "Epic Starflower",
+        "weight": 2,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/items/Epic Starflower.png"
+      },
+      {
+        "name": "Legendary Starflower",
+        "weight": 1,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/items/Legendary Starflower.png"
+      },
+      {
+        "name": "Mythic Starflower",
+        "weight": 0.6,
+        "type": "Item",
+        "amount": 1,
+        "image": "images/items/Mythic Starflower.png"
+      },
+      {
+        "name": "Mythic Starflower",
+        "weight": 0.1,
+        "type": "Item",
+        "amount": 3,
+        "image": "images/items/Mythic Starflower.png"
+      },
+      {
+        "name": "Blossom Hive",
+        "weight": 0.01,
+        "type": "Skin",
+        "amount": 1,
+        "image": "images/hive/skins/Blossom Skin.png"
+      }
+    ]
+  }
 }

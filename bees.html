@@ -27,9 +27,7 @@
       content="https://spookyz10.github.io/MajesticBeesWiki/images/ui/site-logo.png"
     />
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/bees.css" />
-    <link rel="stylesheet" href="css/bee-levels.css" />
+    <link rel="stylesheet" href="css/all.css" />
     <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
 
     <script defer src="js/bees.js"></script>
@@ -276,67 +274,86 @@
             <tr>
               <th>Egg</th>
               <th>Rarity Pool</th>
-              <th>Notes</th>
             </tr>
             <tr>
               <td><b>Basic Egg</b></td>
               <td>Common only</td>
-              <td>Always hatches a Basic Bee</td>
             </tr>
             <tr>
               <td><b>Silver Egg</b></td>
               <td>Rare, Epic, Legendary</td>
-              <td>No Common bees</td>
             </tr>
             <tr>
               <td><b>Golden Egg</b></td>
               <td>Epic, Legendary</td>
-              <td>No Common or Rare bees</td>
             </tr>
             <tr>
               <td><b>Diamond Egg</b></td>
               <td>Legendary only</td>
-              <td>Always hatches a Legendary bee</td>
+            </tr>
+            <tr>
+              <td><b>Mythic Egg</b></td>
+              <td>Mythic only</td>
             </tr>
           </table>
         </div>
 
         <div class="bees-info-box">
           <h3>Probabilities</h3>
-          <p>
-            Exact chances for different methods and egg types are listed below.
-          </p>
+          <p>Exact chances for each egg type are listed below.</p>
 
           <table class="wikitable bees-table">
             <tr>
               <th>Method / Egg</th>
-              <th>Rare</th>
-              <th>Epic</th>
-              <th>Legendary</th>
+              <th>Chances</th>
             </tr>
             <tr>
-              <td><b>Royal Jelly</b></td>
-              <td>85.23%</td>
-              <td>14.20%</td>
-              <td>0.57%</td>
+              <td><b>Basic Egg</b></td>
+              <td>
+                <span class="egg-chance egg-chance--common">Common 100%</span>
+              </td>
             </tr>
             <tr>
-              <td><b>Rare Egg</b></td>
-              <td>70%</td>
-              <td>30%</td>
-              <td>0%</td>
+              <td><b>Silver Egg</b></td>
+              <td>
+                <span class="egg-chance egg-chance--rare">Rare 70%</span>
+                <span class="egg-chance egg-chance--epic">Epic 30%</span>
+              </td>
             </tr>
             <tr>
               <td><b>Golden Egg</b></td>
-              <td>0%</td>
-              <td>90%</td>
-              <td>10%</td>
+              <td>
+                <span class="egg-chance egg-chance--epic">Epic 90%</span>
+                <span class="egg-chance egg-chance--legendary"
+                  >Legendary 10%</span
+                >
+              </td>
             </tr>
             <tr>
               <td><b>Diamond Egg</b></td>
-              <td>0%</td>
-              <td>0%</td>
-              <td>100%</td>
+              <td>
+                <span class="egg-chance egg-chance--legendary"
+                  >Legendary 90%</span
+                >
+                <span class="egg-chance egg-chance--mythic">Mythic 10%</span>
+              </td>
+            </tr>
+            <tr>
+              <td><b>Mythic Egg</b></td>
+              <td>
+                <span class="egg-chance egg-chance--mythic">Mythic 100%</span>
+              </td>
+            </tr>
+            <tr>
+              <td><b>Royal Jelly</b></td>
+              <td>
+                <span class="egg-chance egg-chance--rare">Rare 85.23%</span>
+                <span class="egg-chance egg-chance--epic">Epic 14.20%</span>
+                <span class="egg-chance egg-chance--legendary"
+                  >Legendary 0.57%</span
+                >
+                <span class="egg-chance egg-chance--mythic">Mythic 0.001%</span>
+              </td>
             </tr>
           </table>
         </div>
@@ -521,50 +538,6 @@
 
         <hr />
 
-        <h2>Items</h2>
-        <div class="bees-info-box bees-info-box--plain">
-          <table class="wikitable" style="width: 100%">
-            <tr>
-              <th>Item</th>
-              <th>Use</th>
-            </tr>
-            <tr>
-              <td><b>Treat</b></td>
-              <td>Gives 20 XP to a bee</td>
-            </tr>
-            <tr>
-              <td><b>Fruit</b></td>
-              <td>Gives 50 XP to a bee</td>
-            </tr>
-            <tr>
-              <td><b>Bamboo</b></td>
-              <td>Gives 150 XP to a bee</td>
-            </tr>
-            <tr>
-              <td><b>Royal Jelly</b></td>
-              <td>Transforms a bee into a random non-exclusive bee.</td>
-            </tr>
-            <tr>
-              <td><b>Basic Egg</b></td>
-              <td>Hatches a Common bee</td>
-            </tr>
-            <tr>
-              <td><b>Silver Egg</b></td>
-              <td>Hatches a Rare, Epic, or Legendary bee</td>
-            </tr>
-            <tr>
-              <td><b>Golden Egg</b></td>
-              <td>Hatches an Epic or Legendary bee</td>
-            </tr>
-            <tr>
-              <td><b>Diamond Egg</b></td>
-              <td>Hatches a Legendary bee</td>
-            </tr>
-          </table>
-        </div>
-
-        <hr />
-
         <h2>Bees</h2>
 
         <div class="bees-tab-hint">
@@ -577,6 +550,7 @@
             <button class="bee-tab-btn" data-tab="rare">Rare</button>
             <button class="bee-tab-btn" data-tab="epic">Epic</button>
             <button class="bee-tab-btn" data-tab="legendary">Legendary</button>
+            <button class="bee-tab-btn" data-tab="mythic">Mythic</button>
             <button class="bee-tab-btn" data-tab="special">Special</button>
             <button class="bee-tab-btn" data-tab="limited">Limited</button>
           </div>
@@ -589,6 +563,7 @@
             class="bee-tab-content"
             style="display: none"
           ></div>
+          <div id="mythic" class="bee-tab-content" style="display: none"></div>
           <div id="special" class="bee-tab-content" style="display: none"></div>
           <div id="limited" class="bee-tab-content" style="display: none"></div>
 

@@ -234,6 +234,300 @@ function buildMixerSection(
   `;
 }
 
+const WHEEL_SLOT_COUNT = 5;
+
+const DONATE_ITEMS = [
+  {
+    name: "Silver Egg",
+    points: 25,
+  },
+  {
+    name: "Gold Egg",
+    points: 50,
+  },
+  {
+    name: "Shiny Silver Egg",
+
+    points: 50,
+  },
+  {
+    name: "Diamond Egg",
+
+    points: 100,
+  },
+  {
+    name: "Shiny Gold Egg",
+
+    points: 100,
+  },
+  {
+    name: "Shiny Diamond Egg",
+
+    points: 200,
+  },
+  {
+    name: "Mythic Egg",
+
+    points: 300,
+  },
+  {
+    name: "Shiny Egg",
+
+    points: 300,
+  },
+  {
+    name: "Shiny Mythic Egg",
+
+    points: 600,
+  },
+];
+
+function buildDonateTable() {
+  const rows = DONATE_ITEMS.map((it) => {
+    return `
+      <tr class="donate-row">
+        <td class="donate-td donate-name">${it.name}</td>
+
+        <td class="donate-td donate-pts">${it.points} pts</td>
+      </tr>
+    `;
+  }).join("");
+
+  return `
+    <div class="donate-table-wrap">
+      <div class="donate-table-title">Sacrifice items to earn points</div>
+      <div class="donate-table-scroll">
+        <table class="donate-table">
+          <thead>
+            <tr>
+              <th class="donate-th">Item</th>
+              <th class="donate-th">Points</th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    </div>
+  `;
+}
+
+function formatPct(pct) {
+  if (pct >= 1) return pct.toFixed(2);
+  return pct.toFixed(3);
+}
+
+function wheelColor(index, total) {
+  const hue = Math.round((index * 360) / total);
+  const light = index % 2 === 0 ? 38 : 46;
+  return `hsl(${hue}, 62%, ${light}%)`;
+}
+
+function pickWeighted(pool) {
+  const total = pool.reduce((sum, it) => sum + it.weight, 0);
+  const roll = Math.random() * total;
+  let acc = 0;
+  for (const it of pool) {
+    acc += it.weight;
+    if (roll <= acc) return it;
+  }
+  return pool[pool.length - 1];
+}
+
+function buildWheelSection(wheel) {
+  if (!wheel || !wheel.items || !wheel.items.length) return "";
+
+  return `
+    <div class="world-section">
+      <div class="world-section-heading">Lucky Wheel</div>
+      <div class="world-section-desc">${wheel.desc || ""}</div>
+      <div class="wheel-area">
+        <div class="wheel-spin-col">
+         <div class="wheel-stage">
+              <div id="wheel-rotator" class="wheel-rotator">
+                  <img id="wheel-disc" class="wheel-disc" src="images/wheel/wheel.png">
+                  <div id="wheel-icons" class="wheel-icons"></div>
+              </div>
+              <img class="wheel-sprite-frame" src="images/wheel/frame.png">
+              <img class="wheel-sprite-pointer" src="images/wheel/pointer.png">
+          </div>
+          <button class="wheel-spin-btn" id="wheel-spin-btn">Spin</button>
+          <div class="wheel-result" id="wheel-result">&nbsp;</div>
+        </div>
+        <div class="wheel-bottom">
+            ${buildDonateTable()}
+            <div class="wheel-chance-list" id="wheel-chance-list"></div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function bindWheelSpin(wheel) {
+  const rotator = document.getElementById("wheel-rotator");
+  const disc = document.getElementById("wheel-disc");
+  const btn = document.getElementById("wheel-spin-btn");
+  const resultEl = document.getElementById("wheel-result");
+  const listEl = document.getElementById("wheel-chance-list");
+  const icons = document.getElementById("wheel-icons");
+  if (!disc || !btn || !listEl || !wheel || !wheel.items || !wheel.items.length)
+    return;
+
+  const pool = wheel.items;
+  let slots = Array.from({ length: WHEEL_SLOT_COUNT }, () =>
+    pickWeighted(pool),
+  );
+  let currentRotation = 0;
+
+  function renderWheel() {
+    rotator.style.transform = `rotate(${currentRotation}deg)`;
+
+    icons.querySelectorAll(".wheel-item-icon img").forEach((img) => {
+      img.style.transform = `rotate(${-currentRotation}deg)`;
+    });
+  }
+
+  function easeOutCubic(t) {
+    return 1 - Math.pow(1 - t, 3);
+  }
+
+  function animateWheel(targetRotation, duration, onComplete) {
+    const startRotation = currentRotation;
+    const startTime = performance.now();
+
+    function frame(now) {
+      const elapsed = now - startTime;
+      const t = Math.min(elapsed / duration, 1);
+
+      currentRotation =
+        startRotation + (targetRotation - startRotation) * easeOutCubic(t);
+
+      renderWheel();
+
+      if (t < 1) {
+        requestAnimationFrame(frame);
+      } else {
+        currentRotation = targetRotation;
+        renderWheel();
+        onComplete();
+      }
+    }
+
+    requestAnimationFrame(frame);
+  }
+  let spinning = false;
+  const SLOT_COUNT = 5;
+  const SLOT_ANGLE = 360 / SLOT_COUNT;
+
+  const poolTotalWeight = pool.reduce((sum, it) => sum + it.weight, 0);
+  const sortedPool = pool
+    .map((it, i) => ({
+      ...it,
+      poolIndex: i,
+      pct: (it.weight / poolTotalWeight) * 100,
+    }))
+    .sort((a, b) => b.weight - a.weight);
+
+  function renderChanceList() {
+    listEl.innerHTML = sortedPool
+      .map(
+        (s) => `
+        <div class="wheel-chance-row" data-pool-index="${s.poolIndex}">
+          ${localImg(s.image, 28, s.name)}
+          <span class="wheel-chance-name">${s.name}${s.amount > 1 ? ` x${s.amount}` : ""}</span>
+          <span class="wheel-chance-pct">${formatPct(s.pct)}%</span>
+        </div>
+      `,
+      )
+      .join("");
+  }
+
+  function renderIcons() {
+    const radius = 20;
+
+    icons.innerHTML = slots
+      .map((item, i) => {
+        const angle = ((i * SLOT_ANGLE + SLOT_ANGLE / 2 - 90) * Math.PI) / 180;
+
+        const x = Math.cos(angle) * radius;
+        const y = Math.sin(angle) * radius;
+
+        return `
+       <div
+            class="wheel-item-icon"
+            style="
+                left:calc(50% + ${x}%);
+                top:calc(50% + ${y}%);
+            "
+        >
+            <img src="${item.image}">
+        </div>
+        `;
+      })
+      .join("");
+  }
+
+  renderChanceList();
+  renderIcons();
+  renderWheel();
+
+  btn.addEventListener("click", () => {
+    if (spinning) return;
+    spinning = true;
+    btn.disabled = true;
+    resultEl.textContent = "Spinning...";
+    listEl
+      .querySelectorAll(".wheel-chance-row")
+      .forEach((r) => r.classList.remove("wheel-chance-row-hit"));
+
+    const pickedIndex = Math.floor(Math.random() * SLOT_COUNT);
+
+    const targetMod =
+      (360 - (pickedIndex * SLOT_ANGLE + SLOT_ANGLE / 2) + 360) % 360;
+    const currentMod = ((currentRotation % 360) + 360) % 360;
+    const delta = (targetMod - currentMod + 360) % 360;
+    const rotator = document.getElementById("wheel-rotator");
+
+    const targetRotation = currentRotation + delta + 5 * 360;
+
+    animateWheel(targetRotation, 4200, () => {
+      const landedItem = slots[pickedIndex];
+
+      resultEl.innerHTML = `You got: <strong style="color:var(--gold)">
+        ${landedItem.name}
+        ${landedItem.amount > 1 ? ` x${landedItem.amount}` : ""}
+        </strong>`;
+
+      slots = slots.slice();
+
+      const newItem = pickWeighted(pool);
+      slots[pickedIndex] = newItem;
+
+      renderIcons();
+      renderWheel();
+
+      const newEntry = sortedPool.find(
+        (s) => s.name === newItem.name && s.amount === newItem.amount,
+      );
+
+      if (newEntry) {
+        const row = listEl.querySelector(
+          `[data-pool-index="${newEntry.poolIndex}"]`,
+        );
+
+        if (row) row.classList.add("wheel-chance-row-hit");
+      }
+
+      resultEl.innerHTML += `<br><span style="color:var(--gold-dim)">
+        Slot replaced with: ${newItem.name}
+        ${newItem.amount > 1 ? ` x${newItem.amount}` : ""}
+        </span>`;
+
+      spinning = false;
+      btn.disabled = false;
+    });
+  });
+}
+
 function bindSlotToggle() {
   const btn = document.getElementById("slot-toggle");
   const rows = document.getElementById("slot-rows");
@@ -271,17 +565,19 @@ async function loadWorld() {
     buildFreeDispensers(data.freeDispensers) +
     buildPaidDispensers(data.paidDispensers) +
     buildMixerSection(normalMixer, "Mixer") +
+    buildWheelSection(data.wheel) +
     (summerMixer.length
       ? buildMixerSection(
           summerMixer,
-          "Summer Mixer",
-          "The Summer Mixer lets you craft summer event items by combining ingredients. You can find the Summer Mixer in the Beach Shop.",
+          "Limited Time",
+          "Items only available while an in-game event is active. The Summer Mixer can be found in the Beach Shop.",
           "images/dispensers/SummerMixer.png",
           "Summer Mixer",
         )
       : "");
 
   bindSlotToggle();
+  bindWheelSpin(data.wheel);
 }
 
 document.addEventListener("DOMContentLoaded", loadWorld);

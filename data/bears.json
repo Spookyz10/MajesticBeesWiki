@@ -4148,5 +4148,541 @@
         ]
       }
     ]
+  },
+  {
+    "id": "botanist-bear",
+    "name": "Botanist Bear",
+    "image": "images/bears/Botanist Bear Model.png",
+    "location": "Greenhouse",
+    "description": "Botanist Bear, also known as Delilah, tends to her special flowers in the Greenhouse. Unlike other bears, she does not have a fixed quest line, instead she offers an endless cycle of 10 rotating quests that repeat forever once completed.",
+    "cyclic": true,
+    "quests": [
+      {
+        "number": 1,
+        "name": "Wisteria Pollens",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 1000000000,
+            "field": "Wisteria Field"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 1000000000,
+            "color": "Blue"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 1000000000
+          },
+          {
+            "item": "Basic Vines",
+            "amount": 3
+          },
+          {
+            "item": "Botanist Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "name": "Blossom Pollens",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 1000000000,
+            "field": "Blossom Field"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 1000000000,
+            "color": "White"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 1500000000
+          },
+          {
+            "item": "Rare Vines",
+            "amount": 2
+          },
+          {
+            "item": "Botanist Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "name": "Lotus Pollens",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 1000000000,
+            "field": "Lotus Field"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 1000000000,
+            "color": "Red"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 2500000000
+          },
+          {
+            "item": "Epic Vines",
+            "amount": 1
+          },
+          {
+            "item": "Botanist Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "name": "Strawberry Crafts",
+        "requirements": [
+          {
+            "type": "craft",
+            "amount": 10,
+            "item": "Strawberry Extract"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 2000000000,
+            "color": "Red"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 2500000000
+          },
+          {
+            "item": "Starflower",
+            "amount": 1
+          },
+          {
+            "item": "Botanist Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "name": "Blueberry Crafts",
+        "requirements": [
+          {
+            "type": "craft",
+            "amount": 10,
+            "item": "Blueberry Extract"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 2000000000,
+            "color": "Blue"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 3000000000
+          },
+          {
+            "item": "Epic Vines",
+            "amount": 1
+          },
+          {
+            "item": "Botanist Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "name": "Pine Cone Crafts",
+        "requirements": [
+          {
+            "type": "craft",
+            "amount": 10,
+            "item": "Cone Extract"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 2000000000,
+            "color": "White"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 3500000000
+          },
+          {
+            "item": "Legendary Vines",
+            "amount": 1
+          },
+          {
+            "item": "Spin Ticket",
+            "amount": 1
+          },
+          {
+            "item": "Botanist Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "name": "Consumation Goodies",
+        "requirements": [
+          {
+            "type": "consume",
+            "amount": 10,
+            "item": "Cone Extract"
+          },
+          {
+            "type": "consume",
+            "amount": 10,
+            "item": "Strawberry Extract"
+          },
+          {
+            "type": "consume",
+            "amount": 10,
+            "item": "Blueberry Extract"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 5000000000
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 4500000000
+          },
+          {
+            "item": "Basic Vines",
+            "amount": 4
+          },
+          {
+            "item": "Spin Ticket",
+            "amount": 2
+          },
+          {
+            "item": "Botanist Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "name": "Honey Rain",
+        "requirements": [
+          {
+            "type": "collect_token",
+            "amount": 500,
+            "token": "Honey"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 4500000000
+          },
+          {
+            "item": "Bamboo Boba Tea",
+            "amount": 2
+          },
+          {
+            "item": "Ticket",
+            "amount": 10
+          },
+          {
+            "item": "Botanist Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "name": "Boba Tea Crafts",
+        "requirements": [
+          {
+            "type": "craft",
+            "amount": 5,
+            "item": "Bamboo Boba Tea"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 4500000000
+          },
+          {
+            "item": "Majestic Cocktail",
+            "amount": 1
+          },
+          {
+            "item": "Spin Ticket",
+            "amount": 2
+          },
+          {
+            "item": "Botanist Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "name": "Boba Tea Goodies",
+        "requirements": [
+          {
+            "type": "consume",
+            "amount": 5,
+            "item": "Bamboo Boba Tea"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 5000000000
+          },
+          {
+            "item": "Mythic Vines",
+            "amount": 1
+          },
+          {
+            "item": "Spin Ticket",
+            "amount": 3
+          },
+          {
+            "item": "Botanist Bear Aura",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "aura_buff": {
+      "stat": "Critical Power",
+      "per_stack": 0.05
+    }
+  },
+  {
+    "id": "druid-bear",
+    "name": "Druid Bear",
+    "image": "images/bears/Druid Bear Model.png",
+    "location": "Near the Wheel",
+    "description": "Druid Bear watches over the Wheel, tasking players with deepening their bond to the Wisteria, Lotus, and Blossom Fields.",
+    "aura": "Druid Bear Aura",
+    "quests": [
+      {
+        "number": 1,
+        "name": "Nature's Ancient Fields",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 500000000,
+            "field": "Wisteria Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 500000000,
+            "field": "Lotus Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 500000000,
+            "field": "Blossom Field"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 1000000000
+          },
+          {
+            "item": "Basic Vines",
+            "amount": 3
+          },
+          {
+            "item": "Druid Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "name": "Blossom Essence",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 2000000000,
+            "field": "Blossom Field"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 1500000000
+          },
+          {
+            "item": "Rare Vines",
+            "amount": 2
+          },
+          {
+            "item": "Basic Vines",
+            "amount": 4
+          },
+          {
+            "item": "Druid Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "name": "Wisteria Essence",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 4000000000,
+            "field": "Wisteria Field"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 2500000000
+          },
+          {
+            "item": "Epic Vines",
+            "amount": 1
+          },
+          {
+            "item": "Rare Vines",
+            "amount": 3
+          },
+          {
+            "item": "Basic Vines",
+            "amount": 7
+          },
+          {
+            "item": "Spin Ticket",
+            "amount": 1
+          },
+          {
+            "item": "Druid Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "name": "Lotus Essence",
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 6000000000,
+            "field": "Lotus Field"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 4500000000
+          },
+          {
+            "item": "Legendary Vines",
+            "amount": 1
+          },
+          {
+            "item": "Epic Vines",
+            "amount": 2
+          },
+          {
+            "item": "Rare Vines",
+            "amount": 5
+          },
+          {
+            "item": "Spin Ticket",
+            "amount": 2
+          },
+          {
+            "item": "Druid Bear Aura",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "name": "Scary Butterfly Soul",
+        "requirements": [
+          {
+            "type": "defeat",
+            "amount": 1,
+            "mob": "Butterfly"
+          },
+          {
+            "type": "gather_field",
+            "amount": 6000000000,
+            "field": "Lotus Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 6000000000,
+            "field": "Wisteria Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 6000000000,
+            "field": "Blossom Field"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 7500000000
+          },
+          {
+            "item": "Mythic Egg",
+            "amount": 1
+          },
+          {
+            "item": "Mythic Vines",
+            "amount": 1
+          },
+          {
+            "item": "Legendary Vines",
+            "amount": 2
+          },
+          {
+            "item": "Epic Vines",
+            "amount": 5
+          },
+          {
+            "item": "Spin Ticket",
+            "amount": 3
+          },
+          {
+            "item": "Druid Bear Aura",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "aura_buff": {
+      "stat": "Critical Power",
+      "per_stack": 0.05
+    }
   }
 ]

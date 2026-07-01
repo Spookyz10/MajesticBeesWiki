@@ -537,6 +537,52 @@
     ]
   },
   {
+    "name": "Kitsune Bee",
+    "id": "kitsune-bee",
+    "icon": "images/bees/Kitsune.png",
+    "desc": "A mythical bee infused with the cunning spirit of the kitsune. It weaves through flowers with uncanny agility, tricking pollen into yielding more than it should, and rewards sharp, strategic hive management.",
+    "color": "Colorless",
+    "rarity": "Mythic",
+    "speed": 14.0,
+    "attack": 4.0,
+    "energy": 100.0,
+    "gather": 60.0,
+    "gatherTime": 3.0,
+    "convert": 4252.0,
+    "convertTime": 3.0,
+    "shinyBonus": {
+      "stat": "Obsidian Pollen",
+      "type": "Mult",
+      "value": 1.1
+    },
+    "tokens": [
+      {
+        "token": "Blossom Boost",
+        "level": 4,
+        "weight": 10,
+        "chance": 33.33,
+        "expires": 20,
+        "desc": "Grants Blossom Boost that gives x1.03 Capacity Bonus , x1.03 Blossom Pollen , x1.03 Blossom Time for 45s. and stacks upto x25."
+      },
+      {
+        "token": "Blossom Bombs",
+        "level": 10,
+        "weight": 10,
+        "chance": 33.33,
+        "expires": 20,
+        "desc": "Triggers all bombs on field and get boosted by Blossom Pollen & Upgrades flowers in their radius for 15s * Blossom Time"
+      },
+      {
+        "token": "Blossom Rain",
+        "level": 18,
+        "weight": 10,
+        "chance": 33.33,
+        "expires": 20,
+        "desc": "Creates Rain of 8 + (1 Per 3 Levels) Blossom Leafs that upgrade flowers for 12s * Blossom Time and collects 25 * Blossom Pollen - Pollen."
+      }
+    ]
+  },
+  {
     "name": "Lion Bee",
     "id": "lion-bee",
     "icon": "images/bees/Lion.png",
@@ -765,6 +811,52 @@
     ]
   },
   {
+    "name": "Oni Bee",
+    "id": "oni-bee",
+    "icon": "images/bees/Oni.png",
+    "desc": "A fearsome bee possessed by an oni's restless spirit. It tears through fields with relentless aggression, smashing through pollen caps that would slow ordinary bees, built for players who want raw, unforgiving power.",
+    "color": "Red",
+    "rarity": "Mythic",
+    "speed": 15.5,
+    "attack": 6.0,
+    "energy": 80.0,
+    "gather": 50.0,
+    "gatherTime": 3.0,
+    "convert": 5252.0,
+    "convertTime": 3.0,
+    "shinyBonus": {
+      "stat": "Critical Chance",
+      "type": "Perc",
+      "value": 15.0
+    },
+    "tokens": [
+      {
+        "token": "Soul Fire Boost",
+        "level": 4,
+        "weight": 10,
+        "chance": 38.46,
+        "expires": 20,
+        "desc": "Grants Soul Fire Boost that gives 10% Critical Power, 1% Critical Chance and x1.03 Fire Pollen for 45s. stacks upto x25."
+      },
+      {
+        "token": "Soul Flames",
+        "level": 10,
+        "weight": 10,
+        "chance": 38.46,
+        "expires": 20,
+        "desc": "Cover 9 Patches into Soul Fire that lasts 12s + (1 Per Bee's Level) and collects x6 more than normal fire and grants Soul Fire Combo."
+      },
+      {
+        "token": "Soul Conversion",
+        "level": 18,
+        "weight": 6,
+        "chance": 23.08,
+        "expires": 20,
+        "desc": "Instantly make fire & soul fire convert pollen into honey ( 500 * Total Conversion * Fire Pollen) for 7s every 1s."
+      }
+    ]
+  },
+  {
     "name": "Pixel Bee",
     "id": "pixel-bee",
     "icon": "images/bees/Pixel.png",
@@ -829,6 +921,52 @@
         "chance": 52.94,
         "expires": 15,
         "desc": "Explodes 21 Tile with a power of 7 and gathers 6 Pollen , Also grants Bomb Combo Boost."
+      }
+    ]
+  },
+  {
+    "name": "Ryujin Bee",
+    "id": "ryujin-bee",
+    "icon": "images/bees/Ryujin.png",
+    "desc": "A legendary bee channeling the might of the ryujin. It commands the hive with draconic authority, surging pollen production in powerful bursts and overwhelming rivals with sheer dominance.",
+    "color": "Blue",
+    "rarity": "Mythic",
+    "speed": 12.0,
+    "attack": 2.0,
+    "energy": 140.0,
+    "gather": 75.0,
+    "gatherTime": 3.0,
+    "convert": 6725.0,
+    "convertTime": 3.0,
+    "shinyBonus": {
+      "stat": "Blue Pollen",
+      "type": "Perc",
+      "value": 20.0
+    },
+    "tokens": [
+      {
+        "token": "Bubble",
+        "level": 4,
+        "weight": 10,
+        "chance": 33.33,
+        "expires": 20,
+        "desc": "Creates Bubble that have ( (1/10 of player's capacity * (1 + Bee's Level / 10) ) * Bubble Capacity) and lasts for 60s * Bubble Time. When time expires bubble pops giving player Bubble Combo and honey."
+      },
+      {
+        "token": "Bubble Boost",
+        "level": 10,
+        "weight": 10,
+        "chance": 33.33,
+        "expires": 20,
+        "desc": "Grants Bubble Boost that gives x1.05 Blue Pollen , x1.03 Bubble Capacity , x1.03 Bubble Time for 45s. and stacks upto x25."
+      },
+      {
+        "token": "Bubble Soap",
+        "level": 18,
+        "weight": 10,
+        "chance": 33.33,
+        "expires": 20,
+        "desc": "Increase all active bubbles' capacity by 10% and pollen by 10%."
       }
     ]
   },
