@@ -1,18 +1,3 @@
-const ITEM_IMAGES = {
-  Strawberry: "images/items/Strawberry.png",
-  Blueberry: "images/items/Blueberry.png",
-  "Pine Cone": "images/items/Pine Cone.png",
-  Bamboo: "images/items/Bamboo.png",
-  "Fire Essence": "images/items/Fire Essence.png",
-  "Water Essence": "images/items/Water Essence.png",
-  "Wind Essence": "images/items/Wind Essence.png",
-  Seed: "images/items/Seed.png",
-  Treat: "images/items/Treat.png",
-  Ticket: "images/items/Ticket.png",
-  Starflower: "images/items/Starflower.png",
-  Honey: "images/currencies/Honey.png",
-};
-
 function escHtml(v) {
   return String(v ?? "")
     .replaceAll("&", "&amp;")
@@ -39,17 +24,13 @@ function formatHoney(n) {
 
 function getItemImage(drop) {
   const name = drop?.item;
-  if (ITEM_IMAGES[name]) return ITEM_IMAGES[name];
 
-  if (drop?.type === "Sticker") {
-    return `images/hive/stickers/${name}.png`;
-  }
+  if (drop?.type === "Sticker") return `images/hive/stickers/${name}.png`;
 
-  if (drop?.type === "Skin") {
+  if (drop?.type === "Skin")
     return `images/hive/skins/${String(name).replace(/ Hive$/, " Skin")}.png`;
-  }
 
-  return "images/ui/site-logo.png";
+  return `images/items/${name}.png`;
 }
 
 function buildInfobox(planter) {
@@ -122,27 +103,22 @@ function buildDropRow(drop, isWeighted, total) {
     ? `<span class="planter-drop-type-badge planter-drop-type-badge--${drop.type}">${drop.type}</span>`
     : "";
 
-  let chanceHtml;
-  let chanceClass = "planter-drop-chance";
+  const baseChance = isWeighted ? (drop.chance / total) * 100 : drop.chance;
+  const { chance, boosted } = window.MajesticLootLuck.apply(baseChance);
+  const luckBadge = window.MajesticLootLuck.badge(boosted);
 
-  if (isWeighted) {
-    const pct = (drop.chance / total) * 100;
-    const display =
-      pct < 0.1
-        ? pct.toFixed(3) + "%"
-        : pct < 1
-          ? pct.toFixed(2) + "%"
-          : pct.toFixed(1) + "%";
-    if (pct < 0.5) chanceClass += " planter-drop-chance--rare";
-    else if (pct < 3) chanceClass += " planter-drop-chance--low";
-    chanceHtml = `<td class="${chanceClass}">${display}</td>`;
-  } else {
-    const val = drop.chance;
-    if (val < 1) chanceClass += " planter-drop-chance--rare";
-    else if (val < 5) chanceClass += " planter-drop-chance--low";
-    const displayChance = val % 1 !== 0 ? val.toFixed(1) + "%" : val + "%";
-    chanceHtml = `<td class="${chanceClass}">${displayChance}</td>`;
-  }
+  let chanceClass = "planter-drop-chance";
+  if (baseChance < 0.5) chanceClass += " planter-drop-chance--rare";
+  else if (baseChance < 3) chanceClass += " planter-drop-chance--low";
+
+  const display =
+    chance < 0.1
+      ? chance.toFixed(3) + "%"
+      : chance < 1
+        ? chance.toFixed(2) + "%"
+        : parseFloat(chance.toFixed(2)) + "%";
+
+  const chanceHtml = `<td class="${chanceClass}">${display}${luckBadge}</td>`;
 
   const amountDisplay = drop.isHoney
     ? `x${formatHoney(drop.amount)}`
@@ -276,6 +252,9 @@ function buildPage(planter, all) {
     </div>`;
 }
 
+let loadedPlanters = null;
+let currentPlanter = null;
+
 async function loadPlanterDetail() {
   const root = document.getElementById("planter-detail-root");
   const planterId = new URLSearchParams(window.location.search).get("planter");
@@ -287,18 +266,25 @@ async function loadPlanterDetail() {
   try {
     const res = await fetch("data/planters.json");
     if (!res.ok) throw new Error();
-    const planters = await res.json();
-    const planter = planters.find((p) => p.id === planterId);
-    if (!planter) {
+    loadedPlanters = await res.json();
+    currentPlanter = loadedPlanters.find((p) => p.id === planterId);
+    if (!currentPlanter) {
       root.innerHTML = `<div class="planter-detail-error">Planter "${escHtml(planterId)}" not found.</div>`;
       return;
     }
-    document.title = `${planter.name} - The Majestic Bees Wiki`;
-    root.innerHTML = buildPage(planter, planters);
+    document.title = `${currentPlanter.name} - The Majestic Bees Wiki`;
+    renderPlanterDetail();
   } catch {
     root.innerHTML =
       '<div class="planter-detail-error">Failed to load planter data.</div>';
   }
 }
 
+function renderPlanterDetail() {
+  const root = document.getElementById("planter-detail-root");
+  if (!root || !currentPlanter) return;
+  root.innerHTML = buildPage(currentPlanter, loadedPlanters);
+}
+
 document.addEventListener("DOMContentLoaded", loadPlanterDetail);
+document.addEventListener("majestic-loot-luck-change", renderPlanterDetail);

@@ -145,6 +145,12 @@
   background: rgba(122, 184, 96, 0.08);
 }
 
+.bear-meta-tag--infinite {
+  border-color: rgba(232, 192, 64, 0.4);
+  color: var(--gold);
+  background: rgba(232, 192, 64, 0.1);
+}
+
 .bear-card-link {
   margin-top: auto;
   color: var(--green);

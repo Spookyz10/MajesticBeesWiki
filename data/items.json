@@ -465,7 +465,7 @@
     "name": "Royal Jelly",
     "category": "Jellies",
     "rarity": "Common",
-    "desc": "Transforms a bee into a random new bee. Rares: 85.23%, Epics: 14.20%, Legendaries: 0.57%. 1 in 200 chance to come out shiny.",
+    "desc": "Transforms a bee into a random new bee. Rares: 85.23%, Epics: 14.20%, Legendaries: 0.57%, Mythical: 0.001%, 1 in 200 chance to come out shiny.",
     "image": "images/items/Royal Jelly.png",
     "order": 1.0,
     "buffs": [],
@@ -724,5 +724,83 @@
     "image": "images/items/Exp Essence.png",
     "order": 5.0,
     "sources": [{ "type": "mixer" }]
+  },
+
+  {
+    "id": "Mythic Egg",
+    "name": "Mythic Egg",
+    "category": "Eggs",
+    "rarity": "Mythic",
+    "desc": "Always turns into a mythic bee.",
+    "image": "images/items/Mythic Egg.png",
+    "order": 5.0,
+    "buffs": [],
+    "sources": []
+  },
+  {
+    "id": "Shiny Mythic Egg",
+    "name": "Shiny Mythic Egg",
+    "category": "Eggs",
+    "rarity": "Mythic",
+    "desc": "Always turns into a shiny mythic bee.",
+    "image": "images/items/Shiny Mythic Egg.png",
+    "order": 10.0,
+    "buffs": [],
+    "sources": []
+  },
+  {
+    "id": "Basic Vines",
+    "name": "Basic Vines",
+    "category": "Vines",
+    "rarity": "Common",
+    "desc": "Creates 20-30 Basic Vines around the whole field you stand on.",
+    "image": "images/items/Basic Vines.png",
+    "order": 1.0,
+    "buffs": [],
+    "sources": []
+  },
+  {
+    "id": "Rare Vines",
+    "name": "Rare Vines",
+    "category": "Vines",
+    "rarity": "Rare",
+    "desc": "Creates 30-40 Rare Vines around the whole field you stand on.",
+    "image": "images/items/Rare Vines.png",
+    "order": 2.0,
+    "buffs": [],
+    "sources": []
+  },
+  {
+    "id": "Epic Vines",
+    "name": "Epic Vines",
+    "category": "Vines",
+    "rarity": "Epic",
+    "desc": "Creates 40-50 Epic Vines around the whole field you stand on.",
+    "image": "images/items/Epic Vines.png",
+    "order": 3.0,
+    "buffs": [],
+    "sources": []
+  },
+  {
+    "id": "Legendary Vines",
+    "name": "Legendary Vines",
+    "category": "Vines",
+    "rarity": "Legendary",
+    "desc": "Creates 50-60 Legendary Vines around the whole field you stand on.",
+    "image": "images/items/Legendary Vines.png",
+    "order": 4.0,
+    "buffs": [],
+    "sources": []
+  },
+  {
+    "id": "Mythic Vines",
+    "name": "Mythic Vines",
+    "category": "Vines",
+    "rarity": "Mythic",
+    "desc": "Creates 60-75 Mythic Vines around the whole field you stand on.",
+    "image": "images/items/Mythic Vines.png",
+    "order": 5.0,
+    "buffs": [],
+    "sources": []
   }
 ]

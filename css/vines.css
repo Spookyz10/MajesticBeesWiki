@@ -1,0 +1,306 @@
+.vine-page-title {
+  text-align: center;
+  padding: 30px 0 10px;
+}
+
+.vine-hero-description {
+  max-width: 740px;
+  margin: 6px auto 36px;
+  padding: 0 20px;
+  font-size: 1.05em;
+  line-height: 1.7;
+}
+
+.vine-root {
+  width: min(900px, 92%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding-bottom: 32px;
+}
+
+.vine-section-heading {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 1.35rem;
+  color: var(--gold);
+  border-bottom: 2px solid var(--line);
+  padding-bottom: 0.2em;
+  padding-left: 18px;
+  margin-bottom: 20px;
+  letter-spacing: 0.02em;
+}
+
+.vine-section-desc {
+  font-size: 0.88em;
+  color: var(--gold-dim);
+  padding: 0 2px 16px;
+  line-height: 1.65;
+}
+
+.vine-chances-table {
+  width: min(520px, 100%);
+  border-collapse: collapse;
+  font-size: 0.88em;
+  margin: 0 auto;
+  background: rgba(18, 12, 0, 0.42);
+  border: 1px solid rgba(58, 40, 0, 0.6);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 14px 30px rgba(12, 8, 0, 0.16);
+}
+
+.vine-chances-table thead tr {
+  border-bottom: 1px solid rgba(58, 40, 0, 0.6);
+}
+
+.vine-chances-table th {
+  text-align: center;
+  padding: 7px 14px;
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 0.9rem;
+  color: var(--gold);
+  letter-spacing: 0.03em;
+  font-weight: 400;
+}
+
+.vine-chances-table td {
+  padding: 8px 14px;
+  color: var(--gold-soft);
+  border-bottom: 1px solid rgba(58, 40, 0, 0.5);
+  text-align: center;
+}
+
+.vine-chances-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.vine-chances-table tbody tr:hover td {
+  background: rgba(232, 192, 64, 0.08);
+}
+
+.vine-tiers {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.vine-tier-card {
+  background: rgba(36, 26, 10, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(12, 8, 0, 0.14);
+}
+
+.vine-tier-rarity-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  image-rendering: pixelated;
+}
+
+.vine-tier-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(18, 12, 0, 0.18);
+}
+
+.vine-tier-img {
+  width: 88px;
+  height: 88px;
+  background: rgba(18, 12, 0, 0.55);
+  border: 1px solid rgba(58, 40, 0, 0.8);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.vine-tier-img img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.vine-tier-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vine-tier-name {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.1;
+}
+
+.vine-tier-health,
+.vine-tier-duration {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vine-health-val {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 0.92rem;
+}
+
+.vine-duration-val {
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 0.84rem;
+}
+
+.vine-tier-body {
+  padding: 16px 20px 20px;
+}
+
+.vine-field-tabs-note {
+  font-size: 0.78em;
+  color: var(--gold-dim);
+  margin-bottom: 10px;
+  padding-left: 2px;
+}
+
+.vine-field-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.vine-field-tab {
+  font-family: "Nunito", Georgia, sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--tab-border, rgba(58, 40, 0, 0.5));
+  background: rgba(18, 12, 0, 0.4);
+  color: var(--tab-color, var(--gold-dim));
+  cursor: pointer;
+  transition:
+    background 0.18s,
+    color 0.18s,
+    border-color 0.18s;
+  white-space: nowrap;
+}
+
+.vine-field-tab:hover:not(.active) {
+  background: var(--tab-active-bg, rgba(58, 40, 0, 0.35));
+  color: var(--tab-color, var(--gold-soft));
+}
+
+.vine-field-tab.active {
+  background: var(--tab-active-bg, rgba(58, 40, 0, 0.5));
+  border-color: var(--tab-color, var(--gold-dim));
+  color: var(--tab-color, var(--gold));
+  box-shadow: 0 0 0 1px var(--tab-color, var(--gold-dim)) inset;
+}
+
+.vine-field-panel {
+  display: none;
+}
+
+.vine-field-panel.active {
+  display: block;
+}
+
+.vine-drop-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84em;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--panel-border, rgba(58, 40, 0, 0.3));
+}
+
+.vine-drop-table thead tr {
+  background: rgba(18, 12, 0, 0.35);
+  border-bottom: 1px solid var(--panel-border, rgba(58, 40, 0, 0.5));
+}
+
+.vine-drop-table th {
+  text-align: left;
+  padding: 7px 12px;
+  color: var(--gold-dim);
+  font-weight: 700;
+  font-size: 0.78em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.vine-drop-table tbody {
+  background: var(--panel-tbody, rgba(58, 40, 0, 0.1));
+}
+
+.vine-drop-table td {
+  padding: 7px 12px;
+  color: var(--gold-soft);
+  border-bottom: 1px solid rgba(58, 40, 0, 0.22);
+  vertical-align: middle;
+}
+
+.vine-drop-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.vine-drop-table tbody tr:hover td {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.vine-drop-item-cell {
+  width: 55%;
+}
+
+.vine-drop-item-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vine-drop-item-wrap img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  flex-shrink: 0;
+}
+
+.vine-drop-amount {
+  color: var(--gold);
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.vine-drop-chance-cell {
+  color: var(--gold-dim);
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .vine-root {
+    width: min(900px, 96%);
+  }
+
+  .vine-tier-header {
+    padding: 14px 16px;
+  }
+
+  .vine-field-tab {
+    font-size: 0.75em;
+    padding: 4px 11px;
+  }
+
+  .vine-field-tabs-note {
+    display: none;
+  }
+}

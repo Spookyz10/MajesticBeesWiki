@@ -27,8 +27,7 @@
       content="https://spookyz10.github.io/MajesticBeesWiki/images/ui/site-logo.png"
     />
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/shops.css" />
+    <link rel="stylesheet" href="css/all.css" />
     <script defer src="js/utils.js"></script>
     <script defer src="js/wiki-search.js"></script>
     <script defer src="js/search.js"></script>
@@ -68,8 +67,13 @@
         <hr />
 
         <h2 style="text-align: center; padding-left: 0">All Shops</h2>
+        <div id="shops-regular" class="shops-list"></div>
 
-        <div id="shops-list" class="shops-list"></div>
+        <div id="shops-limited-section" style="display: none">
+          <hr />
+          <h2 style="text-align: center; padding-left: 0">Limited Time</h2>
+          <div id="shops-limited" class="shops-list"></div>
+        </div>
       </div>
     </div>
   </body>

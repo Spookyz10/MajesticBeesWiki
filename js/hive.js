@@ -1,4 +1,12 @@
-const RARITIES = ["common", "rare", "epic", "legendary", "special", "limited"];
+const RARITIES = [
+  "common",
+  "rare",
+  "epic",
+  "legendary",
+  "mythic",
+  "special",
+  "limited",
+];
 
 const RARITY_COLORS = {
   common: {
@@ -14,12 +22,17 @@ const RARITY_COLORS = {
   epic: {
     text: "#ce93d8",
     border: "rgba(206,147,216,0.35)",
-    bg: "rgba(206,147,216,0.1)",
+    bg: "rgrgb(200, 0, 255)147,216,0.1)",
   },
   legendary: {
     text: "#e8c040",
     border: "rgba(232,192,64,0.45)",
     bg: "rgba(232,192,64,0.12)",
+  },
+  mythic: {
+    text: "#ff6b8a",
+    border: "rgba(225, 0, 255, 0.4)",
+    bg: "rgba(102, 0, 255, 0.08)",
   },
   special: {
     text: "#29FF82",
@@ -46,27 +59,58 @@ function formatPerFlower(n) {
   return `1 in ${n}`;
 }
 
-function buildDropChanceHtml(dc, stickerEgg) {
+function buildDropChanceHtml(dc, stickerEgg, extraChances) {
   const tags = [];
+
   if (dc) {
-    const inPool =
-      dc.inPool < 0.1 ? dc.inPool.toFixed(4) + "%" : dc.inPool.toFixed(2) + "%";
+    const ll = window.MajesticLootLuck
+      ? window.MajesticLootLuck.apply(dc.inPool)
+      : { chance: dc.inPool, boosted: false, base: dc.inPool };
+
+    const inPoolDisplay = window.MajesticLootLuck
+      ? window.MajesticLootLuck.formatChance(ll.chance)
+      : ll.chance < 0.1
+        ? ll.chance.toFixed(4) + "%"
+        : ll.chance.toFixed(2) + "%";
+
+    let perFlowerValue = dc.perFlower;
+    if (ll.boosted && ll.base > 0) {
+      const appliedMultiplier = ll.chance / ll.base;
+      perFlowerValue = dc.perFlower / appliedMultiplier;
+    }
+
+    const badge = window.MajesticLootLuck
+      ? window.MajesticLootLuck.badge(ll.boosted)
+      : "";
+
     tags.push(`
       <span class="hive-drop-tag hive-drop-tag--pool" title="Chance within the Sticker Token pool">
-        ${inPool} in pool
+        ${badge}${inPoolDisplay} in pool
       </span>
       <span class="hive-drop-tag hive-drop-tag--flower" title="Overall chance per flower collected">
-        ${formatPerFlower(dc.perFlower)} per flower
+        ${formatPerFlower(perFlowerValue)} per flower
       </span>
     `);
   }
+
   if (stickerEgg) {
     tags.push(`
-      <span class="hive-drop-tag hive-drop-tag--egg" title="Chance from a Sticker Egg">
+      <span class="hive-drop-tag hive-drop-tag--egg" title="Chance from a Sticker Egg (not affected by Loot Luck)">
         ${stickerEgg}% from Sticker Egg
       </span>
     `);
   }
+
+  if (extraChances) {
+    extraChances.forEach(({ label, type }) => {
+      tags.push(`
+        <span class="hive-drop-tag hive-drop-tag--${type}" title="${label}">
+          ${label}
+        </span>
+      `);
+    });
+  }
+
   return tags.length
     ? `<div class="hive-card-drop">${tags.join("")}</div>`
     : "";
@@ -80,7 +124,11 @@ function buildHiveCard(item) {
         .map((b) => `<span class="hive-buff-tag">${buffText(b)}</span>`)
         .join("")
     : `<span class="hive-buff-none">No bonus</span>`;
-  const dropHtml = buildDropChanceHtml(item.dropChance, item.stickerEgg);
+  const dropHtml = buildDropChanceHtml(
+    item.dropChance,
+    item.stickerEgg,
+    item.extraChances,
+  );
 
   return `
     <div class="hive-card">
@@ -106,6 +154,8 @@ function renderSection(containerId, items) {
     : `<p class="hive-empty">Nothing here yet.</p>`;
 }
 
+let HIVE_DATA = null;
+
 async function loadHive() {
   let data;
   try {
@@ -121,6 +171,7 @@ async function loadHive() {
       "stickers-rare",
       "stickers-epic",
       "stickers-legendary",
+      "stickers-mythic",
       "stickers-special",
       "stickers-limited",
     ].forEach((id) => {
@@ -130,11 +181,17 @@ async function loadHive() {
     return;
   }
 
+  HIVE_DATA = data;
+  renderHive(data);
+}
+
+function renderHive(data) {
   const skinGroups = {
     common: [],
     rare: [],
     epic: [],
     legendary: [],
+    mythic: [],
     special: [],
     limited: [],
   };
@@ -143,6 +200,7 @@ async function loadHive() {
     rare: [],
     epic: [],
     legendary: [],
+    mythic: [],
     special: [],
     limited: [],
   };
@@ -161,6 +219,10 @@ async function loadHive() {
     renderSection(`stickers-${r}`, stickerGroups[r]);
   });
 }
+
+document.addEventListener("majestic-loot-luck-change", () => {
+  if (HIVE_DATA) renderHive(HIVE_DATA);
+});
 
 function initTabs(groupPrefix) {
   const buttons = document.querySelectorAll(

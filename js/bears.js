@@ -33,6 +33,11 @@ async function loadBears() {
     el.className = "bear-card";
     el.href = `bear.html?bear=${encodeURIComponent(bear.id)}`;
     const questCount = Array.isArray(bear.quests) ? bear.quests.length : 0;
+    const questTag = bear.cyclic
+      ? `<span class="bear-meta-tag bear-meta-tag--quests bear-meta-tag--infinite">∞ Quest Cycle</span>`
+      : questCount
+        ? `<span class="bear-meta-tag bear-meta-tag--quests">${questCount} Quest${questCount !== 1 ? "s" : ""}</span>`
+        : "";
     el.innerHTML = `
       <div class="bear-card-img">
         <img src="${escHtml(bear.image || "images/ui/site-logo.png")}" alt="${escHtml(bear.name || "")}"
@@ -45,7 +50,7 @@ async function loadBears() {
         </div>
         <p class="bear-card-desc">${escHtml(bear.description || "No description available.")}</p>
         <div class="bear-card-meta">
-          ${questCount ? `<span class="bear-meta-tag bear-meta-tag--quests">${questCount} Quest${questCount !== 1 ? "s" : ""}</span>` : ""}
+          ${questTag}
         </div>
         <div class="bear-card-link">View quests →</div>
       </div>`;

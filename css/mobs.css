@@ -10,25 +10,6 @@
   font-size: 1.05em;
 }
 
-.mobs-info-box {
-  max-width: 680px;
-  margin: 0 auto 32px;
-  background: #241900;
-  border: 1px solid #3a2800;
-  border-radius: 12px;
-  padding: 20px 28px;
-  color: var(--gold-soft);
-  line-height: 1.85;
-}
-
-.mobs-info-box p {
-  margin: 0 0 12px;
-}
-
-.mobs-info-box p:last-child {
-  margin-bottom: 0;
-}
-
 .mobs-loot-note {
   max-width: 900px;
   width: min(900px, 92%);
@@ -45,25 +26,16 @@
   gap: 10px;
 }
 
-.mobs-loot-note-icon {
-  font-size: 1.1em;
-  flex-shrink: 0;
-  margin-top: 1px;
-  color: var(--gold);
-}
-
 .mobs-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: min(900px, 92%);
   margin: 0 auto 12px;
+  contain: content;
 }
 
 .mob-card {
-  display: flex;
-  gap: 24px;
-  align-items: stretch;
   background: rgba(36, 26, 10, 0.72);
   border: 1px solid var(--line);
   border-radius: 14px;
@@ -71,6 +43,7 @@
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease;
+  contain: layout style;
 }
 
 .mob-card:hover {
@@ -78,16 +51,18 @@
   box-shadow: 0 0 24px rgba(212, 170, 48, 0.1);
 }
 
-.mob-card-left {
-  flex: 0 0 140px;
+.mob-card-title-row {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: 18px;
+  align-items: flex-start;
+  margin-bottom: 12px;
 }
 
 .mob-image-wrap {
-  width: 140px;
-  height: 140px;
+  order: 2;
+  flex-shrink: 0;
+  width: 192px;
+  height: 192px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,34 +70,42 @@
   border: 1px solid rgba(58, 40, 0, 0.8);
   border-radius: 12px;
   overflow: hidden;
-  flex-shrink: 0;
 }
 
 .mob-image-wrap img {
-  width: 116px;
-  height: 116px;
+  width: 160px;
+  height: 160px;
   object-fit: contain;
   image-rendering: pixelated;
-  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4));
+}
+
+.mob-card-title-block {
+  order: 1;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: flex-start;
+}
+
+.mob-desc {
+  margin: 8px 0 0;
+  color: var(--gold-soft);
+  line-height: 1.75;
+  font-size: 0.94em;
 }
 
 .mob-card-body {
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.mob-card-header {
-  display: flex;
-  align-items: baseline;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-
 .mob-name {
   font-family: "Fredoka One", Georgia, sans-serif;
-  font-size: 1.45rem;
+  font-size: 1.4rem;
   color: var(--gold);
   letter-spacing: 0.02em;
   line-height: 1.1;
@@ -143,8 +126,9 @@
 
 .mob-stats-row {
   display: flex;
-  gap: 12px;
+  gap: 8px;
   flex-wrap: wrap;
+  margin-top: 4px;
 }
 
 .mob-stat {
@@ -154,7 +138,7 @@
   background: rgba(18, 12, 0, 0.5);
   border: 1px solid rgba(58, 40, 0, 0.9);
   border-radius: 8px;
-  padding: 5px 12px;
+  padding: 4px 10px;
 }
 
 .mob-stat-label {
@@ -172,7 +156,6 @@
 }
 
 .mob-drops {
-  margin-top: auto;
   padding-top: 10px;
   border-top: 1px solid var(--line);
 }
@@ -252,31 +235,30 @@
   text-shadow: 0 0 6px rgba(255, 220, 40, 0.6);
 }
 
+.mob-card-placeholder {
+  background: rgba(36, 26, 10, 0.4);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  min-height: 180px;
+}
+
 @media (max-width: 640px) {
-  .mob-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .mob-card-title-row {
+    gap: 14px;
   }
 
-  .mob-card-left {
-    flex: none;
+  .mob-image-wrap {
+    width: 144px;
+    height: 144px;
   }
 
-  .mob-card-header {
-    justify-content: center;
+  .mob-image-wrap img {
+    width: 116px;
+    height: 116px;
   }
 
   .mob-drops-list {
-    justify-content: center;
-  }
-
-  .mob-drops {
-    text-align: center;
-  }
-
-  .mob-stats-row {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .mobs-loot-note {

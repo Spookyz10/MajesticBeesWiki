@@ -1161,6 +1161,7 @@
       "id": "beach-shop",
       "name": "Beach Shop",
       "title": "Beach Shop",
+      "limitedTime": true,
       "location": "Beach Zone",
       "path": "beach-shop.html?shop=beach-shop",
       "image": "images/gear/beachShop/Shop.png",
@@ -1313,6 +1314,153 @@
                   "desc": "Creates 2 Sunny Beams for each Hydrant every 30s. That collects 13 pollen from 21 tiles multiplied by solar pollen and upgrades flower patches for 12s."
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "greenhouse",
+      "name": "Greenhouse",
+      "title": "Greenhouse",
+      "location": "25 Bee Zone",
+      "path": "greenhouse.html?shop=greenhouse",
+      "image": "images/gear/greenhouse/Shop.png",
+      "description": "A greenhouse.",
+      "tags": ["Tools", "Bags", "Gear", "Items"],
+      "about": "A greenhouse.",
+      "sections": [
+        {
+          "title": "Tools",
+          "description": "",
+          "items": [
+            {
+              "name": "Nature Staff",
+              "type": "Collector",
+              "image": "images/equipment/Nature Staff.png",
+              "description": "Carved from an ancient, hardened oak branch that still pulses with life.",
+              "info": "Gathers 145 pollen from 29 flowers in 0.8s.",
+              "cost": "100b Honey + 20 Moon Extract + 10 Double Dice + 5 Gold Egg + 250 Lunar Essence + 50 Strawberry Extract + 50 Blueberry Extract + 50 Cone Extract",
+              "costType": "honey",
+              "passives": [
+                {
+                  "name": "Nature Harvest",
+                  "type": "Clicks",
+                  "desc": "Creates 5 Spikes around the whole field, turning 9 patches into obsidian for 15s every 7 swings."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Bags",
+          "description": "",
+          "items": [
+            {
+              "name": "Blossom Canister",
+              "type": "Bag",
+              "image": "images/equipment/Blossom Canister.png",
+              "description": "A lightweight vessel forged from floral glass, radiating a fragrant aura.",
+              "info": "+6m Capacity\n+900% Convert Rate\nx1.5 Capacity Bonus\n+60 Convert Amount\n+75% Red Pollen\n+75% Blue Pollen\n+25% Bee Ability Rate",
+              "capacity": 6000000,
+              "buffs": [
+                "+900% Convert Rate",
+                "x1.5 Capacity Bonus",
+                "+60 Convert Amount",
+                "+75% Red Pollen",
+                "+75% Blue Pollen",
+                "+25% Bee Ability Rate"
+              ],
+              "cost": "250b Honey + 2 Majestic Cocktail + 25 Dice + 5 Diamond Egg + 500 Lunar Essence + 500 Wind Essence + 500 Fire Essence + 500 Water Essence + 50 Bamboo Flask + 1000 Bamboo",
+              "costType": "honey",
+              "passives": [
+                {
+                  "name": "Blossom Pollenation",
+                  "type": "Time",
+                  "desc": "Creates 8 Blossom Leafs around the whole field that upgrade flowers on 9 patches for 12s every 30s."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Gear",
+          "description": "",
+          "items": [
+            {
+              "name": "Nature Belt",
+              "type": "Belt",
+              "image": "images/equipment/Nature Belt.png",
+              "description": "Woven from enchanted vines, offering both flexibility and reliable support.",
+              "info": "+750k Capacity\nx2 Capacity Bonus\nx2.5 Convert Rate\nx1.5 Pollen\n+20% Bee Ability Rate\n+150% Loot Luck",
+              "capacity": 750000,
+              "buffs": [
+                "x2 Capacity Bonus",
+                "x2.5 Convert Rate",
+                "x1.5 Pollen",
+                "+20% Bee Ability Rate",
+                "+150% Loot Luck"
+              ],
+              "cost": "300b Honey + 75 Bamboo Flask + 5 Triple Dice + 5 Diamond Egg + 750 Lunar Essence + 750 Wind Essence + 750 Fire Essence + 750 Water Essence",
+              "costType": "honey",
+              "passives": [
+                {
+                  "name": "Poison Harvest",
+                  "type": "Time",
+                  "desc": "Creates 5 Spikes around the whole field, turning 9 patches into poison that collects 30 Pollen for 14s every 20s."
+                }
+              ]
+            },
+            {
+              "name": "Nature Gloves",
+              "type": "Gloves",
+              "image": "images/equipment/Nature Gloves.png",
+              "description": "Stitched from soft leaves and lined with thick moss to protect the hands.",
+              "info": "+20% Tool Speed\n+50% Tool Pollen\n+65% Pollen\n+25% White Pollen\n+25% Blue Pollen\n+25% Red Pollen\nx1.1 Capacity Bonus\n+30% Bee Pollen",
+              "capacity": 0,
+              "buffs": [
+                "+20% Tool Speed",
+                "+50% Tool Pollen",
+                "+65% Pollen",
+                "+25% White Pollen",
+                "+25% Blue Pollen",
+                "+25% Red Pollen",
+                "x1.1 Capacity Bonus",
+                "+30% Bee Pollen"
+              ],
+              "cost": "25b Honey + 20 Bamboo Flask + 3 Triple Dice + 3 Gold Egg + 100 Lunar Essence + 100 Wind Essence + 100 Fire Essence + 100 Water Essence",
+              "costType": "honey",
+              "passives": [
+                {
+                  "name": "Nature Charge",
+                  "type": "Clicks",
+                  "desc": "Activates Nature Charge Aura giving x1.2 Tool Speed & x1.2 Tool Pollen for 5s every 45 swings."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Items",
+          "description": "",
+          "items": [
+            {
+              "name": "Cardboard Planter",
+              "type": "",
+              "image": "images/items/Cardboard Planter.png",
+              "description": "A cardboard planter that gives fancy loot and vines!",
+              "info": "Grows in 30 Mins.\nGives 17 Tokens.",
+              "cost": "100m Honey + 15 Wind Essence + 15 Fire Essence + 15 Water Essence",
+              "costType": "honey"
+            },
+            {
+              "name": "Sticker Planter",
+              "type": "",
+              "image": "images/items/Sticker Planter.png",
+              "description": "A fancy sticker planter that mainly gives stickers!",
+              "info": "Grows in 1 Hour.\nGives 9 Tokens.",
+              "cost": "50 Tickets + 50 Wind Essence + 50 Fire Essence + 50 Water Essence",
+              "costType": "ticket"
             }
           ]
         }

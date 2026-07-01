@@ -7,6 +7,7 @@ async function loadBees() {
     rare: [],
     epic: [],
     legendary: [],
+    mythic: [],
     special: [],
     limited: [],
   };

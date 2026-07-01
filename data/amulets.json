@@ -214,6 +214,70 @@
     ]
   },
   {
+    "id": "butterfly",
+    "name": "Butterfly Amulet",
+    "image": "images/amulets/Butterfly Amulet.png",
+    "source": "Butterflies",
+    "variants": [
+      {
+        "rarity": "Mythic",
+        "desc": "Drops from Butterfly.",
+        "buffsAmount": 4,
+        "buffs": [
+          {
+            "stat": "Pollen",
+            "type": "Perc",
+            "min": 1,
+            "max": 25,
+            "chance": 28.85
+          },
+          {
+            "stat": "Capacity Bonus",
+            "type": "Perc",
+            "min": 1,
+            "max": 30,
+            "chance": 22.44
+          },
+          {
+            "stat": "Wisteria Field Pollen",
+            "type": "Perc",
+            "min": 1,
+            "max": 25,
+            "chance": 22.44
+          },
+          {
+            "stat": "Blossom Field Pollen",
+            "type": "Perc",
+            "min": 1,
+            "max": 25,
+            "chance": 16.03
+          },
+          {
+            "stat": "Lotus Field Pollen",
+            "type": "Perc",
+            "min": 1,
+            "max": 25,
+            "chance": 6.41
+          },
+          {
+            "stat": "Bubble Capacity",
+            "type": "Mult",
+            "min": 1.01,
+            "max": 1.1,
+            "chance": 1.92
+          },
+          {
+            "stat": "Fire Duration",
+            "type": "Mult",
+            "min": 1.01,
+            "max": 1.1,
+            "chance": 1.92
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "lunar",
     "name": "Lunar Amulet",
     "image": "images/amulets/Lunar Amulet.png",

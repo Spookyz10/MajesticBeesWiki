@@ -1,29 +1,35 @@
 async function loadShops() {
-  const container = document.getElementById("shops-list");
-
-  if (!container) {
-    return;
-  }
+  const regularContainer = document.getElementById("shops-regular");
+  const limitedContainer = document.getElementById("shops-limited");
+  const limitedSection = document.getElementById("shops-limited-section");
 
   try {
     const response = await fetch("data/shops.json");
-    if (!response.ok) {
-      throw new Error("Failed to load shops data.");
-    }
+    if (!response.ok) throw new Error("Failed to load shops data.");
 
     const payload = await response.json();
     const shops = Array.isArray(payload.shops) ? payload.shops : [];
 
     if (!shops.length) {
-      container.innerHTML =
+      regularContainer.innerHTML =
         '<p class="shops-empty">No shops available yet.</p>';
       return;
     }
 
-    container.innerHTML = shops.map(renderShopCard).join("");
+    const regular = shops.filter((s) => !s.limitedTime);
+    const limited = shops.filter((s) => s.limitedTime);
+
+    regularContainer.innerHTML = regular.length
+      ? regular.map(renderShopCard).join("")
+      : '<p class="shops-empty">No shops available yet.</p>';
+
+    if (limited.length) {
+      limitedContainer.innerHTML = limited.map(renderShopCard).join("");
+      limitedSection.style.display = "";
+    }
   } catch (error) {
     console.error(error);
-    container.innerHTML =
+    regularContainer.innerHTML =
       '<p class="shops-empty">Could not load shops right now.</p>';
   }
 }

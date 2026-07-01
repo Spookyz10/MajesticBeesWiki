@@ -99,6 +99,9 @@ function buildQuestCard(quest, index) {
 
 function buildInfobox(bear) {
   const questCount = Array.isArray(bear.quests) ? bear.quests.length : 0;
+  const questsValue = bear.cyclic
+    ? `<span class="bear-infinity-badge" title="This bear's quests repeat forever in a fixed cycle">∞ <span class="bear-infinity-sub">(${questCount}-quest cycle)</span></span>`
+    : questCount;
   return `
     <div class="bear-infobox">
       <div class="bear-infobox-header"><div class="bear-infobox-label">Bear Info</div></div>
@@ -108,12 +111,12 @@ function buildInfobox(bear) {
       </div>
       <div class="bear-infobox-stats">
         <div class="bear-infobox-stat">
-          <span class="bear-infobox-stat-label">Zone</span>
+          <span class="bear-infobox-stat-label">Location</span>
           <span class="bear-infobox-stat-value">${escHtml(bear.location || "Unknown")}</span>
         </div>
         <div class="bear-infobox-stat">
           <span class="bear-infobox-stat-label">Quests</span>
-          <span class="bear-infobox-stat-value">${questCount}</span>
+          <span class="bear-infobox-stat-value">${questsValue}</span>
         </div>
       </div>
     </div>`;
@@ -158,8 +161,15 @@ function buildAllBearsSection(bears, currentId) {
     </div>`;
 }
 
+function buildCyclicNote(bear) {
+  if (!bear.cyclic) return "";
+  const len = Array.isArray(bear.quests) ? bear.quests.length : 0;
+  return `<div class="bear-cycle-note"><span class="bear-cycle-note-icon">↻</span><span>This bear does not have a fixed quest line. Once quest <b>#${len}</b> is finished, the cycle loops back to <b>#1</b> and repeats forever, with the same requirements and rewards each time.</span></div>`;
+}
+
 function buildPage(bear, allBears) {
   const quests = Array.isArray(bear.quests) ? bear.quests : [];
+  const sectionTitle = bear.cyclic ? "Quest Cycle" : "Quests";
   return `
     <div class="bear-detail-shell">
       <div class="bear-detail-hero">
@@ -171,7 +181,8 @@ function buildPage(bear, allBears) {
         ${buildInfobox(bear)}
       </div>
       <div class="bear-section">
-        <div class="bear-section-heading"><span class="bear-section-deco"></span>Quests<span class="bear-section-deco"></span></div>
+        <div class="bear-section-heading"><span class="bear-section-deco"></span>${sectionTitle}<span class="bear-section-deco"></span></div>
+        ${buildCyclicNote(bear)}
         <div class="bear-quest-list">
           ${quests.map(buildQuestCard).join("") || "<p style='color:var(--gold-dim)'>No quests available.</p>"}
         </div>
