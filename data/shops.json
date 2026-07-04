@@ -1178,7 +1178,7 @@
               "type": "Collector",
               "image": "images/equipment/Coconut Smash.png",
               "description": "This hammer smashes anything on its way!",
-              "info": "Gathers 85 pollen from 5 flowers in front of you in 0.6 seconds.\nPower: 10\n+Passive: Coconut Storm (Every 15 Clicks)",
+              "info": "Gathers 85 pollen from 5 flowers in front of you in 0.6 seconds.\n+Passive: Coconut Storm (Every 15 Clicks)",
               "cost": "50b Honey + 2 Majestic Cocktail + 5 Summer Cocktail + 15 Coconut Drink + 25 Lemonade + 350 Coconut + 350 Wind Essence + 25 Bamboo Flask + 300 Bamboo",
               "costType": "honey",
               "passives": [

@@ -214,22 +214,32 @@
         {
           "stat": "Honey Bonus",
           "type": "Perc",
-          "value": 10
+          "value": 15
         },
         {
           "stat": "Pollen",
           "type": "Perc",
-          "value": 50
+          "value": 60
         },
         {
           "stat": "Capacity Bonus",
           "type": "Perc",
-          "value": 50
+          "value": 75
         },
         {
           "stat": "Movespeed",
           "type": "Perc",
-          "value": 25
+          "value": 30
+        },
+        {
+          "stat": "Critical Chance",
+          "type": "Perc",
+          "value": 5
+        },
+        {
+          "stat": "Critical Power",
+          "type": "Perc",
+          "value": 15
         }
       ],
       "extraChances": [

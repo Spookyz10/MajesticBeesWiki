@@ -815,6 +815,7 @@
     "buffs": [
       { "name": "Critical Power", "type": "Mult", "value": 0.5 },
       { "name": "Critical Chance", "type": "Perc", "value": 10 }
-    ]
+    ],
+    "sources": [{ "type": "mixer" }]
   }
 ]
