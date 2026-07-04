@@ -1,3 +1,4 @@
+@import url("style.css");
 @import url("amulets.css");
 @import url("badges.css");
 @import url("bear.css");
@@ -14,7 +15,6 @@
 @import url("shops.css");
 @import url("starflowers.css");
 @import url("starter-shop.css");
-@import url("style.css");
 @import url("updates.css");
 @import url("vines.css");
 @import url("world.css");

@@ -81,6 +81,8 @@ function formatBuffValue(buff) {
   if (buff.type === "Mult") {
     const mult = (1 + buff.value).toFixed(2).replace(/\.?0+$/, "");
     return `${mult}x`;
+  } else if (buff.type === "Perc") {
+    return `+${buff.value}%`;
   }
   return `+${buff.value}`;
 }

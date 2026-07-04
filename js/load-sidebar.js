@@ -141,7 +141,6 @@ function loadSidebar() {
       <a href="${basePath}planters.html">Planters</a>
       <a href="${basePath}shops.html">Shops</a>
       <a href="${basePath}starflowers.html">Starflowers</a>
-      <a href="${basePath}store.html">Store</a>
       <a href="${basePath}updates.html">Updates</a>
       <a href="${basePath}vines.html">Vines</a>
       <a href="${basePath}world.html">World</a>
@@ -185,7 +184,6 @@ function createMobileSheet(basePath) {
       <a href="${basePath}planters.html">Planters</a>
       <a href="${basePath}shops.html">Shops</a>
       <a href="${basePath}starflowers.html">Starflowers</a>
-      <a href="${basePath}store.html">Store</a>
       <a href="${basePath}updates.html">Updates</a>
       <a href="${basePath}vines.html">Vines</a>
       <a href="${basePath}world.html">World</a>

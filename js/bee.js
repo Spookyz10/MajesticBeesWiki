@@ -133,6 +133,8 @@ function buildAbilities(bee) {
   const abilities = bee.tokens || bee.abilities;
   if (!abilities || !abilities.length) return "";
 
+  const totalWeight = abilities.reduce((sum, a) => sum + (a.weight || 0), 0);
+
   const cards = abilities
     .map((ab, index) => {
       const unlockLevel = ab.level || ab.unlock_level || 1;
@@ -146,9 +148,14 @@ function buildAbilities(bee) {
       const iconSrc = tokenIcon(abName);
       const desc = ab.desc || ab.description || "";
 
+      const computedChance =
+        ab.weight !== undefined && totalWeight > 0
+          ? (ab.weight / totalWeight) * 100
+          : undefined;
+
       const chanceHtml =
-        ab.chance !== undefined
-          ? `<span class="ab-chance">${ab.chance}% chance</span>`
+        computedChance !== undefined
+          ? `<span class="ab-chance">${computedChance.toFixed(2)}% chance</span>`
           : "";
       const expiresHtml =
         ab.expires !== undefined

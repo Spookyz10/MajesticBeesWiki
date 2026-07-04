@@ -125,20 +125,45 @@ function buildInfobox(bear) {
 function buildAuraInline(bear) {
   const auraName = escHtml(bear.aura || "");
   if (!auraName) return "";
-  const buff = bear.aura_buff;
-  if (!buff) return `<p class="bear-aura-inline">Aura: <b>${auraName}</b></p>`;
+
+  const buffs = Array.isArray(bear.aura_buff)
+    ? bear.aura_buff
+    : bear.aura_buff
+      ? [bear.aura_buff]
+      : [];
+  if (!buffs.length)
+    return `<p class="bear-aura-inline">Aura: <b>${auraName}</b></p>`;
+
   const STAT_LABELS = {
     Pollen: "Pollen",
     "Capacity Bonus": "Hive Capacity",
     "Tool Pollen": "Tool Pollen",
     "Energy Bonus": "Energy",
     "Honey Bonus": "Honey",
+    "Critical Power": "Critical Power",
+    "Honey From Tokens": "Honey From Tokens",
+    "Loot Luck": "Loot Luck",
   };
-  const label = STAT_LABELS[buff.stat] || escHtml(buff.stat);
-  const pct = (buff.per_stack * 100).toFixed(0);
+
   const questCount = Array.isArray(bear.quests) ? bear.quests.length : 0;
-  const maxPct = (buff.per_stack * questCount * 100).toFixed(0);
-  return `<p class="bear-aura-inline">Each stack of <b>${auraName}</b> permanently adds <b>+${pct}% ${label}</b>. With all ${questCount} quests completed, that's <b>+${maxPct}% ${label}</b> total.</p>`;
+  const trim = (n) => Number(n.toFixed(4)).toString();
+
+  const lines = buffs.map((buff) => {
+    const label = STAT_LABELS[buff.stat] || escHtml(buff.stat);
+    const cap = buff.max_stack ?? questCount;
+
+    if (buff.type === "mult") {
+      const perStackVal = trim(1 + buff.per_stack);
+      const maxVal = trim(1 + buff.per_stack * cap);
+      return `Each stack of <b>${auraName}</b> multiplies <b>${label}</b> by <b>${perStackVal}×</b> (max <b>${cap}</b> stacks → <b>${maxVal}×</b>)`;
+    }
+
+    const perVal = trim(buff.per_stack);
+    const maxVal = trim(buff.per_stack * cap);
+    return `Each stack of <b>${auraName}</b> adds <b>+${perVal}% ${label}</b> (max <b>${cap}</b> stacks → <b>+${maxVal}% ${label}</b>)`;
+  });
+
+  return `<p class="bear-aura-inline">${lines.join("<br>")}</p>`;
 }
 
 function buildAllBearsSection(bears, currentId) {

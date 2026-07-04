@@ -60,9 +60,16 @@
     {
       "id": "bamboo-dispenser",
       "name": "Bamboo Dispenser",
-      "zone": "15 Bee Zone",
+      "zone": "20 Bee Zone",
       "desc": "Gives Bamboo to the player. 8 hour cooldown.",
       "image": "images/dispensers/Bamboo Dispenser.png"
+    },
+    {
+      "id": "vines-dispenser",
+      "name": "Vines Dispenser",
+      "zone": "25 Bee Zone",
+      "desc": "Gives Vines to the player.",
+      "image": "images/dispensers/Vines Dispenser.png"
     }
   ],
   "paidDispensers": [
@@ -681,6 +688,44 @@
           "item": "Pine Cone",
           "amount": 50,
           "image": "images/items/Pine Cone.png"
+        }
+      ]
+    },
+    {
+      "id": "bamboo-boba-tea",
+      "name": "Bamboo Boba Tea",
+      "image": "images/items/Bamboo Boba Tea.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 1000000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Bamboo",
+          "amount": 75,
+          "image": "images/items/Bamboo.png"
+        },
+
+        {
+          "item": "Seed",
+          "amount": 50,
+          "image": "images/items/Seed.png"
+        },
+        {
+          "item": "Pine Cone",
+          "amount": 50,
+          "image": "images/items/Pine Cone.png"
+        },
+        {
+          "item": "Lunar Treat",
+          "amount": 50,
+          "image": "images/items/Lunar Treat.png"
+        },
+        {
+          "item": "Glitter",
+          "amount": 1,
+          "image": "images/items/Glitter.png"
         }
       ]
     },

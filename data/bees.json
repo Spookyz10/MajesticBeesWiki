@@ -827,7 +827,7 @@
     "shinyBonus": {
       "stat": "Critical Chance",
       "type": "Perc",
-      "value": 15.0
+      "value": 5.0
     },
     "tokens": [
       {
@@ -1214,7 +1214,6 @@
         "token": "Wave Boost",
         "level": 1,
         "weight": 8,
-        "chance": 47.06,
         "expires": 15,
         "desc": "Grants Wave Boost that gives +0.1% Ice Pollen Forever and Stacks up to 5000."
       },
@@ -1222,7 +1221,6 @@
         "token": "Ice Bomb",
         "level": 9,
         "weight": 9,
-        "chance": 52.94,
         "expires": 12,
         "desc": "Explodes 9 Tile with a power of 3 and gathers 8 Pollen , Doubles Blue Pollen and Creates Ice Tiles Arround that lasts for 12 seconds."
       }
