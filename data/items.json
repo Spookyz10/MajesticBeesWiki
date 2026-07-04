@@ -802,5 +802,19 @@
     "order": 5.0,
     "buffs": [],
     "sources": []
+  },
+  {
+    "id": "bamboo-boba-tea",
+    "name": "Bamboo Boba Tea",
+    "category": "Consumables",
+    "rarity": "Legendary",
+    "desc": "Using this grants x1.5 Critical Power and\n 10% Critical Chance for 20 minutes.",
+    "image": "images/items/Bamboo Boba Tea.png",
+    "order": 15.0,
+    "time": 1200,
+    "buffs": [
+      { "name": "Critical Power", "type": "Mult", "value": 0.5 },
+      { "name": "Critical Chance", "type": "Perc", "value": 10 }
+    ]
   }
 ]

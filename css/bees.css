@@ -39,14 +39,6 @@
   margin-top: 12px;
 }
 
-.slot-row--extra {
-  display: none;
-}
-
-.slot-table.is-expanded .slot-row--extra {
-  display: table-row;
-}
-
 .slot-table-actions {
   text-align: center;
   margin-top: 12px;
@@ -78,6 +70,19 @@
 
 .slot-table-toggle:active {
   transform: translateY(0);
+}
+
+.slot-table tr,
+.bee-slot-row {
+  display: table-row;
+}
+
+.slot-table .bee-slot-row--extra {
+  display: none;
+}
+
+.slot-table.is-expanded .bee-slot-row--extra {
+  display: table-row;
 }
 
 .bee-color-colorless {

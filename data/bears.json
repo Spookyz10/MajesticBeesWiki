@@ -1515,10 +1515,7 @@
         ]
       }
     ],
-    "aura_buff": {
-      "stat": "Pollen",
-      "per_stack": 0.01
-    }
+    "aura_buff": [{ "stat": "Pollen", "type": "mult", "per_stack": 0.01 }]
   },
   {
     "id": "brown-bear",
@@ -1814,10 +1811,9 @@
         ]
       }
     ],
-    "aura_buff": {
-      "stat": "Capacity Bonus",
-      "per_stack": 0.01
-    }
+    "aura_buff": [
+      { "stat": "Capacity Bonus", "type": "mult", "per_stack": 0.1 }
+    ]
   },
   {
     "id": "polar-bear",
@@ -2488,10 +2484,7 @@
         ]
       }
     ],
-    "aura_buff": {
-      "stat": "Honey Bonus",
-      "per_stack": 0.01
-    }
+    "aura_buff": [{ "stat": "Honey Bonus", "type": "mult", "per_stack": 0.01 }]
   },
   {
     "id": "painter-bear",
@@ -2755,10 +2748,7 @@
         ]
       }
     ],
-    "aura_buff": {
-      "stat": "Energy Bonus",
-      "per_stack": 0.05
-    }
+    "aura_buff": [{ "stat": "Energy Bonus", "type": "mult", "per_stack": 0.05 }]
   },
   {
     "id": "panda-bear",
@@ -3075,10 +3065,7 @@
         ]
       }
     ],
-    "aura_buff": {
-      "stat": "Tool Pollen",
-      "per_stack": 0.05
-    }
+    "aura_buff": [{ "stat": "Tool Pollen", "type": "mult", "per_stack": 0.05 }]
   },
   {
     "id": "sandy-bear",
@@ -3789,11 +3776,7 @@
           }
         ]
       }
-    ],
-    "aura_buff": {
-      "stat": "Pollen",
-      "per_stack": 0.01
-    }
+    ]
   },
   {
     "id": "sun-bear",
@@ -4156,6 +4139,16 @@
     "location": "Greenhouse",
     "description": "Botanist Bear, also known as Delilah, tends to her special flowers in the Greenhouse. Unlike other bears, she does not have a fixed quest line, instead she offers an endless cycle of 10 rotating quests that repeat forever once completed.",
     "cyclic": true,
+    "aura": "Botanist Bear Aura",
+    "aura_buff": [
+      {
+        "stat": "Honey From Tokens",
+        "type": "mult",
+        "per_stack": 0.01,
+        "max_stack": 250
+      },
+      { "stat": "Loot Luck", "type": "perc", "per_stack": 1, "max_stack": 250 }
+    ],
     "quests": [
       {
         "number": 1,
@@ -4471,11 +4464,7 @@
           }
         ]
       }
-    ],
-    "aura_buff": {
-      "stat": "Critical Power",
-      "per_stack": 0.05
-    }
+    ]
   },
   {
     "id": "druid-bear",
@@ -4484,6 +4473,14 @@
     "location": "Near the Wheel",
     "description": "Druid Bear watches over the Wheel, tasking players with deepening their bond to the Wisteria, Lotus, and Blossom Fields.",
     "aura": "Druid Bear Aura",
+    "aura_buff": [
+      {
+        "stat": "Critical Power",
+        "type": "perc",
+        "per_stack": 5,
+        "max_stack": 5
+      }
+    ],
     "quests": [
       {
         "number": 1,
@@ -4679,10 +4676,6 @@
           }
         ]
       }
-    ],
-    "aura_buff": {
-      "stat": "Critical Power",
-      "per_stack": 0.05
-    }
+    ]
   }
 ]

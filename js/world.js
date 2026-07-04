@@ -236,49 +236,381 @@ function buildMixerSection(
 
 const WHEEL_SLOT_COUNT = 5;
 
+function itemImagePath(it) {
+  return it.path || `images/items/${it.name}.png`;
+}
+
 const DONATE_ITEMS = [
+  // Eggs
+  { name: "Silver Egg", points: 25 },
+  { name: "Gold Egg", points: 50 },
+  { name: "Shiny Silver Egg", points: 50 },
+  { name: "Diamond Egg", points: 100 },
+  { name: "Shiny Gold Egg", points: 100 },
+  { name: "Shiny Diamond Egg", points: 200 },
+  { name: "Mythic Egg", points: 300 },
+  { name: "Shiny Egg", points: 300 },
   {
-    name: "Silver Egg",
+    name: "Shiny Mythic Egg",
+    path: "images/items/Shiny Mythic Egg.png",
+    points: 600,
+  },
+
+  // Hive Skins
+  { name: "Red Hive", path: "images/hive/skins/Red Skin.png", points: 2 },
+  { name: "Blue Hive", path: "images/hive/skins/Blue Skin.png", points: 2 },
+  { name: "Green Hive", path: "images/hive/skins/Green Skin.png", points: 2 },
+  { name: "Orange Hive", path: "images/hive/skins/Orange Skin.png", points: 2 },
+  { name: "Pink Hive", path: "images/hive/skins/Pink Skin.png", points: 3 },
+  { name: "Purple Hive", path: "images/hive/skins/Purple Skin.png", points: 3 },
+  {
+    name: "Light Blue Hive",
+    path: "images/hive/skins/Light Blue Skin.png",
+    points: 3,
+  },
+  { name: "Black Hive", path: "images/hive/skins/Black Skin.png", points: 3 },
+  { name: "White Hive", path: "images/hive/skins/White Skin.png", points: 3 },
+  {
+    name: "Chromatic Hive",
+    path: "images/hive/skins/Chromatic Skin.png",
+    points: 5,
+  },
+
+  // Stickers
+  {
+    name: "Starflower Sticker",
+    path: "images/hive/stickers/Starflower Sticker.png",
+    points: 10,
+  },
+  {
+    name: "Shark Bee Sticker",
+    path: "images/hive/stickers/Shark Bee Sticker.png",
     points: 25,
   },
   {
-    name: "Gold Egg",
-    points: 50,
+    name: "Sunny Bee Sticker",
+    path: "images/hive/stickers/Sunny Bee Sticker.png",
+    points: 25,
   },
   {
-    name: "Shiny Silver Egg",
-
-    points: 50,
+    name: "Windy Bee Sticker",
+    path: "images/hive/stickers/Windy Bee Sticker.png",
+    points: 15,
   },
   {
-    name: "Diamond Egg",
-
-    points: 100,
+    name: "Ice Bee Sticker",
+    path: "images/hive/stickers/Ice Bee Sticker.png",
+    points: 15,
   },
   {
-    name: "Shiny Gold Egg",
-
-    points: 100,
+    name: "Magma Bee Sticker",
+    path: "images/hive/stickers/Magma Bee Sticker.png",
+    points: 15,
   },
   {
-    name: "Shiny Diamond Egg",
-
-    points: 200,
+    name: "Exp Bee Sticker",
+    path: "images/hive/stickers/Exp Bee Sticker.png",
+    points: 15,
   },
   {
-    name: "Mythic Egg",
-
-    points: 300,
+    name: "Pixel Bee Sticker",
+    path: "images/hive/stickers/Pixel Bee Sticker.png",
+    points: 15,
   },
   {
-    name: "Shiny Egg",
-
-    points: 300,
+    name: "Lucky Bee Sticker",
+    path: "images/hive/stickers/Lucky Bee Sticker.png",
+    points: 15,
   },
   {
-    name: "Shiny Mythic Egg",
-
-    points: 600,
+    name: "Kitsune Bee Sticker",
+    path: "images/hive/stickers/Kitsune Bee Sticker.png",
+    points: 10,
+  },
+  {
+    name: "Oni Bee Sticker",
+    path: "images/hive/stickers/Oni Bee Sticker.png",
+    points: 10,
+  },
+  {
+    name: "Ryujin Bee Sticker",
+    path: "images/hive/stickers/Ryujin Bee Sticker.png",
+    points: 10,
+  },
+  {
+    name: "Thunder Bee Sticker",
+    path: "images/hive/stickers/Thunder Bee Sticker.png",
+    points: 5,
+  },
+  {
+    name: "Oil Bee Sticker",
+    path: "images/hive/stickers/Oil Bee Sticker.png",
+    points: 5,
+  },
+  {
+    name: "Cloud Bee Sticker",
+    path: "images/hive/stickers/Cloud Bee Sticker.png",
+    points: 5,
+  },
+  {
+    name: "Wave Bee Sticker",
+    path: "images/hive/stickers/Wave Bee Sticker.png",
+    points: 5,
+  },
+  {
+    name: "Null Bee Sticker",
+    path: "images/hive/stickers/Null Bee Sticker.png",
+    points: 5,
+  },
+  {
+    name: "Lion Bee Sticker",
+    path: "images/hive/stickers/Lion Bee Sticker.png",
+    points: 5,
+  },
+  {
+    name: "Firework Bee Sticker",
+    path: "images/hive/stickers/Firework Bee Sticker.png",
+    points: 5,
+  },
+  {
+    name: "Icicle Bee Sticker",
+    path: "images/hive/stickers/Icicle Bee Sticker.png",
+    points: 5,
+  },
+  {
+    name: "Flower Bee Sticker",
+    path: "images/hive/stickers/Flower Bee Sticker.png",
+    points: 3,
+  },
+  {
+    name: "Coal Bee Sticker",
+    path: "images/hive/stickers/Coal Bee Sticker.png",
+    points: 3,
+  },
+  {
+    name: "Cold Bee Sticker",
+    path: "images/hive/stickers/Cold Bee Sticker.png",
+    points: 3,
+  },
+  {
+    name: "Honey Bee Sticker",
+    path: "images/hive/stickers/Honey Bee Sticker.png",
+    points: 3,
+  },
+  {
+    name: "Water Bee Sticker",
+    path: "images/hive/stickers/Water Bee Sticker.png",
+    points: 3,
+  },
+  {
+    name: "Sound Bee Sticker",
+    path: "images/hive/stickers/Sound Bee Sticker.png",
+    points: 3,
+  },
+  {
+    name: "Fire Bee Sticker",
+    path: "images/hive/stickers/Fire Bee Sticker.png",
+    points: 3,
+  },
+  {
+    name: "Azure Bee Sticker",
+    path: "images/hive/stickers/Azure Bee Sticker.png",
+    points: 2,
+  },
+  {
+    name: "Magnet Bee Sticker",
+    path: "images/hive/stickers/Magnet Bee Sticker.png",
+    points: 2,
+  },
+  {
+    name: "Bomber Bee Sticker",
+    path: "images/hive/stickers/Bomber Bee Sticker.png",
+    points: 2,
+  },
+  {
+    name: "Hasty Bee Sticker",
+    path: "images/hive/stickers/Hasty Bee Sticker.png",
+    points: 2,
+  },
+  {
+    name: "Science Bee Sticker",
+    path: "images/hive/stickers/Science Bee Sticker.png",
+    points: 2,
+  },
+  {
+    name: "Crimson Bee Sticker",
+    path: "images/hive/stickers/Crimson Bee Sticker.png",
+    points: 2,
+  },
+  {
+    name: "Rage Bee Sticker",
+    path: "images/hive/stickers/Rage Bee Sticker.png",
+    points: 2,
+  },
+  {
+    name: "Basic Bee Sticker",
+    path: "images/hive/stickers/Basic Bee Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Bamboo Spear Sticker",
+    path: "images/hive/stickers/Bamboo Spear Sticker.png",
+    points: 5,
+  },
+  {
+    name: "Snow Shovel Sticker",
+    path: "images/hive/stickers/Snow Shovel Sticker.png",
+    points: 3,
+  },
+  {
+    name: "Fire Scythe Sticker",
+    path: "images/hive/stickers/Fire Scythe Sticker.png",
+    points: 3,
+  },
+  {
+    name: "Honey Dipper Sticker",
+    path: "images/hive/stickers/Honey Dipper Sticker.png",
+    points: 3,
+  },
+  {
+    name: "Gold Magnet Sticker",
+    path: "images/hive/stickers/Gold Magnet Sticker.png",
+    points: 2,
+  },
+  {
+    name: "Pickaxe Sticker",
+    path: "images/hive/stickers/Pickaxe Sticker.png",
+    points: 2,
+  },
+  {
+    name: "Axe Sticker",
+    path: "images/hive/stickers/Axe Sticker.png",
+    points: 2,
+  },
+  {
+    name: "Scythe Sticker",
+    path: "images/hive/stickers/Scythe Sticker.png",
+    points: 2,
+  },
+  {
+    name: "Scissors Sticker",
+    path: "images/hive/stickers/Scissors Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Magnet Sticker",
+    path: "images/hive/stickers/Magnet Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Hammer Sticker",
+    path: "images/hive/stickers/Hammer Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Rake Sticker",
+    path: "images/hive/stickers/Rake Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Shovel Sticker",
+    path: "images/hive/stickers/Shovel Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Lotus Field Sticker",
+    path: "images/hive/stickers/Lotus Field Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Blossom Field Sticker",
+    path: "images/hive/stickers/Blossom Field Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Wisteria Field Sticker",
+    path: "images/hive/stickers/Wisteria Field Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Raspberry Field Sticker",
+    path: "images/hive/stickers/Raspberry Field Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Banana Field Sticker",
+    path: "images/hive/stickers/Banana Field Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Bamboo Field Sticker",
+    path: "images/hive/stickers/Bamboo Field Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Snowdrops Field Sticker",
+    path: "images/hive/stickers/Snowdrops Field Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Pine Cone Field Sticker",
+    path: "images/hive/stickers/Pine Cone Field Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Rose Field Sticker",
+    path: "images/hive/stickers/Rose Field Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Spider Field Sticker",
+    path: "images/hive/stickers/Spider Field Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Strawberry Field Sticker",
+    path: "images/hive/stickers/Strawberry Field Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Bellflower Field Sticker",
+    path: "images/hive/stickers/Bellflower Field Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Blue Flowers Field Sticker",
+    path: "images/hive/stickers/Blue Flowers Field Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Red Flowers Field Sticker",
+    path: "images/hive/stickers/Red Flowers Field Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Sunflower Field Sticker",
+    path: "images/hive/stickers/Sunflower Field Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Blackberry Field Sticker",
+    path: "images/hive/stickers/Blackberry Field Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Clover Field Sticker",
+    path: "images/hive/stickers/Clover Field Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Daisy Field Sticker",
+    path: "images/hive/stickers/Daisy Field Sticker.png",
+    points: 1,
+  },
+  {
+    name: "Mushroom Field Sticker",
+    path: "images/hive/stickers/Mushroom Field Sticker.png",
+    points: 1,
   },
 ];
 
@@ -286,8 +618,8 @@ function buildDonateTable() {
   const rows = DONATE_ITEMS.map((it) => {
     return `
       <tr class="donate-row">
+        <td class="donate-td donate-img">${localImg(itemImagePath(it), 32, it.name)}</td>
         <td class="donate-td donate-name">${it.name}</td>
-
         <td class="donate-td donate-pts">${it.points} pts</td>
       </tr>
     `;
@@ -300,6 +632,7 @@ function buildDonateTable() {
         <table class="donate-table">
           <thead>
             <tr>
+              <th class="donate-th"></th>
               <th class="donate-th">Item</th>
               <th class="donate-th">Points</th>
             </tr>
