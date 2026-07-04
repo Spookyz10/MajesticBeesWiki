@@ -808,8 +808,11 @@ h1.page-header__title,
 .bee-tab-content {
   border-radius: 0 0 10px 10px;
   padding: 16px 16px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
-
 .bee-rarity-grid {
   display: flex;
   flex-wrap: wrap;
@@ -1380,5 +1383,20 @@ a[href$="/Azvaro"]:hover {
   .sidebar-theme-button--mobile {
     width: calc(100% - 8px);
     margin: 10px 4px 4px;
+  }
+}
+
+@media (max-width: 640px) {
+  .bee-tab-content {
+    gap: 12px;
+  }
+
+  .bee-card {
+    width: 80px;
+  }
+
+  .bee-card img {
+    width: 60px;
+    height: 60px;
   }
 }
