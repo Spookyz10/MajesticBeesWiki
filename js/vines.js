@@ -1,11 +1,3 @@
-const VINE_DURATION = {
-  Basic: "Unknown",
-  Rare: "Unknown",
-  Epic: "Unknown",
-  Legendary: "Unknown",
-  Mythic: "Unknown",
-};
-
 const FIELD_COLORS = {
   "White Field": {
     tab: "#c8dce8",
@@ -89,12 +81,6 @@ function buildChances(chances) {
 }
 
 function buildTierCard(tier, activeField) {
-  const duration = VINE_DURATION[tier.name] || "Unknown";
-  const durationHtml =
-    duration === "Unknown"
-      ? `<span class="vine-duration-val" style="color:${tier.color};opacity:0.55">Duration unknown</span>`
-      : `<span class="vine-duration-val" style="color:${tier.color}">Lasts ${duration}</span>`;
-
   const availableFields = FIELD_ORDER.filter(
     (f) => tier.drops[f] && tier.drops[f].length > 0,
   );
@@ -169,10 +155,6 @@ function buildTierCard(tier, activeField) {
         </div>
         <div class="vine-tier-meta">
           <div class="vine-tier-name" style="color:${tier.color}">${tier.name} Vine</div>
-          <div class="vine-tier-health">
-            <span class="vine-health-val" style="color:${tier.color}">${tier.healthLabel} pollen to destroy</span>
-          </div>
-          <div class="vine-tier-duration">${durationHtml}</div>
         </div>
       </div>
       <div class="vine-tier-body">
@@ -187,10 +169,7 @@ function buildTiers(tiers, activeFields) {
   return `
     <div class="vine-section">
       <div class="vine-section-heading">Tiers and Drops</div>
-      <div class="vine-section-desc">
-        Each tier has a different health pool and its own drop table.
-        Chances shown are already weighted — the game picks a single item per roll from the combined pool.
-      </div>
+     
       <div class="vine-tiers">${tiers
         .map((t) => buildTierCard(t, activeFields && activeFields[t.name]))
         .join("")}</div>
