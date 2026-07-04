@@ -1062,7 +1062,6 @@
         "token": "Sound Boost",
         "level": 1,
         "weight": 9,
-        "chance": 47.37,
         "expires": 15,
         "desc": "Grants Sound Boost that gives +5% Capacity for 30 Seconds and Stacks up to 10."
       },
@@ -1070,9 +1069,15 @@
         "token": "Bomb+",
         "level": 7,
         "weight": 10,
-        "chance": 52.63,
         "expires": 15,
         "desc": "Explodes 37 Tile with a power of 7 and gathers 6 Pollen , Also grants Bomb Combo Boost."
+      },
+      {
+        "token": "Music Boost",
+        "level": 15,
+        "weight": 9,
+        "expires": 15,
+        "desc": "Grants Music Boost that gives +2% Critical Chance & 10% Critical Power for 45 Seconds and Stacks up to 5.."
       }
     ]
   },
