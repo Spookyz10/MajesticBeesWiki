@@ -92,8 +92,136 @@
 }
 
 .hive-card:hover {
-  border-color: rgba(232, 192, 64, 0.35);
   box-shadow: 0 0 20px rgba(212, 170, 48, 0.1);
+}
+
+.hive-card--common {
+  border-color: var(--r-common);
+}
+.hive-card--common:hover {
+  border-color: var(--r-common-bd);
+}
+.hive-card--common .hive-card-name {
+  color: var(--r-common);
+}
+
+.hive-card--rare {
+  border-color: var(--r-rare);
+}
+.hive-card--rare:hover {
+  border-color: var(--r-rare-bd);
+}
+.hive-card--rare .hive-card-name {
+  color: var(--r-rare);
+}
+
+.hive-card--epic {
+  border-color: var(--r-epic);
+}
+.hive-card--epic:hover {
+  border-color: var(--r-epic-bd);
+}
+.hive-card--epic .hive-card-name {
+  color: var(--r-epic);
+}
+
+.hive-card--legendary {
+  border-color: var(--r-legendary);
+}
+.hive-card--legendary:hover {
+  border-color: var(--r-legendary-bd);
+}
+.hive-card--legendary .hive-card-name {
+  color: var(--r-legendary);
+}
+
+.hive-card--mythic {
+  border-color: var(--r-mythic);
+}
+.hive-card--mythic:hover {
+  border-color: var(--r-mythic-bd);
+}
+.hive-card--mythic .hive-card-name {
+  color: var(--r-mythic);
+}
+
+.hive-card--special {
+  border-color: var(--r-special);
+}
+.hive-card--special:hover {
+  border-color: var(--r-special-bd);
+}
+.hive-card--special .hive-card-name {
+  color: var(--r-special);
+}
+
+.hive-card--limited {
+  border: 1px solid transparent;
+  overflow: hidden;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.hive-card--limited::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: conic-gradient(
+    from var(--angle),
+    #5ec8ff,
+    #7d7cff,
+    #b06cff,
+    #e38bff
+  );
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  pointer-events: none;
+  transition: transform 0.6s;
+  transform-origin: center;
+  --angle: 0deg;
+}
+
+.hive-card--limited:hover {
+  border-color: var(--r-limited-bd);
+}
+
+@keyframes border-flow {
+  to {
+    --angle: 360deg;
+  }
+}
+
+.hive-card--limited:hover::before {
+  animation: border-flow 2s linear infinite;
+}
+
+.hive-card--limited .hive-card-name {
+  background: var(--r-limited);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hive-card--exclusive {
+  border-color: var(--r-exclusive);
+}
+.hive-card--exclusive:hover {
+  border-color: var(--r-exclusive-bd);
+}
+.hive-card--exclusive .hive-card-name {
+  color: var(--r-exclusive);
 }
 
 .hive-card-img-wrap {

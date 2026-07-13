@@ -6,45 +6,8 @@ const RARITIES = [
   "mythic",
   "special",
   "limited",
+  "exclusive",
 ];
-
-const RARITY_COLORS = {
-  common: {
-    text: "#c8c8c8",
-    border: "rgba(200,200,200,0.3)",
-    bg: "rgba(200,200,200,0.08)",
-  },
-  rare: {
-    text: "#82b8e8",
-    border: "rgba(130,184,232,0.35)",
-    bg: "rgba(130,184,232,0.1)",
-  },
-  epic: {
-    text: "#ce93d8",
-    border: "rgba(206,147,216,0.35)",
-    bg: "rgrgb(200, 0, 255)147,216,0.1)",
-  },
-  legendary: {
-    text: "#e8c040",
-    border: "rgba(232,192,64,0.45)",
-    bg: "rgba(232,192,64,0.12)",
-  },
-  mythic: {
-    text: "#ff6b8a",
-    border: "rgba(225, 0, 255, 0.4)",
-    bg: "rgba(102, 0, 255, 0.08)",
-  },
-  special: {
-    text: "#29FF82",
-    border: "rgba(41,255,130,0.4)",
-    bg: "rgba(41,255,130,0.08)",
-  },
-  limited: {
-    text: "#ff6b8a",
-    border: "rgba(255,107,138,0.4)",
-    bg: "rgba(255,107,138,0.08)",
-  },
-};
 
 function buffText(buff) {
   if (buff.type === "Perc") return `+${buff.value}% ${buff.stat}`;
@@ -118,7 +81,6 @@ function buildDropChanceHtml(dc, stickerEgg, extraChances) {
 
 function buildHiveCard(item) {
   const rKey = item.rarity.toLowerCase();
-  const col = RARITY_COLORS[rKey] || RARITY_COLORS.common;
   const buffsHtml = item.buffs.length
     ? item.buffs
         .map((b) => `<span class="hive-buff-tag">${buffText(b)}</span>`)
@@ -131,7 +93,7 @@ function buildHiveCard(item) {
   );
 
   return `
-    <div class="hive-card">
+    <div class="hive-card hive-card--${rKey}">
       <div class="hive-card-img-wrap">
         <img src="${item.image}" alt="${item.name}"
           onerror="this.onerror=null;this.src='images/ui/site-logo.png';" />
@@ -194,6 +156,7 @@ function renderHive(data) {
     mythic: [],
     special: [],
     limited: [],
+    exclusive: [],
   };
   const stickerGroups = {
     common: [],
@@ -203,6 +166,7 @@ function renderHive(data) {
     mythic: [],
     special: [],
     limited: [],
+    exclusive: [],
   };
 
   data.skins.forEach((s) => {

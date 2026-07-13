@@ -1,0 +1,97 @@
+.mechanics-page-title {
+  text-align: center;
+  padding: 30px 0 10px;
+}
+
+.mechanics-hero-description {
+  max-width: 740px;
+  margin: 6px auto 28px;
+  padding: 0 20px;
+  font-size: 1.05em;
+}
+
+.mechanics-info-box {
+  max-width: 760px;
+  margin: 0 auto 32px;
+  background: #241900;
+  border: 1px solid #3a2800;
+  border-radius: 12px;
+  padding: 20px 24px;
+  color: #c8a84e;
+  line-height: 1.8;
+}
+
+.mechanics-table {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.mechanic-badge {
+  display: inline-block;
+  font-family: "Fredoka One", Georgia, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  padding: 5px 14px;
+  border-radius: 999px;
+  border: 1px solid;
+  white-space: nowrap;
+}
+
+.mechanic-badge--fire {
+  color: #e88a4e;
+  border-color: rgba(232, 138, 78, 0.4);
+  background: rgba(232, 138, 78, 0.12);
+}
+
+.mechanic-badge--ice {
+  color: #82b8e8;
+  border-color: rgba(130, 184, 232, 0.4);
+  background: rgba(130, 184, 232, 0.12);
+}
+
+.mechanic-badge--obsidian {
+  color: #b79ee0;
+  border-color: rgba(183, 158, 224, 0.4);
+  background: rgba(183, 158, 224, 0.12);
+}
+
+.mechanic-badge--soulfire {
+  color: #7fd8c0;
+  border-color: rgba(127, 216, 192, 0.4);
+  background: rgba(127, 216, 192, 0.12);
+}
+
+.mechanic-badge--milk {
+  color: #f0ead8;
+  border-color: rgba(240, 234, 216, 0.4);
+  background: rgba(240, 234, 216, 0.12);
+}
+
+.mechanic-flower-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid;
+  margin: 2px 4px 2px 0;
+  white-space: nowrap;
+}
+
+.mechanic-flower-tag--red {
+  color: #e07070;
+  border-color: rgba(224, 112, 112, 0.35);
+  background: rgba(224, 112, 112, 0.1);
+}
+
+.mechanic-flower-tag--blue {
+  color: #82b8e8;
+  border-color: rgba(130, 184, 232, 0.35);
+  background: rgba(130, 184, 232, 0.1);
+}
+
+.mechanic-flower-tag--all {
+  color: #e8e8e8;
+  border-color: rgba(232, 232, 232, 0.35);
+  background: rgba(232, 232, 232, 0.1);
+}

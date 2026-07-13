@@ -2,9 +2,10 @@ const RARITY_CLASS = {
   common: "bee-common",
   rare: "bee-rare",
   epic: "bee-epic",
-  legendary: "bee-golden",
-  special: "bee-boss",
-  boss: "bee-boss",
+  legendary: "bee-legendary",
+  special: "bee-special",
+  mythic: "bee-mythic",
+  limited: "bee-limited",
 };
 
 function tokenIcon(tokenName) {
@@ -67,8 +68,6 @@ function buildStatsGrid(bee) {
 }
 
 function buildInfobox(bee) {
-  const rarityKey = (bee.rarity || "").toLowerCase();
-  const rarityClass = RARITY_CLASS[rarityKey] || "bee-common";
   const abilityCount = Array.isArray(bee.tokens)
     ? bee.tokens.length
     : Array.isArray(bee.abilities)
@@ -76,10 +75,6 @@ function buildInfobox(bee) {
       : 0;
 
   const rows = [
-    {
-      label: "Rarity",
-      value: `<span class="${rarityClass}">${escHtml(bee.rarity || "Unknown")}</span>`,
-    },
     { label: "Color", value: escHtml(bee.color || "Unknown") },
     { label: "Abilities", value: escHtml(String(abilityCount)) },
   ];

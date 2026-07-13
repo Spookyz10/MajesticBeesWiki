@@ -138,37 +138,43 @@
   white-space: nowrap;
 }
 .egg-chance--common {
-  color: #c8c8c8;
-  border-color: rgba(200, 200, 200, 0.3);
-  background: rgba(200, 200, 200, 0.08);
+  color: var(--r-common);
+  border-color: var(--r-common-bd);
+  background: var(--r-common-bg);
 }
 .egg-chance--rare {
-  color: #82b8e8;
-  border-color: rgba(130, 184, 232, 0.35);
-  background: rgba(130, 184, 232, 0.1);
+  color: var(--r-rare);
+  border-color: var(--r-rare-bd);
+  background: var(--r-rare-bg);
 }
 .egg-chance--epic {
-  color: #ce93d8;
-  border-color: rgba(206, 147, 216, 0.35);
-  background: rgba(206, 147, 216, 0.1);
+  color: var(--r-epic);
+  border-color: var(--r-epic-bd);
+  background: var(--r-epic-bg);
 }
 .egg-chance--legendary {
-  color: #e8c040;
-  border-color: rgba(232, 192, 64, 0.45);
-  background: rgba(232, 192, 64, 0.12);
+  color: var(--r-legendary);
+  border-color: var(--r-legendary-bd);
+  background: var(--r-legendary-bg);
 }
 .egg-chance--mythic {
-  color: #ff6b8a;
-  border-color: rgba(255, 107, 138, 0.4);
-  background: rgba(255, 107, 138, 0.08);
+  color: var(--r-mythic);
+  border-color: var(--r-mythic-bd);
+  background: var(--r-mythic-bg);
 }
 .egg-chance--special {
-  color: #29ff82;
-  border-color: rgba(41, 255, 130, 0.4);
-  background: rgba(41, 255, 130, 0.08);
+  color: var(--r-special);
+  border-color: var(--r-special-bd);
+  background: var(--r-special-bg);
 }
 .egg-chance--limited {
-  color: #ff6b8a;
-  border-color: rgba(255, 107, 138, 0.4);
-  background: rgba(255, 107, 138, 0.08);
+  border: 1px solid var(--r-limited-bd);
+  background: var(--r-limited-bg);
+  background-clip: padding-box;
+}
+.egg-chance--limited {
+  color: transparent;
+  background-image: var(--r-limited);
+  -webkit-background-clip: text;
+  background-clip: text;
 }

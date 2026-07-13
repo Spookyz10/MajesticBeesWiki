@@ -58,10 +58,46 @@ const SPECIAL_ITEMS = new Set([
   "Ticket",
 ]);
 
+const DIALOGUE_STAGE_LABELS = {
+  take: "On Accepting",
+  going: "While In Progress",
+  finish: "On Completion",
+};
+
+function buildQuestDialogue(quest) {
+  const dlg = quest.dialogue;
+  if (!dlg || typeof dlg !== "object") return "";
+  const stages = ["take", "going", "finish"].filter(
+    (k) => Array.isArray(dlg[k]) && dlg[k].length,
+  );
+  if (!stages.length) return "";
+  return `
+    <div class="bear-quest-dialogue">
+      <div class="bear-quest-col-title">Dialogue</div>
+      <div class="bear-dialogue-stage-list">
+        ${stages
+          .map(
+            (stage) => `
+          <div class="bear-dialogue-stage">
+            <div class="bear-dialogue-stage-header" role="button" tabindex="0" aria-expanded="false">
+              <span class="bear-dialogue-stage-chevron">▶</span>
+              <span class="bear-dialogue-stage-label">${escHtml(DIALOGUE_STAGE_LABELS[stage] || stage)}</span>
+            </div>
+            <div class="bear-dialogue-stage-body">
+              ${dlg[stage].map((line) => `<p class="bear-dialogue-line">${escHtml(line)}</p>`).join("")}
+            </div>
+          </div>`,
+          )
+          .join("")}
+      </div>
+    </div>`;
+}
+
 function buildQuestCard(quest, index) {
   const num = quest.number ?? index + 1;
   const reqs = Array.isArray(quest.requirements) ? quest.requirements : [];
   const rewards = Array.isArray(quest.rewards) ? quest.rewards : [];
+  const hasDialogue = Array.isArray(quest.requirements) || quest.dialogue;
   return `
     <div class="bear-quest-card" id="quest-${num}">
       <div class="bear-quest-header" role="button" tabindex="0" aria-expanded="false">
@@ -93,6 +129,7 @@ function buildQuestCard(quest, index) {
             }
           </div>
         </div>
+        ${quest.dialogue ? buildQuestDialogue(quest) : ""}
       </div>
     </div>`;
 }
@@ -186,6 +223,18 @@ function buildAllBearsSection(bears, currentId) {
     </div>`;
 }
 
+function buildNoQuestDialog(bear) {
+  const lines = Array.isArray(bear.noquest_dialog) ? bear.noquest_dialog : [];
+  if (!lines.length) return "";
+  return `
+    <div class="bear-noquest-box">
+      <div class="bear-noquest-label">When you have no available quests, ${escHtml(bear.name || "this bear")} will say:</div>
+      <div class="bear-noquest-lines">
+        ${lines.map((line) => `<p class="bear-dialogue-line">${escHtml(line)}</p>`).join("")}
+      </div>
+    </div>`;
+}
+
 function buildCyclicNote(bear) {
   if (!bear.cyclic) return "";
   const len = Array.isArray(bear.quests) ? bear.quests.length : 0;
@@ -205,6 +254,7 @@ function buildPage(bear, allBears) {
         </div>
         ${buildInfobox(bear)}
       </div>
+      ${buildNoQuestDialog(bear)}
       <div class="bear-section">
         <div class="bear-section-heading"><span class="bear-section-deco"></span>${sectionTitle}<span class="bear-section-deco"></span></div>
         ${buildCyclicNote(bear)}
@@ -221,6 +271,23 @@ function bindQuestToggles(root) {
     const toggle = () => {
       const card = header.closest(".bear-quest-card");
       const open = card.classList.toggle("open");
+      header.setAttribute("aria-expanded", open ? "true" : "false");
+    };
+    header.addEventListener("click", toggle);
+    header.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        toggle();
+      }
+    });
+  });
+}
+
+function bindDialogueStageToggles(root) {
+  root.querySelectorAll(".bear-dialogue-stage-header").forEach((header) => {
+    const toggle = () => {
+      const stage = header.closest(".bear-dialogue-stage");
+      const open = stage.classList.toggle("open");
       header.setAttribute("aria-expanded", open ? "true" : "false");
     };
     header.addEventListener("click", toggle);
@@ -252,6 +319,7 @@ async function loadBearDetail() {
     document.title = `${bear.name} - The Majestic Bees Wiki`;
     root.innerHTML = buildPage(bear, bears);
     bindQuestToggles(root);
+    bindDialogueStageToggles(root);
   } catch {
     root.innerHTML =
       '<div class="bear-detail-error">Failed to load bear data.</div>';

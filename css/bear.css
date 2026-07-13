@@ -450,3 +450,97 @@
 .bear-cycle-note b {
   color: var(--gold);
 }
+
+.bear-noquest-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: rgba(30, 20, 0, 0.6);
+  border: 1px dashed rgba(232, 192, 64, 0.35);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-bottom: 32px;
+}
+
+.bear-noquest-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+}
+
+.bear-noquest-lines {
+  padding-left: 26px;
+}
+
+.bear-quest-dialogue {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(58, 40, 0, 0.5);
+}
+
+.bear-dialogue-stage-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bear-dialogue-stage {
+  background: rgba(20, 14, 0, 0.5);
+  border: 1px solid rgba(90, 62, 0, 0.4);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bear-dialogue-stage-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.bear-dialogue-stage-chevron {
+  font-size: 0.6rem;
+  color: var(--gold-dim);
+  transition: transform 0.18s ease;
+  flex-shrink: 0;
+}
+
+.bear-dialogue-stage.open .bear-dialogue-stage-chevron {
+  transform: rotate(90deg);
+}
+
+.bear-dialogue-stage-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.bear-dialogue-stage-body {
+  display: none;
+  padding: 4px 14px 12px 30px;
+}
+
+.bear-dialogue-stage.open .bear-dialogue-stage-body {
+  display: block;
+}
+
+.bear-dialogue-line {
+  margin: 0 0 6px;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--gold-soft);
+  font-style: italic;
+}
+
+.bear-dialogue-line:last-child {
+  margin-bottom: 0;
+}
