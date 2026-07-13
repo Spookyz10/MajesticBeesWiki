@@ -247,12 +247,12 @@ const DONATE_ITEMS = [
   { name: "Diamond Egg", points: 100 },
   { name: "Shiny Gold Egg", points: 100 },
   { name: "Shiny Diamond Egg", points: 200 },
-  { name: "Mythic Egg", points: 300 },
+  { name: "Mythic Egg", points: 600 },
   { name: "Shiny Egg", points: 300 },
   {
     name: "Shiny Mythic Egg",
     path: "images/items/Shiny Mythic Egg.png",
-    points: 600,
+    points: 1200,
   },
 
   { name: "Red Hive", path: "images/hive/skins/Red Skin.png", points: 2 },
@@ -608,6 +608,11 @@ const DONATE_ITEMS = [
     name: "Mushroom Field Sticker",
     path: "images/hive/stickers/Mushroom Field Sticker.png",
     points: 1,
+  },
+  {
+    name: "Frozen Clover Sticker",
+    path: "images/hive/stickers/Frozen Clover Sticker.png",
+    points: 10,
   },
 ];
 
