@@ -107,22 +107,22 @@ function buildChances(chances) {
     </div>`;
 }
 
-function buildDropRow(it) {
-  const amountDisplay = it.amount > 1 ? `×${it.amount}` : "×1";
-  return `
-    <tr>
-      <td class="sf-drop-item-cell">
-        <div class="sf-drop-item-wrap">
-          ${localImg(it.image, 32, it.item)}
-          <span>${it.item}</span>
-        </div>
-      </td>
-      <td class="sf-drop-amount">${amountDisplay}</td>
-      <td class="sf-drop-chance-cell">${formatChance(it.chance)}</td>
-    </tr>`;
+// Junta os itens de um field (já resolvidos pelo Python com own+All / white+All+coconut etc.)
+// e calcula a chance de cada um com base no weight relativo ao total daquele pool.
+function withComputedChances(items) {
+  const totalWeight = items.reduce(
+    (sum, it) => sum + (Number(it.weight) || 0),
+    0,
+  );
+  return items
+    .map((it) => ({
+      ...it,
+      chance: totalWeight > 0 ? (Number(it.weight) / totalWeight) * 100 : 0,
+    }))
+    .sort((a, b) => b.chance - a.chance);
 }
 
-function buildTierCard(tier) {
+function buildTierCard(tier, activeField) {
   const duration = STARFLOWER_DURATION[tier.name] || "Unknown duration";
 
   const availableFields = FIELD_ORDER.filter(
@@ -133,8 +133,9 @@ function buildTierCard(tier) {
     .map((field, i) => {
       const col = FIELD_COLORS[field] || {};
       const label = field.replace(" Field", "");
+      const isActive = activeField ? field === activeField : i === 0;
       return `<button
-      class="sf-field-tab${i === 0 ? " active" : ""}"
+      class="sf-field-tab${isActive ? " active" : ""}"
       data-field="${field}"
       style="--tab-color:${col.tab || "#c8a84e"};--tab-active-bg:${col.active || "rgba(58,40,0,0.4)"};--tab-border:${col.border || "rgba(58,40,0,0.5)"}"
     >${label}</button>`;
@@ -144,24 +145,22 @@ function buildTierCard(tier) {
   const tabPanels = availableFields
     .map((field, i) => {
       const col = FIELD_COLORS[field] || {};
-      const fieldItems = tier.drops[field] || [];
-      const allItems = tier.drops[`All Fields (${field})`] || [];
+      const items = withComputedChances(tier.drops[field] || []);
+      const isActive = activeField ? field === activeField : i === 0;
 
-      const taggedField = fieldItems.map((it) => ({ ...it, _source: "field" }));
-      const taggedAll = allItems.map((it) => ({ ...it, _source: "all" }));
-      const combined = [...taggedField, ...taggedAll].sort(
-        (a, b) => b.chance - a.chance,
-      );
-
-      const rows = combined
+      const rows = items
         .map((it) => {
           const sourceBadge =
-            it._source === "field"
+            it.source === "field"
               ? `<span class="sf-source-badge sf-source-badge--field">Field</span>`
               : `<span class="sf-source-badge sf-source-badge--all">All</span>`;
           const amountDisplay = it.amount > 1 ? `×${it.amount}` : "×1";
-          const { chance, boosted } = window.MajesticLootLuck.apply(it.chance);
-          const luckBadge = window.MajesticLootLuck.badge(boosted);
+          const ll = window.MajesticLootLuck
+            ? window.MajesticLootLuck.apply(it.chance)
+            : { chance: it.chance, boosted: false };
+          const badge = window.MajesticLootLuck
+            ? window.MajesticLootLuck.badge(ll.boosted)
+            : "";
           return `
         <tr>
           <td class="sf-drop-item-cell">
@@ -172,14 +171,14 @@ function buildTierCard(tier) {
             </div>
           </td>
           <td class="sf-drop-amount">${amountDisplay}</td>
-          <td class="sf-drop-chance-cell">${window.MajesticLootLuck.formatChance(chance)}${luckBadge}</td>
+          <td class="sf-drop-chance-cell">${badge}${formatChance(ll.chance)}</td>
         </tr>`;
         })
         .join("");
 
       return `
       <div
-        class="sf-field-panel${i === 0 ? " active" : ""}"
+        class="sf-field-panel${isActive ? " active" : ""}"
         data-field="${field}"
         style="--panel-tbody:${col.tbody || "rgba(58,40,0,0.12)"};--panel-border:${col.border || "rgba(58,40,0,0.3)"}"
       >
@@ -205,9 +204,13 @@ function buildTierCard(tier) {
         </div>
         <div class="sf-tier-meta">
           <div class="sf-tier-name" style="color:${tier.color}">${sfRarityIconTag(tier.name)}${tier.name} Starflower</div>
-          <div class="sf-tier-health">
-            <span class="sf-health-val" style="color:${tier.color}">${tier.healthLabel} pollen to destroy</span>
-          </div>
+          ${
+            tier.healthLabel
+              ? `<div class="sf-tier-health">
+                  <span class="sf-health-val" style="color:${tier.color}">${tier.healthLabel} pollen to destroy</span>
+                </div>`
+              : ""
+          }
           <div class="sf-tier-duration">
             <span class="sf-duration-val" style="color:${tier.color}">Lasts ${duration}</span>
           </div>
@@ -221,8 +224,10 @@ function buildTierCard(tier) {
     </div>`;
 }
 
-function buildTiers(tiers) {
-  const cards = tiers.map(buildTierCard).join("");
+function buildTiers(tiers, activeFields) {
+  const cards = tiers
+    .map((t) => buildTierCard(t, activeFields && activeFields[t.name]))
+    .join("");
   return `
     <div class="sf-section">
       <div class="sf-section-heading">Tiers and Drops</div>
@@ -250,11 +255,26 @@ document.addEventListener("click", (e) => {
 
 let sfData = null;
 
+function currentActiveFields() {
+  const map = {};
+  document.querySelectorAll(".sf-tier-card").forEach((card) => {
+    const nameEl = card.querySelector(".sf-tier-name");
+    const activeTab = card.querySelector(".sf-field-tab.active");
+    if (nameEl && activeTab) {
+      map[nameEl.textContent.replace(/ Starflower$/, "").trim()] =
+        activeTab.dataset.field;
+    }
+  });
+  return map;
+}
+
 function renderStarflowers() {
   const root = document.getElementById("sf-root");
   if (!root || !sfData) return;
+  const activeFields = currentActiveFields();
   root.className = "sf-root";
-  root.innerHTML = buildChances(sfData.chances) + buildTiers(sfData.tiers);
+  root.innerHTML =
+    buildChances(sfData.chances) + buildTiers(sfData.tiers, activeFields);
 }
 
 async function loadStarflowers() {
