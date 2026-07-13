@@ -44,6 +44,45 @@
   background: rgba(255, 255, 255, 0.04);
 }
 
+.bee-detail-rarity.bee-limited {
+  position: relative;
+  isolation: isolate;
+  border-color: transparent;
+  background: transparent;
+  color: transparent;
+  background-image: var(--r-limited);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.bee-detail-rarity.bee-limited::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: rgba(180, 160, 240, 0.08);
+}
+
+.bee-detail-rarity.bee-limited::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  padding: 1px;
+  background: var(--r-limited);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  pointer-events: none;
+}
+
 .bee-detail-desc {
   color: var(--gold-soft);
   line-height: 1.85;

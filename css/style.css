@@ -696,16 +696,61 @@ h1.page-header__title,
   border: 1px solid var(--r-special-bd);
   background: var(--r-special-bg);
 }
-.bee-limited {
-  border: 1px solid var(--r-limited-bd);
-  background: var(--r-limited-bg);
-  background-clip: padding-box;
+/* precisa existir só uma vez no CSS global do site — se já tiver no hive.css, não duplica */
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
 }
+
+@keyframes border-flow {
+  to {
+    --angle: 360deg;
+  }
+}
+
 .bee-limited {
+  position: relative;
+  isolation: isolate;
+  border: 1px solid transparent;
+  background: transparent;
   color: transparent;
   background-image: var(--r-limited);
   -webkit-background-clip: text;
   background-clip: text;
+  overflow: visible;
+}
+
+.bee-limited::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: rgba(180, 160, 240, 0.08);
+}
+
+.bee-limited::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  padding: 1px;
+  background: conic-gradient(
+    from var(--angle),
+    #5ec8ff,
+    #7d7cff,
+    #b06cff,
+    #e38bff
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  animation: border-flow 2s linear infinite;
 }
 
 .bee-tab-buttons {
