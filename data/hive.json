@@ -244,7 +244,7 @@
       ],
       "extraChances": [
         {
-          "label": "0.1% from Wheel",
+          "label": "0.008% from Wheel",
           "type": "wheel"
         }
       ]
