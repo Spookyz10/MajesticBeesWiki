@@ -1715,6 +1715,22 @@
         "inPool": 11.4903,
         "perFlower": 104436
       }
+    },
+    {
+      "name": "Frozen Clover Sticker",
+      "image": "images/hive/stickers/Frozen Clover Sticker.png",
+      "rarity": "Exclusive",
+      "category": "Quest",
+      "order": 10001,
+      "donatePoints": 10,
+      "desc": "Obtained from Polar Bear's Final Quest!",
+      "buffs": [
+        {
+          "stat": "Loot Luck",
+          "type": "Mult",
+          "value": 1.1
+        }
+      ]
     }
   ]
 }

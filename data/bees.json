@@ -25,7 +25,7 @@
         "weight": 9,
         "chance": 50.0,
         "expires": 15,
-        "desc": "Grants Blue Pollen Boost that gives +15% Blue Pollen for 60 Seconds and Stacks up to 10."
+        "desc": "Grants +15% Blue Pollen for 60s.\nStacks up to 10 times."
       },
       {
         "token": "Blue Bomb",
@@ -33,7 +33,7 @@
         "weight": 9,
         "chance": 50.0,
         "expires": 15,
-        "desc": "Explodes 21 Tile with a power of 7 and gathers 4 Pollen , Doubles Blue Pollen."
+        "desc": "Gathers 4 Pollen from 21 flowers with a power of 7.\nAdditionally, it gathers x2 Pollen from Blue Flowers and grants up to 35 stacks of Bomb Combo Boost."
       }
     ]
   },
@@ -84,7 +84,7 @@
         "weight": 9,
         "chance": 50.0,
         "expires": 15,
-        "desc": "Explodes 21 Tile with a power of 7 and gathers 6 Pollen , Also grants Bomb Combo Boost."
+        "desc": "Gathers 6 Pollen from 21 flowers with a power of 7.\nAdditionally, grants up to 35 stacks of Bomb Combo Boost."
       },
       {
         "token": "Bomb+",
@@ -92,7 +92,7 @@
         "weight": 9,
         "chance": 50.0,
         "expires": 15,
-        "desc": "Explodes 37 Tile with a power of 7 and gathers 6 Pollen , Also grants Bomb Combo Boost."
+        "desc": "Gathers 6 Pollen from 21 flowers with a power of 7.\nAdditionally, grants up to 35 stacks of Bomb Combo Boost."
       }
     ]
   },
@@ -122,7 +122,7 @@
         "weight": 8,
         "chance": 47.06,
         "expires": 15,
-        "desc": "Create 2 + (1 Per 5 Levels) Clouds (Lasts for 10s + 1 Per Level) that Regenerates Flowers For 30s and collect some flowers on the field (doubles white pollen)."
+        "desc": "Creates 2 Clouds (+1 every 5 Levels) for 10s (+1 every Level) that regenerate flowers and gather Pollen.\nAdditionally, they gather x1.5 Pollen from White Flowers."
       },
       {
         "token": "Cloud Boost",
@@ -130,7 +130,7 @@
         "weight": 9,
         "chance": 52.94,
         "expires": 12,
-        "desc": "Grants Cloud Boost that gives +4% Cloud Pollen , +2% White Pollen and 2% Capacity Bonus for 60s , stacks upto 50x."
+        "desc": "Grants +4% Cloud Pollen, +2% White Pollen, and 4% Capacity Bonus for 60s.\nStacks up to 35 times."
       }
     ]
   },
@@ -160,7 +160,7 @@
         "weight": 12,
         "chance": 60.0,
         "expires": 15,
-        "desc": "Grants Red Pollen Boost that gives +15% Red Pollen for 60 Seconds and Stacks up to 10."
+        "desc": "Grants +15% Red Pollen for 60s.\nStacks up to 10 times."
       },
       {
         "token": "Coal Boost",
@@ -168,7 +168,7 @@
         "weight": 8,
         "chance": 40.0,
         "expires": 15,
-        "desc": "Grants Coal Boost that gives +2% Fire Pollen for 90 Seconds and Stacks up to 100."
+        "desc": "Grants +2% Fire Pollen for 90s.\nStacks up to 100 times."
       }
     ]
   },
@@ -198,7 +198,7 @@
         "weight": 12,
         "chance": 57.14,
         "expires": 15,
-        "desc": "Grants Blue Pollen Boost that gives +15% Blue Pollen for 60 Seconds and Stacks up to 10."
+        "desc": "Grants +15% Blue Pollen for 60s.\nStacks up to 10 times."
       },
       {
         "token": "Ice Bomb",
@@ -206,7 +206,7 @@
         "weight": 9,
         "chance": 42.86,
         "expires": 15,
-        "desc": "Explodes 9 Tile with a power of 3 and gathers 8 Pollen , Doubles Blue Pollen and Creates Ice Tiles Arround that lasts for 12 seconds."
+        "desc": "Gathers 8 Pollen from 9 flowers with a power of 3.\nAdditionally, it gathers x2 Pollen from Blue Flowers and covers flowers in Ice for 12s."
       }
     ]
   },
@@ -236,7 +236,7 @@
         "weight": 9,
         "chance": 50.0,
         "expires": 15,
-        "desc": "Grants Red Pollen Boost that gives +15% Red Pollen for 60 Seconds and Stacks up to 10."
+        "desc": "Grants +15% Red Pollen for 60s.\nStacks up to 10 times."
       },
       {
         "token": "Red Bomb",
@@ -244,7 +244,7 @@
         "weight": 9,
         "chance": 50.0,
         "expires": 15,
-        "desc": "Explodes 21 Tile with a power of 7 and gathers 4 Pollen , Doubles Red Pollen."
+        "desc": "Gathers 4 Pollen from 21 flowers with a power of 7.\nAdditionally, it gathers x2 Pollen from Red Flowers and grants up to 35 stacks of Bomb Combo Boost."
       }
     ]
   },
@@ -271,26 +271,26 @@
       {
         "token": "Exp Bomb",
         "level": 1,
-        "weight": 8,
+        "weight": 5,
         "chance": 33.33,
         "expires": 15,
-        "desc": "Explodes 21 Tile with a power of 7 and gathers 4 + (3 Per Bee's Level) Pollen."
+        "desc": "Gathers 4 Pollen (+3 every Level) from 21 flowers with a power of 7."
       },
       {
         "token": "Exp Orbs",
         "level": 8,
-        "weight": 8,
+        "weight": 5,
         "chance": 33.33,
         "expires": 15,
-        "desc": "Grants 1 + (1 Per 3 Levels) Exp Orbs that gives 100xp when used."
+        "desc": "Grants 1 Exp Orb (+1 every 3 Levels) that gives 100 XP when fed to a bee."
       },
       {
         "token": "Exp Boost",
         "level": 14,
-        "weight": 8,
+        "weight": 5,
         "chance": 33.33,
         "expires": 12,
-        "desc": "Grants Exp Boost that gives x1.15 Capacity Bonus & x1.05 Obsidian Pollen for 90 Seconds and Stacks up to 5."
+        "desc": "Grants x1.15 Capacity Bonus and x1.05 Obsidian Pollen for 90s.\nStacks up to 5 times."
       }
     ]
   },
@@ -320,7 +320,7 @@
         "weight": 12,
         "chance": 57.14,
         "expires": 15,
-        "desc": "Grants Red Pollen Boost that gives +15% Red Pollen for 60 Seconds and Stacks up to 10."
+        "desc": "Grants +15% Red Pollen for 60s.\nStacks up to 10 times."
       },
       {
         "token": "Fire Bomb",
@@ -328,7 +328,7 @@
         "weight": 9,
         "chance": 42.86,
         "expires": 15,
-        "desc": "Explodes 9 Tile with a power of 3 and gathers 8 Pollen , Doubles Red Pollen and Creates Fire Tiles Arround that lasts for 6 seconds."
+        "desc": "Gathers 8 Pollen from 9 flowers with a power of 3.\nAdditionally, it gathers x2 Pollen from Red Flowers and covers flowers in Fire for 6s."
       }
     ]
   },
@@ -358,7 +358,7 @@
         "weight": 8,
         "chance": 47.06,
         "expires": 15,
-        "desc": "Creates 2 + (1 Per 5 Levels) Fireworks , which collect 5 patches of flowers + creates fire that lasts for 6 seconds."
+        "desc": "Creates 2 Fireworks (+1 every 5 Levels), each one gathering from 5 flowers and covering them in Fire for 6s."
       },
       {
         "token": "Fire Bomb",
@@ -366,7 +366,7 @@
         "weight": 9,
         "chance": 52.94,
         "expires": 15,
-        "desc": "Explodes 9 Tile with a power of 3 and gathers 8 Pollen , Doubles Red Pollen and Creates Fire Tiles Arround that lasts for 6 seconds."
+        "desc": "Gathers 8 Pollen from 9 flowers with a power of 3.\nAdditionally, it gathers x2 Pollen from Red Flowers and covers flowers in Fire for 6s."
       }
     ]
   },
@@ -396,7 +396,7 @@
         "weight": 12,
         "chance": 100.0,
         "expires": 15,
-        "desc": "Grants White Pollen Boost that gives +15% White Pollen for 60 Seconds and Stacks up to 10."
+        "desc": "Grants +15% White Pollen for 60s.\nStacks up to 10 times."
       }
     ]
   },
@@ -426,7 +426,7 @@
         "weight": 12,
         "chance": 100.0,
         "expires": 15,
-        "desc": "Grants Haste Boost that gives +5% Movespeed for 60 Seconds and Stacks up to 10."
+        "desc": "Grants +5% Movespeed for 60s.\nStacks up to 10."
       }
     ]
   },
@@ -456,7 +456,7 @@
         "weight": 9,
         "chance": 100.0,
         "expires": 15,
-        "desc": "Converts 100 * (Total Conversion) * (Bee's Level) Pollen Into 5 Honey Tokens Arround You."
+        "desc": "Converts 100 * (Total Conversion) * (Bee's Level) Pollen into 5 Honey Tokens."
       }
     ]
   },
@@ -486,7 +486,7 @@
         "weight": 12,
         "chance": 50.0,
         "expires": 15,
-        "desc": "Grants Blue Pollen Boost that gives +15% Blue Pollen for 60 Seconds and Stacks up to 10."
+        "desc": "Grants +15% Blue Pollen for 60s.\nStacks up to 10 times."
       },
       {
         "token": "Ice Crystal",
@@ -494,7 +494,7 @@
         "weight": 12,
         "chance": 50.0,
         "expires": 15,
-        "desc": "Creates crystal which lasts for 8s + (1s per 3 levels) which randomly collects blue tokens and spawns ice for every blue token."
+        "desc": "Creates an Ice Crystal for 8s (+1 every 3 Levels) that collects Blue Tokens.\nAdditionally, it spreads Ice for each token it collects."
       }
     ]
   },
@@ -524,7 +524,7 @@
         "weight": 8,
         "chance": 47.06,
         "expires": 15,
-        "desc": "Creates 2 + (1 Per 5 Levels) Icicles , which collect 5 patches of flowers + creates Ice that lasts for 15 seconds."
+        "desc": "Creates 2 Icicles (+1 every 5 Levels), each one gathering from 5 flowers and covering them in Ice for 15s."
       },
       {
         "token": "Ice Bomb",
@@ -532,7 +532,7 @@
         "weight": 9,
         "chance": 52.94,
         "expires": 15,
-        "desc": "Explodes 9 Tile with a power of 3 and gathers 8 Pollen , Doubles Blue Pollen and Creates Ice Tiles Arround that lasts for 12 seconds."
+        "desc": "Gathers 8 Pollen from 9 flowers with a power of 3.\nAdditionally, it gathers x2 Pollen from Blue Flowers and covers flowers in Ice for 12s."
       }
     ]
   },
@@ -543,12 +543,12 @@
     "desc": "A mythical bee infused with the cunning spirit of the kitsune. It weaves through flowers with uncanny agility, tricking pollen into yielding more than it should, and rewards sharp, strategic hive management.",
     "color": "Colorless",
     "rarity": "Mythic",
-    "speed": 14.0,
+    "speed": 24.0,
     "attack": 4.0,
     "energy": 100.0,
     "gather": 60.0,
     "gatherTime": 3.0,
-    "convert": 4252.0,
+    "convert": 8345.0,
     "convertTime": 3.0,
     "shinyBonus": {
       "stat": "Obsidian Pollen",
@@ -562,7 +562,7 @@
         "weight": 10,
         "chance": 33.33,
         "expires": 20,
-        "desc": "Grants Blossom Boost that gives x1.03 Capacity Bonus , x1.03 Blossom Pollen , x1.03 Blossom Time for 45s. and stacks upto x25."
+        "desc": "Grants x1.02 White Pollen, x1.07 Blossom Pollen, and x1.04 Blossom Time for 45s.\nStacks up to 25 times."
       },
       {
         "token": "Blossom Bombs",
@@ -570,7 +570,7 @@
         "weight": 10,
         "chance": 33.33,
         "expires": 20,
-        "desc": "Triggers all bombs on field and get boosted by Blossom Pollen & Upgrades flowers in their radius for 15s * Blossom Time"
+        "desc": "Triggers all bombs on the field. The bombs get boosted by Blossom Pollen and upgrade flowers in their radius for 10s * Blossom Time."
       },
       {
         "token": "Blossom Rain",
@@ -578,7 +578,7 @@
         "weight": 10,
         "chance": 33.33,
         "expires": 20,
-        "desc": "Creates Rain of 8 + (1 Per 3 Levels) Blossom Leafs that upgrade flowers for 12s * Blossom Time and collects 25 * Blossom Pollen - Pollen."
+        "desc": "Creates a rain of 8 Blossom Leafs (+2 every 5 Levels), each one gathering 40 Pollen * Blossom Pollen and upgrade flowers for 10s * Blossom Time & covers flowers in obsidian for 11s."
       }
     ]
   },
@@ -608,7 +608,7 @@
         "weight": 9,
         "chance": 50.0,
         "expires": 15,
-        "desc": "Grants Lion Aura Boost that gives +25% Attack Bonus for 60 Seconds and Stacks up to 4."
+        "desc": "Grants +25% Attack Bonus for 60s.\nStacks up to 4 times."
       },
       {
         "token": "Lion Bite",
@@ -616,7 +616,7 @@
         "weight": 9,
         "chance": 50.0,
         "expires": 15,
-        "desc": "Attacks all mobs on field by 5 * (Bee's Level)."
+        "desc": "Attacks all mobs on the field for 5 damage * (Bee's Level)."
       }
     ]
   },
@@ -646,7 +646,7 @@
         "weight": 8,
         "chance": 12.31,
         "expires": 15,
-        "desc": "Grants 3 Leaf Clover Boost that gives +25% Pollen & +25% Loot Luck for 30 Seconds and Stacks up to 2."
+        "desc": "Grants +25% Pollen and +25% Loot Luck for 30s.\nStacks up to 2 times."
       },
       {
         "token": "4 Leaf Clover Boost",
@@ -654,7 +654,7 @@
         "weight": 40,
         "chance": 61.54,
         "expires": 12,
-        "desc": "Grants 4 Leaf Clover Boost that gives +100% Pollen & +100% Loot Luck & +100% Capacity Bonus for 30 Seconds (Spawns Insane Rare)."
+        "desc": "Grants +100% Pollen, +100% Loot Luck, and +100% Capacity Bonus for 30s.\n(Very Rare)."
       },
       {
         "token": "Pot O Gold",
@@ -662,7 +662,7 @@
         "weight": 17,
         "chance": 26.15,
         "expires": 12,
-        "desc": "Summons a Pot O' Gold that fills with pollen over 14 + (1s per 5 lvls) seconds. Once the time is up, everything collected inside is instantly converted into x2 honey tokens!"
+        "desc": "Summons a Pot O' Gold that fills with the Pollen gathered near it by your Tool for 14s (+1 every 5 Levels). Once the time is up, the Pollen inside is converted into x2 Honey Tokens!"
       }
     ]
   },
@@ -692,7 +692,7 @@
         "weight": 12,
         "chance": 50.0,
         "expires": 15,
-        "desc": "Grants Red Pollen Boost that gives +15% Red Pollen for 60 Seconds and Stacks up to 10."
+        "desc": "Grants +15% Red Pollen for 60s.\nStacks up to 10 times."
       },
       {
         "token": "Fire Crystal",
@@ -700,7 +700,7 @@
         "weight": 12,
         "chance": 50.0,
         "expires": 15,
-        "desc": "Creates crystal which lasts for 8s + (1s per 3 levels) which randomly collects red tokens and spawns powerful fire for every red token."
+        "desc": "Creates a Fire Crystal for 8s (+1 every 3 Levels) that collects Red Tokens.\nAdditionally, it spreads Fire for each token it collects."
       }
     ]
   },
@@ -730,7 +730,7 @@
         "weight": 10,
         "chance": 100.0,
         "expires": 15,
-        "desc": "Creates magnet that fly up and suck tokens on radius 20x20 that lasts for 9s."
+        "desc": "Creates a Magnet that collects tokens in a 20x20 radius"
       }
     ]
   },
@@ -760,7 +760,7 @@
         "weight": 9,
         "chance": 50.0,
         "expires": 15,
-        "desc": "Explodes 37 Tile with a power of 7 and gathers 6 Pollen , Also grants Bomb Combo Boost."
+        "desc": "Gathers 6 Pollen from 21 flowers with a power of 7.\nAdditionally, grants up to 35 stacks of Bomb Combo Boost."
       },
       {
         "token": "Prism Beam",
@@ -768,7 +768,7 @@
         "weight": 9,
         "chance": 50.0,
         "expires": 15,
-        "desc": "Creates 3 + (1 Per 3 Levels) Prism Beans that Collect 500 Pollen."
+        "desc": "Creates 3 Prism Beams (+1 Every 3 Levels), each one gathering 500 Pollen."
       }
     ]
   },
@@ -798,7 +798,7 @@
         "weight": 8,
         "chance": 47.06,
         "expires": 15,
-        "desc": "Grants Oil Boost that gives +0.1% Fire Pollen Forever and Stacks up to 5000."
+        "desc": "Grants +0.1% Fire Pollen permanently.\nCan stack up to 5000 times."
       },
       {
         "token": "Fire Bomb",
@@ -806,7 +806,7 @@
         "weight": 9,
         "chance": 52.94,
         "expires": 12,
-        "desc": "Explodes 9 Tile with a power of 3 and gathers 8 Pollen , Doubles Red Pollen and Creates Fire Tiles Arround that lasts for 6 seconds."
+        "desc": "Gathers 8 Pollen from 9 flowers with a power of 3.\nAdditionally, it gathers x2 Pollen from Red Flowers and covers flowers in Fire for 6s."
       }
     ]
   },
@@ -817,7 +817,7 @@
     "desc": "A fearsome bee possessed by an oni's restless spirit. It tears through fields with relentless aggression, smashing through pollen caps that would slow ordinary bees, built for players who want raw, unforgiving power.",
     "color": "Red",
     "rarity": "Mythic",
-    "speed": 15.5,
+    "speed": 24.0,
     "attack": 6.0,
     "energy": 80.0,
     "gather": 50.0,
@@ -833,26 +833,26 @@
       {
         "token": "Soul Fire Boost",
         "level": 4,
-        "weight": 10,
-        "chance": 38.46,
+        "weight": 6,
+        "chance": 35.29,
         "expires": 20,
-        "desc": "Grants Soul Fire Boost that gives 10% Critical Power, 1% Critical Chance and x1.03 Fire Pollen for 45s. stacks upto x25."
+        "desc": "Grants 5% Critical Power, 0.5% Critical Chance, and x1.03 Fire Pollen for 45s.\nStacks up to 25 times."
       },
       {
         "token": "Soul Flames",
         "level": 10,
-        "weight": 10,
-        "chance": 38.46,
+        "weight": 6,
+        "chance": 35.29,
         "expires": 20,
-        "desc": "Cover 9 Patches into Soul Fire that lasts 12s + (1 Per Bee's Level) and collects x6 more than normal fire and grants Soul Fire Combo."
+        "desc": "Spread Soul Fire to 9 flowers that lasts for 12s (+1 every Level).\nAdditionally, Soul Fire gathers x3 more than Fire and grants Soul Fire Combo."
       },
       {
         "token": "Soul Conversion",
         "level": 18,
-        "weight": 6,
-        "chance": 23.08,
+        "weight": 5,
+        "chance": 29.41,
         "expires": 20,
-        "desc": "Instantly make fire & soul fire convert pollen into honey ( 500 * Total Conversion * Fire Pollen) for 7s every 1s."
+        "desc": "Makes Fire and Soul Fire convert ( 15 * Total Conversion * (Fire Pollen / 27) ) Pollen into Honey every second for 7s."
       }
     ]
   },
@@ -882,7 +882,7 @@
         "weight": 9,
         "chance": 100.0,
         "expires": 12,
-        "desc": "Grants Pixel Boost that gives x1.2 Pollen and x1.2 Capacity Bonus for 60 Seconds."
+        "desc": "Grants x1.2 Pollen and x1.2 Capacity Bonus for 60s."
       }
     ]
   },
@@ -912,7 +912,7 @@
         "weight": 8,
         "chance": 47.06,
         "expires": 15,
-        "desc": "Grants Rage Boost that gives +1 Bee Attack for 60 Seconds and Stacks up to 3."
+        "desc": "Grants +1 Bee Attack for 60s.\nStacks up to 3 times."
       },
       {
         "token": "Bomb",
@@ -920,7 +920,7 @@
         "weight": 9,
         "chance": 52.94,
         "expires": 15,
-        "desc": "Explodes 21 Tile with a power of 7 and gathers 6 Pollen , Also grants Bomb Combo Boost."
+        "desc": "Gathers 6 Pollen from 21 flowers with a power of 7.\nAdditionally, grants up to 35 stacks of Bomb Combo Boost."
       }
     ]
   },
@@ -931,7 +931,7 @@
     "desc": "A legendary bee channeling the might of the ryujin. It commands the hive with draconic authority, surging pollen production in powerful bursts and overwhelming rivals with sheer dominance.",
     "color": "Blue",
     "rarity": "Mythic",
-    "speed": 12.0,
+    "speed": 24.0,
     "attack": 2.0,
     "energy": 140.0,
     "gather": 75.0,
@@ -940,8 +940,8 @@
     "convertTime": 3.0,
     "shinyBonus": {
       "stat": "Blue Pollen",
-      "type": "Perc",
-      "value": 20.0
+      "type": "Mult",
+      "value": 1.25
     },
     "tokens": [
       {
@@ -950,7 +950,7 @@
         "weight": 10,
         "chance": 33.33,
         "expires": 20,
-        "desc": "Creates Bubble that have ( (1/10 of player's capacity * (1 + Bee's Level / 10) ) * Bubble Capacity) and lasts for 60s * Bubble Time. When time expires bubble pops giving player Bubble Combo and honey."
+        "desc": "Creates 1 + (1 Per 5 Levels) Bubbles that has ( (1/14 of player's capacity * (1 + Bee's Level / 10) ) * Bubble Capacity) and lasts for 10s * Bubble Time. When expiring, they pop, giving Bubble Combo and x2 Honey."
       },
       {
         "token": "Bubble Boost",
@@ -958,7 +958,7 @@
         "weight": 10,
         "chance": 33.33,
         "expires": 20,
-        "desc": "Grants Bubble Boost that gives x1.05 Blue Pollen , x1.03 Bubble Capacity , x1.03 Bubble Time for 45s. and stacks upto x25."
+        "desc": "Grants x1.015 Blue Pollen, x1.02 Bubble Pollen, and 1.5% Bubble Time for 90s.\nStacks up to 100 times."
       },
       {
         "token": "Bubble Soap",
@@ -966,7 +966,7 @@
         "weight": 10,
         "chance": 33.33,
         "expires": 20,
-        "desc": "Increase all active bubbles' capacity by 10% and pollen by 10%."
+        "desc": "Increases all active bubbles' Capacity by 4% and Pollen by 10%."
       }
     ]
   },
@@ -996,7 +996,7 @@
         "weight": 10,
         "chance": 100.0,
         "expires": 15,
-        "desc": "Grants Science Boost that gives 10% Energy Bonus for 60s. Stacks upto 10x."
+        "desc": "Grants 10% Energy Bonus for 60s.\nStacks up to 10 times."
       }
     ]
   },
@@ -1026,7 +1026,7 @@
         "weight": 9,
         "chance": 50.0,
         "expires": 15,
-        "desc": "Attacks all mobs on field by 25 * (Bee's Level)."
+        "desc": "Attacks all mobs on the field for 25 damage * (Bee's Level)."
       },
       {
         "token": "Shark Waves",
@@ -1034,7 +1034,7 @@
         "weight": 9,
         "chance": 50.0,
         "expires": 15,
-        "desc": "Creates 2 + (1 Per 5 Levels) Waves Arround Token That Collects 21 Flower Patches and collect 12 Pollen every 0.3s for 5s and Collect All Tokens on its way."
+        "desc": "Creates 2 Waves (+1 every 5 Levels) around the token, each one gathering 12 Pollen from 21 flowers every 0.3s for 5s.\nAdditionally, they collect all tokens in their path."
       }
     ]
   },
@@ -1062,22 +1062,25 @@
         "token": "Sound Boost",
         "level": 1,
         "weight": 9,
+        "chance": 32.14,
         "expires": 15,
-        "desc": "Grants Sound Boost that gives +5% Capacity for 30 Seconds and Stacks up to 10."
+        "desc": "Grants +5% Capacity for 30s.\nStacks up to 10 times."
       },
       {
         "token": "Bomb+",
         "level": 7,
         "weight": 10,
+        "chance": 35.71,
         "expires": 15,
-        "desc": "Explodes 37 Tile with a power of 7 and gathers 6 Pollen , Also grants Bomb Combo Boost."
+        "desc": "Gathers 6 Pollen from 21 flowers with a power of 7.\nAdditionally, grants up to 35 stacks of Bomb Combo Boost."
       },
       {
         "token": "Music Boost",
         "level": 15,
         "weight": 9,
+        "chance": 32.14,
         "expires": 15,
-        "desc": "Grants Music Boost that gives +2% Critical Chance & 10% Critical Power for 45 Seconds and Stacks up to 5.."
+        "desc": "Grants +2% Critical Chance and 5% Critical Power for 45s.\nStacks up to 5 times."
       }
     ]
   },
@@ -1107,7 +1110,7 @@
         "weight": 9,
         "chance": 50.0,
         "expires": 15,
-        "desc": "For 5s + (1 per Level) 1 token [Solar Boost] spawns in field every 1s. That grants +10% Solar Pollen and stacks upto 100."
+        "desc": "Spawns 1 Solar Boost token in the field every second for 5s (+1 every Level). Each stack grants +10% Solar Pollen, and every 5 stacks grants x1.01 Pollen. Stacks up to 100 times."
       },
       {
         "token": "Sun Beam",
@@ -1115,7 +1118,7 @@
         "weight": 9,
         "chance": 50.0,
         "expires": 15,
-        "desc": "Creates 2 + (1 Per 3 Levels) Sun Beams that Collects 30 Pollen from 21 Tiles and multiples by Solar Pollen."
+        "desc": "Creates 2 Sun Beams (+1 every 3 Levels), each one gathers 30 Pollen (Multiplied by Solar Pollen) from 21 flowers."
       }
     ]
   },
@@ -1145,7 +1148,7 @@
         "weight": 8,
         "chance": 47.06,
         "expires": 15,
-        "desc": "Grants Thunder Boost that gives +0.1% Cloud Pollen Forever and Stacks up to 5000."
+        "desc": "Grants +0.1% Cloud Pollen permanently.\nCan stack up to 5000 times."
       },
       {
         "token": "Bomb+",
@@ -1153,7 +1156,7 @@
         "weight": 9,
         "chance": 52.94,
         "expires": 12,
-        "desc": "Explodes 37 Tile with a power of 7 and gathers 6 Pollen , Also grants Bomb Combo Boost."
+        "desc": "Gathers 6 Pollen from 21 flowers with a power of 7.\nAdditionally, grants up to 35 stacks of Bomb Combo Boost."
       }
     ]
   },
@@ -1183,7 +1186,7 @@
         "weight": 12,
         "chance": 60.0,
         "expires": 15,
-        "desc": "Grants Blue Pollen Boost that gives +15% Blue Pollen for 60 Seconds and Stacks up to 10."
+        "desc": "Grants +15% Blue Pollen for 60s.\nStacks up to 10 times."
       },
       {
         "token": "Water Boost",
@@ -1191,7 +1194,7 @@
         "weight": 8,
         "chance": 40.0,
         "expires": 15,
-        "desc": "Grants Water Boost that gives +2% Ice Pollen for 90 Seconds and Stacks up to 100."
+        "desc": "Grants +2% Ice Pollen for 90s.\nStacks up to 100 times."
       }
     ]
   },
@@ -1219,15 +1222,17 @@
         "token": "Wave Boost",
         "level": 1,
         "weight": 8,
+        "chance": 47.06,
         "expires": 15,
-        "desc": "Grants Wave Boost that gives +0.1% Ice Pollen Forever and Stacks up to 5000."
+        "desc": "Grants +0.1% Ice Pollen permanently.\nCan stack up to 5000 times."
       },
       {
         "token": "Ice Bomb",
         "level": 9,
         "weight": 9,
+        "chance": 52.94,
         "expires": 12,
-        "desc": "Explodes 9 Tile with a power of 3 and gathers 8 Pollen , Doubles Blue Pollen and Creates Ice Tiles Arround that lasts for 12 seconds."
+        "desc": "Gathers 8 Pollen from 9 flowers with a power of 3.\nAdditionally, it gathers x2 Pollen from Blue Flowers and covers flowers in Ice for 12s."
       }
     ]
   },
@@ -1257,7 +1262,7 @@
         "weight": 12,
         "chance": 50.0,
         "expires": 15,
-        "desc": "Grants White Pollen Boost that gives +15% White Pollen for 60 Seconds and Stacks up to 10."
+        "desc": "Grants +15% White Pollen for 60s.\nStacks up to 10 times."
       },
       {
         "token": "Windy Crystal",
@@ -1265,7 +1270,7 @@
         "weight": 12,
         "chance": 50.0,
         "expires": 15,
-        "desc": "Creates crystal which lasts for 8s + (1s per 3 levels) which randomly collects white tokens and spawns 2 clouds for every white token."
+        "desc": "Creates a Windy Crystal for 8s (+1 every 3 Levels) that collects White Tokens.\nAdditionally, it creates 2 Clouds for each token it collects."
       }
     ]
   }

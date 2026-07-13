@@ -176,39 +176,39 @@
 }
 
 .item-rarity-tag--Common {
-  background: rgba(232, 192, 64, 0.1);
-  border-color: rgba(232, 192, 64, 0.28);
-  color: var(--gold-soft);
+  background: var(--r-common-bg);
+  border-color: var(--r-common-bd);
+  color: var(--r-common);
 }
-
 .item-rarity-tag--Rare {
-  background: rgba(100, 181, 246, 0.1);
-  border-color: rgba(100, 181, 246, 0.3);
-  color: #82c8f0;
+  background: var(--r-rare-bg);
+  border-color: var(--r-rare-bd);
+  color: var(--r-rare);
 }
-
 .item-rarity-tag--Epic {
-  background: rgba(206, 147, 216, 0.1);
-  border-color: rgba(206, 147, 216, 0.3);
-  color: #ce93d8;
+  background: var(--r-epic-bg);
+  border-color: var(--r-epic-bd);
+  color: var(--r-epic);
 }
-
 .item-rarity-tag--Legendary {
-  background: rgba(255, 200, 40, 0.12);
-  border-color: rgba(255, 200, 40, 0.4);
-  color: #ffc828;
+  background: var(--r-legendary-bg);
+  border-color: var(--r-legendary-bd);
+  color: var(--r-legendary);
 }
-
 .item-rarity-tag--Mythic {
-  background: rgba(255, 100, 100, 0.12);
-  border-color: rgba(255, 100, 100, 0.38);
-  color: #ff7070;
+  background: var(--r-mythic-bg);
+  border-color: var(--r-mythic-bd);
+  color: var(--r-mythic);
 }
-
 .item-rarity-tag--Special {
-  background: rgba(41, 255, 130, 0.1);
-  border-color: rgba(41, 255, 130, 0.35);
-  color: #29ff82;
+  background: var(--r-special-bg);
+  border-color: var(--r-special-bd);
+  color: var(--r-special);
+}
+.item-rarity-tag--Limited {
+  background: var(--r-limited-bg);
+  border-color: var(--r-limited-bd);
+  color: var(--r-legendary);
 }
 
 .item-category-tag {

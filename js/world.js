@@ -241,7 +241,6 @@ function itemImagePath(it) {
 }
 
 const DONATE_ITEMS = [
-  // Eggs
   { name: "Silver Egg", points: 25 },
   { name: "Gold Egg", points: 50 },
   { name: "Shiny Silver Egg", points: 50 },
@@ -256,7 +255,6 @@ const DONATE_ITEMS = [
     points: 600,
   },
 
-  // Hive Skins
   { name: "Red Hive", path: "images/hive/skins/Red Skin.png", points: 2 },
   { name: "Blue Hive", path: "images/hive/skins/Blue Skin.png", points: 2 },
   { name: "Green Hive", path: "images/hive/skins/Green Skin.png", points: 2 },
@@ -276,7 +274,6 @@ const DONATE_ITEMS = [
     points: 5,
   },
 
-  // Stickers
   {
     name: "Starflower Sticker",
     path: "images/hive/stickers/Starflower Sticker.png",

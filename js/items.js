@@ -261,7 +261,6 @@ function renderItems() {
   } else {
     empty.style.display = "none";
     list.innerHTML = filtered.map(buildItemCard).join("");
-    bindToggleClicks(list);
   }
 }
 
@@ -336,6 +335,10 @@ async function initItems() {
   }
 
   buildCategoryFilters();
+
+  const list = document.getElementById("items-list");
+  if (list) bindToggleClicks(list);
+
   renderItems();
 
   const searchEl = document.getElementById("item-search");
