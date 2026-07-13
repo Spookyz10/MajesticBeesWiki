@@ -56,28 +56,17 @@ function localImg(src, size, alt) {
   return `<img src="${src}" alt="${alt}" width="${size}" height="${size}" loading="lazy" onerror="this.style.opacity='0.25';" />`;
 }
 
-function buildChances(chances) {
-  const rows = chances
-    .map(
-      (c) => `
-    <tr>
-      <td>${c.tier}</td>
-      <td>${typeof c.approxPct === "number" || /^\d+(?:\.\d+)?$/.test(String(c.approxPct)) ? c.approxPct + "%" : String(c.approxPct)}</td>
-    </tr>`,
-    )
-    .join("");
-
-  return `
-    <div class="vine-section">
-      <div class="vine-section-heading">Spawn Chances</div>
-      <div class="vine-section-desc">
-        When any Vine is placed, the game rolls to decide which tier spawns.
-      </div>
-      <table class="vine-chances-table">
-        <thead><tr><th>Tier</th><th>Chance</th></tr></thead>
-        <tbody>${rows}</tbody>
-      </table>
-    </div>`;
+// Calcula a chance de cada item com base no weight, relativo ao total
+// de weight daquela lista (ou seja, dentro do field já resolvido).
+function withComputedChances(items) {
+  const totalWeight = items.reduce(
+    (sum, it) => sum + (Number(it.weight) || 0),
+    0,
+  );
+  return items.map((it) => ({
+    ...it,
+    chance: totalWeight > 0 ? (Number(it.weight) / totalWeight) * 100 : 0,
+  }));
 }
 
 function buildTierCard(tier, activeField) {
@@ -101,7 +90,7 @@ function buildTierCard(tier, activeField) {
   const tabPanels = availableFields
     .map((field, i) => {
       const col = FIELD_COLORS[field] || {};
-      const items = tier.drops[field] || [];
+      const items = withComputedChances(tier.drops[field] || []);
       const isActive = activeField ? field === activeField : i === 0;
 
       const rows = items
@@ -169,7 +158,6 @@ function buildTiers(tiers, activeFields) {
   return `
     <div class="vine-section">
       <div class="vine-section-heading">Tiers and Drops</div>
-     
       <div class="vine-tiers">${tiers
         .map((t) => buildTierCard(t, activeFields && activeFields[t.name]))
         .join("")}</div>
@@ -208,8 +196,7 @@ function renderVines(data) {
   if (!root) return;
   const activeFields = currentActiveFields();
   root.className = "vine-root";
-  root.innerHTML =
-    buildChances(data.chances) + buildTiers(data.tiers, activeFields);
+  root.innerHTML = buildTiers(data.tiers, activeFields);
 }
 
 document.addEventListener("majestic-loot-luck-change", () => {

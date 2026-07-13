@@ -3,31 +3,31 @@
     {
       "tier": "Basic",
       "weight": 800,
-      "approxPct": "68.8"
+      "approxPct": 68.85
     },
     {
       "tier": "Rare",
       "weight": 300,
-      "approxPct": "25.8"
+      "approxPct": 25.82
     },
     {
       "tier": "Epic",
       "weight": 50,
-      "approxPct": "4.3"
+      "approxPct": 4.3
     },
     {
       "tier": "Legendary",
       "weight": 10,
-      "approxPct": "0.86"
+      "approxPct": 0.86
     },
     {
       "tier": "Mythic",
       "weight": 2,
-      "approxPct": "0.17"
+      "approxPct": 0.17
     },
     {
       "tier": "Lunar",
-      "weight": 0,
+      "weight": null,
       "approxPct": "Unknown"
     }
   ],
@@ -35,2564 +35,3140 @@
     {
       "id": "basic",
       "name": "Basic",
-      "image": "images/items/Starflower.png",
+      "weight": 800,
       "health": 5000,
       "healthLabel": "5,000",
       "color": "#c4cdd4",
       "colorBg": "rgba(175,192,205,0.08)",
       "colorBorder": "rgba(180,196,208,0.26)",
+      "colorBgHeader": "rgba(175,192,205,0.14)",
+      "image": "images/items/Starflower.png",
       "drops": {
         "White Field": [
           {
             "item": "Pine Cone",
-            "chance": 23.360847,
+            "weight": 15,
             "amount": 1,
-            "image": "images/items/Pine Cone.png"
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
           },
           {
             "item": "Wind Essence",
-            "chance": 7.786949,
+            "weight": 5,
             "amount": 1,
-            "image": "images/items/Wind Essence.png"
-          }
-        ],
-        "All Fields (White Field)": [
-          {
-            "item": "Seed",
-            "chance": 23.360847,
-            "amount": 1,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
           },
           {
             "item": "Star Amulet",
-            "chance": 0.155739,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Star Amulet.png"
+            "image": "images/amulets/Star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 1,
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.015574,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 23.360847,
+            "weight": 15,
             "amount": 100,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
-            "chance": 15.573898,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 1.55739,
+            "weight": 1,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 4.672169,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 0.155739,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
           }
         ],
         "Blue Field": [
           {
             "item": "Blueberry",
-            "chance": 23.360847,
+            "weight": 15,
             "amount": 1,
-            "image": "images/items/Blueberry.png"
+            "image": "images/items/Blueberry.png",
+            "source": "field"
           },
           {
             "item": "Water Essence",
-            "chance": 7.786949,
+            "weight": 5,
             "amount": 1,
-            "image": "images/items/Water Essence.png"
-          }
-        ],
-        "All Fields (Blue Field)": [
-          {
-            "item": "Seed",
-            "chance": 23.360847,
-            "amount": 1,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Water Essence.png",
+            "source": "field"
           },
           {
             "item": "Star Amulet",
-            "chance": 0.155739,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Star Amulet.png"
+            "image": "images/amulets/Star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 1,
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.015574,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 23.360847,
+            "weight": 15,
             "amount": 100,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
-            "chance": 15.573898,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 1.55739,
+            "weight": 1,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 4.672169,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 0.155739,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
           }
         ],
         "Red Field": [
           {
             "item": "Strawberry",
-            "chance": 23.360847,
+            "weight": 15,
             "amount": 1,
-            "image": "images/items/Strawberry.png"
+            "image": "images/items/Strawberry.png",
+            "source": "field"
           },
           {
             "item": "Fire Essence",
-            "chance": 7.786949,
+            "weight": 5,
             "amount": 1,
-            "image": "images/items/Fire Essence.png"
-          }
-        ],
-        "All Fields (Red Field)": [
-          {
-            "item": "Seed",
-            "chance": 23.360847,
-            "amount": 1,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Fire Essence.png",
+            "source": "field"
           },
           {
             "item": "Star Amulet",
-            "chance": 0.155739,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Star Amulet.png"
+            "image": "images/amulets/Star Amulet.png",
+            "source": "all"
           },
-          {
-            "item": "Starflower Sticker",
-            "chance": 0.015574,
-            "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
-          },
-          {
-            "item": "Honey",
-            "chance": 23.360847,
-            "amount": 100,
-            "image": "images/currencies/Honey.png"
-          },
-          {
-            "item": "Treat",
-            "chance": 15.573898,
-            "amount": 1,
-            "image": "images/items/Treat.png"
-          },
-          {
-            "item": "Ticket",
-            "chance": 1.55739,
-            "amount": 1,
-            "image": "images/currencies/Ticket.png"
-          },
-          {
-            "item": "Bee Net",
-            "chance": 4.672169,
-            "amount": 1,
-            "image": "images/items/Bee Net.png"
-          },
-          {
-            "item": "Sticker Egg",
-            "chance": 0.155739,
-            "amount": 1,
-            "image": "images/items/Sticker Egg.png"
-          }
-        ],
-        "Bamboo Field": [
-          {
-            "item": "Bamboo",
-            "chance": 25.333559,
-            "amount": 1,
-            "image": "images/items/Bamboo.png"
-          }
-        ],
-        "All Fields (Bamboo Field)": [
           {
             "item": "Seed",
-            "chance": 25.333559,
+            "weight": 15,
             "amount": 1,
-            "image": "images/items/Seed.png"
-          },
-          {
-            "item": "Star Amulet",
-            "chance": 0.16889,
-            "amount": 1,
-            "image": "images/amulets/Star Amulet.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.016889,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 25.333559,
+            "weight": 15,
             "amount": 100,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
-            "chance": 16.889039,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 1.688904,
+            "weight": 1,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 5.066712,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 0.16889,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
           }
         ],
         "Coconut Field": [
           {
-            "item": "Coconut",
-            "chance": 25.333559,
+            "item": "Pine Cone",
+            "weight": 15,
             "amount": 1,
-            "image": "images/items/Coconut.png"
-          }
-        ],
-        "All Fields (Coconut Field)": [
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
+          },
           {
-            "item": "Seed",
-            "chance": 25.333559,
+            "item": "Wind Essence",
+            "weight": 5,
             "amount": 1,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
           },
           {
             "item": "Star Amulet",
-            "chance": 0.16889,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Star Amulet.png"
+            "image": "images/amulets/Star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 1,
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.016889,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 25.333559,
+            "weight": 15,
             "amount": 100,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
-            "chance": 16.889039,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 1.688904,
+            "weight": 1,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 5.066712,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 0.16889,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Coconut",
+            "weight": 15,
+            "amount": 1,
+            "image": "images/items/Coconut.png",
+            "source": "field"
+          }
+        ],
+        "Bamboo Field": [
+          {
+            "item": "Pine Cone",
+            "weight": 15,
+            "amount": 1,
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
+          },
+          {
+            "item": "Wind Essence",
+            "weight": 5,
+            "amount": 1,
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
+          },
+          {
+            "item": "Star Amulet",
+            "weight": 0.1,
+            "amount": 1,
+            "image": "images/amulets/Star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 1,
+            "image": "images/items/Seed.png",
+            "source": "all"
+          },
+          {
+            "item": "Starflower Sticker",
+            "weight": 0.01,
+            "amount": 1,
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
+          },
+          {
+            "item": "Honey",
+            "weight": 15,
+            "amount": 100,
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Treat",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Treat.png",
+            "source": "all"
+          },
+          {
+            "item": "Ticket",
+            "weight": 1,
+            "amount": 1,
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
+          },
+          {
+            "item": "Bee Net",
+            "weight": 3,
+            "amount": 1,
+            "image": "images/items/Bee Net.png",
+            "source": "all"
+          },
+          {
+            "item": "Sticker Egg",
+            "weight": 0.1,
+            "amount": 1,
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Bamboo",
+            "weight": 15,
+            "amount": 1,
+            "image": "images/items/Bamboo.png",
+            "source": "field"
           }
         ],
         "Lemon Field": [
           {
-            "item": "Lemon",
-            "chance": 25.333559,
+            "item": "Blueberry",
+            "weight": 15,
             "amount": 1,
-            "image": "images/items/Lemon.png"
-          }
-        ],
-        "All Fields (Lemon Field)": [
+            "image": "images/items/Blueberry.png",
+            "source": "field"
+          },
           {
-            "item": "Seed",
-            "chance": 25.333559,
+            "item": "Water Essence",
+            "weight": 5,
             "amount": 1,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Water Essence.png",
+            "source": "field"
           },
           {
             "item": "Star Amulet",
-            "chance": 0.16889,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Star Amulet.png"
+            "image": "images/amulets/Star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 1,
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.016889,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 25.333559,
+            "weight": 15,
             "amount": 100,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
-            "chance": 16.889039,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 1.688904,
+            "weight": 1,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 5.066712,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 0.16889,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Lemon",
+            "weight": 15,
+            "amount": 1,
+            "image": "images/items/Lemon.png",
+            "source": "field"
           }
         ]
-      },
-      "colorBgHeader": "rgba(175,192,205,0.14)"
+      }
     },
     {
       "id": "rare",
       "name": "Rare",
-      "image": "images/items/Rare Starflower.png",
+      "weight": 300,
       "health": 50000,
       "healthLabel": "50,000",
       "color": "#b8bec4",
       "colorBg": "rgba(155,165,172,0.08)",
       "colorBorder": "rgba(160,170,178,0.22)",
+      "colorBgHeader": "rgba(155,165,172,0.14)",
+      "image": "images/items/Rare Starflower.png",
       "drops": {
         "White Field": [
           {
             "item": "Pine Cone",
-            "chance": 19.917674,
+            "weight": 15,
             "amount": 2,
-            "image": "images/items/Pine Cone.png"
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
           },
           {
             "item": "Wind Essence",
-            "chance": 6.639225,
+            "weight": 5,
             "amount": 1,
-            "image": "images/items/Wind Essence.png"
-          }
-        ],
-        "All Fields (White Field)": [
-          {
-            "item": "Seed",
-            "chance": 19.917674,
-            "amount": 2,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
           },
           {
             "item": "Rare Star Amulet",
-            "chance": 0.132784,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Rare Star Amulet.png"
+            "image": "images/amulets/Rare Star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.013278,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 19.917674,
+            "weight": 15,
             "amount": 255,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
-            "chance": 13.278449,
+            "weight": 10,
             "amount": 3,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
-            "chance": 13.278449,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 2.65569,
+            "weight": 2,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 3.983535,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 0.265569,
+            "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
           }
         ],
         "Blue Field": [
           {
             "item": "Blueberry",
-            "chance": 19.917674,
+            "weight": 15,
             "amount": 2,
-            "image": "images/items/Blueberry.png"
+            "image": "images/items/Blueberry.png",
+            "source": "field"
           },
           {
             "item": "Water Essence",
-            "chance": 6.639225,
+            "weight": 5,
             "amount": 1,
-            "image": "images/items/Water Essence.png"
-          }
-        ],
-        "All Fields (Blue Field)": [
-          {
-            "item": "Seed",
-            "chance": 19.917674,
-            "amount": 2,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Water Essence.png",
+            "source": "field"
           },
           {
             "item": "Rare Star Amulet",
-            "chance": 0.132784,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Rare Star Amulet.png"
+            "image": "images/amulets/Rare Star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.013278,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 19.917674,
+            "weight": 15,
             "amount": 255,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
-            "chance": 13.278449,
+            "weight": 10,
             "amount": 3,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
-            "chance": 13.278449,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 2.65569,
+            "weight": 2,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 3.983535,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 0.265569,
+            "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
           }
         ],
         "Red Field": [
           {
             "item": "Strawberry",
-            "chance": 19.917674,
+            "weight": 15,
             "amount": 2,
-            "image": "images/items/Strawberry.png"
+            "image": "images/items/Strawberry.png",
+            "source": "field"
           },
           {
             "item": "Fire Essence",
-            "chance": 6.639225,
+            "weight": 5,
             "amount": 1,
-            "image": "images/items/Fire Essence.png"
-          }
-        ],
-        "All Fields (Red Field)": [
-          {
-            "item": "Seed",
-            "chance": 19.917674,
-            "amount": 2,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Fire Essence.png",
+            "source": "field"
           },
           {
             "item": "Rare Star Amulet",
-            "chance": 0.132784,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Rare Star Amulet.png"
+            "image": "images/amulets/Rare Star Amulet.png",
+            "source": "all"
           },
-          {
-            "item": "Starflower Sticker",
-            "chance": 0.013278,
-            "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
-          },
-          {
-            "item": "Honey",
-            "chance": 19.917674,
-            "amount": 255,
-            "image": "images/currencies/Honey.png"
-          },
-          {
-            "item": "Treat",
-            "chance": 13.278449,
-            "amount": 3,
-            "image": "images/items/Treat.png"
-          },
-          {
-            "item": "Royal Jelly",
-            "chance": 13.278449,
-            "amount": 1,
-            "image": "images/items/Royal Jelly.png"
-          },
-          {
-            "item": "Ticket",
-            "chance": 2.65569,
-            "amount": 1,
-            "image": "images/currencies/Ticket.png"
-          },
-          {
-            "item": "Bee Net",
-            "chance": 3.983535,
-            "amount": 1,
-            "image": "images/items/Bee Net.png"
-          },
-          {
-            "item": "Sticker Egg",
-            "chance": 0.265569,
-            "amount": 1,
-            "image": "images/items/Sticker Egg.png"
-          }
-        ],
-        "Bamboo Field": [
-          {
-            "item": "Bamboo",
-            "chance": 21.334092,
-            "amount": 1,
-            "image": "images/items/Bamboo.png"
-          }
-        ],
-        "All Fields (Bamboo Field)": [
           {
             "item": "Seed",
-            "chance": 21.334092,
+            "weight": 15,
             "amount": 2,
-            "image": "images/items/Seed.png"
-          },
-          {
-            "item": "Rare Star Amulet",
-            "chance": 0.142227,
-            "amount": 1,
-            "image": "images/amulets/Rare Star Amulet.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.014223,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 21.334092,
+            "weight": 15,
             "amount": 255,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
-            "chance": 14.222728,
+            "weight": 10,
             "amount": 3,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
-            "chance": 14.222728,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 2.844546,
+            "weight": 2,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 4.266818,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 0.284455,
+            "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
           }
         ],
         "Coconut Field": [
           {
-            "item": "Coconut",
-            "chance": 21.334092,
-            "amount": 1,
-            "image": "images/items/Coconut.png"
-          }
-        ],
-        "All Fields (Coconut Field)": [
-          {
-            "item": "Seed",
-            "chance": 21.334092,
+            "item": "Pine Cone",
+            "weight": 15,
             "amount": 2,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
+          },
+          {
+            "item": "Wind Essence",
+            "weight": 5,
+            "amount": 1,
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
           },
           {
             "item": "Rare Star Amulet",
-            "chance": 0.142227,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Rare Star Amulet.png"
+            "image": "images/amulets/Rare Star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.014223,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 21.334092,
+            "weight": 15,
             "amount": 255,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
-            "chance": 14.222728,
+            "weight": 10,
             "amount": 3,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
-            "chance": 14.222728,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 2.844546,
+            "weight": 2,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 4.266818,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 0.284455,
+            "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Coconut",
+            "weight": 15,
+            "amount": 1,
+            "image": "images/items/Coconut.png",
+            "source": "field"
+          }
+        ],
+        "Bamboo Field": [
+          {
+            "item": "Pine Cone",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
+          },
+          {
+            "item": "Wind Essence",
+            "weight": 5,
+            "amount": 1,
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
+          },
+          {
+            "item": "Rare Star Amulet",
+            "weight": 0.1,
+            "amount": 1,
+            "image": "images/amulets/Rare Star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Seed.png",
+            "source": "all"
+          },
+          {
+            "item": "Starflower Sticker",
+            "weight": 0.01,
+            "amount": 1,
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
+          },
+          {
+            "item": "Honey",
+            "weight": 15,
+            "amount": 255,
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Treat",
+            "weight": 10,
+            "amount": 3,
+            "image": "images/items/Treat.png",
+            "source": "all"
+          },
+          {
+            "item": "Royal Jelly",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
+          },
+          {
+            "item": "Ticket",
+            "weight": 2,
+            "amount": 1,
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
+          },
+          {
+            "item": "Bee Net",
+            "weight": 3,
+            "amount": 1,
+            "image": "images/items/Bee Net.png",
+            "source": "all"
+          },
+          {
+            "item": "Sticker Egg",
+            "weight": 0.2,
+            "amount": 1,
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Bamboo",
+            "weight": 15,
+            "amount": 1,
+            "image": "images/items/Bamboo.png",
+            "source": "field"
           }
         ],
         "Lemon Field": [
           {
-            "item": "Lemon",
-            "chance": 21.334092,
-            "amount": 1,
-            "image": "images/items/Lemon.png"
-          }
-        ],
-        "All Fields (Lemon Field)": [
-          {
-            "item": "Seed",
-            "chance": 21.334092,
+            "item": "Blueberry",
+            "weight": 15,
             "amount": 2,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Blueberry.png",
+            "source": "field"
+          },
+          {
+            "item": "Water Essence",
+            "weight": 5,
+            "amount": 1,
+            "image": "images/items/Water Essence.png",
+            "source": "field"
           },
           {
             "item": "Rare Star Amulet",
-            "chance": 0.142227,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Rare Star Amulet.png"
+            "image": "images/amulets/Rare Star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.014223,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 21.334092,
+            "weight": 15,
             "amount": 255,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
-            "chance": 14.222728,
+            "weight": 10,
             "amount": 3,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
-            "chance": 14.222728,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 2.844546,
+            "weight": 2,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 4.266818,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 0.284455,
+            "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Lemon",
+            "weight": 15,
+            "amount": 1,
+            "image": "images/items/Lemon.png",
+            "source": "field"
           }
         ]
-      },
-      "colorBgHeader": "rgba(155,165,172,0.14)"
+      }
     },
     {
       "id": "epic",
       "name": "Epic",
-      "image": "images/items/Epic Starflower.png",
+      "weight": 50,
       "health": 250000,
       "healthLabel": "250,000",
       "color": "#c9a84c",
       "colorBg": "rgba(175,135,45,0.08)",
       "colorBorder": "rgba(180,140,50,0.24)",
+      "colorBgHeader": "rgba(175,135,45,0.16)",
+      "image": "images/items/Epic Starflower.png",
       "drops": {
         "White Field": [
           {
             "item": "Pine Cone",
-            "chance": 17.379214,
+            "weight": 15,
             "amount": 2,
-            "image": "images/items/Pine Cone.png"
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
           },
           {
             "item": "Wind Essence",
-            "chance": 5.793071,
+            "weight": 5,
             "amount": 1,
-            "image": "images/items/Wind Essence.png"
-          }
-        ],
-        "All Fields (White Field)": [
-          {
-            "item": "Seed",
-            "chance": 17.379214,
-            "amount": 2,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
           },
           {
             "item": "Epic Star Amulet",
-            "chance": 0.115861,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Epic Star Amulet.png"
+            "image": "images/amulets/Epic Star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.011586,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 17.379214,
+            "weight": 15,
             "amount": 755,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
-            "chance": 11.586143,
+            "weight": 10,
             "amount": 6,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
-            "chance": 23.172286,
+            "weight": 20,
             "amount": 2,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 3.475843,
+            "weight": 3,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 3.475843,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 0.231723,
+            "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
           }
         ],
         "Blue Field": [
           {
             "item": "Blueberry",
-            "chance": 17.379214,
+            "weight": 15,
             "amount": 2,
-            "image": "images/items/Blueberry.png"
+            "image": "images/items/Blueberry.png",
+            "source": "field"
           },
           {
             "item": "Water Essence",
-            "chance": 5.793071,
+            "weight": 5,
             "amount": 1,
-            "image": "images/items/Water Essence.png"
-          }
-        ],
-        "All Fields (Blue Field)": [
-          {
-            "item": "Seed",
-            "chance": 17.379214,
-            "amount": 2,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Water Essence.png",
+            "source": "field"
           },
           {
             "item": "Epic Star Amulet",
-            "chance": 0.115861,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Epic Star Amulet.png"
+            "image": "images/amulets/Epic Star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.011586,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 17.379214,
+            "weight": 15,
             "amount": 755,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
-            "chance": 11.586143,
+            "weight": 10,
             "amount": 6,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
-            "chance": 23.172286,
+            "weight": 20,
             "amount": 2,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 3.475843,
+            "weight": 3,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 3.475843,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 0.231723,
+            "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
           }
         ],
         "Red Field": [
           {
             "item": "Strawberry",
-            "chance": 17.379214,
+            "weight": 15,
             "amount": 2,
-            "image": "images/items/Strawberry.png"
+            "image": "images/items/Strawberry.png",
+            "source": "field"
           },
           {
             "item": "Fire Essence",
-            "chance": 5.793071,
+            "weight": 5,
             "amount": 1,
-            "image": "images/items/Fire Essence.png"
-          }
-        ],
-        "All Fields (Red Field)": [
-          {
-            "item": "Seed",
-            "chance": 17.379214,
-            "amount": 2,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Fire Essence.png",
+            "source": "field"
           },
           {
             "item": "Epic Star Amulet",
-            "chance": 0.115861,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Epic Star Amulet.png"
+            "image": "images/amulets/Epic Star Amulet.png",
+            "source": "all"
           },
-          {
-            "item": "Starflower Sticker",
-            "chance": 0.011586,
-            "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
-          },
-          {
-            "item": "Honey",
-            "chance": 17.379214,
-            "amount": 755,
-            "image": "images/currencies/Honey.png"
-          },
-          {
-            "item": "Treat",
-            "chance": 11.586143,
-            "amount": 6,
-            "image": "images/items/Treat.png"
-          },
-          {
-            "item": "Royal Jelly",
-            "chance": 23.172286,
-            "amount": 2,
-            "image": "images/items/Royal Jelly.png"
-          },
-          {
-            "item": "Ticket",
-            "chance": 3.475843,
-            "amount": 1,
-            "image": "images/currencies/Ticket.png"
-          },
-          {
-            "item": "Bee Net",
-            "chance": 3.475843,
-            "amount": 1,
-            "image": "images/items/Bee Net.png"
-          },
-          {
-            "item": "Sticker Egg",
-            "chance": 0.231723,
-            "amount": 1,
-            "image": "images/items/Sticker Egg.png"
-          }
-        ],
-        "Bamboo Field": [
-          {
-            "item": "Bamboo",
-            "chance": 18.447915,
-            "amount": 2,
-            "image": "images/items/Bamboo.png"
-          }
-        ],
-        "All Fields (Bamboo Field)": [
           {
             "item": "Seed",
-            "chance": 18.447915,
+            "weight": 15,
             "amount": 2,
-            "image": "images/items/Seed.png"
-          },
-          {
-            "item": "Epic Star Amulet",
-            "chance": 0.122986,
-            "amount": 1,
-            "image": "images/amulets/Epic Star Amulet.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.012299,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 18.447915,
+            "weight": 15,
             "amount": 755,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
-            "chance": 12.29861,
+            "weight": 10,
             "amount": 6,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
-            "chance": 24.597221,
+            "weight": 20,
             "amount": 2,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 3.689583,
+            "weight": 3,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 3.689583,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 0.245972,
+            "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
           }
         ],
         "Coconut Field": [
           {
-            "item": "Coconut",
-            "chance": 18.447915,
+            "item": "Pine Cone",
+            "weight": 15,
             "amount": 2,
-            "image": "images/items/Coconut.png"
-          }
-        ],
-        "All Fields (Coconut Field)": [
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
+          },
           {
-            "item": "Seed",
-            "chance": 18.447915,
-            "amount": 2,
-            "image": "images/items/Seed.png"
+            "item": "Wind Essence",
+            "weight": 5,
+            "amount": 1,
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
           },
           {
             "item": "Epic Star Amulet",
-            "chance": 0.122986,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Epic Star Amulet.png"
+            "image": "images/amulets/Epic Star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.012299,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 18.447915,
+            "weight": 15,
             "amount": 755,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
-            "chance": 12.29861,
+            "weight": 10,
             "amount": 6,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
-            "chance": 24.597221,
+            "weight": 20,
             "amount": 2,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 3.689583,
+            "weight": 3,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 3.689583,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 0.245972,
+            "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Coconut",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Coconut.png",
+            "source": "field"
+          }
+        ],
+        "Bamboo Field": [
+          {
+            "item": "Pine Cone",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
+          },
+          {
+            "item": "Wind Essence",
+            "weight": 5,
+            "amount": 1,
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
+          },
+          {
+            "item": "Epic Star Amulet",
+            "weight": 0.1,
+            "amount": 1,
+            "image": "images/amulets/Epic Star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Seed.png",
+            "source": "all"
+          },
+          {
+            "item": "Starflower Sticker",
+            "weight": 0.01,
+            "amount": 1,
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
+          },
+          {
+            "item": "Honey",
+            "weight": 15,
+            "amount": 755,
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Treat",
+            "weight": 10,
+            "amount": 6,
+            "image": "images/items/Treat.png",
+            "source": "all"
+          },
+          {
+            "item": "Royal Jelly",
+            "weight": 20,
+            "amount": 2,
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
+          },
+          {
+            "item": "Ticket",
+            "weight": 3,
+            "amount": 1,
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
+          },
+          {
+            "item": "Bee Net",
+            "weight": 3,
+            "amount": 1,
+            "image": "images/items/Bee Net.png",
+            "source": "all"
+          },
+          {
+            "item": "Sticker Egg",
+            "weight": 0.2,
+            "amount": 1,
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Bamboo",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Bamboo.png",
+            "source": "field"
           }
         ],
         "Lemon Field": [
           {
-            "item": "Lemon",
-            "chance": 18.447915,
+            "item": "Blueberry",
+            "weight": 15,
             "amount": 2,
-            "image": "images/items/Lemon.png"
-          }
-        ],
-        "All Fields (Lemon Field)": [
+            "image": "images/items/Blueberry.png",
+            "source": "field"
+          },
           {
-            "item": "Seed",
-            "chance": 18.447915,
-            "amount": 2,
-            "image": "images/items/Seed.png"
+            "item": "Water Essence",
+            "weight": 5,
+            "amount": 1,
+            "image": "images/items/Water Essence.png",
+            "source": "field"
           },
           {
             "item": "Epic Star Amulet",
-            "chance": 0.122986,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Epic Star Amulet.png"
+            "image": "images/amulets/Epic Star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.012299,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 18.447915,
+            "weight": 15,
             "amount": 755,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
-            "chance": 12.29861,
+            "weight": 10,
             "amount": 6,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
-            "chance": 24.597221,
+            "weight": 20,
             "amount": 2,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 3.689583,
+            "weight": 3,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 3.689583,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 0.245972,
+            "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Lemon",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Lemon.png",
+            "source": "field"
           }
         ]
-      },
-      "colorBgHeader": "rgba(175,135,45,0.16)"
+      }
     },
     {
       "id": "legendary",
       "name": "Legendary",
-      "image": "images/items/Legendary Starflower.png",
+      "weight": 10,
       "health": 1000000,
       "healthLabel": "1,000,000",
       "color": "#7aaccc",
       "colorBg": "rgba(85,142,185,0.08)",
       "colorBorder": "rgba(90,148,190,0.24)",
+      "colorBgHeader": "rgba(85,142,185,0.16)",
+      "image": "images/items/Legendary Starflower.png",
       "drops": {
         "White Field": [
           {
             "item": "Pine Cone",
-            "chance": 16.947238,
+            "weight": 15,
             "amount": 3,
-            "image": "images/items/Pine Cone.png"
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
           },
           {
             "item": "Wind Essence",
-            "chance": 5.649079,
+            "weight": 5,
             "amount": 2,
-            "image": "images/items/Wind Essence.png"
-          }
-        ],
-        "All Fields (White Field)": [
-          {
-            "item": "Seed",
-            "chance": 16.947238,
-            "amount": 3,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
           },
           {
             "item": "Legendary Star Amulet",
-            "chance": 0.112982,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Legendary Star Amulet.png"
+            "image": "images/amulets/Legendary Star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.011298,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Silver Egg",
-            "chance": 2.259632,
+            "weight": 2,
             "amount": 1,
-            "image": "images/items/Silver Egg.png"
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 16.947238,
+            "weight": 15,
             "amount": 2500,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
-            "chance": 11.298158,
+            "weight": 10,
             "amount": 6,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
-            "chance": 22.596317,
+            "weight": 20,
             "amount": 3,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 3.389448,
+            "weight": 3,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 3.389448,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 0.451926,
+            "weight": 0.4,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
           }
         ],
         "Blue Field": [
           {
             "item": "Blueberry",
-            "chance": 16.947238,
+            "weight": 15,
             "amount": 3,
-            "image": "images/items/Blueberry.png"
+            "image": "images/items/Blueberry.png",
+            "source": "field"
           },
           {
             "item": "Water Essence",
-            "chance": 5.649079,
+            "weight": 5,
             "amount": 2,
-            "image": "images/items/Water Essence.png"
-          }
-        ],
-        "All Fields (Blue Field)": [
-          {
-            "item": "Seed",
-            "chance": 16.947238,
-            "amount": 3,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Water Essence.png",
+            "source": "field"
           },
           {
             "item": "Legendary Star Amulet",
-            "chance": 0.112982,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Legendary Star Amulet.png"
+            "image": "images/amulets/Legendary Star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.011298,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Silver Egg",
-            "chance": 2.259632,
+            "weight": 2,
             "amount": 1,
-            "image": "images/items/Silver Egg.png"
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 16.947238,
+            "weight": 15,
             "amount": 2500,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
-            "chance": 11.298158,
+            "weight": 10,
             "amount": 6,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
-            "chance": 22.596317,
+            "weight": 20,
             "amount": 3,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 3.389448,
+            "weight": 3,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 3.389448,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 0.451926,
+            "weight": 0.4,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
           }
         ],
         "Red Field": [
           {
             "item": "Strawberry",
-            "chance": 16.947238,
+            "weight": 15,
             "amount": 3,
-            "image": "images/items/Strawberry.png"
+            "image": "images/items/Strawberry.png",
+            "source": "field"
           },
           {
             "item": "Fire Essence",
-            "chance": 5.649079,
+            "weight": 5,
             "amount": 2,
-            "image": "images/items/Fire Essence.png"
-          }
-        ],
-        "All Fields (Red Field)": [
-          {
-            "item": "Seed",
-            "chance": 16.947238,
-            "amount": 3,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Fire Essence.png",
+            "source": "field"
           },
           {
             "item": "Legendary Star Amulet",
-            "chance": 0.112982,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Legendary Star Amulet.png"
+            "image": "images/amulets/Legendary Star Amulet.png",
+            "source": "all"
           },
-          {
-            "item": "Starflower Sticker",
-            "chance": 0.011298,
-            "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
-          },
-          {
-            "item": "Silver Egg",
-            "chance": 2.259632,
-            "amount": 1,
-            "image": "images/items/Silver Egg.png"
-          },
-          {
-            "item": "Honey",
-            "chance": 16.947238,
-            "amount": 2500,
-            "image": "images/currencies/Honey.png"
-          },
-          {
-            "item": "Treat",
-            "chance": 11.298158,
-            "amount": 6,
-            "image": "images/items/Treat.png"
-          },
-          {
-            "item": "Royal Jelly",
-            "chance": 22.596317,
-            "amount": 3,
-            "image": "images/items/Royal Jelly.png"
-          },
-          {
-            "item": "Ticket",
-            "chance": 3.389448,
-            "amount": 1,
-            "image": "images/currencies/Ticket.png"
-          },
-          {
-            "item": "Bee Net",
-            "chance": 3.389448,
-            "amount": 1,
-            "image": "images/items/Bee Net.png"
-          },
-          {
-            "item": "Sticker Egg",
-            "chance": 0.451926,
-            "amount": 1,
-            "image": "images/items/Sticker Egg.png"
-          }
-        ],
-        "Bamboo Field": [
-          {
-            "item": "Bamboo",
-            "chance": 17.961921,
-            "amount": 2,
-            "image": "images/items/Bamboo.png"
-          }
-        ],
-        "All Fields (Bamboo Field)": [
           {
             "item": "Seed",
-            "chance": 17.961921,
+            "weight": 15,
             "amount": 3,
-            "image": "images/items/Seed.png"
-          },
-          {
-            "item": "Legendary Star Amulet",
-            "chance": 0.119746,
-            "amount": 1,
-            "image": "images/amulets/Legendary Star Amulet.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.011975,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Silver Egg",
-            "chance": 2.394923,
+            "weight": 2,
             "amount": 1,
-            "image": "images/items/Silver Egg.png"
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 17.961921,
+            "weight": 15,
             "amount": 2500,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
-            "chance": 11.974614,
+            "weight": 10,
             "amount": 6,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
-            "chance": 23.949228,
+            "weight": 20,
             "amount": 3,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 3.592384,
+            "weight": 3,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 3.592384,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 0.478985,
+            "weight": 0.4,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
           }
         ],
         "Coconut Field": [
           {
-            "item": "Coconut",
-            "chance": 17.961921,
+            "item": "Pine Cone",
+            "weight": 15,
             "amount": 3,
-            "image": "images/items/Coconut.png"
-          }
-        ],
-        "All Fields (Coconut Field)": [
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
+          },
           {
-            "item": "Seed",
-            "chance": 17.961921,
-            "amount": 3,
-            "image": "images/items/Seed.png"
+            "item": "Wind Essence",
+            "weight": 5,
+            "amount": 2,
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
           },
           {
             "item": "Legendary Star Amulet",
-            "chance": 0.119746,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Legendary Star Amulet.png"
+            "image": "images/amulets/Legendary Star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.011975,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Silver Egg",
-            "chance": 2.394923,
+            "weight": 2,
             "amount": 1,
-            "image": "images/items/Silver Egg.png"
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 17.961921,
+            "weight": 15,
             "amount": 2500,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
-            "chance": 11.974614,
+            "weight": 10,
             "amount": 6,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
-            "chance": 23.949228,
+            "weight": 20,
             "amount": 3,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 3.592384,
+            "weight": 3,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 3.592384,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 0.478985,
+            "weight": 0.4,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Coconut",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Coconut.png",
+            "source": "field"
+          }
+        ],
+        "Bamboo Field": [
+          {
+            "item": "Pine Cone",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
+          },
+          {
+            "item": "Wind Essence",
+            "weight": 5,
+            "amount": 2,
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
+          },
+          {
+            "item": "Legendary Star Amulet",
+            "weight": 0.1,
+            "amount": 1,
+            "image": "images/amulets/Legendary Star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Seed.png",
+            "source": "all"
+          },
+          {
+            "item": "Starflower Sticker",
+            "weight": 0.01,
+            "amount": 1,
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
+          },
+          {
+            "item": "Silver Egg",
+            "weight": 2,
+            "amount": 1,
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Honey",
+            "weight": 15,
+            "amount": 2500,
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Treat",
+            "weight": 10,
+            "amount": 6,
+            "image": "images/items/Treat.png",
+            "source": "all"
+          },
+          {
+            "item": "Royal Jelly",
+            "weight": 20,
+            "amount": 3,
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
+          },
+          {
+            "item": "Ticket",
+            "weight": 3,
+            "amount": 1,
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
+          },
+          {
+            "item": "Bee Net",
+            "weight": 3,
+            "amount": 1,
+            "image": "images/items/Bee Net.png",
+            "source": "all"
+          },
+          {
+            "item": "Sticker Egg",
+            "weight": 0.4,
+            "amount": 1,
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Bamboo",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Bamboo.png",
+            "source": "field"
           }
         ],
         "Lemon Field": [
           {
-            "item": "Lemon",
-            "chance": 17.961921,
+            "item": "Blueberry",
+            "weight": 15,
             "amount": 3,
-            "image": "images/items/Lemon.png"
-          }
-        ],
-        "All Fields (Lemon Field)": [
+            "image": "images/items/Blueberry.png",
+            "source": "field"
+          },
           {
-            "item": "Seed",
-            "chance": 17.961921,
-            "amount": 3,
-            "image": "images/items/Seed.png"
+            "item": "Water Essence",
+            "weight": 5,
+            "amount": 2,
+            "image": "images/items/Water Essence.png",
+            "source": "field"
           },
           {
             "item": "Legendary Star Amulet",
-            "chance": 0.119746,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Legendary Star Amulet.png"
+            "image": "images/amulets/Legendary Star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.011975,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Silver Egg",
-            "chance": 2.394923,
+            "weight": 2,
             "amount": 1,
-            "image": "images/items/Silver Egg.png"
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 17.961921,
+            "weight": 15,
             "amount": 2500,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
-            "chance": 11.974614,
+            "weight": 10,
             "amount": 6,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
-            "chance": 23.949228,
+            "weight": 20,
             "amount": 3,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 3.592384,
+            "weight": 3,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 3.592384,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 0.478985,
+            "weight": 0.4,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Lemon",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Lemon.png",
+            "source": "field"
           }
         ]
-      },
-      "colorBgHeader": "rgba(85,142,185,0.16)"
+      }
     },
     {
       "id": "mythic",
       "name": "Mythic",
-      "image": "images/items/Mythic Starflower.png",
+      "weight": 2,
       "health": 10000000,
       "healthLabel": "10,000,000",
       "color": "#9e8bbf",
       "colorBg": "rgba(115,90,162,0.08)",
       "colorBorder": "rgba(120,96,168,0.26)",
+      "colorBgHeader": "rgba(115,90,162,0.18)",
+      "image": "images/items/Mythic Starflower.png",
       "drops": {
         "White Field": [
           {
             "item": "Pine Cone",
-            "chance": 9.926544,
+            "weight": 15,
             "amount": 3,
-            "image": "images/items/Pine Cone.png"
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
           },
           {
             "item": "Wind Essence",
-            "chance": 3.308848,
+            "weight": 5,
             "amount": 2,
-            "image": "images/items/Wind Essence.png"
-          }
-        ],
-        "All Fields (White Field)": [
-          {
-            "item": "Seed",
-            "chance": 9.926544,
-            "amount": 3,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
           },
           {
             "item": "Mythic Star Amulet",
-            "chance": 0.066177,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Mythic star Amulet.png"
+            "image": "images/amulets/Mythic star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.006618,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 9.926544,
+            "weight": 15,
             "amount": 7777,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Seed Oil",
-            "chance": 6.617696,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Seed Oil.png"
+            "image": "images/items/Seed Oil.png",
+            "source": "all"
           },
           {
             "item": "Strawberry Extract",
-            "chance": 6.617696,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Strawberry Extract.png"
+            "image": "images/items/Strawberry Extract.png",
+            "source": "all"
           },
           {
             "item": "Blueberry Extract",
-            "chance": 6.617696,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Blueberry Extract.png"
+            "image": "images/items/Blueberry Extract.png",
+            "source": "all"
           },
           {
             "item": "Cone Extract",
-            "chance": 6.617696,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Cone Extract.png"
+            "image": "images/items/Cone Extract.png",
+            "source": "all"
           },
           {
             "item": "Silver Egg",
-            "chance": 6.617696,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Silver Egg.png"
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
           },
           {
             "item": "Gold Egg",
-            "chance": 2.647078,
+            "weight": 4,
             "amount": 1,
-            "image": "images/items/Gold Egg.png"
+            "image": "images/items/Gold Egg.png",
+            "source": "all"
           },
           {
             "item": "Diamond Egg",
-            "chance": 0.66177,
+            "weight": 1,
             "amount": 1,
-            "image": "images/items/Diamond Egg.png"
+            "image": "images/items/Diamond Egg.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
-            "chance": 23.161935,
+            "weight": 35,
             "amount": 5,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 1.985309,
+            "weight": 3,
             "amount": 2,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 1.985309,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 3.308848,
+            "weight": 5,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
           }
         ],
         "Blue Field": [
           {
             "item": "Blueberry",
-            "chance": 9.926544,
+            "weight": 15,
             "amount": 3,
-            "image": "images/items/Blueberry.png"
+            "image": "images/items/Blueberry.png",
+            "source": "field"
           },
           {
             "item": "Water Essence",
-            "chance": 3.308848,
+            "weight": 5,
             "amount": 2,
-            "image": "images/items/Water Essence.png"
-          }
-        ],
-        "All Fields (Blue Field)": [
-          {
-            "item": "Seed",
-            "chance": 9.926544,
-            "amount": 3,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Water Essence.png",
+            "source": "field"
           },
           {
             "item": "Mythic Star Amulet",
-            "chance": 0.066177,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Mythic star Amulet.png"
+            "image": "images/amulets/Mythic star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.006618,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 9.926544,
+            "weight": 15,
             "amount": 7777,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Seed Oil",
-            "chance": 6.617696,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Seed Oil.png"
+            "image": "images/items/Seed Oil.png",
+            "source": "all"
           },
           {
             "item": "Strawberry Extract",
-            "chance": 6.617696,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Strawberry Extract.png"
+            "image": "images/items/Strawberry Extract.png",
+            "source": "all"
           },
           {
             "item": "Blueberry Extract",
-            "chance": 6.617696,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Blueberry Extract.png"
+            "image": "images/items/Blueberry Extract.png",
+            "source": "all"
           },
           {
             "item": "Cone Extract",
-            "chance": 6.617696,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Cone Extract.png"
+            "image": "images/items/Cone Extract.png",
+            "source": "all"
           },
           {
             "item": "Silver Egg",
-            "chance": 6.617696,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Silver Egg.png"
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
           },
           {
             "item": "Gold Egg",
-            "chance": 2.647078,
+            "weight": 4,
             "amount": 1,
-            "image": "images/items/Gold Egg.png"
+            "image": "images/items/Gold Egg.png",
+            "source": "all"
           },
           {
             "item": "Diamond Egg",
-            "chance": 0.66177,
+            "weight": 1,
             "amount": 1,
-            "image": "images/items/Diamond Egg.png"
+            "image": "images/items/Diamond Egg.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
-            "chance": 23.161935,
+            "weight": 35,
             "amount": 5,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 1.985309,
+            "weight": 3,
             "amount": 2,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 1.985309,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 3.308848,
+            "weight": 5,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
           }
         ],
         "Red Field": [
           {
             "item": "Strawberry",
-            "chance": 9.926544,
+            "weight": 15,
             "amount": 3,
-            "image": "images/items/Strawberry.png"
+            "image": "images/items/Strawberry.png",
+            "source": "field"
           },
           {
             "item": "Fire Essence",
-            "chance": 3.308848,
+            "weight": 5,
             "amount": 2,
-            "image": "images/items/Fire Essence.png"
-          }
-        ],
-        "All Fields (Red Field)": [
-          {
-            "item": "Seed",
-            "chance": 9.926544,
-            "amount": 3,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Fire Essence.png",
+            "source": "field"
           },
           {
             "item": "Mythic Star Amulet",
-            "chance": 0.066177,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Mythic star Amulet.png"
+            "image": "images/amulets/Mythic star Amulet.png",
+            "source": "all"
           },
-          {
-            "item": "Starflower Sticker",
-            "chance": 0.006618,
-            "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
-          },
-          {
-            "item": "Honey",
-            "chance": 9.926544,
-            "amount": 7777,
-            "image": "images/currencies/Honey.png"
-          },
-          {
-            "item": "Seed Oil",
-            "chance": 6.617696,
-            "amount": 1,
-            "image": "images/items/Seed Oil.png"
-          },
-          {
-            "item": "Strawberry Extract",
-            "chance": 6.617696,
-            "amount": 1,
-            "image": "images/items/Strawberry Extract.png"
-          },
-          {
-            "item": "Blueberry Extract",
-            "chance": 6.617696,
-            "amount": 1,
-            "image": "images/items/Blueberry Extract.png"
-          },
-          {
-            "item": "Cone Extract",
-            "chance": 6.617696,
-            "amount": 1,
-            "image": "images/items/Cone Extract.png"
-          },
-          {
-            "item": "Silver Egg",
-            "chance": 6.617696,
-            "amount": 1,
-            "image": "images/items/Silver Egg.png"
-          },
-          {
-            "item": "Gold Egg",
-            "chance": 2.647078,
-            "amount": 1,
-            "image": "images/items/Gold Egg.png"
-          },
-          {
-            "item": "Diamond Egg",
-            "chance": 0.66177,
-            "amount": 1,
-            "image": "images/items/Diamond Egg.png"
-          },
-          {
-            "item": "Royal Jelly",
-            "chance": 23.161935,
-            "amount": 5,
-            "image": "images/items/Royal Jelly.png"
-          },
-          {
-            "item": "Ticket",
-            "chance": 1.985309,
-            "amount": 2,
-            "image": "images/currencies/Ticket.png"
-          },
-          {
-            "item": "Bee Net",
-            "chance": 1.985309,
-            "amount": 1,
-            "image": "images/items/Bee Net.png"
-          },
-          {
-            "item": "Sticker Egg",
-            "chance": 3.308848,
-            "amount": 1,
-            "image": "images/items/Sticker Egg.png"
-          }
-        ],
-        "Bamboo Field": [
-          {
-            "item": "Bamboo",
-            "chance": 10.266238,
-            "amount": 2,
-            "image": "images/items/Bamboo.png"
-          }
-        ],
-        "All Fields (Bamboo Field)": [
           {
             "item": "Seed",
-            "chance": 10.266238,
+            "weight": 15,
             "amount": 3,
-            "image": "images/items/Seed.png"
-          },
-          {
-            "item": "Mythic Star Amulet",
-            "chance": 0.068442,
-            "amount": 1,
-            "image": "images/amulets/Mythic star Amulet.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.006844,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 10.266238,
+            "weight": 15,
             "amount": 7777,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Seed Oil",
-            "chance": 6.844159,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Seed Oil.png"
+            "image": "images/items/Seed Oil.png",
+            "source": "all"
           },
           {
             "item": "Strawberry Extract",
-            "chance": 6.844159,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Strawberry Extract.png"
+            "image": "images/items/Strawberry Extract.png",
+            "source": "all"
           },
           {
             "item": "Blueberry Extract",
-            "chance": 6.844159,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Blueberry Extract.png"
+            "image": "images/items/Blueberry Extract.png",
+            "source": "all"
           },
           {
             "item": "Cone Extract",
-            "chance": 6.844159,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Cone Extract.png"
+            "image": "images/items/Cone Extract.png",
+            "source": "all"
           },
           {
             "item": "Silver Egg",
-            "chance": 6.844159,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Silver Egg.png"
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
           },
           {
             "item": "Gold Egg",
-            "chance": 2.737663,
+            "weight": 4,
             "amount": 1,
-            "image": "images/items/Gold Egg.png"
+            "image": "images/items/Gold Egg.png",
+            "source": "all"
           },
           {
             "item": "Diamond Egg",
-            "chance": 0.684416,
+            "weight": 1,
             "amount": 1,
-            "image": "images/items/Diamond Egg.png"
+            "image": "images/items/Diamond Egg.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
-            "chance": 23.954555,
+            "weight": 35,
             "amount": 5,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 2.053248,
+            "weight": 3,
             "amount": 2,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 2.053248,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 3.422079,
+            "weight": 5,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
           }
         ],
         "Coconut Field": [
           {
-            "item": "Coconut",
-            "chance": 10.266238,
+            "item": "Pine Cone",
+            "weight": 15,
             "amount": 3,
-            "image": "images/items/Coconut.png"
-          }
-        ],
-        "All Fields (Coconut Field)": [
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
+          },
           {
-            "item": "Seed",
-            "chance": 10.266238,
-            "amount": 3,
-            "image": "images/items/Seed.png"
+            "item": "Wind Essence",
+            "weight": 5,
+            "amount": 2,
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
           },
           {
             "item": "Mythic Star Amulet",
-            "chance": 0.068442,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Mythic star Amulet.png"
+            "image": "images/amulets/Mythic star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.006844,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 10.266238,
+            "weight": 15,
             "amount": 7777,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Seed Oil",
-            "chance": 6.844159,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Seed Oil.png"
+            "image": "images/items/Seed Oil.png",
+            "source": "all"
           },
           {
             "item": "Strawberry Extract",
-            "chance": 6.844159,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Strawberry Extract.png"
+            "image": "images/items/Strawberry Extract.png",
+            "source": "all"
           },
           {
             "item": "Blueberry Extract",
-            "chance": 6.844159,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Blueberry Extract.png"
+            "image": "images/items/Blueberry Extract.png",
+            "source": "all"
           },
           {
             "item": "Cone Extract",
-            "chance": 6.844159,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Cone Extract.png"
+            "image": "images/items/Cone Extract.png",
+            "source": "all"
           },
           {
             "item": "Silver Egg",
-            "chance": 6.844159,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Silver Egg.png"
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
           },
           {
             "item": "Gold Egg",
-            "chance": 2.737663,
+            "weight": 4,
             "amount": 1,
-            "image": "images/items/Gold Egg.png"
+            "image": "images/items/Gold Egg.png",
+            "source": "all"
           },
           {
             "item": "Diamond Egg",
-            "chance": 0.684416,
+            "weight": 1,
             "amount": 1,
-            "image": "images/items/Diamond Egg.png"
+            "image": "images/items/Diamond Egg.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
-            "chance": 23.954555,
+            "weight": 35,
             "amount": 5,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 2.053248,
+            "weight": 3,
             "amount": 2,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 2.053248,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 3.422079,
+            "weight": 5,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Coconut",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Coconut.png",
+            "source": "field"
+          }
+        ],
+        "Bamboo Field": [
+          {
+            "item": "Pine Cone",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
+          },
+          {
+            "item": "Wind Essence",
+            "weight": 5,
+            "amount": 2,
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
+          },
+          {
+            "item": "Mythic Star Amulet",
+            "weight": 0.1,
+            "amount": 1,
+            "image": "images/amulets/Mythic star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Seed.png",
+            "source": "all"
+          },
+          {
+            "item": "Starflower Sticker",
+            "weight": 0.01,
+            "amount": 1,
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
+          },
+          {
+            "item": "Honey",
+            "weight": 15,
+            "amount": 7777,
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed Oil",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Seed Oil.png",
+            "source": "all"
+          },
+          {
+            "item": "Strawberry Extract",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Strawberry Extract.png",
+            "source": "all"
+          },
+          {
+            "item": "Blueberry Extract",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Blueberry Extract.png",
+            "source": "all"
+          },
+          {
+            "item": "Cone Extract",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Cone Extract.png",
+            "source": "all"
+          },
+          {
+            "item": "Silver Egg",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Gold Egg",
+            "weight": 4,
+            "amount": 1,
+            "image": "images/items/Gold Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Diamond Egg",
+            "weight": 1,
+            "amount": 1,
+            "image": "images/items/Diamond Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Royal Jelly",
+            "weight": 35,
+            "amount": 5,
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
+          },
+          {
+            "item": "Ticket",
+            "weight": 3,
+            "amount": 2,
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
+          },
+          {
+            "item": "Bee Net",
+            "weight": 3,
+            "amount": 1,
+            "image": "images/items/Bee Net.png",
+            "source": "all"
+          },
+          {
+            "item": "Sticker Egg",
+            "weight": 5,
+            "amount": 1,
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Bamboo",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Bamboo.png",
+            "source": "field"
           }
         ],
         "Lemon Field": [
           {
-            "item": "Lemon",
-            "chance": 10.266238,
+            "item": "Blueberry",
+            "weight": 15,
             "amount": 3,
-            "image": "images/items/Lemon.png"
-          }
-        ],
-        "All Fields (Lemon Field)": [
+            "image": "images/items/Blueberry.png",
+            "source": "field"
+          },
           {
-            "item": "Seed",
-            "chance": 10.266238,
-            "amount": 3,
-            "image": "images/items/Seed.png"
+            "item": "Water Essence",
+            "weight": 5,
+            "amount": 2,
+            "image": "images/items/Water Essence.png",
+            "source": "field"
           },
           {
             "item": "Mythic Star Amulet",
-            "chance": 0.068442,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Mythic star Amulet.png"
+            "image": "images/amulets/Mythic star Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.006844,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 10.266238,
+            "weight": 15,
             "amount": 7777,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Seed Oil",
-            "chance": 6.844159,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Seed Oil.png"
+            "image": "images/items/Seed Oil.png",
+            "source": "all"
           },
           {
             "item": "Strawberry Extract",
-            "chance": 6.844159,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Strawberry Extract.png"
+            "image": "images/items/Strawberry Extract.png",
+            "source": "all"
           },
           {
             "item": "Blueberry Extract",
-            "chance": 6.844159,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Blueberry Extract.png"
+            "image": "images/items/Blueberry Extract.png",
+            "source": "all"
           },
           {
             "item": "Cone Extract",
-            "chance": 6.844159,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Cone Extract.png"
+            "image": "images/items/Cone Extract.png",
+            "source": "all"
           },
           {
             "item": "Silver Egg",
-            "chance": 6.844159,
+            "weight": 10,
             "amount": 1,
-            "image": "images/items/Silver Egg.png"
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
           },
           {
             "item": "Gold Egg",
-            "chance": 2.737663,
+            "weight": 4,
             "amount": 1,
-            "image": "images/items/Gold Egg.png"
+            "image": "images/items/Gold Egg.png",
+            "source": "all"
           },
           {
             "item": "Diamond Egg",
-            "chance": 0.684416,
+            "weight": 1,
             "amount": 1,
-            "image": "images/items/Diamond Egg.png"
+            "image": "images/items/Diamond Egg.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
-            "chance": 23.954555,
+            "weight": 35,
             "amount": 5,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
-            "chance": 2.053248,
+            "weight": 3,
             "amount": 2,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/currencies/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Bee Net",
-            "chance": 2.053248,
+            "weight": 3,
             "amount": 1,
-            "image": "images/items/Bee Net.png"
+            "image": "images/items/Bee Net.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
-            "chance": 3.422079,
+            "weight": 5,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Lemon",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Lemon.png",
+            "source": "field"
           }
         ]
-      },
-      "colorBgHeader": "rgba(115,90,162,0.18)"
+      }
     },
     {
       "id": "lunar",
       "name": "Lunar",
-      "image": "images/items/Starflower.png",
+      "weight": null,
       "health": 50000,
       "healthLabel": "50,000",
       "color": "#d7ddff",
       "colorBg": "rgba(162,170,240,0.08)",
       "colorBorder": "rgba(176,184,245,0.26)",
+      "colorBgHeader": "rgba(162,170,240,0.16)",
+      "image": "images/items/Starflower.png",
       "drops": {
         "White Field": [
           {
             "item": "Pine Cone",
-            "chance": 15.771212,
+            "weight": 15,
             "amount": 1,
-            "image": "images/items/Pine Cone.png"
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
           },
           {
             "item": "Wind Essence",
-            "chance": 5.257071,
+            "weight": 5,
             "amount": 1,
-            "image": "images/items/Wind Essence.png"
-          }
-        ],
-        "All Fields (White Field)": [
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
+          },
           {
             "item": "Lunar Amulet",
-            "chance": 0.105141,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Lunar Amulet.png"
+            "image": "images/amulets/Lunar Amulet.png",
+            "source": "all"
           },
           {
             "item": "Lunar Essence",
-            "chance": 26.285354,
+            "weight": 25,
             "amount": 1,
-            "image": "images/items/Lunar Essence.png"
+            "image": "images/items/Lunar Essence.png",
+            "source": "all"
           },
           {
             "item": "Lunar Treat",
-            "chance": 36.799495,
+            "weight": 35,
             "amount": 1,
-            "image": "images/items/Lunar Treat.png"
+            "image": "images/items/Lunar Treat.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.010514,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 15.771212,
+            "weight": 15,
             "amount": 100,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           }
         ],
         "Blue Field": [
           {
             "item": "Blueberry",
-            "chance": 15.771212,
+            "weight": 15,
             "amount": 1,
-            "image": "images/items/Blueberry.png"
+            "image": "images/items/Blueberry.png",
+            "source": "field"
           },
           {
             "item": "Water Essence",
-            "chance": 5.257071,
+            "weight": 5,
             "amount": 1,
-            "image": "images/items/Water Essence.png"
-          }
-        ],
-        "All Fields (Blue Field)": [
+            "image": "images/items/Water Essence.png",
+            "source": "field"
+          },
           {
             "item": "Lunar Amulet",
-            "chance": 0.105141,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Lunar Amulet.png"
+            "image": "images/amulets/Lunar Amulet.png",
+            "source": "all"
           },
           {
             "item": "Lunar Essence",
-            "chance": 26.285354,
+            "weight": 25,
             "amount": 1,
-            "image": "images/items/Lunar Essence.png"
+            "image": "images/items/Lunar Essence.png",
+            "source": "all"
           },
           {
             "item": "Lunar Treat",
-            "chance": 36.799495,
+            "weight": 35,
             "amount": 1,
-            "image": "images/items/Lunar Treat.png"
+            "image": "images/items/Lunar Treat.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.010514,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 15.771212,
+            "weight": 15,
             "amount": 100,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           }
         ],
         "Red Field": [
           {
             "item": "Strawberry",
-            "chance": 15.771212,
+            "weight": 15,
             "amount": 1,
-            "image": "images/items/Strawberry.png"
+            "image": "images/items/Strawberry.png",
+            "source": "field"
           },
           {
             "item": "Fire Essence",
-            "chance": 5.257071,
+            "weight": 5,
             "amount": 1,
-            "image": "images/items/Fire Essence.png"
-          }
-        ],
-        "All Fields (Red Field)": [
+            "image": "images/items/Fire Essence.png",
+            "source": "field"
+          },
           {
             "item": "Lunar Amulet",
-            "chance": 0.105141,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Lunar Amulet.png"
+            "image": "images/amulets/Lunar Amulet.png",
+            "source": "all"
           },
           {
             "item": "Lunar Essence",
-            "chance": 26.285354,
+            "weight": 25,
             "amount": 1,
-            "image": "images/items/Lunar Essence.png"
+            "image": "images/items/Lunar Essence.png",
+            "source": "all"
           },
           {
             "item": "Lunar Treat",
-            "chance": 36.799495,
+            "weight": 35,
             "amount": 1,
-            "image": "images/items/Lunar Treat.png"
+            "image": "images/items/Lunar Treat.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.010514,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 15.771212,
+            "weight": 15,
             "amount": 100,
-            "image": "images/currencies/Honey.png"
-          }
-        ],
-        "Bamboo Field": [
-          {
-            "item": "Bamboo",
-            "chance": 16.646321,
-            "amount": 1,
-            "image": "images/items/Bamboo.png"
-          }
-        ],
-        "All Fields (Bamboo Field)": [
-          {
-            "item": "Lunar Amulet",
-            "chance": 0.110975,
-            "amount": 1,
-            "image": "images/amulets/Lunar Amulet.png"
-          },
-          {
-            "item": "Lunar Essence",
-            "chance": 27.743869,
-            "amount": 1,
-            "image": "images/items/Lunar Essence.png"
-          },
-          {
-            "item": "Lunar Treat",
-            "chance": 38.841416,
-            "amount": 1,
-            "image": "images/items/Lunar Treat.png"
-          },
-          {
-            "item": "Starflower Sticker",
-            "chance": 0.011098,
-            "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
-          },
-          {
-            "item": "Honey",
-            "chance": 16.646321,
-            "amount": 100,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           }
         ],
         "Coconut Field": [
           {
-            "item": "Coconut",
-            "chance": 16.646321,
-            "amount": 3,
-            "image": "images/items/Coconut.png"
-          }
-        ],
-        "All Fields (Coconut Field)": [
+            "item": "Pine Cone",
+            "weight": 15,
+            "amount": 1,
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
+          },
+          {
+            "item": "Wind Essence",
+            "weight": 5,
+            "amount": 1,
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
+          },
           {
             "item": "Lunar Amulet",
-            "chance": 0.110975,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Lunar Amulet.png"
+            "image": "images/amulets/Lunar Amulet.png",
+            "source": "all"
           },
           {
             "item": "Lunar Essence",
-            "chance": 27.743869,
+            "weight": 25,
             "amount": 1,
-            "image": "images/items/Lunar Essence.png"
+            "image": "images/items/Lunar Essence.png",
+            "source": "all"
           },
           {
             "item": "Lunar Treat",
-            "chance": 38.841416,
+            "weight": 35,
             "amount": 1,
-            "image": "images/items/Lunar Treat.png"
+            "image": "images/items/Lunar Treat.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.011098,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 16.646321,
+            "weight": 15,
             "amount": 100,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Coconut",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Coconut.png",
+            "source": "field"
+          }
+        ],
+        "Bamboo Field": [
+          {
+            "item": "Pine Cone",
+            "weight": 15,
+            "amount": 1,
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
+          },
+          {
+            "item": "Wind Essence",
+            "weight": 5,
+            "amount": 1,
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
+          },
+          {
+            "item": "Lunar Amulet",
+            "weight": 0.1,
+            "amount": 1,
+            "image": "images/amulets/Lunar Amulet.png",
+            "source": "all"
+          },
+          {
+            "item": "Lunar Essence",
+            "weight": 25,
+            "amount": 1,
+            "image": "images/items/Lunar Essence.png",
+            "source": "all"
+          },
+          {
+            "item": "Lunar Treat",
+            "weight": 35,
+            "amount": 1,
+            "image": "images/items/Lunar Treat.png",
+            "source": "all"
+          },
+          {
+            "item": "Starflower Sticker",
+            "weight": 0.01,
+            "amount": 1,
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
+          },
+          {
+            "item": "Honey",
+            "weight": 15,
+            "amount": 100,
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Bamboo",
+            "weight": 15,
+            "amount": 1,
+            "image": "images/items/Bamboo.png",
+            "source": "field"
           }
         ],
         "Lemon Field": [
           {
-            "item": "Lemon",
-            "chance": 16.646321,
-            "amount": 3,
-            "image": "images/items/Lemon.png"
-          }
-        ],
-        "All Fields (Lemon Field)": [
+            "item": "Blueberry",
+            "weight": 15,
+            "amount": 1,
+            "image": "images/items/Blueberry.png",
+            "source": "field"
+          },
+          {
+            "item": "Water Essence",
+            "weight": 5,
+            "amount": 1,
+            "image": "images/items/Water Essence.png",
+            "source": "field"
+          },
           {
             "item": "Lunar Amulet",
-            "chance": 0.110975,
+            "weight": 0.1,
             "amount": 1,
-            "image": "images/amulets/Lunar Amulet.png"
+            "image": "images/amulets/Lunar Amulet.png",
+            "source": "all"
           },
           {
             "item": "Lunar Essence",
-            "chance": 27.743869,
+            "weight": 25,
             "amount": 1,
-            "image": "images/items/Lunar Essence.png"
+            "image": "images/items/Lunar Essence.png",
+            "source": "all"
           },
           {
             "item": "Lunar Treat",
-            "chance": 38.841416,
+            "weight": 35,
             "amount": 1,
-            "image": "images/items/Lunar Treat.png"
+            "image": "images/items/Lunar Treat.png",
+            "source": "all"
           },
           {
             "item": "Starflower Sticker",
-            "chance": 0.011098,
+            "weight": 0.01,
             "amount": 1,
-            "image": "images/hive/stickers/Starflower Sticker.png"
+            "image": "images/hive/stickers/Starflower Sticker.png",
+            "source": "all"
           },
           {
             "item": "Honey",
-            "chance": 16.646321,
+            "weight": 15,
             "amount": 100,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Lemon",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Lemon.png",
+            "source": "field"
           }
         ]
-      },
-      "colorBgHeader": "rgba(162,170,240,0.16)"
+      }
     }
   ]
 }
