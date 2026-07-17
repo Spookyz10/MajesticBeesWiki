@@ -56,8 +56,6 @@ function localImg(src, size, alt) {
   return `<img src="${src}" alt="${alt}" width="${size}" height="${size}" loading="lazy" onerror="this.style.opacity='0.25';" />`;
 }
 
-// Calcula a chance de cada item com base no weight, relativo ao total
-// de weight daquela lista (ou seja, dentro do field já resolvido).
 function withComputedChances(items) {
   const totalWeight = items.reduce(
     (sum, it) => sum + (Number(it.weight) || 0),
