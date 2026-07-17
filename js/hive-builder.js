@@ -4,8 +4,8 @@ const HB_TOTAL_SLOTS = HB_COLUMNS.reduce((a, b) => a + b, 0);
 const HB_STICKER_GROUPS = {
   top: 3,
   bottom: 3,
-  left: 6,
-  right: 6,
+  left: 7,
+  right: 7,
 };
 const HB_STICKER_SLOTS =
   HB_STICKER_GROUPS.top +
@@ -707,8 +707,8 @@ async function hbExportHive() {
   const hiveW = gapX * (HB_COLUMNS.length - 1) + hexW * 1.3;
   const hiveH = gapY * maxCol + colOffset;
 
-  const stickerSize = 60;
-  const stickerGap = 10;
+  const stickerSize = 80;
+  const stickerGap = 20;
   const ranges = hbStickerRanges();
 
   const topH = HB_STICKER_GROUPS.top ? stickerSize + 24 : 0;

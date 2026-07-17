@@ -246,7 +246,7 @@
 
 .hb-sticker-row {
   display: flex;
-  gap: 8px;
+  gap: 16px;
 }
 
 .hb-sticker-top {
@@ -260,7 +260,7 @@
 .hb-sticker-col {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
 }
 
 .hb-sticker-left {
@@ -272,8 +272,8 @@
 }
 
 .hb-sticker-slot {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 10px;
   background: rgba(18, 12, 0, 0.6);
   border: 1px solid rgba(58, 40, 0, 0.7);
@@ -325,7 +325,7 @@
   margin-left: -15px;
 }
 
-.hb-hive-col:nth-child(even) {
+.hb-hive-col:nth-child(odd) {
   margin-top: 29px;
 }
 
@@ -539,7 +539,7 @@
   .hb-hive-col:not(:first-child) {
     margin-left: -10px;
   }
-  .hb-hive-col:nth-child(even) {
+  .hb-hive-col:nth-child(odd) {
     margin-top: 20px;
   }
   .hb-sticker-slot {
@@ -570,7 +570,7 @@
   .hb-hive-col:not(:first-child) {
     margin-left: -8px;
   }
-  .hb-hive-col:nth-child(even) {
+  .hb-hive-col:nth-child(odd) {
     margin-top: 15px;
   }
   .hb-sticker-slot {
