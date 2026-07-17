@@ -107,8 +107,6 @@ function buildChances(chances) {
     </div>`;
 }
 
-// Junta os itens de um field (já resolvidos pelo Python com own+All / white+All+coconut etc.)
-// e calcula a chance de cada um com base no weight relativo ao total daquele pool.
 function withComputedChances(items) {
   const totalWeight = items.reduce(
     (sum, it) => sum + (Number(it.weight) || 0),
