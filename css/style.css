@@ -696,7 +696,7 @@ h1.page-header__title,
   border: 1px solid var(--r-special-bd);
   background: var(--r-special-bg);
 }
-/* precisa existir só uma vez no CSS global do site — se já tiver no hive.css, não duplica */
+
 @property --angle {
   syntax: "<angle>";
   inherits: false;

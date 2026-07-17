@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hive Builder</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hive Builder" />
+    <meta
+      property="og:description"
+      content="Build and share your hive setup for The Majestic Bees."
+    />
+    <meta
+      property="og:image"
+      content="https://spookyz10.github.io/MajesticBeesWiki/images/ui/site-logo.png"
+    />
+    <meta property="og:image:alt" content="The Majestic Bees Wiki logo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hive Builder" />
+    <meta
+      name="twitter:description"
+      content="Build and share your hive setup for The Majestic Bees."
+    />
+
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
+
+    <script defer src="js/utils.js"></script>
+    <script defer src="js/hive-builder.js"></script>
+    <script defer src="js/load-sidebar.js"></script>
+    <script defer src="js/wiki-search.js"></script>
+    <script defer src="js/search.js"></script>
+  </head>
+
+  <body>
+    <div id="sidebar-container"></div>
+
+    <div class="main" data-pagefind-body>
+      <div class="topbar">
+        <div id="search"></div>
+      </div>
+
+      <div class="content mw-parser-output">
+        <div class="bees-page-title">
+          <div class="hero-title">Hive Builder</div>
+        </div>
+
+        <div class="hero-description bees-hero-description">
+          Drag bees and stickers straight onto your hive. Click the star on a
+          placed bee to mark it shiny, click a bee to remove it, or drag things
+          to the trash. Share your setup with
+          <b>Export Hive</b> below.
+        </div>
+
+        <hr />
+
+        <div class="hb-shell">
+          <div class="hb-palette hb-palette-bees">
+            <div class="hb-palette-label">Bees</div>
+            <div class="hb-palette-list" id="hb-bee-list"></div>
+          </div>
+
+          <div class="hb-center">
+            <div class="hb-topline">
+              <div class="hb-count-row">
+                <div class="hb-count-text">
+                  <span id="hb-count-value">0</span> /
+                  <span id="hb-count-max">50</span>
+                  <div class="hb-count-sub">Bees placed</div>
+                </div>
+              </div>
+              <div class="hb-count-row">
+                <div class="hb-count-text hb-count-text-small">
+                  <span id="hb-sticker-count">0</span> /
+                  <span id="hb-sticker-max">20</span>
+                  <div class="hb-count-sub">Stickers placed</div>
+                </div>
+              </div>
+              <button
+                id="hb-clear-btn"
+                class="hb-btn hb-btn-danger"
+                type="button"
+              >
+                Clear Hive
+              </button>
+              <button
+                id="hb-export-btn"
+                class="hb-btn hb-btn-primary"
+                type="button"
+              >
+                Export Hive (PNG)
+              </button>
+            </div>
+
+            <div class="hb-hive-wrap">
+              <div class="hb-hive-frame">
+                <div
+                  class="hb-sticker-row hb-sticker-top"
+                  id="hb-sticker-top"
+                ></div>
+                <div
+                  class="hb-sticker-col hb-sticker-left"
+                  id="hb-sticker-left"
+                ></div>
+                <div class="hb-hive-grid" id="hb-hive-grid"></div>
+                <div
+                  class="hb-sticker-col hb-sticker-right"
+                  id="hb-sticker-right"
+                ></div>
+                <div
+                  class="hb-sticker-row hb-sticker-bottom"
+                  id="hb-sticker-bottom"
+                ></div>
+              </div>
+            </div>
+
+            <div class="hb-trash" id="hb-trash">Drag here to remove</div>
+          </div>
+
+          <div class="hb-palette hb-palette-stickers">
+            <div class="hb-palette-label">Stickers</div>
+            <div class="hb-palette-list" id="hb-sticker-list"></div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="hb-bonus-section">
+          <div class="hb-bonus-box">
+            <div class="hb-bonus-header">
+              <span class="hb-bonus-title">Gift Bee Bonus</span>
+              <button class="hb-copy-btn" data-copy-target="hb-gift-table">
+                Copy
+              </button>
+            </div>
+            <table
+              class="wikitable bees-table hb-bonus-table"
+              id="hb-gift-table"
+            >
+              <tr>
+                <th>Stat</th>
+                <th>Bonus</th>
+              </tr>
+              <tbody id="hb-gift-tbody">
+                <tr>
+                  <td colspan="2" class="hb-bonus-empty">
+                    No shiny bees placed yet.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="hb-bonus-box">
+            <div class="hb-bonus-header">
+              <span class="hb-bonus-title">Sticker Bonus</span>
+              <button class="hb-copy-btn" data-copy-target="hb-sticker-table">
+                Copy
+              </button>
+            </div>
+            <table
+              class="wikitable bees-table hb-bonus-table"
+              id="hb-sticker-table"
+            >
+              <tr>
+                <th>Stat</th>
+                <th>Bonus</th>
+              </tr>
+              <tbody id="hb-sticker-tbody">
+                <tr>
+                  <td colspan="2" class="hb-bonus-empty">
+                    No stickers placed yet.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="hb-bonus-box hb-bonus-box-total">
+            <div class="hb-bonus-header">
+              <span class="hb-bonus-title">Total Bonus</span>
+              <button class="hb-copy-btn" data-copy-target="hb-total-table">
+                Copy
+              </button>
+            </div>
+            <table
+              class="wikitable bees-table hb-bonus-table"
+              id="hb-total-table"
+            >
+              <tr>
+                <th>Stat</th>
+                <th>Bonus</th>
+              </tr>
+              <tbody id="hb-total-tbody">
+                <tr>
+                  <td colspan="2" class="hb-bonus-empty">
+                    Nothing yet — place bees and stickers.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
