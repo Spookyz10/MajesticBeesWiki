@@ -708,7 +708,7 @@ async function hbExportHive() {
   const hiveH = gapY * maxCol + colOffset;
 
   const stickerSize = 80;
-  const stickerGap = 20;
+  const stickerGap = 16;
   const ranges = hbStickerRanges();
 
   const topH = HB_STICKER_GROUPS.top ? stickerSize + 24 : 0;
@@ -737,7 +737,7 @@ async function hbExportHive() {
   let index = 0;
   for (let col = 0; col < HB_COLUMNS.length; col++) {
     const height = HB_COLUMNS[col];
-    const isEven = col % 2 === 1;
+    const isEven = col % 2 === 0;
     const colOffsetY = isEven ? colOffset : 0;
     const colContentH = gapY * (height - 1);
     const startY =
