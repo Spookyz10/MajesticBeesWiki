@@ -578,7 +578,7 @@ function hbRenderBonuses() {
   hbRenderBonusTable(
     "hb-total-tbody",
     totalEntries,
-    "Nothing yet — place bees and stickers.",
+    "Nothing yet, place bees and stickers.",
   );
 }
 
