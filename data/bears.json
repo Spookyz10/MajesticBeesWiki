@@ -1,5 +1,321 @@
 [
   {
+    "id": "astral-bear",
+    "name": "Astral Bear",
+    "image": "images/bears/Astral Bear Model.png",
+    "location": "25 Bee Zone after the Lunar Obby",
+    "description": "A bear that will CONSUME ALL YOUR RESOURCES",
+    "noquest_dialog": [
+      "Unfortunately, I do not need any help at the moment.",
+      "In the meantime, I will just enjoy the night sky and watch the situation of my home from afar.",
+      "Thank you for everything.",
+      "I will never forget what you did for me, I promise."
+    ],
+    "quests": [
+      {
+        "number": 1,
+        "name": "Star Reading #1",
+        "dialogue": {
+          "take": [
+            "Hmm... what a peculiar individual! I wonder why I cannot read anything about you...",
+            "Oh, I apologize. Where are my manners?",
+            "My name is Sirius, but many know me as Astral Bear now.",
+            "Please, excuse my earlier rudeness. I was merely surprised.",
+            "Usually, I'm able to read anyone's past and future, but for you...",
+            "I'm unable to see anything at all. How peculiar...",
+            "No matter; you must be here in search of tasks, I suppose?",
+            "Lucky for you, I really need some ingredients for my Star Reading.",
+            "Please, bring me some essence of the moon."
+          ],
+          "going": [
+            "I apologize, but I don't see you meeting my requirements.",
+            "Come back after you have all the essence."
+          ],
+          "finish": [
+            "Splendid! I can give the stars my first offering.",
+            "Oh, you want to hear what my reading will be?",
+            "I could tell you, however, you might not understand much.",
+            "I want to read what is happening back home.",
+            "By \"back home\", I mean my old world.",
+            "Please do not look at me like that...",
+            "I swear upon the stars that it is nothing but the truth.",
+            "Hmm, it seems like the time for the first offering is due.",
+            "I will explain more later. Here is the reward for your hard work.",
+            "The small, purple ticket is for the Lunar Altar right over there. Do make sure to give it a try."
+          ]
+        },
+        "requirements": [
+          {
+            "type": "bring",
+            "amount": 1000,
+            "item": "Lunar Essence"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 250000000
+          },
+          {
+            "item": "Lunar Treat",
+            "amount": 5
+          },
+          {
+            "item": "Lunar Ticket",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "name": "Star Reading #2",
+        "dialogue": {
+          "take": [
+            "Back already? Well, if you feel ready for it, then it matters not.",
+            "For the second offering, I need elemental essence.",
+            "They are quite hard to come by, so it requires some dedication.",
+            "Bring them to me and I will satisfy some of your curiosity about my home."
+          ],
+          "going": [
+            "I apologize, but I don't see you meeting my requirements.",
+            "Come back after you have all the elemental essence."
+          ],
+          "finish": [
+            "That was rather quick.",
+            "I suppose it wasn't as much trouble as I initially thought.",
+            "Well then, let me start my story.",
+            "I come from a parallel universe-",
+            "...Stop looking at me like I am crazy, alright?",
+            "I was actually exiled by a powerful being that wants the destruction of my universe.",
+            "I am not sure what his reason is, and I also have no idea what happens there anymore.",
+            "That's why I want to ask the stars what the future has in store for my home.",
+            "...I do need quite a sizeable offering for that, though.",
+            "I will tell you more next time; it is time to continue my offering now."
+          ]
+        },
+        "requirements": [
+          {
+            "type": "bring",
+            "amount": 200,
+            "item": "Exp Essence"
+          },
+          {
+            "type": "bring",
+            "amount": 200,
+            "item": "Water Essence"
+          },
+          {
+            "type": "bring",
+            "amount": 200,
+            "item": "Fire Essence"
+          },
+          {
+            "type": "bring",
+            "amount": 200,
+            "item": "Wind Essence"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 500000000
+          },
+          {
+            "item": "Lunar Treat",
+            "amount": 15
+          },
+          {
+            "item": "Lunar Ticket",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "name": "Star Reading #3",
+        "dialogue": {
+          "take": [
+            "Welcome back. We are almost halfway done.",
+            "For the third offering, I need one of those eggs that look like a precious stone.",
+            "Oh, and also one of those moon shards that you can get from the Lunar Altar.",
+            "I hope it is not too much of a bother."
+          ],
+          "going": [
+            "I apologize, but I don't see you meeting my requirements.",
+            "Come back after you have all the items."
+          ],
+          "finish": [
+            "[Sirius offers the items and a strong yellow glow appears around him]",
+            "Hmm... It seems like I can now reach my world with the reading.",
+            "Even though just barely, I might be able to get a glimpse.",
+            "[Sirius closes his eyes and everything around him becomes silent]",
+            "[A small yellow aura appears around him]",
+            "[After a few minutes...]",
+            "[Sirius opens his eyes and the sound of nature starts playing again]",
+            "...Impossible! H-How? So much chaos...",
+            "The situation seems to be worse than I thought.",
+            "I need a bigger offering so I can see more.",
+            "Please, return whenever you can!"
+          ]
+        },
+        "requirements": [
+          {
+            "type": "bring",
+            "amount": 1,
+            "item": "Diamond Egg"
+          },
+          {
+            "type": "bring",
+            "amount": 1,
+            "item": "Lunar Shard"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 1000000000
+          },
+          {
+            "item": "Lunar Treat",
+            "amount": 35
+          },
+          {
+            "item": "Lunar Ticket",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "name": "Star Reading #4",
+        "dialogue": {
+          "take": [
+            "I'm sorry to ask this of you, but I need some extremely rare items.",
+            "They should be enough to at least let me know the cause of all the chaos back home.",
+            "Please, bring me a few of the rarest items you can find!",
+            "I will await your return."
+          ],
+          "going": [
+            "I apologize, but I don't see you meeting my requirements.",
+            "Come back after you have all the incredibly rare items."
+          ],
+          "finish": [
+            "Thank you! Alright then, let us see the cause.",
+            "[After finalizing the offering...]",
+            "[Sirius closes his eyes and time seems to slow down around him]",
+            "[An intense yellow aura appears around him]",
+            "[After a few minutes...]",
+            "[Sirius opens his eyes and everything returns to normal]",
+            "...Corruption? The... Tree of Life got corrupted?",
+            "Impossible! How could it get corrupted?",
+            "Now I understand all that chaos...",
+            "It is unprecedented for something like this to happen.",
+            "I am able to read only small segments of the present and the past for now.",
+            "Only the future remains, so let us complete the final offering."
+          ]
+        },
+        "requirements": [
+          {
+            "type": "bring",
+            "amount": 1,
+            "item": "Mythic Egg"
+          },
+          {
+            "type": "bring",
+            "amount": 3,
+            "item": "Mythic Starflower"
+          },
+          {
+            "type": "bring",
+            "amount": 3,
+            "item": "Mythic Vines"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 2000000000
+          },
+          {
+            "item": "Lunar Treat",
+            "amount": 100
+          },
+          {
+            "item": "Lunar Cocktail",
+            "amount": 1
+          },
+          {
+            "item": "Lunar Ticket",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "name": "Star Reading #5",
+        "dialogue": {
+          "take": [
+            "Alright, this is the last one.",
+            "I know I might be asking too much, but please bring me more moon essence and a few special essences.",
+            "I realize how hard it is, but I really need your help in order for me to see if there is any hope for my world.",
+            "I really appreciate your help.",
+            "I promise to make it up to you with a special reward."
+          ],
+          "going": [
+            "I apologize, but I don't see you meeting my requirements.",
+            "Come back after you are done."
+          ],
+          "finish": [
+            "Finally! No time to waste!",
+            "[After finalizing the last offering...]",
+            "[Sirius closes his eyes and time completely stops around him]",
+            "[Sirius is covered in an otherworldly glow]",
+            "[After a few minutes...]",
+            "[Sirius opens his eyes and the flow of time returns to normal]",
+            "I see... So there really is hope.",
+            "I can see someone blessed by the Tree of Life.",
+            "It seems like they are the only one able to clear the corruption.",
+            "Even though it is still uncertain that they will be able to actually save the world...",
+            "All I can do is wish them good luck.",
+            "Enough with my blabber; here is your reward.",
+            "I was able to create this bee with the leftover power from the items you just brought.",
+            "I am sure that it will help you on your journey."
+          ]
+        },
+        "requirements": [
+          {
+            "type": "bring",
+            "amount": 3,
+            "item": "Singularity Essence"
+          },
+          {
+            "type": "bring",
+            "amount": 2500,
+            "item": "Lunar Treat"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 5000000000
+          },
+          {
+            "item": "Majestic Cocktail",
+            "amount": 1
+          },
+          {
+            "item": "Lunar Cocktail",
+            "amount": 3
+          },
+          {
+            "item": "Lunar Bee",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "black-bear",
     "name": "Black Bear",
     "image": "images/bears/Black Bear Model.png",
@@ -13,12 +329,7 @@
         "per_stack": 0.01
       }
     ],
-    "noquest_dialog": [
-      "Hohoh, hello, my friend! How have you been holding up?",
-      "Ohh, I apologize. I do not have anymore quests to share for the moment.",
-      "I'll be sure to let you know the moment new ones await you. For now, enjoy your time in the sun!",
-      "You're doing so exponentially well, my friend. I am so proud of you. <3"
-    ],
+    "noquest_dialog": [],
     "quests": [
       {
         "number": 1,
@@ -2628,12 +2939,7 @@
         "per_stack": 0.1
       }
     ],
-    "noquest_dialog": [
-      "Oh, rookie, you're still here?",
-      "I don't have any more tasks for you at the moment.",
-      "Do you remember our motto?",
-      "That's right! \"Let your mark grow and prosper!\""
-    ],
+    "noquest_dialog": [],
     "quests": [
       {
         "number": 1,
@@ -3147,10 +3453,7 @@
         "max_stack": 5
       }
     ],
-    "noquest_dialog": [
-      "*Silvane smiles as you approach and gestures to the thriving plants around you*",
-      "*He places a hand on his chest, then points to you - a silent acknowledgment that you are the savior of this forest*"
-    ],
+    "noquest_dialog": [],
     "quests": [
       {
         "number": 1,
@@ -3456,12 +3759,7 @@
         "per_stack": 0.05
       }
     ],
-    "noquest_dialog": [
-      "Hiiiiii, got some new ideas for me?~",
-      "Oooh, new quests? Mmmh, don't got anything yet- sorry friend!!",
-      "Don'tcha worry, though! I got some new ideas cookin up in this lil brain of mine.~ I think you'll love what I have in store!! :3",
-      "Feel free to come back and check out my newest paintings!!!"
-    ],
+    "noquest_dialog": [],
     "quests": [
       {
         "number": 1,
@@ -3871,11 +4169,7 @@
         "per_stack": 0.05
       }
     ],
-    "noquest_dialog": [
-      "It's sad to say, but I have nothing else to teach you, partner.",
-      "So, go out there and show the world what you're made of!",
-      "And, never forget what you're fighting for!"
-    ],
+    "noquest_dialog": [],
     "quests": [
       {
         "number": 1,
@@ -4427,11 +4721,7 @@
         "per_stack": 0.01
       }
     ],
-    "noquest_dialog": [
-      "O-Oh! Hi there my f-friend!",
-      "Don't mind me, j-just reading a book in my rocking chair.",
-      "N-Now then, go and continue your j-journey!"
-    ],
+    "noquest_dialog": [],
     "quests": [
       {
         "number": 1,
@@ -5474,12 +5764,7 @@
     "image": "images/bears/Sandy Bear Model.png",
     "location": "Beach Zone",
     "description": "Sandy Bear is a laid-back bear found near the beach, offering quests centered around the coastal fields.",
-    "noquest_dialog": [
-      "Yooo, beekeeper! How's the sun treatin' ya today? Feels nice?",
-      "If you're lookin' for quests, I'm all set and dry. But maybe next Summerfest I might have some new ones!",
-      "I'm always here to give some good bartendin' tips, though! Haha!",
-      "Enjoy the summer, dude! Keep it cool. ;)"
-    ],
+    "noquest_dialog": [],
     "quests": [
       {
         "number": 1,
@@ -6682,18 +6967,12 @@
     ]
   },
   {
-    "id": "sun-bear",
-    "name": "Sun Bear",
-    "image": "images/bears/Sun Bear Model.png",
+    "id": "radiant-bear",
+    "name": "Radiant Bear",
+    "image": "images/bears/Radiant Bear Model.png",
     "location": "Beach Zone",
-    "description": "Sun Bear basks in the golden light of the Lemon Field, challenging players with increasingly demanding quests centered around honey tokens and tropical crafting.",
-    "noquest_dialog": [
-      "Hello again, beekeeper... Looking for more to do, I see?",
-      "I sensed it as you came closer, but I'm afraid I'm all out of tasks.",
-      "Don't worry... We will still see each other again one day, with new quests to complete...",
-      "For now, just relax. Breathe in, breathe out... You deserve a rest, as Berry would suggest.",
-      "Shine on, my companion. May the rays bless you and your bees. 🔆"
-    ],
+    "description": "Radiant Bear basks in the golden light of the Lemon Field, challenging players with increasingly demanding quests centered around honey tokens and tropical crafting.",
+    "noquest_dialog": [],
     "quests": [
       {
         "number": 1,
@@ -6702,7 +6981,7 @@
           "take": [
             "...",
             "Ahhh, hello there, little one! I sensed your presence from miles away.",
-            "I am Sun Bear, spirit of the bright, golden rays that keeps the flowers in bloom...",
+            "I am Radiant Bear, spirit of the bright, golden rays that keeps the flowers in bloom...",
             "My, are you here for something to do? I may have just the thing...",
             "I can tell that you are one for quests.",
             "If you do all of mine, something special shall be given straight from the Sun itself...",
@@ -6962,7 +7241,7 @@
         "name": "Preaching to the Sun",
         "dialogue": {
           "take": [
-            "*[You catch Sun Bear shining witihout end, you shield your eyes as you get close.]*",
+            "*[You catch Radiant Bear shining witihout end, you shield your eyes as you get close.]*",
             "Hmhmm- oh! My apologies, ahha! First time you've caught me in such a relaxed state! Here, I'll tone it down for a moment.",
             "*[Their light dims down enough for you to see them, but not enough to be fizzled out.]* There, my friend. Are you alright?",
             "When I'm so deep in focus in one place, it's the one time that's hard to focus on anything else!",
@@ -6972,7 +7251,7 @@
             "Remember my friend, the Sun shall be guiding you on your path to glory. It forsees the end of your quests reaching near... 🔆"
           ],
           "going": [
-            "*[The beaming light off of Sun Bear is so strong, you can hear the roar of the rays.]",
+            "*[The beaming light off of Radiant Bear is so strong, you can hear the roar of the rays.]",
             "Go now, my friend! For night grows near! Not that it'll stop me from glowing as much as I am, hmmhm.~"
           ],
           "finish": [
@@ -7028,7 +7307,7 @@
             "I promise, for your efforts will not be in vain..."
           ],
           "finish": [
-            "*[You see Sun Bear pooring molten gold into an egg shaped mold, forming a special golden egg.]*",
+            "*[You see Radiant Bear pooring molten gold into an egg shaped mold, forming a special golden egg.]*",
             "Incredibly done, beekeeper! Such marvolous efforts you've made today!",
             "May your rewards of the Sun be plentiful, friend....",
             "*[They cool the egg off instantly with a wave of their paw, and gives to you with such gentle grace.]*",
@@ -7275,8 +7554,8 @@
     "id": "botanist-bear",
     "name": "Botanist Bear",
     "image": "images/bears/Botanist Bear Model.png",
-    "location": "Greenhouse",
-    "description": "Botanist Bear, also known as Delilah, tends to her special flowers in the Greenhouse. Unlike other bears, she does not have a fixed quest line, instead she offers an endless cycle of 10 rotating quests that repeat forever once completed.",
+    "location": "",
+    "description": "",
     "cyclic": true,
     "aura": "Botanist Bear Aura",
     "aura_buff": [
@@ -7343,7 +7622,8 @@
           ],
           "going": [
             "Toodle-loo, my dear!",
-            "Do be careful not to work yourself to exhaustion!"
+            "Do be careful not to work yourself to exhaustion!",
+            "I’ll be right here with the kettle whistling and a fresh pot of tea waiting for your return."
           ],
           "finish": [
             "Oh my. That was fast.",
@@ -7395,7 +7675,8 @@
           ],
           "going": [
             "Toodle-loo, my dear!",
-            "Do be careful not to work yourself to exhaustion!"
+            "Do be careful not to work yourself to exhaustion!",
+            "I’ll be right here with the kettle whistling and a fresh pot of tea waiting for your return."
           ],
           "finish": [
             "Beautiful, absolutely stellar work!",
@@ -7449,7 +7730,8 @@
           ],
           "going": [
             "Toodle-loo, my dear!",
-            "Do be careful not to work yourself to exhaustion!"
+            "Do be careful not to work yourself to exhaustion!",
+            "I’ll be right here with the kettle whistling and a fresh pot of tea waiting for your return."
           ],
           "finish": [
             "Oh, you've done it! Simply radiant!",
@@ -7504,7 +7786,8 @@
           ],
           "going": [
             "Toodle-loo, my dear!",
-            "Do be careful not to work yourself to exhaustion!"
+            "Do be careful not to work yourself to exhaustion!",
+            "I’ll be right here with the kettle whistling and a fresh pot of tea waiting for your return."
           ],
           "finish": [
             "Oh, you absolute star! Thank you, sweetie.",
@@ -7555,7 +7838,8 @@
           ],
           "going": [
             "Toodle-loo, my dear!",
-            "Do be careful not to work yourself to exhaustion!"
+            "Do be careful not to work yourself to exhaustion!",
+            "I’ll be right here with the kettle whistling and a fresh pot of tea waiting for your return."
           ],
           "finish": [
             "Oh, marvelous! You truly are a lifesaver, my child.",
@@ -7607,7 +7891,8 @@
           ],
           "going": [
             "Toodle-loo, my dear!",
-            "Do be careful not to work yourself to exhaustion!"
+            "Do be careful not to work yourself to exhaustion!",
+            "I’ll be right here with the kettle whistling and a fresh pot of tea waiting for your return."
           ],
           "finish": [
             "Simply marvelous! You’re an absolute angel.",
@@ -7662,7 +7947,8 @@
           ],
           "going": [
             "Toodle-loo, my dear!",
-            "Do be careful not to work yourself to exhaustion!"
+            "Do be careful not to work yourself to exhaustion!",
+            "I’ll be right here with the kettle whistling and a fresh pot of tea waiting for your return."
           ],
           "finish": [
             "Oh, goodness! You look so much better now! The color has returned to your cute little cheeks!",
@@ -7728,7 +8014,8 @@
           ],
           "going": [
             "Toodle-loo, my dear!",
-            "Do be careful not to work yourself to exhaustion!"
+            "Do be careful not to work yourself to exhaustion!",
+            "I’ll be right here with the kettle whistling and a fresh pot of tea waiting for your return."
           ],
           "finish": [
             "Oh, you absolute wonder! You’ve saved the day!",

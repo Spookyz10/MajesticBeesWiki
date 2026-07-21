@@ -15,43 +15,25 @@ function buffText(buff) {
   return `+${buff.value} ${buff.stat}`;
 }
 
-function formatPerFlower(n) {
-  if (n >= 1_000_000)
-    return `1 in ${(n / 1_000_000).toFixed(n % 1_000_000 === 0 ? 0 : 1)}M`;
-  if (n >= 1_000) return `1 in ${n.toLocaleString()}`;
-  return `1 in ${n}`;
-}
-
-function buildDropChanceHtml(dc, stickerEgg, extraChances) {
+function buildDropChanceHtml(itemName, poolStats, stickerEgg, extraChances) {
   const tags = [];
+  const stat = poolStats ? poolStats.get(itemName) : null;
 
-  if (dc) {
-    const ll = window.MajesticLootLuck
-      ? window.MajesticLootLuck.apply(dc.inPool)
-      : { chance: dc.inPool, boosted: false, base: dc.inPool };
-
-    const inPoolDisplay = window.MajesticLootLuck
-      ? window.MajesticLootLuck.formatChance(ll.chance)
-      : ll.chance < 0.1
-        ? ll.chance.toFixed(4) + "%"
-        : ll.chance.toFixed(2) + "%";
-
-    let perFlowerValue = dc.perFlower;
-    if (ll.boosted && ll.base > 0) {
-      const appliedMultiplier = ll.chance / ll.base;
-      perFlowerValue = dc.perFlower / appliedMultiplier;
-    }
-
+  if (stat) {
     const badge = window.MajesticLootLuck
-      ? window.MajesticLootLuck.badge(ll.boosted)
+      ? window.MajesticLootLuck.badge(stat.boosted)
       : "";
+    const chanceDisplay = window.MajesticDropPool.formatChance(stat.chance);
+    const perFlowerDisplay = window.MajesticDropPool.formatPerFlower(
+      stat.perFlower,
+    );
 
     tags.push(`
       <span class="hive-drop-tag hive-drop-tag--pool" title="Chance within the Sticker Token pool">
-        ${badge}${inPoolDisplay} in pool
+        ${badge}${chanceDisplay} in pool
       </span>
       <span class="hive-drop-tag hive-drop-tag--flower" title="Overall chance per flower collected">
-        ${formatPerFlower(perFlowerValue)} per flower
+        ${perFlowerDisplay} per flower
       </span>
     `);
   }
@@ -79,7 +61,7 @@ function buildDropChanceHtml(dc, stickerEgg, extraChances) {
     : "";
 }
 
-function buildHiveCard(item) {
+function buildHiveCard(item, poolStats) {
   const rKey = item.rarity.toLowerCase();
   const buffsHtml = item.buffs.length
     ? item.buffs
@@ -87,7 +69,8 @@ function buildHiveCard(item) {
         .join("")
     : `<span class="hive-buff-none">No bonus</span>`;
   const dropHtml = buildDropChanceHtml(
-    item.dropChance,
+    item.name,
+    poolStats,
     item.stickerEgg,
     item.extraChances,
   );
@@ -107,12 +90,12 @@ function buildHiveCard(item) {
     </div>`;
 }
 
-function renderSection(containerId, items) {
+function renderSection(containerId, items, poolStats) {
   const el = document.getElementById(containerId);
   if (!el) return;
   const sorted = [...items].sort((a, b) => a.order - b.order);
   el.innerHTML = sorted.length
-    ? sorted.map(buildHiveCard).join("")
+    ? sorted.map((item) => buildHiveCard(item, poolStats)).join("")
     : `<p class="hive-empty">Nothing here yet.</p>`;
 }
 
@@ -147,6 +130,13 @@ async function loadHive() {
   renderHive(data);
 }
 
+function buildPoolItems(data) {
+  const all = [...data.skins, ...data.stickers];
+  return all
+    .filter((i) => i.weight)
+    .map((i) => ({ name: i.name, weight: i.weight }));
+}
+
 function renderHive(data) {
   const skinGroups = {
     common: [],
@@ -178,9 +168,16 @@ function renderHive(data) {
     (stickerGroups[r] || stickerGroups.common).push(s);
   });
 
+  const lootLuck = window.MajesticLootLuck ? window.MajesticLootLuck.get() : 0;
+  const poolItems = buildPoolItems(data);
+
+  const poolStats = window.MajesticDropPool
+    ? window.MajesticDropPool.computeDropStats(poolItems, lootLuck)
+    : new Map();
+
   RARITIES.forEach((r) => {
-    renderSection(`skins-${r}`, skinGroups[r]);
-    renderSection(`stickers-${r}`, stickerGroups[r]);
+    renderSection(`skins-${r}`, skinGroups[r], poolStats);
+    renderSection(`stickers-${r}`, stickerGroups[r], poolStats);
   });
 }
 

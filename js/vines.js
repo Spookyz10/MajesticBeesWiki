@@ -57,14 +57,19 @@ function localImg(src, size, alt) {
 }
 
 function withComputedChances(items) {
-  const totalWeight = items.reduce(
-    (sum, it) => sum + (Number(it.weight) || 0),
-    0,
-  );
-  return items.map((it) => ({
-    ...it,
-    chance: totalWeight > 0 ? (Number(it.weight) / totalWeight) * 100 : 0,
-  }));
+  const lootLuck = window.MajesticLootLuck ? window.MajesticLootLuck.get() : 0;
+  const stats = window.MajesticDropPool
+    ? window.MajesticDropPool.computeDropStats(
+        items.map((it) => ({ name: it.item, weight: it.weight })),
+        lootLuck,
+        false,
+      )
+    : new Map();
+
+  return items.map((it) => {
+    const s = stats.get(it.item) || { chance: 0, boosted: false };
+    return { ...it, chance: s.chance, luckBoosted: s.boosted };
+  });
 }
 
 function buildTierCard(tier, activeField) {
@@ -94,11 +99,8 @@ function buildTierCard(tier, activeField) {
       const rows = items
         .map((it) => {
           const amountDisplay = it.amount > 1 ? `×${it.amount}` : "×1";
-          const ll = window.MajesticLootLuck
-            ? window.MajesticLootLuck.apply(it.chance)
-            : { chance: it.chance, boosted: false };
           const badge = window.MajesticLootLuck
-            ? window.MajesticLootLuck.badge(ll.boosted)
+            ? window.MajesticLootLuck.badge(it.luckBoosted)
             : "";
           return `
         <tr>
@@ -109,7 +111,7 @@ function buildTierCard(tier, activeField) {
             </div>
           </td>
           <td class="vine-drop-amount">${amountDisplay}</td>
-          <td class="vine-drop-chance-cell">${badge}${formatChance(ll.chance)}</td>
+          <td class="vine-drop-chance-cell">${badge}${formatChance(it.chance)}</td>
         </tr>`;
         })
         .join("");

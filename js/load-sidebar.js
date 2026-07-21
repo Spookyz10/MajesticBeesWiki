@@ -112,7 +112,7 @@ function lootLuckControlHtml(idSuffix) {
         />
         <span class="ll-widget-suffix">%</span>
       </div>
-      <div class="ll-widget-note">Increases the chance of drops with a base chance ≤ 5%.</div>
+      <div class="ll-widget-note">Increases the chance of drops with a base chance < 5%.</div>
     </div>
   `;
 }

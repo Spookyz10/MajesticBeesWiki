@@ -104,21 +104,19 @@ function buildDropRow(drop, isWeighted, total) {
     : "";
 
   const baseChance = isWeighted ? (drop.chance / total) * 100 : drop.chance;
-  const { chance, boosted } = window.MajesticLootLuck.apply(baseChance);
-  const luckBadge = window.MajesticLootLuck.badge(boosted);
 
   let chanceClass = "planter-drop-chance";
   if (baseChance < 0.5) chanceClass += " planter-drop-chance--rare";
   else if (baseChance < 3) chanceClass += " planter-drop-chance--low";
 
   const display =
-    chance < 0.1
-      ? chance.toFixed(3) + "%"
-      : chance < 1
-        ? chance.toFixed(2) + "%"
-        : parseFloat(chance.toFixed(2)) + "%";
+    baseChance < 0.1
+      ? baseChance.toFixed(3) + "%"
+      : baseChance < 1
+        ? baseChance.toFixed(2) + "%"
+        : parseFloat(baseChance.toFixed(2)) + "%";
 
-  const chanceHtml = `<td class="${chanceClass}">${display}${luckBadge}</td>`;
+  const chanceHtml = `<td class="${chanceClass}">${display}</td>`;
 
   const amountDisplay = drop.isHoney
     ? `x${formatHoney(drop.amount)}`
@@ -287,4 +285,3 @@ function renderPlanterDetail() {
 }
 
 document.addEventListener("DOMContentLoaded", loadPlanterDetail);
-document.addEventListener("majestic-loot-luck-change", renderPlanterDetail);

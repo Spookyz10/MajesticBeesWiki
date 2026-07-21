@@ -1,0 +1,139 @@
+.lunar-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 26px 20px 6px;
+  flex-wrap: wrap;
+}
+
+.lunar-hero-content {
+  flex: 1;
+  min-width: 240px;
+}
+
+.lunar-hero-tagline {
+  color: #d4a96a;
+  line-height: 1.85;
+  font-size: 1.02rem;
+  margin: 0;
+  text-align: center;
+}
+
+.lunar-hero-image {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.lunar-hero-image img {
+  width: 150px;
+  max-width: 42vw;
+  filter: drop-shadow(0 0 18px rgba(130, 120, 220, 0.4));
+}
+
+.lunar-steps {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lunar-step {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px 18px;
+}
+
+.lunar-step-num {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(232, 192, 64, 0.12);
+  border: 1px solid rgba(232, 192, 64, 0.35);
+  color: var(--gold);
+  font-family: "Fredoka One", Georgia, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.lunar-step-text {
+  color: var(--gold-soft);
+  line-height: 1.7;
+  padding-top: 2px;
+}
+
+.lunar-step-text b {
+  color: var(--gold);
+}
+
+.lunar-task-table td:nth-child(2) {
+  white-space: nowrap;
+}
+
+.lunar-sim-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 14px 0;
+  flex-wrap: wrap;
+}
+
+.lunar-sim-controls label {
+  color: var(--gold-soft);
+}
+
+.lunar-sim-controls input {
+  width: 70px;
+  padding: 6px 10px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--gold);
+}
+
+.lunar-sim-controls button {
+  padding: 6px 16px;
+  background: rgba(232, 192, 64, 0.12);
+  border: 1px solid rgba(232, 192, 64, 0.35);
+  border-radius: 8px;
+  color: var(--gold);
+  cursor: pointer;
+}
+
+.lunar-rewards-placeholder {
+  background: var(--panel);
+  border: 1px dashed var(--line);
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  color: var(--gold-dim);
+  font-style: italic;
+  line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  .lunar-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .lunar-hero-content {
+    order: 2;
+  }
+
+  .lunar-hero-image {
+    order: 1;
+  }
+}

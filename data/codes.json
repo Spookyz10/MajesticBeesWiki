@@ -478,5 +478,27 @@
     "skins": [],
     "stickers": [],
     "boosts": ["Bamboo Flask Boost x1", "Seed Oil Boost x1"]
+  },
+  {
+    "code": "UpdateX",
+    "expires": "2026-09-10",
+    "note": "Update 10",
+    "items": ["Lunar Cocktail x1", "Lunar Ticket x1"],
+    "skins": [],
+    "stickers": [],
+    "boosts": []
+  },
+  {
+    "code": "1MVisits",
+    "expires": "2026-07-28",
+    "note": "1M visits!",
+    "items": [
+      "Mythic Starflower x1",
+      "Mythic Vines x1",
+      "Majestic Cocktail x1"
+    ],
+    "skins": [],
+    "stickers": [],
+    "boosts": []
   }
 ]

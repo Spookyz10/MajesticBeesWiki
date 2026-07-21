@@ -108,15 +108,20 @@ function buildChances(chances) {
 }
 
 function withComputedChances(items) {
-  const totalWeight = items.reduce(
-    (sum, it) => sum + (Number(it.weight) || 0),
-    0,
-  );
+  const lootLuck = window.MajesticLootLuck ? window.MajesticLootLuck.get() : 0;
+  const stats = window.MajesticDropPool
+    ? window.MajesticDropPool.computeDropStats(
+        items.map((it) => ({ name: it.item, weight: it.weight })),
+        lootLuck,
+        false,
+      )
+    : new Map();
+
   return items
-    .map((it) => ({
-      ...it,
-      chance: totalWeight > 0 ? (Number(it.weight) / totalWeight) * 100 : 0,
-    }))
+    .map((it) => {
+      const s = stats.get(it.item) || { chance: 0, boosted: false };
+      return { ...it, chance: s.chance, luckBoosted: s.boosted };
+    })
     .sort((a, b) => b.chance - a.chance);
 }
 
@@ -153,11 +158,8 @@ function buildTierCard(tier, activeField) {
               ? `<span class="sf-source-badge sf-source-badge--field">Field</span>`
               : `<span class="sf-source-badge sf-source-badge--all">All</span>`;
           const amountDisplay = it.amount > 1 ? `×${it.amount}` : "×1";
-          const ll = window.MajesticLootLuck
-            ? window.MajesticLootLuck.apply(it.chance)
-            : { chance: it.chance, boosted: false };
           const badge = window.MajesticLootLuck
-            ? window.MajesticLootLuck.badge(ll.boosted)
+            ? window.MajesticLootLuck.badge(it.luckBoosted)
             : "";
           return `
         <tr>
@@ -169,7 +171,7 @@ function buildTierCard(tier, activeField) {
             </div>
           </td>
           <td class="sf-drop-amount">${amountDisplay}</td>
-          <td class="sf-drop-chance-cell">${badge}${formatChance(ll.chance)}</td>
+          <td class="sf-drop-chance-cell">${badge}${formatChance(it.chance)}</td>
         </tr>`;
         })
         .join("");

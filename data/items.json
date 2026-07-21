@@ -158,7 +158,7 @@
     "name": "Diamond Egg",
     "category": "Eggs",
     "rarity": "Legendary",
-    "desc": "Legendaries: 100%.",
+    "desc": "Legendaries: 90%, Mythics: 10%.",
     "image": "images/items/Diamond Egg.png",
     "order": 4.0,
     "buffs": [],
@@ -816,6 +816,61 @@
       { "name": "Critical Power", "type": "Mult", "value": 0.5 },
       { "name": "Critical Chance", "type": "Perc", "value": 10 }
     ],
+    "sources": [{ "type": "mixer" }]
+  },
+  {
+    "id": "lunar-cocktail",
+    "name": "Lunar Cocktail",
+    "category": "Consumables",
+    "rarity": "Mythic",
+    "desc": "Using this grants: x1.5 Night Pollen & x1.5 Night Capacity for 1 hour",
+    "image": "images/items/Lunar Cocktail.png",
+    "order": 15.0,
+    "time": 3600,
+    "buffs": [
+      { "name": "Night Pollen", "type": "Mult", "value": 0.5 },
+      { "name": "Night Capacity", "type": "Mult", "value": 0.5 }
+    ],
+    "sources": [{ "type": "mixer" }]
+  },
+  {
+    "id": "Spin Ticket",
+    "name": "Spin Ticket",
+    "category": "Values",
+    "rarity": "Epic",
+    "desc": "Used to spin the Lucky Wheel in the 25 Bee Zone.",
+    "image": "images/items/Spin Ticket.png",
+    "order": 2.0,
+    "sources": []
+  },
+  {
+    "id": "Lunar Ticket",
+    "name": "Lunar Ticket",
+    "category": "Values",
+    "rarity": "Legendary",
+    "desc": "Used to play lunar mini-game in the night time.",
+    "image": "images/items/Lunar Ticket.png",
+    "order": 3.0,
+    "sources": []
+  },
+  {
+    "id": "Lunar Shard",
+    "name": "Lunar Shard",
+    "category": "Ingredients",
+    "rarity": "Mythic",
+    "desc": "Used to craft Singularity Essence.",
+    "image": "images/items/Lunar Shard.png",
+    "order": 6.0,
+    "sources": []
+  },
+  {
+    "id": "Singularity Essence",
+    "name": "Singularity Essence",
+    "category": "Ingredients",
+    "rarity": "Mythic",
+    "desc": "Used to craft Lunar Bee.",
+    "image": "images/items/Singularity Essence.png",
+    "order": 7.0,
     "sources": [{ "type": "mixer" }]
   }
 ]

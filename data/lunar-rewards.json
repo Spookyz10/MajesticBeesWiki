@@ -1,0 +1,18 @@
+[
+  { "name": "Ticket", "weight": 25, "min": 4, "max": 11 },
+  { "name": "Strawberry", "weight": 20, "min": 4, "max": 67 },
+  { "name": "Blueberry", "weight": 20, "min": 4, "max": 67 },
+  { "name": "Pine Cone", "weight": 20, "min": 4, "max": 67 },
+  { "name": "Strawberry Extract", "weight": 5, "min": 4, "max": 6 },
+  { "name": "Blueberry Extract", "weight": 5, "min": 4, "max": 6 },
+  { "name": "Cone Extract", "weight": 5, "min": 4, "max": 6 },
+  { "name": "Bamboo Boba Tea", "weight": 3, "min": 1, "max": 3 },
+  { "name": "Bamboo", "weight": 8, "min": 1, "max": 32 },
+  { "name": "Mythic Vines", "weight": 1, "min": 1, "max": 1 },
+  { "name": "Mythic Starflower", "weight": 1, "min": 1, "max": 1 },
+  { "name": "Majestic Cocktail", "weight": 1, "min": 1, "max": 1 },
+  { "name": "Moon Extract", "weight": 2, "min": 1, "max": 1 },
+  { "name": "Shiny Jelly", "weight": 1, "min": 1, "max": 1 },
+  { "name": "Lunar Shard", "weight": 0.5, "min": 1, "max": 1 },
+  { "name": "Lunar Essence", "weight": 8, "min": 1, "max": 32 }
+]

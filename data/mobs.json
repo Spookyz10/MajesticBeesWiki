@@ -9,90 +9,87 @@
     "drops": [
       {
         "name": "Caterpillar Amulet",
-        "chance": 0.5,
-        "qty": 1,
-        "lootLuck": true
+        "weight": 0.5,
+        "qty": 1
       },
       {
         "name": "Seed",
-        "chance": 15,
+        "weight": 15,
         "qty": 1
       },
       {
         "name": "Strawberry",
-        "chance": 15,
+        "weight": 15,
         "qty": 1
       },
       {
         "name": "Blueberry",
-        "chance": 15,
+        "weight": 15,
         "qty": 1
       },
       {
         "name": "Pine Cone",
-        "chance": 15,
-        "qty": 1
-      },
-      {
-        "name": "Honey",
-        "chance": 15,
-        "qty": 100
-      },
-      {
-        "name": "Treat",
-        "chance": 10,
+        "weight": 15,
         "qty": 1
       },
       {
         "name": "Fire Essence",
-        "chance": 5,
+        "weight": 5,
         "qty": 3
       },
       {
         "name": "Water Essence",
-        "chance": 5,
+        "weight": 5,
         "qty": 3
       },
       {
         "name": "Wind Essence",
-        "chance": 5,
+        "weight": 5,
         "qty": 3
       },
       {
-        "name": "Ticket",
-        "chance": 1,
-        "qty": 1,
-        "lootLuck": true
+        "name": "Sticker Egg",
+        "weight": 0.1,
+        "qty": 1
       },
       {
-        "name": "Sticker Egg",
-        "chance": 0.1,
-        "qty": 1,
-        "lootLuck": true
+        "name": "Honey",
+        "weight": 15,
+        "qty": 100
+      },
+      {
+        "name": "Treat",
+        "weight": 10,
+        "qty": 1
+      },
+      {
+        "name": "Ticket",
+        "weight": 1,
+        "qty": 1
       },
       {
         "name": "Basic Vines",
-        "chance": 1,
+        "weight": 1,
         "qty": 1
       },
       {
         "name": "Rare Vines",
-        "chance": 0.5,
+        "weight": 0.5,
         "qty": 1
       },
       {
         "name": "Epic Vines",
-        "chance": 0.2,
+        "weight": 0.2,
         "qty": 1
       },
       {
         "name": "Legendary Vines",
-        "chance": 0.1,
+        "weight": 0.1,
         "qty": 1
       },
       {
         "name": "Mythic Vines",
-        "chance": 0.01,
+        "weight": 0.01,
         "qty": 1
       }
     ]
@@ -107,76 +104,72 @@
     "drops": [
       {
         "name": "Ladybug Amulet",
-        "chance": 0.25,
-        "qty": 1,
-        "lootLuck": true
+        "weight": 0.25,
+        "qty": 1
       },
       {
         "name": "Strawberry",
-        "chance": 15,
+        "weight": 15,
         "qty": 3
       },
       {
+        "name": "Royal Jelly",
+        "weight": 5,
+        "qty": 1
+      },
+      {
         "name": "Honey",
-        "chance": 15,
+        "weight": 15,
         "qty": 255
       },
       {
         "name": "Treat",
-        "chance": 10,
+        "weight": 10,
         "qty": 5
       },
       {
-        "name": "Royal Jelly",
-        "chance": 5,
+        "name": "Ticket",
+        "weight": 1,
+        "qty": 1
+      },
+      {
+        "name": "Sticker Egg",
+        "weight": 0.1,
         "qty": 1
       },
       {
         "name": "Fire Essence",
-        "chance": 5,
+        "weight": 5,
         "qty": 3
       },
       {
-        "name": "Ticket",
-        "chance": 1,
-        "qty": 1,
-        "lootLuck": true
-      },
-      {
         "name": "Strawberry Extract",
-        "chance": 1,
-        "qty": 1,
-        "lootLuck": true
-      },
-      {
-        "name": "Sticker Egg",
-        "chance": 0.1,
-        "qty": 1,
-        "lootLuck": true
+        "weight": 1,
+        "qty": 1
       },
       {
         "name": "Basic Vines",
-        "chance": 1,
+        "weight": 1,
         "qty": 1
       },
       {
         "name": "Rare Vines",
-        "chance": 0.5,
+        "weight": 0.5,
         "qty": 1
       },
       {
         "name": "Epic Vines",
-        "chance": 0.2,
+        "weight": 0.2,
         "qty": 1
       },
       {
         "name": "Legendary Vines",
-        "chance": 0.1,
+        "weight": 0.1,
         "qty": 1
       },
       {
         "name": "Mythic Vines",
-        "chance": 0.01,
+        "weight": 0.01,
         "qty": 1
       }
     ]
@@ -191,76 +184,72 @@
     "drops": [
       {
         "name": "Rhino Beetle Amulet",
-        "chance": 0.25,
-        "qty": 1,
-        "lootLuck": true
+        "weight": 0.25,
+        "qty": 1
       },
       {
         "name": "Blueberry",
-        "chance": 15,
+        "weight": 15,
         "qty": 3
       },
       {
+        "name": "Royal Jelly",
+        "weight": 5,
+        "qty": 1
+      },
+      {
         "name": "Honey",
-        "chance": 15,
+        "weight": 15,
         "qty": 255
       },
       {
         "name": "Treat",
-        "chance": 10,
+        "weight": 10,
         "qty": 5
       },
       {
-        "name": "Royal Jelly",
-        "chance": 5,
+        "name": "Ticket",
+        "weight": 1,
         "qty": 1
       },
       {
         "name": "Water Essence",
-        "chance": 5,
+        "weight": 5,
         "qty": 3
       },
       {
-        "name": "Ticket",
-        "chance": 1,
-        "qty": 1,
-        "lootLuck": true
+        "name": "Sticker Egg",
+        "weight": 0.1,
+        "qty": 1
       },
       {
         "name": "Blueberry Extract",
-        "chance": 1,
-        "qty": 1,
-        "lootLuck": true
-      },
-      {
-        "name": "Sticker Egg",
-        "chance": 0.1,
-        "qty": 1,
-        "lootLuck": true
+        "weight": 1,
+        "qty": 1
       },
       {
         "name": "Basic Vines",
-        "chance": 1,
+        "weight": 1,
         "qty": 1
       },
       {
         "name": "Rare Vines",
-        "chance": 0.5,
+        "weight": 0.5,
         "qty": 1
       },
       {
         "name": "Epic Vines",
-        "chance": 0.2,
+        "weight": 0.2,
         "qty": 1
       },
       {
         "name": "Legendary Vines",
-        "chance": 0.1,
+        "weight": 0.1,
         "qty": 1
       },
       {
         "name": "Mythic Vines",
-        "chance": 0.01,
+        "weight": 0.01,
         "qty": 1
       }
     ]
@@ -275,87 +264,82 @@
     "drops": [
       {
         "name": "Spider Amulet",
-        "chance": 0.25,
-        "qty": 1,
-        "lootLuck": true
+        "weight": 0.25,
+        "qty": 1
       },
       {
         "name": "Seed",
-        "chance": 15,
+        "weight": 15,
         "qty": 3
       },
       {
         "name": "Pine Cone",
-        "chance": 15,
-        "qty": 3
-      },
-      {
-        "name": "Honey",
-        "chance": 15,
-        "qty": 755
-      },
-      {
-        "name": "Treat",
-        "chance": 10,
-        "qty": 5
-      },
-      {
-        "name": "Wind Essence",
-        "chance": 10,
+        "weight": 15,
         "qty": 3
       },
       {
         "name": "Royal Jelly",
-        "chance": 5,
+        "weight": 5,
         "qty": 1
       },
       {
+        "name": "Honey",
+        "weight": 15,
+        "qty": 755
+      },
+      {
+        "name": "Treat",
+        "weight": 10,
+        "qty": 5
+      },
+      {
         "name": "Ticket",
-        "chance": 1,
-        "qty": 1,
-        "lootLuck": true
+        "weight": 1,
+        "qty": 1
       },
       {
         "name": "Silver Egg",
-        "chance": 1,
-        "qty": 1,
-        "lootLuck": true
+        "weight": 0.1,
+        "qty": 1
       },
       {
-        "name": "Cone Extract",
-        "chance": 1,
-        "qty": 1,
-        "lootLuck": true
+        "name": "Wind Essence",
+        "weight": 10,
+        "qty": 3
       },
       {
         "name": "Sticker Egg",
-        "chance": 0.15,
-        "qty": 1,
-        "lootLuck": true
+        "weight": 0.15,
+        "qty": 1
+      },
+      {
+        "name": "Cone Extract",
+        "weight": 1,
+        "qty": 1
       },
       {
         "name": "Basic Vines",
-        "chance": 1,
+        "weight": 1,
         "qty": 1
       },
       {
         "name": "Rare Vines",
-        "chance": 0.5,
+        "weight": 0.5,
         "qty": 1
       },
       {
         "name": "Epic Vines",
-        "chance": 0.2,
+        "weight": 0.2,
         "qty": 1
       },
       {
         "name": "Legendary Vines",
-        "chance": 0.1,
+        "weight": 0.1,
         "qty": 1
       },
       {
         "name": "Mythic Vines",
-        "chance": 0.01,
+        "weight": 0.01,
         "qty": 1
       }
     ]
@@ -364,175 +348,168 @@
     "id": "butterfly",
     "name": "Butterfly",
     "image": "images/mobs/Butterfly.png",
-    "location": "Wisteria Field",
+    "location": "Lotus Field",
     "desc": "A giant butterfly. the wiki owner has no creativity for its descrption.",
     "respawn": "60 minutes",
     "drops": [
       {
         "name": "Butterfly Amulet",
-        "chance": 3,
-        "qty": 1,
-        "lootLuck": true
+        "weight": 3,
+        "qty": 1
       },
       {
         "name": "Honey",
-        "chance": 100,
+        "weight": 100,
         "qty": 25000
       },
       {
         "name": "Treat",
-        "chance": 100,
+        "weight": 100,
         "qty": 25
       },
       {
         "name": "Strawberry",
-        "chance": 50,
+        "weight": 50,
         "qty": 10
       },
       {
         "name": "Converter",
-        "chance": 35,
+        "weight": 35,
         "qty": 3
       },
       {
         "name": "Dice",
-        "chance": 40,
+        "weight": 40,
         "qty": 2
       },
       {
         "name": "Double Dice",
-        "chance": 15,
+        "weight": 15,
         "qty": 1
       },
       {
         "name": "Triple Dice",
-        "chance": 5,
+        "weight": 5,
         "qty": 1
       },
       {
         "name": "Starflower",
-        "chance": 20,
+        "weight": 20,
         "qty": 1
       },
       {
         "name": "Strawberry Extract",
-        "chance": 10,
+        "weight": 10,
         "qty": 1
       },
       {
         "name": "Blueberry Extract",
-        "chance": 10,
+        "weight": 10,
         "qty": 1
       },
       {
         "name": "Cone Extract",
-        "chance": 8,
+        "weight": 8,
         "qty": 1
       },
       {
         "name": "Seed Oil",
-        "chance": 8,
+        "weight": 8,
         "qty": 2
+      },
+      {
+        "name": "Moon Extract",
+        "weight": 0.5,
+        "qty": 1
       },
       {
         "name": "Bamboo Flask",
-        "chance": 5,
+        "weight": 5,
         "qty": 2
       },
       {
+        "name": "Majestic Cocktail",
+        "weight": 0.02,
+        "qty": 1
+      },
+      {
         "name": "Glitter",
-        "chance": 2,
+        "weight": 2,
         "qty": 1
       },
       {
         "name": "Fire Essence",
-        "chance": 30,
+        "weight": 30,
         "qty": 15
       },
       {
         "name": "Water Essence",
-        "chance": 25,
+        "weight": 25,
         "qty": 10
       },
       {
         "name": "Wind Essence",
-        "chance": 15,
+        "weight": 15,
         "qty": 5
       },
       {
         "name": "Lunar Essence",
-        "chance": 10,
+        "weight": 10,
         "qty": 3
       },
       {
         "name": "Exp Essence",
-        "chance": 2,
+        "weight": 2,
         "qty": 1
       },
       {
         "name": "Ticket",
-        "chance": 25,
-        "qty": 15,
-        "lootLuck": true
+        "weight": 25,
+        "qty": 15
       },
       {
         "name": "Sticker Egg",
-        "chance": 25,
-        "qty": 1,
-        "lootLuck": true
+        "weight": 25,
+        "qty": 1
       },
       {
         "name": "Royal Jelly",
-        "chance": 15,
+        "weight": 15,
         "qty": 15
       },
       {
         "name": "Diamond Egg",
-        "chance": 0.1,
-        "qty": 1,
-        "lootLuck": true
+        "weight": 0.1,
+        "qty": 1
       },
       {
         "name": "Mythic Egg",
-        "chance": 0.001,
-        "qty": 1,
-        "lootLuck": true
-      },
-      {
-        "name": "Moon Extract",
-        "chance": 0.5,
-        "qty": 1,
-        "lootLuck": true
-      },
-      {
-        "name": "Majestic Cocktail",
-        "chance": 0.02,
-        "qty": 1,
-        "lootLuck": true
+        "weight": 0.001,
+        "qty": 1
       },
       {
         "name": "Basic Vines",
-        "chance": 20,
+        "weight": 20,
         "qty": 3
       },
       {
         "name": "Rare Vines",
-        "chance": 15,
+        "weight": 15,
         "qty": 2
       },
       {
         "name": "Epic Vines",
-        "chance": 5,
+        "weight": 5,
         "qty": 1
       },
       {
         "name": "Legendary Vines",
-        "chance": 2,
+        "weight": 2,
         "qty": 1
       },
       {
         "name": "Mythic Vines",
-        "chance": 1,
+        "weight": 1,
         "qty": 1
       }
     ]
