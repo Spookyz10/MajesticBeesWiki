@@ -100,20 +100,8 @@ function renderTab(id, bees) {
   tab.appendChild(fragment);
 }
 
-function initSlotTableToggle() {
-  const table = document.getElementById("slot-table");
-  const toggle = document.getElementById("slot-table-toggle");
-  if (!table || !toggle) return;
-  toggle.addEventListener("click", () => {
-    const expanded = table.classList.toggle("is-expanded");
-    toggle.setAttribute("aria-expanded", expanded ? "true" : "false");
-    toggle.textContent = expanded ? "Show fewer slots" : "Show all slot prices";
-  });
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   loadBees();
-  initSlotTableToggle();
 
   document.querySelectorAll(".bee-tab-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
