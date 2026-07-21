@@ -65,10 +65,7 @@ function setupChanceControl() {
   if (!input) return;
 
   input.addEventListener("input", () => {
-    const tasksCompleted = Math.max(
-      0,
-      Math.min(15, parseInt(input.value, 10) || 0),
-    );
+    const tasksCompleted = Math.max(0, parseInt(input.value, 10) || 0);
     renderRewardTable(tasksCompleted);
   });
 }
