@@ -292,7 +292,7 @@
     "start": 5000,
     "mult": 10,
     "buff": {
-      "stat": "White Pollen",
+      "stat": "Blue Pollen",
       "type": "Mult",
       "value": 0.1
     },
@@ -318,7 +318,7 @@
     "start": 5000,
     "mult": 10,
     "buff": {
-      "stat": "White Pollen",
+      "stat": "Red Pollen",
       "type": "Mult",
       "value": 0.1
     },

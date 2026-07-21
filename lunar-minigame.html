@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lunar Minigame</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Lunar Minigame" />
+    <meta
+      property="og:description"
+      content="The official wiki for The Majestic Bees."
+    />
+    <meta
+      property="og:image"
+      content="https://spookyz10.github.io/MajesticBeesWiki/images/ui/site-logo.png"
+    />
+    <meta property="og:image:alt" content="The Majestic Bees Wiki logo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lunar Minigame" />
+    <meta
+      name="twitter:description"
+      content="The official wiki for The Majestic Bees."
+    />
+    <meta
+      name="twitter:image"
+      content="https://spookyz10.github.io/MajesticBeesWiki/images/ui/site-logo.png"
+    />
+
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
+
+    <script defer src="js/lunar-minigame.js"></script>
+    <script defer src="js/load-sidebar.js"></script>
+    <script defer src="js/wiki-search.js"></script>
+    <script defer src="js/search.js"></script>
+  </head>
+
+  <body>
+    <div id="sidebar-container"></div>
+
+    <div class="main" data-pagefind-body>
+      <div class="topbar">
+        <div id="search"></div>
+      </div>
+
+      <div class="content mw-parser-output">
+        <div class="lunar-hero">
+          <div class="lunar-hero-content">
+            <div class="hero-title">Lunar Minigame</div>
+            <p class="lunar-hero-tagline">
+              The Lunar Minigame is a <b>time trial</b> that can only be started
+              at <b>night</b>. It costs <b>1 Lunar Ticket</b> to begin, and once
+              started you have <b>5 minutes</b> to complete as many tasks as
+              possible.
+            </p>
+          </div>
+        </div>
+
+        <div class="lunar-hero-image">
+          <img src="images/misc/lunar-altar.png" alt="Lunar Altar" />
+        </div>
+
+        <hr />
+
+        <h2>How It Works</h2>
+        <ol class="lunar-steps">
+          <li class="lunar-step">
+            <span class="lunar-step-num">1</span>
+            <span class="lunar-step-text"
+              >Get a <b>Lunar Ticket</b> and wait until it turns
+              <b>night</b> in-game, since the Lunar Altar only accepts entries
+              after dark.</span
+            >
+          </li>
+          <li class="lunar-step">
+            <span class="lunar-step-num">2</span>
+            <span class="lunar-step-text"
+              >Interact with the <b>Lunar Altar</b> and spend your ticket to
+              begin the trial.</span
+            >
+          </li>
+          <li class="lunar-step">
+            <span class="lunar-step-num">3</span>
+            <span class="lunar-step-text"
+              >A random task is assigned from the pool below. Complete it as
+              fast as possible to receive the next one. You have
+              <b>5 minutes</b> total.</span
+            >
+          </li>
+          <li class="lunar-step">
+            <span class="lunar-step-num">4</span>
+            <span class="lunar-step-text"
+              >Each completed task gives you <b>1 point</b>.
+            </span>
+          </li>
+          <li class="lunar-step">
+            <span class="lunar-step-num">5</span>
+            <span class="lunar-step-text"
+              >You start the trial with <b>5 free reward rolls</b>, and earn
+              <b>+1 roll</b> for every point you get.</span
+            >
+          </li>
+          <li class="lunar-step">
+            <span class="lunar-step-num">6</span>
+            <span class="lunar-step-text"
+              >Every point also increases your <b>luck by 20%</b>, improving
+              your odds at rarer rewards.</span
+            >
+          </li>
+          <li class="lunar-step">
+            <span class="lunar-step-num">7</span>
+            <span class="lunar-step-text"
+              >When the timer ends, all your rolls are exchanged for rewards
+              from the pool below. If you roll the <b>same reward</b> more than
+              once, the amounts stack.</span
+            >
+          </li>
+        </ol>
+
+        <hr />
+
+        <h2>Task Pool</h2>
+        <div class="bees-info-box bees-info-box--plain">
+          During the trial, tasks are picked at random from the pool below. Each
+          task's amount is randomized within its range, so no two runs ask for
+          exactly the same thing.
+
+          <table class="wikitable bees-table lunar-task-table">
+            <thead>
+              <tr>
+                <th>Task</th>
+                <th>Amount Range</th>
+              </tr>
+            </thead>
+            <tbody id="lunar-task-tbody"></tbody>
+          </table>
+        </div>
+
+        <hr />
+
+        <h2>Rewards</h2>
+        <div class="bees-info-box bees-info-box--plain">
+          At the end of the trial, each of your rolls is exchanged for a random
+          reward from the pool below. As the more tasks you complete the more
+          common rarer items get you can also insert your tasks completed in the
+          text box below.
+
+          <div class="lunar-sim-controls">
+            <label for="lunar-tasks-input">Tasks completed</label>
+            <input
+              type="number"
+              id="lunar-tasks-input"
+              min="0"
+              max="15"
+              value="0"
+            />
+          </div>
+
+          <table class="wikitable bees-table lunar-task-table">
+            <thead>
+              <tr>
+                <th>Reward</th>
+                <th>Amount</th>
+                <th>Chance</th>
+              </tr>
+            </thead>
+            <tbody id="lunar-reward-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

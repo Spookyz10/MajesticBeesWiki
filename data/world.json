@@ -70,6 +70,13 @@
       "zone": "25 Bee Zone",
       "desc": "Gives Vines to the player.",
       "image": "images/dispensers/Vines Dispenser.png"
+    },
+    {
+      "id": "lunar-dispenser",
+      "name": "Lunar Ticket Dispenser",
+      "zone": "25 Bee Zone",
+      "desc": "Gives 1 Lunar Ticket to the player. 3 hour cooldown.",
+      "image": "images/dispensers/Lunar Ticket Dispenser.png"
     }
   ],
   "paidDispensers": [
@@ -729,6 +736,81 @@
         }
       ]
     },
+    {
+      "id": "singularity-essence",
+      "name": "Singularity Essence",
+      "image": "images/items/Singularity Essence.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 250000000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Exp Essence",
+          "amount": 250,
+          "image": "images/items/Exp Essence.png"
+        },
+        {
+          "item": "Lunar Essence",
+          "amount": 250,
+          "image": "images/items/Lunar Essence.png"
+        },
+        {
+          "item": "Wind Essence",
+          "amount": 250,
+          "image": "images/items/Wind Essence.png"
+        },
+        {
+          "item": "Water Essence",
+          "amount": 250,
+          "image": "images/items/Water Essence.png"
+        },
+        {
+          "item": "Fire Essence",
+          "amount": 250,
+          "image": "images/items/Fire Essence.png"
+        },
+        {
+          "item": "Lunar Shard",
+          "amount": 3,
+          "image": "images/items/Lunar Shard.png"
+        }
+      ]
+    },
+    {
+      "id": "lunar-cocktail",
+      "name": "Lunar Cocktail",
+      "image": "images/items/Lunar Cocktail.png",
+      "recipe": [
+        {
+          "item": "Honey",
+          "amount": 25000000000,
+          "image": "images/currencies/Honey.png"
+        },
+        {
+          "item": "Lunar Essence",
+          "amount": 250,
+          "image": "images/items/Lunar Essence.png"
+        },
+        {
+          "item": "Moon Extract",
+          "amount": 5,
+          "image": "images/items/Moon Extract.png"
+        },
+        {
+          "item": "Shiny Jelly",
+          "amount": 5,
+          "image": "images/items/Shiny Jelly.png"
+        },
+        {
+          "item": "Lunar Shard",
+          "amount": 1,
+          "image": "images/items/Lunar Shard.png"
+        }
+      ]
+    },
+
     {
       "id": "coconut-drink",
       "name": "Coconut Drink",

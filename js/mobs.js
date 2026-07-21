@@ -6,7 +6,10 @@ async function loadMobs() {
 
   try {
     const res = await fetch("data/mobs.json");
-    mobsData = await res.json();
+    const raw = await res.json();
+    mobsData = Array.isArray(raw)
+      ? raw
+      : Object.entries(raw).map(([id, mob]) => ({ id, ...mob }));
   } catch (err) {
     container.innerHTML =
       '<p style="text-align:center; color: var(--gold-dim);">Failed to load mob data.</p>';
@@ -44,31 +47,51 @@ function renderMobs() {
   });
 }
 
-function buildDropTag(drop) {
-  const { chance, boosted, base } = window.MajesticLootLuck.apply(
-    drop.chance,
-    drop.lootLuck,
-  );
-  const luckBadge = window.MajesticLootLuck.badge(boosted);
+function buildDropTag(drop, poolStats) {
+  const stats = poolStats.get(drop.name) || {
+    chance: 0,
+    boosted: false,
+    baseWeight: drop.weight,
+  };
+  const luckBadge = window.MajesticLootLuck.badge(stats.boosted);
   const qty =
     drop.qty > 1 ? `<span class="mob-drop-qty">×${drop.qty}</span>` : "";
+  const baseChancePct = window.MajesticDropPool.baseChance(
+    drop.weight,
+    poolStats.total,
+  );
   const tierClass =
-    base >= 10
+    baseChancePct >= 10
       ? "mob-drop-tag--common"
-      : base >= 5
+      : baseChancePct >= 5
         ? "mob-drop-tag--uncommon"
-        : base >= 2
+        : baseChancePct >= 2
           ? "mob-drop-tag--rare"
           : "mob-drop-tag--very-rare";
   return `<div class="mob-drop-tag ${tierClass}">
     <span class="mob-drop-name">${drop.name}</span>
     ${qty}
-    <span class="mob-drop-chance">${window.MajesticLootLuck.formatChance(chance)}${luckBadge}</span>
+    <span class="mob-drop-chance">${window.MajesticDropPool.formatChance(stats.chance)}${luckBadge}</span>
   </div>`;
 }
 
+function buildMobDrops(mob) {
+  if (!Array.isArray(mob.drops) || mob.drops.length === 0) return "";
+  const lootLuck = window.MajesticLootLuck.get();
+  const poolStats = window.MajesticDropPool.computeDropStats(
+    mob.drops,
+    lootLuck,
+    false,
+  );
+  poolStats.total = window.MajesticDropPool.getTotalPoolWeight(
+    mob.drops,
+    false,
+  );
+  return mob.drops.map((drop) => buildDropTag(drop, poolStats)).join("");
+}
+
 function buildMobCard(mob) {
-  const drops = mob.drops.map(buildDropTag).join("");
+  const drops = buildMobDrops(mob);
 
   return `
     <div class="mob-card" id="mob-${mob.id}" data-mob-id="${mob.id}">
@@ -114,6 +137,6 @@ document.addEventListener("majestic-loot-luck-change", () => {
     const mob = mobsData.find((m) => m.id === card.dataset.mobId);
     if (!mob) return;
     const dropsList = card.querySelector(".mob-drops-list");
-    if (dropsList) dropsList.innerHTML = mob.drops.map(buildDropTag).join("");
+    if (dropsList) dropsList.innerHTML = buildMobDrops(mob);
   });
 });

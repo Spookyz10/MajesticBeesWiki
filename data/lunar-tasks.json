@@ -1,0 +1,122 @@
+[
+  {
+    "id": "Flowers",
+    "label": "Gather Flowers",
+    "base": 100,
+    "min": 1,
+    "max": 50,
+    "template": "Gather {amount} Flowers."
+  },
+  {
+    "id": "Pollen",
+    "label": "Gather Pollen",
+    "base": 1000000,
+    "min": 10,
+    "max": 1000,
+    "template": "Gather {amount} Pollen."
+  },
+  {
+    "id": "RedPollen",
+    "label": "Gather Red Pollen",
+    "base": 1000000,
+    "min": 10,
+    "max": 1000,
+    "template": "Gather {amount} Red Pollen."
+  },
+  {
+    "id": "BluePollen",
+    "label": "Gather Blue Pollen",
+    "base": 1000000,
+    "min": 10,
+    "max": 1000,
+    "template": "Gather {amount} Blue Pollen."
+  },
+  {
+    "id": "WhitePollen",
+    "label": "Gather White Pollen",
+    "base": 1000000,
+    "min": 10,
+    "max": 1000,
+    "template": "Gather {amount} White Pollen."
+  },
+  {
+    "id": "ConsumeRJ",
+    "label": "Consume Royal Jellies",
+    "base": 1000,
+    "min": 10,
+    "max": 100,
+    "template": "Consume {amount} Royal Jellies."
+  },
+  {
+    "id": "ConsumeVine",
+    "label": "Consume Vines",
+    "base": 1,
+    "min": 1,
+    "max": 3,
+    "template": "Consume {amount} Vines."
+  },
+  {
+    "id": "BreakVine",
+    "label": "Break Vines",
+    "base": 1,
+    "min": 10,
+    "max": 100,
+    "template": "Break {amount} Vines."
+  },
+  {
+    "id": "StarflowerDamage",
+    "label": "Starflower Damage",
+    "base": 10000,
+    "min": 100,
+    "max": 10000,
+    "template": "Do {amount} Starflower Damage."
+  },
+  {
+    "id": "FeedTreat",
+    "label": "Feed Treats",
+    "base": 1000,
+    "min": 10,
+    "max": 300,
+    "template": "Feed {amount} Treats."
+  },
+  {
+    "id": "FeedBlueberry",
+    "label": "Feed Blueberry",
+    "base": 10,
+    "min": 1,
+    "max": 10,
+    "template": "Feed {amount} Blueberry."
+  },
+  {
+    "id": "FeedStrawberry",
+    "label": "Feed Strawberry",
+    "base": 10,
+    "min": 1,
+    "max": 10,
+    "template": "Feed {amount} Strawberry."
+  },
+  {
+    "id": "FeedSeed",
+    "label": "Feed Seed",
+    "base": 10,
+    "min": 1,
+    "max": 10,
+    "template": "Feed {amount} Seed."
+  },
+  {
+    "id": "FeedPineCone",
+    "label": "Feed Pine Cone",
+    "base": 10,
+    "min": 1,
+    "max": 10,
+    "template": "Feed {amount} Pine Cone."
+  },
+  {
+    "id": "CollectTokens",
+    "label": "Collect Tokens",
+    "base": 1,
+    "min": 1,
+    "max": 10,
+    "template": "Collect {amount} Tokens."
+  }
+]

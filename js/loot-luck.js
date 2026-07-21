@@ -1,5 +1,4 @@
 const LOOT_LUCK_STORAGE_KEY = "majestic-loot-luck";
-const LOOT_LUCK_THRESHOLD = 5;
 const LOOT_LUCK_DEFAULT = 0;
 const LOOT_LUCK_EVENT = "majestic-loot-luck-change";
 
@@ -24,10 +23,6 @@ function getLootLuck() {
   return currentLootLuck;
 }
 
-function getLootLuckMultiplier() {
-  return 1 + currentLootLuck / 100;
-}
-
 function updateLootLuckInputs(value) {
   document.querySelectorAll("[data-loot-luck-input]").forEach((el) => {
     if (document.activeElement !== el) el.value = value;
@@ -42,30 +37,6 @@ function setLootLuck(value) {
   document.dispatchEvent(
     new CustomEvent(LOOT_LUCK_EVENT, { detail: { value: n } }),
   );
-}
-
-function applyLootLuck(baseChance, forceBoosted) {
-  const base = Number(baseChance);
-  if (isNaN(base) || base <= 0) {
-    return { chance: base, boosted: false, base };
-  }
-  const eligible = forceBoosted === true || base <= LOOT_LUCK_THRESHOLD;
-  if (!eligible) {
-    return { chance: base, boosted: false, base };
-  }
-  const multiplier = getLootLuckMultiplier();
-  const boostedChance = Math.min(100, base * multiplier);
-  return {
-    chance: boostedChance,
-    boosted: true,
-    base,
-  };
-}
-
-function formatChance(value) {
-  const n = Number(value);
-  if (isNaN(n)) return `${value}%`;
-  return `${parseFloat(n.toFixed(3))}%`;
 }
 
 function lootLuckBadge(boosted) {
@@ -91,11 +62,7 @@ function bindLootLuckControls(root) {
 window.MajesticLootLuck = {
   get: getLootLuck,
   set: setLootLuck,
-  multiplier: getLootLuckMultiplier,
-  apply: applyLootLuck,
   badge: lootLuckBadge,
-  formatChance,
   bind: bindLootLuckControls,
   EVENT: LOOT_LUCK_EVENT,
-  THRESHOLD: LOOT_LUCK_THRESHOLD,
 };

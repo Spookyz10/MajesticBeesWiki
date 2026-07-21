@@ -42,6 +42,8 @@ function formatRequirement(req) {
       return `Craft <b>${fmt(req.amount)}</b> ${escHtml(req.item || "Item")}`;
     case "consume":
       return `Use <b>${fmt(req.amount)}</b> ${escHtml(req.item || "Item")}`;
+    case "bring":
+      return `Bring <b>${fmt(req.amount)}</b> ${escHtml(req.item || "Item")}`;
     default:
       return escHtml(JSON.stringify(req));
   }
