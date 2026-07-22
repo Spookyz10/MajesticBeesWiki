@@ -612,14 +612,14 @@
       {
         "token": "3 Leaf Clover Boost",
         "level": 1,
-        "weight": 8,
+        "weight": 40,
         "expires": 15,
         "desc": "Grants +25% Pollen and +25% Loot Luck for 30s.\nStacks up to 2 times."
       },
       {
         "token": "4 Leaf Clover Boost",
         "level": 7,
-        "weight": 40,
+        "weight": 8,
         "expires": 12,
         "desc": "Grants +100% Pollen, +100% Loot Luck, and +100% Capacity Bonus for 30s.\n(Very Rare)."
       },

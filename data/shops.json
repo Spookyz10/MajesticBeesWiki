@@ -261,9 +261,18 @@
               "name": "Diamond Egg",
               "type": "",
               "image": "images/items/Diamond Egg.png",
-              "description": "The rarest egg available in the shop.",
-              "info": "Always hatches into a Legendary bee.",
+              "description": "The second rarest egg available in the shop.",
+              "info": "Always hatches into a Legendary bee (90%) or a Mythic bee (10%).",
               "cost": "250 Tickets",
+              "costType": "ticket"
+            },
+            {
+              "name": "Mythic Egg",
+              "type": "",
+              "image": "images/items/Mythic Egg.png",
+              "description": "The rarest egg available in the shop.",
+              "info": "Always hatches into a Mythic bee.",
+              "cost": "750 Tickets",
               "costType": "ticket"
             }
           ]

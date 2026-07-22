@@ -1,4 +1,4 @@
-const HB_COLUMNS = [10, 10, 10, 10, 10];
+const HB_COLUMNS = [11, 11, 11, 11, 11];
 const HB_TOTAL_SLOTS = HB_COLUMNS.reduce((a, b) => a + b, 0);
 
 const HB_STICKER_GROUPS = {

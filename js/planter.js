@@ -22,6 +22,13 @@ function formatHoney(n) {
   return Number(n).toLocaleString("pt-BR");
 }
 
+function formatChance(value) {
+  const n = Number(value);
+  if (n < 0.1) return n.toFixed(3) + "%";
+  if (n < 1) return n.toFixed(2) + "%";
+  return parseFloat(n.toFixed(2)) + "%";
+}
+
 function getItemImage(drop) {
   const name = drop?.item;
 
@@ -32,6 +39,35 @@ function getItemImage(drop) {
 
   return `images/items/${name}.png`;
 }
+
+const FIELD_COLORS = {
+  "Red Field": {
+    tab: "#d48880",
+    active: "rgba(140,50,45,0.3)",
+    border: "rgba(165,65,55,0.38)",
+    tbody: "rgba(110,30,25,0.18)",
+  },
+  "Blue Field": {
+    tab: "#88bedd",
+    active: "rgba(60,110,165,0.28)",
+    border: "rgba(80,130,175,0.38)",
+    tbody: "rgba(40,90,145,0.14)",
+  },
+  "White Field": {
+    tab: "#c8dce8",
+    active: "rgba(185,205,220,0.18)",
+    border: "rgba(185,205,220,0.35)",
+    tbody: "rgba(160,185,200,0.07)",
+  },
+  "Bamboo Field": {
+    tab: "#78c882",
+    active: "rgba(50,110,60,0.26)",
+    border: "rgba(65,130,75,0.36)",
+    tbody: "rgba(30,90,40,0.16)",
+  },
+};
+
+const FIELD_ORDER = ["Red Field", "Blue Field", "White Field", "Bamboo Field"];
 
 function buildInfobox(planter) {
   const rarityColors = {
@@ -93,30 +129,25 @@ function buildObtain(planter) {
     </div>`;
 }
 
-function totalWeight(drops) {
-  return drops.reduce((sum, d) => sum + (d.chance || 0), 0);
+function withComputedChances(items) {
+  const total = items.reduce((sum, it) => sum + (it.weight || 0), 0);
+  return items
+    .map((it) => ({
+      ...it,
+      chance: total > 0 ? (it.weight / total) * 100 : 0,
+    }))
+    .sort((a, b) => b.chance - a.chance);
 }
 
-function buildDropRow(drop, isWeighted, total) {
+function buildDropRow(drop) {
   const imgSrc = getItemImage(drop);
   const typeBadge = drop.type
     ? `<span class="planter-drop-type-badge planter-drop-type-badge--${drop.type}">${drop.type}</span>`
     : "";
-
-  const baseChance = isWeighted ? (drop.chance / total) * 100 : drop.chance;
-
-  let chanceClass = "planter-drop-chance";
-  if (baseChance < 0.5) chanceClass += " planter-drop-chance--rare";
-  else if (baseChance < 3) chanceClass += " planter-drop-chance--low";
-
-  const display =
-    baseChance < 0.1
-      ? baseChance.toFixed(3) + "%"
-      : baseChance < 1
-        ? baseChance.toFixed(2) + "%"
-        : parseFloat(baseChance.toFixed(2)) + "%";
-
-  const chanceHtml = `<td class="${chanceClass}">${display}</td>`;
+  const sourceBadge =
+    drop.source === "field"
+      ? `<span class="sf-source-badge sf-source-badge--field">Field</span>`
+      : `<span class="sf-source-badge sf-source-badge--all">All</span>`;
 
   const amountDisplay = drop.isHoney
     ? `x${formatHoney(drop.amount)}`
@@ -126,84 +157,96 @@ function buildDropRow(drop, isWeighted, total) {
 
   return `
     <tr>
-      <td>
-        <div class="planter-drop-item-cell">
+      <td class="sf-drop-item-cell">
+        <div class="sf-drop-item-wrap">
           <img src="${imgSrc}" alt="${escHtml(drop.item)}" onerror="this.onerror=null;this.src='images/ui/site-logo.png';" />
           <span>${escHtml(drop.item)}</span>
+          ${sourceBadge}
           ${typeBadge}
         </div>
       </td>
-      <td class="planter-drop-amount">${amountDisplay}</td>
-      ${chanceHtml}
+      <td class="sf-drop-amount">${amountDisplay}</td>
+      <td class="sf-drop-chance-cell">${formatChance(drop.chance)}</td>
     </tr>`;
 }
 
-const POOL_NOTES = {
-  "Red Field": "Only on Red fields",
-  "Blue Field": "Only on Blue fields",
-  "White Field": "Only on White fields",
-  "Bamboo Field": "Only on Bamboo fields",
-  "All Fields": "Applies on every field",
-};
-
-function buildPool(poolName, drops) {
-  const isEmpty = !drops || drops.length === 0;
-  if (isEmpty) return "";
-
-  const noteHtml = POOL_NOTES[poolName]
-    ? `<span class="planter-pool-note">${POOL_NOTES[poolName]}</span>`
-    : "";
-
-  const isWeighted = drops.some((d) => d.isWeight);
-  const total = isWeighted ? totalWeight(drops) : 0;
-
-  const rows = [...drops]
-    .sort((a, b) => b.chance - a.chance)
-    .map((d) => buildDropRow(d, isWeighted, total))
-    .join("");
-
+function buildFieldTable(items) {
+  const rows = withComputedChances(items).map(buildDropRow).join("");
   return `
-    <div class="planter-pool" data-pool="${escHtml(poolName)}">
-      <div class="planter-pool-header">
-        <span class="planter-pool-name">${escHtml(poolName)}</span>
-        ${noteHtml}
-      </div>
-      <table class="planter-drop-table">
-        <thead>
-          <tr>
-            <th>Item</th>
-            <th style="text-align:center">Amount</th>
-            <th>Chance</th>
-          </tr>
-        </thead>
-        <tbody>${rows}</tbody>
-      </table>
-    </div>`;
+    <table class="sf-drop-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th style="text-align:center">Amount</th>
+          <th>Chance</th>
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>`;
 }
 
 function buildDropsSection(planter) {
-  const pools = Object.entries(planter.drops).filter(
-    ([, drops]) => drops && drops.length,
-  );
-  if (!pools.length) return "";
+  const drops = planter.drops || {};
+  const allItems = (drops["All Fields"] || []).map((d) => ({
+    ...d,
+    source: "all",
+  }));
 
-  const isWeightedPlanter = pools.some(
-    ([, drops]) => drops.some && drops.some((d) => d.isWeight),
+  const availableFields = FIELD_ORDER.filter(
+    (f) => drops[f] && drops[f].length > 0,
   );
 
-  const note = isWeightedPlanter
-    ? "This planter rolls a single item from the pool each token, using weighted random selection. Field-specific pools only apply when the planter is placed in that field type."
-    : "Each drop rolls independently per token. Field-specific pools only apply when the planter is placed in that field type. The All Fields pool always applies.";
+  if (!availableFields.length) {
+    if (!allItems.length) return "";
+    return `
+      <div class="planter-section">
+        <div class="planter-section-heading">
+          <span class="planter-section-deco"></span>Drops<span class="planter-section-deco"></span>
+        </div>
+        <div class="planter-drops-note">This planter rolls a single item from the pool each token, using weighted random selection.</div>
+        ${buildFieldTable(allItems)}
+      </div>`;
+  }
+
+  const tabButtons = availableFields
+    .map((field, i) => {
+      const col = FIELD_COLORS[field] || {};
+      const label = field.replace(" Field", "");
+      return `<button
+      class="sf-field-tab${i === 0 ? " active" : ""}"
+      data-field="${field}"
+      style="--tab-color:${col.tab};--tab-active-bg:${col.active};--tab-border:${col.border}"
+    >${label}</button>`;
+    })
+    .join("");
+
+  const tabPanels = availableFields
+    .map((field, i) => {
+      const col = FIELD_COLORS[field] || {};
+      const fieldItems = (drops[field] || []).map((d) => ({
+        ...d,
+        source: "field",
+      }));
+      const merged = [...fieldItems, ...allItems];
+      return `
+      <div
+        class="sf-field-panel${i === 0 ? " active" : ""}"
+        data-field="${field}"
+        style="--panel-tbody:${col.tbody};--panel-border:${col.border}"
+      >
+        ${buildFieldTable(merged)}
+      </div>`;
+    })
+    .join("");
 
   return `
     <div class="planter-section">
       <div class="planter-section-heading">
         <span class="planter-section-deco"></span>Drops<span class="planter-section-deco"></span>
       </div>
-      <div class="planter-drops-note">${note}</div>
-      <div class="planter-pools">
-        ${pools.map(([name, drops]) => buildPool(name, drops)).join("")}
-      </div>
+      <div class="planter-drops-note">Each field's pool competes with the All Fields pool as a single weighted roll per token. Select the field this planter is placed in to see the combined chances.</div>
+      <div class="sf-field-tabs" role="tablist">${tabButtons}</div>
+      <div class="sf-field-panels">${tabPanels}</div>
     </div>`;
 }
 
@@ -249,6 +292,21 @@ function buildPage(planter, all) {
       ${buildAllPlantersSection(all, planter.id)}
     </div>`;
 }
+
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest(".sf-field-tab");
+  if (!btn) return;
+  const section = btn.closest(".planter-section");
+  if (!section) return;
+  const field = btn.dataset.field;
+
+  section
+    .querySelectorAll(".sf-field-tab")
+    .forEach((b) => b.classList.toggle("active", b === btn));
+  section
+    .querySelectorAll(".sf-field-panel")
+    .forEach((p) => p.classList.toggle("active", p.dataset.field === field));
+});
 
 let loadedPlanters = null;
 let currentPlanter = null;

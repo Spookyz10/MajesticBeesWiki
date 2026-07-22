@@ -810,6 +810,18 @@
         }
       ]
     },
+    {
+      "id": "lunar-ticket",
+      "name": "Lunar Ticket",
+      "image": "images/items/Lunar Ticket.png",
+      "recipe": [
+        {
+          "item": "Ticket",
+          "amount": 200,
+          "image": "images/items/Ticket.png"
+        }
+      ]
+    },
 
     {
       "id": "coconut-drink",
