@@ -13,29 +13,54 @@ async function loadLunarTasks() {
 }
 
 let lunarRewardsData = [];
+let lunarBaseTotalWeight = 0;
 
 async function loadLunarRewards() {
   const res = await fetch("data/lunar-rewards.json");
   lunarRewardsData = await res.json();
+  lunarRewardsData.sort((a, b) => b.weight - a.weight);
+  lunarBaseTotalWeight = lunarRewardsData.reduce((sum, r) => sum + r.weight, 0);
   renderRewardTable(0);
 }
 
-function weightedPool(luck) {
+const LUNAR_SHARD_NAME = "Lunar Shard";
+const LUNAR_SHARD_UNLOCK_TASKS = 20;
+const LUNAR_SHARD_CHANCE_CAP = 5;
+
+function weightedPool(tasksCompleted) {
+  const totalWeightLuck = tasksCompleted * 100;
+
   return lunarRewardsData
+    .filter(
+      (r) =>
+        r.name !== LUNAR_SHARD_NAME ||
+        tasksCompleted >= LUNAR_SHARD_UNLOCK_TASKS,
+    )
     .map((r) => {
-      const weight = r.weight < 5 ? r.weight * (1 + luck) : r.weight;
-      return { ...r, rollWeight: weight };
-    })
-    .sort((a, b) => b.rollWeight - a.rollWeight);
+      if (r.name !== LUNAR_SHARD_NAME) {
+        return { ...r, rollWeight: r.weight };
+      }
+
+      const luckPercent = totalWeightLuck / 10;
+      const baseChance = (r.weight / lunarBaseTotalWeight) * 100;
+      let adjustedChance = baseChance * (1 + luckPercent / 100);
+      if (adjustedChance > LUNAR_SHARD_CHANCE_CAP)
+        adjustedChance = LUNAR_SHARD_CHANCE_CAP;
+
+      const rollWeight = (adjustedChance / 100) * lunarBaseTotalWeight;
+      return { ...r, rollWeight };
+    });
 }
 
 function renderRewardTable(tasksCompleted) {
   const tbody = document.getElementById("lunar-reward-tbody");
   if (!tbody) return;
 
-  const luck = tasksCompleted * 0.2;
-  const pool = weightedPool(luck);
+  const pool = weightedPool(tasksCompleted);
   const totalWeight = pool.reduce((sum, r) => sum + r.rollWeight, 0);
+
+  const rollsLabel = document.getElementById("lunar-rolls-count");
+  if (rollsLabel) rollsLabel.textContent = tasksCompleted + 5;
 
   tbody.innerHTML = "";
   pool.forEach((reward) => {
@@ -96,6 +121,6 @@ function renderTaskTable(tasks) {
 
 document.addEventListener("DOMContentLoaded", () => {
   loadLunarTasks();
-  loadLunarRewards();
+  // loadLunarRewards();
   setupChanceControl();
 });
