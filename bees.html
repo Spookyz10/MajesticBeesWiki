@@ -231,6 +231,7 @@
                   <th>EXP to get this level</th>
                   <th>Total XP</th>
                   <th>Treats (this level)</th>
+                  <th>Honey Cost (this level)</th>
                 </tr>
               </thead>
               <tbody id="bee-levels-tbody"></tbody>
@@ -259,6 +260,8 @@
             ];
 
             function fmt(n) {
+              if (n >= 1e15)
+                return (n / 1e15).toFixed(2).replace(/\.?0+$/, "") + "Q";
               if (n >= 1e12)
                 return (n / 1e12).toFixed(2).replace(/\.?0+$/, "") + "T";
               if (n >= 1e9)
@@ -278,6 +281,8 @@
               var xpNeeded = XP[i];
               totalXp += xpNeeded;
               var treats = Math.ceil(xpNeeded / 20);
+              // one tretat is 10k honey, i need to display the honey cost too for each level.
+              var honeyCost = treats * 10000;
 
               var tr = document.createElement("tr");
               if (lvl > 6) tr.classList.add("level-row--extra");
@@ -296,7 +301,11 @@
                   "</td>" +
                   "<td>" +
                   fmt(treats) +
+                  "</td>" +
+                  "<td>" +
+                  fmt(honeyCost) +
                   "</td>";
+
                 tbody.appendChild(tr);
                 break;
               }
@@ -313,6 +322,9 @@
                 "</td>" +
                 "<td>" +
                 fmt(treats) +
+                "</td>" +
+                "<td>" +
+                fmt(honeyCost) +
                 "</td>";
               tbody.appendChild(tr);
             }
