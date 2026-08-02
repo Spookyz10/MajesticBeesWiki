@@ -214,6 +214,7 @@ function buildItemCard(item) {
 
   return `
     <div class="item-card" data-id="${escHtml(id)}">
+    <a href="items-details.html?id=${encodeURIComponent(id)}" style="text-decoration: none; color: inherit; display: block;">
       <div class="item-card-main">
         <div class="item-card-img">
           <img
@@ -230,6 +231,7 @@ function buildItemCard(item) {
           <span class="item-category-tag">${escHtml(item.category)}</span>
         </div>
       </div>
+      </a>
       ${sectionsHtml ? `<div class="item-toggle-sections">${sectionsHtml}</div>` : ""}
     </div>
   `;

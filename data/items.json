@@ -19,7 +19,12 @@
       { "name": "Convert Rate", "type": "Mult", "value": 1.25 },
       { "name": "Convert Amount", "type": "Add", "value": 15 }
     ],
-    "sources": [{ "type": "mixer" }]
+    "sources": [
+      { "type": "mixer" },
+      { "type": "drop", "name": "Mob Drop", "mob_list": ["Butterfly"] },
+      { "type": "shop", "name": "Lucky Wheel" },
+      { "type": "quest" }
+    ]
   },
   {
     "id": "Moon Extract",
@@ -49,7 +54,10 @@
       { "name": "Honey Bonus", "type": "Mult", "value": 0.1 },
       { "name": "Convert Rate", "type": "Mult", "value": 0.5 }
     ],
-    "sources": [{ "type": "mixer" }]
+    "sources": [
+      { "type": "mixer" },
+      { "type": "drop", "name": "Mob Drop", "mob_list": ["Butterfly"] }
+    ]
   },
   {
     "id": "Cone Extract",
@@ -63,8 +71,9 @@
     "buffs": [{ "name": "White Pollen", "type": "Mult", "value": 0.5 }],
     "sources": [
       { "type": "mixer" },
-      { "type": "drop", "name": "Mob Drop" },
-      { "type": "drop", "name": "Starflower" }
+      { "type": "drop", "name": "Mob Drop", "mob_list": ["Butterfly"] },
+      { "type": "drop", "name": "Starflower" },
+      { "type": "drop", "name": "Mythic Vines" }
     ]
   },
   {
@@ -79,8 +88,9 @@
     "buffs": [{ "name": "Red Pollen", "type": "Mult", "value": 0.5 }],
     "sources": [
       { "type": "mixer" },
-      { "type": "drop", "name": "Mob Drop" },
-      { "type": "drop", "name": "Starflower" }
+      { "type": "drop", "name": "Mob Drop", "mob_list": ["Butterfly"] },
+      { "type": "drop", "name": "Starflower" },
+      { "type": "drop", "name": "Mythic Vines" }
     ]
   },
   {
@@ -95,8 +105,9 @@
     "buffs": [{ "name": "Blue Pollen", "type": "Mult", "value": 0.5 }],
     "sources": [
       { "type": "mixer" },
-      { "type": "drop", "name": "Mob Drop" },
-      { "type": "drop", "name": "Starflower" }
+      { "type": "drop", "name": "Mob Drop", "mob_list": ["Butterfly"] },
+      { "type": "drop", "name": "Starflower" },
+      { "type": "drop", "name": "Mythic Vines" }
     ]
   },
   {
@@ -109,7 +120,11 @@
     "order": 25.0,
     "time": 1800,
     "buffs": [{ "name": "Movespeed", "type": "Mult", "value": 0.25 }],
-    "sources": [{ "type": "drop", "name": "Starflower" }, { "type": "mixer" }]
+    "sources": [
+      { "type": "drop", "name": "Starflower" },
+      { "type": "mixer" },
+      { "type": "drop", "name": "Mob Drop", "mob_list": ["Butterfly"] }
+    ]
   },
   {
     "id": "Basic Egg",
@@ -134,8 +149,9 @@
     "sources": [
       { "type": "quest" },
       { "type": "shop", "name": "Ticket Shop" },
-      { "type": "drop", "name": "Legendary+ Starflower" },
-      { "type": "drop", "name": "Spider" }
+      { "type": "drop", "name": "Legendary/Mythic Starflower" },
+      { "type": "drop", "name": "Spider", "mob_list": ["Spider"] },
+      { "type": "drop", "name": "Legendary/Mythic Vines" }
     ]
   },
   {
@@ -150,7 +166,9 @@
     "sources": [
       { "type": "drop", "name": "Mythic Starflower" },
       { "type": "quest" },
-      { "type": "shop", "name": "Ticket Shop" }
+      { "type": "shop", "name": "Ticket Shop" },
+      { "type": "shop", "name": "Lucky Wheel" },
+      { "type": "drop", "name": "Mythic Vines" }
     ]
   },
   {
@@ -165,7 +183,9 @@
     "sources": [
       { "type": "drop", "name": "Mythic Starflower" },
       { "type": "quest" },
-      { "type": "shop", "name": "Ticket Shop" }
+      { "type": "shop", "name": "Ticket Shop" },
+      { "type": "shop", "name": "Lucky Wheel" },
+      { "type": "drop", "name": "Mythic Vines" }
     ]
   },
   {
@@ -266,7 +286,11 @@
     "order": 100.0,
     "buffs": [],
     "sources": [
-      { "type": "drop", "name": "Starflower" },
+      {
+        "type": "drop",
+        "name": "Starflower",
+        "starFlower_list": ["Coconut Field"]
+      },
       { "type": "drop", "name": "Field Drop" }
     ]
   },
@@ -280,7 +304,11 @@
     "order": 101.0,
     "buffs": [],
     "sources": [
-      { "type": "drop", "name": "Starflower" },
+      {
+        "type": "drop",
+        "name": "Starflower",
+        "starFlower_list": ["Lemon Field"]
+      },
       { "type": "drop", "name": "Field Drop" }
     ]
   },
@@ -293,7 +321,10 @@
     "image": "images/items/Exp Orb.png",
     "order": 16.0,
     "buffs": [],
-    "sources": [{ "type": "quest" }, { "type": "drop", "name": "Exp Bee" }]
+    "sources": [
+      { "type": "quest" },
+      { "type": "drop", "name": "Exp Bee", "mob_list": ["Exp Bee"] }
+    ]
   },
   {
     "id": "Bamboo",
@@ -307,7 +338,11 @@
     "sources": [
       { "type": "dispenser", "name": "Bamboo Dispenser" },
       { "type": "drop", "name": "Planters" },
-      { "type": "drop", "name": "Starflower" },
+      {
+        "type": "drop",
+        "name": "Starflower",
+        "starFlower_list": ["Bamboo Field"]
+      },
       { "type": "drop", "name": "Field Drop" }
     ]
   },
@@ -320,7 +355,10 @@
     "image": "images/items/Lunar Treat.png",
     "order": 18.0,
     "buffs": [],
-    "sources": [{ "type": "drop", "name": "Lunar Starflower" }]
+    "sources": [
+      { "type": "drop", "name": "Lunar Starflower" },
+      { "type": "shop", "name": "Lunar Minigame" }
+    ]
   },
   {
     "id": "Pine Cone",
@@ -335,7 +373,8 @@
       { "type": "drop", "name": "Mob Drop" },
       { "type": "drop", "name": "Planters" },
       { "type": "drop", "name": "Starflower" },
-      { "type": "drop", "name": "Field Drop" }
+      { "type": "drop", "name": "Field Drop" },
+      { "type": "drop", "name": "Vines" }
     ]
   },
   {
@@ -351,7 +390,8 @@
       { "type": "drop", "name": "Mob Drop" },
       { "type": "drop", "name": "Planters" },
       { "type": "drop", "name": "Starflower" },
-      { "type": "drop", "name": "Field Drop" }
+      { "type": "drop", "name": "Field Drop" },
+      { "type": "drop", "name": "Vines" }
     ]
   },
   {
@@ -367,7 +407,9 @@
       { "type": "drop", "name": "Mob Drop" },
       { "type": "drop", "name": "Planters" },
       { "type": "drop", "name": "Starflower" },
-      { "type": "drop", "name": "Field Drop" }
+      { "type": "drop", "name": "Field Drop" },
+      { "type": "drop", "name": "Vines" },
+      { "type": "shop", "name": "Lunar Minigame" }
     ]
   },
   {
@@ -383,7 +425,9 @@
       { "type": "drop", "name": "Mob Drop" },
       { "type": "drop", "name": "Planters" },
       { "type": "drop", "name": "Starflower" },
-      { "type": "drop", "name": "Field Drop" }
+      { "type": "drop", "name": "Field Drop" },
+      { "type": "drop", "name": "Vines" },
+      { "type": "shop", "name": "Lunar Minigame" }
     ]
   },
   {
@@ -398,7 +442,8 @@
     "sources": [
       { "type": "mixer" },
       { "type": "drop", "name": "Mob Drop" },
-      { "type": "drop", "name": "Field Drop" }
+      { "type": "drop", "name": "Field Drop" },
+      { "type": "drop", "name": "Starflower Drop" }
     ]
   },
   {
@@ -471,8 +516,9 @@
     "buffs": [],
     "sources": [
       { "type": "dispenser", "name": "Royal Jelly Dispenser" },
-      { "type": "drop", "name": "Mobs" },
-      { "type": "drop", "name": "Starflowers" }
+      { "type": "drop", "name": "Mob Drop" },
+      { "type": "drop", "name": "Starflower Drop" },
+      { "type": "drop", "name": "Vines Drop" }
     ]
   },
   {
@@ -496,7 +542,7 @@
     "order": 1.0,
     "buffs": [],
     "sources": [
-      { "type": "drop", "name": "Starflowers" },
+      { "type": "drop", "name": "Starflower Drop" },
       { "type": "drop", "name": "Field Drop" }
     ]
   },
@@ -531,7 +577,13 @@
     "image": "images/items/Cardboard Planter.png",
     "order": 45.0,
     "buffs": [],
-    "sources": []
+    "cost": [
+      "100,000,000 Honey",
+      "15 Wind Essence",
+      "15 Fire Essence",
+      "15 Water Essence"
+    ],
+    "sources": [{ "type": "shop", "name": "Greenhouse" }]
   },
   {
     "id": "Ticket Planter",
@@ -553,7 +605,13 @@
     "image": "images/items/Sticker Planter.png",
     "order": 47.0,
     "buffs": [],
-    "sources": []
+    "cost": [
+      "50 Tickets",
+      "50 Wind Essence",
+      "50 Fire Essence",
+      "50 Water Essence"
+    ],
+    "sources": [{ "type": "shop", "name": "Greenhouse" }]
   },
   {
     "id": "Ice Planter",
@@ -564,6 +622,7 @@
     "image": "images/items/Ice Planter.png",
     "order": 49.0,
     "buffs": [],
+    "cost": ["25,000,000 Honey", "100 Water Essence", "50 Tickets"],
     "sources": [{ "type": "shop", "name": "Ice Shop" }]
   },
   {
@@ -575,6 +634,7 @@
     "image": "images/items/Fire Planter.png",
     "order": 50.0,
     "buffs": [],
+    "cost": ["25,000,000 Honey", "100 Fire Essence", "50 Tickets"],
     "sources": [{ "type": "shop", "name": "Fire Shop" }]
   },
   {
@@ -633,7 +693,11 @@
     "image": "images/items/Mythic Starflower.png",
     "order": 5.0,
     "buffs": [],
-    "sources": [{ "type": "quest" }, { "type": "mixer" }]
+    "sources": [
+      { "type": "quest" },
+      { "type": "mixer" },
+      { "type": "shop", "name": "Lunar Minigame" }
+    ]
   },
   {
     "id": "Ticket",
@@ -647,8 +711,8 @@
     "sources": [
       { "type": "dispenser", "name": "Ticket Dispenser" },
       { "type": "drop", "name": "Planters" },
-      { "type": "drop", "name": "Starflowers" },
-      { "type": "drop", "name": "Mobs" }
+      { "type": "drop", "name": "Starflower Drop" },
+      { "type": "drop", "name": "Mob Drop" }
     ]
   },
   {
@@ -703,7 +767,12 @@
     "desc": "Always turns into a random sticker bee.",
     "image": "images/items/Sticker Egg.png",
     "order": 25.0,
-    "sources": []
+    "buffs": [],
+    "sources": [
+      { "type": "drop", "name": "Mob Drop" },
+      { "type": "drop", "name": "Starflower Drop" },
+      { "type": "drop", "name": "Legendary/Mythic Vines" }
+    ]
   },
   {
     "id": "Lunar Essence",
@@ -713,7 +782,11 @@
     "desc": "Used to craft variable things.",
     "image": "images/items/Lunar Essence.png",
     "order": 4.0,
-    "sources": [{ "type": "drop", "name": "Lunar Starflower" }]
+    "buffs": [],
+    "sources": [
+      { "type": "drop", "name": "Lunar Starflower" },
+      { "type": "shop", "name": "Lunar Minigame" }
+    ]
   },
   {
     "id": "Exp Essence",
@@ -723,9 +796,9 @@
     "desc": "Used to craft variable things.",
     "image": "images/items/Exp Essence.png",
     "order": 5.0,
+    "buffs": [],
     "sources": [{ "type": "mixer" }]
   },
-
   {
     "id": "Mythic Egg",
     "name": "Mythic Egg",
@@ -735,7 +808,11 @@
     "image": "images/items/Mythic Egg.png",
     "order": 5.0,
     "buffs": [],
-    "sources": []
+    "sources": [
+      { "type": "shop", "name": "Lucky Wheel" },
+      { "type": "quest", "name": "Druid Bear #5" },
+      { "type": "quest", "name": "Black Bear #40" }
+    ]
   },
   {
     "id": "Shiny Mythic Egg",
@@ -757,7 +834,10 @@
     "image": "images/items/Basic Vines.png",
     "order": 1.0,
     "buffs": [],
-    "sources": []
+    "sources": [
+      { "type": "drop", "name": "Mob Drop" },
+      { "type": "drop", "name": "Cardboard Planter" }
+    ]
   },
   {
     "id": "Rare Vines",
@@ -768,7 +848,10 @@
     "image": "images/items/Rare Vines.png",
     "order": 2.0,
     "buffs": [],
-    "sources": []
+    "sources": [
+      { "type": "drop", "name": "Mob Drop" },
+      { "type": "drop", "name": "Cardboard Planter" }
+    ]
   },
   {
     "id": "Epic Vines",
@@ -779,7 +862,10 @@
     "image": "images/items/Epic Vines.png",
     "order": 3.0,
     "buffs": [],
-    "sources": []
+    "sources": [
+      { "type": "drop", "name": "Mob Drop" },
+      { "type": "drop", "name": "Cardboard Planter" }
+    ]
   },
   {
     "id": "Legendary Vines",
@@ -790,7 +876,10 @@
     "image": "images/items/Legendary Vines.png",
     "order": 4.0,
     "buffs": [],
-    "sources": []
+    "sources": [
+      { "type": "drop", "name": "Mob Drop" },
+      { "type": "drop", "name": "Cardboard Planter" }
+    ]
   },
   {
     "id": "Mythic Vines",
@@ -801,7 +890,11 @@
     "image": "images/items/Mythic Vines.png",
     "order": 5.0,
     "buffs": [],
-    "sources": []
+    "sources": [
+      { "type": "drop", "name": "Mob Drop" },
+      { "type": "drop", "name": "Cardboard Planter" },
+      { "type": "shop", "name": "Lunar Minigame" }
+    ]
   },
   {
     "id": "bamboo-boba-tea",
@@ -816,7 +909,10 @@
       { "name": "Critical Power", "type": "Mult", "value": 0.5 },
       { "name": "Critical Chance", "type": "Perc", "value": 10 }
     ],
-    "sources": [{ "type": "mixer" }]
+    "sources": [
+      { "type": "mixer" },
+      { "type": "shop", "name": "Lunar Minigame" }
+    ]
   },
   {
     "id": "lunar-cocktail",
@@ -841,7 +937,8 @@
     "desc": "Used to spin the Lucky Wheel in the 25 Bee Zone.",
     "image": "images/items/Spin Ticket.png",
     "order": 2.0,
-    "sources": []
+    "buffs": [],
+    "sources": [{ "type": "quest", "name": "Druid Bear" }]
   },
   {
     "id": "Lunar Ticket",
@@ -851,7 +948,12 @@
     "desc": "Used to play lunar mini-game in the night time.",
     "image": "images/items/Lunar Ticket.png",
     "order": 3.0,
-    "sources": []
+    "buffs": [],
+    "cost": ["200 Tickets"],
+    "sources": [
+      { "type": "mixer" },
+      { "type": "dispenser", "name": "Lunar Ticket Dispenser" }
+    ]
   },
   {
     "id": "Lunar Shard",
@@ -861,7 +963,8 @@
     "desc": "Used to craft Singularity Essence.",
     "image": "images/items/Lunar Shard.png",
     "order": 6.0,
-    "sources": []
+    "buffs": [],
+    "sources": [{ "type": "shop", "name": "Lunar Minigame" }]
   },
   {
     "id": "Singularity Essence",
@@ -871,6 +974,7 @@
     "desc": "Used to craft Lunar Bee.",
     "image": "images/items/Singularity Essence.png",
     "order": 7.0,
+    "buffs": [],
     "sources": [{ "type": "mixer" }]
   }
 ]

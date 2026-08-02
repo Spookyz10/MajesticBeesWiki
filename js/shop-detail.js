@@ -33,8 +33,10 @@ function renderItem(item) {
   const type = escapeHtml(item.type || "");
   const image = escapeHtml(item.image || "images/ui/site-logo.png");
 
+  const elementId = item.name.replace(/\s+/g, "-");
+
   return `
-    <div class="shop-item">
+    <div id="${elementId}" class="shop-item">
       <div class="shop-item-name">${name}</div>
       <div class="shop-item-type">${type}</div>
       <div class="shop-item-panel image-panel">
@@ -178,3 +180,25 @@ async function loadShopDetail() {
 }
 
 document.addEventListener("DOMContentLoaded", loadShopDetail);
+
+window.addEventListener("DOMContentLoaded", () => {
+  if (window.location.hash) {
+    setTimeout(() => {
+      const targetId = decodeURIComponent(window.location.hash.substring(1));
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth", block: "center" });
+
+        targetElement.style.outline = "2px solid var(--gold)";
+        targetElement.style.boxShadow = "0 0 25px rgba(232, 192, 64, 0.4)";
+        targetElement.style.transition = "all 0.5s ease";
+
+        setTimeout(() => {
+          targetElement.style.outline = "none";
+          targetElement.style.boxShadow = "none";
+        }, 2500);
+      }
+    }, 350);
+  }
+});

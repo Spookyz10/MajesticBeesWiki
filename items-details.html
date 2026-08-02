@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Majestic Bees Wiki</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
+    <script defer src="js/utils.js"></script>
+    <script defer src="js/load-sidebar.js"></script>
+    <script defer src="js/items-details.js"></script>
+  </head>
+  <body>
+    <div id="sidebar-container"></div>
+
+    <div class="main">
+      <div class="topbar">
+        <div id="search"></div>
+      </div>
+
+      <div class="content mw-parser-output">
+        <div class="item-detail-shell">
+          <!-- Craft, ways to obtain and etc -->
+          <div class="item-detail-main">
+            <h1 id="item-main-title" class="item-detail-title"></h1>
+
+            <div class="item-detail-desc">
+              <span id="item-description-text"></span>
+            </div>
+
+            <div id="item-sources-container"></div>
+            <div id="item-crafts-container"></div>
+          </div>
+
+          <!-- Info box -->
+          <div class="item-card item-detail-infobox">
+            <div id="infobox-title" class="item-detail-infobox-header"></div>
+
+            <div class="item-detail-infobox-image">
+              <div class="item-card-img">
+                <img
+                  id="infobox-img"
+                  src=""
+                  alt=""
+                  onerror="this.src = 'images/ui/site-logo.png'"
+                />
+              </div>
+            </div>
+
+            <div class="item-detail-infobox-stats">
+              <div class="item-detail-infobox-row">
+                <span class="item-detail-infobox-label">RARITY</span>
+                <span
+                  id="infobox-rarity"
+                  class="item-rarity-tag item-detail-infobox-rarity"
+                ></span>
+              </div>
+
+              <div class="item-detail-infobox-row">
+                <span class="item-detail-infobox-label">CATEGORY</span>
+                <span
+                  id="infobox-category"
+                  class="item-category-tag item-detail-infobox-category"
+                ></span>
+              </div>
+
+              <div
+                id="infobox-cost-row"
+                class="item-detail-infobox-row item-detail-infobox-row--cost item-detail-infobox-row--last"
+              >
+                <span class="item-detail-infobox-label">COST</span>
+                <span id="infobox-cost" class="item-detail-infobox-cost"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

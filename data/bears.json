@@ -7554,8 +7554,8 @@
     "id": "botanist-bear",
     "name": "Botanist Bear",
     "image": "images/bears/Botanist Bear Model.png",
-    "location": "",
-    "description": "",
+    "location": "25 Bee Zone",
+    "description": "Botanist Bear is a wise and nurturing character who specializes in quests that involve gathering pollen and tokens from various fields. Completing her quests rewards players with honey and unique items.",
     "cyclic": true,
     "aura": "Botanist Bear Aura",
     "aura_buff": [
