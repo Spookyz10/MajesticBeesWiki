@@ -549,7 +549,7 @@
         "level": 18,
         "weight": 10,
         "expires": 20,
-        "desc": "Creates a rain of 8 Blossom Leafs (+2 every 5 Levels), each one gathering 40 Pollen * Blossom Pollen and upgrade flowers for 10s * Blossom Time & covers flowers in obsidian for 11s."
+        "desc": "Creates a rain of 8 Blossom Leafs (+2 every 5 Levels), each one gathering 40 Pollen * Blossom Pollen and upgrade flowers for 10s * Blossom Time & covers flowers in obsidian for 11s. Gives more pollen when touching obsidian."
       }
     ]
   },
