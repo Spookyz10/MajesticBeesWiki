@@ -4,7 +4,7 @@
     "name": "Fire Planter",
     "icon": "images/items/Fire Planter.png",
     "rarity": "Epic",
-    "desc": "A fiery planter crackling with intense heat, said to have been forged in the heart of a volcano.",
+    "desc": "Use it to put the Fire Planter in a field.",
     "obtain": [
       {
         "method": "Red Shop",
@@ -16,26 +16,84 @@
     "bar": true,
     "drops": {
       "Red Field": [
-        { "item": "Strawberry", "amount": 2, "weight": 15 },
-        { "item": "Fire Essence", "amount": 1, "weight": 15 }
+        {
+          "item": "Strawberry",
+          "weight": 15,
+          "amount": 2
+        },
+        {
+          "item": "Fire Essence",
+          "weight": 15,
+          "amount": 1
+        }
       ],
       "Blue Field": [
-        { "item": "Blueberry", "amount": 2, "weight": 15 },
-        { "item": "Water Essence", "amount": 1, "weight": 15 }
+        {
+          "item": "Blueberry",
+          "weight": 15,
+          "amount": 2
+        },
+        {
+          "item": "Water Essence",
+          "weight": 15,
+          "amount": 1
+        }
       ],
       "White Field": [
-        { "item": "Pine Cone", "amount": 2, "weight": 15 },
-        { "item": "Wind Essence", "amount": 1, "weight": 15 }
+        {
+          "item": "Pine Cone",
+          "weight": 15,
+          "amount": 2
+        },
+        {
+          "item": "Wind Essence",
+          "weight": 15,
+          "amount": 1
+        }
       ],
-      "Bamboo Field": [{ "item": "Bamboo", "amount": 2, "weight": 15 }],
+      "Bamboo Field": [
+        {
+          "item": "Bamboo",
+          "weight": 15,
+          "amount": 2
+        }
+      ],
       "All Fields": [
-        { "item": "Lunar Ticket", "amount": 1, "weight": 0.5 },
-        { "item": "Starflower", "amount": 1, "weight": 1 },
-        { "item": "Strawberry", "amount": 4, "weight": 15 },
-        { "item": "Fire Essence", "amount": 1, "weight": 15 },
-        { "item": "Honey", "amount": 100000, "isHoney": true, "weight": 10 },
-        { "item": "Treat", "amount": 2, "weight": 10 },
-        { "item": "Ticket", "amount": 1, "weight": 1 }
+        {
+          "item": "Lunar Ticket",
+          "weight": 0.5,
+          "amount": 1
+        },
+        {
+          "item": "Starflower",
+          "weight": 1,
+          "amount": 1
+        },
+        {
+          "item": "Strawberry",
+          "weight": 15,
+          "amount": 4
+        },
+        {
+          "item": "Fire Essence",
+          "weight": 15,
+          "amount": 1
+        },
+        {
+          "item": "Honey",
+          "weight": 10,
+          "amount": 100000
+        },
+        {
+          "item": "Treat",
+          "weight": 10,
+          "amount": 2
+        },
+        {
+          "item": "Ticket",
+          "weight": 1,
+          "amount": 1
+        }
       ]
     }
   },
@@ -44,7 +102,7 @@
     "name": "Ice Planter",
     "icon": "images/items/Ice Planter.png",
     "rarity": "Epic",
-    "desc": "A frosty planter encased in a layer of shimmering ice, rumored to have been carved from the peak of an eternal glacier.",
+    "desc": "Use it to put the Ice Planter in a field.",
     "obtain": [
       {
         "method": "Blue Shop",
@@ -56,26 +114,84 @@
     "bar": true,
     "drops": {
       "Red Field": [
-        { "item": "Strawberry", "amount": 2, "weight": 15 },
-        { "item": "Fire Essence", "amount": 1, "weight": 15 }
+        {
+          "item": "Strawberry",
+          "weight": 15,
+          "amount": 2
+        },
+        {
+          "item": "Fire Essence",
+          "weight": 15,
+          "amount": 1
+        }
       ],
       "Blue Field": [
-        { "item": "Blueberry", "amount": 2, "weight": 15 },
-        { "item": "Water Essence", "amount": 1, "weight": 15 }
+        {
+          "item": "Blueberry",
+          "weight": 15,
+          "amount": 2
+        },
+        {
+          "item": "Water Essence",
+          "weight": 15,
+          "amount": 1
+        }
       ],
       "White Field": [
-        { "item": "Pine Cone", "amount": 2, "weight": 15 },
-        { "item": "Wind Essence", "amount": 1, "weight": 15 }
+        {
+          "item": "Pine Cone",
+          "weight": 15,
+          "amount": 2
+        },
+        {
+          "item": "Wind Essence",
+          "weight": 15,
+          "amount": 1
+        }
       ],
-      "Bamboo Field": [{ "item": "Bamboo", "amount": 2, "weight": 15 }],
+      "Bamboo Field": [
+        {
+          "item": "Bamboo",
+          "weight": 15,
+          "amount": 2
+        }
+      ],
       "All Fields": [
-        { "item": "Lunar Ticket", "amount": 1, "weight": 0.5 },
-        { "item": "Starflower", "amount": 1, "weight": 1 },
-        { "item": "Blueberry", "amount": 4, "weight": 15 },
-        { "item": "Water Essence", "amount": 1, "weight": 15 },
-        { "item": "Honey", "amount": 100000, "isHoney": true, "weight": 10 },
-        { "item": "Treat", "amount": 2, "weight": 10 },
-        { "item": "Ticket", "amount": 1, "weight": 1 }
+        {
+          "item": "Lunar Ticket",
+          "weight": 0.5,
+          "amount": 1
+        },
+        {
+          "item": "Starflower",
+          "weight": 1,
+          "amount": 1
+        },
+        {
+          "item": "Blueberry",
+          "weight": 15,
+          "amount": 4
+        },
+        {
+          "item": "Water Essence",
+          "weight": 15,
+          "amount": 1
+        },
+        {
+          "item": "Honey",
+          "weight": 10,
+          "amount": 100000
+        },
+        {
+          "item": "Treat",
+          "weight": 10,
+          "amount": 2
+        },
+        {
+          "item": "Ticket",
+          "weight": 1,
+          "amount": 1
+        }
       ]
     }
   },
@@ -84,11 +200,11 @@
     "name": "Sticker Planter",
     "icon": "images/items/Sticker Planter.png",
     "rarity": "Epic",
-    "desc": "A fancy sticker planter that mainly gives stickers!",
+    "desc": "Use it to put the Sticker Planter in a field.",
     "obtain": [
       {
-        "method": "Greenhouse",
-        "detail": "50 Tickets + 50 Wind Essence + 50 Fire Essence + 50 Water Essence"
+        "method": "Greenhouse Shop",
+        "detail": "50 Ticket"
       }
     ],
     "tokens": 9,
@@ -102,97 +218,119 @@
       "All Fields": [
         {
           "item": "Shovel Sticker",
-          "amount": 1,
-          "type": "Sticker",
-          "weight": 10000
+          "weight": 10000,
+          "amount": 1
         },
         {
           "item": "Rake Sticker",
-          "amount": 1,
-          "type": "Sticker",
-          "weight": 10000
+          "weight": 10000,
+          "amount": 1
         },
         {
           "item": "Hammer Sticker",
-          "amount": 1,
-          "type": "Sticker",
-          "weight": 10000
+          "weight": 10000,
+          "amount": 1
         },
         {
           "item": "Magnet Sticker",
-          "amount": 1,
-          "type": "Sticker",
-          "weight": 10000
+          "weight": 10000,
+          "amount": 1
         },
         {
           "item": "Scissors Sticker",
-          "amount": 1,
-          "type": "Sticker",
-          "weight": 10000
+          "weight": 10000,
+          "amount": 1
         },
         {
           "item": "Scythe Sticker",
-          "amount": 1,
-          "type": "Sticker",
-          "weight": 3000
+          "weight": 3000,
+          "amount": 1
         },
         {
           "item": "Axe Sticker",
-          "amount": 1,
-          "type": "Sticker",
-          "weight": 3000
+          "weight": 3000,
+          "amount": 1
         },
         {
           "item": "Pickaxe Sticker",
-          "amount": 1,
-          "type": "Sticker",
-          "weight": 3000
+          "weight": 3000,
+          "amount": 1
         },
         {
           "item": "Gold Magnet Sticker",
-          "amount": 1,
-          "type": "Sticker",
-          "weight": 3000
+          "weight": 3000,
+          "amount": 1
         },
         {
           "item": "Honey Dipper Sticker",
-          "amount": 1,
-          "type": "Sticker",
-          "weight": 500
+          "weight": 500,
+          "amount": 1
         },
         {
           "item": "Snow Shovel Sticker",
-          "amount": 1,
-          "type": "Sticker",
-          "weight": 500
+          "weight": 500,
+          "amount": 1
         },
         {
           "item": "Fire Scythe Sticker",
-          "amount": 1,
-          "type": "Sticker",
-          "weight": 500
+          "weight": 500,
+          "amount": 1
         },
         {
           "item": "Bamboo Spear Sticker",
-          "amount": 1,
-          "type": "Sticker",
-          "weight": 15
+          "weight": 15,
+          "amount": 1
         },
-        { "item": "Blue Hive", "amount": 1, "type": "Skin", "weight": 3000 },
-        { "item": "Red Hive", "amount": 1, "type": "Skin", "weight": 3000 },
-        { "item": "Green Hive", "amount": 1, "type": "Skin", "weight": 3000 },
-        { "item": "Orange Hive", "amount": 1, "type": "Skin", "weight": 3000 },
-        { "item": "Black Hive", "amount": 1, "type": "Skin", "weight": 300 },
-        { "item": "White Hive", "amount": 1, "type": "Skin", "weight": 300 },
+        {
+          "item": "Blue Hive",
+          "weight": 3000,
+          "amount": 1
+        },
+        {
+          "item": "Red Hive",
+          "weight": 3000,
+          "amount": 1
+        },
+        {
+          "item": "Green Hive",
+          "weight": 3000,
+          "amount": 1
+        },
+        {
+          "item": "Orange Hive",
+          "weight": 3000,
+          "amount": 1
+        },
+        {
+          "item": "Black Hive",
+          "weight": 300,
+          "amount": 1
+        },
+        {
+          "item": "White Hive",
+          "weight": 300,
+          "amount": 1
+        },
         {
           "item": "Light Blue Hive",
-          "amount": 1,
-          "type": "Skin",
-          "weight": 300
+          "weight": 300,
+          "amount": 1
         },
-        { "item": "Purple Hive", "amount": 1, "type": "Skin", "weight": 300 },
-        { "item": "Pink Hive", "amount": 1, "type": "Skin", "weight": 300 },
-        { "item": "Chromatic Hive", "amount": 1, "type": "Skin", "weight": 15 }
+        {
+          "item": "Purple Hive",
+          "weight": 300,
+          "amount": 1
+        },
+        {
+          "item": "Pink Hive",
+          "weight": 300,
+          "amount": 1
+        },
+        {
+          "item": "Chromatic Hive",
+          "weight": 15,
+          "amount": 1
+        }
       ]
     }
   },
@@ -201,7 +339,7 @@
     "name": "Ticket Planter",
     "icon": "images/items/Ticket Planter.png",
     "rarity": "Epic",
-    "desc": "A golden planter shimmering with the promise of rare rewards. Grows slowly but reliably produces Tickets alongside other useful items.",
+    "desc": "Use it to put the Ticket Planter in a field.",
     "obtain": [
       {
         "method": "Unknown",
@@ -212,15 +350,55 @@
     "growTime": 3600,
     "bar": true,
     "drops": {
-      "Red Field": [{ "item": "Strawberry", "amount": 1, "weight": 5 }],
-      "Blue Field": [{ "item": "Blueberry", "amount": 1, "weight": 5 }],
-      "White Field": [{ "item": "Pine Cone", "amount": 1, "weight": 5 }],
-      "Bamboo Field": [{ "item": "Bamboo", "amount": 1, "weight": 5 }],
+      "Red Field": [
+        {
+          "item": "Strawberry",
+          "weight": 5,
+          "amount": 1
+        }
+      ],
+      "Blue Field": [
+        {
+          "item": "Blueberry",
+          "weight": 5,
+          "amount": 1
+        }
+      ],
+      "White Field": [
+        {
+          "item": "Pine Cone",
+          "weight": 5,
+          "amount": 1
+        }
+      ],
+      "Bamboo Field": [
+        {
+          "item": "Bamboo",
+          "weight": 5,
+          "amount": 1
+        }
+      ],
       "All Fields": [
-        { "item": "Lunar Ticket", "amount": 1, "weight": 5 },
-        { "item": "Seed", "amount": 1, "weight": 5 },
-        { "item": "Honey", "amount": 5000, "isHoney": true, "weight": 10 },
-        { "item": "Ticket", "amount": 1, "weight": 155 }
+        {
+          "item": "Lunar Ticket",
+          "weight": 5,
+          "amount": 1
+        },
+        {
+          "item": "Seed",
+          "weight": 5,
+          "amount": 1
+        },
+        {
+          "item": "Honey",
+          "weight": 10,
+          "amount": 5000
+        },
+        {
+          "item": "Ticket",
+          "weight": 155,
+          "amount": 1
+        }
       ]
     }
   },
@@ -229,11 +407,11 @@
     "name": "Cardboard Planter",
     "icon": "images/items/Cardboard Planter.png",
     "rarity": "Rare",
-    "desc": "A cardboard planter that gives fancy loot and vines!",
+    "desc": "Use it to put the Cardboard Planter in a field.",
     "obtain": [
       {
-        "method": "Greenhouse",
-        "detail": "100m Honey + 15 Wind Essence + 15 Fire Essence + 15 Water Essence"
+        "method": "Greenhouse Shop",
+        "detail": "100,000,000 Honey"
       }
     ],
     "tokens": 17,
@@ -241,30 +419,779 @@
     "bar": true,
     "drops": {
       "Red Field": [
-        { "item": "Strawberry", "amount": 1, "weight": 15 },
-        { "item": "Fire Essence", "amount": 1, "weight": 15 }
+        {
+          "item": "Strawberry",
+          "weight": 15,
+          "amount": 1
+        },
+        {
+          "item": "Fire Essence",
+          "weight": 15,
+          "amount": 1
+        }
       ],
       "Blue Field": [
-        { "item": "Blueberry", "amount": 1, "weight": 15 },
-        { "item": "Water Essence", "amount": 1, "weight": 15 }
+        {
+          "item": "Blueberry",
+          "weight": 15,
+          "amount": 1
+        },
+        {
+          "item": "Water Essence",
+          "weight": 15,
+          "amount": 1
+        }
       ],
       "White Field": [
-        { "item": "Pine Cone", "amount": 1, "weight": 15 },
-        { "item": "Wind Essence", "amount": 1, "weight": 15 }
+        {
+          "item": "Pine Cone",
+          "weight": 15,
+          "amount": 1
+        },
+        {
+          "item": "Wind Essence",
+          "weight": 15,
+          "amount": 1
+        }
       ],
-      "Bamboo Field": [{ "item": "Bamboo", "amount": 1, "weight": 15 }],
+      "Bamboo Field": [
+        {
+          "item": "Bamboo",
+          "weight": 15,
+          "amount": 1
+        }
+      ],
       "All Fields": [
-        { "item": "Lunar Ticket", "amount": 1, "weight": 0.2 },
-        { "item": "Starflower", "amount": 1, "weight": 0.2 },
-        { "item": "Seed", "amount": 2, "weight": 15 },
-        { "item": "Honey", "amount": 10000, "isHoney": true, "weight": 10 },
-        { "item": "Treat", "amount": 2, "weight": 10 },
-        { "item": "Ticket", "amount": 1, "weight": 0.2 },
-        { "item": "Basic Vines", "amount": 1, "weight": 2 },
-        { "item": "Rare Vines", "amount": 1, "weight": 1 },
-        { "item": "Epic Vines", "amount": 1, "weight": 0.5 },
-        { "item": "Legendary Vines", "amount": 1, "weight": 0.2 },
-        { "item": "Mythic Vines", "amount": 1, "weight": 0.05 }
+        {
+          "item": "Lunar Ticket",
+          "weight": 0.2,
+          "amount": 1
+        },
+        {
+          "item": "Starflower",
+          "weight": 0.2,
+          "amount": 1
+        },
+        {
+          "item": "Seed",
+          "weight": 15,
+          "amount": 2
+        },
+        {
+          "item": "Honey",
+          "weight": 10,
+          "amount": 10000
+        },
+        {
+          "item": "Treat",
+          "weight": 10,
+          "amount": 2
+        },
+        {
+          "item": "Ticket",
+          "weight": 0.2,
+          "amount": 1
+        },
+        {
+          "item": "Basic Vines",
+          "weight": 2,
+          "amount": 1
+        },
+        {
+          "item": "Rare Vines",
+          "weight": 1,
+          "amount": 1
+        },
+        {
+          "item": "Epic Vines",
+          "weight": 0.5,
+          "amount": 1
+        },
+        {
+          "item": "Legendary Vines",
+          "weight": 0.2,
+          "amount": 1
+        },
+        {
+          "item": "Mythic Vines",
+          "weight": 0.05,
+          "amount": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "blossom-planter",
+    "name": "Blossom Planter",
+    "icon": "images/items/Blossom Planter.png",
+    "obtain": [
+      {
+        "method": "Greenhouse Shop",
+        "detail": "1,000,000,000,000,000 Honey (base price; increases with purchases)"
+      }
+    ],
+    "rarity": "Mythic",
+    "desc": "Use it to put the Blossom Planter in a field.",
+    "tokens": 50,
+    "growTime": 18000,
+    "bar": true,
+    "drops": {
+      "Red Field": [
+        {
+          "item": "Apple",
+          "weight": 15,
+          "amount": 3
+        },
+        {
+          "item": "Strawberry",
+          "weight": 15,
+          "amount": 3
+        },
+        {
+          "item": "Fire Essence",
+          "weight": 15,
+          "amount": 3
+        }
+      ],
+      "Blue Field": [
+        {
+          "item": "Blueberry",
+          "weight": 15,
+          "amount": 3
+        },
+        {
+          "item": "Water Essence",
+          "weight": 15,
+          "amount": 3
+        }
+      ],
+      "White Field": [
+        {
+          "item": "Carrot",
+          "weight": 15,
+          "amount": 3
+        },
+        {
+          "item": "Pine Cone",
+          "weight": 15,
+          "amount": 3
+        },
+        {
+          "item": "Wind Essence",
+          "weight": 15,
+          "amount": 3
+        }
+      ],
+      "Bamboo Field": [
+        {
+          "item": "Bamboo",
+          "weight": 15,
+          "amount": 3
+        }
+      ],
+      "All Fields": [
+        {
+          "item": "Lunar Ticket",
+          "weight": 5,
+          "amount": 2
+        },
+        {
+          "item": "Starflower",
+          "weight": 5,
+          "amount": 3
+        },
+        {
+          "item": "Rich Apple Juice",
+          "weight": 0.5,
+          "amount": 1
+        },
+        {
+          "item": "Foaming Carrot Juice",
+          "weight": 0.5,
+          "amount": 1
+        },
+        {
+          "item": "Majestic Cocktail",
+          "weight": 1,
+          "amount": 1
+        },
+        {
+          "item": "Honey",
+          "weight": 10,
+          "amount": 2500000000
+        },
+        {
+          "item": "Treat",
+          "weight": 10,
+          "amount": 2
+        },
+        {
+          "item": "Ticket",
+          "weight": 1,
+          "amount": 1
+        },
+        {
+          "item": "Basic Vines",
+          "weight": 8,
+          "amount": 1
+        },
+        {
+          "item": "Rare Vines",
+          "weight": 5,
+          "amount": 1
+        },
+        {
+          "item": "Epic Vines",
+          "weight": 2,
+          "amount": 1
+        },
+        {
+          "item": "Legendary Vines",
+          "weight": 0.5,
+          "amount": 1
+        },
+        {
+          "item": "Mythic Vines",
+          "weight": 0.2,
+          "amount": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "lotus-planter",
+    "name": "Lotus Planter",
+    "icon": "images/items/Lotus Planter.png",
+    "obtain": [
+      {
+        "method": "Greenhouse Shop",
+        "detail": "75,000,000,000,000 Honey (base price; increases with purchases)"
+      }
+    ],
+    "rarity": "Legendary",
+    "desc": "Use it to put the Lotus Planter in a field.",
+    "tokens": 45,
+    "growTime": 14400,
+    "bar": true,
+    "drops": {
+      "Red Field": [
+        {
+          "item": "Apple",
+          "weight": 15,
+          "amount": 3
+        },
+        {
+          "item": "Strawberry",
+          "weight": 15,
+          "amount": 3
+        },
+        {
+          "item": "Fire Essence",
+          "weight": 15,
+          "amount": 3
+        }
+      ],
+      "Blue Field": [
+        {
+          "item": "Blueberry",
+          "weight": 15,
+          "amount": 3
+        },
+        {
+          "item": "Water Essence",
+          "weight": 15,
+          "amount": 3
+        }
+      ],
+      "White Field": [
+        {
+          "item": "Carrot",
+          "weight": 15,
+          "amount": 3
+        },
+        {
+          "item": "Pine Cone",
+          "weight": 15,
+          "amount": 3
+        },
+        {
+          "item": "Wind Essence",
+          "weight": 15,
+          "amount": 3
+        }
+      ],
+      "Bamboo Field": [
+        {
+          "item": "Bamboo",
+          "weight": 15,
+          "amount": 3
+        }
+      ],
+      "All Fields": [
+        {
+          "item": "Lunar Ticket",
+          "weight": 0.5,
+          "amount": 1
+        },
+        {
+          "item": "Starflower",
+          "weight": 1,
+          "amount": 1
+        },
+        {
+          "item": "Rich Apple Juice",
+          "weight": 0.25,
+          "amount": 1
+        },
+        {
+          "item": "Foaming Carrot Juice",
+          "weight": 0.25,
+          "amount": 1
+        },
+        {
+          "item": "Majestic Cocktail",
+          "weight": 0.5,
+          "amount": 1
+        },
+        {
+          "item": "Honey",
+          "weight": 10,
+          "amount": 250000000
+        },
+        {
+          "item": "Treat",
+          "weight": 10,
+          "amount": 2
+        },
+        {
+          "item": "Ticket",
+          "weight": 1,
+          "amount": 1
+        },
+        {
+          "item": "Basic Vines",
+          "weight": 8,
+          "amount": 1
+        },
+        {
+          "item": "Rare Vines",
+          "weight": 5,
+          "amount": 1
+        },
+        {
+          "item": "Epic Vines",
+          "weight": 2,
+          "amount": 1
+        },
+        {
+          "item": "Legendary Vines",
+          "weight": 0.5,
+          "amount": 1
+        },
+        {
+          "item": "Mythic Vines",
+          "weight": 0.2,
+          "amount": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "wisteria-planter",
+    "name": "Wisteria Planter",
+    "icon": "images/items/Wisteria Planter.png",
+    "obtain": [
+      {
+        "method": "Greenhouse Shop",
+        "detail": "5,000,000,000,000 Honey (base price; increases with purchases)"
+      }
+    ],
+    "rarity": "Epic",
+    "desc": "Use it to put the Wisteria Planter in a field.",
+    "tokens": 40,
+    "growTime": 14400,
+    "bar": true,
+    "drops": {
+      "Red Field": [
+        {
+          "item": "Apple",
+          "weight": 15,
+          "amount": 3
+        },
+        {
+          "item": "Strawberry",
+          "weight": 15,
+          "amount": 3
+        },
+        {
+          "item": "Fire Essence",
+          "weight": 15,
+          "amount": 3
+        }
+      ],
+      "Blue Field": [
+        {
+          "item": "Blueberry",
+          "weight": 15,
+          "amount": 3
+        },
+        {
+          "item": "Water Essence",
+          "weight": 15,
+          "amount": 3
+        }
+      ],
+      "White Field": [
+        {
+          "item": "Carrot",
+          "weight": 15,
+          "amount": 3
+        },
+        {
+          "item": "Pine Cone",
+          "weight": 15,
+          "amount": 3
+        },
+        {
+          "item": "Wind Essence",
+          "weight": 15,
+          "amount": 3
+        }
+      ],
+      "Bamboo Field": [
+        {
+          "item": "Bamboo",
+          "weight": 15,
+          "amount": 3
+        }
+      ],
+      "All Fields": [
+        {
+          "item": "Lunar Ticket",
+          "weight": 0.5,
+          "amount": 1
+        },
+        {
+          "item": "Starflower",
+          "weight": 1,
+          "amount": 1
+        },
+        {
+          "item": "Rich Apple Juice",
+          "weight": 0.3,
+          "amount": 1
+        },
+        {
+          "item": "Foaming Carrot Juice",
+          "weight": 0.3,
+          "amount": 1
+        },
+        {
+          "item": "Majestic Cocktail",
+          "weight": 0.5,
+          "amount": 1
+        },
+        {
+          "item": "Honey",
+          "weight": 10,
+          "amount": 150000000
+        },
+        {
+          "item": "Treat",
+          "weight": 10,
+          "amount": 2
+        },
+        {
+          "item": "Ticket",
+          "weight": 1,
+          "amount": 1
+        },
+        {
+          "item": "Basic Vines",
+          "weight": 8,
+          "amount": 1
+        },
+        {
+          "item": "Rare Vines",
+          "weight": 5,
+          "amount": 1
+        },
+        {
+          "item": "Epic Vines",
+          "weight": 2,
+          "amount": 1
+        },
+        {
+          "item": "Legendary Vines",
+          "weight": 0.5,
+          "amount": 1
+        },
+        {
+          "item": "Mythic Vines",
+          "weight": 0.2,
+          "amount": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "clover-planter",
+    "name": "Clover Planter",
+    "icon": "images/items/Clover Planter.png",
+    "obtain": [
+      {
+        "method": "Greenhouse Shop",
+        "detail": "750,000,000,000 Honey (base price; increases with purchases)"
+      }
+    ],
+    "rarity": "Epic",
+    "desc": "Use it to put the Clover Planter in a field.",
+    "tokens": 35,
+    "growTime": 14400,
+    "bar": true,
+    "drops": {
+      "Red Field": [
+        {
+          "item": "Apple",
+          "weight": 15,
+          "amount": 3
+        },
+        {
+          "item": "Strawberry",
+          "weight": 15,
+          "amount": 3
+        },
+        {
+          "item": "Fire Essence",
+          "weight": 15,
+          "amount": 3
+        }
+      ],
+      "Blue Field": [
+        {
+          "item": "Blueberry",
+          "weight": 15,
+          "amount": 3
+        },
+        {
+          "item": "Water Essence",
+          "weight": 15,
+          "amount": 3
+        }
+      ],
+      "White Field": [
+        {
+          "item": "Carrot",
+          "weight": 15,
+          "amount": 3
+        },
+        {
+          "item": "Pine Cone",
+          "weight": 15,
+          "amount": 3
+        },
+        {
+          "item": "Wind Essence",
+          "weight": 15,
+          "amount": 3
+        }
+      ],
+      "Bamboo Field": [
+        {
+          "item": "Bamboo",
+          "weight": 15,
+          "amount": 3
+        }
+      ],
+      "All Fields": [
+        {
+          "item": "Lunar Ticket",
+          "weight": 0.5,
+          "amount": 1
+        },
+        {
+          "item": "Starflower",
+          "weight": 1,
+          "amount": 1
+        },
+        {
+          "item": "Rich Apple Juice",
+          "weight": 0.2,
+          "amount": 1
+        },
+        {
+          "item": "Foaming Carrot Juice",
+          "weight": 0.2,
+          "amount": 1
+        },
+        {
+          "item": "Majestic Cocktail",
+          "weight": 0.2,
+          "amount": 1
+        },
+        {
+          "item": "Honey",
+          "weight": 10,
+          "amount": 25000000
+        },
+        {
+          "item": "Treat",
+          "weight": 10,
+          "amount": 2
+        },
+        {
+          "item": "Ticket",
+          "weight": 1,
+          "amount": 1
+        },
+        {
+          "item": "Basic Vines",
+          "weight": 2,
+          "amount": 1
+        },
+        {
+          "item": "Rare Vines",
+          "weight": 1,
+          "amount": 1
+        },
+        {
+          "item": "Epic Vines",
+          "weight": 0.5,
+          "amount": 1
+        },
+        {
+          "item": "Legendary Vines",
+          "weight": 0.2,
+          "amount": 1
+        },
+        {
+          "item": "Mythic Vines",
+          "weight": 0.05,
+          "amount": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "tree-pot-planter",
+    "name": "Tree Pot Planter",
+    "icon": "images/items/Tree Pot Planter.png",
+    "obtain": [
+      {
+        "method": "Greenhouse Shop",
+        "detail": "5,000,000,000 Honey (base price; increases with purchases)"
+      }
+    ],
+    "rarity": "Epic",
+    "desc": "Use it to put the Tree Pot Planter in a field.",
+    "tokens": 30,
+    "growTime": 10800,
+    "bar": true,
+    "drops": {
+      "Red Field": [
+        {
+          "item": "Apple",
+          "weight": 15,
+          "amount": 1
+        },
+        {
+          "item": "Strawberry",
+          "weight": 15,
+          "amount": 1
+        },
+        {
+          "item": "Fire Essence",
+          "weight": 15,
+          "amount": 1
+        }
+      ],
+      "Blue Field": [
+        {
+          "item": "Blueberry",
+          "weight": 15,
+          "amount": 1
+        },
+        {
+          "item": "Water Essence",
+          "weight": 15,
+          "amount": 1
+        }
+      ],
+      "White Field": [
+        {
+          "item": "Carrot",
+          "weight": 15,
+          "amount": 1
+        },
+        {
+          "item": "Pine Cone",
+          "weight": 15,
+          "amount": 1
+        },
+        {
+          "item": "Wind Essence",
+          "weight": 15,
+          "amount": 1
+        }
+      ],
+      "Bamboo Field": [
+        {
+          "item": "Bamboo",
+          "weight": 15,
+          "amount": 1
+        }
+      ],
+      "All Fields": [
+        {
+          "item": "Lunar Ticket",
+          "weight": 0.5,
+          "amount": 1
+        },
+        {
+          "item": "Starflower",
+          "weight": 1,
+          "amount": 1
+        },
+        {
+          "item": "Honey",
+          "weight": 10,
+          "amount": 2000000
+        },
+        {
+          "item": "Treat",
+          "weight": 10,
+          "amount": 2
+        },
+        {
+          "item": "Ticket",
+          "weight": 1,
+          "amount": 1
+        },
+        {
+          "item": "Basic Vines",
+          "weight": 2,
+          "amount": 1
+        },
+        {
+          "item": "Rare Vines",
+          "weight": 1,
+          "amount": 1
+        },
+        {
+          "item": "Epic Vines",
+          "weight": 0.5,
+          "amount": 1
+        },
+        {
+          "item": "Legendary Vines",
+          "weight": 0.2,
+          "amount": 1
+        },
+        {
+          "item": "Mythic Vines",
+          "weight": 0.05,
+          "amount": 1
+        }
       ]
     }
   }

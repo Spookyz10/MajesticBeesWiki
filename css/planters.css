@@ -379,7 +379,7 @@
   gap: 10px;
   padding: 10px 16px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  border-left: 3px solid transparent;
+
 }
 
 .planter-pool[data-pool="Red Field"] {
@@ -400,27 +400,27 @@
 
 .planter-pool[data-pool="Red Field"] .planter-pool-header {
   background: rgba(140, 50, 45, 0.26);
-  border-left-color: #b05450;
+
   border-bottom-color: rgba(165, 65, 55, 0.32);
 }
 .planter-pool[data-pool="Blue Field"] .planter-pool-header {
   background: rgba(60, 110, 165, 0.22);
-  border-left-color: #5f9ec0;
+
   border-bottom-color: rgba(80, 130, 175, 0.28);
 }
 .planter-pool[data-pool="White Field"] .planter-pool-header {
   background: rgba(185, 205, 220, 0.14);
-  border-left-color: #8aaec2;
+
   border-bottom-color: rgba(185, 205, 220, 0.18);
 }
 .planter-pool[data-pool="Bamboo Field"] .planter-pool-header {
   background: rgba(50, 110, 60, 0.22);
-  border-left-color: #52a060;
+
   border-bottom-color: rgba(65, 130, 75, 0.28);
 }
 .planter-pool[data-pool="All Fields"] .planter-pool-header {
   background: rgba(140, 100, 20, 0.24);
-  border-left-color: #b8922a;
+
   border-bottom-color: rgba(165, 125, 30, 0.3);
 }
 

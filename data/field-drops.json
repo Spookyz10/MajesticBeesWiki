@@ -1,0 +1,436 @@
+{
+  "White": [
+    {
+      "name": "Wind Essence",
+      "weight": 15,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Pine Cone",
+      "weight": 25,
+      "type": "Item",
+      "qty": 1
+    }
+  ],
+  "Red": [
+    {
+      "name": "Fire Essence",
+      "weight": 15,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Strawberry",
+      "weight": 25,
+      "type": "Item",
+      "qty": 1
+    }
+  ],
+  "Blue": [
+    {
+      "name": "Water Essence",
+      "weight": 15,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Blueberry",
+      "weight": 25,
+      "type": "Item",
+      "qty": 1
+    }
+  ],
+  "Bamboo": [
+    {
+      "name": "Wind Essence",
+      "weight": 15,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Bamboo",
+      "weight": 25,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Bamboo",
+      "weight": 15,
+      "type": "Item",
+      "qty": 3
+    }
+  ],
+  "Coconut": [
+    {
+      "name": "Wind Essence",
+      "weight": 15,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Coconut",
+      "weight": 25,
+      "type": "Item",
+      "qty": 1
+    }
+  ],
+  "Lemon": [
+    {
+      "name": "Wind Essence",
+      "weight": 15,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Lemon",
+      "weight": 25,
+      "type": "Item",
+      "qty": 1
+    }
+  ],
+  "Rose": [
+    {
+      "name": "White Rose Sticker",
+      "weight": 0.01,
+      "type": "Sticker",
+      "qty": 1
+    }
+  ],
+  "Carrot": [
+    {
+      "name": "Carrot",
+      "weight": 35,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Carrot",
+      "weight": 25,
+      "type": "Item",
+      "qty": 2
+    },
+    {
+      "name": "Magic Carrot",
+      "weight": 1,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Golden Carrot",
+      "weight": 0.5,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Sleepy Little Bunny Sticker",
+      "weight": 0.1,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Gardener's Bundle",
+      "weight": 0.5,
+      "type": "Item",
+      "qty": 1
+    }
+  ],
+  "Apple": [
+    {
+      "name": "Apple",
+      "weight": 35,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Apple",
+      "weight": 25,
+      "type": "Item",
+      "qty": 2
+    },
+    {
+      "name": "Golden Apple",
+      "weight": 0.5,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Gardener's Bundle",
+      "weight": 0.5,
+      "type": "Item",
+      "qty": 1
+    }
+  ],
+  "Cabbage": [
+    {
+      "name": "Carrot",
+      "weight": 5,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Apple",
+      "weight": 5,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Gardener's Bundle",
+      "weight": 1,
+      "type": "Item",
+      "qty": 1
+    }
+  ],
+  "Garden": [
+    {
+      "name": "Carrot",
+      "weight": 5,
+      "type": "Item",
+      "qty": 2
+    },
+    {
+      "name": "Apple",
+      "weight": 5,
+      "type": "Item",
+      "qty": 2
+    },
+    {
+      "name": "Gardener's Bundle",
+      "weight": 2,
+      "type": "Item",
+      "qty": 1
+    }
+  ],
+  "Any": [
+    {
+      "name": "Exp Orb",
+      "weight": 15,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Exp Essence",
+      "weight": 7,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Seed",
+      "weight": 15,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Honey",
+      "weight": 15,
+      "type": "Stats",
+      "qty": 100
+    },
+    {
+      "name": "Treat",
+      "weight": 10,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Ticket",
+      "weight": 1,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Bee Net",
+      "weight": 3,
+      "type": "Item",
+      "qty": 1
+    }
+  ],
+  "Stickers": [
+    {
+      "name": "Shovel Sticker",
+      "weight": 10000,
+      "type": "Sticker",
+      "qty": 1
+    },
+    {
+      "name": "Rake Sticker",
+      "weight": 10000,
+      "type": "Sticker",
+      "qty": 1
+    },
+    {
+      "name": "Hammer Sticker",
+      "weight": 10000,
+      "type": "Sticker",
+      "qty": 1
+    },
+    {
+      "name": "Magnet Sticker",
+      "weight": 10000,
+      "type": "Sticker",
+      "qty": 1
+    },
+    {
+      "name": "Scissors Sticker",
+      "weight": 10000,
+      "type": "Sticker",
+      "qty": 1
+    },
+    {
+      "name": "Scythe Sticker",
+      "weight": 3000,
+      "type": "Sticker",
+      "qty": 1
+    },
+    {
+      "name": "Axe Sticker",
+      "weight": 3000,
+      "type": "Sticker",
+      "qty": 1
+    },
+    {
+      "name": "Pickaxe Sticker",
+      "weight": 3000,
+      "type": "Sticker",
+      "qty": 1
+    },
+    {
+      "name": "Gold Magnet Sticker",
+      "weight": 3000,
+      "type": "Sticker",
+      "qty": 1
+    },
+    {
+      "name": "Honey Dipper Sticker",
+      "weight": 500,
+      "type": "Sticker",
+      "qty": 1
+    },
+    {
+      "name": "Snow Shovel Sticker",
+      "weight": 500,
+      "type": "Sticker",
+      "qty": 1
+    },
+    {
+      "name": "Fire Scythe Sticker",
+      "weight": 500,
+      "type": "Sticker",
+      "qty": 1
+    },
+    {
+      "name": "Bamboo Spear Sticker",
+      "weight": 15,
+      "type": "Sticker",
+      "qty": 1
+    },
+    {
+      "name": "Billiard 8 Ball Sticker",
+      "weight": 5000,
+      "type": "Sticker",
+      "qty": 1
+    },
+    {
+      "name": "A Single Drop Sticker",
+      "weight": 5000,
+      "type": "Sticker",
+      "qty": 1
+    },
+    {
+      "name": "Sweet Cotton Ball Sticker",
+      "weight": 15,
+      "type": "Sticker",
+      "qty": 1
+    },
+    {
+      "name": "Googly Eyes Sticker",
+      "weight": 2000,
+      "type": "Sticker",
+      "qty": 1
+    },
+    {
+      "name": "Waffle Cone Sticker",
+      "weight": 2000,
+      "type": "Sticker",
+      "qty": 1
+    },
+    {
+      "name": "Delightful Bouquet Sticker",
+      "weight": 2000,
+      "type": "Sticker",
+      "qty": 1
+    },
+    {
+      "name": "Pulsating Heart Sticker",
+      "weight": 2000,
+      "type": "Sticker",
+      "qty": 1
+    },
+    {
+      "name": "Sleepy Little Bunny Sticker",
+      "weight": 2000,
+      "type": "Sticker",
+      "qty": 1
+    },
+    {
+      "name": "Blue Hive",
+      "weight": 3000,
+      "type": "Skin",
+      "qty": 1
+    },
+    {
+      "name": "Red Hive",
+      "weight": 3000,
+      "type": "Skin",
+      "qty": 1
+    },
+    {
+      "name": "Green Hive",
+      "weight": 3000,
+      "type": "Skin",
+      "qty": 1
+    },
+    {
+      "name": "Orange Hive",
+      "weight": 3000,
+      "type": "Skin",
+      "qty": 1
+    },
+    {
+      "name": "Black Hive",
+      "weight": 300,
+      "type": "Skin",
+      "qty": 1
+    },
+    {
+      "name": "White Hive",
+      "weight": 300,
+      "type": "Skin",
+      "qty": 1
+    },
+    {
+      "name": "Light Blue Hive",
+      "weight": 300,
+      "type": "Skin",
+      "qty": 1
+    },
+    {
+      "name": "Purple Hive",
+      "weight": 300,
+      "type": "Skin",
+      "qty": 1
+    },
+    {
+      "name": "Pink Hive",
+      "weight": 300,
+      "type": "Skin",
+      "qty": 1
+    },
+    {
+      "name": "Chromatic Hive",
+      "weight": 15,
+      "type": "Skin",
+      "qty": 1
+    }
+  ]
+}

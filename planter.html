@@ -1,7 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+<script defer src="js/core/data.js"></script>
+<script defer src="js/core/pages.js"></script>
+<script defer src="js/core/loot-luck.js"></script>
+<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Planter - The Majestic Bees Wiki</title>
     <meta property="og:type" content="website" />
@@ -25,27 +28,29 @@
       name="twitter:image"
       content="https://spookyz10.github.io/MajesticBeesWiki/images/ui/site-logo.png"
     />
-    <link rel="stylesheet" href="css/all.css" />
     <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
-    <script defer src="js/load-sidebar.js"></script>
-    <script defer src="js/loot-luck.js"></script>
-    <script defer src="js/wiki-search.js"></script>
-    <script defer src="js/search.js"></script>
-    <script defer src="js/planter.js"></script>
-  </head>
+    <script defer src="js/core/load-sidebar.js"></script>
+    <script defer src="js/core/wiki-search.js"></script>
+    <script defer src="js/core/search.js"></script>
+    <script defer src="js/pages/planter.js"></script>
+<link rel="stylesheet" href="css/style.css" data-site-style>
+<link rel="stylesheet" href="css/loot-luck.css" data-site-style>
+<link rel="stylesheet" href="css/planters.css" data-site-style>
+<link rel="stylesheet" href="css/starflowers.css" data-site-style>
+<link rel="stylesheet" href="css/theme.css" data-site-style>
+</head>
   <body>
     <div id="sidebar-container"></div>
-
     <div class="main" data-pagefind-body>
       <div class="topbar">
         <div id="search"></div>
       </div>
-
       <div class="content mw-parser-output">
         <div id="planter-detail-root">
           <div class="planter-detail-loading">Loading planter data…</div>
         </div>
       </div>
-    </div>
-  </body>
+<section class="related-pages" aria-label="Similar pages"><h2>Similar pages</h2><nav aria-label="Related articles"><a href="falling-apples.html">Falling Apples</a><a href="lunar-minigame.html">Lunar Minigame</a><a href="mobs.html">Mobs</a><a href="planters.html">Planters</a><a href="starflowers.html">Starflowers</a></nav></section>
+</div>
+</body>
 </html>

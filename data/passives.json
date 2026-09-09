@@ -1,0 +1,167 @@
+[
+  {
+    "id": "coconut-smoothie",
+    "name": "Coconut Smoothie",
+    "desc": "Drops 10 splashes of Coconut Milk.\nCoconut Milk has 30% Instant Conversion.\nWhen stepping on Coconut Milk, receive Coconut Smoothie Boost for 15s\n (+25% Movespeed and x1.45 Obsidian Pollen).\nActivates Every 15 Coconuts.",
+    "trigger": "Misc",
+    "need": 15,
+    "image": "images/passives/Coconut Smoothie.png",
+    "equipment": [
+      "Coconut Bag"
+    ]
+  },
+  {
+    "id": "sun-eclipse",
+    "name": "Sun Eclipse",
+    "desc": "Creates 4 Sunny Beams, which gather Pollen\n (Multiplied by Solar Pollen).\nAdditionally, receive Sun Eclipse Boost for 20s\n (x1.5 Pollen) & All players in the field receive\n Sun Eclipse Dual Boost for 20s\n (x1.05 Pollen & x1.1 Capacity Bonus) .Activates Every 80s.",
+    "trigger": "Time",
+    "need": 80,
+    "image": "images/passives/Sun Eclipse.png",
+    "equipment": [
+      "Sunny Helmet"
+    ]
+  },
+  {
+    "id": "coconut-harvest",
+    "name": "Coconut Harvest",
+    "desc": "Creates 3 Coconuts, which gather Pollen and\n covers flowers in Milk.\nMilk has 30% Instant Conversion.\nActivates Every 20s.",
+    "trigger": "Time",
+    "need": 20,
+    "image": "images/passives/Coconut Harvest.png",
+    "equipment": [
+      "Coconut Belt"
+    ]
+  },
+  {
+    "id": "sunny-pulse",
+    "name": "Sunny Pulse",
+    "desc": "Creates 2 Sunny Beams, which gather\nPollen for each Hydrant (Multiplied by Solar Pollen).\nAdditionally, upgrades the flowers they gather for 12s.\nActivates Every 30s.",
+    "trigger": "Time",
+    "need": 30,
+    "image": "images/passives/Sunny Pulse.png",
+    "equipment": [
+      "Sunny Hydrant"
+    ]
+  },
+  {
+    "id": "coconut-storm",
+    "name": "Coconut Storm",
+    "desc": "Creates 3 Coconuts, which gather Pollen\n and covers flowers in Obsidian.\nActivates Every 15 Swings.",
+    "trigger": "Clicks",
+    "need": 15,
+    "image": "images/passives/Coconut Storm.png",
+    "equipment": [
+      "Coconut Smash"
+    ]
+  },
+  {
+    "id": "fire-aura",
+    "name": "Fire Aura",
+    "desc": "Covers flowers in Fire.\nActivates Every 5 Swings.",
+    "trigger": "Clicks",
+    "need": 5,
+    "image": "images/passives/Fire Aura.png",
+    "equipment": [
+      "Fire Scythe"
+    ]
+  },
+  {
+    "id": "ice-aura",
+    "name": "Ice Aura",
+    "desc": "Covers flowers in Ice.\nActivates Every 5 Swings.",
+    "trigger": "Clicks",
+    "need": 5,
+    "image": "images/passives/Ice Aura.png",
+    "equipment": [
+      "Snow Shovel"
+    ]
+  },
+  {
+    "id": "wind-aura",
+    "name": "Wind Aura",
+    "desc": "Creates 2 Clouds.\nActivates Every 5 Swings.",
+    "trigger": "Clicks",
+    "need": 5,
+    "image": "images/passives/Wind Aura.png",
+    "equipment": [
+      "Windy Staff"
+    ]
+  },
+  {
+    "id": "nature-harvest",
+    "name": "Nature Harvest",
+    "desc": "Creates 5 Spikes around the field,\nwhich gather Pollen and covers flowers in Obsidian.\nAdditionally, upgrades the flowers they gather for 15s.\nActivates every 20 Swings.",
+    "trigger": "Clicks",
+    "need": 20,
+    "image": "images/passives/Nature Harvest.png",
+    "equipment": [
+      "Nature Staff"
+    ]
+  },
+  {
+    "id": "nature-charge",
+    "name": "Nature Charge",
+    "desc": "Activates Nature Charge Aura for 5s\n(x1.2 Tool Speed and x1.2 Tool Pollen).\nActivates every 45 Swings.",
+    "trigger": "Clicks",
+    "need": 45,
+    "image": "images/passives/Nature Charge.png",
+    "equipment": [
+      "Nature Gloves"
+    ]
+  },
+  {
+    "id": "colorful-splash",
+    "name": "Colorful Splash",
+    "desc": "Turns shape of tool into random splash color.\nActivates every 20 Swings.",
+    "trigger": "Clicks",
+    "need": 20,
+    "image": "images/passives/Colorful Splash.png",
+    "equipment": [
+      "Canvy’s Extra Paintbrush"
+    ]
+  },
+  {
+    "id": "poison-harvest",
+    "name": "Poison Harvest",
+    "desc": "Creates 5 Spikes around the field,\nt which gather Pollen and covers flowers into Poison for 14s.\ntPoison collects Pollen every second.\nActivates every 20s.",
+    "trigger": "Time",
+    "need": 20,
+    "image": "images/passives/Poison Harvest.png",
+    "equipment": [
+      "Nature Belt"
+    ]
+  },
+  {
+    "id": "blossom-pollenation",
+    "name": "Blossom Pollenation",
+    "desc": "Creates 8 Blossom Leaves around the field,\nwhich gather Pollen for 12s.\nAdditionally, upgrades the flowers they gather for 12s.\nActivates every 30s.",
+    "trigger": "Time",
+    "need": 30,
+    "image": "images/passives/Blossom Pollenation.png",
+    "equipment": [
+      "Blossom Canister"
+    ]
+  },
+  {
+    "id": "art-splashes",
+    "name": "Art Splashes",
+    "desc": "Creates 3 colorful splashes randomly on field you stand on.\nActivates every 30s.",
+    "trigger": "Time",
+    "need": 30,
+    "image": "images/passives/Art Splashes.png",
+    "equipment": [
+      "Paint Bucket"
+    ]
+  },
+  {
+    "id": "sticker-hunter",
+    "name": "Sticker Hunter",
+    "desc": "Creates random sticker on field & creates splash on that place.\nActivates every 360s.",
+    "trigger": "Time",
+    "need": 360,
+    "image": "images/passives/Sticker Hunter.png",
+    "equipment": [
+      "Canvas Helmet"
+    ]
+  }
+]

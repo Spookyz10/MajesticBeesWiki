@@ -8,7 +8,11 @@
       "path": "starter-shop.html?shop=starter-shop",
       "image": "images/gear/starterShop/Shop.png",
       "description": "The first shop you'll encounter. A cozy wooden building surrounded by trees and bushes, offering the essential tools and gear for new beekeepers. Carries 5 tools, 4 bags, and 6 gear pieces purchasable with Honey.",
-      "tags": ["Tools", "Bags", "Gear"],
+      "tags": [
+        "Tools",
+        "Bags",
+        "Gear"
+      ],
       "about": "The Shop is a wooden building located near Black Bear. It has one door at the front and two large windows. It is surrounded by trees and bushes, giving it a cozy and welcoming look. The outside has a few wall lights that keep the area bright. Inside you can find 5 tools, 4 bags, and 1 of each type of gear.",
       "sections": [
         {
@@ -19,7 +23,7 @@
               "name": "Shovel",
               "type": "",
               "image": "images/equipment/Shovel.png",
-              "description": "A basic shovel. Is something wrong?",
+              "description": "Just a shovel. Anything wrong? \n\n Gathers 2 Pollen from 2 flowers in front of you every 0.8 seconds.",
               "info": "Gathers 2 pollen from 2 flowers in front of you in 0.8 seconds.",
               "cost": "Free",
               "costType": "plain"
@@ -28,7 +32,7 @@
               "name": "Rake",
               "type": "",
               "image": "images/equipment/Rake.png",
-              "description": "Be careful, you might stab yourself.",
+              "description": "Try not to stab yourself, alright? \n\n Gathers 1 Pollen from 6 flowers in front of you every 0.9 seconds.",
               "info": "Gathers 1 pollen from 6 flowers in front of you in 0.9 seconds.",
               "cost": "750 Honey",
               "costType": "honey"
@@ -37,7 +41,7 @@
               "name": "Hammer",
               "type": "",
               "image": "images/equipment/Hammer.png",
-              "description": "Careful, dont smash anything with this.",
+              "description": "Careful, don't smash anything with it! \n\n Gathers 2 Pollen from 5 flowers in front of you every 0.9 seconds.",
               "info": "Gathers 2 pollen from 5 flowers in front of you in 0.9 seconds.",
               "cost": "3.4k Honey",
               "costType": "honey"
@@ -46,7 +50,7 @@
               "name": "Magnet",
               "type": "",
               "image": "images/equipment/Magnet.png",
-              "description": "You might find something you did not expect to find while collecting with this...",
+              "description": "You might find something unexpected while collecting with this... Or not. \n\n Gathers 3 Pollen from 7 flowers in front of you every 0.8 seconds.",
               "info": "Gathers 3 pollen from 7 flowers in front of you in 0.8 seconds.",
               "cost": "11k Honey",
               "costType": "honey"
@@ -55,7 +59,7 @@
               "name": "Scissors",
               "type": "",
               "image": "images/equipment/Scissors.png",
-              "description": "Cut flowers with it!",
+              "description": "Snip snip! \n\n Gathers 20 Pollen from 1 flower in front of you every 0.6 seconds.",
               "info": "Gathers 20 pollen from 1 flower in front of you in 0.6 seconds.",
               "cost": "27.5k Honey",
               "costType": "honey"
@@ -70,7 +74,7 @@
               "name": "Satchel",
               "type": "",
               "image": "images/equipment/Satchel.png",
-              "description": "Starter bag, anyone starts with it.",
+              "description": "The starter bag, everyone starts with it.",
               "info": "+250 Capacity",
               "capacity": 250,
               "buffs": [],
@@ -81,7 +85,7 @@
               "name": "Jar",
               "type": "",
               "image": "images/equipment/Jar.png",
-              "description": "Honey Jar, best decision for converting.",
+              "description": "Careful not to spill the honey!",
               "info": "+850 Capacity",
               "capacity": 850,
               "buffs": [],
@@ -92,9 +96,9 @@
               "name": "Flask",
               "type": "",
               "image": "images/equipment/Flask.png",
-              "description": "Best container for honey convertation.",
-              "info": "+2.2k Capacity",
-              "capacity": 2200,
+              "description": "Guess we can experiment with honey now.",
+              "info": "+2,250 Capacity",
+              "capacity": 2250,
               "buffs": [],
               "cost": "4.5k Honey",
               "costType": "honey"
@@ -103,10 +107,12 @@
               "name": "Backpack",
               "type": "",
               "image": "images/equipment/Backpack.png",
-              "description": "Classical backpack that used for camps, made out of leather.",
-              "info": "+8k Capacity\n+25% Convert Rate",
+              "description": "Let's go camping!",
+              "info": "+8,000 Capacity\n+25% Convert Rate",
               "capacity": 8000,
-              "buffs": ["+25% Convert Rate"],
+              "buffs": [
+                "+25% Convert Rate"
+              ],
               "cost": "18k Honey",
               "costType": "honey"
             }
@@ -120,10 +126,14 @@
               "name": "Left Worker's Guard",
               "type": "Left Guard",
               "image": "images/equipment/Left Worker.png",
-              "description": "Left Worker's Guard, Very effective on mobs.",
+              "description": "Protects you... to some extent.",
               "info": "+750 Capacity\n+15% Convert Rate\n+5% Defense\n+5% Pollen",
               "capacity": 750,
-              "buffs": ["+15% Convert Rate", "+5% Defense", "+5% Pollen"],
+              "buffs": [
+                "+15% Convert Rate",
+                "+5% Defense",
+                "+5% Pollen"
+              ],
               "cost": "18k Honey",
               "costType": "honey"
             },
@@ -131,10 +141,14 @@
               "name": "Right Worker's Guard",
               "type": "Right Guard",
               "image": "images/equipment/Right Worker.png",
-              "description": "Right Worker's Guard, Very effective on mobs.",
+              "description": "Protects you... to some extent.",
               "info": "+750 Capacity\n+15% Convert Rate\n+5% Defense\n+5% Pollen",
               "capacity": 750,
-              "buffs": ["+15% Convert Rate", "+5% Defense", "+5% Pollen"],
+              "buffs": [
+                "+15% Convert Rate",
+                "+5% Defense",
+                "+5% Pollen"
+              ],
               "cost": "18k Honey",
               "costType": "honey"
             },
@@ -142,10 +156,14 @@
               "name": "Worker's Boots",
               "type": "Boots",
               "image": "images/equipment/Worker's Boots.png",
-              "description": "The Boots of a hard worker!",
-              "info": "+3 Movement Collection\n+5% Movespeed",
+              "description": "Better than nothing, I guess?",
+              "info": "+3 Movement Collection\n+3 Player Movespeed\n+3 Jump Power",
               "capacity": 0,
-              "buffs": ["+3 Movement Collection", "+5% Movespeed"],
+              "buffs": [
+                "+3 Movement Collection",
+                "+3 Player Movespeed",
+                "+3 Jump Power"
+              ],
               "cost": "18k Honey",
               "costType": "honey"
             },
@@ -153,13 +171,13 @@
               "name": "Worker's Helmet",
               "type": "Helmet",
               "image": "images/equipment/Worker's Helmet.png",
-              "description": "A real worker's helmet, is it ant?",
-              "info": "+15% Convert Rate\n+10% Loot Luck\nx1.1 Capacity Bonus\n+10% Pollen",
+              "description": "A very sturdy helmet, isANT't it?",
+              "info": "+15% Convert Rate\n+10% Loot Luck\n1.1× Capacity Bonus\n+10% Pollen",
               "capacity": 0,
               "buffs": [
                 "+15% Convert Rate",
                 "+10% Loot Luck",
-                "x1.1 Capacity Bonus",
+                "1.1× Capacity Bonus",
                 "+10% Pollen"
               ],
               "cost": "18k Honey",
@@ -169,10 +187,13 @@
               "name": "Worker's Belt",
               "type": "Belt",
               "image": "images/equipment/Worker's Belt.png",
-              "description": "A worker's belt which has all of the instruments needed!",
-              "info": "+1.5k Capacity\nx1.05 Capacity Bonus\nx1.05 Convert Rate",
+              "description": "A belt that has all you need! Maybe.",
+              "info": "+1,500 Capacity\n1.05× Capacity Bonus\n1.05× Convert Rate",
               "capacity": 1500,
-              "buffs": ["x1.05 Capacity Bonus", "x1.05 Convert Rate"],
+              "buffs": [
+                "1.05× Capacity Bonus",
+                "1.05× Convert Rate"
+              ],
               "cost": "18k Honey",
               "costType": "honey"
             },
@@ -180,10 +201,13 @@
               "name": "Worker's Gloves",
               "type": "Gloves",
               "image": "images/equipment/Worker's Gloves.png",
-              "description": "Probably dirty, but might be useful...",
+              "description": "Might be dirty, but who cares?",
               "info": "+5% Tool Speed\n+10% Pollen",
               "capacity": 0,
-              "buffs": ["+5% Tool Speed", "+10% Pollen"],
+              "buffs": [
+                "+5% Tool Speed",
+                "+10% Pollen"
+              ],
               "cost": "18k Honey",
               "costType": "honey"
             }
@@ -199,7 +223,10 @@
       "path": "ticket-shop.html?shop=ticket-shop",
       "image": "images/gear/ticketShop/TicketShop.png",
       "description": "A special shop found in the 5 Bee Zone where all items are purchased exclusively with Tickets. Carries 3 bees and 3 eggs.",
-      "tags": ["Bees", "Eggs"],
+      "tags": [
+        "Bees",
+        "Eggs"
+      ],
       "about": "The Ticket Shop is a golden building found in the 5 Bee Zone, close to the Royal Jelly Dispenser. Its warm yellow exterior stands out against the green tones of the surrounding environment. It has one entrance at the front and a wide circular window on the side.",
       "sections": [
         {
@@ -302,7 +329,11 @@
       "path": "advanced-shop.html?shop=advanced-shop",
       "image": "images/gear/advancedShop/AdvancedShop.png",
       "description": "A mid-tier shop for experienced beekeepers, located in the 10 Bee Zone near the Spider Field. Carries 5 tools, 4 bags, and 6 gear pieces purchasable with Honey, Pine Cones, and Treats.",
-      "tags": ["Tools", "Bags", "Gear"],
+      "tags": [
+        "Tools",
+        "Bags",
+        "Gear"
+      ],
       "about": "The Advanced Shop is a wooden building located in the 10 Bee Zone, near the Spider Field. It has one door at the front and two large windows. The surrounding area is filled with dense trees and tall bushes, making it feel more secluded than the basic Shop. Wall lights on the outside keep the area lit despite the darker atmosphere of the zone. Inside, you can find mid-tier equipment suited for more experienced beekeepers.",
       "sections": [
         {
@@ -313,7 +344,7 @@
               "name": "Scythe",
               "type": "",
               "image": "images/equipment/Scythe.png",
-              "description": "Be careful, you might stab yourself.",
+              "description": "Ready to harvest? \n\n Gathers 4 Pollen from 8 flowers in front of you every 0.66 seconds.",
               "info": "Gathers 4 pollen from 8 flowers in front of you in 0.66 seconds.",
               "cost": "35k Honey",
               "costType": "honey"
@@ -322,7 +353,7 @@
               "name": "Axe",
               "type": "",
               "image": "images/equipment/Axe.png",
-              "description": "Lumberjack axe, gather some wood with it!",
+              "description": "Might as well change my job with this. \n\n Gathers 5 Pollen from 9 flowers in front of you every 0.8 seconds.",
               "info": "Gathers 5 pollen from 9 flowers in front of you in 0.8 seconds.",
               "cost": "125k Honey",
               "costType": "honey"
@@ -331,7 +362,7 @@
               "name": "Pickaxe",
               "type": "",
               "image": "images/equipment/Pickaxe.png",
-              "description": "Silver Pickaxe, mine diamonds with it!",
+              "description": "Let's mine some diamonds! \n\n Gathers 6 Pollen from 12 flowers in front of you every 0.8 seconds.",
               "info": "Gathers 6 pollen from 12 flowers in front of you in 0.8 seconds.",
               "cost": "450k Honey",
               "costType": "honey"
@@ -340,7 +371,7 @@
               "name": "Gold Magnet",
               "type": "",
               "image": "images/equipment/Gold Magnet.png",
-              "description": "You might find something you didn't expect to find while collecting with this.",
+              "description": "I feel a sense of deja vu... \n\n Gathers 9 Pollen from 7 flowers in front of you every 0.8 seconds.",
               "info": "Gathers 9 pollen from 7 flowers in front of you in 0.8 seconds.",
               "cost": "900k Honey",
               "costType": "honey"
@@ -349,7 +380,7 @@
               "name": "Honey Dipper",
               "type": "",
               "image": "images/equipment/Honey Dipper.png",
-              "description": "Very sticky and yummy spoon filled with honey.",
+              "description": "Very sticky. At least you won't lose it. \n\n Gathers 5 Pollen from 29 flowers in front of you every 0.8 seconds.",
               "info": "Gathers 5 pollen from 29 flowers in front of you in 0.8 seconds.",
               "cost": "1.9m Honey + 50 Pine Cone + 125 Treat",
               "costType": "honey"
@@ -364,10 +395,12 @@
               "name": "Flower Pot",
               "type": "",
               "image": "images/equipment/Flower Pot.png",
-              "description": "Pot made of clay, with a red flower taken from the red flowers field.",
-              "info": "+25k Capacity\n+60% Convert Rate",
+              "description": "A pot made of clay with a red flower inside it...\nIf it works it works I guess.",
+              "info": "+25,000 Capacity\n+60% Convert Rate",
               "capacity": 25000,
-              "buffs": ["+60% Convert Rate"],
+              "buffs": [
+                "+60% Convert Rate"
+              ],
               "cost": "45k Honey",
               "costType": "honey"
             },
@@ -375,10 +408,13 @@
               "name": "Bouquet Of Flowers",
               "type": "",
               "image": "images/equipment/Bouquet Of Flowers.png",
-              "description": "Beautiful flowers bouquet — who knows how it appears here.",
-              "info": "+65k Capacity\n+100% Convert Rate\n+5 Convert Amount",
+              "description": "Huh? It smells really nice!",
+              "info": "+65,000 Capacity\n+100% Convert Rate\n+5 Convert Amount",
               "capacity": 65000,
-              "buffs": ["+100% Convert Rate", "+5 Convert Amount"],
+              "buffs": [
+                "+100% Convert Rate",
+                "+5 Convert Amount"
+              ],
               "cost": "150k Honey",
               "costType": "honey"
             },
@@ -386,10 +422,13 @@
               "name": "Cauldron",
               "type": "",
               "image": "images/equipment/Cauldron.png",
-              "description": "Mystical metallic cauldron, who knows how much honey could it fit.",
-              "info": "+150k Capacity\n+150% Convert Rate\n+10 Convert Amount",
+              "description": "Mirror, mirror on the wall...",
+              "info": "+150,000 Capacity\n+150% Convert Rate\n+10 Convert Amount",
               "capacity": 150000,
-              "buffs": ["+150% Convert Rate", "+10 Convert Amount"],
+              "buffs": [
+                "+150% Convert Rate",
+                "+10 Convert Amount"
+              ],
               "cost": "750k Honey",
               "costType": "honey"
             },
@@ -397,8 +436,8 @@
               "name": "Hive",
               "type": "",
               "image": "images/equipment/Hive.png",
-              "description": "Strange yellow hive that doesn't look like the player's hive.",
-              "info": "+300k Capacity\n+200% Convert Rate\n+15 Convert Amount\n+15% Pollen",
+              "description": "Sweet! Quite literally.",
+              "info": "+300,000 Capacity\n+200% Convert Rate\n+15 Convert Amount\n+15% Pollen",
               "capacity": 300000,
               "buffs": [
                 "+200% Convert Rate",
@@ -418,8 +457,8 @@
               "name": "Left Wasp Guard",
               "type": "",
               "image": "images/equipment/Left Wasp.png",
-              "description": "Left Wasp Guard made of defeated wasps.",
-              "info": "+5k Capacity\n+35% Convert Rate\n+15% Capacity Bonus\n+10% Defense\n+15% Pollen",
+              "description": "Good! I could use a snack.",
+              "info": "+5,000 Capacity\n+35% Convert Rate\n+15% Capacity Bonus\n+10% Defense\n+15% Pollen",
               "capacity": 5000,
               "buffs": [
                 "+35% Convert Rate",
@@ -434,8 +473,8 @@
               "name": "Right Wasp Guard",
               "type": "",
               "image": "images/equipment/Right Wasp.png",
-              "description": "Right Wasp Guard made of defeated wasps.",
-              "info": "+5k Capacity\n+35% Convert Rate\n+15% Capacity Bonus\n+10% Defense\n+15% Pollen",
+              "description": "Good! I could use a snack.",
+              "info": "+5,000 Capacity\n+35% Convert Rate\n+15% Capacity Bonus\n+10% Defense\n+15% Pollen",
               "capacity": 5000,
               "buffs": [
                 "+35% Convert Rate",
@@ -450,10 +489,14 @@
               "name": "Wasp Boots",
               "type": "",
               "image": "images/equipment/Wasp Boots.png",
-              "description": "The real Wasp boots!",
-              "info": "+5 Movement Collection\n+8% Movespeed",
+              "description": "They make a strange sound...",
+              "info": "+5 Movement Collection\n+5 Player Movespeed\n+5 Jump Power",
               "capacity": 0,
-              "buffs": ["+5 Movement Collection", "+8% Movespeed"],
+              "buffs": [
+                "+5 Movement Collection",
+                "+5 Player Movespeed",
+                "+5 Jump Power"
+              ],
               "cost": "750k Honey + 35 Pine Cone",
               "costType": "honey"
             },
@@ -461,13 +504,13 @@
               "name": "Wasp Helmet",
               "type": "",
               "image": "images/equipment/Wasp Helmet.png",
-              "description": "Wasp is a dangerous insect that hates bees!",
-              "info": "+45% Convert Rate\n+25% Loot Luck\nx1.25 Capacity Bonus\n+20% Pollen\n+5% Bee Ability Rate",
+              "description": "Wasp its a danger insect that hate bees!",
+              "info": "+45% Convert Rate\n+25% Loot Luck\n1.25× Capacity Bonus\n+20% Pollen\n+5% Bee Ability Rate",
               "capacity": 0,
               "buffs": [
                 "+45% Convert Rate",
                 "+25% Loot Luck",
-                "x1.25 Capacity Bonus",
+                "1.25× Capacity Bonus",
                 "+20% Pollen",
                 "+5% Bee Ability Rate"
               ],
@@ -478,10 +521,13 @@
               "name": "Wasp Belt",
               "type": "",
               "image": "images/equipment/Wasp Belt.png",
-              "description": "A real wasp belt, its very rare fabric.",
-              "info": "+25k Capacity\nx1.15 Capacity Bonus\nx1.15 Convert Rate",
+              "description": "Can I get more bees with this?",
+              "info": "+25,000 Capacity\n1.15× Capacity Bonus\n1.15× Convert Rate",
               "capacity": 25000,
-              "buffs": ["x1.15 Capacity Bonus", "x1.15 Convert Rate"],
+              "buffs": [
+                "1.15× Capacity Bonus",
+                "1.15× Convert Rate"
+              ],
               "cost": "500k Honey + 25 Pine Cone",
               "costType": "honey"
             },
@@ -489,7 +535,7 @@
               "name": "Wasp Gloves",
               "type": "",
               "image": "images/equipment/Wasp Gloves.png",
-              "description": "How do they get wasp equipment?",
+              "description": "How do they even get these?",
               "info": "+10% Tool Speed\n+15% Tool Pollen\n+15% Pollen\n+10% Bee Pollen",
               "capacity": 0,
               "buffs": [
@@ -513,7 +559,12 @@
       "path": "red-shop.html?shop=red-shop",
       "image": "images/gear/redShop/Shop.png",
       "description": "A fiery shop stocked with flame-themed equipment for experienced beekeepers. Carries 1 collector, 2 bags, 4 gear pieces, and 3 special items purchasable with Honey, Strawberries, Fire Essence, and other rare materials.",
-      "tags": ["Tools", "Bags", "Gear", "Items"],
+      "tags": [
+        "Tools",
+        "Bags",
+        "Gear",
+        "Items"
+      ],
       "about": "A fiery shop stocked with flame-themed equipment for experienced beekeepers. Carries 1 collector, 2 bags, 4 gear pieces, and 3 special items purchasable with Honey, Strawberries, Fire Essence, and other rare materials.",
       "sections": [
         {
@@ -524,7 +575,7 @@
               "name": "Fire Scythe",
               "type": "",
               "image": "images/equipment/Fire Scythe.png",
-              "description": "Flaming and hot scythe, cut fire and spread it on fields.",
+              "description": "Careful! It's hot!\nIt can spread Fire in the field. \n\n Gathers 8 Pollen from 14 flowers in front of you every 0.7 seconds.\nAdditionaly grants x1.5 red pollen.\n\n[Fire Aura Passive]: Covers Stamp In Fire Every 5 Clicks.",
               "info": "Gathers 8 pollen from 14 flowers in front of you in 0.7 seconds, 1.5x red pollen.\n[Fire Spreads Passive]: Covers Stamp in Fire every 5 clicks.\n[Fire Aura Passive]: Turns all patches into flaming every 5 swings.",
               "cost": "8m Honey + 50 Strawberry + 25 Fire Essence",
               "costType": "honey",
@@ -532,9 +583,11 @@
                 {
                   "name": "Fire Aura",
                   "type": "Clicks",
-                  "desc": "Turns all patches into flaming every 5 swings."
+                  "desc": "Covers flowers in Fire.\nActivates Every 5 Swings."
                 }
-              ]
+              ],
+              "passive": "Fire Aura",
+              "passiveDesc": "Covers flowers in Fire.\nActivates Every 5 Swings."
             }
           ]
         },
@@ -546,8 +599,8 @@
               "name": "Furnace",
               "type": "",
               "image": "images/equipment/Furnace.png",
-              "description": "Hot and burning furnace, spreads fire into honey.",
-              "info": "+600k Capacity\n+300% Convert Rate\n+30 Convert Amount\n+50% Red Pollen\n+10% Bee Ability Rate",
+              "description": "Isn't it a little too heavy?",
+              "info": "+600,000 Capacity\n+300% Convert Rate\n+30 Convert Amount\n+50% Red Pollen\n+10% Bee Ability Rate",
               "capacity": 600000,
               "buffs": [
                 "+300% Convert Rate",
@@ -562,12 +615,12 @@
               "name": "Coal Basket",
               "type": "",
               "image": "images/equipment/Coal Basket.png",
-              "description": "Keep honey inside coal parts inside this basket.",
-              "info": "+1m Capacity\n+450% Convert Rate\nx1.1 Capacity Bonus\n+45 Convert Amount\n+75% Red Pollen\n+25% Fire Pollen\n+15% Bee Ability Rate",
+              "description": "Let's make some BBQ!",
+              "info": "+1,000,000 Capacity\n+450% Convert Rate\n1.1× Capacity Bonus\n+45 Convert Amount\n+75% Red Pollen\n+25% Fire Pollen\n+15% Bee Ability Rate",
               "capacity": 1000000,
               "buffs": [
                 "+450% Convert Rate",
-                "x1.1 Capacity Bonus",
+                "1.1× Capacity Bonus",
                 "+45 Convert Amount",
                 "+75% Red Pollen",
                 "+25% Fire Pollen",
@@ -586,13 +639,14 @@
               "name": "Fire Boots",
               "type": "",
               "image": "images/equipment/Fire Boots.png",
-              "description": "Unique boots made of real burning material, leaves a Fire Trail when you walk!",
-              "info": "+7 Movement Collection\n+9% Movespeed\nx1.5 Fire Pollen",
+              "description": "Comfy and warm.\nSpreads Fire wherever you walk.",
+              "info": "+7 Movement Collection\n+6 Player Movespeed\n+7 Jump Power\n1.5× Fire Pollen",
               "capacity": 0,
               "buffs": [
                 "+7 Movement Collection",
-                "+9% Movespeed",
-                "x1.5 Fire Pollen"
+                "+6 Player Movespeed",
+                "+7 Jump Power",
+                "1.5× Fire Pollen"
               ],
               "cost": "25m Honey + 100 Strawberry + 50 Fire Essence",
               "costType": "honey"
@@ -601,8 +655,8 @@
               "name": "Fire Guard",
               "type": "",
               "image": "images/equipment/Right Fire.png",
-              "description": "Right Fire Guard. Legends say it's the best red starter gear.",
-              "info": "+25k Capacity\n+50% Convert Rate\n+25% Fire Pollen\n+25% Capacity Bonus\n+15% Defense\n+15% Red Pollen",
+              "description": "Just a little warm.",
+              "info": "+25,000 Capacity\n+50% Convert Rate\n+25% Fire Pollen\n+25% Capacity Bonus\n+15% Defense\n+15% Red Pollen",
               "capacity": 25000,
               "buffs": [
                 "+50% Convert Rate",
@@ -618,8 +672,8 @@
               "name": "Flame Guard",
               "type": "",
               "image": "images/equipment/Right Flame.png",
-              "description": "Right Flame Guard. Legends say it's the best red mid gear.",
-              "info": "+50k Capacity\n+75% Convert Rate\n+40% Fire Pollen\n+50% Capacity Bonus\n+25% Defense\n+30% Red Pollen",
+              "description": "It's getting hot in here!",
+              "info": "+50,000 Capacity\n+75% Convert Rate\n+40% Fire Pollen\n+50% Capacity Bonus\n+25% Defense\n+30% Red Pollen",
               "capacity": 50000,
               "buffs": [
                 "+75% Convert Rate",
@@ -635,8 +689,8 @@
               "name": "Burning Guard",
               "type": "",
               "image": "images/equipment/Right Burning.png",
-              "description": "Right Burning Guard. Legends say it's the best red gear.",
-              "info": "+100k Capacity\n+100% Convert Rate\n+75% Fire Pollen\n+75% Capacity Bonus\n+35% Defense\n+50% Red Pollen",
+              "description": "Almost as hot as fire.",
+              "info": "+100,000 Capacity\n+100% Convert Rate\n+75% Fire Pollen\n+75% Capacity Bonus\n+35% Defense\n+50% Red Pollen",
               "capacity": 100000,
               "buffs": [
                 "+100% Convert Rate",
@@ -652,16 +706,16 @@
               "name": "Fire Ant Helmet",
               "type": "",
               "image": "images/equipment/Fire Ant Helmet.png",
-              "description": "Firefully ant made helmet!",
-              "info": "+750k Capacity\n+125% Convert Rate\n+25% Pollen\n+75% Loot Luck\nx1.5 Capacity Bonus\nx2.25 Fire Pollen\nx1.5 Red Pollen\n+15% Bee Ability Rate",
+              "description": "Made with ant‑thusiasm and a touch of fire.",
+              "info": "+750,000 Capacity\n+125% Convert Rate\n+25% Pollen\n+75% Loot Luck\n1.5× Capacity Bonus\n2.25× Fire Pollen\n1.5× Red Pollen\n+15% Bee Ability Rate",
               "capacity": 750000,
               "buffs": [
                 "+125% Convert Rate",
                 "+25% Pollen",
                 "+75% Loot Luck",
-                "x1.5 Capacity Bonus",
-                "x2.25 Fire Pollen",
-                "x1.5 Red Pollen",
+                "1.5× Capacity Bonus",
+                "2.25× Fire Pollen",
+                "1.5× Red Pollen",
                 "+15% Bee Ability Rate"
               ],
               "cost": "300m Honey + 200 Fire Essence + 25 Strawberry Extract + 3 Diamond Egg",
@@ -703,7 +757,12 @@
       "path": "blue-shop.html?shop=blue-shop",
       "image": "images/gear/blueShop/Shop.png",
       "description": "A frosty shop stocked with ice-themed equipment for experienced beekeepers. Carries 1 collector, 2 bags, 4 gear pieces, and 2 special items purchasable with Honey, Blueberries, Water Essence, and other rare materials.",
-      "tags": ["Tools", "Bags", "Gear", "Items"],
+      "tags": [
+        "Tools",
+        "Bags",
+        "Gear",
+        "Items"
+      ],
       "about": "A frosty shop stocked with ice-themed equipment for experienced beekeepers. Carries 1 collector, 2 bags, 4 gear pieces, and 2 special items purchasable with Honey, Blueberries, Water Essence, and other rare materials.",
       "sections": [
         {
@@ -714,7 +773,7 @@
               "name": "Snow Shovel",
               "type": "",
               "image": "images/equipment/Snow Shovel.png",
-              "description": "Clean snow with it, might be better than normal shovel.",
+              "description": "Cold to the touch.\nIt can spread Ice in the field. \n\n Gathers 8 Pollen from 29 flowers in front of you every 0.7 seconds.\nAdditionaly grants x1.5 blue pollen.\n\n[Ice Aura Passive]: Covers Stamp In Ice Every 5 Clicks.",
               "info": "Gathers 8 pollen from 29 flowers in front of you in 0.7 seconds, 1.5x blue pollen.\n[Ice Spreads Passive]: Covers Stamp in Ice every 5 clicks.\n[Ice Aura Passive]: Turns all patches into ice every 5 swings.",
               "cost": "8m Honey + 50 Blueberry + 25 Water Essence",
               "costType": "honey",
@@ -722,9 +781,11 @@
                 {
                   "name": "Ice Aura",
                   "type": "Clicks",
-                  "desc": "Turns all patches into ice every 5 swings."
+                  "desc": "Covers flowers in Ice.\nActivates Every 5 Swings."
                 }
-              ]
+              ],
+              "passive": "Ice Aura",
+              "passiveDesc": "Covers flowers in Ice.\nActivates Every 5 Swings."
             }
           ]
         },
@@ -736,8 +797,8 @@
               "name": "Fridge",
               "type": "",
               "image": "images/equipment/Fridge.png",
-              "description": "Freezer and fridge, help save your honey tasty.",
-              "info": "+600k Capacity\n+300% Convert Rate\n+30 Convert Amount\n+50% Blue Pollen\n+10% Bee Ability Rate",
+              "description": "You can even store food inside!",
+              "info": "+600,000 Capacity\n+300% Convert Rate\n+30 Convert Amount\n+50% Blue Pollen\n+10% Bee Ability Rate",
               "capacity": 600000,
               "buffs": [
                 "+300% Convert Rate",
@@ -752,12 +813,12 @@
               "name": "Ice Basket",
               "type": "",
               "image": "images/equipment/Ice Basket.png",
-              "description": "Keep honey inside ice balls inside this basket.",
-              "info": "+1m Capacity\n+450% Convert Rate\nx1.1 Capacity Bonus\n+45 Convert Amount\n+75% Blue Pollen\n+10% Ice Pollen\n+15% Bee Ability Rate",
+              "description": "Does it not melt?",
+              "info": "+1,000,000 Capacity\n+450% Convert Rate\n1.1× Capacity Bonus\n+45 Convert Amount\n+75% Blue Pollen\n+10% Ice Pollen\n+15% Bee Ability Rate",
               "capacity": 1000000,
               "buffs": [
                 "+450% Convert Rate",
-                "x1.1 Capacity Bonus",
+                "1.1× Capacity Bonus",
                 "+45 Convert Amount",
                 "+75% Blue Pollen",
                 "+10% Ice Pollen",
@@ -776,13 +837,14 @@
               "name": "Ice Boots",
               "type": "",
               "image": "images/equipment/Ice Boots.png",
-              "description": "Unique boots made of real ice, leaves an Ice Trail when you walk!",
-              "info": "+7 Movement Collection\n+9% Movespeed\nx1.15 Ice Pollen",
+              "description": "Can't feel my toes anymore...\nSpreads Ice wherever you walk.",
+              "info": "+7 Movement Collection\n+6 Player Movespeed\n+7 Jump Power\n1.15× Ice Pollen",
               "capacity": 0,
               "buffs": [
                 "+7 Movement Collection",
-                "+9% Movespeed",
-                "x1.15 Ice Pollen"
+                "+6 Player Movespeed",
+                "+7 Jump Power",
+                "1.15× Ice Pollen"
               ],
               "cost": "25m Honey + 100 Blueberry + 50 Water Essence",
               "costType": "honey"
@@ -791,8 +853,8 @@
               "name": "Snowflake Guard",
               "type": "",
               "image": "images/equipment/Left Snowflake.png",
-              "description": "Left Snowflake Guard. Legends say it's the best blue starter gear.",
-              "info": "+25k Capacity\n+50% Convert Rate\n+10% Ice Pollen\n+25% Capacity Bonus\n+5% Movespeed\n+15% Blue Pollen",
+              "description": "It's getting cold in here!",
+              "info": "+25,000 Capacity\n+50% Convert Rate\n+10% Ice Pollen\n+25% Capacity Bonus\n+5% Movespeed\n+15% Blue Pollen",
               "capacity": 25000,
               "buffs": [
                 "+50% Convert Rate",
@@ -808,8 +870,8 @@
               "name": "Snowy Guard",
               "type": "",
               "image": "images/equipment/Left Snowy.png",
-              "description": "Left Snowy Guard. Legends say it's the best blue mid gear.",
-              "info": "+50k Capacity\n+75% Convert Rate\n+15% Ice Pollen\n+50% Capacity Bonus\n+7% Movespeed\n+30% Blue Pollen",
+              "description": "Just a little cool.",
+              "info": "+50,000 Capacity\n+75% Convert Rate\n+15% Ice Pollen\n+50% Capacity Bonus\n+7% Movespeed\n+30% Blue Pollen",
               "capacity": 50000,
               "buffs": [
                 "+75% Convert Rate",
@@ -825,8 +887,8 @@
               "name": "Icicle Guard",
               "type": "",
               "image": "images/equipment/Left Icicle.png",
-              "description": "Left Icicle Guard. Legends say it's the best blue gear.",
-              "info": "+100k Capacity\n+100% Convert Rate\n+25% Ice Pollen\n+75% Capacity Bonus\n+10% Movespeed\n+50% Blue Pollen",
+              "description": "Almost as cold as ice.",
+              "info": "+100,000 Capacity\n+100% Convert Rate\n+25% Ice Pollen\n+75% Capacity Bonus\n+10% Movespeed\n+50% Blue Pollen",
               "capacity": 100000,
               "buffs": [
                 "+100% Convert Rate",
@@ -843,15 +905,15 @@
               "type": "",
               "image": "images/equipment/Ice Ant Helmet.png",
               "description": "Icefully ant made helmet!",
-              "info": "+750k Capacity\n+125% Convert Rate\n+25% Pollen\n+75% Loot Luck\nx2.5 Capacity Bonus\nx1.25 Ice Pollen\nx1.25 Blue Pollen\n+15% Bee Ability Rate",
+              "info": "+750,000 Capacity\n+125% Convert Rate\n+25% Pollen\n+75% Loot Luck\n2.5× Capacity Bonus\n1.25× Ice Pollen\n1.25× Blue Pollen\n+15% Bee Ability Rate",
               "capacity": 750000,
               "buffs": [
                 "+125% Convert Rate",
                 "+25% Pollen",
                 "+75% Loot Luck",
-                "x2.5 Capacity Bonus",
-                "x1.25 Ice Pollen",
-                "x1.25 Blue Pollen",
+                "2.5× Capacity Bonus",
+                "1.25× Ice Pollen",
+                "1.25× Blue Pollen",
                 "+15% Bee Ability Rate"
               ],
               "cost": "300m Honey + 200 Water Essence + 25 Blueberry Extract + 3 Diamond Egg",
@@ -893,7 +955,11 @@
       "path": "white-shop.html?shop=white-shop",
       "image": "images/gear/whiteShop/Shop.png",
       "description": "A breezy shop stocked with wind-themed equipment for experienced beekeepers. Carries 1 collector, 2 gear pieces, and 1 special item purchasable with Honey, Pine Cones, Wind Essence, and other rare materials.",
-      "tags": ["Tools", "Gear", "Items"],
+      "tags": [
+        "Tools",
+        "Gear",
+        "Items"
+      ],
       "about": "A breezy shop stocked with wind-themed equipment for experienced beekeepers. Carries 1 collector, 2 gear pieces, and 1 special item purchasable with Honey, Pine Cones, Wind Essence, and other rare materials.",
       "sections": [
         {
@@ -904,7 +970,7 @@
               "name": "Windy Staff",
               "type": "",
               "image": "images/equipment/Windy Staff.png",
-              "description": "Whooshy Whooshy Staff, spreads winds in fields.",
+              "description": "Very air‑tistic and light.\nIt can summon clouds in the field. \n\n Gathers 6 Pollen from 29 flowers in front of you every 0.9 seconds.\nAdditionaly grants x1.5 white pollen.\n\n[Windy Aura Passive]: Spawns 1 Cloud Every 5 Clicks.",
               "info": "Gathers 6 pollen from 29 flowers in front of you in 0.9 seconds, 1.5x white pollen.\n[Wind Aura Passive]: Creates 2 clouds every 5 swings.",
               "cost": "8m Honey + 50 Pine Cone + 25 Wind Essence",
               "costType": "honey",
@@ -912,9 +978,11 @@
                 {
                   "name": "Wind Aura",
                   "type": "Clicks",
-                  "desc": "Creates 2 clouds every 5 swings."
+                  "desc": "Creates 2 Clouds.\nActivates Every 5 Swings."
                 }
-              ]
+              ],
+              "passive": "Wind Aura",
+              "passiveDesc": "Creates 2 Clouds.\nActivates Every 5 Swings."
             }
           ]
         },
@@ -926,13 +994,13 @@
               "name": "Windy Belt",
               "type": "",
               "image": "images/equipment/Windy Belt.png",
-              "description": "Whooshy Whooshy belt, whooshes player around winds.",
-              "info": "+150k Capacity\nx2 Capacity Bonus\nx2 Convert Rate\nx1.25 White Pollen\n+75% Loot Luck",
+              "description": "C'mon, take it! It will really blow you away!",
+              "info": "+150,000 Capacity\n2× Capacity Bonus\n2× Convert Rate\n1.25× White Pollen\n+75% Loot Luck",
               "capacity": 150000,
               "buffs": [
-                "x2 Capacity Bonus",
-                "x2 Convert Rate",
-                "x1.25 White Pollen",
+                "2× Capacity Bonus",
+                "2× Convert Rate",
+                "1.25× White Pollen",
                 "+75% Loot Luck"
               ],
               "cost": "750m Honey + 250 Pine Cone + 25 Cone Extract + 500 Wind Essence",
@@ -942,17 +1010,17 @@
               "name": "Windy Helmet",
               "type": "",
               "image": "images/equipment/Windy Helmet.png",
-              "description": "Windy wosh wosh wosh helmet!",
-              "info": "+750k Capacity\n+175% Convert Rate\n+50% Pollen\n+75% Loot Luck\nx1.5 Capacity Bonus\nx1.5 Cloud Pollen\nx1.25 Obsidian Pollen\nx1.25 White Pollen\n+15% Bee Ability Rate",
+              "description": "Gust what you needed. Am I right?",
+              "info": "+750,000 Capacity\n+175% Convert Rate\n+50% Pollen\n+75% Loot Luck\n1.5× Capacity Bonus\n1.5× Cloud Pollen\n1.25× Obsidian Pollen\n1.25× White Pollen\n+15% Bee Ability Rate",
               "capacity": 750000,
               "buffs": [
                 "+175% Convert Rate",
                 "+50% Pollen",
                 "+75% Loot Luck",
-                "x1.5 Capacity Bonus",
-                "x1.5 Cloud Pollen",
-                "x1.25 Obsidian Pollen",
-                "x1.25 White Pollen",
+                "1.5× Capacity Bonus",
+                "1.5× Cloud Pollen",
+                "1.25× Obsidian Pollen",
+                "1.25× White Pollen",
                 "+15% Bee Ability Rate"
               ],
               "cost": "300m Honey + 200 Wind Essence + 25 Cone Extract + 3 Diamond Egg",
@@ -985,7 +1053,9 @@
       "path": "hydrant-shop.html?shop=hydrant-shop",
       "image": "images/gear/hydrantShop/Shop.png",
       "description": "A shop carrying hydrants of increasing rarity and power, all purchasable with Honey.",
-      "tags": ["Hydrants"],
+      "tags": [
+        "Hydrants"
+      ],
       "about": "A shop carrying hydrants of increasing rarity and power, all purchasable with Honey.",
       "sections": [
         {
@@ -996,7 +1066,7 @@
               "name": "Bronze Hydrant",
               "type": "",
               "image": "images/equipment/Bronze Hydrant.png",
-              "description": "Forged from the fires of dedication, worn with pride.",
+              "description": "Forged from the heat of dedication, worn with pride.\n\n Amount: [1] \n Radius: [7] \n Rate: [5s] \n Power: [2].",
               "info": "Amount: 1 | Radius: 7 | Rate: 5s | Power: 2",
               "cost": "10m Honey",
               "costType": "honey"
@@ -1005,7 +1075,7 @@
               "name": "Silver Hydrant",
               "type": "",
               "image": "images/equipment/Silver Hydrant.png",
-              "description": "A gleaming relic of urban infrastructure, reforged in pure silver.",
+              "description": "A gleaming relic of urban infrastructure, reforged in pure silver.\n\n Amount: [1] \n Radius: [10] \n Rate: [4s] \n Power: [2].",
               "info": "Amount: 1 | Radius: 10 | Rate: 4s | Power: 2",
               "cost": "100m Honey",
               "costType": "honey"
@@ -1014,7 +1084,7 @@
               "name": "Golden Hydrant",
               "type": "",
               "image": "images/equipment/Golden Hydrant.png",
-              "description": "Drenched in pure gold from top to bottom, the Golden Hydrant is the ultimate symbol of status and success.",
+              "description": "Drenched in pure gold from top to bottom, the Golden Hydrant is the ultimate symbol of wealth and success.\n\n Amount: [2] \n Radius: [11] \n Rate: [3.5s] \n Power: [3].",
               "info": "Amount: 2 | Radius: 11 | Rate: 3.5s | Power: 3",
               "cost": "1b Honey",
               "costType": "honey"
@@ -1023,7 +1093,7 @@
               "name": "Diamond Hydrant",
               "type": "",
               "image": "images/equipment/Diamond Hydrant.png",
-              "description": "Forged under unimaginable pressure, the Diamond Hydrant is the pinnacle of rarity and elegance.",
+              "description": "Forged under extreme heat and pressure, the Diamond Hydrant is the pinnacle of nobility and elegance.\n\n Amount: [2] \n Radius: [13] \n Rate: [3s] \n Power: [4].",
               "info": "Amount: 2 | Radius: 13 | Rate: 3s | Power: 4",
               "cost": "10b Honey",
               "costType": "honey"
@@ -1032,7 +1102,7 @@
               "name": "Emerald Hydrant",
               "type": "",
               "image": "images/equipment/Emerald Hydrant.png",
-              "description": "Deep green and mesmerizing, the Emerald Hydrant pulses with a rich, otherworldly glow.",
+              "description": "Having a rich and mesmerizing green, the Emerald Hydrant pulses with an otherworldly glow.\n\n Amount: [3] \n Radius: [15] \n Rate: [3s] \n Power: [5].",
               "info": "Amount: 3 | Radius: 15 | Rate: 3s | Power: 5",
               "cost": "100b Honey",
               "costType": "honey"
@@ -1049,7 +1119,11 @@
       "path": "bamboo-shop.html?shop=bamboo-shop",
       "image": "images/gear/bambooShop/Shop.png",
       "description": "A nature-themed shop stocked with bamboo equipment for experienced beekeepers. Carries 3 Tools, 1 bag, and 3 gear pieces purchasable with Honey, Bamboo, Bamboo Flasks, and Wind Essence.",
-      "tags": ["Tools", "Bags", "Gear"],
+      "tags": [
+        "Tools",
+        "Bags",
+        "Gear"
+      ],
       "about": "A nature-themed shop stocked with bamboo equipment for experienced beekeepers. Carries 3 Tools, 1 bag, and 3 gear pieces purchasable with Honey, Bamboo, Bamboo Flasks, and Wind Essence.",
       "sections": [
         {
@@ -1060,7 +1134,7 @@
               "name": "Bamboo Spear",
               "type": "",
               "image": "images/equipment/Bamboo Spear.png",
-              "description": "Be careful, you might stab yourself.",
+              "description": "...A pointy bamboo stick? Really? \n\n Gathers 26 Pollen from 8 flowers in front of you every 0.66 seconds.",
               "info": "Gathers 26 pollen from 8 flowers in front of you in 0.66 seconds.",
               "cost": "20m Honey + 25 Bamboo + 25 Wind Essence",
               "costType": "honey"
@@ -1069,7 +1143,7 @@
               "name": "Bamboo Rake",
               "type": "",
               "image": "images/equipment/Bamboo Rake.png",
-              "description": "Be careful, you might stab yourself.",
+              "description": "Can you eat with this? \n\n Gathers 45 Pollen from 6 flowers in front of you every 0.9 seconds.",
               "info": "Gathers 45 pollen from 6 flowers in front of you in 0.9 seconds.",
               "cost": "75m Honey + 50 Bamboo + 1 Bamboo Flask + 25 Wind Essence",
               "costType": "honey"
@@ -1078,7 +1152,7 @@
               "name": "Bamboo Staff",
               "type": "",
               "image": "images/equipment/Bamboo Staff.png",
-              "description": "Be careful, you might enchant someone.",
+              "description": "...Abracadabra? \n\n Gathers 18 Pollen from 29 flowers in front of you every 0.8 seconds.",
               "info": "Gathers 13 pollen from 29 flowers in front of you in 0.8 seconds.",
               "cost": "200m Honey + 125 Bamboo + 3 Bamboo Flask + 50 Wind Essence",
               "costType": "honey"
@@ -1093,12 +1167,12 @@
               "name": "Sheaf of Bamboo",
               "type": "",
               "image": "images/equipment/Sheaf of Bamboo.png",
-              "description": "Keep honey inside bamboo parts inside this sheaf.",
-              "info": "+1.5m Capacity\n+600% Convert Rate\nx1.25 Capacity Bonus\n+60 Convert Amount\n+50% White Pollen\n+25% Cloud Pollen\n+15% Bee Ability Rate",
+              "description": "Well, that's one weird bag for sure.",
+              "info": "+1,500,000 Capacity\n+600% Convert Rate\n1.25× Capacity Bonus\n+60 Convert Amount\n+50% White Pollen\n+25% Cloud Pollen\n+15% Bee Ability Rate",
               "capacity": 1500000,
               "buffs": [
                 "+600% Convert Rate",
-                "x1.25 Capacity Bonus",
+                "1.25× Capacity Bonus",
                 "+60 Convert Amount",
                 "+50% White Pollen",
                 "+25% Cloud Pollen",
@@ -1117,7 +1191,7 @@
               "name": "Bamboo Gloves",
               "type": "",
               "image": "images/equipment/Bamboo Gloves.png",
-              "description": "Natural and soft bamboo gloves.",
+              "description": "Natural and soft. What else would you need?",
               "info": "+15% Tool Speed\n+25% Tool Pollen\n+25% Pollen\n+10% White Pollen\n+15% Bee Pollen",
               "capacity": 0,
               "buffs": [
@@ -1134,12 +1208,12 @@
               "name": "Bamboo Belt",
               "type": "",
               "image": "images/equipment/Bamboo Belt.png",
-              "description": "Made of nature, soft and light bamboo fabric.",
-              "info": "+100k Capacity\nx1.5 Capacity Bonus\nx1.5 Convert Rate\n+50% Loot Luck",
+              "description": "Is this edible?",
+              "info": "+100,000 Capacity\n1.5× Capacity Bonus\n1.5× Convert Rate\n+50% Loot Luck",
               "capacity": 100000,
               "buffs": [
-                "x1.5 Capacity Bonus",
-                "x1.5 Convert Rate",
+                "1.5× Capacity Bonus",
+                "1.5× Convert Rate",
                 "+50% Loot Luck"
               ],
               "cost": "150m Honey + 125 Bamboo + 2 Bamboo Flask + 50 Wind Essence",
@@ -1149,13 +1223,13 @@
               "name": "Aphid Helmet",
               "type": "",
               "image": "images/equipment/Aphid Helmet.png",
-              "description": "Aphid Helmet that made of aphids...?",
-              "info": "+100% Convert Rate\n+50% Loot Luck\nx1.5 Capacity Bonus\n+40% Pollen\n+10% Bee Ability Rate",
+              "description": "Found by Panda Bear after a battle.\nShould be good, right?",
+              "info": "+100% Convert Rate\n+50% Loot Luck\n1.5× Capacity Bonus\n+40% Pollen\n+10% Bee Ability Rate",
               "capacity": 0,
               "buffs": [
                 "+100% Convert Rate",
                 "+50% Loot Luck",
-                "x1.5 Capacity Bonus",
+                "1.5× Capacity Bonus",
                 "+40% Pollen",
                 "+10% Bee Ability Rate"
               ],
@@ -1175,7 +1249,12 @@
       "path": "beach-shop.html?shop=beach-shop",
       "image": "images/gear/beachShop/Shop.png",
       "description": "A tropical shop stocked with coconut and sunny equipment for beekeepers exploring the beach. Carries 1 collector, 1 bag, 3 gear pieces, and 1 hydrant purchasable with Honey and coastal materials.",
-      "tags": ["Tools", "Bags", "Gear", "Hydrants"],
+      "tags": [
+        "Tools",
+        "Bags",
+        "Gear",
+        "Hydrants"
+      ],
       "about": "A tropical shop stocked with coconut and sunny equipment for beekeepers exploring the beach. It is built around coastal materials, coconuts, and sunny upgrades for harvesting in the Beach Zone.",
       "sections": [
         {
@@ -1186,7 +1265,7 @@
               "name": "Coconut Smash",
               "type": "Collector",
               "image": "images/equipment/Coconut Smash.png",
-              "description": "This hammer smashes anything on its way!",
+              "description": "Now, that's what I'm talking about! \n\n Gathers 65 Pollen from 5 flowers in front of you every 0.6 seconds.\n+Passive: Coconut Storm (Every 15 Clicks)",
               "info": "Gathers 85 pollen from 5 flowers in front of you in 0.6 seconds.\n+Passive: Coconut Storm (Every 15 Clicks)",
               "cost": "50b Honey + 2 Majestic Cocktail + 5 Summer Cocktail + 15 Coconut Drink + 25 Lemonade + 350 Coconut + 350 Wind Essence + 25 Bamboo Flask + 300 Bamboo",
               "costType": "honey",
@@ -1194,9 +1273,11 @@
                 {
                   "name": "Coconut Storm",
                   "type": "Clicks",
-                  "desc": "Creates 3 Coconuts every 15 swings that fall from sky and gather pollen and turns flowers into obsidian."
+                  "desc": "Creates 3 Coconuts, which gather Pollen\n and covers flowers in Obsidian.\nActivates Every 15 Swings."
                 }
-              ]
+              ],
+              "passive": "Coconut Storm",
+              "passiveDesc": "Creates 3 Coconuts, which gather Pollen\n and covers flowers in Obsidian.\nActivates Every 15 Swings."
             }
           ]
         },
@@ -1208,12 +1289,12 @@
               "name": "Coconut Bag",
               "type": "Bag",
               "image": "images/equipment/Coconut Bag.png",
-              "description": "Official item of coconut fashion, known as Tropical Bestie.",
-              "info": "+4,250,000 Capacity\n+750% Convert Rate\nx1.35 Capacity Bonus\n+45 Convert Amount\n+50% Red Pollen\n+50% Blue Pollen\n+20% Bee Ability Rate\n+Passive: Coconut Smoothie",
+              "description": "Wanna take a sip?",
+              "info": "+4,250,000 Capacity\n+750% Convert Rate\n1.35× Capacity Bonus\n+45 Convert Amount\n+50% Red Pollen\n+50% Blue Pollen\n+20% Bee Ability Rate",
               "capacity": 4250000,
               "buffs": [
                 "+750% Convert Rate",
-                "x1.35 Capacity Bonus",
+                "1.35× Capacity Bonus",
                 "+45 Convert Amount",
                 "+50% Red Pollen",
                 "+50% Blue Pollen",
@@ -1225,9 +1306,11 @@
                 {
                   "name": "Coconut Smoothie",
                   "type": "Misc",
-                  "desc": "Activates every 15 fallen coconuts. Umbrella Spins up from ground and drops on field 10 splashes of coconut milk which grants +25% Movespeed, x1.45 Obsidian Pollen and converts 30% of incoming pollen inside."
+                  "desc": "Drops 10 splashes of Coconut Milk.\nCoconut Milk has 30% Instant Conversion.\nWhen stepping on Coconut Milk, receive Coconut Smoothie Boost for 15s\n (+25% Movespeed and x1.45 Obsidian Pollen).\nActivates Every 15 Coconuts."
                 }
-              ]
+              ],
+              "passive": "Coconut Smoothie",
+              "passiveDesc": "Drops 10 splashes of Coconut Milk.\nCoconut Milk has 30% Instant Conversion.\nWhen stepping on Coconut Milk, receive Coconut Smoothie Boost for 15s\n (+25% Movespeed and x1.45 Obsidian Pollen).\nActivates Every 15 Coconuts."
             }
           ]
         },
@@ -1239,13 +1322,13 @@
               "name": "Coconut Belt",
               "type": "Belt",
               "image": "images/equipment/Coconut Belt.png",
-              "description": "Essential item of coconut set and new coconut fashion.",
-              "info": "+400,000 Capacity\nx1.85 Capacity Bonus\nx2.25 Convert Rate\nx1.35 Pollen\n+15% Bee Ability Rate\n+100% Loot Luck\n+Passive: Coconut Harvest",
+              "description": "Essential item for the new coconut fashion.",
+              "info": "+400,000 Capacity\n1.85× Capacity Bonus\n2.25× Convert Rate\n1.35× Pollen\n+15% Bee Ability Rate\n+100% Loot Luck",
               "capacity": 400000,
               "buffs": [
-                "x1.85 Capacity Bonus",
-                "x2.25 Convert Rate",
-                "x1.35 Pollen",
+                "1.85× Capacity Bonus",
+                "2.25× Convert Rate",
+                "1.35× Pollen",
                 "+15% Bee Ability Rate",
                 "+100% Loot Luck"
               ],
@@ -1255,16 +1338,18 @@
                 {
                   "name": "Coconut Harvest",
                   "type": "Time",
-                  "desc": "Creates 3 Coconuts every 20s that fall from sky and gather pollen and turns flowers into milk."
+                  "desc": "Creates 3 Coconuts, which gather Pollen and\n covers flowers in Milk.\nMilk has 30% Instant Conversion.\nActivates Every 20s."
                 }
-              ]
+              ],
+              "passive": "Coconut Harvest",
+              "passiveDesc": "Creates 3 Coconuts, which gather Pollen and\n covers flowers in Milk.\nMilk has 30% Instant Conversion.\nActivates Every 20s."
             },
             {
               "name": "Coconut Boots",
               "type": "Boots",
               "image": "images/equipment/Coconut Boots.png",
-              "description": "Tropical boots, made out of coconuts that were near and true obsidian power.",
-              "info": "+9 Movement Collection\n+8% Player Movespeed\n+10 Jump Power\nx1.15 Obsidian Pollen\n[Coconut Walk Passive]: Any flower patch you walk over turns into Obsidian.",
+              "description": "These boots go as hard as obsidian!",
+              "info": "+9 Movement Collection\n+8 Player Movespeed\n+10 Jump Power\n1.15× Obsidian Pollen",
               "cost": "10b Honey + 3 Summer Cocktail + 10 Coconut Drink + 35 Lemonade + 150 Coconut + 100 Water Essence + 100 Fire Essence + 200 Blueberry + 200 Strawberry",
               "costType": "honey",
               "passives": [
@@ -1273,6 +1358,12 @@
                   "type": "Misc",
                   "desc": "Any flower patch you walk over turns into Obsidian."
                 }
+              ],
+              "buffs": [
+                "+9 Movement Collection",
+                "+8 Player Movespeed",
+                "+10 Jump Power",
+                "1.15× Obsidian Pollen"
               ]
             },
             {
@@ -1280,17 +1371,17 @@
               "type": "Helmet",
               "image": "images/equipment/Sunny Helmet.png",
               "description": "The true sun god helmet.",
-              "info": "+225% Convert Rate\n+75% Loot Luck\nx2.75 Capacity Bonus\nx1.75 Pollen\n+50% Pollen\nx2 Energy Bonus\n+35% Obsidian Pollen\n+15% Bee Ability Rate\n+Passive: Sun Eclipse",
+              "info": "+1,000,000 Capacity\n+225% Convert Rate\n+75% Loot Luck\n2.75× Capacity Bonus\n1.75× Pollen\n+50% Pollen\n+20% Obsidian Pollen\n+15% Bee Ability Rate\n2× Energy Bonus",
               "capacity": 1000000,
               "buffs": [
                 "+225% Convert Rate",
                 "+75% Loot Luck",
-                "x2.75 Capacity Bonus",
-                "x1.75 Pollen",
+                "2.75× Capacity Bonus",
+                "1.75× Pollen",
                 "+50% Pollen",
-                "x2 Energy Bonus",
-                "+35% Obsidian Pollen",
-                "+15% Bee Ability Rate"
+                "+20% Obsidian Pollen",
+                "+15% Bee Ability Rate",
+                "2× Energy Bonus"
               ],
               "cost": "10b Honey + 5 Summer Cocktail + 50 Lemonade + 500 Lemon + 100 Water Essence + 100 Fire Essence + 20 Blueberry Extract + 20 Strawberry Extract + 20 Seed Oil",
               "costType": "honey",
@@ -1298,9 +1389,11 @@
                 {
                   "name": "Sun Eclipse",
                   "type": "Time",
-                  "desc": "Activates every 60s. Lasts for 20s and creates 4 beams that collect 200 pollen from 21 tiles multiplied by solar pollen and gives Sun Eclipse Boost for 20s."
+                  "desc": "Creates 4 Sunny Beams, which gather Pollen\n (Multiplied by Solar Pollen).\nAdditionally, receive Sun Eclipse Boost for 20s\n (x1.5 Pollen) & All players in the field receive\n Sun Eclipse Dual Boost for 20s\n (x1.05 Pollen & x1.1 Capacity Bonus) .Activates Every 80s."
                 }
-              ]
+              ],
+              "passive": "Sun Eclipse",
+              "passiveDesc": "Creates 4 Sunny Beams, which gather Pollen\n (Multiplied by Solar Pollen).\nAdditionally, receive Sun Eclipse Boost for 20s\n (x1.5 Pollen) & All players in the field receive\n Sun Eclipse Dual Boost for 20s\n (x1.05 Pollen & x1.1 Capacity Bonus) .Activates Every 80s."
             }
           ]
         },
@@ -1312,7 +1405,7 @@
               "name": "Sunny Hydrant",
               "type": "Hydrant",
               "image": "images/equipment/Sunny Hydrant.png",
-              "description": "Yellow and bright sunny themed hydrant.\n\n Amount: [2] \n Radius: [22] \n Rate: [4s] \n Power: [7]",
+              "description": "This hydrant has a very bright future.\n\n Amount: [2] \n Radius: [22] \n Rate: [4s] \n Power: [7].\n+Passive: Sunny Pulse.",
               "info": "Amount: 2\nRadius: 22\nRate: 4s\nPower: 7\n+Passive: Sunny Pulse",
               "cost": "50b Honey + 2 Majestic Cocktail + 5 Summer Cocktail + 25 Lemonade + 750 Lemon + 250 Wind Essence + 25 Cone Extract + 500 Pine Cone + 25 Seed Oil",
               "costType": "honey",
@@ -1320,9 +1413,11 @@
                 {
                   "name": "Sunny Pulse",
                   "type": "Time",
-                  "desc": "Creates 2 Sunny Beams for each Hydrant every 30s. That collects 13 pollen from 21 tiles multiplied by solar pollen and upgrades flower patches for 12s."
+                  "desc": "Creates 2 Sunny Beams, which gather\nPollen for each Hydrant (Multiplied by Solar Pollen).\nAdditionally, upgrades the flowers they gather for 12s.\nActivates Every 30s."
                 }
-              ]
+              ],
+              "passive": "Sunny Pulse",
+              "passiveDesc": "Creates 2 Sunny Beams, which gather\nPollen for each Hydrant (Multiplied by Solar Pollen).\nAdditionally, upgrades the flowers they gather for 12s.\nActivates Every 30s."
             }
           ]
         }
@@ -1336,7 +1431,12 @@
       "path": "greenhouse.html?shop=greenhouse",
       "image": "images/gear/greenhouse/Shop.png",
       "description": "A greenhouse.",
-      "tags": ["Tools", "Bags", "Gear", "Items"],
+      "tags": [
+        "Tools",
+        "Bags",
+        "Gear",
+        "Items"
+      ],
       "about": "A greenhouse.",
       "sections": [
         {
@@ -1347,7 +1447,7 @@
               "name": "Nature Staff",
               "type": "Collector",
               "image": "images/equipment/Nature Staff.png",
-              "description": "Carved from an ancient, hardened oak branch that still pulses with life.",
+              "description": "Carved from an ancient branch of oak, it channels the ancient power of the forest. \n\n Gathers 95 Pollen from 29 flowers in front of you every 0.8 seconds.\n+Passive: Nature Harvest",
               "info": "Gathers 145 pollen from 29 flowers in 0.8s.",
               "cost": "100b Honey + 20 Moon Extract + 10 Double Dice + 5 Gold Egg + 250 Lunar Essence + 50 Strawberry Extract + 50 Blueberry Extract + 50 Cone Extract",
               "costType": "honey",
@@ -1355,9 +1455,11 @@
                 {
                   "name": "Nature Harvest",
                   "type": "Clicks",
-                  "desc": "Creates 5 Spikes around the whole field, turning 9 patches into obsidian for 15s every 7 swings."
+                  "desc": "Creates 5 Spikes around the field,\nwhich gather Pollen and covers flowers in Obsidian.\nAdditionally, upgrades the flowers they gather for 15s.\nActivates every 20 Swings."
                 }
-              ]
+              ],
+              "passive": "Nature Harvest",
+              "passiveDesc": "Creates 5 Spikes around the field,\nwhich gather Pollen and covers flowers in Obsidian.\nAdditionally, upgrades the flowers they gather for 15s.\nActivates every 20 Swings."
             }
           ]
         },
@@ -1369,12 +1471,12 @@
               "name": "Blossom Canister",
               "type": "Bag",
               "image": "images/equipment/Blossom Canister.png",
-              "description": "A lightweight vessel forged from floral glass, radiating a fragrant aura.",
-              "info": "+6m Capacity\n+900% Convert Rate\nx1.5 Capacity Bonus\n+60 Convert Amount\n+75% Red Pollen\n+75% Blue Pollen\n+25% Bee Ability Rate",
+              "description": "Nature's power on your back! Literally!",
+              "info": "+6,000,000 Capacity\n+900% Convert Rate\n1.5× Capacity Bonus\n+60 Convert Amount\n+75% Red Pollen\n+75% Blue Pollen\n+25% Bee Ability Rate",
               "capacity": 6000000,
               "buffs": [
                 "+900% Convert Rate",
-                "x1.5 Capacity Bonus",
+                "1.5× Capacity Bonus",
                 "+60 Convert Amount",
                 "+75% Red Pollen",
                 "+75% Blue Pollen",
@@ -1386,9 +1488,11 @@
                 {
                   "name": "Blossom Pollenation",
                   "type": "Time",
-                  "desc": "Creates 8 Blossom Leafs around the whole field that upgrade flowers on 9 patches for 12s every 30s."
+                  "desc": "Creates 8 Blossom Leaves around the field,\nwhich gather Pollen for 12s.\nAdditionally, upgrades the flowers they gather for 12s.\nActivates every 30s."
                 }
-              ]
+              ],
+              "passive": "Blossom Pollenation",
+              "passiveDesc": "Creates 8 Blossom Leaves around the field,\nwhich gather Pollen for 12s.\nAdditionally, upgrades the flowers they gather for 12s.\nActivates every 30s."
             }
           ]
         },
@@ -1400,13 +1504,13 @@
               "name": "Nature Belt",
               "type": "Belt",
               "image": "images/equipment/Nature Belt.png",
-              "description": "Woven from enchanted vines, offering both flexibility and reliable support.",
-              "info": "+750k Capacity\nx2 Capacity Bonus\nx2.5 Convert Rate\nx1.5 Pollen\n+20% Bee Ability Rate\n+150% Loot Luck",
+              "description": "Made from enchanted vines... And a little poison.\n+Passive: Poison Harvest",
+              "info": "+750,000 Capacity\n2× Capacity Bonus\n2.5× Convert Rate\n1.5× Pollen\n+20% Bee Ability Rate\n+150% Loot Luck",
               "capacity": 750000,
               "buffs": [
-                "x2 Capacity Bonus",
-                "x2.5 Convert Rate",
-                "x1.5 Pollen",
+                "2× Capacity Bonus",
+                "2.5× Convert Rate",
+                "1.5× Pollen",
                 "+20% Bee Ability Rate",
                 "+150% Loot Luck"
               ],
@@ -1416,16 +1520,18 @@
                 {
                   "name": "Poison Harvest",
                   "type": "Time",
-                  "desc": "Creates 5 Spikes around the whole field, turning 9 patches into poison that collects 30 Pollen for 14s every 20s."
+                  "desc": "Creates 5 Spikes around the field,\nt which gather Pollen and covers flowers into Poison for 14s.\ntPoison collects Pollen every second.\nActivates every 20s."
                 }
-              ]
+              ],
+              "passive": "Poison Harvest",
+              "passiveDesc": "Creates 5 Spikes around the field,\nt which gather Pollen and covers flowers into Poison for 14s.\ntPoison collects Pollen every second.\nActivates every 20s."
             },
             {
               "name": "Nature Gloves",
               "type": "Gloves",
               "image": "images/equipment/Nature Gloves.png",
-              "description": "Stitched from soft leaves and lined with thick moss to protect the hands.",
-              "info": "+20% Tool Speed\n+50% Tool Pollen\n+65% Pollen\n+25% White Pollen\n+25% Blue Pollen\n+25% Red Pollen\nx1.1 Capacity Bonus\n+30% Bee Pollen",
+              "description": "Stitched from soft leaves and lined with thick moss, it keeps the hands warm and protected.",
+              "info": "+20% Tool Speed\n+50% Tool Pollen\n+65% Pollen\n+25% White Pollen\n+25% Blue Pollen\n+25% Red Pollen\n1.1× Capacity Bonus\n+30% Bee Pollen",
               "capacity": 0,
               "buffs": [
                 "+20% Tool Speed",
@@ -1434,7 +1540,7 @@
                 "+25% White Pollen",
                 "+25% Blue Pollen",
                 "+25% Red Pollen",
-                "x1.1 Capacity Bonus",
+                "1.1× Capacity Bonus",
                 "+30% Bee Pollen"
               ],
               "cost": "25b Honey + 20 Bamboo Flask + 3 Triple Dice + 3 Gold Egg + 100 Lunar Essence + 100 Wind Essence + 100 Fire Essence + 100 Water Essence",
@@ -1443,9 +1549,11 @@
                 {
                   "name": "Nature Charge",
                   "type": "Clicks",
-                  "desc": "Activates Nature Charge Aura giving x1.2 Tool Speed & x1.2 Tool Pollen for 5s every 45 swings."
+                  "desc": "Activates Nature Charge Aura for 5s\n(x1.2 Tool Speed and x1.2 Tool Pollen).\nActivates every 45 Swings."
                 }
-              ]
+              ],
+              "passive": "Nature Charge",
+              "passiveDesc": "Activates Nature Charge Aura for 5s\n(x1.2 Tool Speed and x1.2 Tool Pollen).\nActivates every 45 Swings."
             }
           ]
         },
@@ -1457,19 +1565,266 @@
               "name": "Cardboard Planter",
               "type": "",
               "image": "images/items/Cardboard Planter.png",
-              "description": "A cardboard planter that gives fancy loot and vines!",
-              "info": "Grows in 30 Mins.\nGives 17 Tokens.",
-              "cost": "100m Honey + 15 Wind Essence + 15 Fire Essence + 15 Water Essence",
-              "costType": "honey"
+              "description": "Use it to put the Cardboard Planter in a field.",
+              "info": "Grows in 0.5 hours. Gives 17 tokens.",
+              "cost": "100,000,000 Honey",
+              "costType": "plain"
             },
             {
               "name": "Sticker Planter",
               "type": "",
               "image": "images/items/Sticker Planter.png",
-              "description": "A fancy sticker planter that mainly gives stickers!",
-              "info": "Grows in 1 Hour.\nGives 9 Tokens.",
-              "cost": "50 Tickets + 50 Wind Essence + 50 Fire Essence + 50 Water Essence",
-              "costType": "ticket"
+              "description": "Use it to put the Sticker Planter in a field.",
+              "info": "Grows in 1 hours. Gives 9 tokens.",
+              "cost": "50 Ticket",
+              "costType": "plain"
+            }
+          ]
+        },
+        {
+          "title": "Planters",
+          "description": "Planters sold at the Greenhouse Shop.",
+          "items": [
+            {
+              "name": "Tree Pot Planter",
+              "type": "Planter",
+              "image": "images/items/Tree Pot Planter.png",
+              "description": "Use it to put the Tree Pot Planter in a field.",
+              "info": "Grows in 3 hours. Gives 30 tokens.",
+              "cost": "5,000,000,000 Honey (base price; increases with purchases)",
+              "costType": "plain"
+            },
+            {
+              "name": "Clover Planter",
+              "type": "Planter",
+              "image": "images/items/Clover Planter.png",
+              "description": "Use it to put the Clover Planter in a field.",
+              "info": "Grows in 4 hours. Gives 35 tokens.",
+              "cost": "750,000,000,000 Honey (base price; increases with purchases)",
+              "costType": "plain"
+            },
+            {
+              "name": "Wisteria Planter",
+              "type": "Planter",
+              "image": "images/items/Wisteria Planter.png",
+              "description": "Use it to put the Wisteria Planter in a field.",
+              "info": "Grows in 4 hours. Gives 40 tokens.",
+              "cost": "5,000,000,000,000 Honey (base price; increases with purchases)",
+              "costType": "plain"
+            },
+            {
+              "name": "Lotus Planter",
+              "type": "Planter",
+              "image": "images/items/Lotus Planter.png",
+              "description": "Use it to put the Lotus Planter in a field.",
+              "info": "Grows in 4 hours. Gives 45 tokens.",
+              "cost": "75,000,000,000,000 Honey (base price; increases with purchases)",
+              "costType": "plain"
+            },
+            {
+              "name": "Blossom Planter",
+              "type": "Planter",
+              "image": "images/items/Blossom Planter.png",
+              "description": "Use it to put the Blossom Planter in a field.",
+              "info": "Grows in 5 hours. Gives 50 tokens.",
+              "cost": "1,000,000,000,000,000 Honey (base price; increases with purchases)",
+              "costType": "plain"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "art-hall",
+      "name": "Art Hall Equipment Stand",
+      "title": "Art Hall Equipment Stand",
+      "location": "30 Bee Zone",
+      "path": "shop.html?shop=art-hall",
+      "image": "images/shops/Art Hall.png",
+      "description": "Paint equipment, its crafting materials, and passives.",
+      "tags": [
+        "Tools",
+        "Bags",
+        "Gear"
+      ],
+      "about": "The Art Hall equipment stand sells Canvy’s Extra Paintbrush, Canvas Helmet, and Paint Bucket.",
+      "sections": [
+        {
+          "title": "Paint Equipment",
+          "description": "Honey and materials required for each item.",
+          "items": [
+            {
+              "name": "Paint Bucket",
+              "type": "Bag",
+              "image": "images/equipment/Paint Bucket.png",
+              "description": "Art hall power stored inside those paints!\n+Passive: Art Splashes",
+              "info": "+10,000,000 Capacity\n+1400% Convert Rate\n1.8× Capacity Bonus\n+150 Convert Amount\n+50% Pollen\n+35% White Pollen\n+35% Red Pollen\n+35% Blue Pollen\n+30% Bee Ability Rate\n1.4× Energy Bonus",
+              "capacity": 10000000,
+              "buffs": [
+                "+1400% Convert Rate",
+                "1.8× Capacity Bonus",
+                "+150 Convert Amount",
+                "+50% Pollen",
+                "+35% White Pollen",
+                "+35% Red Pollen",
+                "+35% Blue Pollen",
+                "+30% Bee Ability Rate",
+                "1.4× Energy Bonus"
+              ],
+              "cost": "375,000,000,000,000 Honey",
+              "costType": "honey",
+              "materials": [
+                {
+                  "name": "Mythic Egg",
+                  "amount": 1
+                },
+                {
+                  "name": "Bamboo Boba Tea",
+                  "amount": 50
+                },
+                {
+                  "name": "Foaming Carrot Juice",
+                  "amount": 2
+                },
+                {
+                  "name": "Gardener's Bundle",
+                  "amount": 16
+                },
+                {
+                  "name": "Shiny Jelly",
+                  "amount": 3000
+                },
+                {
+                  "name": "Strawberry Extract",
+                  "amount": 350
+                },
+                {
+                  "name": "Blueberry Extract",
+                  "amount": 350
+                },
+                {
+                  "name": "Cone Extract",
+                  "amount": 350
+                }
+              ],
+              "passive": "Art Splashes",
+              "passiveDesc": "Creates 3 colorful splashes randomly on field you stand on.\nActivates every 30s.",
+              "costs": [
+                "375,000,000,000,000 Honey",
+                "1 Mythic Egg",
+                "50 Bamboo Boba Tea",
+                "2 Foaming Carrot Juice",
+                "16 Gardener's Bundle",
+                "3,000 Shiny Jelly",
+                "350 Strawberry Extract",
+                "350 Blueberry Extract",
+                "350 Cone Extract"
+              ],
+              "passives": [
+                {
+                  "name": "Art Splashes",
+                  "type": "Time",
+                  "desc": "Creates 3 colorful splashes randomly on field you stand on.\nActivates every 30s."
+                }
+              ]
+            },
+            {
+              "name": "Canvy’s Extra Paintbrush",
+              "type": "Collector",
+              "image": "images/equipment/Paint Brush.png",
+              "description": "Powered by the power of master. In true hands gives absolute drawing potential.\n\n Gathers 280 Pollen from 29 flowers in front of you every 1.3 seconds.\n+Passive: Colorful Splash",
+              "info": "Powered by the power of master. In true hands gives absolute drawing potential.\n\n Gathers 280 Pollen from 29 flowers in front of you every 1.3 seconds.\n+Passive: Colorful Splash",
+              "capacity": null,
+              "buffs": [],
+              "cost": "50,000,000,000,000 Honey",
+              "costType": "honey",
+              "materials": [
+                {
+                  "name": "Diamond Egg",
+                  "amount": 4
+                },
+                {
+                  "name": "Double Dice",
+                  "amount": 12
+                },
+                {
+                  "name": "Foaming Carrot Juice",
+                  "amount": 1
+                },
+                {
+                  "name": "Majestic Cocktail",
+                  "amount": 3
+                }
+              ],
+              "passive": "Colorful Splash",
+              "passiveDesc": "Turns shape of tool into random splash color.\nActivates every 20 Swings.",
+              "costs": [
+                "50,000,000,000,000 Honey",
+                "4 Diamond Egg",
+                "12 Double Dice",
+                "1 Foaming Carrot Juice",
+                "3 Majestic Cocktail"
+              ],
+              "passives": [
+                {
+                  "name": "Colorful Splash",
+                  "type": "Clicks",
+                  "desc": "Turns shape of tool into random splash color.\nActivates every 20 Swings."
+                }
+              ]
+            },
+            {
+              "name": "Canvas Helmet",
+              "type": "Helmet",
+              "image": "images/equipment/Paint Helmet.png",
+              "description": "Hunt secret stickers to increase your power!\n+Passive: Sticker Hunter",
+              "info": "+1,500,000 Capacity\n+300% Convert Rate\n+50 Convert Amount\n2× Pollen\n+100% Loot Luck\n3× Capacity Bonus\n+75% Pollen\n+15% Bee Ability Rate",
+              "capacity": 1500000,
+              "buffs": [
+                "+300% Convert Rate",
+                "+50 Convert Amount",
+                "2× Pollen",
+                "+100% Loot Luck",
+                "3× Capacity Bonus",
+                "+75% Pollen",
+                "+15% Bee Ability Rate"
+              ],
+              "cost": "125,000,000,000,000 Honey",
+              "costType": "honey",
+              "materials": [
+                {
+                  "name": "Triple Dice",
+                  "amount": 8
+                },
+                {
+                  "name": "Gardener's Bundle",
+                  "amount": 10
+                },
+                {
+                  "name": "Foaming Carrot Juice",
+                  "amount": 2
+                },
+                {
+                  "name": "Bamboo Boba Tea",
+                  "amount": 25
+                }
+              ],
+              "passive": "Sticker Hunter",
+              "passiveDesc": "Creates random sticker on field & creates splash on that place.\nActivates every 360s.",
+              "costs": [
+                "125,000,000,000,000 Honey",
+                "8 Triple Dice",
+                "10 Gardener's Bundle",
+                "2 Foaming Carrot Juice",
+                "25 Bamboo Boba Tea"
+              ],
+              "passives": [
+                {
+                  "name": "Sticker Hunter",
+                  "type": "Time",
+                  "desc": "Creates random sticker on field & creates splash on that place.\nActivates every 360s."
+                }
+              ]
             }
           ]
         }

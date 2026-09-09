@@ -95,7 +95,6 @@ body::before {
     radial-gradient(circle at top, rgba(232, 192, 64, 0.08), transparent 32%),
     linear-gradient(rgba(12, 8, 0, 0.5), rgba(12, 8, 0, 0.6)),
     linear-gradient(135deg, rgba(46, 33, 0, 0.12), rgba(26, 18, 0, 0.1));
-  background-attachment: fixed;
   z-index: -1;
 }
 
@@ -185,7 +184,6 @@ hr {
   overflow-x: hidden;
   overscroll-behavior: contain;
   scrollbar-gutter: stable;
-  backdrop-filter: blur(10px);
 }
 
 .sidebar-logo {
@@ -261,7 +259,6 @@ hr {
   top: 0;
   z-index: 999;
   padding: 14px 30px;
-  backdrop-filter: blur(12px);
   background: rgba(36, 26, 10, 0.72);
   border-bottom: 1px solid var(--line);
 }
@@ -372,7 +369,6 @@ hr {
   padding: 44px 0 64px;
   background: rgba(36, 26, 10, 0.95);
   border-radius: 14px;
-  backdrop-filter: blur(4px) saturate(1.02);
 }
 
 .hero-title,
@@ -529,7 +525,7 @@ h1.page-header__title,
 }
 
 .mw-parser-output blockquote {
-  border-left: 3px solid #d4aa30;
+
   background: rgba(212, 170, 48, 0.07);
   padding: 9px 16px;
   color: var(--gold-dim);
@@ -814,9 +810,7 @@ h1.page-header__title,
   width: 100px;
   text-align: center;
   cursor: pointer;
-  transition:
-    transform 0.2s ease,
-    filter 0.2s ease;
+  transition: transform 0.2s ease;
   background: transparent;
   border: 0;
   padding: 0;
@@ -829,9 +823,18 @@ h1.page-header__title,
 
 .bee-card:hover,
 .bee-card.selected {
-  transform: translateY(-6px);
-  filter: drop-shadow(0 0 10px var(--bee-glow))
-    drop-shadow(0 0 22px var(--bee-glow));
+  transform: translateY(-3px);
+}
+
+.bee-card.selected img,
+.bee-card:focus-visible img {
+  filter: drop-shadow(0 0 7px var(--bee-glow));
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .bee-card:hover img {
+    filter: drop-shadow(0 0 7px var(--bee-glow));
+  }
 }
 
 .bee-card:focus-visible {
@@ -885,7 +888,7 @@ h1.page-header__title,
   color: var(--gold-soft);
   font-size: 0.88em;
   line-height: 1.6;
-  border-left: 2px solid var(--line);
+
   padding-left: 14px;
 }
 
@@ -1252,7 +1255,7 @@ a[href$="/Azvaro"]:hover {
   }
 
   .bee-desc-panel-text {
-    border-left: 0;
+
     padding-left: 0;
     border-top: 2px solid var(--line);
     padding-top: 10px;

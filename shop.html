@@ -1,7 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+<script defer src="js/core/data.js"></script>
+<script defer src="js/core/pages.js"></script>
+<script defer src="js/core/loot-luck.js"></script>
+<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop</title>
     <meta property="og:type" content="website" />
@@ -25,27 +28,29 @@
       name="twitter:image"
       content="https://spookyz10.github.io/MajesticBeesWiki/images/ui/site-logo.png"
     />
-    <link rel="stylesheet" href="css/all.css" />
-    <script defer src="js/utils.js"></script>
-    <script defer src="js/wiki-search.js"></script>
-    <script defer src="js/search.js"></script>
-    <script defer src="js/shop-detail.js"></script>
-    <script defer src="js/load-sidebar.js"></script>
+    <script defer src="js/core/utils.js"></script>
+    <script defer src="js/core/wiki-search.js"></script>
+    <script defer src="js/core/search.js"></script>
+    <script defer src="js/pages/shop-detail.js"></script>
+    <script defer src="js/core/load-sidebar.js"></script>
     <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
-  </head>
+<link rel="stylesheet" href="css/style.css" data-site-style>
+<link rel="stylesheet" href="css/loot-luck.css" data-site-style>
+<link rel="stylesheet" href="css/general-shop.css" data-site-style>
+<link rel="stylesheet" href="css/starter-shop.css" data-site-style>
+<link rel="stylesheet" href="css/shops.css" data-site-style>
+<link rel="stylesheet" href="css/theme.css" data-site-style>
+</head>
   <body>
     <div id="sidebar-container"></div>
-
     <div class="main" data-pagefind-body>
       <div class="topbar">
         <div id="search"></div>
       </div>
-
       <div class="content mw-parser-output">
         <div style="text-align: center; padding: 30px 0 10px">
           <div id="shop-title" class="hero-title">Shop</div>
         </div>
-
         <div class="shop-shell">
           <div class="shop-hero">
             <div class="shop-summary">
@@ -62,7 +67,6 @@
               />
             </div>
           </div>
-
           <div id="shop-sections"></div>
           <div
             id="other-shops"
@@ -77,6 +81,7 @@
           </div>
         </div>
       </div>
-    </div>
-  </body>
+<section class="related-pages" aria-label="Similar pages"><h2>Similar pages</h2><nav aria-label="Related articles"><a href="items.html">Items</a><a href="passives.html">Passives</a><a href="shops.html">Shops</a><a href="store.html">Store</a><a href="amulets.html">Amulets</a></nav></section>
+</div>
+</body>
 </html>

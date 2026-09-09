@@ -1,9 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+<script defer src="js/core/data.js"></script>
+<script defer src="js/core/pages.js"></script>
+<script defer src="js/core/loot-luck.js"></script>
+<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Hive Builder</title>
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Hive Builder" />
@@ -22,45 +24,41 @@
       name="twitter:description"
       content="Build and share your hive setup for The Majestic Bees."
     />
-
-    <link rel="stylesheet" href="css/all.css" />
     <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
-
-    <script defer src="js/utils.js"></script>
-    <script defer src="js/hive-builder.js"></script>
-    <script defer src="js/load-sidebar.js"></script>
-    <script defer src="js/wiki-search.js"></script>
-    <script defer src="js/search.js"></script>
-  </head>
-
+    <script defer src="js/core/utils.js"></script>
+    <script defer src="js/pages/hive-builder.js"></script>
+    <script defer src="js/core/load-sidebar.js"></script>
+    <script defer src="js/core/wiki-search.js"></script>
+    <script defer src="js/core/search.js"></script>
+<link rel="stylesheet" href="css/style.css" data-site-style>
+<link rel="stylesheet" href="css/loot-luck.css" data-site-style>
+<link rel="stylesheet" href="css/hive-builder.css" data-site-style>
+<link rel="stylesheet" href="css/hive.css" data-site-style>
+<link rel="stylesheet" href="css/bees.css" data-site-style>
+<link rel="stylesheet" href="css/theme.css" data-site-style>
+</head>
   <body>
     <div id="sidebar-container"></div>
-
     <div class="main" data-pagefind-body>
       <div class="topbar">
         <div id="search"></div>
       </div>
-
       <div class="content mw-parser-output">
         <div class="bees-page-title">
           <div class="hero-title">Hive Builder</div>
         </div>
-
         <div class="hero-description bees-hero-description">
           Drag bees and stickers straight onto your hive. Click the star on a
           placed bee to mark it shiny, click a bee to remove it, or drag things
           to the trash. Share your setup with
           <b>Export Hive</b> below.
         </div>
-
         <hr />
-
         <div class="hb-shell">
           <div class="hb-palette hb-palette-bees">
             <div class="hb-palette-label">Bees</div>
             <div class="hb-palette-list" id="hb-bee-list"></div>
           </div>
-
           <div class="hb-center">
             <div class="hb-topline">
               <div class="hb-count-row">
@@ -92,7 +90,6 @@
                 Export Hive (PNG)
               </button>
             </div>
-
             <div class="hb-hive-wrap">
               <div class="hb-hive-frame">
                 <div
@@ -114,18 +111,14 @@
                 ></div>
               </div>
             </div>
-
             <div class="hb-trash" id="hb-trash">Drag here to remove</div>
           </div>
-
           <div class="hb-palette hb-palette-stickers">
             <div class="hb-palette-label">Stickers</div>
             <div class="hb-palette-list" id="hb-sticker-list"></div>
           </div>
         </div>
-
         <hr />
-
         <div class="hb-bonus-section">
           <div class="hb-bonus-box">
             <div class="hb-bonus-header">
@@ -151,7 +144,6 @@
               </tbody>
             </table>
           </div>
-
           <div class="hb-bonus-box">
             <div class="hb-bonus-header">
               <span class="hb-bonus-title">Sticker Bonus</span>
@@ -176,7 +168,6 @@
               </tbody>
             </table>
           </div>
-
           <div class="hb-bonus-box hb-bonus-box-total">
             <div class="hb-bonus-header">
               <span class="hb-bonus-title">Total Bonus</span>
@@ -203,6 +194,7 @@
           </div>
         </div>
       </div>
-    </div>
-  </body>
+<section class="related-pages" aria-label="Similar pages"><h2>Similar pages</h2><nav aria-label="Related articles"><a href="bees.html">Bees</a><a href="hive.html">Hive</a><a href="amulets.html">Amulets</a><a href="art-hall.html">Art Hall</a><a href="badges.html">Badges</a></nav></section>
+</div>
+</body>
 </html>

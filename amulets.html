@@ -1,9 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+<script defer src="js/core/data.js"></script>
+<script defer src="js/core/pages.js"></script>
+<script defer src="js/core/loot-luck.js"></script>
+<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Amulets</title>
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Amulets" />
@@ -26,38 +28,33 @@
       name="twitter:image"
       content="https://spookyz10.github.io/MajesticBeesWiki/images/ui/site-logo.png"
     />
-
-    <link rel="stylesheet" href="css/all.css" />
     <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
-
-    <script defer src="js/load-sidebar.js"></script>
-    <script defer src="js/wiki-search.js"></script>
-    <script defer src="js/search.js"></script>
-    <script defer src="js/amulets.js"></script>
-  </head>
-
+    <script defer src="js/core/load-sidebar.js"></script>
+    <script defer src="js/core/wiki-search.js"></script>
+    <script defer src="js/core/search.js"></script>
+    <script defer src="js/pages/amulets.js"></script>
+<link rel="stylesheet" href="css/style.css" data-site-style>
+<link rel="stylesheet" href="css/loot-luck.css" data-site-style>
+<link rel="stylesheet" href="css/amulets.css" data-site-style>
+<link rel="stylesheet" href="css/theme.css" data-site-style>
+</head>
   <body>
     <div id="sidebar-container"></div>
-
     <div class="main" data-pagefind-body>
       <div class="topbar">
         <div id="search"></div>
       </div>
-
       <div class="content mw-parser-output">
         <div class="amulets-page-title">
           <div class="hero-title">Amulets</div>
         </div>
-
         <div class="hero-description amulets-hero-description">
           Amulets are equippable items dropped by mobs in
           <b>The Majestic Bees</b>. Each amulet rolls a random set of buffs when
           it drops, the stat, value, and number of rolls depend on which mob
           dropped it.
         </div>
-
         <h2>Amulet List</h2>
-
         <div class="amulets-info-note">
           <span>
             When an amulet drops, it randomly selects a number of buffs from its
@@ -67,9 +64,9 @@
             chance means that buff is more likely to be selected in each roll.
           </span>
         </div>
-
         <div id="amulets-list" class="amulets-list"></div>
       </div>
-    </div>
-  </body>
+<section class="related-pages" aria-label="Similar pages"><h2>Similar pages</h2><nav aria-label="Related articles"><a href="badges.html">Badges</a><a href="mechanics.html">Mechanics</a><a href="art-hall.html">Art Hall</a><a href="bears.html">Bears</a><a href="bees.html">Bees</a></nav></section>
+</div>
+</body>
 </html>

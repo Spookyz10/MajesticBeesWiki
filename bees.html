@@ -1,9 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+<script defer src="js/core/data.js"></script>
+<script defer src="js/core/pages.js"></script>
+<script defer src="js/core/loot-luck.js"></script>
+<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Bees</title>
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Bees" />
@@ -26,43 +28,38 @@
       name="twitter:image"
       content="https://spookyz10.github.io/MajesticBeesWiki/images/ui/site-logo.png"
     />
-
-    <link rel="stylesheet" href="css/all.css" />
     <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
-
-    <script defer src="js/bees.js"></script>
-    <script defer src="js/load-sidebar.js"></script>
-    <script defer src="js/wiki-search.js"></script>
-    <script defer src="js/search.js"></script>
-  </head>
-
+    <script defer src="js/pages/bees.js"></script>
+    <script defer src="js/core/load-sidebar.js"></script>
+    <script defer src="js/core/wiki-search.js"></script>
+    <script defer src="js/core/search.js"></script>
+<link rel="stylesheet" href="css/style.css" data-site-style>
+<link rel="stylesheet" href="css/loot-luck.css" data-site-style>
+<link rel="stylesheet" href="css/bees.css" data-site-style>
+<link rel="stylesheet" href="css/bee-levels.css" data-site-style>
+<link rel="stylesheet" href="css/theme.css" data-site-style>
+</head>
   <body>
     <div id="sidebar-container"></div>
-
     <div class="main" data-pagefind-body>
       <div class="topbar">
         <div id="search"></div>
       </div>
-
       <div class="content mw-parser-output">
         <div class="bees-page-title">
           <div class="hero-title">Bees</div>
         </div>
-
         <div class="hero-description bees-hero-description">
           Bees are the core of your hive in <b>The Majestic Bees</b>. Each bee
           has a unique rarity, color type, and pollen preference. Collect them
           through eggs, power them up with items, and expand your hive by
           purchasing more slots.
         </div>
-
         <hr />
-
         <h2>Hive Slots</h2>
         <div class="bees-info-box">
           You start the game with <b>5 hive slots</b>. More slots are purchased
           with honey, up to a maximum of <b>55 slots</b>.
-
           <div class="slot-table" id="slot-table">
             <table class="wikitable bees-table bees-slots-table">
               <thead>
@@ -85,7 +82,6 @@
             </div>
           </div>
         </div>
-
         <script>
           (function () {
             var PRICES = [
@@ -99,7 +95,6 @@
               821800000000, 985400000000, 1250000000000, 5000000000000,
               25500000000000, 75000000000000, 300000000000000, 1250000000000000,
             ];
-
             function fmt(n) {
               if (n >= 1e15)
                 return (n / 1e15).toFixed(2).replace(/\.?0+$/, "") + "q";
@@ -113,21 +108,16 @@
                 return (n / 1e3).toFixed(1).replace(/\.?0+$/, "") + "k";
               return n.toLocaleString("en");
             }
-
             var tbody = document.getElementById("slot-table-tbody");
-
             for (var i = 0; i < PRICES.length; i++) {
               var slot = i + 6;
-
               var tr = document.createElement("tr");
               tr.classList.add("bee-slot-row");
               if (slot > 10) tr.classList.add("bee-slot-row--extra");
-
               tr.innerHTML =
                 "<td>" + slot + "</td>" + "<td>" + fmt(PRICES[i]) + "</td>";
               tbody.appendChild(tr);
             }
-
             var table = document.getElementById("slot-table");
             var toggle = document.getElementById("slot-table-toggle");
             toggle.addEventListener("click", function () {
@@ -139,15 +129,11 @@
             });
           })();
         </script>
-
         <hr />
-
         <h2>Obtaining Bees</h2>
-
         <div class="bees-info-box">
           <h3>Probabilities</h3>
           <p>Exact chances for each egg type are listed below.</p>
-
           <table class="wikitable bees-table">
             <tr>
               <th>Method / Egg</th>
@@ -203,15 +189,12 @@
             </tr>
           </table>
         </div>
-
         <hr />
-
         <h2>Bee Levels</h2>
         <div class="bees-info-box">
           Every bee starts at <b>level 1</b>. Levels are raised by feeding a bee
           <b>Treats</b>. Leveling up a bee increases its pollen collection rate,
           conversion speed, and the level of enemies it can attack.
-
           <table class="wikitable bees-table">
             <tr>
               <th>Item</th>
@@ -222,7 +205,6 @@
               <td>20 XP</td>
             </tr>
           </table>
-
           <div class="slot-table" id="bee-levels-table">
             <table class="wikitable bees-table bee-levels-table">
               <thead>
@@ -248,7 +230,6 @@
             </div>
           </div>
         </div>
-
         <script>
           (function () {
             var XP = [
@@ -258,7 +239,6 @@
               1000000000000, 5000000000000, 25000000000000, 125000000000000,
               500000000000000,
             ];
-
             function fmt(n) {
               if (n >= 1e15)
                 return (n / 1e15).toFixed(2).replace(/\.?0+$/, "") + "Q";
@@ -272,10 +252,8 @@
                 return (n / 1e3).toFixed(1).replace(/\.?0+$/, "") + "k";
               return n.toLocaleString("en");
             }
-
             var tbody = document.getElementById("bee-levels-tbody");
             var totalXp = 0;
-
             for (var i = 0; i < XP.length; i++) {
               var lvl = i + 2;
               var xpNeeded = XP[i];
@@ -283,10 +261,8 @@
               var treats = Math.ceil(xpNeeded / 20);
               // one tretat is 10k honey, i need to display the honey cost too for each level.
               var honeyCost = treats * 10000;
-
               var tr = document.createElement("tr");
               if (lvl > 6) tr.classList.add("level-row--extra");
-
               var isMax = i === XP.length - 1;
               if (isMax) {
                 tr.innerHTML =
@@ -305,11 +281,9 @@
                   "<td>" +
                   fmt(honeyCost) +
                   "</td>";
-
                 tbody.appendChild(tr);
                 break;
               }
-
               tr.innerHTML =
                 "<td>" +
                 lvl +
@@ -328,7 +302,6 @@
                 "</td>";
               tbody.appendChild(tr);
             }
-
             var table = document.getElementById("bee-levels-table");
             var toggle = document.getElementById("bee-levels-toggle");
             toggle.addEventListener("click", function () {
@@ -340,15 +313,12 @@
             });
           })();
         </script>
-
         <hr />
-
         <h2>Bee Colors</h2>
         <div class="bees-info-box">
           Every bee belongs to one of three color types. Color affects which
           flowers a bee is most efficient with, as well as the nature of its
           special abilities.
-
           <table class="wikitable bees-table">
             <tr>
               <th>Color</th>
@@ -377,7 +347,6 @@
               <td>Specialized in blue flowers.</td>
             </tr>
           </table>
-
           <p>
             All bees can visit flowers of any color with equal frequency.
             However, when a bee collects from a flower
@@ -387,15 +356,11 @@
             their matching flower type.
           </p>
         </div>
-
         <hr />
-
         <h2>Bees</h2>
-
         <div class="bees-tab-hint">
           Click a bee's image or name to visit its page.
         </div>
-
         <div class="bee-rarity-tabs">
           <div class="bee-tab-buttons">
             <button class="bee-tab-btn active" data-tab="common">Common</button>
@@ -406,7 +371,6 @@
             <button class="bee-tab-btn" data-tab="special">Special</button>
             <button class="bee-tab-btn" data-tab="limited">Limited</button>
           </div>
-
           <div id="common" class="bee-tab-content"></div>
           <div id="rare" class="bee-tab-content" style="display: none"></div>
           <div id="epic" class="bee-tab-content" style="display: none"></div>
@@ -418,12 +382,12 @@
           <div id="mythic" class="bee-tab-content" style="display: none"></div>
           <div id="special" class="bee-tab-content" style="display: none"></div>
           <div id="limited" class="bee-tab-content" style="display: none"></div>
-
           <div class="bee-desc-panel empty">
             Hover over a bee to see its description.
           </div>
         </div>
       </div>
-    </div>
-  </body>
+<section class="related-pages" aria-label="Similar pages"><h2>Similar pages</h2><nav aria-label="Related articles"><a href="hive.html">Hive</a><a href="hive-builder.html">Hive Builder</a><a href="amulets.html">Amulets</a><a href="art-hall.html">Art Hall</a><a href="badges.html">Badges</a></nav></section>
+</div>
+</body>
 </html>

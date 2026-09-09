@@ -1,0 +1,1044 @@
+[
+  {
+    "id": "mushroom-field",
+    "name": "Mushroom Field",
+    "image": "images/fields/Mushroom Field.png",
+    "colors": [
+      [
+        "Red",
+        95
+      ],
+      [
+        "Blue",
+        5
+      ],
+      [
+        "White",
+        5
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        25
+      ],
+      [
+        "2",
+        10
+      ],
+      [
+        "3",
+        0
+      ]
+    ],
+    "drops": [
+      "Red"
+    ],
+    "zone": "",
+    "archived": false
+  },
+  {
+    "id": "clover-field",
+    "name": "Clover Field",
+    "image": "images/fields/Clover Field.png",
+    "colors": [
+      [
+        "Red",
+        33
+      ],
+      [
+        "Blue",
+        33
+      ],
+      [
+        "White",
+        33
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        25
+      ],
+      [
+        "2",
+        10
+      ],
+      [
+        "3",
+        0
+      ]
+    ],
+    "drops": [
+      "Red",
+      "White",
+      "Blue"
+    ],
+    "zone": "",
+    "archived": false
+  },
+  {
+    "id": "daisy-field",
+    "name": "Daisy Field",
+    "image": "images/fields/Daisy Field.png",
+    "colors": [
+      [
+        "Red",
+        5
+      ],
+      [
+        "Blue",
+        5
+      ],
+      [
+        "White",
+        95
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        25
+      ],
+      [
+        "2",
+        10
+      ],
+      [
+        "3",
+        0
+      ]
+    ],
+    "drops": [
+      "White"
+    ],
+    "zone": "",
+    "archived": false
+  },
+  {
+    "id": "blackberry-field",
+    "name": "Blackberry Field",
+    "image": "images/fields/Blackberry Field.png",
+    "colors": [
+      [
+        "Red",
+        5
+      ],
+      [
+        "Blue",
+        95
+      ],
+      [
+        "White",
+        5
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        25
+      ],
+      [
+        "2",
+        10
+      ],
+      [
+        "3",
+        0
+      ]
+    ],
+    "drops": [
+      "Blue"
+    ],
+    "zone": "",
+    "archived": false
+  },
+  {
+    "id": "sunflower-field",
+    "name": "Sunflower Field",
+    "image": "images/fields/Sunflower Field.png",
+    "colors": [
+      [
+        "Red",
+        5
+      ],
+      [
+        "Blue",
+        5
+      ],
+      [
+        "White",
+        95
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        25
+      ],
+      [
+        "2",
+        20
+      ],
+      [
+        "3",
+        0
+      ]
+    ],
+    "drops": [
+      "White"
+    ],
+    "zone": "",
+    "archived": false
+  },
+  {
+    "id": "red-flowers-field",
+    "name": "Red Flowers Field",
+    "image": "images/fields/Red Flowers Field.png",
+    "colors": [
+      [
+        "Red",
+        95
+      ],
+      [
+        "Blue",
+        5
+      ],
+      [
+        "White",
+        5
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        25
+      ],
+      [
+        "2",
+        20
+      ],
+      [
+        "3",
+        0
+      ]
+    ],
+    "drops": [
+      "Red"
+    ],
+    "zone": "",
+    "archived": false
+  },
+  {
+    "id": "blue-flowers-field",
+    "name": "Blue Flowers Field",
+    "image": "images/fields/Blue Flowers Field.png",
+    "colors": [
+      [
+        "Red",
+        5
+      ],
+      [
+        "Blue",
+        95
+      ],
+      [
+        "White",
+        5
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        25
+      ],
+      [
+        "2",
+        20
+      ],
+      [
+        "3",
+        0
+      ]
+    ],
+    "drops": [
+      "Blue"
+    ],
+    "zone": "",
+    "archived": false
+  },
+  {
+    "id": "spider-field",
+    "name": "Spider Field",
+    "image": "images/fields/Spider Field.png",
+    "colors": [
+      [
+        "Red",
+        0
+      ],
+      [
+        "Blue",
+        0
+      ],
+      [
+        "White",
+        95
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        0
+      ],
+      [
+        "2",
+        25
+      ],
+      [
+        "3",
+        10
+      ]
+    ],
+    "drops": [
+      "White"
+    ],
+    "zone": "",
+    "archived": false
+  },
+  {
+    "id": "bellflower-field",
+    "name": "Bellflower Field",
+    "image": "images/fields/Bellflower Field.png",
+    "colors": [
+      [
+        "Red",
+        0
+      ],
+      [
+        "Blue",
+        95
+      ],
+      [
+        "White",
+        12
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        0
+      ],
+      [
+        "2",
+        25
+      ],
+      [
+        "3",
+        10
+      ]
+    ],
+    "drops": [
+      "Blue"
+    ],
+    "zone": "",
+    "archived": false
+  },
+  {
+    "id": "strawberry-field",
+    "name": "Strawberry Field",
+    "image": "images/fields/Strawberry Field.png",
+    "colors": [
+      [
+        "Red",
+        95
+      ],
+      [
+        "Blue",
+        2
+      ],
+      [
+        "White",
+        7
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        0
+      ],
+      [
+        "2",
+        25
+      ],
+      [
+        "3",
+        10
+      ]
+    ],
+    "drops": [
+      "Red"
+    ],
+    "zone": "",
+    "archived": false
+  },
+  {
+    "id": "snowdrops-field",
+    "name": "Snowdrops Field",
+    "image": "images/fields/Snowdrops Field.png",
+    "colors": [
+      [
+        "Red",
+        0
+      ],
+      [
+        "Blue",
+        95
+      ],
+      [
+        "White",
+        25
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        0
+      ],
+      [
+        "2",
+        10
+      ],
+      [
+        "3",
+        10
+      ]
+    ],
+    "drops": [
+      "Blue"
+    ],
+    "zone": "",
+    "archived": false
+  },
+  {
+    "id": "rose-field",
+    "name": "Rose Field",
+    "image": "images/fields/Rose Field.png",
+    "colors": [
+      [
+        "Red",
+        95
+      ],
+      [
+        "Blue",
+        0
+      ],
+      [
+        "White",
+        5
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        0
+      ],
+      [
+        "2",
+        10
+      ],
+      [
+        "3",
+        10
+      ]
+    ],
+    "drops": [
+      "Red"
+    ],
+    "zone": "",
+    "archived": false
+  },
+  {
+    "id": "pine-cone-field",
+    "name": "Pine Cone Field",
+    "image": "images/fields/Pine Cone Field.png",
+    "colors": [
+      [
+        "Red",
+        0
+      ],
+      [
+        "Blue",
+        5
+      ],
+      [
+        "White",
+        95
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        0
+      ],
+      [
+        "2",
+        10
+      ],
+      [
+        "3",
+        10
+      ]
+    ],
+    "drops": [
+      "White"
+    ],
+    "zone": "",
+    "archived": false
+  },
+  {
+    "id": "bamboo-field",
+    "name": "Bamboo Field",
+    "image": "images/fields/Bamboo Field.png",
+    "colors": [
+      [
+        "Red",
+        0
+      ],
+      [
+        "Blue",
+        95
+      ],
+      [
+        "White",
+        5
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        0
+      ],
+      [
+        "2",
+        5
+      ],
+      [
+        "3",
+        10
+      ]
+    ],
+    "drops": [
+      "Bamboo"
+    ],
+    "zone": "",
+    "archived": false
+  },
+  {
+    "id": "raspberry-field",
+    "name": "Raspberry Field",
+    "image": "images/fields/Raspberry Field.png",
+    "colors": [
+      [
+        "Red",
+        95
+      ],
+      [
+        "Blue",
+        0
+      ],
+      [
+        "White",
+        5
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        0
+      ],
+      [
+        "2",
+        5
+      ],
+      [
+        "3",
+        10
+      ]
+    ],
+    "drops": [
+      "Red"
+    ],
+    "zone": "",
+    "archived": false
+  },
+  {
+    "id": "banana-field",
+    "name": "Banana Field",
+    "image": "images/fields/Banana Field.png",
+    "colors": [
+      [
+        "Red",
+        0
+      ],
+      [
+        "Blue",
+        5
+      ],
+      [
+        "White",
+        95
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        0
+      ],
+      [
+        "2",
+        5
+      ],
+      [
+        "3",
+        10
+      ]
+    ],
+    "drops": [
+      "White"
+    ],
+    "zone": "",
+    "archived": false
+  },
+  {
+    "id": "wisteria-field",
+    "name": "Wisteria Field",
+    "image": "images/fields/Wisteria Field.png",
+    "colors": [
+      [
+        "Red",
+        0
+      ],
+      [
+        "Blue",
+        95
+      ],
+      [
+        "White",
+        5
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        0
+      ],
+      [
+        "2",
+        0
+      ],
+      [
+        "3",
+        10
+      ],
+      [
+        "4",
+        5
+      ]
+    ],
+    "drops": [
+      "Blue"
+    ],
+    "zone": "",
+    "archived": false
+  },
+  {
+    "id": "blossom-field",
+    "name": "Blossom Field",
+    "image": "images/fields/Blossom Field.png",
+    "colors": [
+      [
+        "Red",
+        4
+      ],
+      [
+        "Blue",
+        4
+      ],
+      [
+        "White",
+        95
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        0
+      ],
+      [
+        "2",
+        0
+      ],
+      [
+        "3",
+        10
+      ],
+      [
+        "4",
+        5
+      ]
+    ],
+    "drops": [
+      "White"
+    ],
+    "zone": "",
+    "archived": false
+  },
+  {
+    "id": "lotus-field",
+    "name": "Lotus Field",
+    "image": "images/fields/Lotus Field.png",
+    "colors": [
+      [
+        "Red",
+        95
+      ],
+      [
+        "Blue",
+        4
+      ],
+      [
+        "White",
+        4
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        0
+      ],
+      [
+        "2",
+        0
+      ],
+      [
+        "3",
+        10
+      ],
+      [
+        "4",
+        5
+      ]
+    ],
+    "drops": [
+      "Red"
+    ],
+    "zone": "",
+    "archived": false
+  },
+  {
+    "id": "garden-field",
+    "name": "Garden Field",
+    "image": "images/fields/Garden Field.png",
+    "colors": [
+      [
+        "Red",
+        33
+      ],
+      [
+        "Blue",
+        33
+      ],
+      [
+        "White",
+        33
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        0
+      ],
+      [
+        "2",
+        0
+      ],
+      [
+        "3",
+        10
+      ],
+      [
+        "4",
+        15
+      ],
+      [
+        "5",
+        4
+      ]
+    ],
+    "drops": [
+      "Red",
+      "White",
+      "Blue",
+      "Garden"
+    ],
+    "zone": "30 Bee Zone",
+    "archived": false
+  },
+  {
+    "id": "cabbage-field",
+    "name": "Cabbage Field",
+    "image": "images/fields/Cabbage Field.png",
+    "colors": [
+      [
+        "Red",
+        1
+      ],
+      [
+        "Blue",
+        99
+      ],
+      [
+        "White",
+        1
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        0
+      ],
+      [
+        "2",
+        0
+      ],
+      [
+        "3",
+        10
+      ],
+      [
+        "4",
+        15
+      ],
+      [
+        "5",
+        4
+      ]
+    ],
+    "drops": [
+      "Blue",
+      "Cabbage"
+    ],
+    "zone": "30 Bee Zone",
+    "archived": false
+  },
+  {
+    "id": "apple-field",
+    "name": "Apple Field",
+    "image": "images/fields/Apple Field.png",
+    "colors": [
+      [
+        "Red",
+        99
+      ],
+      [
+        "Blue",
+        1
+      ],
+      [
+        "White",
+        1
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        0
+      ],
+      [
+        "2",
+        0
+      ],
+      [
+        "3",
+        10
+      ],
+      [
+        "4",
+        15
+      ],
+      [
+        "5",
+        4
+      ]
+    ],
+    "drops": [
+      "Red",
+      "Apple"
+    ],
+    "zone": "30 Bee Zone",
+    "archived": false
+  },
+  {
+    "id": "carrot-field",
+    "name": "Carrot Field",
+    "image": "images/fields/Carrot Field.png",
+    "colors": [
+      [
+        "Red",
+        1
+      ],
+      [
+        "Blue",
+        1
+      ],
+      [
+        "White",
+        99
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        0
+      ],
+      [
+        "2",
+        0
+      ],
+      [
+        "3",
+        10
+      ],
+      [
+        "4",
+        15
+      ],
+      [
+        "5",
+        4
+      ]
+    ],
+    "drops": [
+      "White",
+      "Carrot"
+    ],
+    "zone": "30 Bee Zone",
+    "archived": false
+  },
+  {
+    "id": "coconut-field",
+    "name": "Coconut Field",
+    "image": "images/fields/Coconut Field.png",
+    "colors": [
+      [
+        "Red",
+        3
+      ],
+      [
+        "Blue",
+        3
+      ],
+      [
+        "White",
+        95
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        0
+      ],
+      [
+        "2",
+        1
+      ],
+      [
+        "3",
+        15
+      ]
+    ],
+    "drops": [
+      "Coconut",
+      "White"
+    ],
+    "zone": "",
+    "archived": true
+  },
+  {
+    "id": "shell-field",
+    "name": "Shell Field",
+    "image": "images/fields/Shell Field.png",
+    "colors": [
+      [
+        "Red",
+        95
+      ],
+      [
+        "Blue",
+        3
+      ],
+      [
+        "White",
+        3
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        0
+      ],
+      [
+        "2",
+        1
+      ],
+      [
+        "3",
+        15
+      ]
+    ],
+    "drops": [
+      "Red"
+    ],
+    "zone": "",
+    "archived": true
+  },
+  {
+    "id": "lemon-field",
+    "name": "Lemon Field",
+    "image": "images/fields/Lemon Field.png",
+    "colors": [
+      [
+        "Red",
+        3
+      ],
+      [
+        "Blue",
+        95
+      ],
+      [
+        "White",
+        3
+      ]
+    ],
+    "sizes": [
+      [
+        "1",
+        0
+      ],
+      [
+        "2",
+        1
+      ],
+      [
+        "3",
+        15
+      ]
+    ],
+    "drops": [
+      "Lemon",
+      "Blue"
+    ],
+    "zone": "",
+    "archived": true
+  }
+]

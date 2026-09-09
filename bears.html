@@ -1,7 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+<script defer src="js/core/data.js"></script>
+<script defer src="js/core/pages.js"></script>
+<script defer src="js/core/loot-luck.js"></script>
+<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bears - The Majestic Bees Wiki</title>
     <meta property="og:type" content="website" />
@@ -25,31 +28,31 @@
       name="twitter:image"
       content="https://spookyz10.github.io/MajesticBeesWiki/images/ui/site-logo.png"
     />
-    <link rel="stylesheet" href="css/all.css" />
     <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
-    <script defer src="js/load-sidebar.js"></script>
-    <script defer src="js/wiki-search.js"></script>
-    <script defer src="js/search.js"></script>
-    <script defer src="js/bears.js"></script>
-  </head>
+    <script defer src="js/core/load-sidebar.js"></script>
+    <script defer src="js/core/wiki-search.js"></script>
+    <script defer src="js/core/search.js"></script>
+    <script defer src="js/pages/bears.js"></script>
+<link rel="stylesheet" href="css/style.css" data-site-style>
+<link rel="stylesheet" href="css/loot-luck.css" data-site-style>
+<link rel="stylesheet" href="css/bears.css" data-site-style>
+<link rel="stylesheet" href="css/theme.css" data-site-style>
+</head>
   <body>
     <div id="sidebar-container"></div>
-
     <div class="main" data-pagefind-body>
       <div class="topbar">
         <div id="search"></div>
       </div>
-
       <div class="content">
+<p class="hero-description">Summerfest ended in Update 11 on September 5, 2026. Summer event content is retained here for reference.</p>
         <h1 class="hero-title">Bears</h1>
-
         <p class="bears-hero-description text-center">
           Bears are NPC quest-givers scattered across the world of
           <b>The Majestic Bees</b>. Each bear offers a series of progressively
           challenging quests, complete them to earn rare eggs, Honey, and
           exclusive aura boosts.
         </p>
-
         <div class="bears-info-box">
           <p>
             Each bear is tied to a specific zone and has a unique set of quests.
@@ -57,11 +60,11 @@
             <b>Royal Jelly</b>, and sometimes rare <b>Eggs</b>.
           </p>
         </div>
-
         <div id="bears-list" class="bears-list">
           <p class="bears-loading">Loading bears…</p>
         </div>
       </div>
-    </div>
-  </body>
+<section class="related-pages" aria-label="Similar pages"><h2>Similar pages</h2><nav aria-label="Related articles"><a href="amulets.html">Amulets</a><a href="art-hall.html">Art Hall</a><a href="badges.html">Badges</a><a href="bees.html">Bees</a><a href="codes.html">Codes</a></nav></section>
+</div>
+</body>
 </html>
