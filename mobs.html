@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+<script defer src="js/core/data.js"></script>
+<script defer src="js/core/pages.js"></script>
+<script defer src="js/core/loot-luck.js"></script>
+<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Mobs</title>
-
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Mobs" />
     <meta
@@ -27,40 +28,34 @@
       name="twitter:image"
       content="https://spookyz10.github.io/MajesticBeesWiki/images/ui/site-logo.png"
     />
-
-    <link rel="stylesheet" href="css/all.css" />
     <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
-
-    <script defer src="js/load-sidebar.js"></script>
-    <script defer src="js/loot-luck.js"></script>
-    <script defer src="js/wiki-search.js"></script>
-    <script defer src="js/search.js"></script>
-    <script defer src="js/mobs.js"></script>
-    <script defer src="js/drop-pool.js"></script>
-  </head>
-
+    <script defer src="js/core/load-sidebar.js"></script>
+    <script defer src="js/core/wiki-search.js"></script>
+    <script defer src="js/core/search.js"></script>
+    <script defer src="js/pages/mobs.js"></script>
+    <script defer src="js/core/drop-pool.js"></script>
+<link rel="stylesheet" href="css/style.css" data-site-style>
+<link rel="stylesheet" href="css/loot-luck.css" data-site-style>
+<link rel="stylesheet" href="css/mobs.css" data-site-style>
+<link rel="stylesheet" href="css/theme.css" data-site-style>
+</head>
   <body>
     <div id="sidebar-container"></div>
-
     <div class="main" data-pagefind-body>
       <div class="topbar">
         <div id="search"></div>
       </div>
-
       <div class="content mw-parser-output">
         <div class="mobs-page-title">
           <div class="hero-title">Mobs</div>
         </div>
-
         <div class="hero-description mobs-hero-description">
           Mobs are hostile creatures found throughout the world of
           <b>The Majestic Bees</b>. Defeating them rewards you with useful
           items, essences, honey, and rare drops. Each mob has its own location,
           difficulty, and loot pool.
         </div>
-
         <h2>Mob List</h2>
-
         <div class="mobs-loot-note">
           <span>
             Drop chances marked with <strong>✦</strong> are under 5% and are
@@ -69,9 +64,9 @@
             always roll at their listed chance regardless of Loot Luck.
           </span>
         </div>
-
         <div id="mobs-list" class="mobs-list"></div>
       </div>
-    </div>
-  </body>
+<section class="related-pages" aria-label="Similar pages"><h2>Similar pages</h2><nav aria-label="Related articles"><a href="falling-apples.html">Falling Apples</a><a href="lunar-minigame.html">Lunar Minigame</a><a href="planters.html">Planters</a><a href="starflowers.html">Starflowers</a><a href="vines.html">Vines</a></nav></section>
+</div>
+</body>
 </html>

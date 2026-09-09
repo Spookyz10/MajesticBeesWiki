@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+<script defer src="js/core/data.js"></script>
+<script defer src="js/core/pages.js"></script>
+<script defer src="js/core/loot-luck.js"></script>
+<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Items - The Majestic Bees Wiki</title>
-
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Items - The Majestic Bees Wiki" />
     <meta
@@ -26,35 +28,34 @@
       name="twitter:image"
       content="https://spookyz10.github.io/MajesticBeesWiki/images/ui/site-logo.png"
     />
-    <link rel="stylesheet" href="css/all.css" />
     <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
-    <script defer src="js/utils.js"></script>
-    <script defer src="js/load-sidebar.js"></script>
-    <script defer src="js/wiki-search.js"></script>
-    <script defer src="js/search.js"></script>
-    <script defer src="js/items.js"></script>
-  </head>
+    <script defer src="js/core/utils.js"></script>
+    <script defer src="js/core/load-sidebar.js"></script>
+    <script defer src="js/core/wiki-search.js"></script>
+    <script defer src="js/core/search.js"></script>
+    <script defer src="js/pages/items.js"></script>
+<link rel="stylesheet" href="css/style.css" data-site-style>
+<link rel="stylesheet" href="css/loot-luck.css" data-site-style>
+<link rel="stylesheet" href="css/items.css" data-site-style>
+<link rel="stylesheet" href="css/theme.css" data-site-style>
+</head>
   <body>
     <div id="sidebar-container"></div>
-
     <div class="main" data-pagefind-body>
       <div class="topbar">
         <div id="search"></div>
       </div>
-
       <div class="content mw-parser-output">
+<p class="hero-description">Summerfest ended in Update 11 on September 5, 2026. Summer event content is retained here for reference.</p>
         <div class="items-page-title">
           <div class="hero-title">Items</div>
         </div>
-
         <div class="hero-description items-hero-description">
           Items are objects you can collect and use in <b>The Majestic Bees</b>.
           They range from consumables and food to eggs, essences, and special
           tools, each with its own rarity and purpose.
         </div>
-
         <h2>Item List</h2>
-
         <div class="items-controls">
           <div class="items-search-wrap">
             <input
@@ -67,12 +68,12 @@
           </div>
           <div class="items-filter-wrap" id="items-category-filters"></div>
         </div>
-
         <div id="items-list" class="items-list"></div>
         <p id="items-empty" class="items-empty" style="display: none">
           No items found.
         </p>
       </div>
-    </div>
-  </body>
+<section class="related-pages" aria-label="Similar pages"><h2>Similar pages</h2><nav aria-label="Related articles"><a href="passives.html">Passives</a><a href="shops.html">Shops</a><a href="store.html">Store</a><a href="amulets.html">Amulets</a><a href="art-hall.html">Art Hall</a></nav></section>
+</div>
+</body>
 </html>

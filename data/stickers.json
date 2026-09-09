@@ -1,0 +1,1526 @@
+[
+  {
+    "id": "booster-sticker",
+    "name": "Booster Sticker",
+    "image": "images/hive/stickers/Booster Sticker.png",
+    "rarity": "Special",
+    "category": "Special",
+    "desc": "Obtainable by boosting the server 2 times.",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Mult",
+        "value": 1.1
+      }
+    ]
+  },
+  {
+    "id": "azataz-sticker",
+    "name": "Azataz Sticker",
+    "image": "images/hive/stickers/Azataz Sticker.png",
+    "rarity": "Special",
+    "category": "Personal",
+    "desc": "Special Sticker, obtainable through codes/events.",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Perc",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "sanju-sticker",
+    "name": "Sanju Sticker",
+    "image": "images/hive/stickers/Sanju Sticker.png",
+    "rarity": "Special",
+    "category": "Personal",
+    "desc": "Special Sticker, obtainable through Sanju.",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Perc",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "deox-sticker",
+    "name": "Deox Sticker",
+    "image": "images/hive/stickers/Deox Sticker.png",
+    "rarity": "Special",
+    "category": "Personal",
+    "desc": "Special Sticker, obtainable through codes/events.",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Perc",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "john-the-seal-sticker",
+    "name": "John The Seal Sticker",
+    "image": "images/hive/stickers/John The Seal Sticker.png",
+    "rarity": "Special",
+    "category": "Personal",
+    "desc": "Special Sticker, obtainable through codes/events.",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Perc",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "teapot-sticker",
+    "name": "Teapot Sticker",
+    "image": "images/hive/stickers/Teapot Sticker.png",
+    "rarity": "Special",
+    "category": "Personal",
+    "desc": "Special Sticker, obtainable through codes/events.",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Perc",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "remlik-sticker",
+    "name": "Remlik Sticker",
+    "image": "images/hive/stickers/Remlik Sticker.png",
+    "rarity": "Special",
+    "category": "Personal",
+    "desc": "Special Sticker, obtainable through codes/events.",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Perc",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "zevmu-sticker",
+    "name": "Zevmu Sticker",
+    "image": "images/hive/stickers/Zevmu Sticker.png",
+    "rarity": "Special",
+    "category": "Personal",
+    "desc": "Special Sticker, obtainable through codes/events.",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Perc",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "lugia-sticker",
+    "name": "Lugia Sticker",
+    "image": "images/hive/stickers/Lugia Sticker.png",
+    "rarity": "Special",
+    "category": "Personal",
+    "desc": "Special Sticker, obtainable through codes/events.",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Perc",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "beenie-sticker",
+    "name": "Beenie Sticker",
+    "image": "images/hive/stickers/Beenie Sticker.png",
+    "rarity": "Special",
+    "category": "Personal",
+    "desc": "Special Sticker, obtainable through codes/events.",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Perc",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "theo-sticker",
+    "name": "Theo Sticker",
+    "image": "images/hive/stickers/Theo Sticker.png",
+    "rarity": "Special",
+    "category": "Personal",
+    "desc": "Special Sticker, obtainable through codes/events.",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Perc",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "starflower-sticker",
+    "name": "Starflower Sticker",
+    "image": "images/hive/stickers/Starflower Sticker.png",
+    "rarity": "Legendary",
+    "category": "Exclusive",
+    "desc": "A very rare sticker!",
+    "buffs": [
+      {
+        "name": "Loot Luck",
+        "type": "Mult",
+        "value": 1.1
+      }
+    ]
+  },
+  {
+    "id": "frozen-clover-sticker",
+    "name": "Frozen Clover Sticker",
+    "image": "images/hive/stickers/Frozen Clover Sticker.png",
+    "rarity": "Legendary",
+    "category": "Exclusive",
+    "desc": "A special award from the Polar Bear!",
+    "buffs": [
+      {
+        "name": "Loot Luck",
+        "type": "Mult",
+        "value": 1.1
+      }
+    ]
+  },
+  {
+    "id": "billiard-8-ball-sticker",
+    "name": "Billiard 8 Ball Sticker",
+    "image": "images/hive/stickers/Billiard 8 Ball Sticker.png",
+    "rarity": "Common",
+    "category": "Misc",
+    "desc": "omg is that a-",
+    "buffs": [
+      {
+        "name": "Loot Luck",
+        "type": "Perc",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "id": "a-single-drop-sticker",
+    "name": "A Single Drop Sticker",
+    "image": "images/hive/stickers/A Single Drop Sticker.png",
+    "rarity": "Common",
+    "category": "Misc",
+    "desc": "… Goes a long way.",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Mult",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "googly-eyes-sticker",
+    "name": "Googly Eyes Sticker",
+    "image": "images/hive/stickers/Googly Eyes Sticker.png",
+    "rarity": "Rare",
+    "category": "Misc",
+    "desc": "OooOohoh I'm dizzy!",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Perc",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "id": "waffle-cone-sticker",
+    "name": "Waffle Cone Sticker",
+    "image": "images/hive/stickers/Waffle Cone Sticker.png",
+    "rarity": "Epic",
+    "category": "Misc",
+    "desc": "One fresh vanilla scoop, a summer classic.",
+    "buffs": [
+      {
+        "name": "White Pollen",
+        "type": "Perc",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "id": "delightful-bouquet-sticker",
+    "name": "Delightful Bouquet Sticker",
+    "image": "images/hive/stickers/Delightful Bouquet Sticker.png",
+    "rarity": "Rare",
+    "category": "Misc",
+    "desc": "A gift from the Buzzler Team to you. <3",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Perc",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "id": "pulsating-heart-sticker",
+    "name": "Pulsating Heart Sticker",
+    "image": "images/hive/stickers/Pulsating Heart Sticker.png",
+    "rarity": "Rare",
+    "category": "Misc",
+    "desc": "Happy 6 years [7/25/26]. <3 (B&N)",
+    "buffs": [
+      {
+        "name": "Red Pollen",
+        "type": "Perc",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "id": "sleepy-little-bunny-sticker",
+    "name": "Sleepy Little Bunny Sticker",
+    "image": "images/hive/stickers/Sleepy Little Bunny Sticker.png",
+    "rarity": "Rare",
+    "category": "Misc",
+    "desc": "I'm so in love with yoooooouuuuu.~",
+    "buffs": [
+      {
+        "name": "White Pollen",
+        "type": "Perc",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "id": "angry-beetle-sticker",
+    "name": "Angry Beetle Sticker",
+    "image": "images/hive/stickers/Angry Beetle Sticker.png",
+    "rarity": "Epic",
+    "category": "Misc",
+    "desc": "Lookit him.. he so angy…",
+    "buffs": [
+      {
+        "name": "Defense",
+        "type": "Perc",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "id": "lovely-ladybug-sticker",
+    "name": "Lovely Ladybug Sticker",
+    "image": "images/hive/stickers/Lovely Ladybug Sticker.png",
+    "rarity": "Epic",
+    "category": "Misc",
+    "desc": "Precious little things… I heard if you see one, you'll gain some extra luck that day.",
+    "buffs": [
+      {
+        "name": "Loot Luck",
+        "type": "Perc",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "id": "ittybitty-caterpillar-sticker",
+    "name": "Ittybitty Caterpillar Sticker",
+    "image": "images/hive/stickers/Ittybitty Caterpillar Sticker.png",
+    "rarity": "Epic",
+    "category": "Misc",
+    "desc": "You wouldn't hurt them, would you?",
+    "buffs": [
+      {
+        "name": "Loot Luck",
+        "type": "Perc",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "id": "firefly-in-a-jar-sticker",
+    "name": "Firefly in a Jar Sticker",
+    "image": "images/hive/stickers/Firefly in a Jar Sticker.png",
+    "rarity": "Epic",
+    "category": "Misc",
+    "desc": "You would not belieeeeve…",
+    "buffs": [
+      {
+        "name": "Night Pollen",
+        "type": "Mult",
+        "value": 1.05
+      }
+    ]
+  },
+  {
+    "id": "honeycomb-sticker",
+    "name": "Honeycomb Sticker",
+    "image": "images/hive/stickers/Honeycomb Sticker.png",
+    "rarity": "Epic",
+    "category": "Misc",
+    "desc": "A whole comb plucked straight from the hive! Maaaybe you should put it back…",
+    "buffs": [
+      {
+        "name": "Convert Rate",
+        "type": "Perc",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "id": "fairylight-sticker",
+    "name": "Fairylight Sticker",
+    "image": "images/hive/stickers/Fairylight Sticker.png",
+    "rarity": "Epic",
+    "category": "Misc",
+    "desc": "The perfect lights to make you feel like you're in a fanatical fairy tale within your own room… So cozy.",
+    "buffs": [
+      {
+        "name": "Night Pollen",
+        "type": "Mult",
+        "value": 1.05
+      }
+    ]
+  },
+  {
+    "id": "paint-splatter-sticker",
+    "name": "Paint Splatter Sticker",
+    "image": "images/hive/stickers/Paint Splatter Sticker.png",
+    "rarity": "Epic",
+    "category": "Misc",
+    "desc": "Making a colorful mess!",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "storm-in-a-bottle-sticker",
+    "name": "Storm in a Bottle Sticker",
+    "image": "images/hive/stickers/Storm in a Bottle Sticker.png",
+    "rarity": "Legendary",
+    "category": "Misc",
+    "desc": "Heard it's hard to catch this kind of thing twice.",
+    "buffs": []
+  },
+  {
+    "id": "white-rose-sticker",
+    "name": "White Rose Sticker",
+    "image": "images/hive/stickers/White Rose Sticker.png",
+    "rarity": "Legendary",
+    "category": "Misc",
+    "desc": "You could always paint this rose red…",
+    "buffs": [
+      {
+        "name": "White Pollen",
+        "type": "Perc",
+        "value": 50
+      }
+    ]
+  },
+  {
+    "id": "sweet-cotton-ball-sticker",
+    "name": "Sweet Cotton Ball Sticker",
+    "image": "images/hive/stickers/Sweet Cotton Ball Sticker.png",
+    "rarity": "Legendary",
+    "category": "Misc",
+    "desc": "Don't put it in water!",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Perc",
+        "value": 50
+      }
+    ]
+  },
+  {
+    "id": "bubbles-sticker",
+    "name": "Bubbles Sticker",
+    "image": "images/hive/stickers/Bubbles Sticker.png",
+    "rarity": "Legendary",
+    "category": "Misc",
+    "desc": "Pop pop pop",
+    "buffs": [
+      {
+        "name": "Bubble Pollen",
+        "type": "Mult",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "shark-bee-sticker",
+    "name": "Shark Bee Sticker",
+    "image": "images/hive/stickers/Shark Bee Sticker.png",
+    "rarity": "Limited",
+    "category": "Bees",
+    "desc": "Don't bite me!",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Mult",
+        "value": 1.15
+      }
+    ]
+  },
+  {
+    "id": "sunny-bee-sticker",
+    "name": "Sunny Bee Sticker",
+    "image": "images/hive/stickers/Sunny Bee Sticker.png",
+    "rarity": "Limited",
+    "category": "Bees",
+    "desc": "Wow! So bright!",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Mult",
+        "value": 1.15
+      }
+    ]
+  },
+  {
+    "id": "windy-bee-sticker",
+    "name": "Windy Bee Sticker",
+    "image": "images/hive/stickers/Windy Bee Sticker.png",
+    "rarity": "Special",
+    "category": "Bees",
+    "desc": "Fly me away!",
+    "buffs": [
+      {
+        "name": "Cloud Pollen",
+        "type": "Mult",
+        "value": 1.12
+      }
+    ]
+  },
+  {
+    "id": "ice-bee-sticker",
+    "name": "Ice Bee Sticker",
+    "image": "images/hive/stickers/Ice Bee Sticker.png",
+    "rarity": "Special",
+    "category": "Bees",
+    "desc": "nICE sTUFF!",
+    "buffs": [
+      {
+        "name": "Ice Pollen",
+        "type": "Mult",
+        "value": 1.12
+      }
+    ]
+  },
+  {
+    "id": "magma-bee-sticker",
+    "name": "Magma Bee Sticker",
+    "image": "images/hive/stickers/Magma Bee Sticker.png",
+    "rarity": "Special",
+    "category": "Bees",
+    "desc": "Magma Errupts!",
+    "buffs": [
+      {
+        "name": "Fire Pollen",
+        "type": "Mult",
+        "value": 1.12
+      }
+    ]
+  },
+  {
+    "id": "exp-bee-sticker",
+    "name": "Exp Bee Sticker",
+    "image": "images/hive/stickers/Exp Bee Sticker.png",
+    "rarity": "Special",
+    "category": "Bees",
+    "desc": "Magical!",
+    "buffs": [
+      {
+        "name": "Obsidian Pollen",
+        "type": "Mult",
+        "value": 1.1
+      }
+    ]
+  },
+  {
+    "id": "pixel-bee-sticker",
+    "name": "Pixel Bee Sticker",
+    "image": "images/hive/stickers/Pixel Bee Sticker.png",
+    "rarity": "Special",
+    "category": "Bees",
+    "desc": "8 Bit!",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Perc",
+        "value": 12
+      }
+    ]
+  },
+  {
+    "id": "lucky-bee-sticker",
+    "name": "Lucky Bee Sticker",
+    "image": "images/hive/stickers/Lucky Bee Sticker.png",
+    "rarity": "Special",
+    "category": "Bees",
+    "desc": "Lucky!",
+    "buffs": [
+      {
+        "name": "Loot Luck",
+        "type": "Perc",
+        "value": 15
+      }
+    ]
+  },
+  {
+    "id": "kitsune-bee-sticker",
+    "name": "Kitsune Bee Sticker",
+    "image": "images/hive/stickers/Kitsune Bee Sticker.png",
+    "rarity": "Mythic",
+    "category": "Bees",
+    "desc": "Mystical creature, both fox and bee - Kitsune Bee!",
+    "buffs": [
+      {
+        "name": "Capacity Bonus",
+        "type": "Mult",
+        "value": 1.1
+      }
+    ]
+  },
+  {
+    "id": "oni-bee-sticker",
+    "name": "Oni Bee Sticker",
+    "image": "images/hive/stickers/Oni Bee Sticker.png",
+    "rarity": "Mythic",
+    "category": "Bees",
+    "desc": "A scary and dangerous demon - Oni Bee!",
+    "buffs": [
+      {
+        "name": "Fire Duration",
+        "type": "Mult",
+        "value": 1.1
+      }
+    ]
+  },
+  {
+    "id": "ryujin-bee-sticker",
+    "name": "Ryujin Bee Sticker",
+    "image": "images/hive/stickers/Ryujin Bee Sticker.png",
+    "rarity": "Mythic",
+    "category": "Bees",
+    "desc": "The mystical dragon - Ryujin Bee!",
+    "buffs": [
+      {
+        "name": "Bubble Capacity",
+        "type": "Mult",
+        "value": 1.1
+      }
+    ]
+  },
+  {
+    "id": "thunder-bee-sticker",
+    "name": "Thunder Bee Sticker",
+    "image": "images/hive/stickers/Thunder Bee Sticker.png",
+    "rarity": "Legendary",
+    "category": "Bees",
+    "desc": "Don't get zapped!",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Mult",
+        "value": 1.1
+      }
+    ]
+  },
+  {
+    "id": "oil-bee-sticker",
+    "name": "Oil Bee Sticker",
+    "image": "images/hive/stickers/Oil Bee Sticker.png",
+    "rarity": "Legendary",
+    "category": "Bees",
+    "desc": "Slippery!",
+    "buffs": [
+      {
+        "name": "Red Pollen",
+        "type": "Mult",
+        "value": 1.1
+      }
+    ]
+  },
+  {
+    "id": "cloud-bee-sticker",
+    "name": "Cloud Bee Sticker",
+    "image": "images/hive/stickers/Cloud Bee Sticker.png",
+    "rarity": "Legendary",
+    "category": "Bees",
+    "desc": "Very Puffy!",
+    "buffs": [
+      {
+        "name": "Cloud Pollen",
+        "type": "Mult",
+        "value": 1.1
+      }
+    ]
+  },
+  {
+    "id": "wave-bee-sticker",
+    "name": "Wave Bee Sticker",
+    "image": "images/hive/stickers/Wave Bee Sticker.png",
+    "rarity": "Legendary",
+    "category": "Bees",
+    "desc": "Let's swim!",
+    "buffs": [
+      {
+        "name": "Convert Rate",
+        "type": "Perc",
+        "value": 12
+      }
+    ]
+  },
+  {
+    "id": "null-bee-sticker",
+    "name": "Null Bee Sticker",
+    "image": "images/hive/stickers/Null Bee Sticker.png",
+    "rarity": "Legendary",
+    "category": "Bees",
+    "desc": "Ohao!",
+    "buffs": [
+      {
+        "name": "Bee Ability Rate",
+        "type": "Perc",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "id": "lion-bee-sticker",
+    "name": "Lion Bee Sticker",
+    "image": "images/hive/stickers/Lion Bee Sticker.png",
+    "rarity": "Legendary",
+    "category": "Bees",
+    "desc": "Roar!",
+    "buffs": [
+      {
+        "name": "Bee Attack",
+        "type": "Add",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "id": "firework-bee-sticker",
+    "name": "Firework Bee Sticker",
+    "image": "images/hive/stickers/Firework Bee Sticker.png",
+    "rarity": "Legendary",
+    "category": "Bees",
+    "desc": "Boom!",
+    "buffs": [
+      {
+        "name": "Firework Pollen",
+        "type": "Mult",
+        "value": 1.1
+      }
+    ]
+  },
+  {
+    "id": "icicle-bee-sticker",
+    "name": "Icicle Bee Sticker",
+    "image": "images/hive/stickers/Icicle Bee Sticker.png",
+    "rarity": "Legendary",
+    "category": "Bees",
+    "desc": "Brr!",
+    "buffs": [
+      {
+        "name": "Icicle Pollen",
+        "type": "Mult",
+        "value": 1.1
+      }
+    ]
+  },
+  {
+    "id": "flower-bee-sticker",
+    "name": "Flower Bee Sticker",
+    "image": "images/hive/stickers/Flower Bee Sticker.png",
+    "rarity": "Epic",
+    "category": "Bees",
+    "desc": "Smells nice!",
+    "buffs": [
+      {
+        "name": "White Pollen",
+        "type": "Perc",
+        "value": 8
+      }
+    ]
+  },
+  {
+    "id": "coal-bee-sticker",
+    "name": "Coal Bee Sticker",
+    "image": "images/hive/stickers/Coal Bee Sticker.png",
+    "rarity": "Epic",
+    "category": "Bees",
+    "desc": "Very Hot!",
+    "buffs": [
+      {
+        "name": "Red Pollen",
+        "type": "Perc",
+        "value": 8
+      }
+    ]
+  },
+  {
+    "id": "cold-bee-sticker",
+    "name": "Cold Bee Sticker",
+    "image": "images/hive/stickers/Cold Bee Sticker.png",
+    "rarity": "Epic",
+    "category": "Bees",
+    "desc": "Very Cold!",
+    "buffs": [
+      {
+        "name": "Blue Pollen",
+        "type": "Perc",
+        "value": 8
+      }
+    ]
+  },
+  {
+    "id": "honey-bee-sticker",
+    "name": "Honey Bee Sticker",
+    "image": "images/hive/stickers/Honey Bee Sticker.png",
+    "rarity": "Epic",
+    "category": "Bees",
+    "desc": "Sticky!",
+    "buffs": [
+      {
+        "name": "Honey From Tokens",
+        "type": "Mult",
+        "value": 1.05
+      }
+    ]
+  },
+  {
+    "id": "water-bee-sticker",
+    "name": "Water Bee Sticker",
+    "image": "images/hive/stickers/Water Bee Sticker.png",
+    "rarity": "Epic",
+    "category": "Bees",
+    "desc": "I'm thirsty!",
+    "buffs": [
+      {
+        "name": "Blue Pollen",
+        "type": "Perc",
+        "value": 8
+      }
+    ]
+  },
+  {
+    "id": "sound-bee-sticker",
+    "name": "Sound Bee Sticker",
+    "image": "images/hive/stickers/Sound Bee Sticker.png",
+    "rarity": "Epic",
+    "category": "Bees",
+    "desc": "Sounds nice!",
+    "buffs": [
+      {
+        "name": "Capacity Bonus",
+        "type": "Perc",
+        "value": 15
+      }
+    ]
+  },
+  {
+    "id": "fire-bee-sticker",
+    "name": "Fire Bee Sticker",
+    "image": "images/hive/stickers/Fire Bee Sticker.png",
+    "rarity": "Epic",
+    "category": "Bees",
+    "desc": "HOT!",
+    "buffs": [
+      {
+        "name": "Fire Pollen",
+        "type": "Mult",
+        "value": 1.05
+      }
+    ]
+  },
+  {
+    "id": "azure-bee-sticker",
+    "name": "Azure Bee Sticker",
+    "image": "images/hive/stickers/Azure Bee Sticker.png",
+    "rarity": "Rare",
+    "category": "Bees",
+    "desc": "I love blue!",
+    "buffs": [
+      {
+        "name": "Blue Pollen",
+        "type": "Perc",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "id": "magnet-bee-sticker",
+    "name": "Magnet Bee Sticker",
+    "image": "images/hive/stickers/Magnet Bee Sticker.png",
+    "rarity": "Rare",
+    "category": "Bees",
+    "desc": "Weee!",
+    "buffs": [
+      {
+        "name": "Movespeed",
+        "type": "Perc",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "id": "bomber-bee-sticker",
+    "name": "Bomber Bee Sticker",
+    "image": "images/hive/stickers/Bomber Bee Sticker.png",
+    "rarity": "Rare",
+    "category": "Bees",
+    "desc": "Get down Mr. President!",
+    "buffs": [
+      {
+        "name": "Capacity Bonus",
+        "type": "Perc",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "id": "hasty-bee-sticker",
+    "name": "Hasty Bee Sticker",
+    "image": "images/hive/stickers/Hasty Bee Sticker.png",
+    "rarity": "Rare",
+    "category": "Bees",
+    "desc": "Super duper fast!",
+    "buffs": [
+      {
+        "name": "Movespeed",
+        "type": "Perc",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "id": "science-bee-sticker",
+    "name": "Science Bee Sticker",
+    "image": "images/hive/stickers/Science Bee Sticker.png",
+    "rarity": "Rare",
+    "category": "Bees",
+    "desc": "Gimme money!",
+    "buffs": [
+      {
+        "name": "Energy Bonus",
+        "type": "Mult",
+        "value": 1.1
+      }
+    ]
+  },
+  {
+    "id": "crimson-bee-sticker",
+    "name": "Crimson Bee Sticker",
+    "image": "images/hive/stickers/Crimson Bee Sticker.png",
+    "rarity": "Rare",
+    "category": "Bees",
+    "desc": "Yooo!",
+    "buffs": [
+      {
+        "name": "Red Pollen",
+        "type": "Perc",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "id": "rage-bee-sticker",
+    "name": "Rage Bee Sticker",
+    "image": "images/hive/stickers/Rage Bee Sticker.png",
+    "rarity": "Rare",
+    "category": "Bees",
+    "desc": "Dangerous!",
+    "buffs": [
+      {
+        "name": "Red Bee Attack",
+        "type": "Add",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "basic-bee-sticker",
+    "name": "Basic Bee Sticker",
+    "image": "images/hive/stickers/Basic Bee Sticker.png",
+    "rarity": "Common",
+    "category": "Bees",
+    "desc": "Wow!",
+    "buffs": [
+      {
+        "name": "Honey From Tokens",
+        "type": "Perc",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "id": "bamboo-spear-sticker",
+    "name": "Bamboo Spear Sticker",
+    "image": "images/hive/stickers/Bamboo Spear Sticker.png",
+    "rarity": "Legendary",
+    "category": "Tools",
+    "desc": "Obtainable randomly while gathering!",
+    "buffs": [
+      {
+        "name": "Cloud Pollen",
+        "type": "Mult",
+        "value": 1.05
+      }
+    ]
+  },
+  {
+    "id": "snow-shovel-sticker",
+    "name": "Snow Shovel Sticker",
+    "image": "images/hive/stickers/Snow Shovel Sticker.png",
+    "rarity": "Epic",
+    "category": "Tools",
+    "desc": "Obtainable randomly while gathering!",
+    "buffs": [
+      {
+        "name": "Ice Pollen",
+        "type": "Mult",
+        "value": 1.05
+      }
+    ]
+  },
+  {
+    "id": "fire-scythe-sticker",
+    "name": "Fire Scythe Sticker",
+    "image": "images/hive/stickers/Fire Scythe Sticker.png",
+    "rarity": "Epic",
+    "category": "Tools",
+    "desc": "Obtainable randomly while gathering!",
+    "buffs": [
+      {
+        "name": "Fire Pollen",
+        "type": "Mult",
+        "value": 1.05
+      }
+    ]
+  },
+  {
+    "id": "honey-dipper-sticker",
+    "name": "Honey Dipper Sticker",
+    "image": "images/hive/stickers/Honey Dipper Sticker.png",
+    "rarity": "Epic",
+    "category": "Tools",
+    "desc": "Obtainable randomly while gathering!",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Perc",
+        "value": 21
+      },
+      {
+        "name": "Capacity Bonus",
+        "type": "Perc",
+        "value": 17
+      }
+    ]
+  },
+  {
+    "id": "gold-magnet-sticker",
+    "name": "Gold Magnet Sticker",
+    "image": "images/hive/stickers/Gold Magnet Sticker.png",
+    "rarity": "Rare",
+    "category": "Tools",
+    "desc": "Obtainable randomly while gathering!",
+    "buffs": [
+      {
+        "name": "Loot Luck",
+        "type": "Perc",
+        "value": 14
+      }
+    ]
+  },
+  {
+    "id": "pickaxe-sticker",
+    "name": "Pickaxe Sticker",
+    "image": "images/hive/stickers/Pickaxe Sticker.png",
+    "rarity": "Rare",
+    "category": "Tools",
+    "desc": "Obtainable randomly while gathering!",
+    "buffs": [
+      {
+        "name": "Defense",
+        "type": "Perc",
+        "value": 12
+      }
+    ]
+  },
+  {
+    "id": "axe-sticker",
+    "name": "Axe Sticker",
+    "image": "images/hive/stickers/Axe Sticker.png",
+    "rarity": "Rare",
+    "category": "Tools",
+    "desc": "Obtainable randomly while gathering!",
+    "buffs": [
+      {
+        "name": "Capacity Bonus",
+        "type": "Perc",
+        "value": 12
+      },
+      {
+        "name": "Convert Rate",
+        "type": "Perc",
+        "value": 7
+      }
+    ]
+  },
+  {
+    "id": "scythe-sticker",
+    "name": "Scythe Sticker",
+    "image": "images/hive/stickers/Scythe Sticker.png",
+    "rarity": "Rare",
+    "category": "Tools",
+    "desc": "Obtainable randomly while gathering!",
+    "buffs": [
+      {
+        "name": "Honey Bonus",
+        "type": "Perc",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "id": "scissors-sticker",
+    "name": "Scissors Sticker",
+    "image": "images/hive/stickers/Scissors Sticker.png",
+    "rarity": "Common",
+    "category": "Tools",
+    "desc": "Obtainable randomly while gathering!",
+    "buffs": [
+      {
+        "name": "Convert Amount",
+        "type": "Add",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "id": "magnet-sticker",
+    "name": "Magnet Sticker",
+    "image": "images/hive/stickers/Magnet Sticker.png",
+    "rarity": "Common",
+    "category": "Tools",
+    "desc": "Obtainable randomly while gathering!",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Perc",
+        "value": 7
+      }
+    ]
+  },
+  {
+    "id": "hammer-sticker",
+    "name": "Hammer Sticker",
+    "image": "images/hive/stickers/Hammer Sticker.png",
+    "rarity": "Common",
+    "category": "Tools",
+    "desc": "Obtainable randomly while gathering!",
+    "buffs": [
+      {
+        "name": "Capacity Bonus",
+        "type": "Perc",
+        "value": 7
+      }
+    ]
+  },
+  {
+    "id": "rake-sticker",
+    "name": "Rake Sticker",
+    "image": "images/hive/stickers/Rake Sticker.png",
+    "rarity": "Common",
+    "category": "Tools",
+    "desc": "Obtainable randomly while gathering!",
+    "buffs": [
+      {
+        "name": "Convert Rate",
+        "type": "Perc",
+        "value": 7
+      }
+    ]
+  },
+  {
+    "id": "shovel-sticker",
+    "name": "Shovel Sticker",
+    "image": "images/hive/stickers/Shovel Sticker.png",
+    "rarity": "Common",
+    "category": "Tools",
+    "desc": "Obtainable randomly while gathering!",
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Perc",
+        "value": 3
+      },
+      {
+        "name": "Capacity Bonus",
+        "type": "Perc",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "id": "garden-field-sticker",
+    "name": "Garden Field Sticker",
+    "image": "images/hive/stickers/Garden Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Garden Field!",
+    "buffs": [
+      {
+        "name": "Garden Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "cabbage-field-sticker",
+    "name": "Cabbage Field Sticker",
+    "image": "images/hive/stickers/Cabbage Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Cabbage Field!",
+    "buffs": [
+      {
+        "name": "Cabbage Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "carrot-field-sticker",
+    "name": "Carrot Field Sticker",
+    "image": "images/hive/stickers/Carrot Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Carrot Field!",
+    "buffs": [
+      {
+        "name": "Carrot Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "apple-field-sticker",
+    "name": "Apple Field Sticker",
+    "image": "images/hive/stickers/Apple Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Apple Field!",
+    "buffs": [
+      {
+        "name": "Apple Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "lotus-field-sticker",
+    "name": "Lotus Field Sticker",
+    "image": "images/hive/stickers/Lotus Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Lotus Field!",
+    "buffs": [
+      {
+        "name": "Lotus Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "blossom-field-sticker",
+    "name": "Blossom Field Sticker",
+    "image": "images/hive/stickers/Blossom Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Blossom Field!",
+    "buffs": [
+      {
+        "name": "Blossom Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "wisteria-field-sticker",
+    "name": "Wisteria Field Sticker",
+    "image": "images/hive/stickers/Wisteria Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Wisteria Field!",
+    "buffs": [
+      {
+        "name": "Wisteria Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "raspberry-field-sticker",
+    "name": "Raspberry Field Sticker",
+    "image": "images/hive/stickers/Raspberry Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Raspberry Field!",
+    "buffs": [
+      {
+        "name": "Raspberry Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "banana-field-sticker",
+    "name": "Banana Field Sticker",
+    "image": "images/hive/stickers/Banana Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Banana Field!",
+    "buffs": [
+      {
+        "name": "Banana Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "bamboo-field-sticker",
+    "name": "Bamboo Field Sticker",
+    "image": "images/hive/stickers/Bamboo Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Bamboo Field!",
+    "buffs": [
+      {
+        "name": "Bamboo Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "snowdrops-field-sticker",
+    "name": "Snowdrops Field Sticker",
+    "image": "images/hive/stickers/Snowdrops Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Snowdrops Field!",
+    "buffs": [
+      {
+        "name": "Snowdrops Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "pine-cone-field-sticker",
+    "name": "Pine Cone Field Sticker",
+    "image": "images/hive/stickers/Pine Cone Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Pine Cone Field!",
+    "buffs": [
+      {
+        "name": "Pine Cone Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "rose-field-sticker",
+    "name": "Rose Field Sticker",
+    "image": "images/hive/stickers/Rose Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Rose Field!",
+    "buffs": [
+      {
+        "name": "Rose Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "spider-field-sticker",
+    "name": "Spider Field Sticker",
+    "image": "images/hive/stickers/Spider Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Spider Field!",
+    "buffs": [
+      {
+        "name": "Spider Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "strawberry-field-sticker",
+    "name": "Strawberry Field Sticker",
+    "image": "images/hive/stickers/Strawberry Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Strawberry Field!",
+    "buffs": [
+      {
+        "name": "Strawberry Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "bellflower-field-sticker",
+    "name": "Bellflower Field Sticker",
+    "image": "images/hive/stickers/Bellflower Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Bellflower Field!",
+    "buffs": [
+      {
+        "name": "Bellflower Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "blue-flowers-field-sticker",
+    "name": "Blue Flowers Field Sticker",
+    "image": "images/hive/stickers/Blue Flowers Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Blue Flowers Field!",
+    "buffs": [
+      {
+        "name": "Blue Flowers Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "red-flowers-field-sticker",
+    "name": "Red Flowers Field Sticker",
+    "image": "images/hive/stickers/Red Flowers Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Red Flowers Field!",
+    "buffs": [
+      {
+        "name": "Red Flowers Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "sunflower-field-sticker",
+    "name": "Sunflower Field Sticker",
+    "image": "images/hive/stickers/Sunflower Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Sunflower Field!",
+    "buffs": [
+      {
+        "name": "Sunflower Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "blackberry-field-sticker",
+    "name": "Blackberry Field Sticker",
+    "image": "images/hive/stickers/Blackberry Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Blackberry Field!",
+    "buffs": [
+      {
+        "name": "Blackberry Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "clover-field-sticker",
+    "name": "Clover Field Sticker",
+    "image": "images/hive/stickers/Clover Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Clover Field!",
+    "buffs": [
+      {
+        "name": "Clover Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "daisy-field-sticker",
+    "name": "Daisy Field Sticker",
+    "image": "images/hive/stickers/Daisy Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Daisy Field!",
+    "buffs": [
+      {
+        "name": "Daisy Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": "mushroom-field-sticker",
+    "name": "Mushroom Field Sticker",
+    "image": "images/hive/stickers/Mushroom Field Sticker.png",
+    "rarity": "Common",
+    "category": "Fields",
+    "desc": "Obtainable in the Mushroom Field!",
+    "buffs": [
+      {
+        "name": "Mushroom Field Pollen",
+        "type": "Perc",
+        "value": 25
+      }
+    ]
+  }
+]

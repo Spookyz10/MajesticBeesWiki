@@ -1,9 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+<script defer src="js/core/data.js"></script>
+<script defer src="js/core/pages.js"></script>
+<script defer src="js/core/loot-luck.js"></script>
+<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>The Majestic Bees Wiki</title>
     <meta
       name="description"
@@ -34,45 +36,35 @@
       name="twitter:image"
       content="https://spookyz10.github.io/MajesticBeesWiki/images/ui/site-logo.png"
     />
-
-    <link rel="stylesheet" href="css/all.css" />
     <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
-
-    <script defer src="js/main.js"></script>
-    <script defer src="js/load-sidebar.js"></script>
-    <script defer src="js/wiki-search.js"></script>
-    <script defer src="js/search.js"></script>
-  </head>
-
+    <script defer src="js/core/load-sidebar.js"></script>
+    <script defer src="js/core/wiki-search.js"></script>
+    <script defer src="js/core/search.js"></script>
+<link rel="stylesheet" href="css/style.css" data-site-style>
+<link rel="stylesheet" href="css/loot-luck.css" data-site-style>
+<link rel="stylesheet" href="css/theme.css" data-site-style>
+</head>
   <body>
     <div id="sidebar-container"></div>
-
     <div class="main" data-pagefind-body>
       <div class="topbar">
         <div id="search"></div>
       </div>
-
       <div class="content">
         <div class="hero-title">Welcome to the Majestic Bees Wiki!</div>
-
         <div class="hero-logo">
           <img src="images/ui/site-logo.png" decoding="async" />
         </div>
-
         <div class="hero-description">
           This is the official wiki for the Roblox game
           <b>The Majestic Bees</b>, a bee collecting and management game similar
           to Bee Swarm Simulator! Here you can find information about bees,
           gears, mobs, and much more.
-
           <br /><br />
-
           <b>Contributors</b>: PortalMD
         </div>
-
         <div class="wiki-panel">
           <div class="wiki-panel-header">Wiki Articles</div>
-
           <div class="article-grid">
             <a class="wiki-article-card placeholder" href="amulets.html">
               <img
@@ -87,7 +79,6 @@
               />
               <div>Amulets</div>
             </a>
-
             <a class="wiki-article-card placeholder" href="badges.html">
               <img
                 src="images/icons/Icon-Badges.png"
@@ -101,7 +92,6 @@
               />
               <div>Badges</div>
             </a>
-
             <a class="wiki-article-card placeholder" href="bears.html">
               <img
                 src="images/icons/Icon-Bears.png"
@@ -115,7 +105,6 @@
               />
               <div>Bears</div>
             </a>
-
             <a class="wiki-article-card" href="bees.html">
               <img
                 src="images/icons/Icon-Bees.png"
@@ -129,7 +118,6 @@
               />
               <div>Bees</div>
             </a>
-
             <a class="wiki-article-card placeholder" href="codes.html">
               <img
                 src="images/icons/Icon-Codes.png"
@@ -143,7 +131,6 @@
               />
               <div>Codes</div>
             </a>
-
             <a class="wiki-article-card placeholder" href="hive.html">
               <img
                 src="images/icons/Icon-Hive.png"
@@ -157,7 +144,6 @@
               />
               <div>Hive</div>
             </a>
-
             <a class="wiki-article-card placeholder" href="hive-builder.html">
               <img
                 src="images/icons/Icon-HiveBuilder.png"
@@ -171,7 +157,6 @@
               />
               <div>Hive Builder</div>
             </a>
-
             <a class="wiki-article-card placeholder" href="items.html">
               <img
                 src="images/icons/Icon-Items.png"
@@ -185,7 +170,6 @@
               />
               <div>Items</div>
             </a>
-
             <a class="wiki-article-card placeholder" href="lunar-minigame.html">
               <img
                 src="images/icons/Icon-Lunar.png"
@@ -199,7 +183,6 @@
               />
               <div>Lunar Minigame</div>
             </a>
-
             <a class="wiki-article-card placeholder" href="mechanics.html">
               <img
                 src="images/icons/Icon-Mechanics.png"
@@ -213,7 +196,6 @@
               />
               <div>Mechanics</div>
             </a>
-
             <a class="wiki-article-card placeholder" href="mobs.html">
               <img
                 src="images/icons/Icon-Mobs.png"
@@ -227,7 +209,6 @@
               />
               <div>Mobs</div>
             </a>
-
             <a class="wiki-article-card placeholder" href="planters.html">
               <img
                 src="images/icons/Icon-Planters.png"
@@ -241,7 +222,6 @@
               />
               <div>Planters</div>
             </a>
-
             <a class="wiki-article-card placeholder" href="shops.html">
               <img
                 src="images/icons/Icon-Shops.png"
@@ -255,7 +235,6 @@
               />
               <div>Shops</div>
             </a>
-
             <a class="wiki-article-card placeholder" href="starflowers.html">
               <img
                 src="images/icons/Icon-Starflowers.png"
@@ -269,7 +248,6 @@
               />
               <div>Starflowers</div>
             </a>
-
             <a class="wiki-article-card placeholder" href="updates.html">
               <img
                 src="images/icons/Icon-Updates.png"
@@ -283,7 +261,6 @@
               />
               <div>Updates</div>
             </a>
-
             <a class="wiki-article-card placeholder" href="vines.html">
               <img
                 src="images/icons/Icon-Vines.png"
@@ -297,7 +274,6 @@
               />
               <div>Vines</div>
             </a>
-
             <a class="wiki-article-card placeholder" href="world.html">
               <img
                 src="images/icons/Icon-World.png"
@@ -314,6 +290,7 @@
           </div>
         </div>
       </div>
-    </div>
-  </body>
+<section class="related-pages" aria-label="Similar pages"><h2>Similar pages</h2><nav aria-label="Related articles"><a href="codes.html">Codes</a><a href="updates.html">Updates</a><a href="amulets.html">Amulets</a><a href="art-hall.html">Art Hall</a><a href="badges.html">Badges</a></nav></section>
+</div>
+</body>
 </html>

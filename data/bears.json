@@ -3192,7 +3192,10 @@
             "As we used to say back in my scouting days: \"Let your mark grow and prosper!\"",
             "Let's see you make your mark on this hunt. Think you can handle it?"
           ],
-          "going": ["Don't back down, rookie!", "I believe in you!"],
+          "going": [
+            "Don't back down, rookie!",
+            "I believe in you!"
+          ],
           "finish": [
             "Whoa, that's a serious haul!",
             "My satchel has never felt this heavy before.",
@@ -3518,7 +3521,9 @@
             "[Silvane approaches you with soft, rhythmic steps, the flowers on his antlers swaying in unison]",
             "[He pulls out his magical scroll, gives it to you, and point out to the Blossom Field]"
           ],
-          "going": ["[He bows his head in respect and shows a gentle smile.]"],
+          "going": [
+            "[He bows his head in respect and shows a gentle smile.]"
+          ],
           "finish": [
             "[He accepts the pollen, and as he touches it, a faint, sweet floral scent fills the air.]",
             "[He then closes his eyes and proceeds to absorb the essence of the pollen]",
@@ -3749,107 +3754,142 @@
     "id": "painter-bear",
     "name": "Painter Bear",
     "image": "images/bears/Painter Bear Model.png",
-    "location": "20 Bee Zone",
-    "description": "Painter Bear is an artistic bear who asks you to collect Sticker Tokens making her the most time consuming bear to complete.",
-    "aura": "Painter Bear Aura",
+    "location": "Art Hall, 30 Bee Zone",
+    "description": "Canvy introduces sticker activities at the Art Hall. Complete her five quests to earn items and Painter Bear’s Inspiration.",
+    "aura": "Painter Bear’s Inspiration",
     "aura_buff": [
       {
         "stat": "Energy Bonus",
         "type": "mult",
-        "per_stack": 0.05
+        "per_stack": 0.05,
+        "max_stack": 100
       }
     ],
-    "noquest_dialog": [],
+    "noquest_dialog": [
+      "Hi there!",
+      "Coming to check out the art center?",
+      "Ooh, you're checking on meee??",
+      "Aaaaww thank you so much!!",
+      "I'm doing just fine here! Been \"sticking\" to more sticker making and made some new art pieces too!",
+      "Feel free to stay here as long as you like, we're open all the time!",
+      "Oh-! Whenever you decide to leave though, you think you could tell Oscar I said hi?",
+      "Her Hobbit Shop she's set up nearby is SO COOL!! I've been meaning to visit more often and I want her to know that she's doing *amazingly* here!",
+      "Thanks again! Have a spectacular day!!"
+    ],
     "quests": [
       {
         "number": 1,
-        "name": "A Colorful Introduction",
+        "name": "Welcome to the Art Center! 🖌️",
         "dialogue": {
           "take": [
             "Ohmygosh, are you the beekeeper I keep hearing about?",
             "GASP YOU ARE!! OHMYGOSH HI! IT'S SO GOOD TO MEET YOU!",
+            "Welcome to our amazing art center!!",
+            "I'm soooo glad you came in time for this to be finished, isn't it great??",
             "Ooh! You must be here for a quest, right?",
             "I think I have just the thing for you to help me with... Hmmhm~!",
-            "So, as I walking through the fields for inspiration, I think I dropped some of my stickers without realizing!",
-            "If you don't mind, could you go look for them? I believe it was a shovel, a rake, a hammer, a magnet, and scissors.",
-            "OMG THANK UU! I'll be sure to give you peeeeelly something good!",
+            "So, you've found a loooot of stickers around already, right?",
+            "I bet you've found great ways to use them, but I'm going to show you ANOTHER really cool thing you can do with them!",
+            "Head on out to any field and find a random sticker out there, and I'll show it to you!",
+            "I'll be sure to give you peeeeelly something good!",
             "*[SNICKERS-]* HAHAHA-! Get it?! Peely like a sticker!",
             "Oh! I almost forgot! I'mmm Painter Bear! But you can also call me Canvy if you'd like!",
-            "Anyways, GO GO GO! YOU CAN DO IT!"
+            "Anyways, GO GO GO! EEEEee I can barely contain myself!"
           ],
           "going": [
             "*[You see her continuing to paint on her canvas, humming to herself.]*",
-            "*[You can't quite make out what she's trying to paint, but you figure it'll come together by the time you find those stickers.]*"
+            "*[You can't quite make out what she's trying to paint, but you figure it'll come together by the time you find your sticker.]*"
           ],
           "finish": [
-            "Hm...? Oh-! Did you do it!? YAA YIPPEE! Thanks a honey bunch, beekeeper!",
-            "And with that, consider your first quest and my painting complete! Hooray!",
+            "Hm...? Oh-! Did you do it!? YAA YIPPEE! it's finally time!",
+            "Consider your first quest and my painting complete! Hooray!",
             "*[Painter Bear shows you her picture of a bee happily gathering pollen from some flowers.]*",
             "*[You suddenly feel inspired.]*",
             "How does it look? Feelin' pretty fuzzy, huh? Anyways, here's those rewards I promised!!",
-            "Be sure to come back again, I could always use some help with my next masterpiece~!"
+            "And now for our new sticker activity! You ready??"
           ]
         },
         "requirements": [
           {
-            "type": "collect_token",
+            "type": "bring_sticker",
             "amount": 1,
-            "token": "Shovel Sticker"
+            "item": "Shovel Sticker"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 5000000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 5000000,
+            "color": "Blue"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 5000000,
+            "color": "White"
           },
           {
             "type": "collect_token",
-            "amount": 1,
-            "token": "Rake Sticker"
-          },
-          {
-            "type": "collect_token",
-            "amount": 1,
-            "token": "Hammer Sticker"
-          },
-          {
-            "type": "collect_token",
-            "amount": 1,
-            "token": "Magnet Sticker"
-          },
-          {
-            "type": "collect_token",
-            "amount": 1,
-            "token": "Scissors Sticker"
+            "amount": 10,
+            "token": "Honey"
           }
         ],
         "rewards": [
           {
             "item": "Honey",
-            "amount": 25000
+            "amount": 10000000,
+            "type": "Item"
+          },
+          {
+            "item": "Ticket",
+            "amount": 10,
+            "type": "Item"
+          },
+          {
+            "item": "Spin Ticket",
+            "amount": 1,
+            "type": "Item"
           },
           {
             "item": "Exp Orb",
-            "amount": 10
+            "amount": 5,
+            "type": "Item"
           },
           {
-            "item": "Royal Jelly",
-            "amount": 10
+            "item": "Silver Egg",
+            "amount": 1,
+            "type": "Item"
+          },
+          {
+            "item": "Starflower",
+            "amount": 5,
+            "type": "Item"
           },
           {
             "item": "Painter Bear Aura",
-            "amount": 1
+            "amount": 1,
+            "type": "Boost"
           }
         ]
       },
       {
         "number": 2,
-        "name": "Fields of Inspiration",
+        "name": "Starting your Sticker Collection",
         "dialogue": {
           "take": [
-            "*[You find her yet again painting away at her cavnas, almost laser focused]*",
-            "*[Suddenly, she drops one of her paint brushes. As she goes to pick it up, she notices you standing there.]*",
-            "Oh, hi beekeeper! Good to see you again!!",
-            "Hmhmm, don't worry~! I didn't forget about our questss!",
-            "This time, I purposely dropped some stickers in the field for you to find!",
-            "Ready for a REAL Sticker Hunt!?",
-            "Just find these four stickers: A Daisy, a Clover, a Mushroom, and a Blackberry!",
-            "All found in their respected fields, created by me!!",
-            "Goodluck, beekeeper~!"
+            "Soooo, I gotta admit something actually.",
+            "I actually know what you've been using your stickers for!!",
+            "It makes those bees of yours better, right??",
+            "Mhm, I thought so! I could feeeell your stickers' powers coming off of them.",
+            "And I wanna help with that!",
+            "Did'ya see that canvas outside the art center?",
+            "That's my Sticker Canvas!!",
+            "If you've got too many stickers for you to use yourself, you can put them on my canvas here for some smaller boosts!",
+            "You wanna put some more on there??",
+            "Well luckily for you, that's exactly the next quest I have for you!!",
+            "Go out and find lots more stickers for the canvas! With your touch it'll look SO GOOD!!!"
           ],
           "going": [
             "Hmmm, now this'll go here... Mhmm!",
@@ -3858,137 +3898,220 @@
             "*[Best to start looking for those stickers now.]*"
           ],
           "finish": [
-            "Yipppeee, you found them all!! Must've been a haaard challenge, huh?",
+            "Yipppeee, you found so many!! I have no doubt it didn't take long, haha~!",
             "Hope you enjoy your prize, and a painting of mine too!!",
             "*[The canvas is a mix of all four of the fields you collected the stickers from.]*",
             "*[It's as if it's slightly abstract, but you can tell which is which from the unique shapes for each field.]]*",
-            "I wanted to go for the feeling of.. 'Closing your eyes and seeing weird shapes behind your eyelids' sorta thing!",
-            "Hmmh, isn't it neat~?",
-            "Anywho, I'll see ya around beekeeperrrr~"
+            "I wanted to go for the feeling of.. \"Closing your eyes and seeing weird shapes behind your eyelids\" sorta thing!",
+            "You know that, right?",
+            "Anywho, have fun putting those on the canvas!! Let me know how well it works for you!",
+            "I'll see ya around beekeeperrrr~"
           ]
         },
         "requirements": [
           {
-            "type": "collect_token",
-            "amount": 1,
-            "token": "Daisy Field Sticker"
+            "type": "AnyCanvas",
+            "amount": 1
           },
           {
-            "type": "collect_token",
+            "type": "bring_sticker",
             "amount": 1,
-            "token": "Clover Field Sticker"
+            "item": "Rake Sticker"
           },
           {
-            "type": "collect_token",
+            "type": "bring_sticker",
             "amount": 1,
-            "token": "Mushroom Field Sticker"
+            "item": "Hammer Sticker"
           },
           {
-            "type": "collect_token",
+            "type": "bring_sticker",
             "amount": 1,
-            "token": "Blackberry Field Sticker"
+            "item": "Magnet Sticker"
+          },
+          {
+            "type": "consume",
+            "amount": 5,
+            "item": "Sticker Egg"
+          },
+          {
+            "type": "craft",
+            "amount": 2,
+            "item": "Bamboo Boba Tea"
           }
         ],
         "rewards": [
           {
             "item": "Honey",
-            "amount": 50000
+            "amount": 20000000,
+            "type": "Item"
+          },
+          {
+            "item": "Basic Vines",
+            "amount": 10,
+            "type": "Item"
+          },
+          {
+            "item": "Rare Vines",
+            "amount": 5,
+            "type": "Item"
+          },
+          {
+            "item": "Epic Vines",
+            "amount": 2,
+            "type": "Item"
+          },
+          {
+            "item": "Sticker Planter",
+            "amount": 1,
+            "type": "Item"
+          },
+          {
+            "item": "Starflower",
+            "amount": 5,
+            "type": "Item"
+          },
+          {
+            "item": "Billiard 8 Ball Sticker",
+            "amount": 1,
+            "type": "Sticker"
+          },
+          {
+            "item": "Ticket",
+            "amount": 20,
+            "type": "Item"
+          },
+          {
+            "item": "Bee Net",
+            "amount": 50,
+            "type": "Item"
+          },
+          {
+            "item": "Converter",
+            "amount": 2,
+            "type": "Item"
           },
           {
             "item": "Exp Orb",
-            "amount": 15
-          },
-          {
-            "item": "Royal Jelly",
-            "amount": 10
+            "amount": 10,
+            "type": "Item"
           },
           {
             "item": "Painter Bear Aura",
-            "amount": 1
+            "amount": 1,
+            "type": "Boost"
           }
         ]
       },
       {
         "number": 3,
-        "name": "Tools of the Trade",
+        "name": "Plants grow Stickers?!",
         "dialogue": {
           "take": [
-            "Hihi! Welcome back to the studio, friend!! Hmhmm~!",
-            "You did so well on your last quest, I decided to up the sakes a bit!",
-            "Time to dig for some more tool stickerss!!",
-            "Shouldn't be tooooo hard-! Just find an Axe, a Pickaxe, a Scythe! Aaanndd..",
-            "A Gold Magnet Sticker! Ooooooh, shiny.~",
-            "I recommend boosting your luck a little more before going out to find these ones-.",
-            "Don't worry, I can wait!!"
+            "Hihi! Welcome back to the art center, friend!! Hmhmm~!",
+            "You wanna learn about anooooother cool sticker thing you can do??",
+            "Of course you do! Aren't stickers just so fun to play with?",
+            "Okokok, so did you notice that Sticker Planter out there outside the museum?",
+            "I'm not like, actually sure if you've used one yet, but it's soooo cool!!",
+            "You put them into a field and just wait, veeeery very patiently.",
+            "And then after they're done growing, you get a bunch of stickers from them!",
+            "They literally just, GROW STICKERS!! Isn't that so cool!?!",
+            "Go out and use one to see it for yourself, I promise you it's so worth it!",
+            "Let me know how you like it!!"
           ],
           "going": [
             "By the way, have you been liking some of the new sticker eggs I made?",
             "They're full of many sticker-y surprises!! Have ya gotten anything special yettt~?"
           ],
           "finish": [
-            "Wowie! That was a looot of searching, I hope it was fun!!",
+            "You're back!!",
+            "Soooooo??? How was it? Got anything good??",
+            "I'm sure you did knowing your luck!",
             "Hmm? Oh! My Painting! It's still a work in progress, sorry friend!",
-            "Been really busy makin' a bunch of stickers, so many that I think my sticker printer is gonna blow a fuse!",
-            "It's become a part of my hobby, hehe.~",
-            "Do you have any hobbies besides collectin' pollen, friend?",
-            "Maybe try gettin' out of your comfort zone and try something new! That's how I got into sticker making!",
+            "Been really busy makin' a bunch of stickers myself, so many that I think my sticker printer is gonna blow a fuse!",
+            "It's become a part of my hobby if you couldn't tell, hehe.~",
             "I'ma go finish up my painting now, it calls to me... Hmhmm, see ya around!"
           ]
         },
         "requirements": [
           {
-            "type": "collect_token",
-            "amount": 1,
-            "token": "Axe Sticker"
+            "type": "consume",
+            "amount": 10,
+            "item": "Basic Vines"
           },
           {
-            "type": "collect_token",
-            "amount": 1,
-            "token": "Pickaxe Sticker"
+            "type": "consume",
+            "amount": 5,
+            "item": "Rare Vines"
           },
           {
-            "type": "collect_token",
-            "amount": 1,
-            "token": "Scythe Sticker"
+            "type": "consume",
+            "amount": 2,
+            "item": "Epic Vines"
           },
           {
-            "type": "collect_token",
+            "type": "consume",
             "amount": 1,
-            "token": "Gold Magnet Sticker"
+            "item": "Sticker Planter"
+          },
+          {
+            "type": "token_from",
+            "amount": 10,
+            "from": "Sticker Planter"
           }
         ],
         "rewards": [
           {
             "item": "Honey",
-            "amount": 100000
+            "amount": 20000000,
+            "type": "Item"
+          },
+          {
+            "item": "Googly Eyes Sticker",
+            "amount": 1,
+            "type": "Sticker"
+          },
+          {
+            "item": "Ticket",
+            "amount": 35,
+            "type": "Item"
+          },
+          {
+            "item": "Rich Apple Juice",
+            "amount": 1,
+            "type": "Item"
+          },
+          {
+            "item": "Silver Egg",
+            "amount": 1,
+            "type": "Item"
           },
           {
             "item": "Exp Orb",
-            "amount": 25
-          },
-          {
-            "item": "Royal Jelly",
-            "amount": 25
+            "amount": 15,
+            "type": "Item"
           },
           {
             "item": "Painter Bear Aura",
-            "amount": 1
+            "amount": 1,
+            "type": "Boost"
           }
         ]
       },
       {
         "number": 4,
-        "name": "A Vibrant Palette",
+        "name": "Fields of Inspiration",
         "dialogue": {
           "take": [
             "Yaaaay, back for more!! Safe to say, my sticker printer needs a break after this!",
             "Don't worry, it's not broken-! Yet.. Hmmhm~!",
+            "Y'knoooww, it might be a good time to give it a break actually.",
+            "You think I could ask you to find some for me?",
             "This one'll be a doozy, so I hope you're REALLY print-pared! *[Snickers]*",
             "So, what you need to find ISS:",
             "*[INHALE-]*",
-            "A Red Flower, a BLUE Flower, a SUNflower, A BELLflower- (HOOH-! That's a lot of flowers!)",
-            "A Spider, and a Strawberry to top it all off!",
-            "Talk about a 'berry' on top!",
+            "A Red Flower, a BLUE Flower, a SUNflower, and a DAISY! (HOOH-! That's a lot of flowers!)",
+            "Well, it is for me at least, haha!",
+            "Don't forget to use Sticker Planters to help you! Who knows, you could get everything you need with just one!",
             "You can do it beekeeper, I BEElieve in you! Heheh~!"
           ],
           "going": [
@@ -3999,157 +4122,206 @@
             "Aaaannndd... DONE! Just on time, friend! Look look!!",
             "*[The painting potrays a cute, chibi spider holding a bouquet a flowers, noming on a strawberry.]*",
             "*[You sigh in relief as you feel more inspiration flowing within you.]*",
-            "How do ya like it, beekeeper~? Think it fits the quest well?",
-            "Thank you so much for helping me out with motivation, these sticker quests really got the juice outta me!",
+            "How do ya like it, beekeeper~? Think I captured a spider's essence well?",
+            "Oh-! The stickers!!",
+            "Thank you so much for helping me get these, these sticker quests really got the juice outta me!",
             "Feel free to come back to visit me for my next big painting~!"
           ]
         },
         "requirements": [
           {
-            "type": "collect_token",
+            "type": "bring_sticker",
             "amount": 1,
-            "token": "Red Flowers Field Sticker"
+            "item": "Sunflower Field Sticker"
           },
           {
-            "type": "collect_token",
+            "type": "bring_sticker",
             "amount": 1,
-            "token": "Blue Flowers Field Sticker"
+            "item": "Daisy Field Sticker"
           },
           {
-            "type": "collect_token",
+            "type": "bring_sticker",
             "amount": 1,
-            "token": "Sunflower Field Sticker"
+            "item": "Blue Flowers Field Sticker"
           },
           {
-            "type": "collect_token",
+            "type": "bring_sticker",
             "amount": 1,
-            "token": "Bellflower Field Sticker"
+            "item": "Red Flowers Field Sticker"
           },
           {
-            "type": "collect_token",
-            "amount": 1,
-            "token": "Spider Field Sticker"
+            "type": "consume",
+            "amount": 5,
+            "item": "Basic Vines"
           },
           {
-            "type": "collect_token",
-            "amount": 1,
-            "token": "Strawberry Field Sticker"
+            "type": "consume",
+            "amount": 2,
+            "item": "Sticker Planter"
+          },
+          {
+            "type": "token_from",
+            "amount": 20,
+            "from": "Sticker Planter"
           }
         ],
         "rewards": [
           {
             "item": "Honey",
-            "amount": 250000
+            "amount": 40000000,
+            "type": "Item"
+          },
+          {
+            "item": "Waffle Cone Sticker",
+            "amount": 1,
+            "type": "Sticker"
+          },
+          {
+            "item": "Delightful Bouquet Sticker",
+            "amount": 1,
+            "type": "Sticker"
+          },
+          {
+            "item": "Shiny Jelly",
+            "amount": 1,
+            "type": "Item"
+          },
+          {
+            "item": "Starflower",
+            "amount": 10,
+            "type": "Item"
           },
           {
             "item": "Exp Orb",
-            "amount": 40
-          },
-          {
-            "item": "Royal Jelly",
-            "amount": 40
+            "amount": 20,
+            "type": "Item"
           },
           {
             "item": "Painter Bear Aura",
-            "amount": 1
+            "amount": 1,
+            "type": "Boost"
           }
         ]
       },
       {
         "number": 5,
-        "name": "The Master's Collection",
+        "name": "A little splash of this, and…",
         "dialogue": {
           "take": [
-            "Time for another game of Find n' seek, beekeeper!",
-            "Hope you're excited, this ones gonna be EXTRA shiney!",
-            "As shiney as a diamond.~ Hmmhm!",
-            "A LOT of these stickers are rare, so rare- you'll need 10 lucky bees to help ya out!",
-            "You got a Bamboo sticker, a Banana, a Raspberry-",
-            "A Snowdrop one, a Pine Cone one- and a Rose!",
-            "Can YOU find all these stickers in time?! Clocks tickin' friend!",
-            "*[Chuckles]* Nono, friend! No timers for this one, pinkie promise~!",
-            "Black Bear always talks about patience, so be sure to have a lot for this one!",
-            "On your mark, get set! Aaannnnd... GO FIND EM!"
+            "Ooh you're back you're back!!",
+            "I have something, AMAZING, to show you!",
+            "I have no idea if you've actually used these yet, if you have then that's great!",
+            "But if you haven't, take a look over here!!",
+            "You see that new gear?",
+            "That's for you! I put my own touches to its design but that's for you to get!!",
+            "Since you're always doing so much for all of us, I've wanted to try and repay you.",
+            "Like, *actually* repay you by helping you improve!",
+            "And I think this new equipment is gonna be just the thing you need!",
+            "Go out and use it in the fields! Test it all out, let me know how it works!!",
+            "EEEeehehe I'm so excited to see how much it'll help yoouuuu!!"
           ],
           "going": [
             "*[You see her painting at her canvas, but this time turned away from you...]*",
             "*[She's as extra focused as ever, so determed that you can feel it just from where you're standing.]*",
-            "*[You figure it's best you leave her be to go find those stickers she left you.]*"
+            "*[You figure it's best you leave her and continue testing your new gear.]*"
           ],
           "finish": [
-            "*[You see her with her paws behind your back, a bit of what looks to be a canvas peaking out from behind her.]*",
-            "Hiii, beepeekerrrr~! Congrats on finding them all!",
-            "I've created something veeeerry special for you, ready to see it?!",
-            "Ready? One, twoo... aaaaannnddd- Tadaaa!",
+            "Oh-! HIIiihihihii!!",
+            "You done using the new gear??",
+            "Wooooaaahh!! I can see everything you managed to collect with it!",
+            "That's AMAZING!! AAAH I'm so glad it did so much for you!!",
+            "Here-! Here, I have just the thing for you!",
+            "*[You see her turn around and pick up the canvas that's been hiding behind her back this whole time.]*",
             "*[The painting she pulls from behind her brings a small tear to your eye...]*",
-            "*[It reveals a picture of you, some of your bees, and her all standing in an open field of flowers.]*",
+            "*[It reveals a picture of you in your new gear, some of your bees, and her all standing in an open field of flowers.]*",
             "*[You all look so happy, collecting the pollen from the flowers around you while she throws what looks to be stickers into the air.]*",
             "It's a painting dedicated to our friendship, and what it truly means to me...",
             "Us all having fun in the fields, searching, collecting, creating...",
             "These quests have helped me a lot with my recent art block, it's all been so... inspiring!",
             "These small quests have meant the world to me, I hope you feel the same too, beekeeper!",
-            "I also, wanted to give you this... A Diamond Egg, just for you!",
-            "Thank you for the motivation boost, and for being a close friend...~",
-            "Feel free to come and visit me more often, I can even teach ya how to paint!",
-            "See ya sometime soon, beekeeper! Keep being inspired!!!"
+            "Hm? You think this is the end of the quests?",
+            "OOohhahaha!! No not at all!!!",
+            "Well eeeehh, it sort of is?",
+            "I have more planned for you, I always do! It all just, isn't really fully ready yet!",
+            "Iii, do kinda realize how that all may have sounded like a send off, and I guess for now it sort of is.",
+            "But I just like making meaningful paintings of my friends too!!",
+            "You really have still helped me out *soooo* much, but we're not close to done at all!",
+            "Give me some time, I'll have another set of five AMAZING quests ready for you one day!",
+            "It'll be great to see you again!"
           ]
         },
         "requirements": [
           {
-            "type": "collect_token",
-            "amount": 1,
-            "token": "Bamboo Field Sticker"
+            "type": "tool_pollen",
+            "amount": 10000000,
+            "tool": "Paint Brush"
           },
           {
-            "type": "collect_token",
-            "amount": 1,
-            "token": "Banana Field Sticker"
+            "type": "consume",
+            "amount": 5,
+            "item": "Sticker Planter"
           },
           {
-            "type": "collect_token",
-            "amount": 1,
-            "token": "Raspberry Field Sticker"
-          },
-          {
-            "type": "collect_token",
-            "amount": 1,
-            "token": "Snowdrops Field Sticker"
-          },
-          {
-            "type": "collect_token",
-            "amount": 1,
-            "token": "Pine Cone Field Sticker"
-          },
-          {
-            "type": "collect_token",
-            "amount": 1,
-            "token": "Rose Field Sticker"
+            "type": "token_from",
+            "amount": 30,
+            "from": "Sticker Planter"
           }
         ],
         "rewards": [
           {
             "item": "Honey",
-            "amount": 500000
+            "amount": 40000000,
+            "type": "Item"
           },
           {
-            "item": "Exp Orb",
-            "amount": 50
-          },
-          {
-            "item": "Royal Jelly",
-            "amount": 50
+            "item": "Pulsating Heart Sticker",
+            "amount": 1,
+            "type": "Sticker"
           },
           {
             "item": "Ticket",
-            "amount": 50
+            "amount": 50,
+            "type": "Item"
           },
           {
-            "item": "Diamond Egg",
-            "amount": 1
+            "item": "Silver Egg",
+            "amount": 2,
+            "type": "Item"
+          },
+          {
+            "item": "Foaming Carrot Juice",
+            "amount": 1,
+            "type": "Item"
+          },
+          {
+            "item": "Bamboo Boba Tea",
+            "amount": 2,
+            "type": "Item"
+          },
+          {
+            "item": "Glitter",
+            "amount": 1,
+            "type": "Item"
+          },
+          {
+            "item": "Dice",
+            "amount": 10,
+            "type": "Item"
+          },
+          {
+            "item": "Exp Orb",
+            "amount": 30,
+            "type": "Item"
+          },
+          {
+            "item": "Exp Essence",
+            "amount": 5,
+            "type": "Item"
           },
           {
             "item": "Painter Bear Aura",
-            "amount": 1
+            "amount": 1,
+            "type": "Boost"
           }
         ]
       }
@@ -4599,7 +4771,10 @@
             "But with you, I actually feel ready for whatever comes next.",
             "Let's go out there and show them what a real duo can do."
           ],
-          "going": ["Watch your step out there!", "I've got your back!"],
+          "going": [
+            "Watch your step out there!",
+            "I've got your back!"
+          ],
           "finish": [
             "Man, we really did a good job.",
             "Every time we fight together, our coordination just gets better.",
@@ -4644,7 +4819,10 @@
             "However, we're facing this together, as partners.",
             "Let's go, we've got this."
           ],
-          "going": ["Focus, kid!", "They're coming from all sides!"],
+          "going": [
+            "Focus, kid!",
+            "They're coming from all sides!"
+          ],
           "finish": [
             "We did it... Peace at last.",
             "We actually managed to protect the forest without spilling any blood.",
@@ -4741,7 +4919,10 @@
             "A-And I especially need some from the Mushroom Field right now.",
             "T-Thank you for the helping hand..."
           ],
-          "going": ["T-Take your time out there...", "There's no rush at all!"],
+          "going": [
+            "T-Take your time out there...",
+            "There's no rush at all!"
+          ],
           "finish": [
             "You're already back? W-Wow... You are so fast.",
             "L-Look at all this beautiful pollen... My Snowdrops are going to love this!",
@@ -5519,7 +5700,10 @@
             "If we add crisp p-pine pollen, it will act as a wooden anchor, keeping the p-perfume smelling fresh on the skin for hours.",
             "S-So could you gather some pollen from the Pine Cone Field?"
           ],
-          "going": ["We're almost done!", "J-Just a little more!"],
+          "going": [
+            "We're almost done!",
+            "J-Just a little more!"
+          ],
           "finish": [
             "O-Oh, spectacular job!",
             "F-Fun fact time!",
@@ -5869,7 +6053,9 @@
             "Whas that? \"A bit of a step up from the last?\" Aaawww don't worry about it my friend! It's nothin' you can't handle!",
             "Squeeeeze all those sour stresses out of yourself and get to collecting! Go go go!"
           ],
-          "going": ["That pollen can't pollenate itself, y'know? Haha!"],
+          "going": [
+            "That pollen can't pollenate itself, y'know? Haha!"
+          ],
           "finish": [
             "Hoooweee! That's the spirit, lil' dude! Awesome work!!",
             "You are one fiesty lil' beekeeper, I like it!",
@@ -8152,6 +8338,493 @@
           }
         ]
       }
+    ]
+  },
+  {
+    "id": "oscar",
+    "name": "Oscar",
+    "image": "images/bears/Oscar Model.png",
+    "location": "Hobbit Shop, 30 Bee Zone",
+    "description": "Oscar is a bunny with five quests focused on nearby fields, vegetables, and crafting supplies. Her Hobbit Shop is marked Coming soon for Part 2 and is not open yet.",
+    "quests": [
+      {
+        "number": 1,
+        "name": "Happy Hobbit Home",
+        "dialogue": {
+          "take": [
+            "Hiya! Welcome to my Hobbit Shop!",
+            "*Gasp!* Now hold on just a minute!",
+            "Huge backpack, huge net, small body...",
+            "You must be that beekeeper all these nice bears talk about so much!",
+            "It's about time I met ya, I've heard many 'a tale about the great things you've done for this forest.",
+            "I'm Oscar! A shopkeep from far away tryin' my luck in some new places.",
+            "And luckily for you, I've got some prime gear in stock that you might find mighty interesting!",
+            "Hmm, if you don't mind my wonderin' though...",
+            "Your bear friends, they gave ya rewards and such for helpin' them out, right?",
+            "Think you'd mind if I did the same thing?",
+            "I've got some goods to give ya in return, of course!",
+            "I've just been needing a bit more supplies for this shop and, well...",
+            "Let's just say I'm not too familiar with th' area yet, hehe.",
+            "Could ya go and look for a big variety of vegetables? Maybe, specifically carrots too?",
+            "Oh-! And some pollen from the nearby fields too, I keep forgettin' I can get some good use out of that stuff.",
+            "Thanks a ton! If what the bears tell me is true, you'll come back and surprise me a lot sooner than I expect!"
+          ],
+          "going": [
+            "Hangin' around the shop?",
+            "Go ahead! I decorated it to act as a quaint little place to relax in.",
+            "Helps me get all my energy back to put into my tasks for the day.",
+            "Hope it can do the same for you too!"
+          ],
+          "finish": [
+            "Well would ya look at that! The bears here really do know ya quite well.",
+            "I knew not to doubt 'em, but still, so nice to actually see what I've heard so much of for myself.",
+            "I know a lil' somethin' nice I can get ya for a first job well done.",
+            "My own blend of Carrot Juice!",
+            "I can't say I know what I'm doin' to it to get it to foam like that, but it's neat isn't it?",
+            "Guess it's just in my blood to make foamy drinks, hehe.",
+            "You can hold on to some of those vegetables for me, actually, I don't quite need 'em all right this second.",
+            "Oh yeah-! Some honey too, the bears told me how much you use up that stuff.",
+            "They gave me a lot of it to have just in case I ever met ya.",
+            "And as my own personal thanks, a sticker of the field from just outside!",
+            "Canvy introduced me to them, they're so nice for decoratin' the shop.",
+            "I'd say that's all for the moment, feel free to stop by again if ya want and I might have somethin' else for you to do!"
+          ]
+        },
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 10000000000,
+            "field": "Garden Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 10000000000,
+            "field": "Carrot Field"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 20000000000,
+            "color": "White"
+          },
+          {
+            "type": "bring",
+            "amount": 10,
+            "item": "Gardener's Bundle"
+          },
+          {
+            "type": "bring",
+            "amount": 10,
+            "item": "Carrot"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Foaming Carrot Juice",
+            "amount": 1,
+            "type": "Item"
+          },
+          {
+            "item": "Honey",
+            "amount": 5000000000,
+            "type": "Item"
+          },
+          {
+            "item": "Gardener's Bundle",
+            "amount": 5,
+            "type": "Item"
+          },
+          {
+            "item": "Carrot",
+            "amount": 5,
+            "type": "Item"
+          },
+          {
+            "item": "Garden Field Sticker",
+            "amount": 1,
+            "type": "Sticker"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "name": "The Cabbage Patch",
+        "dialogue": {
+          "take": [
+            "Oh! Hey again!",
+            "Here to help me out s'more?",
+            "I actually have just the task for you that I should've asked ya for last time.",
+            "My carrot supplies have been running low a bit quicker than normal, and I haven't been able to find many of those purple ones either.",
+            "Ya think you could have a scour around and see what you could find?",
+            "Also, a good amount of Blue pollen and pollen from the Cabbage Field would be nice if it isn't much of a bother.",
+            "I'd get it myself, but since you're jus' so equipped for it, I figure why not ask, eh?",
+            "Thanks again for the help, I'll be here sortin' out some inventory."
+          ],
+          "going": [
+            "Having trouble finding those purple carrots?",
+            "Tell me about it, they just blend in with all the other bright colors everywhere else.",
+            "Which is weird 'cause, they're just about the brightest purple thing I've seen around.",
+            "Maybe I need glasses like Berry, hehe."
+          ],
+          "finish": [
+            "Hey, ya did it!",
+            "Thank you so much for takin' this work, it's given me a lot of time to put more care into other parts of my shop.",
+            "I do miss having a few extra paws around..",
+            "Eh-, sorry, your reward!",
+            "I'm, 'fraid I haven't got much besides s'more honey, juices, and vegetables like last time.",
+            "Oh-! I do have another one of those stickers though!",
+            "A cabbage one! Get it? 'Cause you did so much in Cabbage Field today?",
+            "Yeah, bit on the nose I know.",
+            "See ya again soon! I'll have some much bigger stuff for ya next time, I promise!"
+          ]
+        },
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 20000000000,
+            "field": "Cabbage Field"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 30000000000,
+            "color": "Blue"
+          },
+          {
+            "type": "bring",
+            "amount": 5,
+            "item": "Magic Carrot"
+          },
+          {
+            "type": "bring",
+            "amount": 20,
+            "item": "Carrot"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 10000000000,
+            "type": "Item"
+          },
+          {
+            "item": "Gardener's Bundle",
+            "amount": 5,
+            "type": "Item"
+          },
+          {
+            "item": "Foaming Carrot Juice",
+            "amount": 2,
+            "type": "Item"
+          },
+          {
+            "item": "Cabbage Field Sticker",
+            "amount": 1,
+            "type": "Sticker"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "name": "The Grand Orchard Tree",
+        "dialogue": {
+          "take": [
+            "Oh-, hey! Could ya come here a sec?",
+            "Thanks, I've got a *big* problem I need your help with if it's alright.",
+            "You know that giant apple tree outside my shop? Huge red field, impossible to miss it?",
+            "There's been this *massive* cockroach living near it recently, and it's started trying to make that tree its home!",
+            "I can normally sort of, *coax* it away and have it live somewhere else for a while, but they've been getting reeeaaally angry at me recently.",
+            "I'm a little worried to go out there again...",
+            "Do ya think you could, help me deal with them?",
+            "If they get too comfortable living there then, they're going to bring more of them along, and I really don't want this beautiful tree and field being infested.",
+            "They've been making it hard for me to go out and get my apples and pollen too, so if you can bring some of that back while you're out there that'd be just fantastic too.",
+            "I've got some great things to give you if you can help me with this, I really hope you can do it."
+          ],
+          "going": [
+            "Aah, are they too much to deal with?",
+            "It's ok, I can try to give some tips if you want.",
+            "Make sure to keep your distance and let your bees to what they need to.",
+            "And also, make sure your bees are as strong as they can be. If you need to step away and help them get stronger, do that!",
+            "You can rest here as long as you want to get the energy again too, I'm sure you've got it in you."
+          ],
+          "finish": [
+            "You did it?! They've gone somewhere else?",
+            "Ooh thank you so much!",
+            "I understand they just, want to have a home, but it really just can't be here.",
+            "I hope they can find a place somewhere else.",
+            "Oh-, is that-? A *golden* apple??",
+            "I've only seen Token have something like that before, where'd you get that??",
+            "You, want me to have it?",
+            "Oh friend, I'm supposed to be the one giving you rewards!",
+            "Thank you so, so much. I have just the thing to repay you!",
+            "Another sticker, some nice refreshing drinks, and most importantly of all...",
+            "Some golden eggs!!",
+            "Guess we both struck gold here, didn't we? Hehehe...",
+            "You've been such a joy to be around, thanks again for all of your help.",
+            "I'll be here for anything else you need!"
+          ]
+        },
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 50000000000,
+            "field": "Apple Field"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 60000000000,
+            "color": "Red"
+          },
+          {
+            "type": "bring",
+            "amount": 15,
+            "item": "Apple"
+          },
+          {
+            "type": "collect_token",
+            "amount": 1,
+            "token": "Golden Apple"
+          },
+          {
+            "type": "defeat",
+            "amount": 5,
+            "mob": "Apple Worm"
+          },
+          {
+            "type": "craft",
+            "amount": 5,
+            "item": "Rich Apple Juice"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Rich Apple Juice",
+            "amount": 2,
+            "type": "Item"
+          },
+          {
+            "item": "Honey",
+            "amount": 20000000000,
+            "type": "Item"
+          },
+          {
+            "item": "Gold Egg",
+            "amount": 5,
+            "type": "Item"
+          },
+          {
+            "item": "Gardener's Bundle",
+            "amount": 10,
+            "type": "Item"
+          },
+          {
+            "item": "Apple Field Sticker",
+            "amount": 1,
+            "type": "Sticker"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "name": "From the Roots",
+        "dialogue": {
+          "take": [
+            "Hi again! You want to help me out some more?",
+            "Or are ya jus' doing this so I can give ya some more good stuff?",
+            "Ahehehe! Don't worry don't woooorryy, I'm jus' messing with ya.",
+            "I'm happy to give you things in return for helping me, couldn't ask for anything better.",
+            "In fact, I think you can help me out with some more inventory.",
+            "I need a loooot of carrots, normal, purple, and even golden ones.",
+            "I've got something big planned I want to do with 'em all, it's just been so time-consuming getting everything.",
+            "You'll help out?",
+            "Thaaaank you, it'll be all worth it once I have everything.",
+            "See ya in a bit!"
+          ],
+          "going": [
+            "Don't worry 'bout me, just finishing up some final preparations.",
+            "I'll still be here when you're done, take your time!"
+          ],
+          "finish": [
+            "Aah, I can smell them already.",
+            "This is a *very* good haul of carrots, thanks again so much for all of this.",
+            "If anything this might be a little too much, hehe.",
+            "Here, you can keep some of them, this is all I need.",
+            "I've also got some more stickers and honey, aaand, I think that's about all I can give actually.",
+            "I have more, don't worry, I'm just saving some of that for, a little later.",
+            "You'll see very soon, promise!"
+          ]
+        },
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 50000000000,
+            "field": "Carrot Field"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 80000000000,
+            "color": "White"
+          },
+          {
+            "type": "collect_token",
+            "amount": 50,
+            "token": "Carrot"
+          },
+          {
+            "type": "collect_token",
+            "amount": 20,
+            "token": "Magic Carrot"
+          },
+          {
+            "type": "collect_token",
+            "amount": 5,
+            "token": "Golden Carrot"
+          },
+          {
+            "type": "craft",
+            "amount": 5,
+            "item": "Foaming Carrot Juice"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 30000000000,
+            "type": "Item"
+          },
+          {
+            "item": "Carrot",
+            "amount": 20,
+            "type": "Item"
+          },
+          {
+            "item": "Sticker Egg",
+            "amount": 5,
+            "type": "Item"
+          },
+          {
+            "item": "Carrot Field Sticker",
+            "amount": 1,
+            "type": "Sticker"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "name": "Soup Warms the Soul",
+        "dialogue": {
+          "take": [
+            "Alright, here we are!",
+            "You ready for the big thing I've been working on?",
+            "It's not quite done yet, but that's exactly where you'll come in.",
+            "Ever since I got here, I always wanted to try and take all this forest's unique, amazing vegetables, and combine them into one big delicious meal!",
+            "I can't really say I've ever been much of a chef, but I do loooove me some good food.",
+            "And this forest's vegetables have been the *best* thing I've tasted since my mom's cooking back at home!",
+            "So the plan is, a maaaassive vegetable pot, with just about every type of vegetable that grows in the forest in it.",
+            "I'm talkin' carrots, cabbages, radishes, turnips-",
+            "We'll even throw in the nearby fruits and make it just a big pot of everything!",
+            "I've got the list of everything we need already written down, here.",
+            "I've gathered a good portion of it already, this is just the last of it.",
+            "You ready to have some of the best food you've had???",
+            "This is gonna be amazing, I just know it!"
+          ],
+          "going": [
+            "I'm almost done with my end, don't you worry.",
+            "Just focus on gathering everything we need!"
+          ],
+          "finish": [
+            "Oh-, ooh you've done it! I can see it all already!",
+            "A giant pot of aaaalll this forest's delicacies!",
+            "*sniiiiff* Mmmmm it's everything I thought it'd beeeee...",
+            "Thank you *so* much for helping put all this together, it's been so great to have you around as a help.",
+            "I've got one last big bunch of things to give you, I've been saving these on purpose to give you for a moment like this.",
+            "Enjoy!! I'll just be here as I always have, feel free to stop by any time!",
+            "I don't think I'll have anything new to give you for a while, but you never know!"
+          ]
+        },
+        "requirements": [
+          {
+            "type": "gather_field",
+            "amount": 100000000000,
+            "field": "Carrot Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 100000000000,
+            "field": "Apple Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 100000000000,
+            "field": "Cabbage Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 100000000000,
+            "field": "Garden Field"
+          },
+          {
+            "type": "collect_token",
+            "amount": 10,
+            "token": "Golden Apple"
+          },
+          {
+            "type": "collect_token",
+            "amount": 10,
+            "token": "Golden Carrot"
+          },
+          {
+            "type": "collect_token",
+            "amount": 50,
+            "token": "Gardener's Bundle"
+          },
+          {
+            "type": "craft",
+            "amount": 1,
+            "item": "Pot’O’Vegetation"
+          },
+          {
+            "type": "defeat",
+            "amount": 10,
+            "mob": "Apple Worm"
+          },
+          {
+            "type": "defeat",
+            "amount": 5,
+            "mob": "Golden Worm"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Majestic Cocktail",
+            "amount": 5,
+            "type": "Item"
+          },
+          {
+            "item": "Honey",
+            "amount": 50000000000,
+            "type": "Item"
+          },
+          {
+            "item": "Diamond Egg",
+            "amount": 2,
+            "type": "Item"
+          },
+          {
+            "item": "Mythic Egg",
+            "amount": 1,
+            "type": "Item"
+          },
+          {
+            "item": "Sleepy Little Bunny Sticker",
+            "amount": 1,
+            "type": "Sticker"
+          }
+        ]
+      }
+    ],
+    "noquest_dialog": [
+      "Hiya friend! Here to relax?",
+      "Nice to see you again, feel free to stay as long as you want.",
+      "I'll let you know when I have something new to ask of ya, don't worry!"
     ]
   }
 ]

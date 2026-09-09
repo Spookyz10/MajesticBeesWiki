@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Sticker Egg",
+    "weight": 10,
+    "type": "Item",
+    "qty": 1
+  },
+  {
+    "name": "Billiard 8 Ball Sticker",
+    "weight": 255,
+    "type": "Sticker",
+    "qty": 1
+  },
+  {
+    "name": "A Single Drop Sticker",
+    "weight": 255,
+    "type": "Sticker",
+    "qty": 1
+  },
+  {
+    "name": "Googly Eyes Sticker",
+    "weight": 66,
+    "type": "Sticker",
+    "qty": 1
+  },
+  {
+    "name": "Waffle Cone Sticker",
+    "weight": 66,
+    "type": "Sticker",
+    "qty": 1
+  },
+  {
+    "name": "Delightful Bouquet Sticker",
+    "weight": 66,
+    "type": "Sticker",
+    "qty": 1
+  },
+  {
+    "name": "Pulsating Heart Sticker",
+    "weight": 66,
+    "type": "Sticker",
+    "qty": 1
+  },
+  {
+    "name": "Sleepy Little Bunny Sticker",
+    "weight": 66,
+    "type": "Sticker",
+    "qty": 1
+  },
+  {
+    "name": "Angry Beetle Sticker",
+    "weight": 11,
+    "type": "Sticker",
+    "qty": 1
+  },
+  {
+    "name": "Lovely Ladybug Sticker",
+    "weight": 11,
+    "type": "Sticker",
+    "qty": 1
+  },
+  {
+    "name": "Ittybitty Caterpillar Sticker",
+    "weight": 11,
+    "type": "Sticker",
+    "qty": 1
+  },
+  {
+    "name": "Firefly in a Jar Sticker",
+    "weight": 11,
+    "type": "Sticker",
+    "qty": 1
+  },
+  {
+    "name": "Honeycomb Sticker",
+    "weight": 11,
+    "type": "Sticker",
+    "qty": 1
+  },
+  {
+    "name": "Fairylight Sticker",
+    "weight": 11,
+    "type": "Sticker",
+    "qty": 1
+  },
+  {
+    "name": "Paint Splatter Sticker",
+    "weight": 11,
+    "type": "Sticker",
+    "qty": 1
+  }
+]

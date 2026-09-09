@@ -4,26 +4,75 @@
     "name": "Majestic Cocktail",
     "category": "Consumables",
     "rarity": "Mythic",
-    "desc": "A legendary brew of unparalleled power.",
+    "desc": "Using this grants:\nx1.4 Capacity Bonus, Energy Bonus, and Movespeed;\nx1.6 Red Pollen, Blue Pollen, and White Pollen;\nx1.15 Honey Bonus, x2.25 Convert Rate, and +15 Convert Amount\n for 40 minutes.",
     "image": "images/items/Majestic Cocktail.png",
-    "order": 14.0,
+    "order": 14,
     "time": 2400,
     "buffs": [
-      { "name": "Capacity Bonus", "type": "Mult", "value": 0.4 },
-      { "name": "Energy Bonus", "type": "Mult", "value": 0.4 },
-      { "name": "Movespeed", "type": "Mult", "value": 0.4 },
-      { "name": "Red Pollen", "type": "Mult", "value": 0.6 },
-      { "name": "Blue Pollen", "type": "Mult", "value": 0.6 },
-      { "name": "White Pollen", "type": "Mult", "value": 0.6 },
-      { "name": "Honey Bonus", "type": "Mult", "value": 0.15 },
-      { "name": "Convert Rate", "type": "Mult", "value": 1.25 },
-      { "name": "Convert Amount", "type": "Add", "value": 15 }
+      {
+        "name": "Capacity Bonus",
+        "type": "Mult",
+        "value": 0.4
+      },
+      {
+        "name": "Energy Bonus",
+        "type": "Mult",
+        "value": 0.4
+      },
+      {
+        "name": "Movespeed",
+        "type": "Mult",
+        "value": 0.4
+      },
+      {
+        "name": "Red Pollen",
+        "type": "Mult",
+        "value": 0.6
+      },
+      {
+        "name": "Blue Pollen",
+        "type": "Mult",
+        "value": 0.6
+      },
+      {
+        "name": "White Pollen",
+        "type": "Mult",
+        "value": 0.6
+      },
+      {
+        "name": "Honey Bonus",
+        "type": "Mult",
+        "value": 0.15
+      },
+      {
+        "name": "Convert Rate",
+        "type": "Mult",
+        "value": 1.25
+      },
+      {
+        "name": "Convert Amount",
+        "type": "Add",
+        "value": 15
+      }
     ],
     "sources": [
-      { "type": "mixer" },
-      { "type": "drop", "name": "Mob Drop", "mob_list": ["Butterfly"] },
-      { "type": "shop", "name": "Lucky Wheel" },
-      { "type": "quest" }
+      {
+        "type": "mixer"
+      },
+      {
+        "type": "drop",
+        "name": "Mob Drop",
+        "mob_list": [
+          "Butterfly"
+        ]
+      },
+      {
+        "type": "shop",
+        "name": "Lucky Wheel"
+      },
+      {
+        "type": "quest"
+      }
     ]
   },
   {
@@ -31,32 +80,63 @@
     "name": "Moon Extract",
     "category": "Consumables",
     "rarity": "Legendary",
-    "desc": "A jar filled with concentrated moonlight.",
+    "desc": "Using this grants:\nx1.25 Capacity Bonus and Energy Bonus for 30 minutes.",
     "image": "images/items/Moon Extract.png",
-    "order": 16.0,
+    "order": 15,
     "time": 1800,
     "buffs": [
-      { "name": "Capacity Bonus", "type": "Mult", "value": 0.25 },
-      { "name": "Energy Bonus", "type": "Mult", "value": 0.25 }
+      {
+        "name": "Capacity Bonus",
+        "type": "Mult",
+        "value": 0.25
+      },
+      {
+        "name": "Energy Bonus",
+        "type": "Mult",
+        "value": 0.25
+      }
     ],
-    "sources": [{ "type": "mixer" }, { "type": "quest" }]
+    "sources": [
+      {
+        "type": "mixer"
+      },
+      {
+        "type": "quest"
+      }
+    ]
   },
   {
     "id": "Bamboo Flask",
     "name": "Bamboo Flask",
     "category": "Consumables",
     "rarity": "Epic",
-    "desc": "A hollowed bamboo stalk filled with a mysterious brew.",
+    "desc": "Using this grants:\nx1.1 Honey Bonus and x1.5 Convert Rate for 30 minutes.",
     "image": "images/items/Bamboo Flask.png",
-    "order": 17.0,
+    "order": 17,
     "time": 1800,
     "buffs": [
-      { "name": "Honey Bonus", "type": "Mult", "value": 0.1 },
-      { "name": "Convert Rate", "type": "Mult", "value": 0.5 }
+      {
+        "name": "Honey Bonus",
+        "type": "Mult",
+        "value": 0.1
+      },
+      {
+        "name": "Convert Rate",
+        "type": "Mult",
+        "value": 0.5
+      }
     ],
     "sources": [
-      { "type": "mixer" },
-      { "type": "drop", "name": "Mob Drop", "mob_list": ["Butterfly"] }
+      {
+        "type": "mixer"
+      },
+      {
+        "type": "drop",
+        "name": "Mob Drop",
+        "mob_list": [
+          "Butterfly"
+        ]
+      }
     ]
   },
   {
@@ -64,16 +144,36 @@
     "name": "Cone Extract",
     "category": "Consumables",
     "rarity": "Rare",
-    "desc": "A jar made out of pine cone extract.",
+    "desc": "Using this grants:\nx1.5 White Pollen for 20 minutes.",
     "image": "images/items/Cone Extract.png",
-    "order": 22.0,
+    "order": 22,
     "time": 1200,
-    "buffs": [{ "name": "White Pollen", "type": "Mult", "value": 0.5 }],
+    "buffs": [
+      {
+        "name": "White Pollen",
+        "type": "Mult",
+        "value": 0.5
+      }
+    ],
     "sources": [
-      { "type": "mixer" },
-      { "type": "drop", "name": "Mob Drop", "mob_list": ["Butterfly"] },
-      { "type": "drop", "name": "Starflower" },
-      { "type": "drop", "name": "Mythic Vines" }
+      {
+        "type": "mixer"
+      },
+      {
+        "type": "drop",
+        "name": "Mob Drop",
+        "mob_list": [
+          "Butterfly"
+        ]
+      },
+      {
+        "type": "drop",
+        "name": "Starflower"
+      },
+      {
+        "type": "drop",
+        "name": "Mythic Vines"
+      }
     ]
   },
   {
@@ -81,16 +181,36 @@
     "name": "Strawberry Extract",
     "category": "Consumables",
     "rarity": "Rare",
-    "desc": "A jar made out of strawberry jam.",
+    "desc": "Using this grants:\nx1.5 Red Pollen for 20 minutes.",
     "image": "images/items/Strawberry Extract.png",
-    "order": 23.0,
+    "order": 23,
     "time": 1200,
-    "buffs": [{ "name": "Red Pollen", "type": "Mult", "value": 0.5 }],
+    "buffs": [
+      {
+        "name": "Red Pollen",
+        "type": "Mult",
+        "value": 0.5
+      }
+    ],
     "sources": [
-      { "type": "mixer" },
-      { "type": "drop", "name": "Mob Drop", "mob_list": ["Butterfly"] },
-      { "type": "drop", "name": "Starflower" },
-      { "type": "drop", "name": "Mythic Vines" }
+      {
+        "type": "mixer"
+      },
+      {
+        "type": "drop",
+        "name": "Mob Drop",
+        "mob_list": [
+          "Butterfly"
+        ]
+      },
+      {
+        "type": "drop",
+        "name": "Starflower"
+      },
+      {
+        "type": "drop",
+        "name": "Mythic Vines"
+      }
     ]
   },
   {
@@ -98,16 +218,36 @@
     "name": "Blueberry Extract",
     "category": "Consumables",
     "rarity": "Rare",
-    "desc": "A jar made out of blueberry jam.",
+    "desc": "Using this grants:\nx1.5 Blue Pollen for 20 minutes.",
     "image": "images/items/Blueberry Extract.png",
-    "order": 24.0,
+    "order": 24,
     "time": 1200,
-    "buffs": [{ "name": "Blue Pollen", "type": "Mult", "value": 0.5 }],
+    "buffs": [
+      {
+        "name": "Blue Pollen",
+        "type": "Mult",
+        "value": 0.5
+      }
+    ],
     "sources": [
-      { "type": "mixer" },
-      { "type": "drop", "name": "Mob Drop", "mob_list": ["Butterfly"] },
-      { "type": "drop", "name": "Starflower" },
-      { "type": "drop", "name": "Mythic Vines" }
+      {
+        "type": "mixer"
+      },
+      {
+        "type": "drop",
+        "name": "Mob Drop",
+        "mob_list": [
+          "Butterfly"
+        ]
+      },
+      {
+        "type": "drop",
+        "name": "Starflower"
+      },
+      {
+        "type": "drop",
+        "name": "Mythic Vines"
+      }
     ]
   },
   {
@@ -115,15 +255,32 @@
     "name": "Seed Oil",
     "category": "Consumables",
     "rarity": "Rare",
-    "desc": "Oil pressed from rare seeds.",
+    "desc": "Using this grants:\nx1.25 Movespeed for 30 minutes.",
     "image": "images/items/Seed Oil.png",
-    "order": 25.0,
+    "order": 25,
     "time": 1800,
-    "buffs": [{ "name": "Movespeed", "type": "Mult", "value": 0.25 }],
+    "buffs": [
+      {
+        "name": "Movespeed",
+        "type": "Mult",
+        "value": 0.25
+      }
+    ],
     "sources": [
-      { "type": "drop", "name": "Starflower" },
-      { "type": "mixer" },
-      { "type": "drop", "name": "Mob Drop", "mob_list": ["Butterfly"] }
+      {
+        "type": "drop",
+        "name": "Starflower"
+      },
+      {
+        "type": "mixer"
+      },
+      {
+        "type": "drop",
+        "name": "Mob Drop",
+        "mob_list": [
+          "Butterfly"
+        ]
+      }
     ]
   },
   {
@@ -131,27 +288,49 @@
     "name": "Basic Egg",
     "category": "Eggs",
     "rarity": "Common",
-    "desc": "Always turns into a Common bee.",
+    "desc": "Always turns into a Basic Bee.",
     "image": "images/items/Basic Egg.png",
-    "order": 1.0,
+    "order": 1,
     "buffs": [],
-    "sources": [{ "type": "dispenser", "name": "Basic Egg Dispenser" }]
+    "sources": [
+      {
+        "type": "dispenser",
+        "name": "Basic Egg Dispenser"
+      }
+    ]
   },
   {
     "id": "Silver Egg",
     "name": "Silver Egg",
     "category": "Eggs",
     "rarity": "Rare",
-    "desc": "Rares: 70%, Epics: 30%.",
+    "desc": "Always turns into a rare or epic bee.\nHas a small chance to hatch a shiny Bee.",
     "image": "images/items/Silver Egg.png",
-    "order": 2.0,
+    "order": 2,
     "buffs": [],
     "sources": [
-      { "type": "quest" },
-      { "type": "shop", "name": "Ticket Shop" },
-      { "type": "drop", "name": "Legendary/Mythic Starflower" },
-      { "type": "drop", "name": "Spider", "mob_list": ["Spider"] },
-      { "type": "drop", "name": "Legendary/Mythic Vines" }
+      {
+        "type": "quest"
+      },
+      {
+        "type": "shop",
+        "name": "Ticket Shop"
+      },
+      {
+        "type": "drop",
+        "name": "Legendary/Mythic Starflower"
+      },
+      {
+        "type": "drop",
+        "name": "Spider",
+        "mob_list": [
+          "Spider"
+        ]
+      },
+      {
+        "type": "drop",
+        "name": "Legendary/Mythic Vines"
+      }
     ]
   },
   {
@@ -159,16 +338,30 @@
     "name": "Gold Egg",
     "category": "Eggs",
     "rarity": "Epic",
-    "desc": "Epics: 90%, Legendaries: 10%.",
+    "desc": "Always turns into an epic or legendary bee.\nHas a small chance to hatch a shiny Bee.",
     "image": "images/items/Gold Egg.png",
-    "order": 3.0,
+    "order": 3,
     "buffs": [],
     "sources": [
-      { "type": "drop", "name": "Mythic Starflower" },
-      { "type": "quest" },
-      { "type": "shop", "name": "Ticket Shop" },
-      { "type": "shop", "name": "Lucky Wheel" },
-      { "type": "drop", "name": "Mythic Vines" }
+      {
+        "type": "drop",
+        "name": "Mythic Starflower"
+      },
+      {
+        "type": "quest"
+      },
+      {
+        "type": "shop",
+        "name": "Ticket Shop"
+      },
+      {
+        "type": "shop",
+        "name": "Lucky Wheel"
+      },
+      {
+        "type": "drop",
+        "name": "Mythic Vines"
+      }
     ]
   },
   {
@@ -176,16 +369,30 @@
     "name": "Diamond Egg",
     "category": "Eggs",
     "rarity": "Legendary",
-    "desc": "Legendaries: 90%, Mythics: 10%.",
+    "desc": "Always turns into a legendary bee.\nHas a small chance to hatch a shiny Bee.",
     "image": "images/items/Diamond Egg.png",
-    "order": 4.0,
+    "order": 4,
     "buffs": [],
     "sources": [
-      { "type": "drop", "name": "Mythic Starflower" },
-      { "type": "quest" },
-      { "type": "shop", "name": "Ticket Shop" },
-      { "type": "shop", "name": "Lucky Wheel" },
-      { "type": "drop", "name": "Mythic Vines" }
+      {
+        "type": "drop",
+        "name": "Mythic Starflower"
+      },
+      {
+        "type": "quest"
+      },
+      {
+        "type": "shop",
+        "name": "Ticket Shop"
+      },
+      {
+        "type": "shop",
+        "name": "Lucky Wheel"
+      },
+      {
+        "type": "drop",
+        "name": "Mythic Vines"
+      }
     ]
   },
   {
@@ -193,63 +400,100 @@
     "name": "Shiny Egg",
     "category": "Eggs",
     "rarity": "Legendary",
-    "desc": "Turns into a random undiscovered Shiny bee. [Except Limited & Special Bees]",
+    "desc": "Always turns into an undiscovered shiny bee.\n[Except Limited & Special Bees]",
     "image": "images/items/Shiny Egg.png",
-    "order": 6.0,
+    "order": 6,
     "buffs": [],
-    "sources": [{ "type": "quest" }]
+    "sources": [
+      {
+        "type": "quest"
+      }
+    ]
   },
   {
     "id": "Shiny Silver Egg",
     "name": "Shiny Silver Egg",
     "category": "Eggs",
     "rarity": "Epic",
-    "desc": "Shiny Rares: 70%, Shiny Epics: 30%.",
+    "desc": "Always turns into a shiny rare or epic bee.",
     "image": "images/items/Shiny Silver Egg.png",
-    "order": 7.0,
+    "order": 7,
     "buffs": [],
-    "sources": [{ "type": "quest" }]
+    "sources": [
+      {
+        "type": "quest"
+      }
+    ]
   },
   {
     "id": "Shiny Gold Egg",
     "name": "Shiny Gold Egg",
     "category": "Eggs",
     "rarity": "Legendary",
-    "desc": "Shiny Epics: 90%, Shiny Legendaries: 10%.",
+    "desc": "Always turns into a shiny epic or legendary bee.",
     "image": "images/items/Shiny Gold Egg.png",
-    "order": 8.0,
+    "order": 8,
     "buffs": [],
-    "sources": [{ "type": "quest" }]
+    "sources": [
+      {
+        "type": "quest"
+      }
+    ]
   },
   {
     "id": "Shiny Diamond Egg",
     "name": "Shiny Diamond Egg",
     "category": "Eggs",
     "rarity": "Mythic",
-    "desc": "Always turns into a Shiny Legendary bee.",
+    "desc": "Always turns into a shiny legendary bee.",
     "image": "images/items/Shiny Diamond Egg.png",
-    "order": 9.0,
+    "order": 9,
     "buffs": [],
-    "sources": [{ "type": "quest" }]
+    "sources": [
+      {
+        "type": "quest"
+      }
+    ]
   },
   {
     "id": "Summer Cocktail",
     "name": "Summer Cocktail",
     "category": "Event",
     "rarity": "Legendary",
-    "desc": "A vibrant drink exclusive to SummerFest.",
+    "desc": "Using this grants:\nx1.75 Convert Rate, +30 Covert Amount,\nx1.35 Pollen, and +1 Bee Attack for 30 minutes.\n[Available at SummerFest]",
     "image": "images/items/Summer Cocktail.png",
-    "order": 10.0,
+    "order": 10,
     "time": 1800,
     "buffs": [
-      { "name": "Convert Rate", "type": "Mult", "value": 0.75 },
-      { "name": "Convert Amount", "type": "Add", "value": 30 },
-      { "name": "Pollen", "type": "Mult", "value": 0.35 },
-      { "name": "Bee Attack", "type": "Add", "value": 1 }
+      {
+        "name": "Convert Rate",
+        "type": "Mult",
+        "value": 0.75
+      },
+      {
+        "name": "Convert Amount",
+        "type": "Add",
+        "value": 30
+      },
+      {
+        "name": "Pollen",
+        "type": "Mult",
+        "value": 0.35
+      },
+      {
+        "name": "Bee Attack",
+        "type": "Add",
+        "value": 1
+      }
     ],
     "sources": [
-      { "type": "mixer", "mixerName": "Summer Mixer" },
-      { "type": "quest" }
+      {
+        "type": "mixer",
+        "mixerName": "Summer Mixer"
+      },
+      {
+        "type": "quest"
+      }
     ]
   },
   {
@@ -257,209 +501,365 @@
     "name": "Lemonade",
     "category": "Event",
     "rarity": "Epic",
-    "desc": "Freshly squeezed lemonade from SummerFest.",
+    "desc": "Using this grants:\nx1.5 Convert Rate for 15 minutes.\n[Available at SummerFest]",
     "image": "images/items/Lemonade.png",
-    "order": 20.0,
+    "order": 20,
     "time": 900,
-    "buffs": [{ "name": "Convert Rate", "type": "Mult", "value": 0.5 }],
-    "sources": [{ "type": "mixer", "mixerName": "Summer Mixer" }]
+    "buffs": [
+      {
+        "name": "Convert Rate",
+        "type": "Mult",
+        "value": 0.5
+      }
+    ],
+    "sources": [
+      {
+        "type": "mixer",
+        "mixerName": "Summer Mixer"
+      }
+    ]
   },
   {
     "id": "Coconut Drink",
     "name": "Coconut Drink",
     "category": "Event",
     "rarity": "Epic",
-    "desc": "A tropical coconut beverage from SummerFest.",
+    "desc": "Using this grants:\nx1.25 Pollen for 15 minutes.\n[Available at SummerFest]",
     "image": "images/items/Coconut Drink.png",
-    "order": 30.0,
+    "order": 30,
     "time": 900,
-    "buffs": [{ "name": "Pollen", "type": "Mult", "value": 0.25 }],
-    "sources": [{ "type": "mixer", "mixerName": "Summer Mixer" }]
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Mult",
+        "value": 0.25
+      }
+    ],
+    "sources": [
+      {
+        "type": "mixer",
+        "mixerName": "Summer Mixer"
+      }
+    ]
   },
   {
     "id": "Coconut",
     "name": "Coconut",
     "category": "Event",
     "rarity": "Rare",
-    "desc": "Feeding to bee gives it 200xp. [Available at SummerFest]",
+    "desc": "Gives 200 XP when fed to a bee.\n[Available at SummerFest]",
     "image": "images/items/Coconut.png",
-    "order": 100.0,
+    "order": 100,
     "buffs": [],
     "sources": [
       {
         "type": "drop",
         "name": "Starflower",
-        "starFlower_list": ["Coconut Field"]
+        "starFlower_list": [
+          "Coconut Field"
+        ]
       },
-      { "type": "drop", "name": "Field Drop" }
-    ]
+      {
+        "type": "drop",
+        "name": "Field Drop"
+      }
+    ],
+    "xp": 200
   },
   {
     "id": "Lemon",
     "name": "Lemon",
     "category": "Event",
     "rarity": "Rare",
-    "desc": "Feeding to bee gives it 200xp. [Available at SummerFest]",
+    "desc": "Gives 200 XP when fed to a bee.\n[Available at SummerFest]",
     "image": "images/items/Lemon.png",
-    "order": 101.0,
+    "order": 101,
     "buffs": [],
     "sources": [
       {
         "type": "drop",
         "name": "Starflower",
-        "starFlower_list": ["Lemon Field"]
+        "starFlower_list": [
+          "Lemon Field"
+        ]
       },
-      { "type": "drop", "name": "Field Drop" }
-    ]
+      {
+        "type": "drop",
+        "name": "Field Drop"
+      }
+    ],
+    "xp": 200
   },
   {
     "id": "Exp Orb",
     "name": "Exp Orb",
     "category": "Food",
     "rarity": "Epic",
-    "desc": "Feeding to bee gives it 100xp.",
+    "desc": "Gives 100 XP when fed to a bee.",
     "image": "images/items/Exp Orb.png",
-    "order": 16.0,
+    "order": 16,
     "buffs": [],
     "sources": [
-      { "type": "quest" },
-      { "type": "drop", "name": "Exp Bee", "mob_list": ["Exp Bee"] }
-    ]
+      {
+        "type": "quest"
+      },
+      {
+        "type": "drop",
+        "name": "Exp Bee",
+        "mob_list": [
+          "Exp Bee"
+        ]
+      }
+    ],
+    "xp": 100
   },
   {
     "id": "Bamboo",
     "name": "Bamboo",
     "category": "Food",
     "rarity": "Epic",
-    "desc": "Feeding to bee gives it 150xp.",
+    "desc": "Gives 150 XP when fed to a bee.",
     "image": "images/items/Bamboo.png",
-    "order": 17.0,
+    "order": 17,
     "buffs": [],
     "sources": [
-      { "type": "dispenser", "name": "Bamboo Dispenser" },
-      { "type": "drop", "name": "Planters" },
+      {
+        "type": "dispenser",
+        "name": "Bamboo Dispenser"
+      },
+      {
+        "type": "drop",
+        "name": "Planters"
+      },
       {
         "type": "drop",
         "name": "Starflower",
-        "starFlower_list": ["Bamboo Field"]
+        "starFlower_list": [
+          "Bamboo Field"
+        ]
       },
-      { "type": "drop", "name": "Field Drop" }
-    ]
+      {
+        "type": "drop",
+        "name": "Field Drop"
+      }
+    ],
+    "xp": 150
   },
   {
     "id": "Lunar Treat",
     "name": "Lunar Treat",
     "category": "Food",
     "rarity": "Epic",
-    "desc": "Feeding to bee gives it 500xp. 1 in 500 chance to make bee Shiny.",
+    "desc": "Gives 500 XP when fed to a bee.\nHas a 1 in 500 chance to make the bee shiny.",
     "image": "images/items/Lunar Treat.png",
-    "order": 18.0,
+    "order": 18,
     "buffs": [],
     "sources": [
-      { "type": "drop", "name": "Lunar Starflower" },
-      { "type": "shop", "name": "Lunar Minigame" }
-    ]
+      {
+        "type": "drop",
+        "name": "Lunar Starflower"
+      },
+      {
+        "type": "shop",
+        "name": "Lunar Minigame"
+      }
+    ],
+    "xp": 500
   },
   {
     "id": "Pine Cone",
     "name": "Pine Cone",
     "category": "Food",
     "rarity": "Rare",
-    "desc": "Feeding to bee gives it 50xp.",
+    "desc": "Gives 50 XP when fed to a bee.",
     "image": "images/items/Pine Cone.png",
-    "order": 19.0,
+    "order": 19,
     "buffs": [],
     "sources": [
-      { "type": "drop", "name": "Mob Drop" },
-      { "type": "drop", "name": "Planters" },
-      { "type": "drop", "name": "Starflower" },
-      { "type": "drop", "name": "Field Drop" },
-      { "type": "drop", "name": "Vines" }
-    ]
+      {
+        "type": "drop",
+        "name": "Mob Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Planters"
+      },
+      {
+        "type": "drop",
+        "name": "Starflower"
+      },
+      {
+        "type": "drop",
+        "name": "Field Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Vines"
+      }
+    ],
+    "xp": 50
   },
   {
     "id": "Seed",
     "name": "Seed",
     "category": "Food",
     "rarity": "Rare",
-    "desc": "Feeding to bee gives it 50xp.",
+    "desc": "Gives 50 XP when fed to a bee.",
     "image": "images/items/Seed.png",
-    "order": 20.0,
+    "order": 20,
     "buffs": [],
     "sources": [
-      { "type": "drop", "name": "Mob Drop" },
-      { "type": "drop", "name": "Planters" },
-      { "type": "drop", "name": "Starflower" },
-      { "type": "drop", "name": "Field Drop" },
-      { "type": "drop", "name": "Vines" }
-    ]
+      {
+        "type": "drop",
+        "name": "Mob Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Planters"
+      },
+      {
+        "type": "drop",
+        "name": "Starflower"
+      },
+      {
+        "type": "drop",
+        "name": "Field Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Vines"
+      }
+    ],
+    "xp": 50
   },
   {
     "id": "Strawberry",
     "name": "Strawberry",
     "category": "Food",
     "rarity": "Rare",
-    "desc": "Feeding to bee gives it 50xp.",
+    "desc": "Gives 50 XP when fed to a bee.",
     "image": "images/items/Strawberry.png",
-    "order": 21.0,
+    "order": 21,
     "buffs": [],
     "sources": [
-      { "type": "drop", "name": "Mob Drop" },
-      { "type": "drop", "name": "Planters" },
-      { "type": "drop", "name": "Starflower" },
-      { "type": "drop", "name": "Field Drop" },
-      { "type": "drop", "name": "Vines" },
-      { "type": "shop", "name": "Lunar Minigame" }
-    ]
+      {
+        "type": "drop",
+        "name": "Mob Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Planters"
+      },
+      {
+        "type": "drop",
+        "name": "Starflower"
+      },
+      {
+        "type": "drop",
+        "name": "Field Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Vines"
+      },
+      {
+        "type": "shop",
+        "name": "Lunar Minigame"
+      }
+    ],
+    "xp": 50
   },
   {
     "id": "Blueberry",
     "name": "Blueberry",
     "category": "Food",
     "rarity": "Rare",
-    "desc": "Feeding to bee gives it 50xp.",
+    "desc": "Gives 50 XP when fed to a bee.",
     "image": "images/items/Blueberry.png",
-    "order": 22.0,
+    "order": 22,
     "buffs": [],
     "sources": [
-      { "type": "drop", "name": "Mob Drop" },
-      { "type": "drop", "name": "Planters" },
-      { "type": "drop", "name": "Starflower" },
-      { "type": "drop", "name": "Field Drop" },
-      { "type": "drop", "name": "Vines" },
-      { "type": "shop", "name": "Lunar Minigame" }
-    ]
+      {
+        "type": "drop",
+        "name": "Mob Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Planters"
+      },
+      {
+        "type": "drop",
+        "name": "Starflower"
+      },
+      {
+        "type": "drop",
+        "name": "Field Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Vines"
+      },
+      {
+        "type": "shop",
+        "name": "Lunar Minigame"
+      }
+    ],
+    "xp": 50
   },
   {
     "id": "Treat",
     "name": "Treat",
     "category": "Food",
     "rarity": "Common",
-    "desc": "Feeding to bee gives it 20xp.",
+    "desc": "Gives 20 XP when fed to a bee.",
     "image": "images/items/Treat.png",
-    "order": 25.0,
+    "order": 25,
     "buffs": [],
     "sources": [
-      { "type": "mixer" },
-      { "type": "drop", "name": "Mob Drop" },
-      { "type": "drop", "name": "Field Drop" },
-      { "type": "drop", "name": "Starflower Drop" }
-    ]
+      {
+        "type": "mixer"
+      },
+      {
+        "type": "drop",
+        "name": "Mob Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Field Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Starflower Drop"
+      }
+    ],
+    "xp": 20
   },
   {
     "id": "Wind Essence",
     "name": "Wind Essence",
     "category": "Ingredients",
     "rarity": "Common",
-    "desc": "Used to craft variable white hive equipment and other things.",
+    "desc": "Used to craft White Hive equipment and other things.",
     "image": "images/items/Wind Essence.png",
-    "order": 1.0,
+    "order": 1,
     "buffs": [],
     "sources": [
-      { "type": "drop", "name": "Field Drop" },
-      { "type": "drop", "name": "Starflower Drop" },
-      { "type": "drop", "name": "Mob Drop" },
-      { "type": "drop", "name": "Planters" }
+      {
+        "type": "drop",
+        "name": "Field Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Starflower Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Mob Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Planters"
+      }
     ]
   },
   {
@@ -467,15 +867,27 @@
     "name": "Fire Essence",
     "category": "Ingredients",
     "rarity": "Common",
-    "desc": "Used to craft variable red hive equipment and other things.",
+    "desc": "Used to craft Red Hive equipment and other things.",
     "image": "images/items/Fire Essence.png",
-    "order": 2.0,
+    "order": 2,
     "buffs": [],
     "sources": [
-      { "type": "drop", "name": "Field Drop" },
-      { "type": "drop", "name": "Starflower Drop" },
-      { "type": "drop", "name": "Mob Drop" },
-      { "type": "drop", "name": "Planters" }
+      {
+        "type": "drop",
+        "name": "Field Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Starflower Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Mob Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Planters"
+      }
     ]
   },
   {
@@ -483,15 +895,27 @@
     "name": "Water Essence",
     "category": "Ingredients",
     "rarity": "Common",
-    "desc": "Used to craft variable blue hive equipment and other things.",
+    "desc": "Used to craft Blue Hive equipment and other things.",
     "image": "images/items/Water Essence.png",
-    "order": 3.0,
+    "order": 3,
     "buffs": [],
     "sources": [
-      { "type": "drop", "name": "Field Drop" },
-      { "type": "drop", "name": "Starflower Drop" },
-      { "type": "drop", "name": "Mob Drop" },
-      { "type": "drop", "name": "Planters" }
+      {
+        "type": "drop",
+        "name": "Field Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Starflower Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Mob Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Planters"
+      }
     ]
   },
   {
@@ -499,26 +923,43 @@
     "name": "Hydrant Installer",
     "category": "Installers",
     "rarity": "Special",
-    "desc": "Used to place hydrants in field.",
+    "desc": "Used to place hydrants inside the field.",
     "image": "images/items/Hydrant Installer.png",
-    "order": 1.0,
+    "order": 1,
     "buffs": [],
-    "sources": [{ "type": "shop", "name": "Given when first buying a Hydrant" }]
+    "sources": [
+      {
+        "type": "shop",
+        "name": "Given when first buying a Hydrant"
+      }
+    ]
   },
   {
     "id": "Royal Jelly",
     "name": "Royal Jelly",
     "category": "Jellies",
     "rarity": "Common",
-    "desc": "Transforms a bee into a random new bee. Rares: 85.23%, Epics: 14.20%, Legendaries: 0.57%, Mythical: 0.001%, 1 in 200 chance to come out shiny.",
+    "desc": "Always turns into a random bee.\nHas a 1 in 200 chance to make a bee shiny.",
     "image": "images/items/Royal Jelly.png",
-    "order": 1.0,
+    "order": 1,
     "buffs": [],
     "sources": [
-      { "type": "dispenser", "name": "Royal Jelly Dispenser" },
-      { "type": "drop", "name": "Mob Drop" },
-      { "type": "drop", "name": "Starflower Drop" },
-      { "type": "drop", "name": "Vines Drop" }
+      {
+        "type": "dispenser",
+        "name": "Royal Jelly Dispenser"
+      },
+      {
+        "type": "drop",
+        "name": "Mob Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Starflower Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Vines Drop"
+      }
     ]
   },
   {
@@ -526,24 +967,37 @@
     "name": "Shiny Jelly",
     "category": "Jellies",
     "rarity": "Epic",
-    "desc": "Transforms a bee into a random Shiny bee. Same odds as Royal Jelly but always Shiny.",
+    "desc": "Always turns into a random shiny bee.",
     "image": "images/items/Shiny Jelly.png",
-    "order": 2.0,
+    "order": 2,
     "buffs": [],
-    "sources": [{ "type": "quest" }, { "type": "mixer" }]
+    "sources": [
+      {
+        "type": "quest"
+      },
+      {
+        "type": "mixer"
+      }
+    ]
   },
   {
     "id": "Bee Net",
     "name": "Bee Net",
     "category": "Misc",
     "rarity": "Rare",
-    "desc": "Use this item to catch bees into your inventory.",
+    "desc": "Use this to catch bees into your inventory.",
     "image": "images/items/Bee Net.png",
-    "order": 1.0,
+    "order": 1,
     "buffs": [],
     "sources": [
-      { "type": "drop", "name": "Starflower Drop" },
-      { "type": "drop", "name": "Field Drop" }
+      {
+        "type": "drop",
+        "name": "Starflower Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Field Drop"
+      }
     ]
   },
   {
@@ -551,31 +1005,42 @@
     "name": "Converter",
     "category": "Misc",
     "rarity": "Epic",
-    "desc": "Converts all your pollen into honey.",
+    "desc": "Instantly converts all your pollen into honey.",
     "image": "images/items/Converter.png",
-    "order": 2.0,
+    "order": 2,
     "buffs": [],
-    "sources": [{ "type": "quest" }, { "type": "mixer" }]
+    "sources": [
+      {
+        "type": "quest"
+      },
+      {
+        "type": "mixer"
+      }
+    ]
   },
   {
     "id": "Night Bell",
     "name": "Night Bell",
     "category": "Misc",
     "rarity": "Legendary",
-    "desc": "Summons Night if it's Day Time.",
+    "desc": "Summons the Night if it's Day Time.",
     "image": "images/items/Night Bell.png",
-    "order": 3.0,
+    "order": 3,
     "buffs": [],
-    "sources": [{ "type": "mixer" }]
+    "sources": [
+      {
+        "type": "mixer"
+      }
+    ]
   },
   {
     "id": "Cardboard Planter",
     "name": "Cardboard Planter",
     "category": "Planters",
     "rarity": "Rare",
-    "desc": "Use it to put Cardboard Planter in field.",
+    "desc": "Use it to put the Cardboard Planter in a field.",
     "image": "images/items/Cardboard Planter.png",
-    "order": 45.0,
+    "order": 45,
     "buffs": [],
     "cost": [
       "100,000,000 Honey",
@@ -583,16 +1048,21 @@
       "15 Fire Essence",
       "15 Water Essence"
     ],
-    "sources": [{ "type": "shop", "name": "Greenhouse" }]
+    "sources": [
+      {
+        "type": "shop",
+        "name": "Greenhouse"
+      }
+    ]
   },
   {
     "id": "Ticket Planter",
     "name": "Ticket Planter",
     "category": "Planters",
     "rarity": "Epic",
-    "desc": "Use it to put Ticket Planter in field.",
+    "desc": "Use it to put the Ticket Planter in a field.",
     "image": "images/items/Ticket Planter.png",
-    "order": 46.0,
+    "order": 46,
     "buffs": [],
     "sources": []
   },
@@ -601,9 +1071,9 @@
     "name": "Sticker Planter",
     "category": "Planters",
     "rarity": "Epic",
-    "desc": "Use it to put Sticker Planter in field.",
+    "desc": "Use it to put the Sticker Planter in a field.",
     "image": "images/items/Sticker Planter.png",
-    "order": 47.0,
+    "order": 47,
     "buffs": [],
     "cost": [
       "50 Tickets",
@@ -611,44 +1081,73 @@
       "50 Fire Essence",
       "50 Water Essence"
     ],
-    "sources": [{ "type": "shop", "name": "Greenhouse" }]
+    "sources": [
+      {
+        "type": "shop",
+        "name": "Greenhouse"
+      }
+    ]
   },
   {
     "id": "Ice Planter",
     "name": "Ice Planter",
     "category": "Planters",
     "rarity": "Epic",
-    "desc": "Use it to put Ice Planter in field.",
+    "desc": "Use it to put the Ice Planter in a field.",
     "image": "images/items/Ice Planter.png",
-    "order": 49.0,
+    "order": 49,
     "buffs": [],
-    "cost": ["25,000,000 Honey", "100 Water Essence", "50 Tickets"],
-    "sources": [{ "type": "shop", "name": "Ice Shop" }]
+    "cost": [
+      "25,000,000 Honey",
+      "100 Water Essence",
+      "50 Tickets"
+    ],
+    "sources": [
+      {
+        "type": "shop",
+        "name": "Ice Shop"
+      }
+    ]
   },
   {
     "id": "Fire Planter",
     "name": "Fire Planter",
     "category": "Planters",
     "rarity": "Epic",
-    "desc": "Use it to put Fire Planter in field.",
+    "desc": "Use it to put the Fire Planter in a field.",
     "image": "images/items/Fire Planter.png",
-    "order": 50.0,
+    "order": 50,
     "buffs": [],
-    "cost": ["25,000,000 Honey", "100 Fire Essence", "50 Tickets"],
-    "sources": [{ "type": "shop", "name": "Fire Shop" }]
+    "cost": [
+      "25,000,000 Honey",
+      "100 Fire Essence",
+      "50 Tickets"
+    ],
+    "sources": [
+      {
+        "type": "shop",
+        "name": "Fire Shop"
+      }
+    ]
   },
   {
     "id": "Starflower",
     "name": "Starflower",
     "category": "Starflowers",
     "rarity": "Common",
-    "desc": "Creates Basic Starflower on field that lasts 3 mins.",
+    "desc": "Creates a Basic Starflower in the field that lasts 3 mins.",
     "image": "images/items/Starflower.png",
-    "order": 1.0,
+    "order": 1,
     "buffs": [],
     "sources": [
-      { "type": "dispenser", "name": "Starflower Dispenser" },
-      { "type": "drop", "name": "Planters" }
+      {
+        "type": "dispenser",
+        "name": "Starflower Dispenser"
+      },
+      {
+        "type": "drop",
+        "name": "Planters"
+      }
     ]
   },
   {
@@ -656,47 +1155,75 @@
     "name": "Rare Starflower",
     "category": "Starflowers",
     "rarity": "Rare",
-    "desc": "Creates Rare Starflower on field that lasts 4 mins.",
+    "desc": "Creates a Rare Starflower in the field that lasts 4 mins.",
     "image": "images/items/Rare Starflower.png",
-    "order": 2.0,
+    "order": 2,
     "buffs": [],
-    "sources": [{ "type": "quest" }, { "type": "mixer" }]
+    "sources": [
+      {
+        "type": "quest"
+      },
+      {
+        "type": "mixer"
+      }
+    ]
   },
   {
     "id": "Epic Starflower",
     "name": "Epic Starflower",
     "category": "Starflowers",
     "rarity": "Epic",
-    "desc": "Creates Epic Starflower on field that lasts 5 mins.",
+    "desc": "Creates an Epic Starflower in the field that lasts 5 mins.",
     "image": "images/items/Epic Starflower.png",
-    "order": 3.0,
+    "order": 3,
     "buffs": [],
-    "sources": [{ "type": "quest" }, { "type": "mixer" }]
+    "sources": [
+      {
+        "type": "quest"
+      },
+      {
+        "type": "mixer"
+      }
+    ]
   },
   {
     "id": "Legendary Starflower",
     "name": "Legendary Starflower",
     "category": "Starflowers",
     "rarity": "Legendary",
-    "desc": "Creates Legendary Starflower on field that lasts 7 mins.",
+    "desc": "Creates a Legendary Starflower in the field that lasts 7 mins.",
     "image": "images/items/Legendary Starflower.png",
-    "order": 4.0,
+    "order": 4,
     "buffs": [],
-    "sources": [{ "type": "quest" }, { "type": "mixer" }]
+    "sources": [
+      {
+        "type": "quest"
+      },
+      {
+        "type": "mixer"
+      }
+    ]
   },
   {
     "id": "Mythic Starflower",
     "name": "Mythic Starflower",
     "category": "Starflowers",
     "rarity": "Mythic",
-    "desc": "Creates Mythic Starflower on field that lasts 8 mins.",
+    "desc": "Creates a Mythic Starflower in the field that lasts 8 mins.",
     "image": "images/items/Mythic Starflower.png",
-    "order": 5.0,
+    "order": 5,
     "buffs": [],
     "sources": [
-      { "type": "quest" },
-      { "type": "mixer" },
-      { "type": "shop", "name": "Lunar Minigame" }
+      {
+        "type": "quest"
+      },
+      {
+        "type": "mixer"
+      },
+      {
+        "type": "shop",
+        "name": "Lunar Minigame"
+      }
     ]
   },
   {
@@ -704,15 +1231,27 @@
     "name": "Ticket",
     "category": "Values",
     "rarity": "Common",
-    "desc": "Used to purchase exclusive items and game-passes.",
+    "desc": "Used to purchase exclusive items.",
     "image": "images/items/Ticket.png",
-    "order": 1.0,
+    "order": 1,
     "buffs": [],
     "sources": [
-      { "type": "dispenser", "name": "Ticket Dispenser" },
-      { "type": "drop", "name": "Planters" },
-      { "type": "drop", "name": "Starflower Drop" },
-      { "type": "drop", "name": "Mob Drop" }
+      {
+        "type": "dispenser",
+        "name": "Ticket Dispenser"
+      },
+      {
+        "type": "drop",
+        "name": "Planters"
+      },
+      {
+        "type": "drop",
+        "name": "Starflower Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Mob Drop"
+      }
     ]
   },
   {
@@ -720,58 +1259,83 @@
     "name": "Dice",
     "category": "Consumables",
     "rarity": "Epic",
-    "desc": "Grants one random field boost (x1-x4) for 15m.",
+    "desc": "Using this grants:\n(x1-x4) Field Boost to a random field for 15m.",
     "image": "images/items/Dice.png",
-    "order": 10.0,
+    "order": 10,
     "buffs": [],
-    "sources": [{ "type": "mixer" }]
+    "sources": [
+      {
+        "type": "mixer"
+      }
+    ]
   },
   {
     "id": "Double Dice",
     "name": "Double Dice",
     "category": "Consumables",
     "rarity": "Legendary",
-    "desc": "Grants two random field boost (x3-x7) for 15m.",
+    "desc": "Using this grants:\n(x3-x7) Field Boost to two random fields for 15m.",
     "image": "images/items/Double Dice.png",
-    "order": 11.0,
+    "order": 11,
     "buffs": [],
-    "sources": [{ "type": "mixer" }]
+    "sources": [
+      {
+        "type": "mixer"
+      }
+    ]
   },
   {
     "id": "Triple Dice",
     "name": "Triple Dice",
     "category": "Consumables",
     "rarity": "Mythic",
-    "desc": "Grants three random field boost (x6-x10) for 15m.",
+    "desc": "Using this grants:\n(x6-x10) Field Boost to three random fields for 15m.",
     "image": "images/items/Triple Dice.png",
-    "order": 12.0,
+    "order": 12,
     "buffs": [],
-    "sources": [{ "type": "mixer" }]
+    "sources": [
+      {
+        "type": "mixer"
+      }
+    ]
   },
   {
     "id": "Glitter",
     "name": "Glitter",
     "category": "Consumables",
     "rarity": "Epic",
-    "desc": "Grants field you stand on - (x3) boost for 15m.",
+    "desc": "Using this grants:\nx3 Field Boost to the field you stand in for 15 minutes.",
     "image": "images/items/Glitter.png",
-    "order": 14.0,
+    "order": 14,
     "buffs": [],
-    "sources": [{ "type": "mixer" }]
+    "sources": [
+      {
+        "type": "mixer"
+      }
+    ]
   },
   {
     "id": "Sticker Egg",
     "name": "Sticker Egg",
     "category": "Eggs",
     "rarity": "Legendary",
-    "desc": "Always turns into a random sticker bee.",
+    "desc": "Always turns into a random bee sticker.",
     "image": "images/items/Sticker Egg.png",
-    "order": 25.0,
+    "order": 25,
     "buffs": [],
     "sources": [
-      { "type": "drop", "name": "Mob Drop" },
-      { "type": "drop", "name": "Starflower Drop" },
-      { "type": "drop", "name": "Legendary/Mythic Vines" }
+      {
+        "type": "drop",
+        "name": "Mob Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Starflower Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Legendary/Mythic Vines"
+      }
     ]
   },
   {
@@ -779,13 +1343,19 @@
     "name": "Lunar Essence",
     "category": "Ingredients",
     "rarity": "Epic",
-    "desc": "Used to craft variable things.",
+    "desc": "Used for crafting.",
     "image": "images/items/Lunar Essence.png",
-    "order": 4.0,
+    "order": 4,
     "buffs": [],
     "sources": [
-      { "type": "drop", "name": "Lunar Starflower" },
-      { "type": "shop", "name": "Lunar Minigame" }
+      {
+        "type": "drop",
+        "name": "Lunar Starflower"
+      },
+      {
+        "type": "shop",
+        "name": "Lunar Minigame"
+      }
     ]
   },
   {
@@ -793,25 +1363,38 @@
     "name": "Exp Essence",
     "category": "Ingredients",
     "rarity": "Epic",
-    "desc": "Used to craft variable things.",
+    "desc": "Used for crafting.",
     "image": "images/items/Exp Essence.png",
-    "order": 5.0,
+    "order": 5,
     "buffs": [],
-    "sources": [{ "type": "mixer" }]
+    "sources": [
+      {
+        "type": "mixer"
+      }
+    ]
   },
   {
     "id": "Mythic Egg",
     "name": "Mythic Egg",
     "category": "Eggs",
     "rarity": "Mythic",
-    "desc": "Always turns into a mythic bee.",
+    "desc": "Always turns into a mythic bee.\nHas a small chance to hatch a shiny Bee.",
     "image": "images/items/Mythic Egg.png",
-    "order": 5.0,
+    "order": 5,
     "buffs": [],
     "sources": [
-      { "type": "shop", "name": "Lucky Wheel" },
-      { "type": "quest", "name": "Druid Bear #5" },
-      { "type": "quest", "name": "Black Bear #40" }
+      {
+        "type": "shop",
+        "name": "Lucky Wheel"
+      },
+      {
+        "type": "quest",
+        "name": "Druid Bear #5"
+      },
+      {
+        "type": "quest",
+        "name": "Black Bear #40"
+      }
     ]
   },
   {
@@ -821,7 +1404,7 @@
     "rarity": "Mythic",
     "desc": "Always turns into a shiny mythic bee.",
     "image": "images/items/Shiny Mythic Egg.png",
-    "order": 10.0,
+    "order": 10,
     "buffs": [],
     "sources": []
   },
@@ -830,13 +1413,19 @@
     "name": "Basic Vines",
     "category": "Vines",
     "rarity": "Common",
-    "desc": "Creates 20-30 Basic Vines around the whole field you stand on.",
+    "desc": "Creates 20-30 Basic Vines in the field.",
     "image": "images/items/Basic Vines.png",
-    "order": 1.0,
+    "order": 1,
     "buffs": [],
     "sources": [
-      { "type": "drop", "name": "Mob Drop" },
-      { "type": "drop", "name": "Cardboard Planter" }
+      {
+        "type": "drop",
+        "name": "Mob Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Cardboard Planter"
+      }
     ]
   },
   {
@@ -844,13 +1433,19 @@
     "name": "Rare Vines",
     "category": "Vines",
     "rarity": "Rare",
-    "desc": "Creates 30-40 Rare Vines around the whole field you stand on.",
+    "desc": "Creates 30-40 Rare Vines in the field.",
     "image": "images/items/Rare Vines.png",
-    "order": 2.0,
+    "order": 2,
     "buffs": [],
     "sources": [
-      { "type": "drop", "name": "Mob Drop" },
-      { "type": "drop", "name": "Cardboard Planter" }
+      {
+        "type": "drop",
+        "name": "Mob Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Cardboard Planter"
+      }
     ]
   },
   {
@@ -858,13 +1453,19 @@
     "name": "Epic Vines",
     "category": "Vines",
     "rarity": "Epic",
-    "desc": "Creates 40-50 Epic Vines around the whole field you stand on.",
+    "desc": "Creates 40-50 Epic Vines in the field.",
     "image": "images/items/Epic Vines.png",
-    "order": 3.0,
+    "order": 3,
     "buffs": [],
     "sources": [
-      { "type": "drop", "name": "Mob Drop" },
-      { "type": "drop", "name": "Cardboard Planter" }
+      {
+        "type": "drop",
+        "name": "Mob Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Cardboard Planter"
+      }
     ]
   },
   {
@@ -872,13 +1473,19 @@
     "name": "Legendary Vines",
     "category": "Vines",
     "rarity": "Legendary",
-    "desc": "Creates 50-60 Legendary Vines around the whole field you stand on.",
+    "desc": "Creates 50-60 Legendary Vines in the field.",
     "image": "images/items/Legendary Vines.png",
-    "order": 4.0,
+    "order": 4,
     "buffs": [],
     "sources": [
-      { "type": "drop", "name": "Mob Drop" },
-      { "type": "drop", "name": "Cardboard Planter" }
+      {
+        "type": "drop",
+        "name": "Mob Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Cardboard Planter"
+      }
     ]
   },
   {
@@ -886,14 +1493,23 @@
     "name": "Mythic Vines",
     "category": "Vines",
     "rarity": "Mythic",
-    "desc": "Creates 60-75 Mythic Vines around the whole field you stand on.",
+    "desc": "Creates 60-75 Mythic Vines in the field.",
     "image": "images/items/Mythic Vines.png",
-    "order": 5.0,
+    "order": 5,
     "buffs": [],
     "sources": [
-      { "type": "drop", "name": "Mob Drop" },
-      { "type": "drop", "name": "Cardboard Planter" },
-      { "type": "shop", "name": "Lunar Minigame" }
+      {
+        "type": "drop",
+        "name": "Mob Drop"
+      },
+      {
+        "type": "drop",
+        "name": "Cardboard Planter"
+      },
+      {
+        "type": "shop",
+        "name": "Lunar Minigame"
+      }
     ]
   },
   {
@@ -901,17 +1517,30 @@
     "name": "Bamboo Boba Tea",
     "category": "Consumables",
     "rarity": "Legendary",
-    "desc": "Using this grants x1.5 Critical Power and\n 10% Critical Chance for 20 minutes.",
+    "desc": "Using this grants:\nx1.5 Critical Power and 10% Critical Chance for 20 minutes.",
     "image": "images/items/Bamboo Boba Tea.png",
-    "order": 15.0,
+    "order": 16,
     "time": 1200,
     "buffs": [
-      { "name": "Critical Power", "type": "Mult", "value": 0.5 },
-      { "name": "Critical Chance", "type": "Perc", "value": 10 }
+      {
+        "name": "Critical Power",
+        "type": "Mult",
+        "value": 0.5
+      },
+      {
+        "name": "Critical Chance",
+        "type": "Perc",
+        "value": 10
+      }
     ],
     "sources": [
-      { "type": "mixer" },
-      { "type": "shop", "name": "Lunar Minigame" }
+      {
+        "type": "mixer"
+      },
+      {
+        "type": "shop",
+        "name": "Lunar Minigame"
+      }
     ]
   },
   {
@@ -919,15 +1548,27 @@
     "name": "Lunar Cocktail",
     "category": "Consumables",
     "rarity": "Mythic",
-    "desc": "Using this grants: x1.5 Night Pollen & x1.5 Night Capacity for 1 hour",
+    "desc": "Using this grants:\nx1.5 Night Pollen & x1.5 Night Capacity for 1 hour.",
     "image": "images/items/Lunar Cocktail.png",
-    "order": 15.0,
+    "order": 13,
     "time": 3600,
     "buffs": [
-      { "name": "Night Pollen", "type": "Mult", "value": 0.5 },
-      { "name": "Night Capacity", "type": "Mult", "value": 0.5 }
+      {
+        "name": "Night Pollen",
+        "type": "Mult",
+        "value": 0.5
+      },
+      {
+        "name": "Night Capacity",
+        "type": "Mult",
+        "value": 0.5
+      }
     ],
-    "sources": [{ "type": "mixer" }]
+    "sources": [
+      {
+        "type": "mixer"
+      }
+    ]
   },
   {
     "id": "Spin Ticket",
@@ -936,9 +1577,14 @@
     "rarity": "Epic",
     "desc": "Used to spin the Lucky Wheel in the 25 Bee Zone.",
     "image": "images/items/Spin Ticket.png",
-    "order": 2.0,
+    "order": 2,
     "buffs": [],
-    "sources": [{ "type": "quest", "name": "Druid Bear" }]
+    "sources": [
+      {
+        "type": "quest",
+        "name": "Druid Bear"
+      }
+    ]
   },
   {
     "id": "Lunar Ticket",
@@ -947,12 +1593,19 @@
     "rarity": "Legendary",
     "desc": "Used to play lunar mini-game in the night time.",
     "image": "images/items/Lunar Ticket.png",
-    "order": 3.0,
+    "order": 3,
     "buffs": [],
-    "cost": ["200 Tickets"],
+    "cost": [
+      "200 Tickets"
+    ],
     "sources": [
-      { "type": "mixer" },
-      { "type": "dispenser", "name": "Lunar Ticket Dispenser" }
+      {
+        "type": "mixer"
+      },
+      {
+        "type": "dispenser",
+        "name": "Lunar Ticket Dispenser"
+      }
     ]
   },
   {
@@ -962,9 +1615,14 @@
     "rarity": "Mythic",
     "desc": "Used to craft Singularity Essence.",
     "image": "images/items/Lunar Shard.png",
-    "order": 6.0,
+    "order": 6,
     "buffs": [],
-    "sources": [{ "type": "shop", "name": "Lunar Minigame" }]
+    "sources": [
+      {
+        "type": "shop",
+        "name": "Lunar Minigame"
+      }
+    ]
   },
   {
     "id": "Singularity Essence",
@@ -973,8 +1631,318 @@
     "rarity": "Mythic",
     "desc": "Used to craft Lunar Bee.",
     "image": "images/items/Singularity Essence.png",
-    "order": 7.0,
+    "order": 7,
     "buffs": [],
-    "sources": [{ "type": "mixer" }]
+    "sources": [
+      {
+        "type": "mixer"
+      }
+    ]
+  },
+  {
+    "id": "Blossom Planter",
+    "name": "Blossom Planter",
+    "image": "images/items/Blossom Planter.png",
+    "sources": [],
+    "category": "Planters",
+    "rarity": "Mythic",
+    "desc": "Use it to put the Blossom Planter in a field.",
+    "order": 55
+  },
+  {
+    "id": "Lotus Planter",
+    "name": "Lotus Planter",
+    "image": "images/items/Lotus Planter.png",
+    "sources": [],
+    "category": "Planters",
+    "rarity": "Legendary",
+    "desc": "Use it to put the Lotus Planter in a field.",
+    "order": 54
+  },
+  {
+    "id": "Wisteria Planter",
+    "name": "Wisteria Planter",
+    "image": "images/items/Wisteria Planter.png",
+    "sources": [],
+    "category": "Planters",
+    "rarity": "Epic",
+    "desc": "Use it to put the Wisteria Planter in a field.",
+    "order": 53.1
+  },
+  {
+    "id": "Clover Planter",
+    "name": "Clover Planter",
+    "image": "images/items/Clover Planter.png",
+    "sources": [],
+    "category": "Planters",
+    "rarity": "Epic",
+    "desc": "Use it to put the Clover Planter in a field.",
+    "order": 52
+  },
+  {
+    "id": "Tree Pot Planter",
+    "name": "Tree Pot Planter",
+    "image": "images/items/Tree Pot Planter.png",
+    "sources": [],
+    "category": "Planters",
+    "rarity": "Epic",
+    "desc": "Use it to put the Tree Pot Planter in a field.",
+    "order": 51
+  },
+  {
+    "id": "Gardener's Bundle",
+    "name": "Gardener's Bundle",
+    "image": "images/items/Gardener's Bundle.png",
+    "sources": [],
+    "category": "Ingredients",
+    "rarity": "Mythic",
+    "desc": "Interesting material that used in magical crafts.",
+    "order": 8
+  },
+  {
+    "id": "Apple",
+    "name": "Apple",
+    "image": "images/items/Apple.png",
+    "sources": [],
+    "category": "Food",
+    "rarity": "Epic",
+    "desc": "Gives 250 XP when fed to a bee.",
+    "order": 5,
+    "xp": 250
+  },
+  {
+    "id": "Golden Apple",
+    "name": "Golden Apple",
+    "image": "images/items/Golden Apple.png",
+    "sources": [],
+    "category": "Food",
+    "rarity": "Legendary",
+    "desc": "Gives 2,500 XP when fed to a bee.",
+    "order": 3,
+    "xp": 2500
+  },
+  {
+    "id": "Carrot",
+    "name": "Carrot",
+    "image": "images/items/Carrot.png",
+    "sources": [],
+    "category": "Food",
+    "rarity": "Epic",
+    "desc": "Gives 500 XP when fed to a bee.",
+    "order": 4,
+    "xp": 500
+  },
+  {
+    "id": "Magic Carrot",
+    "name": "Magic Carrot",
+    "image": "images/items/Magic Carrot.png",
+    "sources": [],
+    "category": "Food",
+    "rarity": "Epic",
+    "desc": "Gives 500 XP when fed to a bee.",
+    "order": 4,
+    "xp": 500
+  },
+  {
+    "id": "Golden Carrot",
+    "name": "Golden Carrot",
+    "image": "images/items/Golden Carrot.png",
+    "sources": [],
+    "category": "Food",
+    "rarity": "Legendary",
+    "desc": "Gives 2,500 XP when fed to a bee.",
+    "order": 2,
+    "xp": 2500
+  },
+  {
+    "id": "Rich Apple Juice",
+    "name": "Rich Apple Juice",
+    "image": "images/items/Rich Apple Juice.png",
+    "sources": [
+      {
+        "type": "mixer"
+      }
+    ],
+    "category": "Consumables",
+    "rarity": "Legendary",
+    "desc": "Using this grants you awesome buffs for 40m.\n+(x2-x4) Field Boost to a field you stand on.",
+    "order": 5,
+    "buffs": [
+      {
+        "name": "Bee Attack",
+        "type": "Add",
+        "value": 4
+      },
+      {
+        "name": "Fire Pollen",
+        "type": "Mult",
+        "value": 1
+      },
+      {
+        "name": "Convert Amount",
+        "type": "Add",
+        "value": 85
+      },
+      {
+        "name": "Red Field Capacity",
+        "type": "Mult",
+        "value": 0.8
+      }
+    ],
+    "time": 2400
+  },
+  {
+    "id": "Foaming Carrot Juice",
+    "name": "Foaming Carrot Juice",
+    "image": "images/items/Foaming Carrot Juice.png",
+    "sources": [
+      {
+        "type": "mixer"
+      }
+    ],
+    "category": "Consumables",
+    "rarity": "Legendary",
+    "desc": "Using this grants you awesome buffs for 55m.",
+    "order": 5,
+    "buffs": [
+      {
+        "name": "Capacity Bonus",
+        "type": "Mult",
+        "value": 1
+      },
+      {
+        "name": "Energy Bonus",
+        "type": "Mult",
+        "value": 1
+      },
+      {
+        "name": "Movespeed",
+        "type": "Mult",
+        "value": 0.4
+      },
+      {
+        "name": "Red Pollen",
+        "type": "Mult",
+        "value": 1
+      },
+      {
+        "name": "White Pollen",
+        "type": "Mult",
+        "value": 1
+      },
+      {
+        "name": "Blue Pollen",
+        "type": "Mult",
+        "value": 1
+      },
+      {
+        "name": "Honey Bonus",
+        "type": "Mult",
+        "value": 0.3
+      },
+      {
+        "name": "Convert Rate",
+        "type": "Mult",
+        "value": 2
+      },
+      {
+        "name": "Convert Amount",
+        "type": "Add",
+        "value": 50
+      },
+      {
+        "name": "Critical Power",
+        "type": "Mult",
+        "value": 1
+      },
+      {
+        "name": "Critical Chance",
+        "type": "Perc",
+        "value": 15
+      }
+    ],
+    "time": 3300
+  },
+  {
+    "id": "Pot’O’Vegetation",
+    "name": "Pot’O’Vegetation",
+    "image": "images/items/Pot’O’Vegetation.png",
+    "sources": [
+      {
+        "type": "mixer"
+      }
+    ],
+    "category": "Consumables",
+    "rarity": "Legendary",
+    "desc": "Using this grants you overpowered buffs for 2h.",
+    "order": 4,
+    "buffs": [
+      {
+        "name": "Capacity Bonus",
+        "type": "Mult",
+        "value": 2.5
+      },
+      {
+        "name": "Energy Bonus",
+        "type": "Mult",
+        "value": 2.5
+      },
+      {
+        "name": "Movespeed",
+        "type": "Mult",
+        "value": 0.6
+      },
+      {
+        "name": "Pollen",
+        "type": "Mult",
+        "value": 0.8
+      },
+      {
+        "name": "Red Pollen",
+        "type": "Mult",
+        "value": 2
+      },
+      {
+        "name": "White Pollen",
+        "type": "Mult",
+        "value": 2
+      },
+      {
+        "name": "Blue Pollen",
+        "type": "Mult",
+        "value": 2
+      },
+      {
+        "name": "Honey Bonus",
+        "type": "Mult",
+        "value": 0.5
+      },
+      {
+        "name": "Convert Rate",
+        "type": "Mult",
+        "value": 3
+      },
+      {
+        "name": "Convert Amount",
+        "type": "Add",
+        "value": 100
+      },
+      {
+        "name": "Critical Power",
+        "type": "Mult",
+        "value": 1.5
+      },
+      {
+        "name": "Critical Chance",
+        "type": "Perc",
+        "value": 20
+      },
+      {
+        "name": "Bee Ability Rate",
+        "type": "Perc",
+        "value": 15
+      }
+    ],
+    "time": 7200
   }
 ]

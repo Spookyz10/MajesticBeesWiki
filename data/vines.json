@@ -15,37 +15,43 @@
             "item": "Pine Cone",
             "weight": 15,
             "amount": 1,
-            "image": "images/items/Pine Cone.png"
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
           },
           {
             "item": "Wind Essence",
             "weight": 5,
             "amount": 1,
-            "image": "images/items/Wind Essence.png"
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 1,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 100,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 1,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/items/Ticket.png",
+            "source": "all"
           }
         ],
         "Blue Field": [
@@ -53,37 +59,43 @@
             "item": "Blueberry",
             "weight": 15,
             "amount": 1,
-            "image": "images/items/Blueberry.png"
+            "image": "images/items/Blueberry.png",
+            "source": "field"
           },
           {
             "item": "Water Essence",
             "weight": 5,
             "amount": 1,
-            "image": "images/items/Water Essence.png"
+            "image": "images/items/Water Essence.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 1,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 100,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 1,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/items/Ticket.png",
+            "source": "all"
           }
         ],
         "Red Field": [
@@ -91,169 +103,228 @@
             "item": "Strawberry",
             "weight": 15,
             "amount": 1,
-            "image": "images/items/Strawberry.png"
+            "image": "images/items/Strawberry.png",
+            "source": "field"
           },
           {
             "item": "Fire Essence",
             "weight": 5,
             "amount": 1,
-            "image": "images/items/Fire Essence.png"
+            "image": "images/items/Fire Essence.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 1,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 100,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 1,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
-          }
-        ],
-        "Coconut Field": [
-          {
-            "item": "Pine Cone",
-            "weight": 15,
-            "amount": 1,
-            "image": "images/items/Pine Cone.png"
-          },
-          {
-            "item": "Wind Essence",
-            "weight": 5,
-            "amount": 1,
-            "image": "images/items/Wind Essence.png"
-          },
-          {
-            "item": "Seed",
-            "weight": 15,
-            "amount": 1,
-            "image": "images/items/Seed.png"
-          },
-          {
-            "item": "Honey",
-            "weight": 15,
-            "amount": 100,
-            "image": "images/currencies/Honey.png"
-          },
-          {
-            "item": "Treat",
-            "weight": 10,
-            "amount": 1,
-            "image": "images/items/Treat.png"
-          },
-          {
-            "item": "Ticket",
-            "weight": 1,
-            "amount": 1,
-            "image": "images/currencies/Ticket.png"
-          },
-          {
-            "item": "Coconut",
-            "weight": 15,
-            "amount": 1,
-            "image": "images/items/Coconut.png"
+            "image": "images/items/Ticket.png",
+            "source": "all"
           }
         ],
         "Bamboo Field": [
           {
-            "item": "Pine Cone",
+            "item": "Bamboo",
             "weight": 15,
             "amount": 1,
-            "image": "images/items/Pine Cone.png"
-          },
-          {
-            "item": "Wind Essence",
-            "weight": 5,
-            "amount": 1,
-            "image": "images/items/Wind Essence.png"
+            "image": "images/items/Bamboo.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 1,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 100,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 1,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
-          },
+            "image": "images/items/Ticket.png",
+            "source": "all"
+          }
+        ],
+        "Coconut Field": [
           {
-            "item": "Bamboo",
+            "item": "Coconut",
             "weight": 15,
             "amount": 1,
-            "image": "images/items/Bamboo.png"
+            "image": "images/items/Coconut.png",
+            "source": "field"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 1,
+            "image": "images/items/Seed.png",
+            "source": "all"
+          },
+          {
+            "item": "Honey",
+            "weight": 15,
+            "amount": 100,
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Treat",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Treat.png",
+            "source": "all"
+          },
+          {
+            "item": "Ticket",
+            "weight": 1,
+            "amount": 1,
+            "image": "images/items/Ticket.png",
+            "source": "all"
           }
         ],
         "Lemon Field": [
           {
-            "item": "Blueberry",
+            "item": "Lemon",
             "weight": 15,
             "amount": 1,
-            "image": "images/items/Blueberry.png"
-          },
-          {
-            "item": "Water Essence",
-            "weight": 5,
-            "amount": 1,
-            "image": "images/items/Water Essence.png"
+            "image": "images/items/Lemon.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 1,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 100,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 1,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
-          },
+            "image": "images/items/Ticket.png",
+            "source": "all"
+          }
+        ],
+        "Carrot Field": [
           {
-            "item": "Lemon",
+            "item": "Carrot",
             "weight": 15,
             "amount": 1,
-            "image": "images/items/Lemon.png"
+            "image": "images/items/Carrot.png",
+            "source": "field"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 1,
+            "image": "images/items/Seed.png",
+            "source": "all"
+          },
+          {
+            "item": "Honey",
+            "weight": 15,
+            "amount": 100,
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Treat",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Treat.png",
+            "source": "all"
+          },
+          {
+            "item": "Ticket",
+            "weight": 1,
+            "amount": 1,
+            "image": "images/items/Ticket.png",
+            "source": "all"
+          }
+        ],
+        "Apple Field": [
+          {
+            "item": "Apple",
+            "weight": 15,
+            "amount": 1,
+            "image": "images/items/Apple.png",
+            "source": "field"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 1,
+            "image": "images/items/Seed.png",
+            "source": "all"
+          },
+          {
+            "item": "Honey",
+            "weight": 15,
+            "amount": 100,
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Treat",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Treat.png",
+            "source": "all"
+          },
+          {
+            "item": "Ticket",
+            "weight": 1,
+            "amount": 1,
+            "image": "images/items/Ticket.png",
+            "source": "all"
           }
         ]
       }
@@ -273,43 +344,50 @@
             "item": "Pine Cone",
             "weight": 15,
             "amount": 2,
-            "image": "images/items/Pine Cone.png"
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
           },
           {
             "item": "Wind Essence",
             "weight": 5,
             "amount": 1,
-            "image": "images/items/Wind Essence.png"
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 2,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 255,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
             "weight": 10,
             "amount": 3,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 2,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/items/Ticket.png",
+            "source": "all"
           }
         ],
         "Blue Field": [
@@ -317,43 +395,50 @@
             "item": "Blueberry",
             "weight": 15,
             "amount": 2,
-            "image": "images/items/Blueberry.png"
+            "image": "images/items/Blueberry.png",
+            "source": "field"
           },
           {
             "item": "Water Essence",
             "weight": 5,
             "amount": 1,
-            "image": "images/items/Water Essence.png"
+            "image": "images/items/Water Essence.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 2,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 255,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
             "weight": 10,
             "amount": 3,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 2,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/items/Ticket.png",
+            "source": "all"
           }
         ],
         "Red Field": [
@@ -361,193 +446,270 @@
             "item": "Strawberry",
             "weight": 15,
             "amount": 2,
-            "image": "images/items/Strawberry.png"
+            "image": "images/items/Strawberry.png",
+            "source": "field"
           },
           {
             "item": "Fire Essence",
             "weight": 5,
             "amount": 1,
-            "image": "images/items/Fire Essence.png"
+            "image": "images/items/Fire Essence.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 2,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 255,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
             "weight": 10,
             "amount": 3,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 2,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
-          }
-        ],
-        "Coconut Field": [
-          {
-            "item": "Pine Cone",
-            "weight": 15,
-            "amount": 2,
-            "image": "images/items/Pine Cone.png"
-          },
-          {
-            "item": "Wind Essence",
-            "weight": 5,
-            "amount": 1,
-            "image": "images/items/Wind Essence.png"
-          },
-          {
-            "item": "Seed",
-            "weight": 15,
-            "amount": 2,
-            "image": "images/items/Seed.png"
-          },
-          {
-            "item": "Honey",
-            "weight": 15,
-            "amount": 255,
-            "image": "images/currencies/Honey.png"
-          },
-          {
-            "item": "Treat",
-            "weight": 10,
-            "amount": 3,
-            "image": "images/items/Treat.png"
-          },
-          {
-            "item": "Royal Jelly",
-            "weight": 10,
-            "amount": 1,
-            "image": "images/items/Royal Jelly.png"
-          },
-          {
-            "item": "Ticket",
-            "weight": 2,
-            "amount": 1,
-            "image": "images/currencies/Ticket.png"
-          },
-          {
-            "item": "Coconut",
-            "weight": 15,
-            "amount": 1,
-            "image": "images/items/Coconut.png"
+            "image": "images/items/Ticket.png",
+            "source": "all"
           }
         ],
         "Bamboo Field": [
           {
-            "item": "Pine Cone",
+            "item": "Bamboo",
             "weight": 15,
-            "amount": 2,
-            "image": "images/items/Pine Cone.png"
-          },
-          {
-            "item": "Wind Essence",
-            "weight": 5,
             "amount": 1,
-            "image": "images/items/Wind Essence.png"
+            "image": "images/items/Bamboo.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 2,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 255,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
             "weight": 10,
             "amount": 3,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 2,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
-          },
+            "image": "images/items/Ticket.png",
+            "source": "all"
+          }
+        ],
+        "Coconut Field": [
           {
-            "item": "Bamboo",
+            "item": "Coconut",
             "weight": 15,
             "amount": 1,
-            "image": "images/items/Bamboo.png"
+            "image": "images/items/Coconut.png",
+            "source": "field"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Seed.png",
+            "source": "all"
+          },
+          {
+            "item": "Honey",
+            "weight": 15,
+            "amount": 255,
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Treat",
+            "weight": 10,
+            "amount": 3,
+            "image": "images/items/Treat.png",
+            "source": "all"
+          },
+          {
+            "item": "Royal Jelly",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
+          },
+          {
+            "item": "Ticket",
+            "weight": 2,
+            "amount": 1,
+            "image": "images/items/Ticket.png",
+            "source": "all"
           }
         ],
         "Lemon Field": [
           {
-            "item": "Blueberry",
+            "item": "Lemon",
             "weight": 15,
-            "amount": 2,
-            "image": "images/items/Blueberry.png"
-          },
-          {
-            "item": "Water Essence",
-            "weight": 5,
             "amount": 1,
-            "image": "images/items/Water Essence.png"
+            "image": "images/items/Lemon.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 2,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 255,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
             "weight": 10,
             "amount": 3,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 2,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
-          },
+            "image": "images/items/Ticket.png",
+            "source": "all"
+          }
+        ],
+        "Carrot Field": [
           {
-            "item": "Lemon",
+            "item": "Carrot",
             "weight": 15,
             "amount": 1,
-            "image": "images/items/Lemon.png"
+            "image": "images/items/Carrot.png",
+            "source": "field"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Seed.png",
+            "source": "all"
+          },
+          {
+            "item": "Honey",
+            "weight": 15,
+            "amount": 255,
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Treat",
+            "weight": 10,
+            "amount": 3,
+            "image": "images/items/Treat.png",
+            "source": "all"
+          },
+          {
+            "item": "Royal Jelly",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
+          },
+          {
+            "item": "Ticket",
+            "weight": 2,
+            "amount": 1,
+            "image": "images/items/Ticket.png",
+            "source": "all"
+          }
+        ],
+        "Apple Field": [
+          {
+            "item": "Apple",
+            "weight": 15,
+            "amount": 1,
+            "image": "images/items/Apple.png",
+            "source": "field"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Seed.png",
+            "source": "all"
+          },
+          {
+            "item": "Honey",
+            "weight": 15,
+            "amount": 255,
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Treat",
+            "weight": 10,
+            "amount": 3,
+            "image": "images/items/Treat.png",
+            "source": "all"
+          },
+          {
+            "item": "Royal Jelly",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
+          },
+          {
+            "item": "Ticket",
+            "weight": 2,
+            "amount": 1,
+            "image": "images/items/Ticket.png",
+            "source": "all"
           }
         ]
       }
@@ -567,43 +729,50 @@
             "item": "Pine Cone",
             "weight": 15,
             "amount": 2,
-            "image": "images/items/Pine Cone.png"
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
           },
           {
             "item": "Wind Essence",
             "weight": 5,
             "amount": 1,
-            "image": "images/items/Wind Essence.png"
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 2,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 755,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
             "weight": 10,
             "amount": 6,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
             "weight": 20,
             "amount": 2,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 3,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/items/Ticket.png",
+            "source": "all"
           }
         ],
         "Blue Field": [
@@ -611,43 +780,50 @@
             "item": "Blueberry",
             "weight": 15,
             "amount": 2,
-            "image": "images/items/Blueberry.png"
+            "image": "images/items/Blueberry.png",
+            "source": "field"
           },
           {
             "item": "Water Essence",
             "weight": 5,
             "amount": 1,
-            "image": "images/items/Water Essence.png"
+            "image": "images/items/Water Essence.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 2,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 755,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
             "weight": 10,
             "amount": 6,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
             "weight": 20,
             "amount": 2,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 3,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/items/Ticket.png",
+            "source": "all"
           }
         ],
         "Red Field": [
@@ -655,193 +831,277 @@
             "item": "Strawberry",
             "weight": 15,
             "amount": 2,
-            "image": "images/items/Strawberry.png"
+            "image": "images/items/Strawberry.png",
+            "source": "field"
           },
           {
             "item": "Fire Essence",
             "weight": 5,
             "amount": 1,
-            "image": "images/items/Fire Essence.png"
+            "image": "images/items/Fire Essence.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 2,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 755,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
             "weight": 10,
             "amount": 6,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
             "weight": 20,
             "amount": 2,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 3,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
-          }
-        ],
-        "Coconut Field": [
-          {
-            "item": "Pine Cone",
-            "weight": 15,
-            "amount": 2,
-            "image": "images/items/Pine Cone.png"
-          },
-          {
-            "item": "Wind Essence",
-            "weight": 5,
-            "amount": 1,
-            "image": "images/items/Wind Essence.png"
-          },
-          {
-            "item": "Seed",
-            "weight": 15,
-            "amount": 2,
-            "image": "images/items/Seed.png"
-          },
-          {
-            "item": "Honey",
-            "weight": 15,
-            "amount": 755,
-            "image": "images/currencies/Honey.png"
-          },
-          {
-            "item": "Treat",
-            "weight": 10,
-            "amount": 6,
-            "image": "images/items/Treat.png"
-          },
-          {
-            "item": "Royal Jelly",
-            "weight": 20,
-            "amount": 2,
-            "image": "images/items/Royal Jelly.png"
-          },
-          {
-            "item": "Ticket",
-            "weight": 3,
-            "amount": 1,
-            "image": "images/currencies/Ticket.png"
-          },
-          {
-            "item": "Coconut",
-            "weight": 15,
-            "amount": 2,
-            "image": "images/items/Coconut.png"
+            "image": "images/items/Ticket.png",
+            "source": "all"
           }
         ],
         "Bamboo Field": [
           {
-            "item": "Pine Cone",
+            "item": "Bamboo",
             "weight": 15,
             "amount": 2,
-            "image": "images/items/Pine Cone.png"
-          },
-          {
-            "item": "Wind Essence",
-            "weight": 5,
-            "amount": 1,
-            "image": "images/items/Wind Essence.png"
+            "image": "images/items/Bamboo.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 2,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 755,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
             "weight": 10,
             "amount": 6,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
             "weight": 20,
             "amount": 2,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 3,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
-          },
+            "image": "images/items/Ticket.png",
+            "source": "all"
+          }
+        ],
+        "Coconut Field": [
           {
-            "item": "Bamboo",
+            "item": "Coconut",
             "weight": 15,
             "amount": 2,
-            "image": "images/items/Bamboo.png"
+            "image": "images/items/Coconut.png",
+            "source": "field"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Seed.png",
+            "source": "all"
+          },
+          {
+            "item": "Honey",
+            "weight": 15,
+            "amount": 755,
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Treat",
+            "weight": 10,
+            "amount": 6,
+            "image": "images/items/Treat.png",
+            "source": "all"
+          },
+          {
+            "item": "Royal Jelly",
+            "weight": 20,
+            "amount": 2,
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
+          },
+          {
+            "item": "Ticket",
+            "weight": 3,
+            "amount": 1,
+            "image": "images/items/Ticket.png",
+            "source": "all"
           }
         ],
         "Lemon Field": [
           {
-            "item": "Blueberry",
+            "item": "Lemon",
             "weight": 15,
             "amount": 2,
-            "image": "images/items/Blueberry.png"
-          },
-          {
-            "item": "Water Essence",
-            "weight": 5,
-            "amount": 1,
-            "image": "images/items/Water Essence.png"
+            "image": "images/items/Lemon.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 2,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 755,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
             "weight": 10,
             "amount": 6,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
             "weight": 20,
             "amount": 2,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 3,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
-          },
+            "image": "images/items/Ticket.png",
+            "source": "all"
+          }
+        ],
+        "Carrot Field": [
           {
-            "item": "Lemon",
+            "item": "Carrot",
             "weight": 15,
             "amount": 2,
-            "image": "images/items/Lemon.png"
+            "image": "images/items/Carrot.png",
+            "source": "field"
+          },
+          {
+            "item": "Magic Carrot",
+            "weight": 2,
+            "amount": 1,
+            "image": "images/items/Magic Carrot.png",
+            "source": "field"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Seed.png",
+            "source": "all"
+          },
+          {
+            "item": "Honey",
+            "weight": 15,
+            "amount": 755,
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Treat",
+            "weight": 10,
+            "amount": 6,
+            "image": "images/items/Treat.png",
+            "source": "all"
+          },
+          {
+            "item": "Royal Jelly",
+            "weight": 20,
+            "amount": 2,
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
+          },
+          {
+            "item": "Ticket",
+            "weight": 3,
+            "amount": 1,
+            "image": "images/items/Ticket.png",
+            "source": "all"
+          }
+        ],
+        "Apple Field": [
+          {
+            "item": "Apple",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Apple.png",
+            "source": "field"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 2,
+            "image": "images/items/Seed.png",
+            "source": "all"
+          },
+          {
+            "item": "Honey",
+            "weight": 15,
+            "amount": 755,
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Treat",
+            "weight": 10,
+            "amount": 6,
+            "image": "images/items/Treat.png",
+            "source": "all"
+          },
+          {
+            "item": "Royal Jelly",
+            "weight": 20,
+            "amount": 2,
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
+          },
+          {
+            "item": "Ticket",
+            "weight": 3,
+            "amount": 1,
+            "image": "images/items/Ticket.png",
+            "source": "all"
           }
         ]
       }
@@ -861,49 +1121,57 @@
             "item": "Pine Cone",
             "weight": 15,
             "amount": 3,
-            "image": "images/items/Pine Cone.png"
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
           },
           {
             "item": "Wind Essence",
             "weight": 5,
             "amount": 2,
-            "image": "images/items/Wind Essence.png"
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 3,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Silver Egg",
             "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Silver Egg.png"
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 2500,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
             "weight": 10,
             "amount": 6,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
             "weight": 20,
             "amount": 3,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 3,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/items/Ticket.png",
+            "source": "all"
           }
         ],
         "Blue Field": [
@@ -911,49 +1179,57 @@
             "item": "Blueberry",
             "weight": 15,
             "amount": 3,
-            "image": "images/items/Blueberry.png"
+            "image": "images/items/Blueberry.png",
+            "source": "field"
           },
           {
             "item": "Water Essence",
             "weight": 5,
             "amount": 2,
-            "image": "images/items/Water Essence.png"
+            "image": "images/items/Water Essence.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 3,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Silver Egg",
             "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Silver Egg.png"
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 2500,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
             "weight": 10,
             "amount": 6,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
             "weight": 20,
             "amount": 3,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 3,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/items/Ticket.png",
+            "source": "all"
           }
         ],
         "Red Field": [
@@ -961,217 +1237,333 @@
             "item": "Strawberry",
             "weight": 15,
             "amount": 3,
-            "image": "images/items/Strawberry.png"
+            "image": "images/items/Strawberry.png",
+            "source": "field"
           },
           {
             "item": "Fire Essence",
             "weight": 5,
             "amount": 2,
-            "image": "images/items/Fire Essence.png"
+            "image": "images/items/Fire Essence.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 3,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Silver Egg",
             "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Silver Egg.png"
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 2500,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
             "weight": 10,
             "amount": 6,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
             "weight": 20,
             "amount": 3,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 3,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
-          }
-        ],
-        "Coconut Field": [
-          {
-            "item": "Pine Cone",
-            "weight": 15,
-            "amount": 3,
-            "image": "images/items/Pine Cone.png"
-          },
-          {
-            "item": "Wind Essence",
-            "weight": 5,
-            "amount": 2,
-            "image": "images/items/Wind Essence.png"
-          },
-          {
-            "item": "Seed",
-            "weight": 15,
-            "amount": 3,
-            "image": "images/items/Seed.png"
-          },
-          {
-            "item": "Silver Egg",
-            "weight": 0.2,
-            "amount": 1,
-            "image": "images/items/Silver Egg.png"
-          },
-          {
-            "item": "Honey",
-            "weight": 15,
-            "amount": 2500,
-            "image": "images/currencies/Honey.png"
-          },
-          {
-            "item": "Treat",
-            "weight": 10,
-            "amount": 6,
-            "image": "images/items/Treat.png"
-          },
-          {
-            "item": "Royal Jelly",
-            "weight": 20,
-            "amount": 3,
-            "image": "images/items/Royal Jelly.png"
-          },
-          {
-            "item": "Ticket",
-            "weight": 3,
-            "amount": 1,
-            "image": "images/currencies/Ticket.png"
-          },
-          {
-            "item": "Coconut",
-            "weight": 15,
-            "amount": 3,
-            "image": "images/items/Coconut.png"
+            "image": "images/items/Ticket.png",
+            "source": "all"
           }
         ],
         "Bamboo Field": [
           {
-            "item": "Pine Cone",
+            "item": "Bamboo",
             "weight": 15,
-            "amount": 3,
-            "image": "images/items/Pine Cone.png"
-          },
-          {
-            "item": "Wind Essence",
-            "weight": 5,
             "amount": 2,
-            "image": "images/items/Wind Essence.png"
+            "image": "images/items/Bamboo.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 3,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Silver Egg",
             "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Silver Egg.png"
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 2500,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
             "weight": 10,
             "amount": 6,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
             "weight": 20,
             "amount": 3,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 3,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/items/Ticket.png",
+            "source": "all"
+          }
+        ],
+        "Coconut Field": [
+          {
+            "item": "Coconut",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Coconut.png",
+            "source": "field"
           },
           {
-            "item": "Bamboo",
+            "item": "Seed",
             "weight": 15,
-            "amount": 2,
-            "image": "images/items/Bamboo.png"
+            "amount": 3,
+            "image": "images/items/Seed.png",
+            "source": "all"
+          },
+          {
+            "item": "Silver Egg",
+            "weight": 0.2,
+            "amount": 1,
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Honey",
+            "weight": 15,
+            "amount": 2500,
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Treat",
+            "weight": 10,
+            "amount": 6,
+            "image": "images/items/Treat.png",
+            "source": "all"
+          },
+          {
+            "item": "Royal Jelly",
+            "weight": 20,
+            "amount": 3,
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
+          },
+          {
+            "item": "Ticket",
+            "weight": 3,
+            "amount": 1,
+            "image": "images/items/Ticket.png",
+            "source": "all"
           }
         ],
         "Lemon Field": [
           {
-            "item": "Blueberry",
+            "item": "Lemon",
             "weight": 15,
             "amount": 3,
-            "image": "images/items/Blueberry.png"
-          },
-          {
-            "item": "Water Essence",
-            "weight": 5,
-            "amount": 2,
-            "image": "images/items/Water Essence.png"
+            "image": "images/items/Lemon.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 3,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Silver Egg",
             "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Silver Egg.png"
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 2500,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Treat",
             "weight": 10,
             "amount": 6,
-            "image": "images/items/Treat.png"
+            "image": "images/items/Treat.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
             "weight": 20,
             "amount": 3,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 3,
             "amount": 1,
-            "image": "images/currencies/Ticket.png"
-          },
+            "image": "images/items/Ticket.png",
+            "source": "all"
+          }
+        ],
+        "Carrot Field": [
           {
-            "item": "Lemon",
+            "item": "Carrot",
             "weight": 15,
             "amount": 3,
-            "image": "images/items/Lemon.png"
+            "image": "images/items/Carrot.png",
+            "source": "field"
+          },
+          {
+            "item": "Golden Carrot",
+            "weight": 2,
+            "amount": 1,
+            "image": "images/items/Golden Carrot.png",
+            "source": "field"
+          },
+          {
+            "item": "Magic Carrot",
+            "weight": 2,
+            "amount": 1,
+            "image": "images/items/Magic Carrot.png",
+            "source": "field"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Seed.png",
+            "source": "all"
+          },
+          {
+            "item": "Silver Egg",
+            "weight": 0.2,
+            "amount": 1,
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Honey",
+            "weight": 15,
+            "amount": 2500,
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Treat",
+            "weight": 10,
+            "amount": 6,
+            "image": "images/items/Treat.png",
+            "source": "all"
+          },
+          {
+            "item": "Royal Jelly",
+            "weight": 20,
+            "amount": 3,
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
+          },
+          {
+            "item": "Ticket",
+            "weight": 3,
+            "amount": 1,
+            "image": "images/items/Ticket.png",
+            "source": "all"
+          }
+        ],
+        "Apple Field": [
+          {
+            "item": "Apple",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Apple.png",
+            "source": "field"
+          },
+          {
+            "item": "Golden Apple",
+            "weight": 2,
+            "amount": 1,
+            "image": "images/items/Golden Apple.png",
+            "source": "field"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Seed.png",
+            "source": "all"
+          },
+          {
+            "item": "Silver Egg",
+            "weight": 0.2,
+            "amount": 1,
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Honey",
+            "weight": 15,
+            "amount": 2500,
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Treat",
+            "weight": 10,
+            "amount": 6,
+            "image": "images/items/Treat.png",
+            "source": "all"
+          },
+          {
+            "item": "Royal Jelly",
+            "weight": 20,
+            "amount": 3,
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
+          },
+          {
+            "item": "Ticket",
+            "weight": 3,
+            "amount": 1,
+            "image": "images/items/Ticket.png",
+            "source": "all"
           }
         ]
       }
@@ -1191,85 +1583,99 @@
             "item": "Pine Cone",
             "weight": 15,
             "amount": 3,
-            "image": "images/items/Pine Cone.png"
+            "image": "images/items/Pine Cone.png",
+            "source": "field"
           },
           {
             "item": "Wind Essence",
             "weight": 5,
             "amount": 2,
-            "image": "images/items/Wind Essence.png"
+            "image": "images/items/Wind Essence.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 3,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 7777,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Seed Oil",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Seed Oil.png"
+            "image": "images/items/Seed Oil.png",
+            "source": "all"
           },
           {
             "item": "Strawberry Extract",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Strawberry Extract.png"
+            "image": "images/items/Strawberry Extract.png",
+            "source": "all"
           },
           {
             "item": "Blueberry Extract",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Blueberry Extract.png"
+            "image": "images/items/Blueberry Extract.png",
+            "source": "all"
           },
           {
             "item": "Cone Extract",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Cone Extract.png"
+            "image": "images/items/Cone Extract.png",
+            "source": "all"
           },
           {
             "item": "Silver Egg",
             "weight": 0.3,
             "amount": 1,
-            "image": "images/items/Silver Egg.png"
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
           },
           {
             "item": "Gold Egg",
             "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Gold Egg.png"
+            "image": "images/items/Gold Egg.png",
+            "source": "all"
           },
           {
             "item": "Diamond Egg",
             "weight": 0.1,
             "amount": 1,
-            "image": "images/items/Diamond Egg.png"
+            "image": "images/items/Diamond Egg.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
             "weight": 35,
             "amount": 5,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 3,
             "amount": 2,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/items/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
             "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
           }
         ],
         "Blue Field": [
@@ -1277,85 +1683,99 @@
             "item": "Blueberry",
             "weight": 15,
             "amount": 3,
-            "image": "images/items/Blueberry.png"
+            "image": "images/items/Blueberry.png",
+            "source": "field"
           },
           {
             "item": "Water Essence",
             "weight": 5,
             "amount": 2,
-            "image": "images/items/Water Essence.png"
+            "image": "images/items/Water Essence.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 3,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 7777,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Seed Oil",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Seed Oil.png"
+            "image": "images/items/Seed Oil.png",
+            "source": "all"
           },
           {
             "item": "Strawberry Extract",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Strawberry Extract.png"
+            "image": "images/items/Strawberry Extract.png",
+            "source": "all"
           },
           {
             "item": "Blueberry Extract",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Blueberry Extract.png"
+            "image": "images/items/Blueberry Extract.png",
+            "source": "all"
           },
           {
             "item": "Cone Extract",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Cone Extract.png"
+            "image": "images/items/Cone Extract.png",
+            "source": "all"
           },
           {
             "item": "Silver Egg",
             "weight": 0.3,
             "amount": 1,
-            "image": "images/items/Silver Egg.png"
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
           },
           {
             "item": "Gold Egg",
             "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Gold Egg.png"
+            "image": "images/items/Gold Egg.png",
+            "source": "all"
           },
           {
             "item": "Diamond Egg",
             "weight": 0.1,
             "amount": 1,
-            "image": "images/items/Diamond Egg.png"
+            "image": "images/items/Diamond Egg.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
             "weight": 35,
             "amount": 5,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 3,
             "amount": 2,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/items/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
             "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
           }
         ],
         "Red Field": [
@@ -1363,361 +1783,585 @@
             "item": "Strawberry",
             "weight": 15,
             "amount": 3,
-            "image": "images/items/Strawberry.png"
+            "image": "images/items/Strawberry.png",
+            "source": "field"
           },
           {
             "item": "Fire Essence",
             "weight": 5,
             "amount": 2,
-            "image": "images/items/Fire Essence.png"
+            "image": "images/items/Fire Essence.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 3,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 7777,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Seed Oil",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Seed Oil.png"
+            "image": "images/items/Seed Oil.png",
+            "source": "all"
           },
           {
             "item": "Strawberry Extract",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Strawberry Extract.png"
+            "image": "images/items/Strawberry Extract.png",
+            "source": "all"
           },
           {
             "item": "Blueberry Extract",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Blueberry Extract.png"
+            "image": "images/items/Blueberry Extract.png",
+            "source": "all"
           },
           {
             "item": "Cone Extract",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Cone Extract.png"
+            "image": "images/items/Cone Extract.png",
+            "source": "all"
           },
           {
             "item": "Silver Egg",
             "weight": 0.3,
             "amount": 1,
-            "image": "images/items/Silver Egg.png"
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
           },
           {
             "item": "Gold Egg",
             "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Gold Egg.png"
+            "image": "images/items/Gold Egg.png",
+            "source": "all"
           },
           {
             "item": "Diamond Egg",
             "weight": 0.1,
             "amount": 1,
-            "image": "images/items/Diamond Egg.png"
+            "image": "images/items/Diamond Egg.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
             "weight": 35,
             "amount": 5,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 3,
             "amount": 2,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/items/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
             "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
-          }
-        ],
-        "Coconut Field": [
-          {
-            "item": "Pine Cone",
-            "weight": 15,
-            "amount": 3,
-            "image": "images/items/Pine Cone.png"
-          },
-          {
-            "item": "Wind Essence",
-            "weight": 5,
-            "amount": 2,
-            "image": "images/items/Wind Essence.png"
-          },
-          {
-            "item": "Seed",
-            "weight": 15,
-            "amount": 3,
-            "image": "images/items/Seed.png"
-          },
-          {
-            "item": "Honey",
-            "weight": 15,
-            "amount": 7777,
-            "image": "images/currencies/Honey.png"
-          },
-          {
-            "item": "Seed Oil",
-            "weight": 10,
-            "amount": 1,
-            "image": "images/items/Seed Oil.png"
-          },
-          {
-            "item": "Strawberry Extract",
-            "weight": 10,
-            "amount": 1,
-            "image": "images/items/Strawberry Extract.png"
-          },
-          {
-            "item": "Blueberry Extract",
-            "weight": 10,
-            "amount": 1,
-            "image": "images/items/Blueberry Extract.png"
-          },
-          {
-            "item": "Cone Extract",
-            "weight": 10,
-            "amount": 1,
-            "image": "images/items/Cone Extract.png"
-          },
-          {
-            "item": "Silver Egg",
-            "weight": 0.3,
-            "amount": 1,
-            "image": "images/items/Silver Egg.png"
-          },
-          {
-            "item": "Gold Egg",
-            "weight": 0.2,
-            "amount": 1,
-            "image": "images/items/Gold Egg.png"
-          },
-          {
-            "item": "Diamond Egg",
-            "weight": 0.1,
-            "amount": 1,
-            "image": "images/items/Diamond Egg.png"
-          },
-          {
-            "item": "Royal Jelly",
-            "weight": 35,
-            "amount": 5,
-            "image": "images/items/Royal Jelly.png"
-          },
-          {
-            "item": "Ticket",
-            "weight": 3,
-            "amount": 2,
-            "image": "images/currencies/Ticket.png"
-          },
-          {
-            "item": "Sticker Egg",
-            "weight": 0.2,
-            "amount": 1,
-            "image": "images/items/Sticker Egg.png"
-          },
-          {
-            "item": "Coconut",
-            "weight": 15,
-            "amount": 3,
-            "image": "images/items/Coconut.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
           }
         ],
         "Bamboo Field": [
           {
-            "item": "Pine Cone",
+            "item": "Bamboo",
             "weight": 15,
-            "amount": 3,
-            "image": "images/items/Pine Cone.png"
-          },
-          {
-            "item": "Wind Essence",
-            "weight": 5,
             "amount": 2,
-            "image": "images/items/Wind Essence.png"
+            "image": "images/items/Bamboo.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 3,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 7777,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Seed Oil",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Seed Oil.png"
+            "image": "images/items/Seed Oil.png",
+            "source": "all"
           },
           {
             "item": "Strawberry Extract",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Strawberry Extract.png"
+            "image": "images/items/Strawberry Extract.png",
+            "source": "all"
           },
           {
             "item": "Blueberry Extract",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Blueberry Extract.png"
+            "image": "images/items/Blueberry Extract.png",
+            "source": "all"
           },
           {
             "item": "Cone Extract",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Cone Extract.png"
+            "image": "images/items/Cone Extract.png",
+            "source": "all"
           },
           {
             "item": "Silver Egg",
             "weight": 0.3,
             "amount": 1,
-            "image": "images/items/Silver Egg.png"
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
           },
           {
             "item": "Gold Egg",
             "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Gold Egg.png"
+            "image": "images/items/Gold Egg.png",
+            "source": "all"
           },
           {
             "item": "Diamond Egg",
             "weight": 0.1,
             "amount": 1,
-            "image": "images/items/Diamond Egg.png"
+            "image": "images/items/Diamond Egg.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
             "weight": 35,
             "amount": 5,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 3,
             "amount": 2,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/items/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
             "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
+          }
+        ],
+        "Coconut Field": [
+          {
+            "item": "Coconut",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Coconut.png",
+            "source": "field"
           },
           {
-            "item": "Bamboo",
+            "item": "Seed",
             "weight": 15,
+            "amount": 3,
+            "image": "images/items/Seed.png",
+            "source": "all"
+          },
+          {
+            "item": "Honey",
+            "weight": 15,
+            "amount": 7777,
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed Oil",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Seed Oil.png",
+            "source": "all"
+          },
+          {
+            "item": "Strawberry Extract",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Strawberry Extract.png",
+            "source": "all"
+          },
+          {
+            "item": "Blueberry Extract",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Blueberry Extract.png",
+            "source": "all"
+          },
+          {
+            "item": "Cone Extract",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Cone Extract.png",
+            "source": "all"
+          },
+          {
+            "item": "Silver Egg",
+            "weight": 0.3,
+            "amount": 1,
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Gold Egg",
+            "weight": 0.2,
+            "amount": 1,
+            "image": "images/items/Gold Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Diamond Egg",
+            "weight": 0.1,
+            "amount": 1,
+            "image": "images/items/Diamond Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Royal Jelly",
+            "weight": 35,
+            "amount": 5,
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
+          },
+          {
+            "item": "Ticket",
+            "weight": 3,
             "amount": 2,
-            "image": "images/items/Bamboo.png"
+            "image": "images/items/Ticket.png",
+            "source": "all"
+          },
+          {
+            "item": "Sticker Egg",
+            "weight": 0.2,
+            "amount": 1,
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
           }
         ],
         "Lemon Field": [
           {
-            "item": "Blueberry",
+            "item": "Lemon",
             "weight": 15,
             "amount": 3,
-            "image": "images/items/Blueberry.png"
-          },
-          {
-            "item": "Water Essence",
-            "weight": 5,
-            "amount": 2,
-            "image": "images/items/Water Essence.png"
+            "image": "images/items/Lemon.png",
+            "source": "field"
           },
           {
             "item": "Seed",
             "weight": 15,
             "amount": 3,
-            "image": "images/items/Seed.png"
+            "image": "images/items/Seed.png",
+            "source": "all"
           },
           {
             "item": "Honey",
             "weight": 15,
             "amount": 7777,
-            "image": "images/currencies/Honey.png"
+            "image": "images/currencies/Honey.png",
+            "source": "all"
           },
           {
             "item": "Seed Oil",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Seed Oil.png"
+            "image": "images/items/Seed Oil.png",
+            "source": "all"
           },
           {
             "item": "Strawberry Extract",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Strawberry Extract.png"
+            "image": "images/items/Strawberry Extract.png",
+            "source": "all"
           },
           {
             "item": "Blueberry Extract",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Blueberry Extract.png"
+            "image": "images/items/Blueberry Extract.png",
+            "source": "all"
           },
           {
             "item": "Cone Extract",
             "weight": 10,
             "amount": 1,
-            "image": "images/items/Cone Extract.png"
+            "image": "images/items/Cone Extract.png",
+            "source": "all"
           },
           {
             "item": "Silver Egg",
             "weight": 0.3,
             "amount": 1,
-            "image": "images/items/Silver Egg.png"
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
           },
           {
             "item": "Gold Egg",
             "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Gold Egg.png"
+            "image": "images/items/Gold Egg.png",
+            "source": "all"
           },
           {
             "item": "Diamond Egg",
             "weight": 0.1,
             "amount": 1,
-            "image": "images/items/Diamond Egg.png"
+            "image": "images/items/Diamond Egg.png",
+            "source": "all"
           },
           {
             "item": "Royal Jelly",
             "weight": 35,
             "amount": 5,
-            "image": "images/items/Royal Jelly.png"
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
           },
           {
             "item": "Ticket",
             "weight": 3,
             "amount": 2,
-            "image": "images/currencies/Ticket.png"
+            "image": "images/items/Ticket.png",
+            "source": "all"
           },
           {
             "item": "Sticker Egg",
             "weight": 0.2,
             "amount": 1,
-            "image": "images/items/Sticker Egg.png"
-          },
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
+          }
+        ],
+        "Carrot Field": [
           {
-            "item": "Lemon",
+            "item": "Carrot",
             "weight": 15,
             "amount": 3,
-            "image": "images/items/Lemon.png"
+            "image": "images/items/Carrot.png",
+            "source": "field"
+          },
+          {
+            "item": "Golden Carrot",
+            "weight": 2,
+            "amount": 1,
+            "image": "images/items/Golden Carrot.png",
+            "source": "field"
+          },
+          {
+            "item": "Magic Carrot",
+            "weight": 2,
+            "amount": 1,
+            "image": "images/items/Magic Carrot.png",
+            "source": "field"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Seed.png",
+            "source": "all"
+          },
+          {
+            "item": "Honey",
+            "weight": 15,
+            "amount": 7777,
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed Oil",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Seed Oil.png",
+            "source": "all"
+          },
+          {
+            "item": "Strawberry Extract",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Strawberry Extract.png",
+            "source": "all"
+          },
+          {
+            "item": "Blueberry Extract",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Blueberry Extract.png",
+            "source": "all"
+          },
+          {
+            "item": "Cone Extract",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Cone Extract.png",
+            "source": "all"
+          },
+          {
+            "item": "Silver Egg",
+            "weight": 0.3,
+            "amount": 1,
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Gold Egg",
+            "weight": 0.2,
+            "amount": 1,
+            "image": "images/items/Gold Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Diamond Egg",
+            "weight": 0.1,
+            "amount": 1,
+            "image": "images/items/Diamond Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Royal Jelly",
+            "weight": 35,
+            "amount": 5,
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
+          },
+          {
+            "item": "Ticket",
+            "weight": 3,
+            "amount": 2,
+            "image": "images/items/Ticket.png",
+            "source": "all"
+          },
+          {
+            "item": "Sticker Egg",
+            "weight": 0.2,
+            "amount": 1,
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
+          }
+        ],
+        "Apple Field": [
+          {
+            "item": "Apple",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Apple.png",
+            "source": "field"
+          },
+          {
+            "item": "Golden Apple",
+            "weight": 2,
+            "amount": 1,
+            "image": "images/items/Golden Apple.png",
+            "source": "field"
+          },
+          {
+            "item": "Seed",
+            "weight": 15,
+            "amount": 3,
+            "image": "images/items/Seed.png",
+            "source": "all"
+          },
+          {
+            "item": "Honey",
+            "weight": 15,
+            "amount": 7777,
+            "image": "images/currencies/Honey.png",
+            "source": "all"
+          },
+          {
+            "item": "Seed Oil",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Seed Oil.png",
+            "source": "all"
+          },
+          {
+            "item": "Strawberry Extract",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Strawberry Extract.png",
+            "source": "all"
+          },
+          {
+            "item": "Blueberry Extract",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Blueberry Extract.png",
+            "source": "all"
+          },
+          {
+            "item": "Cone Extract",
+            "weight": 10,
+            "amount": 1,
+            "image": "images/items/Cone Extract.png",
+            "source": "all"
+          },
+          {
+            "item": "Silver Egg",
+            "weight": 0.3,
+            "amount": 1,
+            "image": "images/items/Silver Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Gold Egg",
+            "weight": 0.2,
+            "amount": 1,
+            "image": "images/items/Gold Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Diamond Egg",
+            "weight": 0.1,
+            "amount": 1,
+            "image": "images/items/Diamond Egg.png",
+            "source": "all"
+          },
+          {
+            "item": "Royal Jelly",
+            "weight": 35,
+            "amount": 5,
+            "image": "images/items/Royal Jelly.png",
+            "source": "all"
+          },
+          {
+            "item": "Ticket",
+            "weight": 3,
+            "amount": 2,
+            "image": "images/items/Ticket.png",
+            "source": "all"
+          },
+          {
+            "item": "Sticker Egg",
+            "weight": 0.2,
+            "amount": 1,
+            "image": "images/items/Sticker Egg.png",
+            "source": "all"
           }
         ]
       }

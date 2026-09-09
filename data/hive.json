@@ -14,7 +14,13 @@
       "rarity": "Rare",
       "order": 990,
       "desc": "Red and strawberry style hive.",
-      "buffs": [{ "stat": "Red Pollen", "type": "Perc", "value": 25 }],
+      "buffs": [
+        {
+          "stat": "Red Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
       "weight": 3000
     },
     {
@@ -23,7 +29,13 @@
       "rarity": "Rare",
       "order": 990,
       "desc": "Blue and blueberry style hive.",
-      "buffs": [{ "stat": "Blue Pollen", "type": "Perc", "value": 25 }],
+      "buffs": [
+        {
+          "stat": "Blue Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
       "weight": 3000
     },
     {
@@ -32,7 +44,13 @@
       "rarity": "Rare",
       "order": 990,
       "desc": "Green and lucky hive.",
-      "buffs": [{ "stat": "Loot Luck", "type": "Perc", "value": 25 }],
+      "buffs": [
+        {
+          "stat": "Loot Luck",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
       "weight": 3000
     },
     {
@@ -42,8 +60,16 @@
       "order": 990,
       "desc": "Orange and honeyfull hive.",
       "buffs": [
-        { "stat": "Convert Rate", "type": "Perc", "value": 25 },
-        { "stat": "Honey Bonus", "type": "Perc", "value": 5 }
+        {
+          "stat": "Convert Rate",
+          "type": "Perc",
+          "value": 25
+        },
+        {
+          "stat": "Honey Bonus",
+          "type": "Perc",
+          "value": 5
+        }
       ],
       "weight": 3000
     },
@@ -54,8 +80,16 @@
       "order": 980,
       "desc": "Pink and sweety flavour hive.",
       "buffs": [
-        { "stat": "Red Pollen", "type": "Perc", "value": 35 },
-        { "stat": "Capacity Bonus", "type": "Perc", "value": 25 }
+        {
+          "stat": "Red Pollen",
+          "type": "Perc",
+          "value": 35
+        },
+        {
+          "stat": "Capacity Bonus",
+          "type": "Perc",
+          "value": 25
+        }
       ],
       "weight": 300
     },
@@ -66,8 +100,16 @@
       "order": 980,
       "desc": "Purple and mix of blue & red hive.",
       "buffs": [
-        { "stat": "Red Pollen", "type": "Perc", "value": 35 },
-        { "stat": "Blue Pollen", "type": "Perc", "value": 35 }
+        {
+          "stat": "Red Pollen",
+          "type": "Perc",
+          "value": 35
+        },
+        {
+          "stat": "Blue Pollen",
+          "type": "Perc",
+          "value": 35
+        }
       ],
       "weight": 300
     },
@@ -78,8 +120,16 @@
       "order": 980,
       "desc": "Light blue and sky color hive.",
       "buffs": [
-        { "stat": "White Pollen", "type": "Perc", "value": 35 },
-        { "stat": "Cloud Pollen", "type": "Perc", "value": 25 }
+        {
+          "stat": "White Pollen",
+          "type": "Perc",
+          "value": 35
+        },
+        {
+          "stat": "Cloud Pollen",
+          "type": "Perc",
+          "value": 25
+        }
       ],
       "weight": 300
     },
@@ -89,7 +139,13 @@
       "rarity": "Epic",
       "order": 980,
       "desc": "Black and classic style hive.",
-      "buffs": [{ "stat": "Obsidian Pollen", "type": "Perc", "value": 25 }],
+      "buffs": [
+        {
+          "stat": "Obsidian Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ],
       "weight": 300
     },
     {
@@ -99,8 +155,16 @@
       "order": 980,
       "desc": "White and classic style hive.",
       "buffs": [
-        { "stat": "Cloud Pollen", "type": "Perc", "value": 100 },
-        { "stat": "Movespeed", "type": "Perc", "value": 25 }
+        {
+          "stat": "Cloud Pollen",
+          "type": "Perc",
+          "value": 100
+        },
+        {
+          "stat": "Movespeed",
+          "type": "Perc",
+          "value": 25
+        }
       ],
       "weight": 300
     },
@@ -111,14 +175,43 @@
       "order": 970,
       "desc": "Legendary hive of blossom story...",
       "buffs": [
-        { "stat": "Honey Bonus", "type": "Perc", "value": 15 },
-        { "stat": "Pollen", "type": "Perc", "value": 60 },
-        { "stat": "Capacity Bonus", "type": "Perc", "value": 75 },
-        { "stat": "Movespeed", "type": "Perc", "value": 30 },
-        { "stat": "Critical Chance", "type": "Perc", "value": 5 },
-        { "stat": "Critical Power", "type": "Perc", "value": 15 }
+        {
+          "stat": "Honey Bonus",
+          "type": "Perc",
+          "value": 15
+        },
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 60
+        },
+        {
+          "stat": "Capacity Bonus",
+          "type": "Perc",
+          "value": 75
+        },
+        {
+          "stat": "Movespeed",
+          "type": "Perc",
+          "value": 30
+        },
+        {
+          "stat": "Critical Chance",
+          "type": "Perc",
+          "value": 5
+        },
+        {
+          "stat": "Critical Power",
+          "type": "Perc",
+          "value": 15
+        }
       ],
-      "extraChances": [{ "label": "0.008% from Wheel", "type": "wheel" }]
+      "extraChances": [
+        {
+          "label": "0.008% from Wheel",
+          "type": "wheel"
+        }
+      ]
     },
     {
       "name": "Chromatic Hive",
@@ -127,10 +220,26 @@
       "order": 970,
       "desc": "Mix of all colors hive.",
       "buffs": [
-        { "stat": "Honey Bonus", "type": "Perc", "value": 10 },
-        { "stat": "Pollen", "type": "Perc", "value": 50 },
-        { "stat": "Capacity Bonus", "type": "Perc", "value": 50 },
-        { "stat": "Movespeed", "type": "Perc", "value": 25 }
+        {
+          "stat": "Honey Bonus",
+          "type": "Perc",
+          "value": 10
+        },
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 50
+        },
+        {
+          "stat": "Capacity Bonus",
+          "type": "Perc",
+          "value": 50
+        },
+        {
+          "stat": "Movespeed",
+          "type": "Perc",
+          "value": 25
+        }
       ],
       "weight": 15
     }
@@ -142,8 +251,14 @@
       "rarity": "Special",
       "category": "Special",
       "order": 10,
-      "desc": "Obtainable Through boosting server for 2 times.",
-      "buffs": [{ "stat": "Pollen", "type": "Mult", "value": 1.1 }]
+      "desc": "Obtainable by boosting the server 2 times.",
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Mult",
+          "value": 1.1
+        }
+      ]
     },
     {
       "name": "Azataz Sticker",
@@ -151,8 +266,14 @@
       "rarity": "Special",
       "category": "Personal",
       "order": 15,
-      "desc": "Special Sticker , obtainable through codes/events.",
-      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+      "desc": "Special Sticker, obtainable through codes/events.",
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Sanju Sticker",
@@ -160,8 +281,14 @@
       "rarity": "Special",
       "category": "Personal",
       "order": 16,
-      "desc": "Special Sticker , obtainable through Sanju.",
-      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+      "desc": "Special Sticker, obtainable through Sanju.",
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Deox Sticker",
@@ -169,8 +296,14 @@
       "rarity": "Special",
       "category": "Personal",
       "order": 17,
-      "desc": "Special Sticker , obtainable through codes/events.",
-      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+      "desc": "Special Sticker, obtainable through codes/events.",
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "John The Seal Sticker",
@@ -178,8 +311,14 @@
       "rarity": "Special",
       "category": "Personal",
       "order": 17,
-      "desc": "Special Sticker , obtainable through codes/events.",
-      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+      "desc": "Special Sticker, obtainable through codes/events.",
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Teapot Sticker",
@@ -187,8 +326,14 @@
       "rarity": "Special",
       "category": "Personal",
       "order": 18,
-      "desc": "Special Sticker , obtainable through codes/events.",
-      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+      "desc": "Special Sticker, obtainable through codes/events.",
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Remlik Sticker",
@@ -196,8 +341,14 @@
       "rarity": "Special",
       "category": "Personal",
       "order": 19,
-      "desc": "Special Sticker , obtainable through codes/events.",
-      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+      "desc": "Special Sticker, obtainable through codes/events.",
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Zevmu Sticker",
@@ -205,8 +356,14 @@
       "rarity": "Special",
       "category": "Personal",
       "order": 20,
-      "desc": "Special Sticker , obtainable through codes/events.",
-      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+      "desc": "Special Sticker, obtainable through codes/events.",
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Lugia Sticker",
@@ -214,8 +371,29 @@
       "rarity": "Special",
       "category": "Personal",
       "order": 21,
-      "desc": "Special Sticker , obtainable through codes/events.",
-      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+      "desc": "Special Sticker, obtainable through codes/events.",
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Beenie Sticker",
+      "image": "images/hive/stickers/Beenie Sticker.png",
+      "rarity": "Special",
+      "category": "Personal",
+      "order": 21,
+      "desc": "Special Sticker, obtainable through codes/events.",
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Theo Sticker",
@@ -223,8 +401,14 @@
       "rarity": "Special",
       "category": "Personal",
       "order": 22,
-      "desc": "Special Sticker , obtainable through codes/events.",
-      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 1 }]
+      "desc": "Special Sticker, obtainable through codes/events.",
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Starflower Sticker",
@@ -233,337 +417,352 @@
       "category": "Exclusive",
       "order": 848,
       "donatePoints": 10,
-      "desc": "Hard to obtain sticker!",
-      "buffs": [{ "stat": "Loot Luck", "type": "Mult", "value": 1.1 }]
+      "desc": "A very rare sticker!",
+      "buffs": [
+        {
+          "stat": "Loot Luck",
+          "type": "Mult",
+          "value": 1.1
+        }
+      ]
     },
     {
-      "name": "Basic Bee Sticker",
-      "image": "images/hive/stickers/Basic Bee Sticker.png",
+      "name": "Frozen Clover Sticker",
+      "image": "images/hive/stickers/Frozen Clover Sticker.png",
+      "rarity": "Legendary",
+      "category": "Exclusive",
+      "order": 849,
+      "donatePoints": 10,
+      "desc": "A special award from the Polar Bear!",
+      "buffs": [
+        {
+          "stat": "Loot Luck",
+          "type": "Mult",
+          "value": 1.1
+        }
+      ]
+    },
+    {
+      "name": "Billiard 8 Ball Sticker",
+      "image": "images/hive/stickers/Billiard 8 Ball Sticker.png",
       "rarity": "Common",
-      "category": "Bees",
+      "category": "Misc",
       "order": 1,
-      "donatePoints": 1,
-      "desc": "Basic Bee Sticker WOW!",
-      "buffs": [{ "stat": "Honey From Tokens", "type": "Perc", "value": 3 }],
-      "stickerEgg": 9.8111
+      "desc": "omg is that a-",
+      "buffs": [
+        {
+          "stat": "Loot Luck",
+          "type": "Perc",
+          "value": 2
+        }
+      ],
+      "weight": 5000
     },
     {
-      "name": "Rage Bee Sticker",
-      "image": "images/hive/stickers/Rage Bee Sticker.png",
-      "rarity": "Rare",
-      "category": "Bees",
+      "name": "A Single Drop Sticker",
+      "image": "images/hive/stickers/A Single Drop Sticker.png",
+      "rarity": "Common",
+      "category": "Misc",
       "order": 2,
-      "donatePoints": 2,
-      "desc": "WOWOWOOW Rage Bee Sticker!",
-      "buffs": [{ "stat": "Red Bee Attack", "type": "Add", "value": 1 }],
-      "stickerEgg": 7.3584
+      "desc": "… Goes a long way.",
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Mult",
+          "value": 1
+        }
+      ],
+      "weight": 5000
     },
     {
-      "name": "Crimson Bee Sticker",
-      "image": "images/hive/stickers/Crimson Bee Sticker.png",
+      "name": "Googly Eyes Sticker",
+      "image": "images/hive/stickers/Googly Eyes Sticker.png",
       "rarity": "Rare",
-      "category": "Bees",
-      "order": 3,
-      "donatePoints": 2,
-      "desc": "Yooo Crimson Bee Sticker!",
-      "buffs": [{ "stat": "Red Pollen", "type": "Perc", "value": 5 }],
-      "stickerEgg": 7.3584
-    },
-    {
-      "name": "Science Bee Sticker",
-      "image": "images/hive/stickers/Science Bee Sticker.png",
-      "rarity": "Rare",
-      "category": "Bees",
-      "order": 4,
-      "donatePoints": 2,
-      "desc": "Science Bee Sticker gimme money!",
-      "buffs": [{ "stat": "Energy Bonus", "type": "Mult", "value": 1.1 }],
-      "stickerEgg": 7.3584
-    },
-    {
-      "name": "Hasty Bee Sticker",
-      "image": "images/hive/stickers/Hasty Bee Sticker.png",
-      "rarity": "Rare",
-      "category": "Bees",
-      "order": 5,
-      "donatePoints": 2,
-      "desc": "Hasty Bee Sticker super duper fast!",
-      "buffs": [{ "stat": "Movespeed", "type": "Perc", "value": 5 }],
-      "stickerEgg": 7.3584
-    },
-    {
-      "name": "Bomber Bee Sticker",
-      "image": "images/hive/stickers/Bomber Bee Sticker.png",
-      "rarity": "Rare",
-      "category": "Bees",
-      "order": 6,
-      "donatePoints": 2,
-      "desc": "Bomber Bee Sticker , get down mr president!",
-      "buffs": [{ "stat": "Capacity Bonus", "type": "Perc", "value": 5 }],
-      "stickerEgg": 7.3584
-    },
-    {
-      "name": "Magnet Bee Sticker",
-      "image": "images/hive/stickers/Magnet Bee Sticker.png",
-      "rarity": "Rare",
-      "category": "Bees",
-      "order": 7,
-      "donatePoints": 2,
-      "desc": "Magnet Bee Sticker , sucks tokens!",
-      "buffs": [{ "stat": "Movespeed", "type": "Perc", "value": 3 }],
-      "stickerEgg": 7.3584
-    },
-    {
-      "name": "Azure Bee Sticker",
-      "image": "images/hive/stickers/Azure Bee Sticker.png",
-      "rarity": "Rare",
-      "category": "Bees",
-      "order": 8,
-      "donatePoints": 2,
-      "desc": "Azure Bee Sticker , loves blue!",
-      "buffs": [{ "stat": "Blue Pollen", "type": "Perc", "value": 5 }],
-      "stickerEgg": 7.3584
-    },
-    {
-      "name": "Fire Bee Sticker",
-      "image": "images/hive/stickers/Fire Bee Sticker.png",
-      "rarity": "Epic",
-      "category": "Bees",
-      "order": 9,
-      "donatePoints": 3,
-      "desc": "Fire Bee Sticker , Ah ah Hot!",
-      "buffs": [{ "stat": "Fire Pollen", "type": "Mult", "value": 1.05 }],
-      "stickerEgg": 4.2924
-    },
-    {
-      "name": "Sound Bee Sticker",
-      "image": "images/hive/stickers/Sound Bee Sticker.png",
-      "rarity": "Epic",
-      "category": "Bees",
+      "category": "Misc",
       "order": 10,
-      "donatePoints": 3,
-      "desc": "Sound Bee Sticker , Sounds Nice!",
-      "buffs": [{ "stat": "Capacity Bonus", "type": "Perc", "value": 15 }],
-      "stickerEgg": 4.2924
+      "desc": "OooOohoh I'm dizzy!",
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 5
+        }
+      ],
+      "weight": 2000
     },
     {
-      "name": "Water Bee Sticker",
-      "image": "images/hive/stickers/Water Bee Sticker.png",
+      "name": "Waffle Cone Sticker",
+      "image": "images/hive/stickers/Waffle Cone Sticker.png",
       "rarity": "Epic",
-      "category": "Bees",
+      "category": "Misc",
       "order": 11,
-      "donatePoints": 3,
-      "desc": "Oh its coming Water Bee Sticker!",
-      "buffs": [{ "stat": "Blue Pollen", "type": "Perc", "value": 8 }],
-      "stickerEgg": 4.2924
+      "desc": "One fresh vanilla scoop, a summer classic.",
+      "buffs": [
+        {
+          "stat": "White Pollen",
+          "type": "Perc",
+          "value": 5
+        }
+      ],
+      "weight": 2000
     },
     {
-      "name": "Honey Bee Sticker",
-      "image": "images/hive/stickers/Honey Bee Sticker.png",
-      "rarity": "Epic",
-      "category": "Bees",
+      "name": "Delightful Bouquet Sticker",
+      "image": "images/hive/stickers/Delightful Bouquet Sticker.png",
+      "rarity": "Rare",
+      "category": "Misc",
       "order": 12,
-      "donatePoints": 3,
-      "desc": "Sticky Honey Bee Sticker!",
-      "buffs": [{ "stat": "Honey From Tokens", "type": "Mult", "value": 1.05 }],
-      "stickerEgg": 4.2924
+      "desc": "A gift from the Buzzler Team to you. <3",
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 5
+        }
+      ],
+      "weight": 2000
     },
     {
-      "name": "Cold Bee Sticker",
-      "image": "images/hive/stickers/Cold Bee Sticker.png",
-      "rarity": "Epic",
-      "category": "Bees",
+      "name": "Pulsating Heart Sticker",
+      "image": "images/hive/stickers/Pulsating Heart Sticker.png",
+      "rarity": "Rare",
+      "category": "Misc",
       "order": 13,
-      "donatePoints": 3,
-      "desc": "Very Cold - Cold Bee Sticker!",
-      "buffs": [{ "stat": "Blue Pollen", "type": "Perc", "value": 8 }],
-      "stickerEgg": 4.2924
+      "desc": "Happy 6 years [7/25/26]. <3 (B&N)",
+      "buffs": [
+        {
+          "stat": "Red Pollen",
+          "type": "Perc",
+          "value": 6
+        }
+      ],
+      "weight": 2000
     },
     {
-      "name": "Coal Bee Sticker",
-      "image": "images/hive/stickers/Coal Bee Sticker.png",
-      "rarity": "Epic",
-      "category": "Bees",
+      "name": "Sleepy Little Bunny Sticker",
+      "image": "images/hive/stickers/Sleepy Little Bunny Sticker.png",
+      "rarity": "Rare",
+      "category": "Misc",
       "order": 14,
-      "donatePoints": 3,
-      "desc": "Very Hot - Coal Bee Sticker!",
-      "buffs": [{ "stat": "Red Pollen", "type": "Perc", "value": 8 }],
-      "stickerEgg": 4.2924
+      "desc": "I'm so in love with yoooooouuuuu.~",
+      "buffs": [
+        {
+          "stat": "White Pollen",
+          "type": "Perc",
+          "value": 10
+        }
+      ],
+      "weight": 2000
     },
     {
-      "name": "Flower Bee Sticker",
-      "image": "images/hive/stickers/Flower Bee Sticker.png",
+      "name": "Angry Beetle Sticker",
+      "image": "images/hive/stickers/Angry Beetle Sticker.png",
       "rarity": "Epic",
-      "category": "Bees",
-      "order": 15,
-      "donatePoints": 3,
-      "desc": "Flower Bee Sticker smells nice!",
-      "buffs": [{ "stat": "White Pollen", "type": "Perc", "value": 8 }],
-      "stickerEgg": 4.2924
+      "category": "Misc",
+      "order": 41,
+      "desc": "Lookit him.. he so angy…",
+      "buffs": [
+        {
+          "stat": "Defense",
+          "type": "Perc",
+          "value": 5
+        }
+      ]
     },
     {
-      "name": "Icicle Bee Sticker",
-      "image": "images/hive/stickers/Icicle Bee Sticker.png",
+      "name": "Lovely Ladybug Sticker",
+      "image": "images/hive/stickers/Lovely Ladybug Sticker.png",
+      "rarity": "Epic",
+      "category": "Misc",
+      "order": 42,
+      "desc": "Precious little things… I heard if you see one, you'll gain some extra luck that day.",
+      "buffs": [
+        {
+          "stat": "Loot Luck",
+          "type": "Perc",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Ittybitty Caterpillar Sticker",
+      "image": "images/hive/stickers/Ittybitty Caterpillar Sticker.png",
+      "rarity": "Epic",
+      "category": "Misc",
+      "order": 42.01,
+      "desc": "You wouldn't hurt them, would you?",
+      "buffs": [
+        {
+          "stat": "Loot Luck",
+          "type": "Perc",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Firefly in a Jar Sticker",
+      "image": "images/hive/stickers/Firefly in a Jar Sticker.png",
+      "rarity": "Epic",
+      "category": "Misc",
+      "order": 43,
+      "desc": "You would not belieeeeve…",
+      "buffs": [
+        {
+          "stat": "Night Pollen",
+          "type": "Mult",
+          "value": 1.05
+        }
+      ]
+    },
+    {
+      "name": "Honeycomb Sticker",
+      "image": "images/hive/stickers/Honeycomb Sticker.png",
+      "rarity": "Epic",
+      "category": "Misc",
+      "order": 44,
+      "desc": "A whole comb plucked straight from the hive! Maaaybe you should put it back…",
+      "buffs": [
+        {
+          "stat": "Convert Rate",
+          "type": "Perc",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "name": "Fairylight Sticker",
+      "image": "images/hive/stickers/Fairylight Sticker.png",
+      "rarity": "Epic",
+      "category": "Misc",
+      "order": 45,
+      "desc": "The perfect lights to make you feel like you're in a fanatical fairy tale within your own room… So cozy.",
+      "buffs": [
+        {
+          "stat": "Night Pollen",
+          "type": "Mult",
+          "value": 1.05
+        }
+      ]
+    },
+    {
+      "name": "Paint Splatter Sticker",
+      "image": "images/hive/stickers/Paint Splatter Sticker.png",
+      "rarity": "Epic",
+      "category": "Misc",
+      "order": 46,
+      "desc": "Making a colorful mess!",
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
+    },
+    {
+      "name": "Storm in a Bottle Sticker",
+      "image": "images/hive/stickers/Storm in a Bottle Sticker.png",
       "rarity": "Legendary",
-      "category": "Bees",
-      "order": 16,
-      "donatePoints": 5,
-      "desc": "Icicle Bee Sticker - very coldy!",
-      "buffs": [{ "stat": "Icicle Pollen", "type": "Mult", "value": 1.1 }],
-      "stickerEgg": 0.9811
+      "category": "Misc",
+      "order": 99,
+      "desc": "Heard it's hard to catch this kind of thing twice.",
+      "buffs": []
     },
     {
-      "name": "Firework Bee Sticker",
-      "image": "images/hive/stickers/Firework Bee Sticker.png",
+      "name": "White Rose Sticker",
+      "image": "images/hive/stickers/White Rose Sticker.png",
       "rarity": "Legendary",
-      "category": "Bees",
-      "order": 17,
-      "donatePoints": 5,
-      "desc": "Firework Bee Sticker - Fantastic!",
-      "buffs": [{ "stat": "Firework Pollen", "type": "Mult", "value": 1.1 }],
-      "stickerEgg": 0.9811
+      "category": "Misc",
+      "order": 100,
+      "desc": "You could always paint this rose red…",
+      "buffs": [
+        {
+          "stat": "White Pollen",
+          "type": "Perc",
+          "value": 50
+        }
+      ]
     },
     {
-      "name": "Lion Bee Sticker",
-      "image": "images/hive/stickers/Lion Bee Sticker.png",
+      "name": "Sweet Cotton Ball Sticker",
+      "image": "images/hive/stickers/Sweet Cotton Ball Sticker.png",
       "rarity": "Legendary",
-      "category": "Bees",
-      "order": 18,
-      "donatePoints": 5,
-      "desc": "Lion Bee Sticker - Roar!",
-      "buffs": [{ "stat": "Bee Attack", "type": "Add", "value": 2 }],
-      "stickerEgg": 0.9811
+      "category": "Misc",
+      "order": 101,
+      "desc": "Don't put it in water!",
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 50
+        }
+      ],
+      "weight": 15
     },
     {
-      "name": "Null Bee Sticker",
-      "image": "images/hive/stickers/Null Bee Sticker.png",
+      "name": "Bubbles Sticker",
+      "image": "images/hive/stickers/Bubbles Sticker.png",
       "rarity": "Legendary",
-      "category": "Bees",
-      "order": 19,
-      "donatePoints": 5,
-      "desc": "Null Bee Sticker - Ohao!",
-      "buffs": [{ "stat": "Bee Ability Rate", "type": "Perc", "value": 3 }],
-      "stickerEgg": 0.9811
+      "category": "Misc",
+      "order": 102,
+      "desc": "Pop pop pop",
+      "buffs": [
+        {
+          "stat": "Bubble Pollen",
+          "type": "Mult",
+          "value": 1
+        }
+      ]
     },
     {
-      "name": "Wave Bee Sticker",
-      "image": "images/hive/stickers/Wave Bee Sticker.png",
-      "rarity": "Legendary",
+      "name": "Shark Bee Sticker",
+      "image": "images/hive/stickers/Shark Bee Sticker.png",
+      "rarity": "Limited",
       "category": "Bees",
-      "order": 20,
-      "donatePoints": 5,
-      "desc": "Wave Bee Sticker - Wavy like waves!",
-      "buffs": [{ "stat": "Convert Rate", "type": "Perc", "value": 12 }],
-      "stickerEgg": 0.9811
+      "order": 45,
+      "donatePoints": 25,
+      "desc": "Don't bite me!",
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Mult",
+          "value": 1.15
+        }
+      ],
+      "stickerEgg": 0.0245
     },
     {
-      "name": "Cloud Bee Sticker",
-      "image": "images/hive/stickers/Cloud Bee Sticker.png",
-      "rarity": "Legendary",
+      "name": "Sunny Bee Sticker",
+      "image": "images/hive/stickers/Sunny Bee Sticker.png",
+      "rarity": "Limited",
       "category": "Bees",
-      "order": 21,
-      "donatePoints": 5,
-      "desc": "Cloud Bee Sticker - Very Puffy!",
-      "buffs": [{ "stat": "Cloud Pollen", "type": "Mult", "value": 1.1 }],
-      "stickerEgg": 0.9811
+      "order": 44,
+      "donatePoints": 25,
+      "desc": "Wow! So bright!",
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Mult",
+          "value": 1.15
+        }
+      ],
+      "stickerEgg": 0.0245
     },
     {
-      "name": "Oil Bee Sticker",
-      "image": "images/hive/stickers/Oil Bee Sticker.png",
-      "rarity": "Legendary",
-      "category": "Bees",
-      "order": 22,
-      "donatePoints": 5,
-      "desc": "Oil Bee Sticker - Shiny!",
-      "buffs": [{ "stat": "Red Pollen", "type": "Mult", "value": 1.1 }],
-      "stickerEgg": 0.9811
-    },
-    {
-      "name": "Thunder Bee Sticker",
-      "image": "images/hive/stickers/Thunder Bee Sticker.png",
-      "rarity": "Legendary",
-      "category": "Bees",
-      "order": 23,
-      "donatePoints": 5,
-      "desc": "Thunder Bee Sticker - Dangerous!",
-      "buffs": [{ "stat": "Pollen", "type": "Mult", "value": 1.1 }],
-      "stickerEgg": 0.9811
-    },
-    {
-      "name": "Ryujin Bee Sticker",
-      "image": "images/hive/stickers/Ryujin Bee Sticker.png",
-      "rarity": "Mythic",
-      "category": "Bees",
-      "order": 24,
-      "donatePoints": 10,
-      "desc": "Mystical creature of dragon - Ryujin Bee!",
-      "buffs": [{ "stat": "Bubble Capacity", "type": "Mult", "value": 1.1 }],
-      "stickerEgg": 0.1226
-    },
-    {
-      "name": "Oni Bee Sticker",
-      "image": "images/hive/stickers/Oni Bee Sticker.png",
-      "rarity": "Mythic",
-      "category": "Bees",
-      "order": 25,
-      "donatePoints": 10,
-      "desc": "Very scary and devilious - Oni Bee!",
-      "buffs": [{ "stat": "Fire Duration", "type": "Mult", "value": 1.1 }],
-      "stickerEgg": 0.1226
-    },
-    {
-      "name": "Kitsune Bee Sticker",
-      "image": "images/hive/stickers/Kitsune Bee Sticker.png",
-      "rarity": "Mythic",
-      "category": "Bees",
-      "order": 26,
-      "donatePoints": 10,
-      "desc": "Mystical animal of fox and bee - Kitsune Bee!",
-      "buffs": [{ "stat": "Capacity Bonus", "type": "Mult", "value": 1.1 }],
-      "stickerEgg": 0.1226
-    },
-    {
-      "name": "Lucky Bee Sticker",
-      "image": "images/hive/stickers/Lucky Bee Sticker.png",
+      "name": "Windy Bee Sticker",
+      "image": "images/hive/stickers/Windy Bee Sticker.png",
       "rarity": "Special",
       "category": "Bees",
-      "order": 34,
+      "order": 39,
       "donatePoints": 15,
-      "desc": "Lucky Bee Sticker - Lucky!",
-      "buffs": [{ "stat": "Loot Luck", "type": "Perc", "value": 15 }],
-      "stickerEgg": 0.0613
-    },
-    {
-      "name": "Pixel Bee Sticker",
-      "image": "images/hive/stickers/Pixel Bee Sticker.png",
-      "rarity": "Special",
-      "category": "Bees",
-      "order": 35,
-      "donatePoints": 15,
-      "desc": "Pixel Bee Sticker - 8 Bits!",
-      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 12 }],
-      "stickerEgg": 0.0613
-    },
-    {
-      "name": "Exp Bee Sticker",
-      "image": "images/hive/stickers/Exp Bee Sticker.png",
-      "rarity": "Special",
-      "category": "Bees",
-      "order": 36,
-      "donatePoints": 15,
-      "desc": "Exp Bee Sticker - Magical!",
-      "buffs": [{ "stat": "Obsidian Pollen", "type": "Mult", "value": 1.1 }],
-      "stickerEgg": 0.0613
-    },
-    {
-      "name": "Magma Bee Sticker",
-      "image": "images/hive/stickers/Magma Bee Sticker.png",
-      "rarity": "Special",
-      "category": "Bees",
-      "order": 37,
-      "donatePoints": 15,
-      "desc": "Magma Bee Sticker - Magma Errupts!",
-      "buffs": [{ "stat": "Fire Pollen", "type": "Mult", "value": 1.12 }],
+      "desc": "Fly me away!",
+      "buffs": [
+        {
+          "stat": "Cloud Pollen",
+          "type": "Mult",
+          "value": 1.12
+        }
+      ],
       "stickerEgg": 0.0613
     },
     {
@@ -573,42 +772,525 @@
       "category": "Bees",
       "order": 38,
       "donatePoints": 15,
-      "desc": "Ice Bee Sticker - Ice Tuff!",
-      "buffs": [{ "stat": "Ice Pollen", "type": "Mult", "value": 1.12 }],
+      "desc": "nICE sTUFF!",
+      "buffs": [
+        {
+          "stat": "Ice Pollen",
+          "type": "Mult",
+          "value": 1.12
+        }
+      ],
       "stickerEgg": 0.0613
     },
     {
-      "name": "Windy Bee Sticker",
-      "image": "images/hive/stickers/Windy Bee Sticker.png",
+      "name": "Magma Bee Sticker",
+      "image": "images/hive/stickers/Magma Bee Sticker.png",
       "rarity": "Special",
       "category": "Bees",
-      "order": 39,
+      "order": 37,
       "donatePoints": 15,
-      "desc": "Windy Bee Sticker - Wiggles!",
-      "buffs": [{ "stat": "Cloud Pollen", "type": "Mult", "value": 1.12 }],
+      "desc": "Magma Errupts!",
+      "buffs": [
+        {
+          "stat": "Fire Pollen",
+          "type": "Mult",
+          "value": 1.12
+        }
+      ],
       "stickerEgg": 0.0613
     },
     {
-      "name": "Sunny Bee Sticker",
-      "image": "images/hive/stickers/Sunny Bee Sticker.png",
-      "rarity": "Limited",
+      "name": "Exp Bee Sticker",
+      "image": "images/hive/stickers/Exp Bee Sticker.png",
+      "rarity": "Special",
       "category": "Bees",
-      "order": 44,
-      "donatePoints": 25,
-      "desc": "Sunny Bee Sticker - Wowowoo it shines!",
-      "buffs": [{ "stat": "Pollen", "type": "Mult", "value": 1.15 }],
-      "stickerEgg": 0.0245
+      "order": 36,
+      "donatePoints": 15,
+      "desc": "Magical!",
+      "buffs": [
+        {
+          "stat": "Obsidian Pollen",
+          "type": "Mult",
+          "value": 1.1
+        }
+      ],
+      "stickerEgg": 0.0613
     },
     {
-      "name": "Shark Bee Sticker",
-      "image": "images/hive/stickers/Shark Bee Sticker.png",
-      "rarity": "Limited",
+      "name": "Pixel Bee Sticker",
+      "image": "images/hive/stickers/Pixel Bee Sticker.png",
+      "rarity": "Special",
       "category": "Bees",
-      "order": 45,
-      "donatePoints": 25,
-      "desc": "Shark Bee Sticker - dont bark at me!",
-      "buffs": [{ "stat": "Pollen", "type": "Mult", "value": 1.15 }],
-      "stickerEgg": 0.0245
+      "order": 35,
+      "donatePoints": 15,
+      "desc": "8 Bit!",
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 12
+        }
+      ],
+      "stickerEgg": 0.0613
+    },
+    {
+      "name": "Lucky Bee Sticker",
+      "image": "images/hive/stickers/Lucky Bee Sticker.png",
+      "rarity": "Special",
+      "category": "Bees",
+      "order": 34,
+      "donatePoints": 15,
+      "desc": "Lucky!",
+      "buffs": [
+        {
+          "stat": "Loot Luck",
+          "type": "Perc",
+          "value": 15
+        }
+      ],
+      "stickerEgg": 0.0613
+    },
+    {
+      "name": "Kitsune Bee Sticker",
+      "image": "images/hive/stickers/Kitsune Bee Sticker.png",
+      "rarity": "Mythic",
+      "category": "Bees",
+      "order": 26,
+      "donatePoints": 10,
+      "desc": "Mystical creature, both fox and bee - Kitsune Bee!",
+      "buffs": [
+        {
+          "stat": "Capacity Bonus",
+          "type": "Mult",
+          "value": 1.1
+        }
+      ],
+      "stickerEgg": 0.1226
+    },
+    {
+      "name": "Oni Bee Sticker",
+      "image": "images/hive/stickers/Oni Bee Sticker.png",
+      "rarity": "Mythic",
+      "category": "Bees",
+      "order": 25,
+      "donatePoints": 10,
+      "desc": "A scary and dangerous demon - Oni Bee!",
+      "buffs": [
+        {
+          "stat": "Fire Duration",
+          "type": "Mult",
+          "value": 1.1
+        }
+      ],
+      "stickerEgg": 0.1226
+    },
+    {
+      "name": "Ryujin Bee Sticker",
+      "image": "images/hive/stickers/Ryujin Bee Sticker.png",
+      "rarity": "Mythic",
+      "category": "Bees",
+      "order": 24,
+      "donatePoints": 10,
+      "desc": "The mystical dragon - Ryujin Bee!",
+      "buffs": [
+        {
+          "stat": "Bubble Capacity",
+          "type": "Mult",
+          "value": 1.1
+        }
+      ],
+      "stickerEgg": 0.1226
+    },
+    {
+      "name": "Thunder Bee Sticker",
+      "image": "images/hive/stickers/Thunder Bee Sticker.png",
+      "rarity": "Legendary",
+      "category": "Bees",
+      "order": 23,
+      "donatePoints": 5,
+      "desc": "Don't get zapped!",
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Mult",
+          "value": 1.1
+        }
+      ],
+      "stickerEgg": 0.9811
+    },
+    {
+      "name": "Oil Bee Sticker",
+      "image": "images/hive/stickers/Oil Bee Sticker.png",
+      "rarity": "Legendary",
+      "category": "Bees",
+      "order": 22,
+      "donatePoints": 5,
+      "desc": "Slippery!",
+      "buffs": [
+        {
+          "stat": "Red Pollen",
+          "type": "Mult",
+          "value": 1.1
+        }
+      ],
+      "stickerEgg": 0.9811
+    },
+    {
+      "name": "Cloud Bee Sticker",
+      "image": "images/hive/stickers/Cloud Bee Sticker.png",
+      "rarity": "Legendary",
+      "category": "Bees",
+      "order": 21,
+      "donatePoints": 5,
+      "desc": "Very Puffy!",
+      "buffs": [
+        {
+          "stat": "Cloud Pollen",
+          "type": "Mult",
+          "value": 1.1
+        }
+      ],
+      "stickerEgg": 0.9811
+    },
+    {
+      "name": "Wave Bee Sticker",
+      "image": "images/hive/stickers/Wave Bee Sticker.png",
+      "rarity": "Legendary",
+      "category": "Bees",
+      "order": 20,
+      "donatePoints": 5,
+      "desc": "Let's swim!",
+      "buffs": [
+        {
+          "stat": "Convert Rate",
+          "type": "Perc",
+          "value": 12
+        }
+      ],
+      "stickerEgg": 0.9811
+    },
+    {
+      "name": "Null Bee Sticker",
+      "image": "images/hive/stickers/Null Bee Sticker.png",
+      "rarity": "Legendary",
+      "category": "Bees",
+      "order": 19,
+      "donatePoints": 5,
+      "desc": "Ohao!",
+      "buffs": [
+        {
+          "stat": "Bee Ability Rate",
+          "type": "Perc",
+          "value": 3
+        }
+      ],
+      "stickerEgg": 0.9811
+    },
+    {
+      "name": "Lion Bee Sticker",
+      "image": "images/hive/stickers/Lion Bee Sticker.png",
+      "rarity": "Legendary",
+      "category": "Bees",
+      "order": 18,
+      "donatePoints": 5,
+      "desc": "Roar!",
+      "buffs": [
+        {
+          "stat": "Bee Attack",
+          "type": "Add",
+          "value": 2
+        }
+      ],
+      "stickerEgg": 0.9811
+    },
+    {
+      "name": "Firework Bee Sticker",
+      "image": "images/hive/stickers/Firework Bee Sticker.png",
+      "rarity": "Legendary",
+      "category": "Bees",
+      "order": 17,
+      "donatePoints": 5,
+      "desc": "Boom!",
+      "buffs": [
+        {
+          "stat": "Firework Pollen",
+          "type": "Mult",
+          "value": 1.1
+        }
+      ],
+      "stickerEgg": 0.9811
+    },
+    {
+      "name": "Icicle Bee Sticker",
+      "image": "images/hive/stickers/Icicle Bee Sticker.png",
+      "rarity": "Legendary",
+      "category": "Bees",
+      "order": 16,
+      "donatePoints": 5,
+      "desc": "Brr!",
+      "buffs": [
+        {
+          "stat": "Icicle Pollen",
+          "type": "Mult",
+          "value": 1.1
+        }
+      ],
+      "stickerEgg": 0.9811
+    },
+    {
+      "name": "Flower Bee Sticker",
+      "image": "images/hive/stickers/Flower Bee Sticker.png",
+      "rarity": "Epic",
+      "category": "Bees",
+      "order": 15,
+      "donatePoints": 3,
+      "desc": "Smells nice!",
+      "buffs": [
+        {
+          "stat": "White Pollen",
+          "type": "Perc",
+          "value": 8
+        }
+      ],
+      "stickerEgg": 4.2924
+    },
+    {
+      "name": "Coal Bee Sticker",
+      "image": "images/hive/stickers/Coal Bee Sticker.png",
+      "rarity": "Epic",
+      "category": "Bees",
+      "order": 14,
+      "donatePoints": 3,
+      "desc": "Very Hot!",
+      "buffs": [
+        {
+          "stat": "Red Pollen",
+          "type": "Perc",
+          "value": 8
+        }
+      ],
+      "stickerEgg": 4.2924
+    },
+    {
+      "name": "Cold Bee Sticker",
+      "image": "images/hive/stickers/Cold Bee Sticker.png",
+      "rarity": "Epic",
+      "category": "Bees",
+      "order": 13,
+      "donatePoints": 3,
+      "desc": "Very Cold!",
+      "buffs": [
+        {
+          "stat": "Blue Pollen",
+          "type": "Perc",
+          "value": 8
+        }
+      ],
+      "stickerEgg": 4.2924
+    },
+    {
+      "name": "Honey Bee Sticker",
+      "image": "images/hive/stickers/Honey Bee Sticker.png",
+      "rarity": "Epic",
+      "category": "Bees",
+      "order": 12,
+      "donatePoints": 3,
+      "desc": "Sticky!",
+      "buffs": [
+        {
+          "stat": "Honey From Tokens",
+          "type": "Mult",
+          "value": 1.05
+        }
+      ],
+      "stickerEgg": 4.2924
+    },
+    {
+      "name": "Water Bee Sticker",
+      "image": "images/hive/stickers/Water Bee Sticker.png",
+      "rarity": "Epic",
+      "category": "Bees",
+      "order": 11,
+      "donatePoints": 3,
+      "desc": "I'm thirsty!",
+      "buffs": [
+        {
+          "stat": "Blue Pollen",
+          "type": "Perc",
+          "value": 8
+        }
+      ],
+      "stickerEgg": 4.2924
+    },
+    {
+      "name": "Sound Bee Sticker",
+      "image": "images/hive/stickers/Sound Bee Sticker.png",
+      "rarity": "Epic",
+      "category": "Bees",
+      "order": 10,
+      "donatePoints": 3,
+      "desc": "Sounds nice!",
+      "buffs": [
+        {
+          "stat": "Capacity Bonus",
+          "type": "Perc",
+          "value": 15
+        }
+      ],
+      "stickerEgg": 4.2924
+    },
+    {
+      "name": "Fire Bee Sticker",
+      "image": "images/hive/stickers/Fire Bee Sticker.png",
+      "rarity": "Epic",
+      "category": "Bees",
+      "order": 9,
+      "donatePoints": 3,
+      "desc": "HOT!",
+      "buffs": [
+        {
+          "stat": "Fire Pollen",
+          "type": "Mult",
+          "value": 1.05
+        }
+      ],
+      "stickerEgg": 4.2924
+    },
+    {
+      "name": "Azure Bee Sticker",
+      "image": "images/hive/stickers/Azure Bee Sticker.png",
+      "rarity": "Rare",
+      "category": "Bees",
+      "order": 8,
+      "donatePoints": 2,
+      "desc": "I love blue!",
+      "buffs": [
+        {
+          "stat": "Blue Pollen",
+          "type": "Perc",
+          "value": 5
+        }
+      ],
+      "stickerEgg": 7.3584
+    },
+    {
+      "name": "Magnet Bee Sticker",
+      "image": "images/hive/stickers/Magnet Bee Sticker.png",
+      "rarity": "Rare",
+      "category": "Bees",
+      "order": 7,
+      "donatePoints": 2,
+      "desc": "Weee!",
+      "buffs": [
+        {
+          "stat": "Movespeed",
+          "type": "Perc",
+          "value": 3
+        }
+      ],
+      "stickerEgg": 7.3584
+    },
+    {
+      "name": "Bomber Bee Sticker",
+      "image": "images/hive/stickers/Bomber Bee Sticker.png",
+      "rarity": "Rare",
+      "category": "Bees",
+      "order": 6,
+      "donatePoints": 2,
+      "desc": "Get down Mr. President!",
+      "buffs": [
+        {
+          "stat": "Capacity Bonus",
+          "type": "Perc",
+          "value": 5
+        }
+      ],
+      "stickerEgg": 7.3584
+    },
+    {
+      "name": "Hasty Bee Sticker",
+      "image": "images/hive/stickers/Hasty Bee Sticker.png",
+      "rarity": "Rare",
+      "category": "Bees",
+      "order": 5,
+      "donatePoints": 2,
+      "desc": "Super duper fast!",
+      "buffs": [
+        {
+          "stat": "Movespeed",
+          "type": "Perc",
+          "value": 5
+        }
+      ],
+      "stickerEgg": 7.3584
+    },
+    {
+      "name": "Science Bee Sticker",
+      "image": "images/hive/stickers/Science Bee Sticker.png",
+      "rarity": "Rare",
+      "category": "Bees",
+      "order": 4,
+      "donatePoints": 2,
+      "desc": "Gimme money!",
+      "buffs": [
+        {
+          "stat": "Energy Bonus",
+          "type": "Mult",
+          "value": 1.1
+        }
+      ],
+      "stickerEgg": 7.3584
+    },
+    {
+      "name": "Crimson Bee Sticker",
+      "image": "images/hive/stickers/Crimson Bee Sticker.png",
+      "rarity": "Rare",
+      "category": "Bees",
+      "order": 3,
+      "donatePoints": 2,
+      "desc": "Yooo!",
+      "buffs": [
+        {
+          "stat": "Red Pollen",
+          "type": "Perc",
+          "value": 5
+        }
+      ],
+      "stickerEgg": 7.3584
+    },
+    {
+      "name": "Rage Bee Sticker",
+      "image": "images/hive/stickers/Rage Bee Sticker.png",
+      "rarity": "Rare",
+      "category": "Bees",
+      "order": 2,
+      "donatePoints": 2,
+      "desc": "Dangerous!",
+      "buffs": [
+        {
+          "stat": "Red Bee Attack",
+          "type": "Add",
+          "value": 1
+        }
+      ],
+      "stickerEgg": 7.3584
+    },
+    {
+      "name": "Basic Bee Sticker",
+      "image": "images/hive/stickers/Basic Bee Sticker.png",
+      "rarity": "Common",
+      "category": "Bees",
+      "order": 1,
+      "donatePoints": 1,
+      "desc": "Wow!",
+      "buffs": [
+        {
+          "stat": "Honey From Tokens",
+          "type": "Perc",
+          "value": 3
+        }
+      ],
+      "stickerEgg": 9.8111
     },
     {
       "name": "Bamboo Spear Sticker",
@@ -617,8 +1299,14 @@
       "category": "Tools",
       "order": 899,
       "donatePoints": 5,
-      "desc": "Obtainable Randomly while gather!",
-      "buffs": [{ "stat": "Cloud Pollen", "type": "Mult", "value": 1.05 }],
+      "desc": "Obtainable randomly while gathering!",
+      "buffs": [
+        {
+          "stat": "Cloud Pollen",
+          "type": "Mult",
+          "value": 1.05
+        }
+      ],
       "weight": 15
     },
     {
@@ -629,7 +1317,13 @@
       "order": 997,
       "donatePoints": 3,
       "desc": "Obtainable randomly while gathering!",
-      "buffs": [{ "stat": "Ice Pollen", "type": "Mult", "value": 1.05 }],
+      "buffs": [
+        {
+          "stat": "Ice Pollen",
+          "type": "Mult",
+          "value": 1.05
+        }
+      ],
       "weight": 500
     },
     {
@@ -640,7 +1334,13 @@
       "order": 998,
       "donatePoints": 3,
       "desc": "Obtainable randomly while gathering!",
-      "buffs": [{ "stat": "Fire Pollen", "type": "Mult", "value": 1.05 }],
+      "buffs": [
+        {
+          "stat": "Fire Pollen",
+          "type": "Mult",
+          "value": 1.05
+        }
+      ],
       "weight": 500
     },
     {
@@ -652,8 +1352,16 @@
       "donatePoints": 3,
       "desc": "Obtainable randomly while gathering!",
       "buffs": [
-        { "stat": "Pollen", "type": "Perc", "value": 21 },
-        { "stat": "Capacity Bonus", "type": "Perc", "value": 17 }
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 21
+        },
+        {
+          "stat": "Capacity Bonus",
+          "type": "Perc",
+          "value": 17
+        }
       ],
       "weight": 500
     },
@@ -665,7 +1373,13 @@
       "order": 1997,
       "donatePoints": 2,
       "desc": "Obtainable randomly while gathering!",
-      "buffs": [{ "stat": "Loot Luck", "type": "Perc", "value": 14 }],
+      "buffs": [
+        {
+          "stat": "Loot Luck",
+          "type": "Perc",
+          "value": 14
+        }
+      ],
       "weight": 3000
     },
     {
@@ -676,7 +1390,13 @@
       "order": 1998,
       "donatePoints": 2,
       "desc": "Obtainable randomly while gathering!",
-      "buffs": [{ "stat": "Defense", "type": "Perc", "value": 12 }],
+      "buffs": [
+        {
+          "stat": "Defense",
+          "type": "Perc",
+          "value": 12
+        }
+      ],
       "weight": 3000
     },
     {
@@ -688,8 +1408,16 @@
       "donatePoints": 2,
       "desc": "Obtainable randomly while gathering!",
       "buffs": [
-        { "stat": "Capacity Bonus", "type": "Perc", "value": 12 },
-        { "stat": "Convert Rate", "type": "Perc", "value": 7 }
+        {
+          "stat": "Capacity Bonus",
+          "type": "Perc",
+          "value": 12
+        },
+        {
+          "stat": "Convert Rate",
+          "type": "Perc",
+          "value": 7
+        }
       ],
       "weight": 3000
     },
@@ -701,7 +1429,13 @@
       "order": 2000,
       "donatePoints": 2,
       "desc": "Obtainable randomly while gathering!",
-      "buffs": [{ "stat": "Honey Bonus", "type": "Perc", "value": 4 }],
+      "buffs": [
+        {
+          "stat": "Honey Bonus",
+          "type": "Perc",
+          "value": 4
+        }
+      ],
       "weight": 3000
     },
     {
@@ -712,7 +1446,13 @@
       "order": 7996,
       "donatePoints": 1,
       "desc": "Obtainable randomly while gathering!",
-      "buffs": [{ "stat": "Convert Amount", "type": "Add", "value": 4 }],
+      "buffs": [
+        {
+          "stat": "Convert Amount",
+          "type": "Add",
+          "value": 4
+        }
+      ],
       "weight": 10000
     },
     {
@@ -723,7 +1463,13 @@
       "order": 7997,
       "donatePoints": 1,
       "desc": "Obtainable randomly while gathering!",
-      "buffs": [{ "stat": "Pollen", "type": "Perc", "value": 7 }],
+      "buffs": [
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 7
+        }
+      ],
       "weight": 10000
     },
     {
@@ -734,7 +1480,13 @@
       "order": 7998,
       "donatePoints": 1,
       "desc": "Obtainable randomly while gathering!",
-      "buffs": [{ "stat": "Capacity Bonus", "type": "Perc", "value": 7 }],
+      "buffs": [
+        {
+          "stat": "Capacity Bonus",
+          "type": "Perc",
+          "value": 7
+        }
+      ],
       "weight": 10000
     },
     {
@@ -745,7 +1497,13 @@
       "order": 7999,
       "donatePoints": 1,
       "desc": "Obtainable randomly while gathering!",
-      "buffs": [{ "stat": "Convert Rate", "type": "Perc", "value": 7 }],
+      "buffs": [
+        {
+          "stat": "Convert Rate",
+          "type": "Perc",
+          "value": 7
+        }
+      ],
       "weight": 10000
     },
     {
@@ -757,10 +1515,78 @@
       "donatePoints": 1,
       "desc": "Obtainable randomly while gathering!",
       "buffs": [
-        { "stat": "Pollen", "type": "Perc", "value": 3 },
-        { "stat": "Capacity Bonus", "type": "Perc", "value": 2 }
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 3
+        },
+        {
+          "stat": "Capacity Bonus",
+          "type": "Perc",
+          "value": 2
+        }
       ],
       "weight": 10000
+    },
+    {
+      "name": "Garden Field Sticker",
+      "image": "images/hive/stickers/Garden Field Sticker.png",
+      "rarity": "Common",
+      "category": "Fields",
+      "order": 9978,
+      "desc": "Obtainable in the Garden Field!",
+      "buffs": [
+        {
+          "stat": "Garden Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
+    },
+    {
+      "name": "Cabbage Field Sticker",
+      "image": "images/hive/stickers/Cabbage Field Sticker.png",
+      "rarity": "Common",
+      "category": "Fields",
+      "order": 9979,
+      "desc": "Obtainable in the Cabbage Field!",
+      "buffs": [
+        {
+          "stat": "Cabbage Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
+    },
+    {
+      "name": "Carrot Field Sticker",
+      "image": "images/hive/stickers/Carrot Field Sticker.png",
+      "rarity": "Common",
+      "category": "Fields",
+      "order": 9980,
+      "desc": "Obtainable in the Carrot Field!",
+      "buffs": [
+        {
+          "stat": "Carrot Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
+    },
+    {
+      "name": "Apple Field Sticker",
+      "image": "images/hive/stickers/Apple Field Sticker.png",
+      "rarity": "Common",
+      "category": "Fields",
+      "order": 9981,
+      "desc": "Obtainable in the Apple Field!",
+      "buffs": [
+        {
+          "stat": "Apple Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
     },
     {
       "name": "Lotus Field Sticker",
@@ -769,9 +1595,14 @@
       "category": "Fields",
       "order": 9982,
       "donatePoints": 1,
-      "desc": "Obtainable on Lotus Field!",
-      "buffs": [{ "stat": "Lotus Field Pollen", "type": "Perc", "value": 25 }],
-      "weight": 10000
+      "desc": "Obtainable in the Lotus Field!",
+      "buffs": [
+        {
+          "stat": "Lotus Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
     },
     {
       "name": "Blossom Field Sticker",
@@ -780,11 +1611,14 @@
       "category": "Fields",
       "order": 9983,
       "donatePoints": 1,
-      "desc": "Obtainable on Blossom Field!",
+      "desc": "Obtainable in the Blossom Field!",
       "buffs": [
-        { "stat": "Blossom Field Pollen", "type": "Perc", "value": 25 }
-      ],
-      "weight": 10000
+        {
+          "stat": "Blossom Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
     },
     {
       "name": "Wisteria Field Sticker",
@@ -793,11 +1627,14 @@
       "category": "Fields",
       "order": 9984,
       "donatePoints": 1,
-      "desc": "Obtainable on Wisteria Field!",
+      "desc": "Obtainable in the Wisteria Field!",
       "buffs": [
-        { "stat": "Wisteria Field Pollen", "type": "Perc", "value": 25 }
-      ],
-      "weight": 10000
+        {
+          "stat": "Wisteria Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
     },
     {
       "name": "Raspberry Field Sticker",
@@ -806,11 +1643,14 @@
       "category": "Fields",
       "order": 9985,
       "donatePoints": 1,
-      "desc": "Obtainable on Raspberry Field!",
+      "desc": "Obtainable in the Raspberry Field!",
       "buffs": [
-        { "stat": "Raspberry Field Pollen", "type": "Perc", "value": 25 }
-      ],
-      "weight": 10000
+        {
+          "stat": "Raspberry Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
     },
     {
       "name": "Banana Field Sticker",
@@ -819,9 +1659,14 @@
       "category": "Fields",
       "order": 9986,
       "donatePoints": 1,
-      "desc": "Obtainable on Banana Field!",
-      "buffs": [{ "stat": "Banana Field Pollen", "type": "Perc", "value": 25 }],
-      "weight": 10000
+      "desc": "Obtainable in the Banana Field!",
+      "buffs": [
+        {
+          "stat": "Banana Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
     },
     {
       "name": "Bamboo Field Sticker",
@@ -830,9 +1675,14 @@
       "category": "Fields",
       "order": 9987,
       "donatePoints": 1,
-      "desc": "Obtainable on Bamboo Field!",
-      "buffs": [{ "stat": "Bamboo Field Pollen", "type": "Perc", "value": 25 }],
-      "weight": 10000
+      "desc": "Obtainable in the Bamboo Field!",
+      "buffs": [
+        {
+          "stat": "Bamboo Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
     },
     {
       "name": "Snowdrops Field Sticker",
@@ -841,11 +1691,14 @@
       "category": "Fields",
       "order": 9988,
       "donatePoints": 1,
-      "desc": "Obtainable on Snowdrops Field!",
+      "desc": "Obtainable in the Snowdrops Field!",
       "buffs": [
-        { "stat": "Snowdrops Field Pollen", "type": "Perc", "value": 25 }
-      ],
-      "weight": 10000
+        {
+          "stat": "Snowdrops Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
     },
     {
       "name": "Pine Cone Field Sticker",
@@ -854,11 +1707,14 @@
       "category": "Fields",
       "order": 9989,
       "donatePoints": 1,
-      "desc": "Obtainable on Pine Cone Field!",
+      "desc": "Obtainable in the Pine Cone Field!",
       "buffs": [
-        { "stat": "Pine Cone Field Pollen", "type": "Perc", "value": 25 }
-      ],
-      "weight": 10000
+        {
+          "stat": "Pine Cone Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
     },
     {
       "name": "Rose Field Sticker",
@@ -867,9 +1723,14 @@
       "category": "Fields",
       "order": 9990,
       "donatePoints": 1,
-      "desc": "Obtainable on Rose Field!",
-      "buffs": [{ "stat": "Rose Field Pollen", "type": "Perc", "value": 25 }],
-      "weight": 10000
+      "desc": "Obtainable in the Rose Field!",
+      "buffs": [
+        {
+          "stat": "Rose Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
     },
     {
       "name": "Spider Field Sticker",
@@ -878,9 +1739,14 @@
       "category": "Fields",
       "order": 9991,
       "donatePoints": 1,
-      "desc": "Obtainable on Spider Field!",
-      "buffs": [{ "stat": "Spider Field Pollen", "type": "Perc", "value": 25 }],
-      "weight": 10000
+      "desc": "Obtainable in the Spider Field!",
+      "buffs": [
+        {
+          "stat": "Spider Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
     },
     {
       "name": "Strawberry Field Sticker",
@@ -889,11 +1755,14 @@
       "category": "Fields",
       "order": 9992,
       "donatePoints": 1,
-      "desc": "Obtainable on Strawberry Field!",
+      "desc": "Obtainable in the Strawberry Field!",
       "buffs": [
-        { "stat": "Strawberry Field Pollen", "type": "Perc", "value": 25 }
-      ],
-      "weight": 10000
+        {
+          "stat": "Strawberry Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
     },
     {
       "name": "Bellflower Field Sticker",
@@ -902,11 +1771,14 @@
       "category": "Fields",
       "order": 9993,
       "donatePoints": 1,
-      "desc": "Obtainable on Bellflower Field!",
+      "desc": "Obtainable in the Bellflower Field!",
       "buffs": [
-        { "stat": "Bellflower Field Pollen", "type": "Perc", "value": 25 }
-      ],
-      "weight": 10000
+        {
+          "stat": "Bellflower Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
     },
     {
       "name": "Blue Flowers Field Sticker",
@@ -915,11 +1787,14 @@
       "category": "Fields",
       "order": 9994,
       "donatePoints": 1,
-      "desc": "Obtainable on Blue Flowers Field!",
+      "desc": "Obtainable in the Blue Flowers Field!",
       "buffs": [
-        { "stat": "Blue Flowers Field Pollen", "type": "Perc", "value": 25 }
-      ],
-      "weight": 10000
+        {
+          "stat": "Blue Flowers Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
     },
     {
       "name": "Red Flowers Field Sticker",
@@ -928,11 +1803,14 @@
       "category": "Fields",
       "order": 9995,
       "donatePoints": 1,
-      "desc": "Obtainable on Red Flowers Field!",
+      "desc": "Obtainable in the Red Flowers Field!",
       "buffs": [
-        { "stat": "Red Flowers Field Pollen", "type": "Perc", "value": 25 }
-      ],
-      "weight": 10000
+        {
+          "stat": "Red Flowers Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
     },
     {
       "name": "Sunflower Field Sticker",
@@ -941,11 +1819,14 @@
       "category": "Fields",
       "order": 9996,
       "donatePoints": 1,
-      "desc": "Obtainable on Sunflower Field!",
+      "desc": "Obtainable in the Sunflower Field!",
       "buffs": [
-        { "stat": "Sunflower Field Pollen", "type": "Perc", "value": 25 }
-      ],
-      "weight": 10000
+        {
+          "stat": "Sunflower Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
     },
     {
       "name": "Blackberry Field Sticker",
@@ -954,11 +1835,14 @@
       "category": "Fields",
       "order": 9997,
       "donatePoints": 1,
-      "desc": "Obtainable on Blackberry Field!",
+      "desc": "Obtainable in the Blackberry Field!",
       "buffs": [
-        { "stat": "Blackberry Field Pollen", "type": "Perc", "value": 25 }
-      ],
-      "weight": 10000
+        {
+          "stat": "Blackberry Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
     },
     {
       "name": "Clover Field Sticker",
@@ -967,9 +1851,14 @@
       "category": "Fields",
       "order": 9998,
       "donatePoints": 1,
-      "desc": "Obtainable on Clover Field!",
-      "buffs": [{ "stat": "Clover Field Pollen", "type": "Perc", "value": 25 }],
-      "weight": 10000
+      "desc": "Obtainable in the Clover Field!",
+      "buffs": [
+        {
+          "stat": "Clover Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
     },
     {
       "name": "Daisy Field Sticker",
@@ -978,9 +1867,14 @@
       "category": "Fields",
       "order": 9999,
       "donatePoints": 1,
-      "desc": "Obtainable on Daisy Field!",
-      "buffs": [{ "stat": "Daisy Field Pollen", "type": "Perc", "value": 25 }],
-      "weight": 10000
+      "desc": "Obtainable in the Daisy Field!",
+      "buffs": [
+        {
+          "stat": "Daisy Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
     },
     {
       "name": "Mushroom Field Sticker",
@@ -989,21 +1883,14 @@
       "category": "Fields",
       "order": 10000,
       "donatePoints": 1,
-      "desc": "Obtainable on Mushroom Field!",
+      "desc": "Obtainable in the Mushroom Field!",
       "buffs": [
-        { "stat": "Mushroom Field Pollen", "type": "Perc", "value": 25 }
-      ],
-      "weight": 10000
-    },
-    {
-      "name": "Frozen Clover Sticker",
-      "image": "images/hive/stickers/Frozen Clover Sticker.png",
-      "rarity": "Exclusive",
-      "category": "Quest",
-      "order": 10001,
-      "donatePoints": 10,
-      "desc": "Obtained from Polar Bear's Final Quest!",
-      "buffs": [{ "stat": "Loot Luck", "type": "Mult", "value": 1.1 }]
+        {
+          "stat": "Mushroom Field Pollen",
+          "type": "Perc",
+          "value": 25
+        }
+      ]
     }
   ]
 }

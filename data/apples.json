@@ -1,0 +1,162 @@
+{
+  "Normal": [
+    {
+      "name": "Apple",
+      "weight": 15,
+      "type": "Item",
+      "qty": 3
+    },
+    {
+      "name": "Royal Jelly",
+      "weight": 5,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Honey",
+      "weight": 15,
+      "type": "Stats",
+      "qty": 255
+    },
+    {
+      "name": "Treat",
+      "weight": 10,
+      "type": "Item",
+      "qty": 5
+    },
+    {
+      "name": "Ticket",
+      "weight": 1,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Sticker Egg",
+      "weight": 0.1,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Gardener's Bundle",
+      "weight": 1,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Golden Apple",
+      "weight": 1,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Basic Vines",
+      "weight": 1,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Rare Vines",
+      "weight": 0.5,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Epic Vines",
+      "weight": 0.2,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Legendary Vines",
+      "weight": 0.1,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Mythic Vines",
+      "weight": 0.01,
+      "type": "Item",
+      "qty": 1
+    }
+  ],
+  "Golden": [
+    {
+      "name": "Golden Apple",
+      "weight": 15,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Royal Jelly",
+      "weight": 5,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Honey",
+      "weight": 15,
+      "type": "Stats",
+      "qty": 255
+    },
+    {
+      "name": "Treat",
+      "weight": 10,
+      "type": "Item",
+      "qty": 5
+    },
+    {
+      "name": "Ticket",
+      "weight": 1,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Sticker Egg",
+      "weight": 0.1,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Gardener's Bundle",
+      "weight": 5,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Golden Apple",
+      "weight": 1,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Basic Vines",
+      "weight": 1,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Rare Vines",
+      "weight": 0.5,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Epic Vines",
+      "weight": 0.2,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Legendary Vines",
+      "weight": 0.1,
+      "type": "Item",
+      "qty": 1
+    },
+    {
+      "name": "Mythic Vines",
+      "weight": 0.01,
+      "type": "Item",
+      "qty": 1
+    }
+  ]
+}

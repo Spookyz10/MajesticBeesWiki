@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.preview/
+
+# Personal tools and supplied game source (local only).
+/scripts/
+/GAME CODE/

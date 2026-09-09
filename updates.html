@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+<script defer src="js/core/data.js"></script>
+<script defer src="js/core/pages.js"></script>
+<script defer src="js/core/loot-luck.js"></script>
+<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Update Log</title>
-
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Update Log" />
     <meta
@@ -27,33 +28,31 @@
       name="twitter:image"
       content="https://spookyz10.github.io/MajesticBeesWiki/images/ui/site-logo.png"
     />
-    <link rel="stylesheet" href="css/all.css" />
     <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
-
-    <script defer src="js/load-sidebar.js"></script>
-    <script defer src="js/wiki-search.js"></script>
-    <script defer src="js/search.js"></script>
-  </head>
-
+    <script defer src="js/core/load-sidebar.js"></script>
+    <script defer src="js/core/wiki-search.js"></script>
+    <script defer src="js/core/search.js"></script>
+<link rel="stylesheet" href="css/style.css" data-site-style>
+<link rel="stylesheet" href="css/loot-luck.css" data-site-style>
+<link rel="stylesheet" href="css/updates.css" data-site-style>
+<link rel="stylesheet" href="css/theme.css" data-site-style>
+</head>
   <body>
     <div id="sidebar-container"></div>
-
     <div class="main" data-pagefind-body>
       <div class="topbar">
         <div id="search"></div>
       </div>
-
       <div class="content mw-parser-output">
         <div class="ul-page-title">
           <div class="hero-title">Update Log</div>
         </div>
-
         <div class="hero-description ul-hero-description">
           A full history of every update released for <b>The Majestic Bees</b>.
           Each entry covers new content, changes, and fixes.
         </div>
-
         <div class="ul-list">
+<div class="ul-card" id="update-11"><div class="ul-card-header"><div class="ul-icon-wrap"><img src="images/updates/update11.png" alt="Update 11" onerror="this.onerror=null;this.src='images/ui/site-logo.png'"></div><div class="ul-card-meta"><div class="ul-card-name">Update 11</div><div class="ul-card-date">5 September, 2026</div></div><button class="ul-toggle" aria-expanded="false" aria-controls="ul-body-11">▼</button></div><div class="ul-card-body ul-card-body--collapsed" id="ul-body-11"><div class="ul-section"><div class="ul-section-title">New content</div><ul><li>30 Bee Zone with Garden, Cabbage, Apple, and Carrot fields.</li><li>Art Hall and Painter Bear rework.</li><li>Paint Brush, Paint Helmet, and Paint Backpack, listed in the library as Canvy’s Extra Paintbrush, Canvas Helmet, and Paint Bucket.</li><li>Rich Apple Juice, Foaming Carrot Juice, and Pot’O’Vegetation.</li><li>Apple and Golden Apple food; Apple Worm and Golden Apple Worm.</li><li>Falling Apples event, Oscar bunny, new quest types, and over 15 new stickers.</li><li>Separate Bees tab. Hobbit Shop is listed for Part 2.</li></ul></div><div class="ul-section"><div class="ul-section-title">Changes</div><ul><li>Vines consume faster.</li><li>Lunar Event limit added; Lunar Zone and map reworked.</li><li>Summer Event removed.</li><li>Various bug fixes. More content announced for Part 2.</li></ul><p><a href="art-hall.html">Art Hall guide</a> · <a href="falling-apples.html">Falling Apples</a> · <a href="passives.html">Passives</a></p></div></div></div>
           <div class="ul-card" id="update-10">
             <div class="ul-card-header">
               <div class="ul-icon-wrap">
@@ -331,7 +330,6 @@
               </div>
             </div>
           </div>
-
           <div class="ul-card" id="update-7">
             <div class="ul-card-header">
               <div class="ul-icon-wrap">
@@ -420,7 +418,6 @@
               </div>
             </div>
           </div>
-
           <div class="ul-card" id="update-6">
             <div class="ul-card-header">
               <div class="ul-icon-wrap">
@@ -475,7 +472,6 @@
               </div>
             </div>
           </div>
-
           <div class="ul-card" id="update-5">
             <div class="ul-card-header">
               <div class="ul-icon-wrap">
@@ -561,7 +557,6 @@
               </div>
             </div>
           </div>
-
           <div class="ul-card" id="update-4">
             <div class="ul-card-header">
               <div class="ul-icon-wrap">
@@ -616,7 +611,6 @@
               </div>
             </div>
           </div>
-
           <div class="ul-card" id="update-3">
             <div class="ul-card-header">
               <div class="ul-icon-wrap">
@@ -666,7 +660,6 @@
               </div>
             </div>
           </div>
-
           <div class="ul-card" id="update-2">
             <div class="ul-card-header">
               <div class="ul-icon-wrap">
@@ -737,7 +730,6 @@
               </div>
             </div>
           </div>
-
           <div class="ul-card" id="update-1">
             <div class="ul-card-header">
               <div class="ul-icon-wrap">
@@ -795,13 +787,12 @@
           </div>
         </div>
       </div>
-    </div>
-
+<section class="related-pages" aria-label="Similar pages"><h2>Similar pages</h2><nav aria-label="Related articles"><a href="codes.html">Codes</a><a href="index.html">Home</a><a href="amulets.html">Amulets</a><a href="art-hall.html">Art Hall</a><a href="badges.html">Badges</a></nav></section>
+</div>
     <script>
       document.querySelectorAll(".ul-card-header").forEach((header) => {
         const btn = header.querySelector(".ul-toggle");
         if (!btn) return;
-
         const toggleCard = () => {
           const bodyId = btn.getAttribute("aria-controls");
           const body = document.getElementById(bodyId);
@@ -810,10 +801,8 @@
           btn.textContent = expanded ? "▼" : "▲";
           body.classList.toggle("ul-card-body--collapsed", expanded);
         };
-
         header.setAttribute("tabindex", "0");
         header.setAttribute("role", "button");
-
         header.addEventListener("click", toggleCard);
         header.addEventListener("keydown", (event) => {
           if (event.key === "Enter" || event.key === " ") {
@@ -822,12 +811,10 @@
           }
         });
       });
-
       const newestCard = document.querySelector(".ul-list .ul-card");
       if (newestCard) {
         const newestBtn = newestCard.querySelector(".ul-toggle");
         const newestBody = newestCard.querySelector(".ul-card-body");
-
         if (newestBtn && newestBody) {
           newestBtn.setAttribute("aria-expanded", "true");
           newestBtn.textContent = "▲";
@@ -835,5 +822,5 @@
         }
       }
     </script>
-  </body>
+</body>
 </html>

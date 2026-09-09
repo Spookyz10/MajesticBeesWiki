@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+<script defer src="js/core/data.js"></script>
+<script defer src="js/core/pages.js"></script>
+<script defer src="js/core/loot-luck.js"></script>
+<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Hive</title>
-
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Hive" />
     <meta
@@ -27,52 +28,44 @@
       name="twitter:image"
       content="https://spookyz10.github.io/MajesticBeesWiki/images/ui/site-logo.png"
     />
-
-    <link rel="stylesheet" href="css/all.css" />
     <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
-
-    <script defer src="js/load-sidebar.js"></script>
-    <script defer src="js/wiki-search.js"></script>
-    <script defer src="js/search.js"></script>
-    <script defer src="js/loot-luck.js"></script>
-    <script defer src="js/hive.js"></script>
-    <script defer src="js/drop-pool.js"></script>
-  </head>
-
+    <script defer src="js/core/load-sidebar.js"></script>
+    <script defer src="js/core/wiki-search.js"></script>
+    <script defer src="js/core/search.js"></script>
+    <script defer src="js/pages/hive.js"></script>
+    <script defer src="js/core/drop-pool.js"></script>
+<link rel="stylesheet" href="css/style.css" data-site-style>
+<link rel="stylesheet" href="css/loot-luck.css" data-site-style>
+<link rel="stylesheet" href="css/hive.css" data-site-style>
+<link rel="stylesheet" href="css/theme.css" data-site-style>
+</head>
   <body>
     <div id="sidebar-container"></div>
-
     <div class="main" data-pagefind-body>
       <div class="topbar">
         <div id="search"></div>
       </div>
-
       <div class="content mw-parser-output">
         <div class="hive-page-title">
           <div class="hero-title">Hive</div>
         </div>
-
         <div class="hero-description hive-hero-description">
           Your hive is the heart of your colony in <b>The Majestic Bees</b>.
           Customize it with <b>Skins</b> and <b>Stickers</b> to change its
           appearance and gain permanent stat bonuses. Expand it by purchasing
           more slots with honey.
         </div>
-
         <hr />
-
         <h2>How Drops Work</h2>
         <p class="hive-section-desc">
           Every flower you collect triggers two independent rolls.
         </p>
-
         <div class="drop-flow-wrap">
           <div class="drop-flow">
             <div class="drop-flow-node drop-flow-node--start">
               Flower collected
             </div>
             <div class="drop-flow-arrow">▼</div>
-
             <div class="drop-flow-split">
               <div class="drop-flow-branch">
                 <div class="drop-flow-node drop-flow-node--roll">
@@ -94,9 +87,7 @@
                 </div>
               </div>
             </div>
-
             <div class="drop-flow-connector"></div>
-
             <div class="drop-flow-split">
               <div class="drop-flow-branch">
                 <div
@@ -124,14 +115,11 @@
             </div>
           </div>
         </div>
-
         <hr />
-
         <h2>Hive Slots</h2>
         <div class="hive-info-box">
           You start the game with <b>5 hive slots</b>. More slots are purchased
           with honey, up to a maximum of <b>50 slots</b>.
-
           <div class="hive-slot-table" id="hive-slot-table">
             <table class="wikitable bees-table bees-slots-table">
               <tr>
@@ -331,27 +319,22 @@
             </div>
           </div>
         </div>
-
         <hr />
-
         <h2>Skins</h2>
         <p class="hive-section-desc">
           Skins change the appearance of your hive and grant passive bonuses.
           Each skin belongs to a rarity tier.
         </p>
-
         <div class="hive-tab-buttons">
           <button class="hive-tab-btn active" data-hive-tab="skins-common">
             Common
           </button>
           <button class="hive-tab-btn" data-hive-tab="skins-rare">Rare</button>
           <button class="hive-tab-btn" data-hive-tab="skins-epic">Epic</button>
-
           <button class="hive-tab-btn" data-hive-tab="skins-legendary">
             Legendary
           </button>
         </div>
-
         <div
           id="skins-common"
           class="hive-grid"
@@ -381,15 +364,12 @@
           data-hive-panel="skins-special"
           style="display: none"
         ></div>
-
         <hr />
-
         <h2>Stickers</h2>
         <p class="hive-section-desc">
           Stickers are cosmetic decorations that also provide stat bonuses. Most
           are obtained randomly while gathering or through special events.
         </p>
-
         <div class="hive-tab-buttons">
           <button class="hive-tab-btn active" data-hive-tab="stickers-common">
             Common
@@ -416,7 +396,6 @@
             Exclusive
           </button>
         </div>
-
         <div
           id="stickers-common"
           class="hive-grid"
@@ -440,7 +419,6 @@
           data-hive-panel="stickers-legendary"
           style="display: none"
         ></div>
-
         <div
           id="stickers-mythic"
           class="hive-grid"
@@ -466,6 +444,7 @@
           style="display: none"
         ></div>
       </div>
-    </div>
-  </body>
+<section class="related-pages" aria-label="Similar pages"><h2>Similar pages</h2><nav aria-label="Related articles"><a href="bees.html">Bees</a><a href="hive-builder.html">Hive Builder</a><a href="amulets.html">Amulets</a><a href="art-hall.html">Art Hall</a><a href="badges.html">Badges</a></nav></section>
+</div>
+</body>
 </html>

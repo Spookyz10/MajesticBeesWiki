@@ -1,9 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+<script defer src="js/core/data.js"></script>
+<script defer src="js/core/pages.js"></script>
+<script defer src="js/core/loot-luck.js"></script>
+<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Shops</title>
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Shops" />
@@ -26,29 +28,29 @@
       name="twitter:image"
       content="https://spookyz10.github.io/MajesticBeesWiki/images/ui/site-logo.png"
     />
-
-    <link rel="stylesheet" href="css/all.css" />
-    <script defer src="js/utils.js"></script>
-    <script defer src="js/wiki-search.js"></script>
-    <script defer src="js/search.js"></script>
-    <script defer src="js/shops.js"></script>
-    <script defer src="js/load-sidebar.js"></script>
+    <script defer src="js/core/utils.js"></script>
+    <script defer src="js/core/wiki-search.js"></script>
+    <script defer src="js/core/search.js"></script>
+    <script defer src="js/pages/shops.js"></script>
+    <script defer src="js/core/load-sidebar.js"></script>
     <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
-  </head>
-
+<link rel="stylesheet" href="css/style.css" data-site-style>
+<link rel="stylesheet" href="css/loot-luck.css" data-site-style>
+<link rel="stylesheet" href="css/shops.css" data-site-style>
+<link rel="stylesheet" href="css/general-shop.css" data-site-style>
+<link rel="stylesheet" href="css/theme.css" data-site-style>
+</head>
   <body>
     <div id="sidebar-container"></div>
-
     <div class="main" data-pagefind-body>
       <div class="topbar">
         <div id="search"></div>
       </div>
-
       <div class="content mw-parser-output">
+<p class="hero-description">Summerfest ended in Update 11 on September 5, 2026. Summer event content is retained here for reference.</p>
         <div style="text-align: center; padding: 30px 0 10px">
           <div class="hero-title">Shops</div>
         </div>
-
         <div
           class="hero-description"
           style="
@@ -63,18 +65,16 @@
           located in a different area of the map and carries its own set of
           items.
         </div>
-
         <hr />
-
         <h2 style="text-align: center; padding-left: 0">All Shops</h2>
         <div id="shops-regular" class="shops-list"></div>
-
         <div id="shops-limited-section" style="display: none">
           <hr />
           <h2 style="text-align: center; padding-left: 0">Limited Time</h2>
           <div id="shops-limited" class="shops-list"></div>
         </div>
       </div>
-    </div>
-  </body>
+<section class="related-pages" aria-label="Similar pages"><h2>Similar pages</h2><nav aria-label="Related articles"><a href="items.html">Items</a><a href="passives.html">Passives</a><a href="store.html">Store</a><a href="amulets.html">Amulets</a><a href="art-hall.html">Art Hall</a></nav></section>
+</div>
+</body>
 </html>

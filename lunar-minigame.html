@@ -1,9 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+<script defer src="js/core/data.js"></script>
+<script defer src="js/core/pages.js"></script>
+<script defer src="js/core/loot-luck.js"></script>
+<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Lunar Minigame</title>
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Lunar Minigame" />
@@ -26,25 +28,24 @@
       name="twitter:image"
       content="https://spookyz10.github.io/MajesticBeesWiki/images/ui/site-logo.png"
     />
-
-    <link rel="stylesheet" href="css/all.css" />
     <link rel="icon" type="image/png" href="images/ui/fav-icon.png" />
-
-    <script defer src="js/lunar-minigame.js"></script>
-    <script defer src="js/load-sidebar.js"></script>
-    <script defer src="js/wiki-search.js"></script>
-    <script defer src="js/search.js"></script>
-  </head>
-
+    <script defer src="js/pages/lunar-minigame.js"></script>
+    <script defer src="js/core/load-sidebar.js"></script>
+    <script defer src="js/core/wiki-search.js"></script>
+    <script defer src="js/core/search.js"></script>
+<link rel="stylesheet" href="css/style.css" data-site-style>
+<link rel="stylesheet" href="css/loot-luck.css" data-site-style>
+<link rel="stylesheet" href="css/lunar-minigame.css" data-site-style>
+<link rel="stylesheet" href="css/theme.css" data-site-style>
+</head>
   <body>
     <div id="sidebar-container"></div>
-
     <div class="main" data-pagefind-body>
       <div class="topbar">
         <div id="search"></div>
       </div>
-
       <div class="content mw-parser-output">
+<p class="hero-description">Update 11 reworked the Lunar Zone and added a limit to the Lunar Event. Lunar task scaling is capped at 7× base amount, and Consume Vines requires at most 5 vines.</p>
         <div class="lunar-hero">
           <div class="lunar-hero-content">
             <div class="hero-title">Lunar Minigame</div>
@@ -56,13 +57,10 @@
             </p>
           </div>
         </div>
-
         <div class="lunar-hero-image">
           <img src="images/misc/lunar-altar.png" alt="Lunar Altar" />
         </div>
-
         <hr />
-
         <h2>How It Works</h2>
         <ol class="lunar-steps">
           <li class="lunar-step">
@@ -117,15 +115,12 @@
             >
           </li>
         </ol>
-
         <hr />
-
         <h2>Task Pool</h2>
         <div class="bees-info-box bees-info-box--plain">
           During the trial, tasks are picked at random from the pool below. Each
           task's amount is randomized within its range, so no two runs ask for
           exactly the same thing.
-
           <table class="wikitable bees-table lunar-task-table">
             <thead>
               <tr>
@@ -136,21 +131,17 @@
             <tbody id="lunar-task-tbody"></tbody>
           </table>
         </div>
-
         <hr />
-
         <!-- <h2>Rewards</h2>
         <div class="bees-info-box bees-info-box--plain">
           At the end of the trial, each of your rolls is exchanged for a random
           reward from the pool below. As the more tasks you complete the more
           common rarer items get you can also insert your tasks completed in the
           text box below.
-
           <div class="lunar-sim-controls">
             <label for="lunar-tasks-input">Tasks completed</label>
             <input type="number" id="lunar-tasks-input" min="0" value="0" />
           </div>
-
           <table class="wikitable bees-table lunar-task-table">
             <thead>
               <tr>
@@ -163,6 +154,7 @@
           </table>
         </div> -->
       </div>
-    </div>
-  </body>
+<section class="related-pages" aria-label="Similar pages"><h2>Similar pages</h2><nav aria-label="Related articles"><a href="falling-apples.html">Falling Apples</a><a href="mobs.html">Mobs</a><a href="planters.html">Planters</a><a href="starflowers.html">Starflowers</a><a href="vines.html">Vines</a></nav></section>
+</div>
+</body>
 </html>

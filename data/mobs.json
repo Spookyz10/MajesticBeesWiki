@@ -10,86 +10,103 @@
       {
         "name": "Caterpillar Amulet",
         "weight": 0.5,
+        "type": "Amulet",
         "qty": 1
       },
       {
         "name": "Seed",
         "weight": 15,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Strawberry",
         "weight": 15,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Blueberry",
         "weight": 15,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Pine Cone",
         "weight": 15,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Fire Essence",
         "weight": 5,
+        "type": "Item",
         "qty": 3
       },
       {
         "name": "Water Essence",
         "weight": 5,
+        "type": "Item",
         "qty": 3
       },
       {
         "name": "Wind Essence",
         "weight": 5,
+        "type": "Item",
         "qty": 3
       },
       {
         "name": "Sticker Egg",
         "weight": 0.1,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Honey",
         "weight": 15,
+        "type": "Stats",
         "qty": 100
       },
       {
         "name": "Treat",
         "weight": 10,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Ticket",
         "weight": 1,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Basic Vines",
         "weight": 1,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Rare Vines",
         "weight": 0.5,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Epic Vines",
         "weight": 0.2,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Legendary Vines",
         "weight": 0.1,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Mythic Vines",
         "weight": 0.01,
+        "type": "Item",
         "qty": 1
       }
     ]
@@ -105,71 +122,85 @@
       {
         "name": "Ladybug Amulet",
         "weight": 0.25,
+        "type": "Amulet",
         "qty": 1
       },
       {
         "name": "Strawberry",
         "weight": 15,
+        "type": "Item",
         "qty": 3
       },
       {
         "name": "Royal Jelly",
         "weight": 5,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Honey",
         "weight": 15,
+        "type": "Stats",
         "qty": 255
       },
       {
         "name": "Treat",
         "weight": 10,
+        "type": "Item",
         "qty": 5
       },
       {
         "name": "Ticket",
         "weight": 1,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Sticker Egg",
         "weight": 0.1,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Fire Essence",
         "weight": 5,
+        "type": "Item",
         "qty": 3
       },
       {
         "name": "Strawberry Extract",
         "weight": 1,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Basic Vines",
         "weight": 1,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Rare Vines",
         "weight": 0.5,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Epic Vines",
         "weight": 0.2,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Legendary Vines",
         "weight": 0.1,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Mythic Vines",
         "weight": 0.01,
+        "type": "Item",
         "qty": 1
       }
     ]
@@ -185,71 +216,85 @@
       {
         "name": "Rhino Beetle Amulet",
         "weight": 0.25,
+        "type": "Amulet",
         "qty": 1
       },
       {
         "name": "Blueberry",
         "weight": 15,
+        "type": "Item",
         "qty": 3
       },
       {
         "name": "Royal Jelly",
         "weight": 5,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Honey",
         "weight": 15,
+        "type": "Stats",
         "qty": 255
       },
       {
         "name": "Treat",
         "weight": 10,
+        "type": "Item",
         "qty": 5
       },
       {
         "name": "Ticket",
         "weight": 1,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Water Essence",
         "weight": 5,
+        "type": "Item",
         "qty": 3
       },
       {
         "name": "Sticker Egg",
         "weight": 0.1,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Blueberry Extract",
         "weight": 1,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Basic Vines",
         "weight": 1,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Rare Vines",
         "weight": 0.5,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Epic Vines",
         "weight": 0.2,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Legendary Vines",
         "weight": 0.1,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Mythic Vines",
         "weight": 0.01,
+        "type": "Item",
         "qty": 1
       }
     ]
@@ -265,81 +310,97 @@
       {
         "name": "Spider Amulet",
         "weight": 0.25,
+        "type": "Amulet",
         "qty": 1
       },
       {
         "name": "Seed",
         "weight": 15,
+        "type": "Item",
         "qty": 3
       },
       {
         "name": "Pine Cone",
         "weight": 15,
+        "type": "Item",
         "qty": 3
       },
       {
         "name": "Royal Jelly",
         "weight": 5,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Honey",
         "weight": 15,
+        "type": "Stats",
         "qty": 755
       },
       {
         "name": "Treat",
         "weight": 10,
+        "type": "Item",
         "qty": 5
       },
       {
         "name": "Ticket",
         "weight": 1,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Silver Egg",
         "weight": 0.1,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Wind Essence",
         "weight": 10,
+        "type": "Item",
         "qty": 3
       },
       {
         "name": "Sticker Egg",
         "weight": 0.15,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Cone Extract",
         "weight": 1,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Basic Vines",
         "weight": 1,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Rare Vines",
         "weight": 0.5,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Epic Vines",
         "weight": 0.2,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Legendary Vines",
         "weight": 0.1,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Mythic Vines",
         "weight": 0.01,
+        "type": "Item",
         "qty": 1
       }
     ]
@@ -355,161 +416,369 @@
       {
         "name": "Butterfly Amulet",
         "weight": 3,
+        "type": "Amulet",
         "qty": 1
       },
       {
         "name": "Honey",
         "weight": 100,
+        "type": "Stats",
         "qty": 25000
       },
       {
         "name": "Treat",
         "weight": 100,
+        "type": "Item",
         "qty": 25
       },
       {
         "name": "Strawberry",
         "weight": 50,
+        "type": "Item",
         "qty": 10
       },
       {
         "name": "Converter",
         "weight": 35,
+        "type": "Item",
         "qty": 3
       },
       {
         "name": "Dice",
         "weight": 40,
+        "type": "Item",
         "qty": 2
       },
       {
         "name": "Double Dice",
         "weight": 15,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Triple Dice",
         "weight": 5,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Starflower",
         "weight": 20,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Strawberry Extract",
         "weight": 10,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Blueberry Extract",
         "weight": 10,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Cone Extract",
         "weight": 8,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Seed Oil",
         "weight": 8,
+        "type": "Item",
         "qty": 2
       },
       {
         "name": "Moon Extract",
         "weight": 0.5,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Bamboo Flask",
         "weight": 5,
+        "type": "Item",
         "qty": 2
       },
       {
         "name": "Majestic Cocktail",
         "weight": 0.02,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Glitter",
         "weight": 2,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Fire Essence",
         "weight": 30,
+        "type": "Item",
         "qty": 15
       },
       {
         "name": "Water Essence",
         "weight": 25,
+        "type": "Item",
         "qty": 10
       },
       {
         "name": "Wind Essence",
         "weight": 15,
+        "type": "Item",
         "qty": 5
       },
       {
         "name": "Lunar Essence",
         "weight": 10,
+        "type": "Item",
         "qty": 3
       },
       {
         "name": "Exp Essence",
         "weight": 2,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Ticket",
         "weight": 25,
+        "type": "Item",
         "qty": 15
       },
       {
         "name": "Sticker Egg",
         "weight": 25,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Royal Jelly",
         "weight": 15,
+        "type": "Item",
         "qty": 15
       },
       {
         "name": "Diamond Egg",
         "weight": 0.1,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Mythic Egg",
         "weight": 0.001,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Basic Vines",
         "weight": 20,
+        "type": "Item",
         "qty": 3
       },
       {
         "name": "Rare Vines",
         "weight": 15,
+        "type": "Item",
         "qty": 2
       },
       {
         "name": "Epic Vines",
         "weight": 5,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Legendary Vines",
         "weight": 2,
+        "type": "Item",
         "qty": 1
       },
       {
         "name": "Mythic Vines",
         "weight": 1,
+        "type": "Item",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "apple-worm",
+    "name": "Apple Worm",
+    "image": "images/mobs/Apple Worm.png",
+    "location": "Falling Apples",
+    "desc": "An apple worm introduced in Update 11.",
+    "respawn": "Event encounter",
+    "drops": [
+      {
+        "name": "Apple",
+        "weight": 15,
+        "type": "Item",
+        "qty": 3
+      },
+      {
+        "name": "Royal Jelly",
+        "weight": 5,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Honey",
+        "weight": 15,
+        "type": "Stats",
+        "qty": 255
+      },
+      {
+        "name": "Treat",
+        "weight": 10,
+        "type": "Item",
+        "qty": 5
+      },
+      {
+        "name": "Ticket",
+        "weight": 1,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Sticker Egg",
+        "weight": 0.1,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Gardener's Bundle",
+        "weight": 2,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Golden Apple",
+        "weight": 1,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Basic Vines",
+        "weight": 1,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Rare Vines",
+        "weight": 0.5,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Epic Vines",
+        "weight": 0.2,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Legendary Vines",
+        "weight": 0.1,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Mythic Vines",
+        "weight": 0.01,
+        "type": "Item",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "gold-apple-worm",
+    "name": "Gold Apple Worm",
+    "image": "images/mobs/Gold Apple Worm.png",
+    "location": "Falling Apples",
+    "desc": "An apple worm introduced in Update 11.",
+    "respawn": "Event encounter",
+    "drops": [
+      {
+        "name": "Golden Apple",
+        "weight": 15,
+        "type": "Item",
+        "qty": 3
+      },
+      {
+        "name": "Royal Jelly",
+        "weight": 5,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Honey",
+        "weight": 15,
+        "type": "Stats",
+        "qty": 255
+      },
+      {
+        "name": "Treat",
+        "weight": 10,
+        "type": "Item",
+        "qty": 5
+      },
+      {
+        "name": "Ticket",
+        "weight": 1,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Sticker Egg",
+        "weight": 0.1,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Gardener's Bundle",
+        "weight": 5,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Golden Apple",
+        "weight": 1,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Basic Vines",
+        "weight": 1,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Rare Vines",
+        "weight": 0.5,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Epic Vines",
+        "weight": 0.2,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Legendary Vines",
+        "weight": 0.1,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Mythic Vines",
+        "weight": 0.01,
+        "type": "Item",
         "qty": 1
       }
     ]

@@ -1,0 +1,577 @@
+[
+  {
+    "Item": "Treat",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 10000
+      }
+    ]
+  },
+  {
+    "Item": "Exp Essence",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 10000
+      },
+      {
+        "Item": "Exp Orb",
+        "Amount": 5
+      }
+    ]
+  },
+  {
+    "Item": "Singularity Essence",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 250000000
+      },
+      {
+        "Item": "Exp Essence",
+        "Amount": 250
+      },
+      {
+        "Item": "Lunar Essence",
+        "Amount": 250
+      },
+      {
+        "Item": "Wind Essence",
+        "Amount": 250
+      },
+      {
+        "Item": "Water Essence",
+        "Amount": 250
+      },
+      {
+        "Item": "Fire Essence",
+        "Amount": 250
+      },
+      {
+        "Item": "Lunar Shard",
+        "Amount": 3
+      }
+    ]
+  },
+  {
+    "Item": "Strawberry Extract",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 25000
+      },
+      {
+        "Item": "Strawberry",
+        "Amount": 25
+      },
+      {
+        "Item": "Fire Essence",
+        "Amount": 15
+      },
+      {
+        "Item": "Royal Jelly",
+        "Amount": 5
+      }
+    ]
+  },
+  {
+    "Item": "Blueberry Extract",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 25000
+      },
+      {
+        "Item": "Blueberry",
+        "Amount": 25
+      },
+      {
+        "Item": "Water Essence",
+        "Amount": 15
+      },
+      {
+        "Item": "Royal Jelly",
+        "Amount": 5
+      }
+    ]
+  },
+  {
+    "Item": "Cone Extract",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 25000
+      },
+      {
+        "Item": "Pine Cone",
+        "Amount": 25
+      },
+      {
+        "Item": "Wind Essence",
+        "Amount": 15
+      },
+      {
+        "Item": "Royal Jelly",
+        "Amount": 5
+      }
+    ]
+  },
+  {
+    "Item": "Seed Oil",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 50000
+      },
+      {
+        "Item": "Seed",
+        "Amount": 25
+      },
+      {
+        "Item": "Royal Jelly",
+        "Amount": 5
+      }
+    ]
+  },
+  {
+    "Item": "Bamboo Flask",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 250000
+      },
+      {
+        "Item": "Bamboo",
+        "Amount": 50
+      },
+      {
+        "Item": "Royal Jelly",
+        "Amount": 10
+      }
+    ]
+  },
+  {
+    "Item": "Bamboo Boba Tea",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 1000000
+      },
+      {
+        "Item": "Bamboo",
+        "Amount": 75
+      },
+      {
+        "Item": "Seed",
+        "Amount": 50
+      },
+      {
+        "Item": "Pine Cone",
+        "Amount": 50
+      },
+      {
+        "Item": "Lunar Treat",
+        "Amount": 50
+      },
+      {
+        "Item": "Glitter",
+        "Amount": 1
+      }
+    ]
+  },
+  {
+    "Item": "Rich Apple Juice",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 5000000000000
+      },
+      {
+        "Item": "Apple",
+        "Amount": 250
+      },
+      {
+        "Item": "Strawberry Extract",
+        "Amount": 35
+      },
+      {
+        "Item": "Converter",
+        "Amount": 20
+      },
+      {
+        "Item": "Moon Extract",
+        "Amount": 3
+      },
+      {
+        "Item": "Dice",
+        "Amount": 3
+      }
+    ]
+  },
+  {
+    "Item": "Foaming Carrot Juice",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 12000000000000
+      },
+      {
+        "Item": "Carrot",
+        "Amount": 500
+      },
+      {
+        "Item": "Magic Carrot",
+        "Amount": 12
+      },
+      {
+        "Item": "Majestic Cocktail",
+        "Amount": 3
+      },
+      {
+        "Item": "Bamboo Boba Tea",
+        "Amount": 5
+      },
+      {
+        "Item": "Triple Dice",
+        "Amount": 3
+      }
+    ]
+  },
+  {
+    "Item": "Pot’O’Vegetation",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 250000000000000
+      },
+      {
+        "Item": "Foaming Carrot Juice",
+        "Amount": 2
+      },
+      {
+        "Item": "Golden Apple",
+        "Amount": 1
+      },
+      {
+        "Item": "Golden Carrot",
+        "Amount": 1
+      },
+      {
+        "Item": "Gardener's Bundle",
+        "Amount": 5
+      },
+      {
+        "Item": "Singularity Essence",
+        "Amount": 1
+      }
+    ]
+  },
+  {
+    "Item": "Moon Extract",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 1000000
+      },
+      {
+        "Item": "Lunar Treat",
+        "Amount": 50
+      },
+      {
+        "Item": "Royal Jelly",
+        "Amount": 50
+      }
+    ]
+  },
+  {
+    "Item": "Majestic Cocktail",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 25000000
+      },
+      {
+        "Item": "Moon Extract",
+        "Amount": 2
+      },
+      {
+        "Item": "Bamboo Flask",
+        "Amount": 3
+      },
+      {
+        "Item": "Strawberry Extract",
+        "Amount": 7
+      },
+      {
+        "Item": "Blueberry Extract",
+        "Amount": 7
+      },
+      {
+        "Item": "Cone Extract",
+        "Amount": 7
+      },
+      {
+        "Item": "Seed Oil",
+        "Amount": 7
+      },
+      {
+        "Item": "Shiny Jelly",
+        "Amount": 2
+      }
+    ]
+  },
+  {
+    "Item": "Lunar Cocktail",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 25000000000
+      },
+      {
+        "Item": "Lunar Essence",
+        "Amount": 250
+      },
+      {
+        "Item": "Moon Extract",
+        "Amount": 5
+      },
+      {
+        "Item": "Shiny Jelly",
+        "Amount": 5
+      },
+      {
+        "Item": "Lunar Shard",
+        "Amount": 1
+      }
+    ]
+  },
+  {
+    "Item": "Dice",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 5000000
+      },
+      {
+        "Item": "Lunar Essence",
+        "Amount": 10
+      },
+      {
+        "Item": "Exp Essence",
+        "Amount": 5
+      },
+      {
+        "Item": "Royal Jelly",
+        "Amount": 5
+      }
+    ]
+  },
+  {
+    "Item": "Double Dice",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 15000000
+      },
+      {
+        "Item": "Lunar Essence",
+        "Amount": 20
+      },
+      {
+        "Item": "Exp Essence",
+        "Amount": 15
+      },
+      {
+        "Item": "Dice",
+        "Amount": 3
+      }
+    ]
+  },
+  {
+    "Item": "Triple Dice",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 50000000
+      },
+      {
+        "Item": "Lunar Essence",
+        "Amount": 40
+      },
+      {
+        "Item": "Exp Essence",
+        "Amount": 30
+      },
+      {
+        "Item": "Double Dice",
+        "Amount": 3
+      }
+    ]
+  },
+  {
+    "Item": "Glitter",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 10000000
+      },
+      {
+        "Item": "Lunar Essence",
+        "Amount": 20
+      },
+      {
+        "Item": "Exp Essence",
+        "Amount": 15
+      },
+      {
+        "Item": "Dice",
+        "Amount": 1
+      },
+      {
+        "Item": "Shiny Jelly",
+        "Amount": 1
+      }
+    ]
+  },
+  {
+    "Item": "Shiny Jelly",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 5000000
+      },
+      {
+        "Item": "Lunar Treat",
+        "Amount": 10
+      },
+      {
+        "Item": "Royal Jelly",
+        "Amount": 150
+      }
+    ]
+  },
+  {
+    "Item": "Night Bell",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 5000000
+      },
+      {
+        "Item": "Lunar Treat",
+        "Amount": 250
+      },
+      {
+        "Item": "Shiny Jelly",
+        "Amount": 3
+      }
+    ]
+  },
+  {
+    "Item": "Rare Starflower",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 500000
+      },
+      {
+        "Item": "Starflower",
+        "Amount": 2
+      },
+      {
+        "Item": "Royal Jelly",
+        "Amount": 10
+      }
+    ]
+  },
+  {
+    "Item": "Epic Starflower",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 1000000
+      },
+      {
+        "Item": "Rare Starflower",
+        "Amount": 3
+      },
+      {
+        "Item": "Royal Jelly",
+        "Amount": 20
+      }
+    ]
+  },
+  {
+    "Item": "Legendary Starflower",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 2500000
+      },
+      {
+        "Item": "Epic Starflower",
+        "Amount": 4
+      },
+      {
+        "Item": "Royal Jelly",
+        "Amount": 50
+      }
+    ]
+  },
+  {
+    "Item": "Mythic Starflower",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 10000000
+      },
+      {
+        "Item": "Legendary Starflower",
+        "Amount": 5
+      },
+      {
+        "Item": "Royal Jelly",
+        "Amount": 250
+      }
+    ]
+  },
+  {
+    "Item": "Converter",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 500000
+      },
+      {
+        "Item": "Royal Jelly",
+        "Amount": 25
+      },
+      {
+        "Item": "Strawberry",
+        "Amount": 50
+      },
+      {
+        "Item": "Blueberry",
+        "Amount": 50
+      },
+      {
+        "Item": "Seed",
+        "Amount": 50
+      },
+      {
+        "Item": "Pine Cone",
+        "Amount": 50
+      }
+    ]
+  },
+  {
+    "Item": "Lunar Ticket",
+    "Recipe": [
+      {
+        "Item": "Ticket",
+        "Amount": 200
+      }
+    ]
+  }
+]
