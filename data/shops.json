@@ -1568,7 +1568,23 @@
               "description": "Use it to put the Cardboard Planter in a field.",
               "info": "Grows in 0.5 hours. Gives 17 tokens.",
               "cost": "100,000,000 Honey",
-              "costType": "plain"
+              "costType": "plain",
+              "materials": [
+                {
+                  "name": "Wind Essence",
+                  "amount": 15
+                },
+                {
+                  "name": "Fire Essence",
+                  "amount": 15
+                },
+                {
+                  "name": "Water Essence",
+                  "amount": 15
+                }
+              ],
+              "limit": null,
+              "priceIncreases": false
             },
             {
               "name": "Sticker Planter",
@@ -1577,7 +1593,23 @@
               "description": "Use it to put the Sticker Planter in a field.",
               "info": "Grows in 1 hours. Gives 9 tokens.",
               "cost": "50 Ticket",
-              "costType": "plain"
+              "costType": "plain",
+              "materials": [
+                {
+                  "name": "Wind Essence",
+                  "amount": 50
+                },
+                {
+                  "name": "Fire Essence",
+                  "amount": 50
+                },
+                {
+                  "name": "Water Essence",
+                  "amount": 50
+                }
+              ],
+              "limit": null,
+              "priceIncreases": false
             }
           ]
         },
@@ -1590,45 +1622,161 @@
               "type": "Planter",
               "image": "images/items/Tree Pot Planter.png",
               "description": "Use it to put the Tree Pot Planter in a field.",
-              "info": "Grows in 3 hours. Gives 30 tokens.",
-              "cost": "5,000,000,000 Honey (base price; increases with purchases)",
-              "costType": "plain"
+              "info": "Grows in 3 hours. Gives 30 tokens.\nPurchase limit: 1.",
+              "cost": "5,000,000,000 Honey",
+              "costType": "plain",
+              "materials": [
+                {
+                  "name": "Wind Essence",
+                  "amount": 250
+                },
+                {
+                  "name": "Fire Essence",
+                  "amount": 250
+                },
+                {
+                  "name": "Water Essence",
+                  "amount": 250
+                }
+              ],
+              "limit": 1,
+              "priceIncreases": false
             },
             {
               "name": "Clover Planter",
               "type": "Planter",
               "image": "images/items/Clover Planter.png",
               "description": "Use it to put the Clover Planter in a field.",
-              "info": "Grows in 4 hours. Gives 35 tokens.",
-              "cost": "750,000,000,000 Honey (base price; increases with purchases)",
-              "costType": "plain"
+              "info": "Grows in 4 hours. Gives 35 tokens.\nPurchase limit: 1.",
+              "cost": "750,000,000,000 Honey",
+              "costType": "plain",
+              "materials": [
+                {
+                  "name": "Wind Essence",
+                  "amount": 1000
+                },
+                {
+                  "name": "Fire Essence",
+                  "amount": 1000
+                },
+                {
+                  "name": "Water Essence",
+                  "amount": 1000
+                },
+                {
+                  "name": "Basic Vines",
+                  "amount": 10
+                },
+                {
+                  "name": "Starflower",
+                  "amount": 5
+                }
+              ],
+              "limit": 1,
+              "priceIncreases": false
             },
             {
               "name": "Wisteria Planter",
               "type": "Planter",
               "image": "images/items/Wisteria Planter.png",
               "description": "Use it to put the Wisteria Planter in a field.",
-              "info": "Grows in 4 hours. Gives 40 tokens.",
-              "cost": "5,000,000,000,000 Honey (base price; increases with purchases)",
-              "costType": "plain"
+              "info": "Grows in 4 hours. Gives 40 tokens.\nPurchase limit: 1.",
+              "cost": "5,000,000,000,000 Honey",
+              "costType": "plain",
+              "materials": [
+                {
+                  "name": "Wind Essence",
+                  "amount": 5000
+                },
+                {
+                  "name": "Fire Essence",
+                  "amount": 5000
+                },
+                {
+                  "name": "Water Essence",
+                  "amount": 5000
+                },
+                {
+                  "name": "Singularity Essence",
+                  "amount": 1
+                },
+                {
+                  "name": "Basic Vines",
+                  "amount": 50
+                },
+                {
+                  "name": "Starflower",
+                  "amount": 25
+                }
+              ],
+              "limit": 1,
+              "priceIncreases": false
             },
             {
               "name": "Lotus Planter",
               "type": "Planter",
               "image": "images/items/Lotus Planter.png",
               "description": "Use it to put the Lotus Planter in a field.",
-              "info": "Grows in 4 hours. Gives 45 tokens.",
-              "cost": "75,000,000,000,000 Honey (base price; increases with purchases)",
-              "costType": "plain"
+              "info": "Grows in 4 hours. Gives 45 tokens.\nPurchase limit: 1.",
+              "cost": "75,000,000,000,000 Honey",
+              "costType": "plain",
+              "materials": [
+                {
+                  "name": "Gardener's Bundle",
+                  "amount": 50
+                },
+                {
+                  "name": "Pot’O’Vegetation",
+                  "amount": 3
+                },
+                {
+                  "name": "Singularity Essence",
+                  "amount": 3
+                },
+                {
+                  "name": "Basic Vines",
+                  "amount": 250
+                },
+                {
+                  "name": "Starflower",
+                  "amount": 50
+                }
+              ],
+              "limit": 1,
+              "priceIncreases": false
             },
             {
               "name": "Blossom Planter",
               "type": "Planter",
               "image": "images/items/Blossom Planter.png",
               "description": "Use it to put the Blossom Planter in a field.",
-              "info": "Grows in 5 hours. Gives 50 tokens.",
-              "cost": "1,000,000,000,000,000 Honey (base price; increases with purchases)",
-              "costType": "plain"
+              "info": "Grows in 5 hours. Gives 50 tokens.\nPurchase limit: 1.",
+              "cost": "1,000,000,000,000,000 Honey",
+              "costType": "plain",
+              "materials": [
+                {
+                  "name": "Gardener's Bundle",
+                  "amount": 200
+                },
+                {
+                  "name": "Pot’O’Vegetation",
+                  "amount": 5
+                },
+                {
+                  "name": "Singularity Essence",
+                  "amount": 5
+                },
+                {
+                  "name": "Basic Vines",
+                  "amount": 250
+                },
+                {
+                  "name": "Starflower",
+                  "amount": 50
+                }
+              ],
+              "limit": 1,
+              "priceIncreases": false
             }
           ]
         }

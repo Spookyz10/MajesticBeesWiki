@@ -118,11 +118,23 @@ function buildObtain(planter) {
       <div class="planter-obtain-list">
         ${planter.obtain
           .map(
-            (o) => `
-          <div class="planter-obtain-item">
-            <span class="planter-obtain-method">${escHtml(o.method)}</span>
-            ${o.detail ? `<span class="planter-obtain-detail">${escHtml(o.detail)}</span>` : ""}
-          </div>`,
+            (o) => {
+              const materials = Array.isArray(o.materials) ? o.materials : [];
+              const purchaseNote = o.limit
+                ? `Purchase limit: ${o.limit}.`
+                : o.priceIncreases
+                  ? "Price increases after each purchase."
+                  : "";
+              return `
+                <div class="planter-obtain-item">
+                  <span class="planter-obtain-method">${escHtml(o.method)}</span>
+                  <div class="planter-obtain-details">
+                    ${o.cost || o.detail ? `<span class="planter-obtain-detail">${escHtml(o.cost || o.detail)}</span>` : ""}
+                    ${materials.length ? `<span class="planter-obtain-requirements-label">Materials</span><ul class="planter-obtain-materials">${materials.map((material) => `<li>${escHtml(Number(material.amount).toLocaleString("en-US"))} ${escHtml(material.name)}</li>`).join("")}</ul>` : ""}
+                    ${purchaseNote ? `<span class="planter-obtain-note">${escHtml(purchaseNote)}</span>` : ""}
+                  </div>
+                </div>`;
+            },
           )
           .join("")}
       </div>

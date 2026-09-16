@@ -235,7 +235,7 @@
 
 .planter-obtain-item {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
   gap: 10px;
 }
 
@@ -251,6 +251,38 @@
   color: var(--gold-soft);
   font-size: 0.86rem;
   line-height: 1.55;
+}
+
+.planter-obtain-details {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.planter-obtain-requirements-label {
+  margin-top: 5px;
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.planter-obtain-materials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  gap: 4px 14px;
+  margin: 0;
+  padding-left: 18px;
+  color: var(--gold-soft);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.planter-obtain-note {
+  color: var(--gold-soft);
+  font-size: 0.82rem;
+  font-style: italic;
 }
 
 .planter-infobox {
