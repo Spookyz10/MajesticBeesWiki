@@ -8345,7 +8345,7 @@
     "name": "Oscar",
     "image": "images/bears/Oscar Model.png",
     "location": "Hobbit Shop, 30 Bee Zone",
-    "description": "Oscar is a bunny with five quests focused on nearby fields, vegetables, and crafting supplies. Her Hobbit Shop is marked Coming soon for Part 2 and is not open yet.",
+    "description": "Oscar is a bunny whose Hobbit Shop is marked Coming soon for Part 2. Her five quests focus on the nearby fields, vegetables, and crafting supplies.",
     "quests": [
       {
         "number": 1,

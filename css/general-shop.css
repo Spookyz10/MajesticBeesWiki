@@ -167,6 +167,15 @@
   border: 1px solid rgba(58, 40, 0, 0.9);
   background: rgba(18, 12, 0, 0.58);
 }
+.shop-item-panel.materials-panel {
+  min-height: auto;
+  width: 100%;
+  align-items: flex-start;
+}
+.shop-item-panel.materials-panel .shop-cost-list {
+  width: 100%;
+  text-align: left;
+}
 .shop-cost-list {
   margin: 0;
   padding: 0;

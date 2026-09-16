@@ -204,7 +204,23 @@
     "obtain": [
       {
         "method": "Greenhouse Shop",
-        "detail": "50 Ticket"
+        "cost": "50 Ticket",
+        "materials": [
+          {
+            "name": "Wind Essence",
+            "amount": 50
+          },
+          {
+            "name": "Fire Essence",
+            "amount": 50
+          },
+          {
+            "name": "Water Essence",
+            "amount": 50
+          }
+        ],
+        "limit": null,
+        "priceIncreases": false
       }
     ],
     "tokens": 9,
@@ -411,7 +427,23 @@
     "obtain": [
       {
         "method": "Greenhouse Shop",
-        "detail": "100,000,000 Honey"
+        "cost": "100,000,000 Honey",
+        "materials": [
+          {
+            "name": "Wind Essence",
+            "amount": 15
+          },
+          {
+            "name": "Fire Essence",
+            "amount": 15
+          },
+          {
+            "name": "Water Essence",
+            "amount": 15
+          }
+        ],
+        "limit": null,
+        "priceIncreases": false
       }
     ],
     "tokens": 17,
@@ -527,7 +559,31 @@
     "obtain": [
       {
         "method": "Greenhouse Shop",
-        "detail": "1,000,000,000,000,000 Honey (base price; increases with purchases)"
+        "cost": "1,000,000,000,000,000 Honey",
+        "materials": [
+          {
+            "name": "Gardener's Bundle",
+            "amount": 200
+          },
+          {
+            "name": "Pot’O’Vegetation",
+            "amount": 5
+          },
+          {
+            "name": "Singularity Essence",
+            "amount": 5
+          },
+          {
+            "name": "Basic Vines",
+            "amount": 250
+          },
+          {
+            "name": "Starflower",
+            "amount": 50
+          }
+        ],
+        "limit": 1,
+        "priceIncreases": false
       }
     ],
     "rarity": "Mythic",
@@ -665,7 +721,31 @@
     "obtain": [
       {
         "method": "Greenhouse Shop",
-        "detail": "75,000,000,000,000 Honey (base price; increases with purchases)"
+        "cost": "75,000,000,000,000 Honey",
+        "materials": [
+          {
+            "name": "Gardener's Bundle",
+            "amount": 50
+          },
+          {
+            "name": "Pot’O’Vegetation",
+            "amount": 3
+          },
+          {
+            "name": "Singularity Essence",
+            "amount": 3
+          },
+          {
+            "name": "Basic Vines",
+            "amount": 250
+          },
+          {
+            "name": "Starflower",
+            "amount": 50
+          }
+        ],
+        "limit": 1,
+        "priceIncreases": false
       }
     ],
     "rarity": "Legendary",
@@ -803,7 +883,35 @@
     "obtain": [
       {
         "method": "Greenhouse Shop",
-        "detail": "5,000,000,000,000 Honey (base price; increases with purchases)"
+        "cost": "5,000,000,000,000 Honey",
+        "materials": [
+          {
+            "name": "Wind Essence",
+            "amount": 5000
+          },
+          {
+            "name": "Fire Essence",
+            "amount": 5000
+          },
+          {
+            "name": "Water Essence",
+            "amount": 5000
+          },
+          {
+            "name": "Singularity Essence",
+            "amount": 1
+          },
+          {
+            "name": "Basic Vines",
+            "amount": 50
+          },
+          {
+            "name": "Starflower",
+            "amount": 25
+          }
+        ],
+        "limit": 1,
+        "priceIncreases": false
       }
     ],
     "rarity": "Epic",
@@ -941,7 +1049,31 @@
     "obtain": [
       {
         "method": "Greenhouse Shop",
-        "detail": "750,000,000,000 Honey (base price; increases with purchases)"
+        "cost": "750,000,000,000 Honey",
+        "materials": [
+          {
+            "name": "Wind Essence",
+            "amount": 1000
+          },
+          {
+            "name": "Fire Essence",
+            "amount": 1000
+          },
+          {
+            "name": "Water Essence",
+            "amount": 1000
+          },
+          {
+            "name": "Basic Vines",
+            "amount": 10
+          },
+          {
+            "name": "Starflower",
+            "amount": 5
+          }
+        ],
+        "limit": 1,
+        "priceIncreases": false
       }
     ],
     "rarity": "Epic",
@@ -1079,7 +1211,23 @@
     "obtain": [
       {
         "method": "Greenhouse Shop",
-        "detail": "5,000,000,000 Honey (base price; increases with purchases)"
+        "cost": "5,000,000,000 Honey",
+        "materials": [
+          {
+            "name": "Wind Essence",
+            "amount": 250
+          },
+          {
+            "name": "Fire Essence",
+            "amount": 250
+          },
+          {
+            "name": "Water Essence",
+            "amount": 250
+          }
+        ],
+        "limit": 1,
+        "priceIncreases": false
       }
     ],
     "rarity": "Epic",

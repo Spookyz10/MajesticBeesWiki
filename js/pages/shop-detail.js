@@ -27,6 +27,23 @@ function renderCost(item) {
   return `<ul class="shop-cost-list">${body}</ul>`;
 }
 
+function renderMaterials(materials) {
+  if (!Array.isArray(materials) || !materials.length) return "";
+
+  const entries = materials
+    .map(
+      (material) =>
+        `<li>${escapeHtml(Number(material.amount).toLocaleString("en-US"))} ${escapeHtml(material.name)}</li>`,
+    )
+    .join("");
+
+  return `
+    <div class="shop-item-panel materials-panel">
+      <h4>Materials</h4>
+      <ul class="shop-cost-list">${entries}</ul>
+    </div>`;
+}
+
 function renderItem(item) {
   const name = escapeHtml(item.name || "Unknown Item");
   const type = escapeHtml(item.type || "");
@@ -59,6 +76,7 @@ function renderItem(item) {
         <h4>Cost</h4>
         <p>${renderCost(item)}</p>
       </div>
+      ${renderMaterials(item.materials)}
       ${
         item.passives && item.passives.length
           ? `
