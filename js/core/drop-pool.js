@@ -2,7 +2,7 @@ const POOL_CONFIG = {
   // Field sticker pool = FieldDrops.Stickers entries + the field's own sticker (weight 1500).
   otherPoolWeight: 1500,
 
-  flowersPerRoll: 12000,
+  flowersPerRoll: 12024,
 
   lootLuckThreshold: 5,
 };

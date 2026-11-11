@@ -2486,7 +2486,7 @@
     "name": "Tele-Sphere",
     "category": "Misc",
     "rarity": "Rare",
-    "desc": "Airlifts and teleports you back to your hive from anywhereaw on the map.",
+    "desc": "Airlifts and teleports you back to your hive from anywhere on the map.",
     "image": "images/items/Tele-Sphere.png",
     "order": 4,
     "buffs": [],

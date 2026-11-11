@@ -750,7 +750,7 @@
     "id": "lunar-bee",
     "icon": "images/bees/Lunar.png",
     "desc": "A moonlit wanderer cloaked in silvered frost and shimmering starlight. As it drifts through the hive, it leaves a trailing wake of pale luminescence and frozen dew; its very presence radiates a calm, otherworldly glow that soothes raw instinct into serene focus, distilling the essence of every flower it visits into a shimmering, tranquil nectar of clarity.",
-    "color": "Colorless",
+    "color": "Blue",
     "rarity": "Special",
     "speed": 22,
     "attack": 2,
