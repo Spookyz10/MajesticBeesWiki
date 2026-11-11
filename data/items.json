@@ -1944,5 +1944,656 @@
       }
     ],
     "time": 7200
+  },
+  {
+    "id": "Candy Treat",
+    "name": "Candy Treat",
+    "category": "Food",
+    "rarity": "Common",
+    "desc": "Hollow Moon currency. Spend it on event items, or feed it to a bee for 5 XP.",
+    "image": "images/items/Candy Treat.png",
+    "order": 25,
+    "buffs": [],
+    "sources": [
+      {
+        "type": "drop",
+        "name": "Mob Drop",
+        "mob_list": [
+          "Pumkinn",
+          "Gourd Spider"
+        ]
+      },
+      {
+        "type": "drop",
+        "name": "Candy Bucket (Trinket)"
+      }
+    ],
+    "xp": 5
+  },
+  {
+    "id": "Enchanted Treat",
+    "name": "Enchanted Treat",
+    "category": "Food",
+    "rarity": "Mythic",
+    "desc": "Gives 5000 XP when fed to a bee and always turns it shiny.",
+    "image": "images/items/Enchanted Treat.png",
+    "order": 26,
+    "buffs": [],
+    "sources": [
+      {
+        "type": "drop",
+        "name": "Mob Drop",
+        "mob_list": [
+          "Pumkinn",
+          "Gourd Spider"
+        ]
+      }
+    ],
+    "xp": 5000
+  },
+  {
+    "id": "Candy Corn",
+    "name": "Candy Corn",
+    "category": "Event",
+    "rarity": "Common",
+    "desc": "Using this grants for 45s:\n+15% Pollen, +10% Capacity, +10% Convert Rate\nUsing more adds 45s to the timer.",
+    "image": "images/items/Candy Corn.png",
+    "order": 41,
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Perc",
+        "value": 15
+      },
+      {
+        "name": "Capacity Bonus",
+        "type": "Perc",
+        "value": 10
+      },
+      {
+        "name": "Convert Rate",
+        "type": "Perc",
+        "value": 10
+      }
+    ],
+    "sources": [
+      {
+        "type": "drop",
+        "name": "Mob Drop",
+        "mob_list": [
+          "Pumkinn",
+          "Gourd Spider"
+        ]
+      },
+      {
+        "type": "quest"
+      }
+    ],
+    "time": 45
+  },
+  {
+    "id": "Red Lollipop",
+    "name": "Red Lollipop",
+    "category": "Event",
+    "rarity": "Rare",
+    "desc": "Using this grants for 45s:\n+25% Red Pollen, +15% Red Bomb Pollen, +10% Fire Pollen\nUsing more adds 45s to the timer.",
+    "image": "images/items/Red Lollipop.png",
+    "order": 42,
+    "buffs": [
+      {
+        "name": "Red Pollen",
+        "type": "Perc",
+        "value": 25
+      },
+      {
+        "name": "Red Bomb Pollen",
+        "type": "Perc",
+        "value": 15
+      },
+      {
+        "name": "Fire Pollen",
+        "type": "Perc",
+        "value": 10
+      }
+    ],
+    "sources": [
+      {
+        "type": "drop",
+        "name": "Mob Drop",
+        "mob_list": [
+          "Pumkinn",
+          "Gourd Spider"
+        ]
+      },
+      {
+        "type": "quest"
+      }
+    ],
+    "time": 45
+  },
+  {
+    "id": "Blue Raspberry Candy",
+    "name": "Blue Raspberry Candy",
+    "category": "Event",
+    "rarity": "Rare",
+    "desc": "Using this grants for 45s:\n+25% Blue Pollen, +15% Blue Bomb Pollen, +10% Ice Pollen\nUsing more adds 45s to the timer.",
+    "image": "images/items/Blue Raspberry Candy.png",
+    "order": 43,
+    "buffs": [
+      {
+        "name": "Blue Pollen",
+        "type": "Perc",
+        "value": 25
+      },
+      {
+        "name": "Blue Bomb Pollen",
+        "type": "Perc",
+        "value": 15
+      },
+      {
+        "name": "Ice Pollen",
+        "type": "Perc",
+        "value": 10
+      }
+    ],
+    "sources": [
+      {
+        "type": "drop",
+        "name": "Mob Drop",
+        "mob_list": [
+          "Pumkinn",
+          "Gourd Spider"
+        ]
+      },
+      {
+        "type": "quest"
+      }
+    ],
+    "time": 45
+  },
+  {
+    "id": "White Chocolate",
+    "name": "White Chocolate",
+    "category": "Event",
+    "rarity": "Rare",
+    "desc": "Using this grants for 45s:\n+20% White Pollen, +15% Bomb Pollen, +10% Obsidian Pollen\nUsing more adds 45s to the timer.",
+    "image": "images/items/White Chocolate.png",
+    "order": 44,
+    "buffs": [
+      {
+        "name": "White Pollen",
+        "type": "Perc",
+        "value": 20
+      },
+      {
+        "name": "Bomb Pollen",
+        "type": "Perc",
+        "value": 15
+      },
+      {
+        "name": "Obsidian Pollen",
+        "type": "Perc",
+        "value": 10
+      }
+    ],
+    "sources": [
+      {
+        "type": "drop",
+        "name": "Mob Drop",
+        "mob_list": [
+          "Pumkinn",
+          "Gourd Spider"
+        ]
+      },
+      {
+        "type": "quest"
+      }
+    ],
+    "time": 45
+  },
+  {
+    "id": "Sour Candy",
+    "name": "Sour Candy",
+    "category": "Event",
+    "rarity": "Rare",
+    "desc": "Using this grants for 45s:\n+2 Bee Attack, +5% Bee Ability Rate, +10% Loot Luck\nUsing more adds 45s to the timer.",
+    "image": "images/items/Sour Candy.png",
+    "order": 45,
+    "buffs": [
+      {
+        "name": "Bee Attack",
+        "type": "Add",
+        "value": 2
+      },
+      {
+        "name": "Bee Ability Rate",
+        "type": "Perc",
+        "value": 5
+      },
+      {
+        "name": "Loot Luck",
+        "type": "Perc",
+        "value": 10
+      }
+    ],
+    "sources": [
+      {
+        "type": "drop",
+        "name": "Mob Drop",
+        "mob_list": [
+          "Pumkinn",
+          "Gourd Spider"
+        ]
+      },
+      {
+        "type": "quest"
+      }
+    ],
+    "time": 45
+  },
+  {
+    "id": "Ghost Candy",
+    "name": "Ghost Candy",
+    "category": "Event",
+    "rarity": "Epic",
+    "desc": "Using this grants for 45s:\n+5% Instant Conversion, +5% Movespeed, +5% Tool Pollen\nUsing more adds 45s to the timer.",
+    "image": "images/items/Ghost Candy.png",
+    "order": 46,
+    "buffs": [
+      {
+        "name": "Instant Conversion",
+        "type": "Perc",
+        "value": 5
+      },
+      {
+        "name": "Movespeed",
+        "type": "Perc",
+        "value": 5
+      },
+      {
+        "name": "Tool Pollen",
+        "type": "Perc",
+        "value": 5
+      }
+    ],
+    "sources": [
+      {
+        "type": "drop",
+        "name": "Mob Drop",
+        "mob_list": [
+          "Pumkinn",
+          "Gourd Spider"
+        ]
+      },
+      {
+        "type": "quest"
+      }
+    ],
+    "time": 45
+  },
+  {
+    "id": "Soul Candy",
+    "name": "Soul Candy",
+    "category": "Event",
+    "rarity": "Epic",
+    "desc": "Using this grants for 45s:\n+10% Soul Fire Pollen, +15% Soul Duration, +10% Fire Duration\nUsing more adds 45s to the timer.",
+    "image": "images/items/Soul Candy.png",
+    "order": 47,
+    "buffs": [
+      {
+        "name": "Soul Fire Pollen",
+        "type": "Perc",
+        "value": 10
+      },
+      {
+        "name": "Soul Duration",
+        "type": "Perc",
+        "value": 15
+      },
+      {
+        "name": "Fire Duration",
+        "type": "Perc",
+        "value": 10
+      }
+    ],
+    "sources": [
+      {
+        "type": "drop",
+        "name": "Mob Drop",
+        "mob_list": [
+          "Pumkinn",
+          "Gourd Spider"
+        ]
+      },
+      {
+        "type": "quest"
+      }
+    ],
+    "time": 45
+  },
+  {
+    "id": "Wisp Taffy",
+    "name": "Wisp Taffy",
+    "category": "Event",
+    "rarity": "Epic",
+    "desc": "Using this grants for 45s:\n+10% Bubble Pollen, +10% Bubble Capacity, +5% Capacity\nUsing more adds 45s to the timer.",
+    "image": "images/items/Wisp Taffy.png",
+    "order": 48,
+    "buffs": [
+      {
+        "name": "Bubble Pollen",
+        "type": "Perc",
+        "value": 10
+      },
+      {
+        "name": "Bubble Capacity",
+        "type": "Perc",
+        "value": 10
+      },
+      {
+        "name": "Capacity Bonus",
+        "type": "Perc",
+        "value": 5
+      }
+    ],
+    "sources": [
+      {
+        "type": "drop",
+        "name": "Mob Drop",
+        "mob_list": [
+          "Pumkinn",
+          "Gourd Spider"
+        ]
+      },
+      {
+        "type": "quest"
+      }
+    ],
+    "time": 45
+  },
+  {
+    "id": "Hollow Moon Candy",
+    "name": "Hollow Moon Candy",
+    "category": "Event",
+    "rarity": "Mythic",
+    "desc": "Using this grants for 45s:\nx2.5 Pollen, +10% Critical Chance, +50% Bomb Pollen, +25% Capacity, +50 Convert Amount, +10% Bee Ability Rate\nUsing more adds 45s to the timer.",
+    "image": "images/items/Hollow Moon Candy.png",
+    "order": 49,
+    "buffs": [
+      {
+        "name": "Pollen",
+        "type": "Mult",
+        "value": 1.5
+      },
+      {
+        "name": "Critical Chance",
+        "type": "Perc",
+        "value": 10
+      },
+      {
+        "name": "Bomb Pollen",
+        "type": "Perc",
+        "value": 50
+      },
+      {
+        "name": "Capacity Bonus",
+        "type": "Perc",
+        "value": 25
+      },
+      {
+        "name": "Convert Amount",
+        "type": "Add",
+        "value": 50
+      },
+      {
+        "name": "Bee Ability Rate",
+        "type": "Perc",
+        "value": 10
+      }
+    ],
+    "sources": [
+      {
+        "type": "drop",
+        "name": "Mob Drop",
+        "mob_list": [
+          "Pumkinn",
+          "Gourd Spider"
+        ]
+      },
+      {
+        "type": "quest"
+      }
+    ],
+    "time": 45
+  },
+  {
+    "id": "Marshmallow",
+    "name": "Marshmallow",
+    "category": "Event",
+    "rarity": "Legendary",
+    "desc": "Using this grants:\n+500% Loot Luck for 10s.",
+    "image": "images/items/Marshmallow.png",
+    "order": 50,
+    "buffs": [
+      {
+        "name": "Loot Luck",
+        "type": "Perc",
+        "value": 500
+      }
+    ],
+    "sources": [
+      {
+        "type": "drop",
+        "name": "Mob Drop",
+        "mob_list": [
+          "Pumkinn",
+          "Gourd Spider"
+        ]
+      }
+    ],
+    "time": 10
+  },
+  {
+    "id": "Pumpking Soul",
+    "name": "Pumpking Soul",
+    "category": "Event",
+    "rarity": "Mythic",
+    "desc": "The soul of the PumpKing. Used to craft the Pumpkin Bee.",
+    "image": "images/items/Pumpking Soul.png",
+    "order": 51,
+    "buffs": [],
+    "sources": [
+      {
+        "type": "drop",
+        "name": "Mob Drop",
+        "mob_list": [
+          "Pumkinn"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Hollow Bell",
+    "name": "Hollow Bell",
+    "category": "Misc",
+    "rarity": "Mythic",
+    "desc": "Summons a Hollow Moon. Works at night or during the day.",
+    "image": "images/items/Hollow Bell.png",
+    "order": 3,
+    "buffs": [],
+    "sources": [
+      {
+        "type": "drop",
+        "name": "Mob Drop",
+        "mob_list": [
+          "Pumkinn",
+          "Gourd Spider"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Cauldron Planter",
+    "name": "Cauldron Planter",
+    "category": "Planters",
+    "rarity": "Mythic",
+    "desc": "Use it to put the Cauldron Planter in a field.",
+    "image": "images/items/Cauldron Planter.png",
+    "order": 46,
+    "buffs": [],
+    "sources": [
+      {
+        "type": "shop",
+        "name": "Candy Shop"
+      }
+    ]
+  },
+  {
+    "id": "Bribe Treats",
+    "name": "Bribe Treats",
+    "category": "Consumables",
+    "rarity": "Legendary",
+    "desc": "Lets you pick a discovered bee to guarantee the next time its rarity is rolled from a Royal Jelly.",
+    "image": "images/items/Bribe Treats.png",
+    "order": 27,
+    "buffs": [],
+    "sources": [
+      {
+        "type": "shop",
+        "name": "Trinket Shop (75 Tickets)"
+      }
+    ]
+  },
+  {
+    "id": "Clover Charms",
+    "name": "Clover Charms",
+    "category": "Consumables",
+    "rarity": "Rare",
+    "desc": "Has a 25% chance to double your Luck for mob loot.",
+    "image": "images/items/Clover Charms.png",
+    "order": 26,
+    "buffs": [],
+    "sources": [
+      {
+        "type": "shop",
+        "name": "Trinket Shop (25 Tickets)"
+      }
+    ],
+    "time": 900
+  },
+  {
+    "id": "Tele-Sphere",
+    "name": "Tele-Sphere",
+    "category": "Misc",
+    "rarity": "Rare",
+    "desc": "Airlifts and teleports you back to your hive from anywhereaw on the map.",
+    "image": "images/items/Tele-Sphere.png",
+    "order": 4,
+    "buffs": [],
+    "sources": [
+      {
+        "type": "shop",
+        "name": "Trinket Shop (15 Tickets)"
+      }
+    ]
+  },
+  {
+    "id": "Blue Extract",
+    "name": "Blue Extract",
+    "category": "Misc",
+    "rarity": "Rare",
+    "desc": "Concentrated blue pollen. Crafting material.",
+    "image": "images/items/Blue Extract.png",
+    "order": 999,
+    "buffs": [],
+    "sources": []
+  },
+  {
+    "id": "Lunar Extract",
+    "name": "Lunar Extract",
+    "category": "Misc",
+    "rarity": "Epic",
+    "desc": "A vial of condensed moonlight. Crafting material.",
+    "image": "images/items/Lunar Extract.png",
+    "order": 999,
+    "buffs": [],
+    "sources": []
+  },
+  {
+    "id": "Enchanted Carrot",
+    "name": "Enchanted Carrot",
+    "category": "Misc",
+    "rarity": "Legendary",
+    "desc": "A carrot humming with magic. Crafting material.",
+    "image": "images/items/Enchanted Carrot.png",
+    "order": 999,
+    "buffs": [],
+    "sources": []
+  },
+  {
+    "id": "Hornet Stinger",
+    "name": "Hornet Stinger",
+    "category": "Misc",
+    "rarity": "Epic",
+    "desc": "A hornet's stinger. Crafting material.",
+    "image": "images/items/Hornet Stinger.png",
+    "order": 999,
+    "buffs": [],
+    "sources": []
+  },
+  {
+    "id": "Mantis Claw",
+    "name": "Mantis Claw",
+    "category": "Misc",
+    "rarity": "Epic",
+    "desc": "A sharp claw dropped by a mantis. Crafting material.",
+    "image": "images/items/Mantis Claw.png",
+    "order": 999,
+    "buffs": [],
+    "sources": []
+  },
+  {
+    "id": "Wasp Mandible",
+    "name": "Wasp Mandible",
+    "category": "Misc",
+    "rarity": "Rare",
+    "desc": "A tough wasp mandible. Crafting material.",
+    "image": "images/items/Wasp Mandible.png",
+    "order": 999,
+    "buffs": [],
+    "sources": []
+  },
+  {
+    "id": "Cogs",
+    "name": "Cogs",
+    "category": "Clockwork",
+    "rarity": "Rare",
+    "desc": "A small brass cog. Used to craft Clockwork equipment.",
+    "image": "images/items/Cogs.png",
+    "order": 1,
+    "buffs": [],
+    "sources": []
+  },
+  {
+    "id": "Shiny Cogs",
+    "name": "Shiny Cogs",
+    "category": "Clockwork",
+    "rarity": "Legendary",
+    "desc": "A polished cog that still hums with motion. Used to craft Clockwork equipment.",
+    "image": "images/items/Shiny Cogs.png",
+    "order": 2,
+    "buffs": [],
+    "sources": []
+  },
+  {
+    "id": "Clockwork Core",
+    "name": "Clockwork Core",
+    "category": "Clockwork",
+    "rarity": "Mythic",
+    "desc": "The beating heart of a grand clock. Used to craft the Time Capsule.",
+    "image": "images/items/Clockwork Core.png",
+    "order": 3,
+    "buffs": [],
+    "sources": []
   }
 ]
