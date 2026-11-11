@@ -801,10 +801,10 @@
     "notes": "Fight it inside its zone in the Apple Field; you must stay in the zone to fight. Defeating it drops 8 loot rolls and counts for Oscar's quest.",
     "drops": [
       {
-        "name": "Orchard-Roach Amulet",
+        "name": "Honey",
         "weight": 3,
-        "type": "Amulet",
-        "qty": 1
+        "type": "Stats",
+        "qty": 250
       },
       {
         "name": "Honey",
