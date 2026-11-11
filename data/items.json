@@ -1962,10 +1962,6 @@
           "Pumkinn",
           "Gourd Spider"
         ]
-      },
-      {
-        "type": "drop",
-        "name": "Candy Bucket (Trinket)"
       }
     ],
     "xp": 5
@@ -2496,104 +2492,5 @@
         "name": "Trinket Shop (15 Tickets)"
       }
     ]
-  },
-  {
-    "id": "Blue Extract",
-    "name": "Blue Extract",
-    "category": "Misc",
-    "rarity": "Rare",
-    "desc": "Concentrated blue pollen. Crafting material.",
-    "image": "images/items/Blue Extract.png",
-    "order": 999,
-    "buffs": [],
-    "sources": []
-  },
-  {
-    "id": "Lunar Extract",
-    "name": "Lunar Extract",
-    "category": "Misc",
-    "rarity": "Epic",
-    "desc": "A vial of condensed moonlight. Crafting material.",
-    "image": "images/items/Lunar Extract.png",
-    "order": 999,
-    "buffs": [],
-    "sources": []
-  },
-  {
-    "id": "Enchanted Carrot",
-    "name": "Enchanted Carrot",
-    "category": "Misc",
-    "rarity": "Legendary",
-    "desc": "A carrot humming with magic. Crafting material.",
-    "image": "images/items/Enchanted Carrot.png",
-    "order": 999,
-    "buffs": [],
-    "sources": []
-  },
-  {
-    "id": "Hornet Stinger",
-    "name": "Hornet Stinger",
-    "category": "Misc",
-    "rarity": "Epic",
-    "desc": "A hornet's stinger. Crafting material.",
-    "image": "images/items/Hornet Stinger.png",
-    "order": 999,
-    "buffs": [],
-    "sources": []
-  },
-  {
-    "id": "Mantis Claw",
-    "name": "Mantis Claw",
-    "category": "Misc",
-    "rarity": "Epic",
-    "desc": "A sharp claw dropped by a mantis. Crafting material.",
-    "image": "images/items/Mantis Claw.png",
-    "order": 999,
-    "buffs": [],
-    "sources": []
-  },
-  {
-    "id": "Wasp Mandible",
-    "name": "Wasp Mandible",
-    "category": "Misc",
-    "rarity": "Rare",
-    "desc": "A tough wasp mandible. Crafting material.",
-    "image": "images/items/Wasp Mandible.png",
-    "order": 999,
-    "buffs": [],
-    "sources": []
-  },
-  {
-    "id": "Cogs",
-    "name": "Cogs",
-    "category": "Clockwork",
-    "rarity": "Rare",
-    "desc": "A small brass cog. Used to craft Clockwork equipment.",
-    "image": "images/items/Cogs.png",
-    "order": 1,
-    "buffs": [],
-    "sources": []
-  },
-  {
-    "id": "Shiny Cogs",
-    "name": "Shiny Cogs",
-    "category": "Clockwork",
-    "rarity": "Legendary",
-    "desc": "A polished cog that still hums with motion. Used to craft Clockwork equipment.",
-    "image": "images/items/Shiny Cogs.png",
-    "order": 2,
-    "buffs": [],
-    "sources": []
-  },
-  {
-    "id": "Clockwork Core",
-    "name": "Clockwork Core",
-    "category": "Clockwork",
-    "rarity": "Mythic",
-    "desc": "The beating heart of a grand clock. Used to craft the Time Capsule.",
-    "image": "images/items/Clockwork Core.png",
-    "order": 3,
-    "buffs": [],
-    "sources": []
   }
 ]

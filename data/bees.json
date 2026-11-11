@@ -968,43 +968,6 @@
     "tokenTime": 2
   },
   {
-    "name": "Phoenix Bee",
-    "id": "phoenix-bee",
-    "icon": "images/bees/Phoenix.png",
-    "desc": "A bee reborn from its own ashes. It gathers scattered flames into one sacred blaze, and once it has been reborn enough times it rises as a giant firebird.",
-    "color": "Red",
-    "rarity": "Special",
-    "speed": 25,
-    "attack": 13,
-    "energy": 130,
-    "gather": 45,
-    "gatherTime": 5,
-    "convert": 8320,
-    "convertTime": 4.5,
-    "shinyBonus": {
-      "stat": "Soul Fire Pollen",
-      "type": "Perc",
-      "value": 10
-    },
-    "tokens": [
-      {
-        "token": "Sacred Flame",
-        "level": 1,
-        "weight": 12,
-        "expires": 20,
-        "desc": "Absorbs nearby fire and turns it into one big rainbow Sacred Flame. The more fire it absorbs, the bigger and stronger it gets."
-      },
-      {
-        "token": "Rebirth",
-        "level": 1,
-        "weight": 10,
-        "expires": 20,
-        "desc": "Grants 5 Rebirth stacks for 90s. At 100 stacks the Phoenix Bee becomes a giant firebird and spreads Sacred Fire across the field."
-      }
-    ],
-    "tokenTime": 3
-  },
-  {
     "name": "Pixel Bee",
     "id": "pixel-bee",
     "icon": "images/bees/Pixel.png",
@@ -1432,43 +1395,6 @@
       }
     ],
     "tokenTime": 5
-  },
-  {
-    "name": "Timekeeper Bee",
-    "id": "timekeeper-bee",
-    "icon": "images/bees/Timekeeper.png",
-    "desc": "A meticulous bee that carries bottled time. It releases orbs that bend the flow of seconds across the field, and its tokens can make your Time Capsule stop time itself.",
-    "color": "Colorless",
-    "rarity": "Special",
-    "speed": 30,
-    "attack": 10,
-    "energy": 180,
-    "gather": 55,
-    "gatherTime": 3.5,
-    "convert": 12500,
-    "convertTime": 4,
-    "shinyBonus": {
-      "stat": "Bee Movespeed",
-      "type": "Perc",
-      "value": 10
-    },
-    "tokens": [
-      {
-        "token": "Time Reversal",
-        "level": 1,
-        "weight": 12,
-        "expires": 20,
-        "desc": "Releases a golden orb of bottled time that flows through the field for 15s (+0.25s every Level), gathering pollen from every flower it crosses.\nThe orb saps your Movespeed to power itself: the more speed it saps, the bigger it grows and the more Reversal stacks you gain.\nReversal (x25, 30s): +1% Bomb Pollen, +1% Defense, +1% White Pollen, +1% Instant Conversion per stack."
-      },
-      {
-        "token": "Time Amplification",
-        "level": 1,
-        "weight": 14,
-        "expires": 20,
-        "desc": "Releases a blue orb of bottled time that flows through the field for 15s (+0.25s every Level), healing every flower it crosses and raising your Movespeed over time.\nThe orb seeks out Obsidian flowers and absorbs their Obsidian, growing bigger and granting Amplification stacks.\nAmplification (x25, 30s): +1% Movespeed, +1% Obsidian Pollen, +1% Blossom Pollen, +1% Capacity per stack."
-      }
-    ],
-    "tokenTime": 3
   },
   {
     "name": "Water Bee",

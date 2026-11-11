@@ -66,17 +66,6 @@
       "extra": "Abilities last 20% longer and Items last 10% longer."
     },
     {
-      "name": "Candy Bucket",
-      "type": "Trinket",
-      "rarity": "Limited",
-      "desc": "While equipped, Candy Treats drop from gathering pollen and defeating mobs.",
-      "cost": 1000,
-      "costType": "Honey",
-      "hud": "Boosts",
-      "image": "images/items/Candy Bucket.png",
-      "extra": "Limited trinket tied to the Hollow Moon event. Game data also lists a 5-Ticket cost and marks it as a statue."
-    },
-    {
       "name": "Pocket Blender",
       "type": "Trinket",
       "rarity": "Legendary",
