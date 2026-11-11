@@ -17,24 +17,36 @@ function fmtStat(val) {
   return Number(val) % 1 === 0 ? String(Number(val)) : Number(val).toFixed(1);
 }
 
-function buildShinyBonus(shinyBonus) {
+function buildShinyBonus(shinyBonus, shinyName) {
   if (!shinyBonus) return "";
-  let valText = "";
-  if (shinyBonus.type === "Mult") {
-    valText = `x${shinyBonus.value}`;
-  } else if (shinyBonus.type === "Perc") {
-    valText = `+${shinyBonus.value}%`;
-  } else if (shinyBonus.type === "Add") {
-    valText = `+${shinyBonus.value}`;
-  } else {
-    valText = String(shinyBonus.value);
-  }
-  return `
+  const list = Array.isArray(shinyBonus) ? shinyBonus : [shinyBonus];
+  const fmt = (sb) => {
+    if (sb.type === "Mult") return `x${sb.value}`;
+    if (sb.type === "Perc") return `+${sb.value}%`;
+    if (sb.type === "Add") return `+${sb.value}`;
+    return String(sb.value);
+  };
+  return list
+    .map(
+      (sb, i) => `
     <div class="bee-shiny-bonus">
       <span class="bee-shiny-icon">✦</span>
-      <span class="bee-shiny-label">Shiny:</span>
-      <span class="bee-shiny-stat">${escHtml(shinyBonus.stat)}</span>
-      <span class="bee-shiny-val">${escHtml(valText)}</span>
+      <span class="bee-shiny-label">${i === 0 && shinyName ? escHtml(shinyName) : "Shiny"}:</span>
+      <span class="bee-shiny-stat">${escHtml(sb.stat)}</span>
+      <span class="bee-shiny-val">${escHtml(fmt(sb))}</span>
+    </div>`,
+    )
+    .join("");
+}
+
+function buildPassive(passive) {
+  if (!Array.isArray(passive) || !passive.length) return "";
+  return `
+    <div class="bee-obtain-box">
+      <div class="bee-obtain-title">Passive</div>
+      <div class="bee-obtain-list">
+        ${passive.map((p) => `<div class="bee-obtain-item"><span class="bee-obtain-method">${escHtml(p.name)}</span><span class="bee-obtain-detail">${escHtml(p.desc || "")}</span></div>`).join("")}
+      </div>
     </div>`;
 }
 
@@ -243,9 +255,10 @@ function buildPage(bee) {
           <div class="bee-detail-name">${escHtml(bee.name)}</div>
           <span class="bee-detail-rarity ${rarityClass}">${escHtml(bee.rarity)}</span>
         </div>
-        ${buildShinyBonus(bee.shinyBonus)}
+        ${buildShinyBonus(bee.shinyBonus, bee.shinyName)}
         <div class="bee-detail-desc">${escHtml(bee.description || bee.desc || "")}</div>
         ${buildObtain(bee)}
+        ${buildPassive(bee.passive)}
         ${buildStatsSection(bee)}
       </div>
       ${buildInfobox(bee)}
