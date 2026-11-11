@@ -573,5 +573,63 @@
         "Amount": 200
       }
     ]
+  },
+  {
+    "Item": "Coconut Drink",
+    "Mixer": "Summer",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 500000
+      },
+      {
+        "Item": "Coconut",
+        "Amount": 25
+      },
+      {
+        "Item": "Shiny Jelly",
+        "Amount": 1
+      }
+    ]
+  },
+  {
+    "Item": "Lemonade",
+    "Mixer": "Summer",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 500000
+      },
+      {
+        "Item": "Lemon",
+        "Amount": 25
+      },
+      {
+        "Item": "Shiny Jelly",
+        "Amount": 1
+      }
+    ]
+  },
+  {
+    "Item": "Summer Cocktail",
+    "Mixer": "Summer",
+    "Recipe": [
+      {
+        "Item": "Honey",
+        "Amount": 5000000
+      },
+      {
+        "Item": "Coconut Drink",
+        "Amount": 5
+      },
+      {
+        "Item": "Lemonade",
+        "Amount": 5
+      },
+      {
+        "Item": "Shiny Jelly",
+        "Amount": 3
+      }
+    ]
   }
 ]
