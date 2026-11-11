@@ -89,6 +89,7 @@ function formatBuffValue(buff) {
 
 function formatDuration(seconds) {
   if (!seconds) return "";
+  if (seconds < 60) return `${seconds} sec`;
   const mins = Math.round(seconds / 60);
   return `${mins} min`;
 }
