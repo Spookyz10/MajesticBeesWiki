@@ -104,7 +104,7 @@ function lootLuckControlHtml(idSuffix) {
         />
         <span class="ll-widget-suffix">%</span>
       </div>
-      <div class="ll-widget-note">Increases the chance of drops with a base chance < 5%.</div>
+      <div class="ll-widget-note">Bonus Loot Luck from gear/boosts; affects drops with weight under 5.</div>
     </div>
   `;
 }
