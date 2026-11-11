@@ -85,6 +85,30 @@ function sfRarityIconTag(rarity, size = 18) {
   return `<img class="sf-tier-rarity-icon" src="${src}" width="${size}" height="${size}" alt="${rarity} icon" loading="lazy" onerror="this.style.opacity='0.25'" />`;
 }
 
+function buildSplitChances(split) {
+  if (!split) return "";
+  const rows = Object.keys(split)
+    .map(
+      (from) => `
+      <tr>
+        <td>${from}</td>
+        <td>${split[from].map(([t, p]) => `${t} ${p}`).join(", ")}</td>
+      </tr>`,
+    )
+    .join("");
+  return `
+    <div class="sf-section">
+      <div class="sf-section-heading">Split Chances</div>
+      <div class="sf-section-desc">
+        Relative weights for the tier of each Starflower that splits off from a parent Starflower. For non-Lunar parents the Lunar weight is multiplied by 0.25 (1.5 at night or during Hollow Moon).
+      </div>
+      <table class="sf-chances-table">
+        <thead><tr><th>Parent tier</th><th>Split result chances</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+}
+
 function buildChances(chances) {
   const rows = chances
     .map(
@@ -276,7 +300,9 @@ function renderStarflowers() {
   const activeFields = currentActiveFields();
   root.className = "sf-root";
   root.innerHTML =
-    buildChances(sfData.chances) + buildTiers(sfData.tiers, activeFields);
+    buildChances(sfData.chances) +
+    buildSplitChances(sfData.splitChances) +
+    buildTiers(sfData.tiers, activeFields);
 }
 
 async function loadStarflowers() {

@@ -1342,5 +1342,140 @@
         }
       ]
     }
+  },
+  {
+    "id": "cauldron-planter",
+    "name": "Cauldron Planter",
+    "icon": "images/items/Cauldron Planter.png",
+    "rarity": "Mythic",
+    "desc": "Use it to put the Cauldron Planter in a field.",
+    "obtain": [
+      {
+        "method": "Candy Shop",
+        "cost": "7,500 Candy Treat",
+        "materials": [
+          {
+            "name": "White Chocolate",
+            "amount": 100
+          },
+          {
+            "name": "Red Lollipop",
+            "amount": 100
+          },
+          {
+            "name": "Blue Raspberry Candy",
+            "amount": 100
+          }
+        ],
+        "limit": 1,
+        "priceIncreases": false
+      }
+    ],
+    "tokens": 35,
+    "growTime": 12600,
+    "bar": true,
+    "drops": {
+      "Red Field": [],
+      "Blue Field": [],
+      "White Field": [],
+      "Bamboo Field": [],
+      "All Fields": [
+        {
+          "item": "Candy Corn",
+          "weight": 11,
+          "amount": 2
+        },
+        {
+          "item": "Red Lollipop",
+          "weight": 9,
+          "amount": 2
+        },
+        {
+          "item": "Blue Raspberry Candy",
+          "weight": 9,
+          "amount": 2
+        },
+        {
+          "item": "White Chocolate",
+          "weight": 9,
+          "amount": 2
+        },
+        {
+          "item": "Sour Candy",
+          "weight": 9,
+          "amount": 2
+        },
+        {
+          "item": "Ghost Candy",
+          "weight": 9,
+          "amount": 2
+        },
+        {
+          "item": "Soul Candy",
+          "weight": 6,
+          "amount": 1
+        },
+        {
+          "item": "Wisp Taffy",
+          "weight": 6,
+          "amount": 1
+        },
+        {
+          "item": "Honey",
+          "weight": 6,
+          "amount": 500000000
+        },
+        {
+          "item": "Treat",
+          "weight": 5,
+          "amount": 10
+        },
+        {
+          "item": "Basic Vines",
+          "weight": 3,
+          "amount": 3
+        },
+        {
+          "item": "Lunar Ticket",
+          "weight": 2,
+          "amount": 2
+        },
+        {
+          "item": "Rare Vines",
+          "weight": 2,
+          "amount": 2
+        },
+        {
+          "item": "Marshmallow",
+          "weight": 1,
+          "amount": 1
+        },
+        {
+          "item": "Epic Vines",
+          "weight": 1,
+          "amount": 1
+        },
+        {
+          "item": "Legendary Vines",
+          "weight": 0.75,
+          "amount": 1
+        },
+        {
+          "item": "Mythic Vines",
+          "weight": 0.5,
+          "amount": 1
+        },
+        {
+          "item": "Enchanted Treat",
+          "weight": 0.5,
+          "amount": 1
+        },
+        {
+          "item": "Hollow Moon Candy",
+          "weight": 0.25,
+          "amount": 1
+        }
+      ]
+    }
   }
 ]
