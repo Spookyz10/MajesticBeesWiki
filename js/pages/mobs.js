@@ -53,8 +53,12 @@ function buildDropTag(drop, poolStats, index) {
     baseWeight: drop.weight,
   };
   const luckBadge = window.MajesticLootLuck.badge(stats.boosted);
-  const qty =
-    drop.qty > 1 ? `<span class="mob-drop-qty">×${drop.qty}</span>` : "";
+  const fmtQty = (n) => Number(n).toLocaleString("en-US");
+  const qty = drop.qtyMax
+    ? `<span class="mob-drop-qty">×${fmtQty(drop.qty)}–${fmtQty(drop.qtyMax)}</span>`
+    : drop.qty > 1
+      ? `<span class="mob-drop-qty">×${fmtQty(drop.qty)}</span>`
+      : "";
   const baseChancePct = window.MajesticDropPool.baseChance(
     drop.weight,
     poolStats.total,
@@ -113,9 +117,14 @@ function buildMobCard(mob) {
                 <div class="mob-stat">
                   <span class="mob-stat-label">Respawn</span>
                   <span class="mob-stat-value">${mob.respawn}</span>
-                </div>
+                </div>${mob.health ? `
+                <div class="mob-stat">
+                  <span class="mob-stat-label">Health</span>
+                  <span class="mob-stat-value">${mob.health}</span>
+                </div>` : ""}
               </div>
-              <p class="mob-desc">${mob.desc}</p>
+              <p class="mob-desc">${mob.desc}</p>${mob.notes ? `
+              <p class="mob-desc mob-notes">${mob.notes}</p>` : ""}
             </div>
           </div>
         </div>
