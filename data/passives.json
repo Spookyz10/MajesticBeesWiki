@@ -13,7 +13,7 @@
   {
     "id": "sun-eclipse",
     "name": "Sun Eclipse",
-    "desc": "Creates 4 Sunny Beams, which gather Pollen\n (Multiplied by Solar Pollen).\nAdditionally, receive Sun Eclipse Boost for 20s\n (x1.5 Pollen) & All players in the field receive\n Sun Eclipse Dual Boost for 20s\n (x1.05 Pollen & x1.1 Capacity Bonus) .Activates Every 80s.",
+    "desc": "Creates 4 Sunny Beams, which gather Pollen\n (boosted by Daytime Pollen during the day).\nAdditionally, receive Sun Eclipse Boost for 20s\n (x1.5 Pollen) & All players in the field receive\n Sun Eclipse Dual Boost for 20s\n (x1.05 Pollen & x1.1 Capacity Bonus) .Activates Every 80s.",
     "trigger": "Time",
     "need": 80,
     "image": "images/passives/Sun Eclipse.png",
@@ -35,7 +35,7 @@
   {
     "id": "sunny-pulse",
     "name": "Sunny Pulse",
-    "desc": "Creates 2 Sunny Beams, which gather\nPollen for each Hydrant (Multiplied by Solar Pollen).\nAdditionally, upgrades the flowers they gather for 12s.\nActivates Every 30s.",
+    "desc": "Creates 2 Sunny Beams, which gather\nPollen for each Hydrant (boosted by Daytime Pollen during the day).\nAdditionally, upgrades the flowers they gather for 12s.\nActivates Every 30s.",
     "trigger": "Time",
     "need": 30,
     "image": "images/passives/Sunny Pulse.png",
@@ -62,7 +62,8 @@
     "need": 5,
     "image": "images/passives/Fire Aura.png",
     "equipment": [
-      "Fire Scythe"
+      "Fire Scythe",
+      "Hard Rod"
     ]
   },
   {
@@ -106,7 +107,8 @@
     "need": 45,
     "image": "images/passives/Nature Charge.png",
     "equipment": [
-      "Nature Gloves"
+      "Nature Gloves",
+      "Gardening Gloves"
     ]
   },
   {
@@ -162,6 +164,222 @@
     "image": "images/passives/Sticker Hunter.png",
     "equipment": [
       "Canvas Helmet"
+    ]
+  },
+  {
+    "id": "constellation-smasher",
+    "name": "Constellation Smasher",
+    "desc": "Every 5 swings a star is placed on the field in front of you.\nWhen 5 stars are placed they connect and detonate, collecting every flower inside the constellation and granting x2 Bubble Pollen for 20s.",
+    "trigger": "Clicks",
+    "need": 5,
+    "image": "images/passives/Constellation Smasher.png",
+    "equipment": [
+      "Constellation Staff"
+    ]
+  },
+  {
+    "id": "garden-tiller",
+    "name": "Garden Tiller",
+    "desc": "Every 5 swings, tills the flowers in front of you, restoring flower size, briefly upgrading 1-2 flowers, and collecting a bonus burst with +20% Instant Conversion.",
+    "trigger": "Clicks",
+    "need": 5,
+    "image": "images/passives/Garden Tiller.png",
+    "equipment": [
+      "Shovel",
+      "Rake",
+      "Bamboo Rake"
+    ]
+  },
+  {
+    "id": "giant-weed",
+    "name": "Giant Weed",
+    "desc": "Break 50 vines in the field where your Pumpkin Sprinkler is placed and a Giant Weed grows there for 2 minutes.\nStay near it to link and receive Giant Weed Link\n (+25% Instant Conversion, +50% White Pollen, +50% Bomb Pollen, +10% Movespeed, +5% Bee Ability Rate, +25% Pollen).\nCooldown: 3 minutes.",
+    "trigger": "Misc",
+    "need": 50,
+    "image": "images/passives/Giant Weed.png",
+    "equipment": [
+      "Pumpkin Sprinkler"
+    ]
+  },
+  {
+    "id": "gourd-shield",
+    "name": "Gourd Shield",
+    "desc": "When you take damage, a pumpkin shield surrounds you for 60s and grants Gourd Shield Boost\n (+30% Defense, +5 Red Bee Attack, +10% Critical Power, +10% Critical Chance, x1.25 Soul Fire Pollen, x1.25 Soul Duration).\nCooldown: 2 minutes.",
+    "trigger": "Misc",
+    "need": 1,
+    "image": "images/passives/Gourd Shield.png",
+    "equipment": [
+      "Gourd Spider Helmet"
+    ]
+  },
+  {
+    "id": "heavy-impact",
+    "name": "Heavy Impact",
+    "desc": "Every 5 swings, slams the ground for a heavy shockwave that gathers 35% bonus Tool Pollen with +20% Instant Conversion.",
+    "trigger": "Clicks",
+    "need": 5,
+    "image": "images/passives/Heavy Impact.png",
+    "equipment": [
+      "Hammer",
+      "Pickaxe",
+      "Axe"
+    ]
+  },
+  {
+    "id": "magnetic-pulse",
+    "name": "Magnetic Pulse",
+    "desc": "Every 4 swings, emits a magnetic pulse that automatically collects 1-2 of your nearby Tokens in the field.",
+    "trigger": "Clicks",
+    "need": 4,
+    "image": "images/passives/Magnetic Pulse.png",
+    "equipment": [
+      "Magnet",
+      "Gold Magnet"
+    ]
+  },
+  {
+    "id": "meteor-summon",
+    "name": "Meteor Summon",
+    "desc": "Every 100 swings a meteor crashes into the field in front of you, covering it in magma that gathers pollen (boosted by Fire Pollen).",
+    "trigger": "Clicks",
+    "need": 100,
+    "image": "images/passives/Meteor Summon.png",
+    "equipment": [
+      "Primal Fire Hook"
+    ]
+  },
+  {
+    "id": "moon-boost",
+    "name": "Moon Boost",
+    "desc": "Every 80s a moon appears over your head for 20s.\nIt pulls in your tokens nearby like a magnet and has a 15% chance to duplicate each one.",
+    "trigger": "Time",
+    "need": 80,
+    "image": "images/passives/Moon Boost.png",
+    "equipment": [
+      "Umbral Reservoir"
+    ]
+  },
+  {
+    "id": "nectar-splash",
+    "name": "Nectar Splash",
+    "desc": "Every 6 swings, splashes nectar across the stamp, regrowing flowers, collecting a bonus splash with +25% Instant Conversion, and energizing up to 3 nearby Bees.",
+    "trigger": "Clicks",
+    "need": 6,
+    "image": "images/passives/Nectar Splash.png",
+    "equipment": [
+      "Honey Dipper",
+      "Bamboo Staff"
+    ]
+  },
+  {
+    "id": "precision-snip",
+    "name": "Precision Snip",
+    "desc": "Every 3 snips on full-grown flowers, performs a guaranteed Critical Snip for bonus pollen with +25% Instant Conversion.",
+    "trigger": "Clicks",
+    "need": 3,
+    "image": "images/passives/Precision Snip.png",
+    "equipment": [
+      "Scissors"
+    ]
+  },
+  {
+    "id": "primal-rage",
+    "name": "Primal Rage",
+    "desc": "Every 150s your other boosts stop running out for 15s.",
+    "trigger": "Time",
+    "need": 150,
+    "image": "images/passives/Primal Rage.png",
+    "equipment": [
+      "Primal Ant Helmet"
+    ]
+  },
+  {
+    "id": "primordial-fire",
+    "name": "Primordial Fire",
+    "desc": "Every 150 Soul Fire flowers, summon a 3x3 square of green Primordial Fire for 10s.\nPrimordial Fire gathers twice as much as Soul Fire, and fires it touches turn Primordial and reset their duration.\nCooldown: 2 minutes.",
+    "trigger": "Misc",
+    "need": 150,
+    "image": "images/passives/Primordial Fire.png",
+    "equipment": [
+      "Fossilised Magmatic Backpack"
+    ]
+  },
+  {
+    "id": "reaper-s-sweep",
+    "name": "Reaper's Sweep",
+    "desc": "Every 4 swings while moving, unleashes a sweeping slash that gathers 35% bonus Tool Pollen as a guaranteed Critical Hit.",
+    "trigger": "Clicks",
+    "need": 4,
+    "image": "images/passives/Reaper's Sweep.png",
+    "equipment": [
+      "Scythe",
+      "Bamboo Spear"
+    ]
+  },
+  {
+    "id": "stardust",
+    "name": "Stardust",
+    "desc": "Creates a purple Stardust Bubble around you for 60s.\nIts capacity equals your current capacity (not affected by Bubble Capacity) and it turns into honey when it pops.\nCooldown: 180s.",
+    "trigger": "Time",
+    "need": 240,
+    "image": "images/passives/Stardust.png",
+    "equipment": [
+      "Stardust Mask"
+    ]
+  },
+  {
+    "id": "starseed",
+    "name": "Starseed",
+    "desc": "Creates a starflower on field!\nActivates every 180s.",
+    "trigger": "Time",
+    "need": 180,
+    "image": "images/passives/Starseed.png",
+    "equipment": [
+      "Seed Pouch"
+    ]
+  },
+  {
+    "id": "time-rend",
+    "name": "Time Rend",
+    "desc": "Overclocks all Cogs in your field, extending their duration by 25%.\nFlowers inside Overclocked Cogs do not degrade.\nStanding inside an Overclocked Cog grants Overclock Boost.\nActivates every 30 Swings.",
+    "trigger": "Clicks",
+    "need": 30,
+    "image": "images/passives/Time Rend.png",
+    "equipment": [
+      "Time Weaver's Slicers"
+    ]
+  },
+  {
+    "id": "time-stop",
+    "name": "Time Stop",
+    "desc": "Collecting a Timekeeper Bee token has a 1% chance (+0.5% per Timekeeper token since the last activation) to stop time for 7s.\nYour screen turns grey, enemies are slowed by 50% and you receive Time Stop Boost\n (+50% Movespeed, x0.5 Bee Movespeed, +100% Tool Speed, x2 White Pollen, x2 Bomb Pollen).\nAll pollen collected during Time Stop is instantly converted into honey when it ends, and all tokens collected activate at once.\nCooldown: 2 minutes.",
+    "trigger": "Misc",
+    "need": 1,
+    "image": "images/passives/Time Stop.png",
+    "equipment": [
+      "Time Capsule"
+    ]
+  },
+  {
+    "id": "time-stream",
+    "name": "Time Stream",
+    "desc": "Every 2 minutes in a field, a golden point appears. Reach it in time to gain a Time Stream stack and spawn the next point with 0.5s less time.\nMiss a point and you lose a stack. Smaller fields give less time.\nTime Stream (stacks 10x): +2% Movespeed, +1.5% Instant Conversion, +7.5% White Pollen, +5% Bomb Pollen per stack. Lasts 5s per stack.",
+    "trigger": "Misc",
+    "need": 120,
+    "image": "images/passives/Time Stream.png",
+    "equipment": [
+      "Timekeeper Mask"
+    ]
+  },
+  {
+    "id": "winged-grace",
+    "name": "Winged Grace",
+    "desc": "Grants Winged Grace Boost for 20s\n (x1.5 Pollen, x1.1 Capacity Bonus, +10% Movespeed).\nActivates Every 60s.",
+    "trigger": "Time",
+    "need": 60,
+    "image": "images/passives/Winged Grace.png",
+    "equipment": [
+      "Butterfly Helmet"
     ]
   }
 ]
