@@ -42,6 +42,7 @@
 
   {
     "id": "ConsumeVine",
+    "limit": 3,
     "label": "Consume Vines",
     "base": 1,
     "min": 1,
@@ -90,7 +91,7 @@
     "template": "Feed {amount} Seed."
   },
   {
-    "id": "FeedPineCone",
+    "id": "FeedPine Cone",
     "label": "Feed Pine Cone",
     "base": 5,
     "min": 1,

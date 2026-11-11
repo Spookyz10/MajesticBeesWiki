@@ -5,7 +5,7 @@
       "image": "images/hive/skins/Normal Skin.png",
       "rarity": "Common",
       "order": 999,
-      "desc": "Original Colour of hives.",
+      "desc": "The original color of hives.",
       "buffs": []
     },
     {
@@ -13,7 +13,7 @@
       "image": "images/hive/skins/Red Skin.png",
       "rarity": "Rare",
       "order": 990,
-      "desc": "Red and strawberry style hive.",
+      "desc": "Strawberry style hive.",
       "buffs": [
         {
           "stat": "Red Pollen",
@@ -28,7 +28,7 @@
       "image": "images/hive/skins/Blue Skin.png",
       "rarity": "Rare",
       "order": 990,
-      "desc": "Blue and blueberry style hive.",
+      "desc": "Blueberry style hive.",
       "buffs": [
         {
           "stat": "Blue Pollen",
@@ -43,7 +43,7 @@
       "image": "images/hive/skins/Green Skin.png",
       "rarity": "Rare",
       "order": 990,
-      "desc": "Green and lucky hive.",
+      "desc": "Lucky hive.",
       "buffs": [
         {
           "stat": "Loot Luck",
@@ -58,7 +58,7 @@
       "image": "images/hive/skins/Orange Skin.png",
       "rarity": "Rare",
       "order": 990,
-      "desc": "Orange and honeyfull hive.",
+      "desc": "Honeyful hive.",
       "buffs": [
         {
           "stat": "Convert Rate",
@@ -78,7 +78,7 @@
       "image": "images/hive/skins/Pink Skin.png",
       "rarity": "Epic",
       "order": 980,
-      "desc": "Pink and sweety flavour hive.",
+      "desc": "Sweet flavored hive.",
       "buffs": [
         {
           "stat": "Red Pollen",
@@ -98,7 +98,7 @@
       "image": "images/hive/skins/Purple Skin.png",
       "rarity": "Epic",
       "order": 980,
-      "desc": "Purple and mix of blue & red hive.",
+      "desc": "A mix of the Blue and Red Hives.",
       "buffs": [
         {
           "stat": "Red Pollen",
@@ -118,7 +118,7 @@
       "image": "images/hive/skins/Light Blue Skin.png",
       "rarity": "Epic",
       "order": 980,
-      "desc": "Light blue and sky color hive.",
+      "desc": "Sky colored hive.",
       "buffs": [
         {
           "stat": "White Pollen",
@@ -173,7 +173,7 @@
       "image": "images/hive/skins/Blossom Skin.png",
       "rarity": "Legendary",
       "order": 970,
-      "desc": "Legendary hive of blossom story...",
+      "desc": "Only lucky individuals have this one...",
       "buffs": [
         {
           "stat": "Honey Bonus",
@@ -208,7 +208,7 @@
       ],
       "extraChances": [
         {
-          "label": "0.008% from Wheel",
+          "label": "0.038% from Wheel",
           "type": "wheel"
         }
       ]
@@ -218,7 +218,7 @@
       "image": "images/hive/skins/Chromatic Skin.png",
       "rarity": "Legendary",
       "order": 970,
-      "desc": "Mix of all colors hive.",
+      "desc": "A mix of all hive colors.",
       "buffs": [
         {
           "stat": "Honey Bonus",
@@ -242,6 +242,50 @@
         }
       ],
       "weight": 15
+    },
+    {
+      "name": "Pumpkin Seed Hive",
+      "image": "images/hive/skins/Pumpkin Seed Skin.png",
+      "rarity": "Legendary",
+      "order": 970,
+      "desc": "Trick or Bee! The final reward of Spooky Bear's Halloween quests.",
+      "buffs": [
+        {
+          "stat": "Honey Bonus",
+          "type": "Perc",
+          "value": 10
+        },
+        {
+          "stat": "Pollen",
+          "type": "Perc",
+          "value": 30
+        },
+        {
+          "stat": "Capacity Bonus",
+          "type": "Perc",
+          "value": 100
+        },
+        {
+          "stat": "Bubble Pollen",
+          "type": "Perc",
+          "value": 25
+        },
+        {
+          "stat": "Bubble Time",
+          "type": "Perc",
+          "value": 20
+        },
+        {
+          "stat": "Blue Pollen",
+          "type": "Perc",
+          "value": 5
+        },
+        {
+          "stat": "Movespeed",
+          "type": "Perc",
+          "value": 20
+        }
+      ]
     }
   ],
   "stickers": [

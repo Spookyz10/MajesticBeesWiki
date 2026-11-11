@@ -1,7 +1,8 @@
 const POOL_CONFIG = {
-  otherPoolWeight: 10000,
+  // Field sticker pool = FieldDrops.Stickers entries + the field's own sticker (weight 1500).
+  otherPoolWeight: 1500,
 
-  flowersPerRoll: 12000,
+  flowersPerRoll: 12024,
 
   lootLuckThreshold: 5,
 };
@@ -21,17 +22,18 @@ function baseChance(weight, totalWeight) {
   return (weight / totalWeight) * 100;
 }
 
-function isLootLuckEligible(weight, totalWeight) {
-  return baseChance(weight, totalWeight) < POOL_CONFIG.lootLuckThreshold;
+// Game rule (Random.GetRandom): boosted only when the RAW weight is < 5.
+function isLootLuckEligible(weight) {
+  return Number(weight) < POOL_CONFIG.lootLuckThreshold;
 }
 
 function computeDropStats(items, lootLuckPercent = 0, includeOtherPool = true) {
-  const multiplier = 1 + (Number(lootLuckPercent) || 0) / 100;
-  const baseTotal = getTotalPoolWeight(items, includeOtherPool);
+  // Input is BONUS loot luck; the game stat has a base of 100 -> (100 + bonus) / 100.
+  const multiplier = (100 + (Number(lootLuckPercent) || 0)) / 100;
 
   const boosted = items.map((item) => {
     const w = Number(item.weight) || 0;
-    const eligible = isLootLuckEligible(w, baseTotal);
+    const eligible = isLootLuckEligible(w);
     const boostedWeight = eligible ? w * multiplier : w;
     return {
       name: item.name,

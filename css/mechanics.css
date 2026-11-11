@@ -95,3 +95,21 @@
   border-color: rgba(232, 232, 232, 0.35);
   background: rgba(232, 232, 232, 0.1);
 }
+
+.mechanic-badge--poison {
+  color: #9be37a;
+  border-color: rgba(155, 227, 122, 0.4);
+  background: rgba(155, 227, 122, 0.12);
+}
+
+.mechanic-badge--heaven {
+  color: #ffe9a3;
+  border-color: rgba(255, 233, 163, 0.4);
+  background: rgba(255, 233, 163, 0.12);
+}
+
+.mechanic-badge--paint {
+  color: #e9a3ff;
+  border-color: rgba(233, 163, 255, 0.4);
+  background: rgba(233, 163, 255, 0.12);
+}

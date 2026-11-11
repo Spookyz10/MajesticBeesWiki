@@ -1,0 +1,110 @@
+{
+  "belt": {
+    "name": "Trinket Belt",
+    "slots": 5,
+    "obtain": "Oscar Shop",
+    "cost": "75,000,000,000,000,000 Honey",
+    "materials": {
+      "Legendary Starflower": 15,
+      "Gardener's Bundle": 80,
+      "Pot’O’Vegetation": 3,
+      "Magic Carrot": 1,
+      "Singularity Essence": 10,
+      "Mythic Egg": 3
+    }
+  },
+  "trinkets": [
+    {
+      "name": "Pocket Watch",
+      "type": "Trinket",
+      "rarity": "Epic",
+      "desc": "Displays on screen when Night will begin and how long it will last.",
+      "cost": 150,
+      "costType": "Ticket",
+      "hud": "Equipment",
+      "image": "images/items/Pocket Watch.png"
+    },
+    {
+      "name": "Sprinkler Pocket",
+      "type": "Trinket",
+      "rarity": "Legendary",
+      "desc": "Adds a dedicated Sprinkler inventory slot.",
+      "cost": 250,
+      "costType": "Ticket",
+      "hud": "Equipment",
+      "image": "images/items/Sprinkler Pocket.png"
+    },
+    {
+      "name": "Insect Radar",
+      "type": "Trinket",
+      "rarity": "Epic",
+      "desc": "Tracks enemy respawn timers.",
+      "cost": 175,
+      "costType": "Ticket",
+      "hud": "Equipment",
+      "image": "images/items/Insect Radar.png"
+    },
+    {
+      "name": "Starflower Compass",
+      "type": "Trinket",
+      "rarity": "Legendary",
+      "desc": "Notifies you when a Starflower spawns.",
+      "cost": 300,
+      "costType": "Ticket",
+      "hud": "Equipment",
+      "image": "images/items/Starflower Compass.png"
+    },
+    {
+      "name": "Book of Preservation",
+      "type": "Trinket",
+      "rarity": "Mythic",
+      "desc": "Increases duration for Abilities and Items by 20% and 10%.",
+      "cost": 500,
+      "costType": "Ticket",
+      "hud": "Boosts",
+      "image": "images/items/Book of Preservation.png",
+      "extra": "Abilities last 20% longer and Items last 10% longer."
+    },
+    {
+      "name": "Pocket Blender",
+      "type": "Trinket",
+      "rarity": "Legendary",
+      "desc": "Allows you to use the blender wherever you are on the map, and will have a cooldown.",
+      "cost": 350,
+      "costType": "Ticket",
+      "hud": "Equipment",
+      "image": "images/items/Pocket Blender.png"
+    },
+    {
+      "name": "Bribe Treats",
+      "type": "Consumable",
+      "rarity": "Legendary",
+      "desc": "Lets you pick a discovered bee to guarantee the next time its rarity is rolled from a Royal Jelly.",
+      "cost": 75,
+      "costType": "Ticket",
+      "image": "images/items/Bribe Treats.png",
+      "itemId": "Bribe Treats"
+    },
+    {
+      "name": "Clover Charms",
+      "type": "Consumable",
+      "rarity": "Rare",
+      "desc": "Has a 25% chance to double your Luck for mob loot.",
+      "cost": 25,
+      "costType": "Ticket",
+      "image": "images/items/Clover Charms.png",
+      "itemId": "Clover Charms",
+      "extra": "The resulting Clover Charm boost lasts 15 minutes."
+    },
+    {
+      "name": "Tele-Sphere",
+      "type": "Consumable",
+      "rarity": "Rare",
+      "desc": "Teleports you to your hive whenever you are on the map.",
+      "cost": 15,
+      "costType": "Ticket",
+      "image": "images/items/Tele-Sphere.png",
+      "itemId": "Tele-Sphere"
+    }
+  ]
+}
