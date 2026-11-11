@@ -17,11 +17,11 @@
     "name": "Quest",
     "order": 2,
     "start": 5,
-    "mult": 2,
+    "mult": 1.6,
     "buff": {
       "stat": "Capacity Bonus",
       "type": "Perc",
-      "value": 10
+      "value": 7
     },
     "desc": "Complete quests."
   },
@@ -30,7 +30,7 @@
     "name": "Time",
     "order": 2,
     "start": 3600,
-    "mult": 2,
+    "mult": 1.5,
     "buff": {
       "stat": "Honey Bonus",
       "type": "Perc",
@@ -43,11 +43,11 @@
     "name": "Ability",
     "order": 3,
     "start": 10,
-    "mult": 5,
+    "mult": 2.15,
     "buff": {
       "stat": "Bee Ability Rate",
       "type": "Perc",
-      "value": 3
+      "value": 1.8
     },
     "desc": "Use bee abilities."
   },
