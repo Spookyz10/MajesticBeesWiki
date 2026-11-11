@@ -1,0 +1,35 @@
+.events-page-title {
+  text-align: center;
+  padding: 30px 0 10px;
+}
+
+.events-hero-description {
+  max-width: 740px;
+  margin: 6px auto 28px;
+  padding: 0 20px;
+  font-size: 1.05em;
+}
+
+.events-card {
+  max-width: 820px;
+  margin: 0 auto 28px;
+  background: #241900;
+  border: 1px solid #3a2800;
+  border-radius: 12px;
+  padding: 20px 24px;
+  color: #c8a84e;
+  line-height: 1.7;
+}
+
+.events-card h2 {
+  margin-top: 0;
+}
+
+.events-summary {
+  font-style: italic;
+}
+
+.events-table {
+  width: 100%;
+  margin: 8px 0 14px;
+}

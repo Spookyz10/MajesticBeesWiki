@@ -62,7 +62,7 @@ function renderShopCard(shop) {
   const tags = renderTags(shop.tags);
   const image = escapeHtml(shop.image || "images/ui/site-logo.png");
   const name = escapeHtml(shop.name || "Unknown Shop");
-  const location = escapeHtml(shop.location || "Unknown location");
+  const location = shop.location ? `<div class="shop-card-location">${escapeHtml(shop.location)}</div>` : "";
   const description = escapeHtml(
     shop.description || "No description available.",
   );
@@ -81,7 +81,7 @@ function renderShopCard(shop) {
         <div class="shop-card-body">
           <div class="shop-card-header">
             <div class="shop-card-name">${name}</div>
-            <div class="shop-card-location">${location}</div>
+            ${location}
           </div>
 
           <p class="shop-card-desc">${description}</p>

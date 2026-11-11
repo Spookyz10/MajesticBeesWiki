@@ -7153,6 +7153,845 @@
     ]
   },
   {
+    "id": "spooky-sandy-bear",
+    "name": "Spooky Sandy Bear",
+    "image": "images/bears/Spooky Sandy Bear Model.png",
+    "location": "Bumbleween (Halloween) event",
+    "description": "Sandy Bear in her Bumbleween costume, hosting the Halloween \"Bumbleween Bash\" questline. Her 10 quests have you gather Candy and pollen, collect the event candies, and fight Gourd Spiders during the Hollow Moon, finishing with the Pumpkin Seed Hive skin.",
+    "noquest_dialog": [
+      "Booo, beekeeper! How's the moon treatin' ya today? Feels nice?",
+      "If you're lookin' for quests, I'm all set and dry. But maybe next Bumbleween I might have some new ones!",
+      "I'm always here to give some good jumpscarin' tips, though! Haha!",
+      "Enjoy the Fall, dude! Keep it... windy! ;)"
+    ],
+    "quests": [
+      {
+        "number": 1,
+        "name": "The Start of Bumbleween",
+        "dialogue": {
+          "take": [
+            "BAAAAHH!!!,",
+            "Aheheh! Did I scare ya?,",
+            "Been a while since we've seen each other! How've ya been? Enjoyin' the look of my fit?",
+            "I tried to make it look scary. Sorta ended up making it look a little too formal I think, haha!,",
+            "Check out these webs on my glasses though! Aren't they so cool??,",
+            "Canvy helped decorate those for me, that way I wouldn't need *actual* spiders to do it!",
+            "Oh, you're looking for quests?",
+            "Hmmmhmhmhm, veeell then my little beekeeper friend, allow me put you onto a questline so frrrightening, so terrifying!",
+            "You'll run out of these fields quicker than you can say...",
+            "NO FREE REFILLS!!!",
+            "...hehe,,, 'Suppose that's not that scary to everyone else.",
+            "So! Wanna hear a cool story?",
+            "Every year, when Bumbleween comes around, I start planning what I like to call our Bumbleween Bash!",
+            "It all started when we discovered this portal in a tree that leads to a *really* spooky place.",
+            "Cool bugs, creatures, plants, and even a whole new bear friend to make! His name's Jack-O-Bear!",
+            "I call him \"Stem\" sometimes!",
+            "He's the one that helped me set together this cool stand close by to me, got some REALLY cool stuff up for you to grab!",
+            "There's also Dracula Bear, owns a HUGE mansion in there!",
+            "The place is SUPER sick, almost every ghoul known to bear lives there!",
+            "Annnyywho, I always host our Bumbleween Bashes there every year when Dracula Bear allows it.",
+            "Kinda like a second Summerfest!",
+            "Buuuut, somethin' was up this year that prevented our plans-, so we gotta move it on to next year.",
+            "The energy and magic of the place this time around was all too, chaotic? Not controlled? We still don't exactly know.",
+            "All we know is that when I tried to get everything organized, Stem told us that things \"weren't ready yet!\" so we needed to have it here instead.",
+            "Bummer stuff, I know. It would've been so cool if I could invite ya, and I'm sure next year we'll have something planned!",
+            "But! That didn't mean the Bumbleween festivities needed to disappear for good!",
+            "We aren't sure why about this either, but I'm guessing because of energy of that place being all out of whack, some parts of it have \"leaked\" into here!",
+            "So uh, if you've noticed some new friends wandering around our forest...",
+            "That's why!",
+            "Now, your quest.",
+            "Explore around! Pick up some of the new candy that's come out and just do what you've always done.",
+            "Sorta jus' to get back into the swing of things, y'know?",
+            "I'll be right here to give ya some more when you're done, and trust me, there's a *lot* to do out there now!"
+          ],
+          "going": [
+            "What are ya waiting for? Too scary out there after all?",
+            "I was only kidding earlier buddy, I promise it's all safe out there!"
+          ],
+          "finish": [
+            "Heyyy, you're back! It's so cool isn't it?",
+            "It's almost like free Bumbleween decorations all across the forest!",
+            "You likin' that candy too? Hope they weren't too hard to find, I've eeh, been helping myself to them a little, hehe.",
+            "We've got more to do if you're wantin' though, come back whenever you're ready!"
+          ]
+        },
+        "requirements": [
+          {
+            "type": "collect_token",
+            "amount": 100,
+            "token": "Candy"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 10000
+          },
+          {
+            "type": "collect_token",
+            "amount": 10,
+            "token": "Honey"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 15000
+          },
+          {
+            "item": "Red Lollipop",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "name": "Chocolatey Delight",
+        "dialogue": {
+          "take": [
+            "Hey hey, my spooky friend! Ready for more Bumbleween festivities?",
+            "I haven't found much new myself yet, but I heard from Snowflake that he found some Chocolate a bit ago!",
+            "I bet you he's testing some new hot cocoa recipes with it as we speak, haha!",
+            "Maybe be on the look out for some of that this time around, I bet it could be useful to you somehow.",
+            "I'll explore around too! I wanna see if I can find some of my old spider friends from last Bashes.",
+            "Oooh what are ya lookin' at me at like that for? Spiders can be chill dude!",
+            "I'll introduce ya one day, promise!"
+          ],
+          "going": [
+            "*[She seems to be preparing to go out]*",
+            "*[You should probably do the same]*"
+          ],
+          "finish": [
+            "Heya! Back from your Trick-Or-Treat expedition?",
+            "Ooooh niceee, you found some of that chocolate I told ya about! And a nice pile of candy, too!",
+            "I guess I shouldn't be surprised, you've been doin' this for a long while haven't ya?",
+            "I meeeaann- after all of those quests I gave you during summerfest, surely this is nothin' new to you, champ!",
+            "Heheh! Here, I don't mind sharing some of what I found too.",
+            "You know the drill! Come back to me when you're ready for more, I'll see ya around!"
+          ]
+        },
+        "requirements": [
+          {
+            "type": "collect_token",
+            "amount": 250,
+            "token": "Candy"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 20000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 20000,
+            "color": "Blue"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 20000,
+            "color": "White"
+          },
+          {
+            "type": "collect_token",
+            "amount": 1,
+            "token": "White Chocolate"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 110000
+          },
+          {
+            "item": "Lunar Treat",
+            "amount": 25
+          },
+          {
+            "item": "Blue Raspberry Candy",
+            "amount": 1
+          },
+          {
+            "item": "White Chocolate",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "name": "Eight Legged Friends",
+        "dialogue": {
+          "take": [
+            "Ooh heyy!! Glad you're here so soon, I got somethin' awesome to tell you about!",
+            "Remember how I said I was wantin' you to meet my spider friends?",
+            "Well I'm sure you've probably seen them in random fields already, right? That's them!",
+            "This cool new moon that showed up really helps bring them out to play, must be a part of that bit of magic that came with me.",
+            "Aren't they so cute?? Those spiders helped me a ton when it came to the Bumbleween Bashes back at the Harvest.",
+            "Seems like they've followed me here and made themselves right at home!",
+            "If you haven't already, or- heck, even if you already have, go tell em hi!",
+            "Sorry if spiders aren't exactly your thing, I promise the ones there don't bite!",
+            "...too hard at least.. hehe."
+          ],
+          "going": [
+            "Worried about the spiders?",
+            "I get that they can be pretty scary to some, but I promise they can be friendly! They're chill with me at least.",
+            "Maybe just, try to run in and out as quickly as you can, and avoid lookin' at 'em too if they scare you too badly."
+          ],
+          "finish": [
+            "Oooo I can tell you've explored the Spider Field a fair bit now.",
+            "How? Look at all the webs on you!",
+            "Almost looks like you fought a bunch of them, haha!",
+            "Here, I'll share some of the more unique candy I've managed to find around the forest for your efforts.",
+            "Hope you don't mind sour things!"
+          ]
+        },
+        "requirements": [
+          {
+            "type": "collect_token",
+            "amount": 300,
+            "token": "Candy"
+          },
+          {
+            "type": "gather_field",
+            "amount": 150000,
+            "field": "Spider Field"
+          },
+          {
+            "type": "collect_token",
+            "amount": 5,
+            "token": "White Chocolate"
+          },
+          {
+            "type": "collect_token",
+            "amount": 5,
+            "token": "Red Lollipop"
+          },
+          {
+            "type": "collect_token",
+            "amount": 5,
+            "token": "Blue Raspberry Candy"
+          },
+          {
+            "type": "collect_token",
+            "amount": 25,
+            "token": "Candy Corn"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 195000
+          },
+          {
+            "item": "Sour Candy",
+            "amount": 1
+          },
+          {
+            "item": "Ghost Candy",
+            "amount": 1
+          },
+          {
+            "item": "Candy Corn",
+            "amount": 5
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "name": "Smashing Pumpkins",
+        "dialogue": {
+          "take": [
+            "Heeeeyy there buddy.",
+            "Aaahh, do you remember those spiders you may have met a while ago?",
+            "They, might be causin' a bit more trouble than I'd have hoped.",
+            "I love the lil' dudes so much, but even I gotta admit, they've been taking a *lot* of the forest's food for themselves!",
+            "And worse, they've even been harassin' the other smaller animals here, which aren't even trying to pick fights or anything!",
+            "I swear, they were a *lot* friendlier when I hung out with them in past Bumbleween Bashes.",
+            "But, looks like somebody here's gotta knock some sense into 'em.",
+            "Could you go teach some of those spiders a lesson?",
+            "Nothin' too crazy! You don't gotta drive 'em all out of the forest.",
+            "But, they gotta learn some respect man!"
+          ],
+          "going": [
+            "I really don't know what's gotten into them this time around.",
+            "Maybe it's that magic energy stuff bein' weird Stem was talkin' about.",
+            "Either way, keep at it friend!",
+            "I'll see what I can do with some of 'em too."
+          ],
+          "finish": [
+            "You've done it?",
+            "Alrighty, that should settle things down for a while at least.",
+            "And, hey! Look at that! You're out here managin' spiders like nobody's business.",
+            "I knew they really weren't *that* scary, people jus' need to give 'em a chance.",
+            "Anywho, here's some much better stuff for everything you've done. I'm so glad to have such a sick friend like you dude.",
+            "See ya soon! Hope they stay more well-behaved this time."
+          ]
+        },
+        "requirements": [
+          {
+            "type": "defeat",
+            "amount": 10,
+            "mob": "Gourd Spider"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 700000,
+            "color": "Red"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 100000,
+            "color": "White"
+          },
+          {
+            "type": "collect_token",
+            "amount": 100,
+            "token": "Candy Corn"
+          },
+          {
+            "type": "collect_token",
+            "amount": 5,
+            "token": "Sour Candy"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 1000000
+          },
+          {
+            "item": "Silver Egg",
+            "amount": 1
+          },
+          {
+            "item": "Sour Candy",
+            "amount": 5
+          },
+          {
+            "item": "Ghost Candy",
+            "amount": 5
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "name": "Sugar Rush",
+        "dialogue": {
+          "take": [
+            "Hey again dude, how's it goin'?",
+            "Been enjoying the Bumbleween celebrations?",
+            "Heh, you want more things to do?",
+            "I don't know man, we've kinda needed to scale down our Bumbleween Bash since we couldn't have it at the Haunted Harvest this year.....",
+            "Which is *really* a shame, I was hoping I'd get to introduce you two!",
+            "Hm, how about this?",
+            "Let's go on a candy hunt!",
+            "We both go out and collect as much candy as we can, and then once we're done, we can trade a bit of what we find with each other!",
+            "I've seen some of my friends find some *crazy* unique stuff before, I'd love to share that with you!",
+            "Ready? Let's see who can get the most the quickest.",
+            "3 2 1 GO!!!!"
+          ],
+          "going": [
+            "...Well what are ya standing around talkin' to me for? Go!",
+            "What am *I* doing?",
+            "...Waiting for you to go! GO!!"
+          ],
+          "finish": [
+            "*[She seems to be a little out of breath]*",
+            "Whew! You're finally done?",
+            "I got a *nice* haul of stuff. It's not really a lot of candy, but it sure as heck is the most unique candy I've found yet.",
+            "Look at this! Blue Raspberry! Jus' sittin' out there for me to find!",
+            "You just can't get stuff like this anywhere else man. Or at any other time either!",
+            "Only Bumbleween! Heheh.",
+            "I hope you've been enjoyin' yourself friend, I know I've been havin' a blast!",
+            "Here's some of what I could find. You got a good haul too y'know!",
+            "Until next time!"
+          ]
+        },
+        "requirements": [
+          {
+            "type": "collect_token",
+            "amount": 500,
+            "token": "Candy"
+          },
+          {
+            "type": "gather_field",
+            "amount": 2000000,
+            "field": "Clover Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 3000000,
+            "field": "Spider Field"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 6500000
+          },
+          {
+            "item": "Candy Corn",
+            "amount": 50
+          },
+          {
+            "item": "Gold Egg",
+            "amount": 1
+          },
+          {
+            "item": "Red Lollipop",
+            "amount": 10
+          },
+          {
+            "item": "White Chocolate",
+            "amount": 10
+          },
+          {
+            "item": "Blue Raspberry Candy",
+            "amount": 10
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "name": "Unstable Magic",
+        "dialogue": {
+          "take": [
+            "Hiiii, I've got some bad news bud.",
+            "Remember our spider friends from a while back?",
+            "Yeeeeaahh... They're back and angrier than ever!",
+            "I really just, have NO clue what's gotten into them recently, but they've-",
+            "*sniffles* It pains me to say this a little bit, but they've *really* been a terror to this forest lately!",
+            "Maybe, it's something about the forest itself?",
+            "I guess this magic just ain't fit for the outside world, no wonder those gargoyles guard that portal all the time...",
+            "Maybe they're jus' cranky about not being in their home world.",
+            "Either way, we've, definitely gotta do something about it now.",
+            "Y'think you could help me get a few of 'em to listen to reason? Maybe collect some candy while we're out there?",
+            "Great, I know I can always count on you!"
+          ],
+          "going": [
+            "Come on, it's not much to do!",
+            "I'll be handling my own too, don't you worry."
+          ],
+          "finish": [
+            "Hoo, goodness.",
+            "'S a lot of work trying to, \"convince\" so many spiders to chill out.",
+            "But we made quick work of that I'd say!",
+            "Thanks a lot man, couldn't have done all that without your help.",
+            "Hopefully we don't gotta be doin' stuff like that all the time! We gotta find time to chill too."
+          ]
+        },
+        "requirements": [
+          {
+            "type": "collect_token",
+            "amount": 700,
+            "token": "Candy"
+          },
+          {
+            "type": "gather_field",
+            "amount": 25000000,
+            "field": "Banana Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 25000000,
+            "field": "Strawberry Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 10000000,
+            "field": "Mushroom Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 10000000,
+            "field": "Sunflower Field"
+          },
+          {
+            "type": "defeat",
+            "amount": 20,
+            "mob": "Gourd Spider"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 100000000
+          },
+          {
+            "item": "Lunar Treat",
+            "amount": 50
+          },
+          {
+            "item": "Shiny Jelly",
+            "amount": 3
+          },
+          {
+            "item": "Sour Candy",
+            "amount": 10
+          },
+          {
+            "item": "Ghost Candy",
+            "amount": 10
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "name": "Return to the Harvest",
+        "dialogue": {
+          "take": [
+            "Hm-? Heeyyy! What's the rush buddy?",
+            "You seem really worried about something.",
+            "...The spiders? *Again??*",
+            "*[Sigh]* C'mon guys! This hasn't been like you at all!",
+            "N-No no, not you, the spiders.",
+            "...Alright, we gotta go about this differently.",
+            "There's clearly gotta be something wrong for them to be actin' so badly, it *can't* just be a temper thing.",
+            "And honestly, if ya ask me, I think they're homesick, in a way.",
+            "Y'see, the magic that made these gourd spiders comes *from* that place in the portal.",
+            "It must be used to where it came from, the pumpkins in there.",
+            "And, I feel like being in these new pumpkins and this new place, they miss the place they came from and can't find their way back.",
+            "So let's try and fix that, huh?",
+            "You go ahead and do the same thing you've been doin'.",
+            "After you're done with them, I'll see if I can lead them to the portal they came from and see how they feel about goin' back.",
+            "Maybe if their magic returns to where it came from, it'll calm them down and keep them safe in there.",
+            "I'm really gonna miss 'em if they do need to go back, but, this is still my home too.",
+            "If this place isn't right for them, then that's just how it is."
+          ],
+          "going": [
+            "Come on, I wanna get this done as quick as we can.",
+            "It breaks my heart to see 'em go like this, but we gotta do what we gotta do."
+          ],
+          "finish": [
+            "Alright.. That's another good portion of the forest saved.",
+            "And luckily for us, they seemed *super* eager to get back into the portal I led them to.",
+            "So, that answers that! This place jus' isn't right them.",
+            "...Really sucks if you ask me, I was hopin' some of them could hang around forever so we could visit whenever!",
+            "But, I suppose they're happier in their own place.",
+            "I'd rather give them that than make 'em live here.",
+            "Thanks again for all your help bud. Here, I've got just the thing after all that.",
+            "For old time's sake, a Majestic Cocktail!",
+            "Take it, you 100% deserve it for everything you've done.",
+            "I feel like we'll have some more spiders to help guide back to their home soon, but let's enjoy this short break while we can.",
+            "See ya soon!"
+          ]
+        },
+        "requirements": [
+          {
+            "type": "collect_token",
+            "amount": 1000,
+            "token": "Candy"
+          },
+          {
+            "type": "defeat",
+            "amount": 30,
+            "mob": "Gourd Spider"
+          },
+          {
+            "type": "collect_token",
+            "amount": 3,
+            "token": "Wisp Taffy"
+          },
+          {
+            "type": "collect_token",
+            "amount": 3,
+            "token": "Soul Candy"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 10000000000
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 15000000000
+          },
+          {
+            "item": "Majestic Cocktail",
+            "amount": 1
+          },
+          {
+            "item": "Diamond Egg",
+            "amount": 1
+          },
+          {
+            "item": "Sour Candy",
+            "amount": 30
+          },
+          {
+            "item": "Ghost Candy",
+            "amount": 30
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "name": "Peace at Last...?",
+        "dialogue": {
+          "take": [
+            "Heeyy dude, great timing.",
+            "I just got back from looking for more of my spider friends to help out, and I think I found the last of them!",
+            "I've definitely noticed less trouble going on now that we've got some of them back to their home, so let's do it one more time, huh?",
+            "More of the same, you do your thing and I lead them home.",
+            "Sorry to rope you into all this again, I promise I'll make it worth your while!",
+            "And we'll *finally* be able to have a proper break after this too, promise!"
+          ],
+          "going": [
+            "Just a bit more friend!",
+            "I know we can do it, let's go!"
+          ],
+          "finish": [
+            "And that's, IT!",
+            "No more spiders from what I've been able to find!",
+            "Well, a *lot* less anyway!",
+            "Thanks again, *so* much dude for everything, I can tell it's been a lot of work for you too.",
+            "Here's let's really take a load off now.",
+            "I've got some Majestic Cocktails and new candies with our names on it bud.",
+            "Cheers!"
+          ]
+        },
+        "requirements": [
+          {
+            "type": "collect_token",
+            "amount": 2000,
+            "token": "Candy"
+          },
+          {
+            "type": "defeat",
+            "amount": 30,
+            "mob": "Gourd Spider"
+          },
+          {
+            "type": "gather_field",
+            "amount": 100000000000,
+            "field": "Spider Field"
+          },
+          {
+            "type": "gather_field",
+            "amount": 100000000000,
+            "field": "Apple Field"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 500000000000
+          },
+          {
+            "item": "Foaming Carrot Juice",
+            "amount": 1
+          },
+          {
+            "item": "Shiny Diamond Egg",
+            "amount": 1
+          },
+          {
+            "item": "Majestic Cocktail",
+            "amount": 2
+          },
+          {
+            "item": "Wisp Taffy",
+            "amount": 5
+          },
+          {
+            "item": "Soul Candy",
+            "amount": 5
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "name": "Candy-palooza",
+        "dialogue": {
+          "take": [
+            "Woooaaahh dude!! Dude come over here!",
+            "Did you see that giant wave of stuff jus', exploding out of the forest?!",
+            "No?? Dang it, that was crazy!",
+            "It must've been a bunch of things flying out of that portal that leads to where Stem lives.",
+            "I saw candies and lollipops, chocolates, even some taffies!",
+            "We should go look-! I bet you there's some new stuff I haven't found yet at all in there.",
+            "Last one to get all the goods is a stale drink!!"
+          ],
+          "going": [
+            "*[She's preparing to explore for a long time]*",
+            "*[You should probably be on your way too]*"
+          ],
+          "finish": [
+            "Hey, you're back!",
+            "Well? How's the haul little guy??",
+            "Woooaaah you got so much!",
+            "I got some too but, *man* it's hard to compete with a beekeeper that does this for a living.",
+            "Huhuh, who'da thought that huh???",
+            "Heheh, I'm only kiddin' around, it's sick you got so much!",
+            "Here, I'll share a bit of what I have too.",
+            "Some of this stuff is real strange, can't say I really know what I'm lookin' at sometimes.",
+            "I'm sure you can make sense of it though. You're always so full of surprises dude!",
+            "Catch ya around!",
+            "Man, I'm gonna need to start wrapping this Bumbleween Bash up soon."
+          ]
+        },
+        "requirements": [
+          {
+            "type": "collect_token",
+            "amount": 2500,
+            "token": "Candy"
+          },
+          {
+            "type": "gather_pollen",
+            "amount": 1000000000000
+          },
+          {
+            "type": "collect_token",
+            "amount": 150,
+            "token": "Candy Corn"
+          },
+          {
+            "type": "collect_token",
+            "amount": 100,
+            "token": "White Chocolate"
+          },
+          {
+            "type": "collect_token",
+            "amount": 100,
+            "token": "Red Lollipop"
+          },
+          {
+            "type": "collect_token",
+            "amount": 100,
+            "token": "Blue Raspberry Candy"
+          },
+          {
+            "type": "collect_token",
+            "amount": 50,
+            "token": "Ghost Candy"
+          },
+          {
+            "type": "collect_token",
+            "amount": 50,
+            "token": "Sour Candy"
+          },
+          {
+            "type": "collect_token",
+            "amount": 10,
+            "token": "Wisp Taffy"
+          },
+          {
+            "type": "collect_token",
+            "amount": 10,
+            "token": "Soul Candy"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Honey",
+            "amount": 1400000000000
+          },
+          {
+            "item": "Mythic Egg",
+            "amount": 1
+          },
+          {
+            "item": "Lunar Treat",
+            "amount": 65
+          },
+          {
+            "item": "Singularity Essence",
+            "amount": 1
+          },
+          {
+            "item": "Rich Apple Juice",
+            "amount": 3
+          },
+          {
+            "item": "Bamboo",
+            "amount": 100
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "name": "Until next Bumbleween!",
+        "dialogue": {
+          "take": [
+            "Oooooohno ohno ohno-, Hey! Ooh man am I glad to see you.",
+            "I don't have any time to explain-, it's more spiders!",
+            "There was this cave closeby to the portal I was exploring, and before I knew it-, a *ton* of them started crawling out and spreading to the forest!",
+            "They nearly completely trampled me, I couldn't believe how many there were!",
+            "I need your help getting them calm enough to follow me into the portal, otherwise I'll never be able to wrap up this Bumbleween Bash without any issues.",
+            "I'm sorry to need to end things on such a frantic note, but it'll be alright!",
+            "Let's just hurry and finish this as soon as we can."
+          ],
+          "going": [
+            "Come on, we haven't got any time to waste!"
+          ],
+          "finish": [
+            "Whooo... uuugh.. That's all of them, and I know this time.",
+            "How? Well...",
+            "Jack-O-Bear met me at the portal this time.",
+            "Stem apologized to me a *ton* about the mishaps, aaannnd, well- the Gargoyles gave both him and I a funny look...",
+            "Before I could even tell him about how things were fine, the Gargoyles... shut the portal and told me to come back next year.",
+            "Mmh.. Hope Stem isn't in too much trouble...",
+            "You see... Stem had a plan n' giving me something to take back to the forest for this Bumbleween.",
+            "He gave me what you see over there on that table, the Pumpkin Bee! He made it himself!",
+            "But... I guess whatever magic he used just seeped out onto the rest of the forest. That kind of magic is REAL hard to control if it manages to escape.",
+            "Originally, he thought since it was a small amount-, it'd be just fine. And well, so did I.",
+            "But I guess we were BOTH surprised today, huh? Hahahaaa-!",
+            "Ohh boy, never doin' this again...",
+            "Dracula Bear didn't seem to notice! At least, I hope not...",
+            "...Definitely rough, needing things to end so quickly.",
+            "And on such a downer note too, with the forest being attacked by spiders I was friends with.",
+            "But hey, that's why I've got friends to celebrate Bumbleween with here.",
+            "We've still got a bit of time before I need to start packing it up and planning for Beesmas.",
+            "So let's enjoy it, huh?",
+            "Oh-! Shoot! I can't believe I nearly forgot this!",
+            "I may not have gotten to tell Stem that everything was alright, but I did get to mention you and how you helped me!",
+            "When I did, he left for a second and came back with a box.",
+            "He said I should give it you, and that you'd know how to make use of what's in it.",
+            "I wanted to peek in it soooooo bad, but I didn't wanna pry into somethin' meant for you.",
+            "So, here!",
+            "And, Stem told me to tell you he says hi too. And he hopes to see you next Bumbleween as well!",
+            "Things *definitely* seem to be complicated on his end, but I'm sure he'll figure it out.",
+            "He's always been such an interesting guy.",
+            "Anyways, I guess that wraps up our Bumbleween Bash!",
+            "Thanks for all the help you gave again, even when we were supposed to be celebrating.",
+            "Let's relax and have some proper fun while we can!",
+            "See ya around!"
+          ]
+        },
+        "requirements": [
+          {
+            "type": "collect_token",
+            "amount": 5000,
+            "token": "Candy"
+          },
+          {
+            "type": "collect_token",
+            "amount": 1,
+            "token": "Hollow Moon Candy"
+          },
+          {
+            "type": "defeat",
+            "amount": 50,
+            "mob": "Gourd Spider"
+          }
+        ],
+        "rewards": [
+          {
+            "item": "Pumpkin Seed Hive",
+            "amount": 1,
+            "type": "Skin"
+          },
+          {
+            "item": "Shiny Mythic Egg",
+            "amount": 1
+          },
+          {
+            "item": "Hollow Moon Candy",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "radiant-bear",
     "name": "Radiant Bear",
     "image": "images/bears/Radiant Bear Model.png",
@@ -8592,6 +9431,11 @@
             "type": "craft",
             "amount": 5,
             "item": "Rich Apple Juice"
+          },
+          {
+            "type": "defeat",
+            "amount": 1,
+            "mob": "Orchard-Roach"
           }
         ],
         "rewards": [
@@ -8789,7 +9633,7 @@
           {
             "type": "defeat",
             "amount": 5,
-            "mob": "Golden Worm"
+            "mob": "Gold Apple Worm"
           }
         ],
         "rewards": [

@@ -33,42 +33,42 @@
       "id": "honey-dispenser",
       "name": "Honey Dispenser",
       "zone": "Starter Zone",
-      "desc": "Gives Honey to the player. 2 hour cooldown.",
+      "desc": "Gives Honey equal to 500 x your total bees. 2 hour cooldown.",
       "image": "images/dispensers/Honey Dispenser.png"
     },
     {
       "id": "blueberry-dispenser",
       "name": "Blueberry Dispenser",
       "zone": "15 Bee Zone",
-      "desc": "Gives Blueberries to the player. 4 hour cooldown.",
+      "desc": "Gives Blueberries equal to 2 x your total bees. 3 hour cooldown.",
       "image": "images/dispensers/Blueberry Dispenser.png"
     },
     {
       "id": "strawberry-dispenser",
       "name": "Strawberry Dispenser",
       "zone": "15 Bee Zone",
-      "desc": "Gives Strawberries to the player. 4 hour cooldown.",
+      "desc": "Gives Strawberries equal to 2 x your total bees. 3 hour cooldown.",
       "image": "images/dispensers/Strawberry Dispenser.png"
     },
     {
       "id": "pine-cone-dispenser",
       "name": "Pine Cone Dispenser",
       "zone": "15 Bee Zone",
-      "desc": "Gives Pine Cones to the player. 4 hour cooldown.",
+      "desc": "Gives Pine Cones equal to 2 x your total bees. 3 hour cooldown.",
       "image": "images/dispensers/Pine Cone Dispenser.png"
     },
     {
       "id": "bamboo-dispenser",
       "name": "Bamboo Dispenser",
       "zone": "20 Bee Zone",
-      "desc": "Gives Bamboo to the player. 8 hour cooldown.",
+      "desc": "Gives Bamboo equal to your total bees. 8 hour cooldown.",
       "image": "images/dispensers/Bamboo Dispenser.png"
     },
     {
       "id": "vines-dispenser",
       "name": "Vines Dispenser",
       "zone": "25 Bee Zone",
-      "desc": "Gives Vines to the player.",
+      "desc": "Gives 3 Basic Vines. 2 hour cooldown.",
       "image": "images/dispensers/Vines Dispenser.png"
     },
     {
@@ -993,7 +993,7 @@
         "name": "Ticket",
         "weight": 1,
         "type": "Item",
-        "amount": 10,
+        "amount": 20,
         "image": "images/currencies/Ticket.png"
       },
       {
@@ -1250,7 +1250,7 @@
       },
       {
         "name": "Blossom Hive",
-        "weight": 0.01,
+        "weight": 0.05,
         "type": "Skin",
         "amount": 1,
         "image": "images/hive/skins/Blossom Skin.png"
