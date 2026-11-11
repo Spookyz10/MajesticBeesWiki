@@ -1466,6 +1466,13 @@
             "source": "field"
           },
           {
+            "item": "Gardener's Bundle",
+            "weight": 1,
+            "amount": 1,
+            "image": "images/items/Gardener's Bundle.png",
+            "source": "field"
+          },
+          {
             "item": "Seed",
             "weight": 15,
             "amount": 3,
@@ -1521,6 +1528,13 @@
             "weight": 2,
             "amount": 1,
             "image": "images/items/Golden Apple.png",
+            "source": "field"
+          },
+          {
+            "item": "Gardener's Bundle",
+            "weight": 1,
+            "amount": 1,
+            "image": "images/items/Gardener's Bundle.png",
             "source": "field"
           },
           {
@@ -2180,6 +2194,13 @@
             "source": "field"
           },
           {
+            "item": "Gardener's Bundle",
+            "weight": 1,
+            "amount": 1,
+            "image": "images/items/Gardener's Bundle.png",
+            "source": "field"
+          },
+          {
             "item": "Seed",
             "weight": 15,
             "amount": 3,
@@ -2277,6 +2298,13 @@
             "weight": 2,
             "amount": 1,
             "image": "images/items/Golden Apple.png",
+            "source": "field"
+          },
+          {
+            "item": "Gardener's Bundle",
+            "weight": 1,
+            "amount": 1,
+            "image": "images/items/Gardener's Bundle.png",
             "source": "field"
           },
           {
