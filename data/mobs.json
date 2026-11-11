@@ -109,7 +109,8 @@
         "type": "Item",
         "qty": 1
       }
-    ]
+    ],
+    "health": "20–32"
   },
   {
     "id": "ladybug",
@@ -203,7 +204,8 @@
         "type": "Item",
         "qty": 1
       }
-    ]
+    ],
+    "health": "60–200"
   },
   {
     "id": "rhino-beetle",
@@ -297,7 +299,8 @@
         "type": "Item",
         "qty": 1
       }
-    ]
+    ],
+    "health": "60–500"
   },
   {
     "id": "spider",
@@ -403,7 +406,8 @@
         "type": "Item",
         "qty": 1
       }
-    ]
+    ],
+    "health": "700"
   },
   {
     "id": "butterfly",
@@ -605,14 +609,15 @@
         "type": "Item",
         "qty": 1
       }
-    ]
+    ],
+    "health": "20,000"
   },
   {
     "id": "apple-worm",
     "name": "Apple Worm",
     "image": "images/mobs/Apple Worm.png",
     "location": "Falling Apples",
-    "desc": "An apple worm introduced in Update 11.",
+    "desc": "An apple worm introduced in Update 11. Has a 1 in 5 chance to hatch when a normal falling apple is broken (level 1-13, 9 loot rolls).",
     "respawn": "Event encounter",
     "drops": [
       {
@@ -693,14 +698,15 @@
         "type": "Item",
         "qty": 1
       }
-    ]
+    ],
+    "health": "100–1,000"
   },
   {
     "id": "gold-apple-worm",
     "name": "Gold Apple Worm",
     "image": "images/mobs/Gold Apple Worm.png",
     "location": "Falling Apples",
-    "desc": "An apple worm introduced in Update 11.",
+    "desc": "A golden apple worm introduced in Update 11. Has a 1 in 20 chance to hatch when a golden falling apple is broken (level 7-18, 12 loot rolls).",
     "respawn": "Event encounter",
     "drops": [
       {
@@ -778,6 +784,631 @@
       {
         "name": "Mythic Vines",
         "weight": 0.01,
+        "type": "Item",
+        "qty": 1
+      }
+    ],
+    "health": "1,000–10,000"
+  },
+  {
+    "id": "orchard-roach",
+    "name": "Orchard-Roach",
+    "image": "images/mobs/Orchard-Roach.png",
+    "location": "Apple Field (Orchard-Roach zone)",
+    "desc": "A massive cockroach boss that has been trying to make the big apple tree its home (Update 12). It charges, leaps and dives at you and throws apples for heavy damage.",
+    "respawn": "60 minutes",
+    "health": "30,000 (Level 16)",
+    "notes": "Fight it inside its zone in the Apple Field; you must stay in the zone to fight. Defeating it drops 8 loot rolls and counts for Oscar's quest.",
+    "drops": [
+      {
+        "name": "Orchard-Roach Amulet",
+        "weight": 3,
+        "type": "Amulet",
+        "qty": 1
+      },
+      {
+        "name": "Honey",
+        "weight": 100,
+        "type": "Stats",
+        "qty": 25000
+      },
+      {
+        "name": "Treat",
+        "weight": 100,
+        "type": "Item",
+        "qty": 25
+      },
+      {
+        "name": "Strawberry",
+        "weight": 50,
+        "type": "Item",
+        "qty": 10
+      },
+      {
+        "name": "Converter",
+        "weight": 35,
+        "type": "Item",
+        "qty": 3
+      },
+      {
+        "name": "Dice",
+        "weight": 40,
+        "type": "Item",
+        "qty": 2
+      },
+      {
+        "name": "Double Dice",
+        "weight": 15,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Triple Dice",
+        "weight": 5,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Starflower",
+        "weight": 20,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Strawberry Extract",
+        "weight": 10,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Blueberry Extract",
+        "weight": 10,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Cone Extract",
+        "weight": 8,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Seed Oil",
+        "weight": 8,
+        "type": "Item",
+        "qty": 2
+      },
+      {
+        "name": "Moon Extract",
+        "weight": 0.5,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Bamboo Flask",
+        "weight": 5,
+        "type": "Item",
+        "qty": 2
+      },
+      {
+        "name": "Majestic Cocktail",
+        "weight": 0.02,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Glitter",
+        "weight": 2,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Fire Essence",
+        "weight": 30,
+        "type": "Item",
+        "qty": 15
+      },
+      {
+        "name": "Water Essence",
+        "weight": 25,
+        "type": "Item",
+        "qty": 10
+      },
+      {
+        "name": "Wind Essence",
+        "weight": 15,
+        "type": "Item",
+        "qty": 5
+      },
+      {
+        "name": "Lunar Essence",
+        "weight": 10,
+        "type": "Item",
+        "qty": 3
+      },
+      {
+        "name": "Exp Essence",
+        "weight": 2,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Ticket",
+        "weight": 25,
+        "type": "Item",
+        "qty": 15
+      },
+      {
+        "name": "Sticker Egg",
+        "weight": 25,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Royal Jelly",
+        "weight": 15,
+        "type": "Item",
+        "qty": 15
+      },
+      {
+        "name": "Diamond Egg",
+        "weight": 0.1,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Mythic Egg",
+        "weight": 0.001,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Basic Vines",
+        "weight": 20,
+        "type": "Item",
+        "qty": 3
+      },
+      {
+        "name": "Rare Vines",
+        "weight": 15,
+        "type": "Item",
+        "qty": 2
+      },
+      {
+        "name": "Epic Vines",
+        "weight": 5,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Legendary Vines",
+        "weight": 2,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Mythic Vines",
+        "weight": 1,
+        "type": "Item",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "pumkinn",
+    "name": "Pumkinn",
+    "image": "images/mobs/Pumkinn.png",
+    "location": "Pumkin Arena (bunker)",
+    "desc": "The PumKinn boss of the Hollow Moon event. It appears in the Pumkin Arena while the Hollow Moon is up and the arena hatch is open; each player fights their own copy.",
+    "respawn": "Once per Hollow Moon event",
+    "health": "200,000 (Level 20)",
+    "notes": "Resets to full health if you leave the arena for 20 seconds. On defeat, loot scatters on the ground 10-20 studs around the arena centre: 40-50 loot rolls from the table below (Loot Luck applies), plus one guaranteed Pumpking Soul and, if you own a candy bucket, 8 Candy tokens totalling 500-700 candy.",
+    "drops": [
+      {
+        "name": "Hollow Moon Candy",
+        "weight": 2.5,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Hollow Bell",
+        "weight": 0.83,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Pumpking Soul",
+        "weight": 0.625,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Candy Treat",
+        "weight": 5,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 3
+      },
+      {
+        "name": "Candy Corn",
+        "weight": 8,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 3
+      },
+      {
+        "name": "Red Lollipop",
+        "weight": 5,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 2
+      },
+      {
+        "name": "Blue Raspberry Candy",
+        "weight": 5,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 2
+      },
+      {
+        "name": "White Chocolate",
+        "weight": 5,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 2
+      },
+      {
+        "name": "Sour Candy",
+        "weight": 5,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 2
+      },
+      {
+        "name": "Ghost Candy",
+        "weight": 4,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 2
+      },
+      {
+        "name": "Soul Candy",
+        "weight": 3,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Wisp Taffy",
+        "weight": 4,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 2
+      },
+      {
+        "name": "Marshmallow",
+        "weight": 3,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Enchanted Treat",
+        "weight": 0.5,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Treat",
+        "weight": 5,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 3
+      },
+      {
+        "name": "Honey",
+        "weight": 4,
+        "type": "Stats",
+        "qty": 100000000,
+        "qtyMax": 500000000
+      },
+      {
+        "name": "Lunar Treat",
+        "weight": 3,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 2
+      },
+      {
+        "name": "Night Bell",
+        "weight": 2,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Seed Oil",
+        "weight": 2,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Singularity Essence",
+        "weight": 0.5,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Majestic Cocktail",
+        "weight": 0.25,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Foaming Carrot Juice",
+        "weight": 1,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Rich Apple Juice",
+        "weight": 1,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Lunar Cocktail",
+        "weight": 0.5,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Shiny Jelly",
+        "weight": 1,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 2
+      },
+      {
+        "name": "Silver Egg",
+        "weight": 0.5,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Gold Egg",
+        "weight": 0.25,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Diamond Egg",
+        "weight": 0.05,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Shiny Egg",
+        "weight": 0.1,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Mythic Egg",
+        "weight": 0.01,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Basic Vines",
+        "weight": 5,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 3
+      },
+      {
+        "name": "Rare Vines",
+        "weight": 3,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 2
+      },
+      {
+        "name": "Epic Vines",
+        "weight": 1.5,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Legendary Vines",
+        "weight": 0.5,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Mythic Vines",
+        "weight": 0.025,
+        "type": "Item",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "gourd-spider",
+    "name": "Gourd Spider",
+    "image": "images/mobs/Gourd Spider.png",
+    "location": "Fields during the Hollow Moon",
+    "desc": "A pumpkin spider that emerges in fields during the Hollow Moon event (1-3 per active field; players with a candy bucket also have a 1 in 8 chance of one appearing when entering a field). Leaves damaging trails as it charges.",
+    "respawn": "Event encounter",
+    "health": "1,800 (Level 6) in starter fields; 5,000 (Level 12) elsewhere",
+    "notes": "Starter fields (Blackberry, Mushroom, Dandelion, Blue Flower, Clover): 2-4 loot rolls and 50 candy over 2 tokens. Other fields: 5-8 loot rolls and 100 candy over 4 tokens. Loot Luck applies.",
+    "drops": [
+      {
+        "name": "Treat",
+        "weight": 11,
+        "type": "Item",
+        "qty": 2,
+        "qtyMax": 5
+      },
+      {
+        "name": "Honey",
+        "weight": 11,
+        "type": "Stats",
+        "qty": 50000000,
+        "qtyMax": 500000000
+      },
+      {
+        "name": "Lunar Treat",
+        "weight": 5.5,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 2
+      },
+      {
+        "name": "Night Bell",
+        "weight": 1.45,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Hollow Bell",
+        "weight": 0.25,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Seed Oil",
+        "weight": 4,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 3
+      },
+      {
+        "name": "Silver Egg",
+        "weight": 1.2,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Gold Egg",
+        "weight": 0.5,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Diamond Egg",
+        "weight": 0.1,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Basic Vines",
+        "weight": 14,
+        "type": "Item",
+        "qty": 2,
+        "qtyMax": 5
+      },
+      {
+        "name": "Rare Vines",
+        "weight": 7,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 3
+      },
+      {
+        "name": "Epic Vines",
+        "weight": 3,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 2
+      },
+      {
+        "name": "Legendary Vines",
+        "weight": 1,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Mythic Vines",
+        "weight": 0.05,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Enchanted Treat",
+        "weight": 0.85,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Marshmallow",
+        "weight": 3,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 2
+      },
+      {
+        "name": "Candy Treat",
+        "weight": 4,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 3
+      },
+      {
+        "name": "Candy Corn",
+        "weight": 6.5,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 3
+      },
+      {
+        "name": "Red Lollipop",
+        "weight": 3,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 2
+      },
+      {
+        "name": "Blue Raspberry Candy",
+        "weight": 3,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 2
+      },
+      {
+        "name": "White Chocolate",
+        "weight": 3,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 2
+      },
+      {
+        "name": "Sour Candy",
+        "weight": 3,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 2
+      },
+      {
+        "name": "Ghost Candy",
+        "weight": 2.5,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 2
+      },
+      {
+        "name": "Soul Candy",
+        "weight": 1.5,
+        "type": "Item",
+        "qty": 1
+      },
+      {
+        "name": "Wisp Taffy",
+        "weight": 2.45,
+        "type": "Item",
+        "qty": 1,
+        "qtyMax": 2
+      },
+      {
+        "name": "Hollow Moon Candy",
+        "weight": 0.1,
         "type": "Item",
         "qty": 1
       }
