@@ -96,6 +96,57 @@
     "tokenTime": 4
   },
   {
+    "name": "Celestial Bee",
+    "id": "celestial-bee",
+    "icon": "images/bees/Celestial.png",
+    "desc": "Came down on a rainbow for the first event. When it calls, the sky opens and stars fall on your field.",
+    "color": "Colorless",
+    "rarity": "Special",
+    "speed": 24,
+    "attack": 3,
+    "energy": 120,
+    "gather": 45,
+    "gatherTime": 3,
+    "convert": 15000,
+    "convertTime": 4,
+    "shinyBonus": {
+      "stat": "Heavenfall Pollen",
+      "type": "Perc",
+      "value": 25
+    },
+    "tokens": [
+      {
+        "token": "Heavenfall",
+        "level": 1,
+        "weight": 12,
+        "expires": 20,
+        "desc": "Calls down 12 falling stars (+1 per bee level). Each star gathers 50 Pollen * Heavenfall Pollen from a 3x3 patch.\nCatch a star to gain Heavenfall Boost (+25% Heavenfall Pollen, stacks x10, 15s) and instantly convert pollen like your whole hive, multiplied by Heavenfall Pollen.\nStars landing on Heaven tiles gather a 5x5 patch and stay catchable longer."
+      },
+      {
+        "token": "Heavenization",
+        "level": 8,
+        "weight": 15,
+        "expires": 20,
+        "desc": "Turns flowers around you into Heaven tiles for 15s.\nHeaven tiles are upgraded and gather 8 Pollen * Heavenfall Pollen every 1.5s, with 25% instantly converted to honey.\nHeavenfall stars landing on Heaven tiles gather a 5x5 patch and stay catchable longer."
+      },
+      {
+        "token": "Divine Ascension",
+        "level": 18,
+        "weight": 35,
+        "expires": 20,
+        "desc": "Spends all your Heavenfall Boost stacks.\nFor 10s: Ascended Boost (+10% Movespeed and +3% Bee Ability Rate per stack spent) and your whole hive converts pollen to honey every 2s, wherever you are.\nThen a beam of light strikes the field, gathering Pollen in an area that grows with the stacks spent (most of the field at x10).",
+        "rare": true
+      }
+    ],
+    "tokenTime": 2.25,
+    "obtain": [
+      {
+        "method": "Ticket Shop",
+        "detail": "2,000 Tickets"
+      }
+    ]
+  },
+  {
     "name": "Cloud Bee",
     "id": "cloud-bee",
     "icon": "images/bees/Cloud.png",
@@ -107,7 +158,7 @@
     "energy": 35,
     "gather": 10,
     "gatherTime": 4,
-    "convert": 720,
+    "convert": 2500,
     "convertTime": 3,
     "shinyBonus": {
       "stat": "Cloud Pollen",
@@ -144,7 +195,7 @@
     "energy": 45,
     "gather": 17,
     "gatherTime": 6,
-    "convert": 135,
+    "convert": 350,
     "convertTime": 6.5,
     "shinyBonus": {
       "stat": "Fire Pollen",
@@ -181,7 +232,7 @@
     "energy": 30,
     "gather": 17,
     "gatherTime": 6,
-    "convert": 150,
+    "convert": 450,
     "convertTime": 6.5,
     "shinyBonus": {
       "stat": "Blue Pollen",
@@ -255,7 +306,7 @@
     "energy": 80,
     "gather": 35,
     "gatherTime": 4,
-    "convert": 7500,
+    "convert": 12000,
     "convertTime": 4,
     "shinyBonus": {
       "stat": "Bee Pollen",
@@ -299,7 +350,7 @@
     "energy": 30,
     "gather": 17,
     "gatherTime": 6,
-    "convert": 255,
+    "convert": 680,
     "convertTime": 6.5,
     "shinyBonus": {
       "stat": "Red Pollen",
@@ -336,7 +387,7 @@
     "energy": 45,
     "gather": 24,
     "gatherTime": 5,
-    "convert": 865,
+    "convert": 1855,
     "convertTime": 5,
     "shinyBonus": {
       "stat": "Firework Pollen",
@@ -373,7 +424,7 @@
     "energy": 30,
     "gather": 17,
     "gatherTime": 6,
-    "convert": 150,
+    "convert": 450,
     "convertTime": 6.5,
     "shinyBonus": {
       "stat": "White Pollen",
@@ -433,7 +484,7 @@
     "energy": 30,
     "gather": 7,
     "gatherTime": 4,
-    "convert": 750,
+    "convert": 2550,
     "convertTime": 4.5,
     "shinyBonus": {
       "stat": "Convert Rate",
@@ -463,7 +514,7 @@
     "energy": 80,
     "gather": 35,
     "gatherTime": 4,
-    "convert": 8000,
+    "convert": 12000,
     "convertTime": 4,
     "shinyBonus": {
       "stat": "Blue Field Capacity",
@@ -500,7 +551,7 @@
     "energy": 40,
     "gather": 27,
     "gatherTime": 4,
-    "convert": 435,
+    "convert": 1235,
     "convertTime": 4,
     "shinyBonus": {
       "stat": "Icicle Pollen",
@@ -526,6 +577,50 @@
     "tokenTime": 5
   },
   {
+    "name": "Kishin Bee",
+    "id": "kishin-bee",
+    "icon": "images/bees/Kishin.png",
+    "desc": "The embodiment of wrath, rage, and soul-eating despair set on evisceration and purification of souls unfortunate enough to wander in its path.",
+    "color": "Red",
+    "rarity": "Mythic",
+    "speed": 28,
+    "attack": 9,
+    "energy": 120,
+    "gather": 80,
+    "gatherTime": 3,
+    "convert": 29877,
+    "convertTime": 3,
+    "shinyBonus": {
+      "stat": "Soul Duration",
+      "type": "Mult",
+      "value": 1.2
+    },
+    "tokens": [
+      {
+        "token": "Psyfire",
+        "level": 6,
+        "weight": 10,
+        "expires": 20,
+        "desc": "Converts nearest Fire into Soulfire, extending its life and granting Psyfire Boost."
+      },
+      {
+        "token": "Fiend's Trade",
+        "level": 12,
+        "weight": 30,
+        "expires": 10,
+        "desc": "A devilish contract, forcing the user to sacrifice a portion of the soul to achieve immense power, with consequence."
+      },
+      {
+        "token": "Infernal Ring",
+        "level": 20,
+        "weight": 60,
+        "expires": 20,
+        "desc": "Creates a torrent of flames, lasting for 6 seconds base, granting Chaining Boost for 12s."
+      }
+    ],
+    "tokenTime": 3
+  },
+  {
     "name": "Kitsune Bee",
     "id": "kitsune-bee",
     "icon": "images/bees/Kitsune.png",
@@ -537,7 +632,7 @@
     "energy": 100,
     "gather": 60,
     "gatherTime": 3,
-    "convert": 8345,
+    "convert": 19345,
     "convertTime": 3,
     "shinyBonus": {
       "stat": "Obsidian Pollen",
@@ -581,7 +676,7 @@
     "energy": 30,
     "gather": 8,
     "gatherTime": 4,
-    "convert": 600,
+    "convert": 1200,
     "convertTime": 4.5,
     "shinyBonus": {
       "stat": "Attack Bonus",
@@ -618,7 +713,7 @@
     "energy": 35,
     "gather": 20,
     "gatherTime": 4,
-    "convert": 4500,
+    "convert": 8500,
     "convertTime": 4,
     "shinyBonus": {
       "stat": "Loot Luck",
@@ -662,7 +757,7 @@
     "energy": 125,
     "gather": 56,
     "gatherTime": 4,
-    "convert": 16531,
+    "convert": 48531,
     "convertTime": 4,
     "shinyBonus": {
       "stat": "Night Capacity",
@@ -671,18 +766,18 @@
     },
     "tokens": [
       {
-        "token": "Lunar Ornament Boost",
+        "token": "Starry Night",
         "level": 8,
         "weight": 12,
         "expires": 15,
-        "desc": "Grants 5% Night Pollen and 5% Night Capacity for 30s , stacks up to 10x."
+        "desc": "White stars fall from the sky for 10s, each one gathering pollen in a 3x3.\nStars that land on a Bubble turn it into a Lunar Bubble (x1.5 capacity).\nStars that hit an active Magnet turn it into a Lunar Magnet (10% chance to duplicate every token it grabs)."
       },
       {
-        "token": "Lunar Borders",
+        "token": "Lunar Sync",
         "level": 20,
         "weight": 12,
         "expires": 15,
-        "desc": "Creates 2 Borders that collect all flowers on its way and collect tokens with 20% chance to duplicate its ability."
+        "desc": "Grants Lunar Sync for 30s: +20% Night Capacity, +15% Night Pollen, and night buffs work at 50% during the day.\nWith Solar Sync active, night buffs work at 100% during the day."
       }
     ],
     "tokenTime": 2
@@ -699,7 +794,7 @@
     "energy": 80,
     "gather": 35,
     "gatherTime": 4,
-    "convert": 8000,
+    "convert": 12000,
     "convertTime": 4,
     "shinyBonus": {
       "stat": "Red Field Capacity",
@@ -758,7 +853,7 @@
     "name": "Null Bee",
     "id": "null-bee",
     "icon": "images/bees/Null.png",
-    "desc": "A mysterious bee that exists in a void state, erasing flower cooldowns and resetting pollen timers instantly. Its reality-warping emptiness creates opportunities from nothing, making it invaluable for exploiting field mechanics.",
+    "desc": "A mysterious bee that exists in a void state, eager to destroy any pollen it comes across.",
     "color": "Colorless",
     "rarity": "Legendary",
     "speed": 16,
@@ -766,7 +861,7 @@
     "energy": 25,
     "gather": 30,
     "gatherTime": 4,
-    "convert": 950,
+    "convert": 9950,
     "convertTime": 4.5,
     "shinyBonus": {
       "stat": "Prism Pollen",
@@ -775,18 +870,18 @@
     },
     "tokens": [
       {
-        "token": "Bomb+",
-        "level": 1,
-        "weight": 9,
-        "expires": 15,
-        "desc": "Gathers 6 Pollen from 37 flowers with a power of 7.\nAdditionally, grants up to 35 stacks of Bomb Combo Boost"
-      },
-      {
         "token": "Prism Beam",
         "level": 8,
         "weight": 9,
         "expires": 15,
-        "desc": "Creates 3 Prism Beams (+1 Every 3 Levels), each one gathering 500 Pollen."
+        "desc": "Creates 6 Prism Beams (+2 Every 3 Levels), each one gathering 250 Pollen."
+      },
+      {
+        "token": "Palynivore Void",
+        "level": 14,
+        "weight": 9,
+        "expires": 15,
+        "desc": "Voids X pollen from your bag."
       }
     ],
     "tokenTime": 4
@@ -803,7 +898,7 @@
     "energy": 35,
     "gather": 10,
     "gatherTime": 4,
-    "convert": 1425,
+    "convert": 3425,
     "convertTime": 3,
     "shinyBonus": {
       "stat": "Fire Duration",
@@ -840,7 +935,7 @@
     "energy": 80,
     "gather": 50,
     "gatherTime": 3,
-    "convert": 5252,
+    "convert": 25252,
     "convertTime": 3,
     "shinyBonus": {
       "stat": "Critical Chance",
@@ -860,7 +955,7 @@
         "level": 10,
         "weight": 6,
         "expires": 20,
-        "desc": "Spread Soul Fire to 9 flowers that lasts for 12s (+1 every Level).\nAdditionally, Soul Fire gathers x3 more than Fire and grants Soul Fire Combo."
+        "desc": "Spread Soul Fire to 9 flowers that lasts for 21s (+1 every Level).\nAdditionally, Soul Fire gathers x3 more than Fire and grants Soul Fire Combo."
       },
       {
         "token": "Soul Conversion",
@@ -871,6 +966,43 @@
       }
     ],
     "tokenTime": 2
+  },
+  {
+    "name": "Phoenix Bee",
+    "id": "phoenix-bee",
+    "icon": "images/bees/Phoenix.png",
+    "desc": "A bee reborn from its own ashes. It gathers scattered flames into one sacred blaze, and once it has been reborn enough times it rises as a giant firebird.",
+    "color": "Red",
+    "rarity": "Special",
+    "speed": 25,
+    "attack": 13,
+    "energy": 130,
+    "gather": 45,
+    "gatherTime": 5,
+    "convert": 8320,
+    "convertTime": 4.5,
+    "shinyBonus": {
+      "stat": "Soul Fire Pollen",
+      "type": "Perc",
+      "value": 10
+    },
+    "tokens": [
+      {
+        "token": "Sacred Flame",
+        "level": 1,
+        "weight": 12,
+        "expires": 20,
+        "desc": "Absorbs nearby fire and turns it into one big rainbow Sacred Flame. The more fire it absorbs, the bigger and stronger it gets."
+      },
+      {
+        "token": "Rebirth",
+        "level": 1,
+        "weight": 10,
+        "expires": 20,
+        "desc": "Grants 5 Rebirth stacks for 90s. At 100 stacks the Phoenix Bee becomes a giant firebird and spreads Sacred Fire across the field."
+      }
+    ],
+    "tokenTime": 3
   },
   {
     "name": "Pixel Bee",
@@ -884,7 +1016,7 @@
     "energy": 45,
     "gather": 25,
     "gatherTime": 4,
-    "convert": 2400,
+    "convert": 4400,
     "convertTime": 5,
     "shinyBonus": {
       "stat": "Capacity Bonus",
@@ -901,6 +1033,43 @@
       }
     ],
     "tokenTime": 4
+  },
+  {
+    "name": "Pumpkin Bee",
+    "id": "pumpkin-bee",
+    "icon": "images/bees/Pumpkin.png",
+    "desc": "A festive bee grown under the Hollow Moon. It plants magical pumpkins that pop into Pumpkin Blessing tiles.",
+    "color": "Colorless",
+    "rarity": "Limited",
+    "speed": 26,
+    "attack": 4,
+    "energy": 180,
+    "gather": 100,
+    "gatherTime": 2,
+    "convert": 10000,
+    "convertTime": 2,
+    "shinyBonus": {
+      "stat": "White Field Capacity",
+      "type": "Mult",
+      "value": 1.5
+    },
+    "tokens": [
+      {
+        "token": "Pumpkin Harvest",
+        "level": 1,
+        "weight": 9,
+        "expires": 20,
+        "desc": "Spawns 3 pumpkins for 20s. Gathering pollen near a pumpkin makes it grow. They pop instantly when full. When they pop, they spread Pumpkin Blessing tiles - bigger pumpkins spread more and stronger tiles."
+      },
+      {
+        "token": "Dreadnought Pumpkin",
+        "level": 1,
+        "weight": 30,
+        "expires": 20,
+        "desc": "Spawns a giant pumpkin that grows for 20s as you gather pollen near it.\nIt pops instantly when full. The fuller it is, the more of the field it covers in Pumpkin Blessing - a full Dreadnought covers most of the field."
+      }
+    ],
+    "tokenTime": 3
   },
   {
     "name": "Rage Bee",
@@ -951,7 +1120,7 @@
     "energy": 140,
     "gather": 75,
     "gatherTime": 3,
-    "convert": 6725,
+    "convert": 44725,
     "convertTime": 3,
     "shinyBonus": {
       "stat": "Blue Pollen",
@@ -1025,7 +1194,7 @@
     "energy": 25,
     "gather": 15,
     "gatherTime": 4,
-    "convert": 4570,
+    "convert": 40570,
     "convertTime": 4.5,
     "shinyBonus": {
       "stat": "Attack Bonus",
@@ -1062,7 +1231,7 @@
     "energy": 27,
     "gather": 14,
     "gatherTime": 5,
-    "convert": 125,
+    "convert": 625,
     "convertTime": 5,
     "shinyBonus": {
       "stat": "Capacity Bonus",
@@ -1100,21 +1269,42 @@
     "icon": "images/bees/Splatter.png",
     "color": "Colorless",
     "rarity": "Special",
-    "speed": 14,
+    "speed": 27,
     "attack": 1,
-    "energy": 20,
-    "gather": 5,
+    "energy": 117,
+    "gather": 17,
     "gatherTime": 4,
     "convert": 40,
     "convertTime": 5,
     "tokenTime": 4,
-    "desc": "A simple and reliable bee with balanced abilities. It gathers pollen steadily, converts resources efficiently, and supports your hive with consistent performance. Perfect for beginners building a strong and dependable foundation.",
+    "desc": "An artistic bee that splashes paint across the field. Summons spinning paintbrushes that enhance nearby flowers with paint and spins a colorful wheel for stat boosts.",
     "shinyBonus": {
       "stat": "Pollen",
       "type": "Mult",
       "value": 1.25
     },
-    "tokens": []
+    "tokens": [
+      {
+        "token": "Color Wheel Spin",
+        "level": 4,
+        "weight": 9,
+        "expires": 15,
+        "desc": "Spins a color wheel that grants one of three boosts for 10s (+1s every 2 Levels). The winning color cannot appear on the next spin.\nWhite: x1.15 Bomb Pollen, x1.10 Pollen, +10% Bee Ability Rate\nRed: +25% Attack, +25% Bee Movespeed, +25% Bee Gather Speed\nBlue: +50% Tool Pollen, +25% Tool Speed, x1.25 Capacity"
+      },
+      {
+        "token": "SpinPaint",
+        "level": 8,
+        "weight": 9,
+        "expires": 15,
+        "desc": "Summons a spinning brush that drops paint on nearby Tokens. Each splash upgrades flowers for 10s (+1s every 2 Levels) and applies a random Paint effect."
+      }
+    ],
+    "passive": [
+      {
+        "name": "Magic Brush",
+        "desc": "Paint effects created by Splatter Bee retain the properties of their original effects while allowing bees to interact with them and create Tiny Paint Bees."
+      }
+    ]
   },
   {
     "name": "Sunny Bee",
@@ -1128,7 +1318,7 @@
     "energy": 25,
     "gather": 10,
     "gatherTime": 4,
-    "convert": 5650,
+    "convert": 12650,
     "convertTime": 4.5,
     "shinyBonus": {
       "stat": "Pollen",
@@ -1137,21 +1327,74 @@
     },
     "tokens": [
       {
-        "token": "Sun Zone",
+        "token": "Sun Beam",
         "level": 1,
         "weight": 9,
         "expires": 15,
-        "desc": "Spawns 1 Solar Boost token in the field every second for 5s (+1 every Level). Each stack grants +10% Solar Pollen, and every 5 stacks grants x1.01 Pollen. Stacks up to 100 times."
+        "desc": "Creates 2 Sun Beams (+1 every 5 Levels). A yellow 3x3 warning appears, then a laser burns the flowers there and sets them on fire.\nStanding inside a beam when it lands gives Burned (100 stacks that burn down to 0 in 8s): up to +25% Movespeed, +10% Bee Movespeed, +50% Daytime Pollen, +50% Fire Pollen."
       },
       {
-        "token": "Sun Beam",
+        "token": "Solar Sync",
         "level": 4,
         "weight": 9,
         "expires": 15,
-        "desc": "Creates 2 Sun Beams (+1 every 3 Levels), each one gathers 30 Pollen (Multiplied by Solar Pollen) from 21 flowers."
+        "desc": "Grants Solar Sync for 30s: +20% Daytime Capacity, +15% Daytime Pollen, and day buffs work at 50% at night.\nWith Lunar Sync active, day buffs work at 100% at night."
       }
     ],
     "tokenTime": 4
+  },
+  {
+    "name": "Tanuki Bee",
+    "id": "tanuki-bee",
+    "icon": "images/bees/Tanuki.png",
+    "desc": "A mythical bee blessed by the playful spirit of the tanuki. Rather than creating power on its own, it turns well-prepared fields into incredible fortune, rewarding clever timing and synergizing perfectly with Kitsune Bee's Blossoms.",
+    "color": "Colorless",
+    "rarity": "Mythic",
+    "speed": 26,
+    "attack": 2,
+    "energy": 130,
+    "gather": 60,
+    "gatherTime": 1.5,
+    "convert": 6150,
+    "convertTime": 3,
+    "shinyBonus": [
+      {
+        "stat": "Token Lifespan",
+        "type": "Perc",
+        "value": 20
+      },
+      {
+        "stat": "Bomb Radius",
+        "type": "Perc",
+        "value": 15
+      }
+    ],
+    "tokens": [
+      {
+        "token": "Fortune Blessing",
+        "level": 4,
+        "weight": 9,
+        "expires": 15,
+        "desc": "Creates an explosion that gathers pollen from 4x7 tiles and grants x1.08 White Pollen, x1.008 Obsidian Pollen, x1.02 Blossom Pollen and +3.2% Bomb Pollen for 45s (x3, x1.2, x1.5 and +80% at 25 stacks).\nStacks up to 25 times. Counts towards Blossom Combo."
+      },
+      {
+        "token": "Tanuki's Fortune",
+        "level": 10,
+        "weight": 10,
+        "expires": 15,
+        "desc": "For 20s, harvesting Spirit Blossoms or collecting White tokens grants Honey, Instant Conversion or Pollen.\nSpirit Blossoms can drop Lucky Tokens and Fortune Charms."
+      },
+      {
+        "token": "Fortune Zone",
+        "level": 18,
+        "weight": 45,
+        "expires": 20,
+        "desc": "Creates a Fortune Zone for 25s that spawns Fortune Charms.\nFortune Charms have a chance to appear near Spirit Blossoms and Kitsune tokens.",
+        "rare": true
+      }
+    ],
+    "tokenTime": 4,
+    "shinyName": "Everlasting Fortune"
   },
   {
     "name": "Thunder Bee",
@@ -1165,7 +1408,7 @@
     "energy": 35,
     "gather": 10,
     "gatherTime": 4,
-    "convert": 963,
+    "convert": 2963,
     "convertTime": 3,
     "shinyBonus": {
       "stat": "Tool Pollen",
@@ -1191,6 +1434,43 @@
     "tokenTime": 5
   },
   {
+    "name": "Timekeeper Bee",
+    "id": "timekeeper-bee",
+    "icon": "images/bees/Timekeeper.png",
+    "desc": "A meticulous bee that carries bottled time. It releases orbs that bend the flow of seconds across the field, and its tokens can make your Time Capsule stop time itself.",
+    "color": "Colorless",
+    "rarity": "Special",
+    "speed": 30,
+    "attack": 10,
+    "energy": 180,
+    "gather": 55,
+    "gatherTime": 3.5,
+    "convert": 12500,
+    "convertTime": 4,
+    "shinyBonus": {
+      "stat": "Bee Movespeed",
+      "type": "Perc",
+      "value": 10
+    },
+    "tokens": [
+      {
+        "token": "Time Reversal",
+        "level": 1,
+        "weight": 12,
+        "expires": 20,
+        "desc": "Releases a golden orb of bottled time that flows through the field for 15s (+0.25s every Level), gathering pollen from every flower it crosses.\nThe orb saps your Movespeed to power itself: the more speed it saps, the bigger it grows and the more Reversal stacks you gain.\nReversal (x25, 30s): +1% Bomb Pollen, +1% Defense, +1% White Pollen, +1% Instant Conversion per stack."
+      },
+      {
+        "token": "Time Amplification",
+        "level": 1,
+        "weight": 14,
+        "expires": 20,
+        "desc": "Releases a blue orb of bottled time that flows through the field for 15s (+0.25s every Level), healing every flower it crosses and raising your Movespeed over time.\nThe orb seeks out Obsidian flowers and absorbs their Obsidian, growing bigger and granting Amplification stacks.\nAmplification (x25, 30s): +1% Movespeed, +1% Obsidian Pollen, +1% Blossom Pollen, +1% Capacity per stack."
+      }
+    ],
+    "tokenTime": 3
+  },
+  {
     "name": "Water Bee",
     "id": "water-bee",
     "icon": "images/bees/Water.png",
@@ -1202,7 +1482,7 @@
     "energy": 35,
     "gather": 17,
     "gatherTime": 6,
-    "convert": 150,
+    "convert": 550,
     "convertTime": 6.5,
     "shinyBonus": {
       "stat": "Ice Pollen",
@@ -1239,7 +1519,7 @@
     "energy": 45,
     "gather": 27,
     "gatherTime": 4,
-    "convert": 1251,
+    "convert": 2251,
     "convertTime": 3,
     "shinyBonus": {
       "stat": "Bee Ability Rate",
@@ -1276,7 +1556,7 @@
     "energy": 30,
     "gather": 17,
     "gatherTime": 6,
-    "convert": 8000,
+    "convert": 12000,
     "convertTime": 4,
     "shinyBonus": {
       "stat": "White Field Capacity",
@@ -1300,5 +1580,51 @@
       }
     ],
     "tokenTime": 6
+  },
+  {
+    "name": "Yuki-Onna Bee",
+    "id": "yuki-onna-bee",
+    "icon": "images/bees/Yuki-Onna.png",
+    "desc": "A mythical bee born from a winter spirit. It freezes your bag in place, calls down blizzards and rolls giant snowballs across the field.",
+    "color": "Blue",
+    "rarity": "Mythic",
+    "speed": 22,
+    "attack": 2,
+    "energy": 130,
+    "gather": 70,
+    "gatherTime": 2.5,
+    "convert": 6350,
+    "convertTime": 3,
+    "shinyBonus": {
+      "stat": "Ice Pollen",
+      "type": "Mult",
+      "value": 1.25
+    },
+    "tokens": [
+      {
+        "token": "Soulfrost",
+        "level": 4,
+        "weight": 9,
+        "expires": 15,
+        "desc": "Freezes your pollen counter for 1.2s so your bag can't fill. Each Soulfrost adds another 1.2s (15s max)."
+      },
+      {
+        "token": "Blizzard",
+        "level": 10,
+        "weight": 9,
+        "expires": 15,
+        "desc": "A field-wide snowstorm for 15s that spawns Snowflake Tokens. The storm freezes flowers into ice patches.\nEach Snowflake: +0.1% Bubble Pollen, +0.2% Bubble Capacity, +1.5% Ice Pollen, +1% Blue Pollen (stacks to 100, resets when the Blizzard ends).\nCooldown: 45s.",
+        "cooldown": 45
+      },
+      {
+        "token": "Snowball",
+        "level": 18,
+        "weight": 9,
+        "expires": 15,
+        "desc": "Rolls a Snowball for 30s that absorbs ice from flowers to grow and collects tokens.\n1-15%: 1x1, 100 pollen. 15-75%: 3x3, 300 pollen. 75-100%: 4x4, 500 pollen (x Ice Pollen x Blue Pollen). Push it by walking into it until 75%.\nGives Snowball Size while it rolls and Snowball Combo when it ends.\nEach Snowball Combo stack: +0.3% snowball size, +0.1% capacity, +0.05% rolling speed, +0.15% Blue Pollen, +0.045% Instant Conversion, +0.015% Bubble Capacity, +0.01% Bee Ability Rate (stacks to 1000).\nCooldown: 60s.",
+        "cooldown": 60
+      }
+    ],
+    "tokenTime": 4
   }
 ]
