@@ -1629,7 +1629,7 @@
     "name": "Singularity Essence",
     "category": "Ingredients",
     "rarity": "Mythic",
-    "desc": "Used to craft Lunar Bee.",
+    "desc": "Crafting ingredient.",
     "image": "images/items/Singularity Essence.png",
     "order": 7,
     "buffs": [],

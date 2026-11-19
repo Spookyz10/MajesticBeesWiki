@@ -306,10 +306,6 @@
           {
             "item": "Lunar Cocktail",
             "amount": 3
-          },
-          {
-            "item": "Lunar Bee",
-            "amount": 1
           }
         ]
       }
@@ -8525,7 +8521,6 @@
             "*[The circular glow forms into a bee shape, and then, after some seconds pass...]*",
             "*[BAM! A split second of bright light flashes across the area, and as soon as you gain your vision back, you see them...]*",
             "*[A radiently glowing bee hovers before you.]*",
-            "With the full extent of my power, I present to you... Sunny Bee...",
             "The rays of this elegent bee will greatly help your collecting journey. Please, take good care of them for me...",
             "As for me, I will remain right here for the rest of Summerfest. I am certain this won't be the last time we see each other.",
             "Thank you for your presence, for I even I have been blessed by it... You truly are a special gift.",
@@ -8555,10 +8550,6 @@
           }
         ],
         "rewards": [
-          {
-            "item": "Sunny Bee",
-            "amount": 1
-          },
           {
             "item": "Honey",
             "amount": 2000000000

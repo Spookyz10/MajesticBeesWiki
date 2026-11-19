@@ -113,10 +113,9 @@
       "id": "blaze",
       "title": "Blaze",
       "summary": "Fire-themed gear and bee abilities.",
-      "trigger": "Passive effects from Sunny Bee and fire gear.",
+      "trigger": "Passive effects from fire gear.",
       "duration": "Varies, see below",
       "facts": [
-        "Sun Beams (Sunny Bee): 2 beams plus 1 per 5 levels hit random flowers after a 1.5 second warning, gathering 3x3 flowers at x30 and setting them on fire for 6 seconds. Standing in a beam gives Burned (100 stacks that decay over 8 seconds).",
         "Primordial Fire (backpack): 10 second effect, 120 second cooldown."
       ],
       "loot": null

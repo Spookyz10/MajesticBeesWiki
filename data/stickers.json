@@ -474,21 +474,6 @@
     ]
   },
   {
-    "id": "sunny-bee-sticker",
-    "name": "Sunny Bee Sticker",
-    "image": "images/hive/stickers/Sunny Bee Sticker.png",
-    "rarity": "Limited",
-    "category": "Bees",
-    "desc": "Wow! So bright!",
-    "buffs": [
-      {
-        "name": "Pollen",
-        "type": "Mult",
-        "value": 1.15
-      }
-    ]
-  },
-  {
     "id": "windy-bee-sticker",
     "name": "Windy Bee Sticker",
     "image": "images/hive/stickers/Windy Bee Sticker.png",

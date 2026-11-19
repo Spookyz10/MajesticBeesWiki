@@ -290,11 +290,6 @@ const DONATE_ITEMS = [
     points: 25,
   },
   {
-    name: "Sunny Bee Sticker",
-    path: "images/hive/stickers/Sunny Bee Sticker.png",
-    points: 25,
-  },
-  {
     name: "Windy Bee Sticker",
     path: "images/hive/stickers/Windy Bee Sticker.png",
     points: 15,

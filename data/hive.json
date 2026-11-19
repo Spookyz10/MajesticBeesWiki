@@ -776,23 +776,6 @@
       "stickerEgg": 0.0245
     },
     {
-      "name": "Sunny Bee Sticker",
-      "image": "images/hive/stickers/Sunny Bee Sticker.png",
-      "rarity": "Limited",
-      "category": "Bees",
-      "order": 44,
-      "donatePoints": 25,
-      "desc": "Wow! So bright!",
-      "buffs": [
-        {
-          "stat": "Pollen",
-          "type": "Mult",
-          "value": 1.15
-        }
-      ],
-      "stickerEgg": 0.0245
-    },
-    {
       "name": "Windy Bee Sticker",
       "image": "images/hive/stickers/Windy Bee Sticker.png",
       "rarity": "Special",

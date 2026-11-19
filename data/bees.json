@@ -746,43 +746,6 @@
     "tokenTime": 4
   },
   {
-    "name": "Lunar Bee",
-    "id": "lunar-bee",
-    "icon": "images/bees/Lunar.png",
-    "desc": "A moonlit wanderer cloaked in silvered frost and shimmering starlight. As it drifts through the hive, it leaves a trailing wake of pale luminescence and frozen dew; its very presence radiates a calm, otherworldly glow that soothes raw instinct into serene focus, distilling the essence of every flower it visits into a shimmering, tranquil nectar of clarity.",
-    "color": "Blue",
-    "rarity": "Special",
-    "speed": 22,
-    "attack": 2,
-    "energy": 125,
-    "gather": 56,
-    "gatherTime": 4,
-    "convert": 48531,
-    "convertTime": 4,
-    "shinyBonus": {
-      "stat": "Night Capacity",
-      "type": "Mult",
-      "value": 1.2
-    },
-    "tokens": [
-      {
-        "token": "Starry Night",
-        "level": 8,
-        "weight": 12,
-        "expires": 15,
-        "desc": "White stars fall from the sky for 10s, each one gathering pollen in a 3x3.\nStars that land on a Bubble turn it into a Lunar Bubble (x1.5 capacity).\nStars that hit an active Magnet turn it into a Lunar Magnet (10% chance to duplicate every token it grabs)."
-      },
-      {
-        "token": "Lunar Sync",
-        "level": 20,
-        "weight": 12,
-        "expires": 15,
-        "desc": "Grants Lunar Sync for 30s: +20% Night Capacity, +15% Night Pollen, and night buffs work at 50% during the day.\nWith Solar Sync active, night buffs work at 100% during the day."
-      }
-    ],
-    "tokenTime": 2
-  },
-  {
     "name": "Magma Bee",
     "id": "magma-bee",
     "icon": "images/bees/Magma.png",
@@ -1268,43 +1231,6 @@
         "desc": "Paint effects created by Splatter Bee retain the properties of their original effects while allowing bees to interact with them and create Tiny Paint Bees."
       }
     ]
-  },
-  {
-    "name": "Sunny Bee",
-    "id": "sunny-bee",
-    "icon": "images/bees/Sunny.png",
-    "desc": "A radiant bee that radiates intense sunlight, warming flowers to boost pollen production. Its brilliant golden glow energizes nearby bees and accelerates honey conversion, making it essential for maximizing field efficiency.",
-    "color": "Colorless",
-    "rarity": "Limited",
-    "speed": 16,
-    "attack": 1,
-    "energy": 25,
-    "gather": 10,
-    "gatherTime": 4,
-    "convert": 12650,
-    "convertTime": 4.5,
-    "shinyBonus": {
-      "stat": "Pollen",
-      "type": "Mult",
-      "value": 1.1
-    },
-    "tokens": [
-      {
-        "token": "Sun Beam",
-        "level": 1,
-        "weight": 9,
-        "expires": 15,
-        "desc": "Creates 2 Sun Beams (+1 every 5 Levels). A yellow 3x3 warning appears, then a laser burns the flowers there and sets them on fire.\nStanding inside a beam when it lands gives Burned (100 stacks that burn down to 0 in 8s): up to +25% Movespeed, +10% Bee Movespeed, +50% Daytime Pollen, +50% Fire Pollen."
-      },
-      {
-        "token": "Solar Sync",
-        "level": 4,
-        "weight": 9,
-        "expires": 15,
-        "desc": "Grants Solar Sync for 30s: +20% Daytime Capacity, +15% Daytime Pollen, and day buffs work at 50% at night.\nWith Lunar Sync active, day buffs work at 100% at night."
-      }
-    ],
-    "tokenTime": 4
   },
   {
     "name": "Tanuki Bee",
